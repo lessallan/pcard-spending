@@ -2,6 +2,9 @@
 /*
 !/.gitignore
 !/README.md
+!/assets/
+/assets/*
+!/assets/spending-blaze-logo.png
 !/policies/
 /policies/*
 !/policies/panama-city/

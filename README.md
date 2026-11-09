@@ -1,4 +1,8 @@
-# Panama City P-card spending review
+<p align="center">
+  <img src="assets/spending-blaze-logo.png" alt="Spending Blaze dragon logo" width="460">
+</p>
+
+# Spending Blaze
 
 Public purchasing policies and aggregate analysis for the City of Panama City, Florida.
 
