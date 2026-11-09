@@ -79,3 +79,6 @@
 !/docs/review/policies/panama-city/sources.json
 !/docs/review/reports/merchant-review.html
 !/docs/review/reports/merchant-summary.csv
+
+# Full current dashboard dataset explicitly approved for public hosting.
+!/docs/data.json

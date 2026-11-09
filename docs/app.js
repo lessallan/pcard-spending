@@ -109,11 +109,7 @@ function loadDataset(d){
  if(!d||!Array.isArray(d.transactions)||!Array.isArray(d.staff)||!d.transactions.every(t=>t&&strings.every(k=>typeof t[k]==='string')&&Number.isFinite(t.amount)&&Array.isArray(t.allocations)&&t.allocations.every(a=>a&&['fund','center','account'].every(k=>typeof a[k]==='string'&&/^[\w .-]*$/.test(a[k]))&&Number.isFinite(a.amount))&&['comments','flags'].every(k=>Array.isArray(t[k])&&t[k].every(v=>typeof v==='string'))&&Array.isArray(t.rows)&&t.rows.every(Number.isInteger)&&/^[\w.-]+$/.test(t.id))||!d.staff.every(s=>s&&['name','source_url'].every(k=>typeof s[k]==='string')&&['title','email'].every(k=>s[k]===null||typeof s[k]==='string')&&Array.isArray(s.departments)&&s.departments.every(v=>typeof v==='string')&&/^https?:\/\//.test(s.source_url)))throw Error('Choose a valid Spending Blaze app/data.json dataset.');
  data=d;page=0;HTMLFormElement.prototype.reset.call($('filters'));
  for(const [id,values,label] of [['fund',d.transactions.flatMap(t=>t.allocations.map(a=>a.fund)),'All funds'],['center',d.transactions.flatMap(t=>t.allocations.map(a=>a.center)),'All cost centers'],['person',d.transactions.map(t=>t.person),'All cardholders'],['merchant',d.transactions.map(t=>t.merchant),'All merchants']])fillSelect(id,values,label);
- $('loading').hidden=true;$('dataset-error').textContent='';$('export').disabled=false;render();
+ $('loading').hidden=true;$('export').disabled=false;render();
 }
 $('export').disabled=true;
-$('dataset').addEventListener('change',async e=>{
- const file=e.target.files[0];if(!file)return;
- try{const parsed=JSON.parse(await file.text());loadDataset(parsed)}catch{$('dataset-error').textContent='This file could not be opened. Choose a valid Spending Blaze app/data.json dataset.'}
-});
-if(['localhost','127.0.0.1'].includes(location.hostname))fetch('./data.json').then(r=>{if(!r.ok)throw Error();return r.json()}).then(loadDataset).catch(()=>{});
+fetch('./data.json').then(r=>{if(!r.ok)throw Error();return r.json()}).then(loadDataset).catch(()=>{$('loading').hidden=false;$('loading').textContent='Spending records could not load. Reload this page to try again.'});
