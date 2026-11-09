@@ -1,0 +1,30 @@
+[
+  {
+    "file": "purchasing-card-policy-2025-06-24.pdf",
+    "source_url": "https://www.panamacity.gov/AgendaCenter/ViewFile/Item/14822?fileID=31258",
+    "retrieved_date": "2026-11-09",
+    "bytes": 442721,
+    "sha256": "ab9152e3097672cd2e2b55465eadf9c276d8dee94f2ef4c23990088da229e59c"
+  },
+  {
+    "file": "purchasing-policy-and-procedures.pdf",
+    "source_url": "https://www.panamacity.gov/DocumentCenter/View/12277",
+    "retrieved_date": "2026-11-09",
+    "bytes": 628193,
+    "sha256": "90c5845003a0384db8a1883211d77ce073a425aa9f74998c0722cac9d972b7e0"
+  },
+  {
+    "file": "resolution-20250624-2.pdf",
+    "source_url": "https://www.panamacity.gov/AgendaCenter/ViewFile/Item/14822?fileID=31255",
+    "retrieved_date": "2026-11-09",
+    "bytes": 146969,
+    "sha256": "2eb18be86e32228f52958129b6b6c412941a5494a9aaabcf072257d51ad04730"
+  },
+  {
+    "file": "commission-minutes-2025-06-24.pdf",
+    "source_url": "https://www.panamacity.gov/AgendaCenter/ViewFile/Minutes/_06242025-751",
+    "retrieved_date": "2026-11-09",
+    "bytes": 46445,
+    "sha256": "b7b2c9655c9fdd05f56b188e91bdc29463cd602e2d88ff9aab5500134b53234b"
+  }
+]

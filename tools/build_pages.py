@@ -11,3 +11,7 @@ policy = Path('policies/panama-city/purchasing-card-policy-2025-06-24.pdf')
 shutil.copyfile(ROOT / policy, OUT / policy)
 (OUT / '.nojekyll').touch()
 print('Built public app without transaction data or staff records.')
+
+# Preserve the independent public report alongside the browser workspace.
+import runpy
+runpy.run_path(str(ROOT / "scripts/build-site.py"), run_name="__main__")

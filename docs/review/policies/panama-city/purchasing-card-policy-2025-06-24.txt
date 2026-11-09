@@ -1,0 +1,635 @@
+--- PDF page 1 ---
+
+
+CITY OF PANAMA CITY
+PURCHASING CARD
+POLICY MANUAL
+
+
+
+
+
+
+
+
+
+Effective Date: June 24, 2025
+
+
+--- PDF page 2 ---
+2
+Table of Contents
+FOREWORD .................................................................................................................................................................. 3
+OBJECTIVES ................................................................................................................................................................. 3
+AUTHORIZATIONS ........................................................................................................................................................ 4
+RESPONSIBILITIES ...................................................................................................................................................... 4
+LIMITS AND RESTRICTIONS ....................................................................................................................................... 6
+RESTRICTED ITEMS .................................................................................................................................................... 7
+COMPLETING TRANSACTIONS WITH VENDORS .................................................................................................... 8
+SHIPPING CHARGES ................................................................................................................................................... 8
+TAXES ............................................................................................................................................................................ 8
+BACKORDERS AND DEPOSITS  ................................................................................................................................ 9
+LOST OR STOLEN CARDS .......................................................................................................................................... 9
+CHANGES IN AUTHORIZED USERS .......................................................................................................................... 9
+CREDITS AND RETURNS ............................................................................................................................................ 9
+DISPUTES ...................................................................................................................................................................... 9
+SUSPENSION AND ACCOUNTABILITY .................................................................................................................... 10
+RECORDKEEPING AND RECEIPTS ......................................................................................................................... 11
+BILLING STATEMENTS/MONTHLY DEPARTMENT BANK RECONCILIATION  ..................................................... 11
+PURCHASING CARDHOLDER AGREEMENT .......................................................................................................... 12
+P-CARD EXISTING CARD LIMIT CHANGE FORM  .................................................................................................. 13
+NEW USER FORM. ..................................................................................................................................................... 14
+SHREDDED P-CARD FORM  ..................................................................................................................................... 15
+THE CITY OF PANAMA CITY SALES TAX EXEMPT FORM  ................................................................................... 16
+
+--- PDF page 3 ---
+3
+CITY OF PANAMA CITY
+PURCHASING CARD POLICY MANUAL
+FOREWORD
+The Purchasing Card (P-Card) Program has been established to  support the departments that
+make up the City’s government. To efficiently and effectively manage all aspects of the P-Card
+function, the Purchasing Division  has developed this policy manual governing the P -Card
+Program.
+The P-Card Program is designed to improve efficiency in processing purchases from vendors
+that accept Visa payment cards. It allows cardholders to purchase authorized goods and
+services directly from vendors without the need for purchase orders.  Each P -Card is issued in
+the name of the employee responsible for its use and includes the City’s Tax-Exempt Certificate
+number. “City of Panama City” is clearly displayed on the card as the governmental buyer of the
+goods and services.
+The P-Card may be used to purchase authorized goods and services in person, at the vendor's
+location, over the telephone, or online.
+This policy is not intended to replace or circumvent standard purchasing practices. P-Cards are
+designed to supplement  the City’s purchasing policies and procedures . Best  practices in
+purchasing management should always be followed in the procurement of goods and services.
+All P-Card purchases shall be made with consideration given to departmental budget limits.
+The success of the P-C ard program depends on the adherence to policies and procedures by
+the Cardholders, in conjunction with careful and timely review by the department m anagement
+and oversight by the Purchasing Division and Accounting Department.
+
+OBJECTIVES
+ To provide guidelines/policies for the responsible use of P-Cards
+ To provide a framework for the appropriate use of P-Cards for buying goods and
+services
+ To ensure accountability for misuse of the P-Cards
+When changes to this policy manual are necessary, and upon notification by this department of
+official changes, new pages will be issued to supplement and update the manual. Department
+heads are requested to ensure that all employees are notified of any changes to the purchasing
+policies and procedures.
+
+
+--- PDF page 4 ---
+4
+AUTHORIZATIONS
+A. P- Cards will be administered by the Purchasing Division. The Purchasing Specialist will serve
+as the Purchasing Card Administrator (PCA) under the direction of the Logistics Director and
+the City Manager.
+B. All requests for new P -Cards must be approved by the employee’s Department Head by
+submitting an email request to the PCA. Cards will be issued on an “as needed” basis.
+C. Changes to existing card limits may be requested by the Department Head in writing (i.e.
+written or electronic) to the PCA.
+D. Before a P -Card is issued, each employee must attend a training class conducted by the
+Purchasing Division explaining the usage rules. The employee must then read and sign the
+acknowledgment and receipt form before being giv en the P -Card. By signing this form, the
+employee affirms that he or she has read and is familiar with the rules, regulations, and
+policies stated in the P -Card Manual. Employees who abuse or purposely or repeatedly
+misuse the P-Card will have their card r evoked and may be subject to disciplinary action up
+to and including termination of employment.
+E. P- Cards may only be used by the person whose name appears  on the face of the card and
+should never be loaned to any other person. The account number shall not be given to any
+individual other than the vendor for a purchase. In all instances, the person who is issued the
+P-Card is responsible for all charges made with their card.
+F. When a purchase authorization is requested by the vendor at the point -of-sale, the P-Card
+system validates the transaction against present limits established by the City. All transactions
+are approved or declined based on the established purchasing card authorization criteria. The
+authorization criteria may be adjusted periodically as needed and may include, but is not
+limited to the following:
+• Single Purchase Limit
+• Monthly Spending Limit
+• Approved Merchant Category Codes
+• Number of transactions allowed per day
+• Number of transactions allowed per month
+• Temporary Spending Limit
+
+RESPONSIBILITIES
+The following are the responsibilities of:
+
+A. Cardholder
+1. Hold and secure your P-Card.
+2. Comply with all P-Card policies.
+3. Order materials as authorized by your department.
+4. Verify that budgeted funds are available before ordering
+5. Compare pricing (Office Depot vs. Amazon, Lowes vs. Home Depot, etc.) to ensure you
+are paying the least amount for items.
+6. Notify vendors of the City’s Sales Tax Exemption before finalizing any purchases.
+7. Obtain an itemized sales receipt, invoice, or order confirmation from the vendor.
+
+--- PDF page 5 ---
+5
+8. Sign and date the P-Card receipt to indicate the authenticity of the transaction.
+9. Provide the receipt to your department’s P-Card Representative within 7 days of the
+purchase.
+10. Notify the PCA immediately if your P-Card is lost, stolen, or requires cancellation.
+11. Use the P-Card for authorized purchases only. P-Cards are not to be used to purchase
+personal items.
+12. Card Security
+• Do not leave your card unsecured
+• Do not lend your card
+• Do not save your card number on a website
+• Do not include your card number in a fax or email
+• Keep your card separate from your personal cards
+• P-Card account numbers should not be left unsecured or easily accessible to
+others
+• Do not allow vendors to store your P-Card number
+
+B. Departmental Purchasing Card Representative
+1. Ensure transactions comply with all policies and procedures. Report all instances of
+non-compliance to the Department Head.
+2. Review and reconcile the monthly statement with the cardholder.
+3. Update the “comments” section for each transaction on the bank’s website with a
+complete description of the item and the City Department's use of it.
+4. City’s contract number/project name should be indicated in the “comments” section
+for purchases made with contracts.
+5. Notify the PCA of any suspicious transactions posted on the bank’s website.
+6. Assign and/or verify the appropriate ledger accounts for each transaction on the
+bank’s website.
+7. Ensure sufficient budgeted funds exist to cover expenditures.
+8. Identify disputed items and assist the cardholder with a solution.
+9. Ensure P-Card transactions are reviewed and approved on the bank’s website in a
+timely manner.
+10. Ensure monthly report processing on the bank’s website is completed by the 5th of
+each month.
+11. Forward monthly reports and supporting documentation electronically to the
+Accounting Department by the 5th of each month.
+12. Notify the PCA immediately if a P-Card is lost, stolen, or requires cancellation.
+13. Collect cards from cardholders who end employment or transfer to another
+department, notify the PCA to cancel the card, and return it to the PCA. For
+departmental transfers, the new department will determine whether the employee
+needs to maintain their P-Card or cancel it if necessary.
+14. Review the list of cardholders quarterly with the Department Head to determine if any
+cards should be cancelled.
+
+C. Department Head or Designee
+1. Set authorization criteria for each cardholder within established guidelines of the
+Purchasing Manual.
+2. Designate department P-Card representative.
+3. Oversee employees' P-Card purchases, requests, and spending limits.
+
+--- PDF page 6 ---
+6
+4. Ensure proper controls are in place, being followed, and are effective.
+5. Ensure appropriate disciplinary action for misuse of the P-Cards.
+6. Complete transactions “approval” in the bank’s website by the 5th of the month following
+the close of the cycle.
+7. Evaluate cardholders' usage annually to determine if any cards should be cancelled or
+limits reduced.
+8. Request cards for new employees who will be purchasing for your department or who
+might travel.
+
+D. City Manager or Designee
+1. Authorize exceptions to this policy.
+
+E. Purchasing Card Administrator (PCA)
+1. Request P-Cards, credit limits, and access to the bank’s website for authorized
+employees.
+2. Coordinate issuance and cancellation of cards.
+3. Provide training to all new cardholders and periodic refresher training classes as
+needed.
+4. Change “per transaction” limits or other credit limits as requested.
+5. Restrict the ability to make certain purchases (Merchant Category Codes).
+6. Grant authorization for appropriate P-Card exceptions based on written approval.
+7. Participate in billing disputes as necessary.
+8. Liaison with Accounting.
+9. Liaison with the bank.
+10. Ensure the City is obtaining maximum benefits.
+11. Maintain policies, guidelines, and manuals.
+12. Coordinate program policy issues.
+13. Coordinate, maintain, and enforce internal controls.
+14. Address credit card inquiries as appropriate.
+15. Address usage reports for infrequent usage, purchasing patterns, and appropriate
+limits.
+
+F. Accounting
+1. Download monthly P-Card transactions from the bank’s website.
+2. Balance the monthly “download” with the master statement.
+3. Import “download” into the general ledger by the 10th of the month.
+4. Payments must be received and processed by the bank’s website by the 25th of each
+month. A late payment on purchasing cards will negate the rebate owed to the
+City for an entire year.
+5. File the master statement and all backup documents.
+
+LIMITS AND RESTRICTIONS
+A. The P -Card is for official business only. International pur chases, except for Canada, are
+restricted to protect against fraud. If international purchases are necessary, contact the PCA
+for temporary approval before purchasing.
+B. All items paid for with the P-Card are the property of the City of Panama City.
+C. Purchases of food and beverages are prohibited except in specific circumstances  as
+
+--- PDF page 7 ---
+7
+determined by the City Manager or designee. The City Manager or designee shall designate
+the cards that will be coded to allow food and beverage purchases . Food for emergency
+situations may require special approval based on the cardholders’ code restrictions.
+D. Exceptions can be permanent or for a single transaction request. For the transaction to be
+allowed, the  PCA must receive a request from the Department Head, City  Manager, or
+designee as appropriate and in advance of the purchase so that the cardholder’s merchant
+category codes can be changed on the bank’s website.
+E. Fuel may only be purchased in the following instance:
+1. For City vehicles on authorized City trips outside of Bay County.
+2. For an approved rental car on an authorized City trip outside of Bay County.
+3. For Undercover Police Officers.
+4. For City equipment, emergencies with rental equipment , or unforeseen circumstances
+may warrant.
+F. The PCA will set the  single purchase limit and the monthly limit based on the following
+limitations:
+1. The minimum single purchase limit shall not exceed $3,499, and the maximum monthly
+limit shall not exceed $10,000 per person unless approved by special exception by the
+City Manager or designee.
+2. A transaction may consist of multiple items, but its total may not exceed $3,499 without
+prior approval of the PCA.
+3. Deliberately splitting up a purchase to keep the total below the single purchase limit of
+$3,499 is strictly prohibited.
+RESTRICTED ITEMS
+A. The following types of items may NOT  be purchased on a P -Card, regardless of the dollar
+amount:
+1. Cash advances.
+2. Florida sales tax.
+3. Alcoholic beverages and tobacco products.
+4. Entertainment expenses.
+5. Clothing, even if it is worn as a uniform.
+6. Tips or gratuities are not permitted on any P-Card purchases:
+a) Except when pre-approved for food purchases (i.e. special events and/or
+emergencies), or
+b) Except when traveling a traveler may include a tip of up to 20% of the fare
+as part of the total fare amount claimed. The tip is not separately
+reimbursable. “Fare” means the price paid for transportation, including all
+mandatory taxes and fees; it does not include ancillary fees for optional
+services. All transportation-related expenses are required to be in
+alignment with Federal travel regulations.
+7. Incidental expenses such as tips for porters, baggage handlers and hotel staff, etc. are
+prohibited and are considered covered by employees per diem.
+8. Purchase of goods or services for personal benefit/gain.
+9. Recurring maintenance, rental, or lease of equipment that exceeds $1,500 per year,
+unless the Purchasing Division receives prior approval.
+10. Utilities (i.e., telephone services, cable, electricity).
+
+--- PDF page 8 ---
+8
+11. Merchant Rebate, purchases for which merchants offer a rebate must be processed
+through a purchase order.
+12. Travel costs for a City Traveler’s companion (i.e., airline tickets even if the traveler is
+reimbursing the City).
+13. Travel meals may not be purchased on the P -Card unless a special exception is
+approved in writing by the PCA or designee. In all cases, per diem rates must be us ed
+and requested in accordance with the City’s Travel Policy.
+14. Travel perks such as spas, movies, or mini -bar contents purchased by the traveler for
+personal use.
+15. Purchases from vendors that create a conflict of interest.
+16. Any additional goods or services specifically restricted by the City Manager  or his
+designee, your Department Head, or the Employee Handbook.
+17. Any other purchases deemed prohibited by the respective Department Head.
+
+COMPLETING TRANSACTIONS WITH VENDORS
+A. Over-the-Counter Purchases
+1. When an over-the-counter purchase is made, the cardholder must obtain the
+customer’s copy of the charge slip or receipt, which will become part of the
+reconciliation document. If the receipt does not designate the item(s) purchased, attach
+a detailed listing.
+2. All items purchased over the counter must be immediately available. Any items
+ordered, but not available, should not be charged to the City’s account until delivery is
+made to the City or written confirmation of shipping is received.
+
+B. Telephone/Email Orders
+1. Purchases must be described in sufficient detail so that the parties to the transaction
+clearly understand what is being acquired. It is strongly advised to follow up a phone
+conversation with an email confirming the details of the transaction.
+2. Instruct the vendor to send the sales receipt directly to the cardholder and not to send
+an invoice to the Accounting Department.
+3. Shipping or delivery fees must be included in the unit price.
+4. Purchases made in Florida and for use in Florida are exempt from sales and use taxes.
+The City’s tax-exempt identification number is printed on the face of the P-Card.
+5. Vendors should be instructed that invoicing should not occur until items have been
+shipped. Florida law prohibits payment to a vendor prior to receipt of goods or
+services except in specific circumstances.
+6. All items purchased by telephone or email must be delivered to the City within the 30-
+day billing cycle. The order should not be placed without this assurance.
+SHIPPING CHARGES
+A. Shipping charges may be charged to your P-Card, within reason, considering the cost of the
+item itself and urgency by which it is needed.
+B. If vendors offer “no shipping fee” deals for dollar amounts, try to take advantage by placing
+one order instead of multiple orders.
+TAXES
+
+--- PDF page 9 ---
+9
+A. Most purchases are exempt from sales tax. The tax-exempt identification number is listed on
+the face of the P-Card. Cardholders must ensure sales tax has not been added to a purchase.
+If a purchase has sales tax, the employee must request that a credit be processed for the
+sales tax amount within 15 days.
+B. Some internal purchases will require a cardholder to call a customer service number on the
+company’s website in order to have taxes removed from the order . It is the responsibility of
+the cardholder to ensure that this occurs.
+C. Cardholders using a P-Card out of state may be subjected to that state’s tax laws.
+D. The City is required to pay sales tax on fuel, airline taxes, and resort/tourist taxes.
+BACKORDERS AND DEPOSITS
+A. The City will only pay for goods and services received or shipped at the time of purchase.
+Backorder items that have been charged to a P-Card must be cancelled by the cardholder.
+B. No deposits are to be made on any goods or services that cannot be shipped or delivered
+immediately with the P-Card. A deposit indicates a partial payment and is strictly prohibited.
+Deposits for hotel reservations are allowed.
+C. Any exceptions to this section must be approved by the PCA on a transaction-only basis with
+written approval.
+LOST OR STOLEN CARDS
+A. If a P-Card is lost or stolen, the cardholder must immediately contact the PCA and the bank.
+The cardholder must fill out the required affidavit sent to them by the bank.
+CHANGES IN AUTHORIZED USERS
+A. In the event of termination or transfer, the department is responsible for collecting the P-Card
+from the employee and returning it to the PCA as soon as possible. The card will  be
+deactivated.
+B. If an employee transfers to a different department, the new department may request that the
+P-Card be updated and reactivated.
+CREDITS AND RETURNS
+A. Merchandise returned to the vendor must be credited to the City’s account to which the
+transaction was charged. Cardholders are not authorized to receive a cash payment or
+store credit for returned merchandise.
+B. The user's department is responsible for ensuring that credits for returned merchandise are
+properly applied to the monthly account statement.
+C. Any promotional, rebate cards, or certificates obtained by any cardholder are to be submitted
+to Purchasing.
+DISPUTES
+
+--- PDF page 10 ---
+10
+A. A dispute occurs when a cardholder questions a transaction charged to the Cardholder’s
+account. If the purchase was unauthorized, then the transaction MUST BE DISPUTED.
+B. It is the responsibility of the cardholder to document, dispute, and resolve erroneous charges
+directly with the vendor. In most cases, disputes can be resolved in this manner.
+C. If a dispute cannot be resolved, a Statement of Disputed Items must be submitted to the bank
+as soon as the dispute is determined, but no later than 60 days after the end of the billing
+cycle in which the dispute first appears. The transaction must be marked as a dispute in the
+Works Program, and a copy of the dispute form must be sent to the PCA.
+D. If items purchased with the P-Card are defective, the cardholder must return the item(s) to the
+vendor for replacement or credit. If the service paid for the P-Card is faulty, the vendor must
+be notified and asked to correct the situation or  provide a credit. The purchase must be
+disputed if the vendor refuses to replace or fix the faulty item or service. The transaction must
+be disputed if the quantity of the items received is less than the amount charged on the
+invoice.
+E. The following steps must be taken to ensure prompt settlement of disputes:
+1. If a cardholder finds an unauthorized purchase made using their P -Card information,
+they must contact the bank immediately to begin the dispute process.
+2. If the item(s) purchased are defective or billed incorrectly, the Cardholder must contact
+the vendor and attempt to resolve the issue immediately. If the cardholder and the
+vendor cannot come to a resolution, the Cardholder must immediately contact the bank
+to have the transaction placed in a disputed status.
+3. If a purchase is placed in a disputed status with the bank, the Cardholder must complete
+any forms sent by the bank.
+4. It is the Cardholder's responsibility to follow through with the vendor or the bank  to
+ensure all disputed transactions are resolved in a timely manner.
+Note: The Purchasing Division can and will assist if needed
+SUSPENSION AND ACCOUNTABILITY
+A. Suspension is a progressive policy step and may be put into effect due to:
+1. Failure to submit proper documentation to the PCA or departmental P -Card
+representative by the established deadlines.
+2. Lost receipts.
+3. Inappropriate purchases of goods or services.
+4. Purchases that  exceed the Cardholder’s established P -Card limits for singl e-item
+purchases.
+5. Circumventing established single transaction limits by “splitting” purchases into multiple
+P-Card transactions.
+6. Keeping a rebate or refund from a vendor, bank, or other financial institution for personal
+use.
+7. Acceptance of a cash refund instead of credit to the P-Card account.
+8. Failure to report a lost or stolen P-Card.
+9. Purchases from vendors that create conflicts of interest.
+B. Depending on the severity of the offense, the first offense could result in permanent revocation
+of card privileges. The Cardholder’s Department Head may take disciplinary action beyond
+the steps listed here:
+
+
+
+--- PDF page 11 ---
+11
+1. First Offense: The Cardholder will receive a documented, written notification from  the
+PCA and their supervisor will be notified.
+2. Second Offense: Card privileges will be suspended for one to three months. During
+this period, the affected P-Card must be surrendered to the PCA.
+3. Third Offense: Permanent revocation of card privileges.
+C. Employees who abuse or purposely or repeatedly misuse their P -Card will lose their card
+privileges and may be subjected to disciplinary action up to and including termination of
+employment. Intentional misuse of a P-Card will be turned over to the Police Department for
+investigation.
+D. Department Heads will be notified when approvals on the bank’s websites are not completed.
+E. Unauthorized purchases shall be reimbursed to the City. Reimbursement may be made
+directly to the City or through payroll deduction.
+
+RECORDKEEPING AND RECEIPTS
+A. The Cardholder is responsible for obtaining itemized receipts for all purchases. The receipt
+must include a description of the item(s) and the amount paid for the purchase. Receipts must
+be signed and dated. It is the employee’s responsibility to ensure the description on the sales
+receipt is legible and clearly describes the purchase. If the receipt does not clearly describe
+the items, you will need to attach a memo describing each item and the purpose for the items.
+The departmental P -Card representative will use these receipts to reconci le the monthly
+departmental transactions and will be part of the documentation kept on file electronically to
+substantiate the payment process. The Cardholder is responsible for submitting all
+documentation to their Department P-Card representative within 7 days of the purchase.
+B. Documentation must be accurate, accessible, and complete for authenticity purposes, as it is
+not only a record of the transaction, but also supports the legitimate public purpose of the
+purchase.
+1. Priced and itemized invoice
+2. Subscription due forms or applications
+3. Conference registration forms
+4. Statement of service report from vendor performing on- site repairs, including itemized
+final pricing
+5. Cash register itemized receipts
+6. Email with a detailed payment summary
+7. Screen print of online order summary
+C. When an allowable food or meal has been purchased, the itemized, detailed receipt must
+include the names (written down) of the people or group of people who ate and the City event.
+D. The Cardholder must make every effort to obtain all required documentation.
+1. Contact the vendor to request a receipt.
+2. Print a receipt from your online vendor account if purchased online.
+E. If all efforts to obtain documentation of a transaction have failed, the Cardholder must attach
+a written description  of the purchase along with a signed statement that the purchase was
+made following the City’s P-Card Policy. Failure to provide a statement may result in loss of
+the card and/or disciplinary action, and the employee may be required to pay the City for the
+undocumented expense.
+F. Repeated occurrences of lost receipts may result in the suspension of your P-Card.
+
+
+--- PDF page 12 ---
+12
+BILLING STATEMENTS/MONTHLY DEPARTMENT BANK RECONCILIATION
+A. The department P -Card Representative will be given access to the bank’s website to
+download billing statements, review transactions, and reconcile transactions.
+B. Transactions are traditionally available for viewing at the bank’s website within 24 to 48 hours
+of purchase.
+C. The City’s monthly billing cycle typically runs from the first day of the month through the last
+Friday of the month. Monthly billing statements can be downloaded from the bank 48 hours
+after the cycle closes.
+D. Reconciliation should be ongoing throughout the cycle and not left until the end of the month.
+E. The new month’s fund will not appear on the P -Card until the Department Purchasing Card
+Representative (Reconciler) has completed and signed off on the previous month’s
+reconciliation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--- PDF page 13 ---
+13
+City of Panama City Purchasing Cardholder
+Agreement
+
+
+
+
+I, the undersigned, as a cardholder, agree to comply with the terms and conditions of this Agreement and all applicable
+City of Panama City Policies and Procedures, including but not limited to:
+
+ Approved and Prohibited use of the Card
+ Purchasing Card Recordkeeping
+ Placing an Order
+ Reporting a Lost or Stolen Card
+ Reconciling Monthly Transactions
+ Change in Employment Status
+
+____I acknowledge that I have been trained in the use of the purchasing card and understand the mentioned policies
+and procedures.
+____I understand that I cannot use the purchasing card for personal items and that the purchasing card may only be
+used to purchase necessary items for the City and for authorized City travel.
+____I understand that I am responsible for the security of the purchasing card and agree that I will not allow others to
+use my purchasing card, PIN number, or Works password.
+____As an Approver, I agree that I will verify and approve all transactions for my department. As an Allocation Coder, I
+will properly code and reconcile all assigned transactions with proper documentation by the end of each cycle (dates
+and deadlines to be provided by the Purchasing Card Administrator).
+____I further understand that improper use of my purchasing card may result in disciplinary action, up to and including
+termination of employment. Should I use the purchasing card for personal items, I authorize the City to deduct from my
+salary or other monies owed to me an amount equal to the total of the personal purchases.  I also agree to allow the
+City to collect any amounts owed by me, even if I am no longer employed by the City.  I agree that the City has the
+right to charge me for any legal fees of collection costs for any amounts owed.
+____I understand the City may terminate my purchasing card privileges at any time and for any reason without notice
+of such termination.
+____I agree to return the purchasing card immediately upon request or in the event of a change in employment status
+or department.
+____I understand that the City’s tax-exempt I.D. number is strictly for City use only. Personal use of the tax-exempt
+number is strictly prohibited, and disciplinary action may include, but is not limited to, immediate termination of
+employment.
+___I certify that I received a P-Card and a copy of the policies and procedures.  I understand and agree to the terms
+set forth herein.
+
+Employee / Card Holder:
+
+Printed Name:______________________                  Date:________________
+Signature:_________________________                  Phone:_______________
+Department:_______________________                   Email:________________
+Employee #:_______________________
+
+Purchasing Card Administrator:________________________           Date:________________
+
+
+--- PDF page 14 ---
+14
+
+P-Card Existing Card Limit Change Request
+
+All signatures must be obtained before submitting this form. Send the completed form to:
+purchasing@panamacity.gov
+
+
+ User First Name: ______        Middle Initial:
+ Last Name:
+ Current Credit Limit:
+ New Credit Limit Request:
+ Permanent: _______
+ Temporary: _______               Date to return to previous limit:
+ Requester’s Signature:
+ Requester's Printed Name:
+ Date:   Department:
+ Department Head Signature:
+ Department Head Printed Name:
+
+** Purchasing Office Use Only **
+Verified Current Credit Limit:
+Changed Credit Limit To:
+Date:
+Changed By:
+
+
+
+
+
+
+--- PDF page 15 ---
+15
+
+New Employee/User
+Purchasing Card Request Form
+
+All signatures must be obtained before submitting this form. Send the completed form to:
+purchasing@panamacity.gov
+
+
+ New User First Name:  Middle Initial:
+ Last Name:
+ Email Address:
+ User Phone Number:  Employee #:
+ Department or Group:
+ Recommended Credit Limit:
+
+ Department: _______________
+ Department Head Printed Name:  __________________
+ Department Head Signature:  __________________
+ Date: __________________
+
+**Purchasing Office Use Only**
+Username on Bank’s Website (must be at least 6 letters): __
+Verification ID: __
+User Created Date: __
+
+
+
+
+
+
+
+--- PDF page 16 ---
+16
+
+Shredded Purchasing Card Form
+*****Purchasing Office Use Only*******
+
+
+
+
+Name on Card/Name on the Bank’s Website:_________________________
+
+                  Check below to verify each action completed on B of A site:
+
+                  Verify that Spend Control Profile is “suspend”
+
+                   Date physical credit card was returned and shredded ___________
+
+ Purchasing Dept. Member who completed tasks __________________
+
+
+
+
+--- PDF page 17 ---
+17

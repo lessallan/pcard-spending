@@ -1,0 +1,2325 @@
+--- PDF page 1 ---
+
+
+CITY OF PANAMA CITY
+PURCHASING POLICY
+AND PROCEDURES
+MANUAL
+
+
+Effective Date: October 1, 2021
+Adopted Date: October 12, 2021
+Revised Date: October 28, 2025
+
+
+--- PDF page 2 ---
+2
+Table of Contents
+PURPOSE .................................................................................................................................................................. 3
+APPLICATION ............................................................................................................................................................ 3
+DEFINITIONS ............................................................................................................................................................. 4
+CODE OF ETHICS AND CONDUCT ........................................................................................................................ 11
+DUTIES AND RESPONSIBILITIES .......................................................................................................................... 14
+VENDOR POLICIES ................................................................................................................................................ 15
+PURCHASING AUTHORITY .................................................................................................................................... 18
+CONTRACTS, LEASES, AND AGREEMENTS SIGNATURE AUTHORITY*............................................................. 18
+EXCEPTIONS .......................................................................................................................................................... 20
+EMERGENCY PURCHASES ................................................................................................................................... 20
+GRANT FUNDED PROCUREMENT AND CONTRACTING ..................................................................................... 26
+AUTHORITY TO SETTLE CERTAIN TYPES OF CLAIMS ....................................................................................... 28
+PURCHASE ORDER PROCESS ............................................................................................................................. 29
+AFTER-THE-FACT PURCHASES ........................................................................................................................... 29
+CHECK REQUESTS ................................................................................................................................................ 30
+BLANKET PURCHASE ORDERS ........................................................................................................................... 30
+EXCLUSIONS FOR ISSUING PURCHASE ORDERS .............................................................................................. 31
+PURCHASING QUOTES ......................................................................................................................................... 31
+COMPETITIVE SOLICITATIONS .............................................................................................................................  31
+WRITING SPECIFICATIONS – INVITATION TO BID ............................................................................................... 33
+MULTI-STEP SOLICITATIONS ................................................................................................................................ 35
+CONSULTANTS’ COMPETITIVE NEGOTIATION ACT ........................................................................................... 35
+DESIGN-BUILD CONTRACTS ................................................................................................................................ 38
+PIGGYBACK. .......................................................................................................................................................... 39
+SOLE SOURCE/NON-COMPETITIVE NEGOTIATIONS .......................................................................................... 39
+RENEWAL AND EXTENSION .................................................................................................................................  40
+TIE BIDS.................................................................................................................................................................. 40
+CHANGE ORDERS.................................................................................................................................................. 40
+LOCAL PREFERENCE ............................................................................................................................................ 41
+BID PROTEST PROCEDURES ............................................................................................................................... 41
+PURCHASING CARD (P-Card)................................................................................................................................ 42
+FEDERAL PROCUREMENTS .................................................................................................................................  45
+INSURANCE REQUIREMENTS ............................................................................................................................... 49
+FLORIDA PROMPT PAYMENT ACT ........................................................................................................................50
+DIRECT PURCHASE ................................................................................................................................................50
+EXHIBIT A SOLE SOURCE FORM ...........................................................................................................................51
+EXHIBIT B MINIMUM QUOTE FORM ...................................................................................................................... 52
+
+--- PDF page 3 ---
+3
+CITY OF PANAMA CITY
+PURCHASING POLICY AND PROCEDURES MANUAL
+PURPOSE
+The City of Panama City consists of multiple departments and hundreds of employees dedicated
+to serving the citizens of Panama City. All employees of the City have a responsibility to be found
+to be good stewards of the funds entrusted in their Departments and to the City. With this in mind,
+the City attempts to codify best practices through the use of the Purchasing Policy and
+Procedures Manual (the Purchasing Manual) and to assign responsibilities and accountability in
+an effort to achieve transparency, audit readiness and worthiness, each and every day. The City
+Manager has the responsibility to ensure the proper programs, procedures, and processes are
+in place to execute the policies set forth in this document. Through the Logistics Department, the
+City has identified the Purchasing Division as the agency responsible for oversight of and
+coordination of the City's central purchasing system. The central purchasing system promotes
+efficiency, economy, and fair and open competition to reduce the appearance and opportunity
+for favoritism or impropriety, and to promote public confidence that Purchase Orders and
+Contracts are awarded equitably and economically. It is essential for effective and ethical
+purchases and procurement that there be a system of uniform procedures utilized by all
+personnel, that establishes basic guidelines and procedures which regulate procurement
+activities, contract management, and the resulting distribution of funds.
+Administrative changes or processing procedure portions of this Purchasing Manual may
+be amended when required by changes in law and/or minor procedural changes, i.e., flow
+of documents, internal department procedures, etc., with the revi ew and concurrence of
+the Purchasing Manager, the Logistics Director, City Manager or designee, City Clerk,
+and the City Attorney or designee.
+
+APPLICATION
+1. Contracts: These guidelines apply to contracts/agreements solicited or entered after
+the effective date of this manual or subsequent amendments or revision.
+2. Activities: These guidelines apply to the purchase/procurement of all materials,
+supplies, services, construction, and equipment except as specifically exempted
+herein.
+3. Statutes: Any reference to a statute or its statutory language in this manual will mean
+the statute  that is in effect after the effective date of this manual and any
+amendments that may be made from time to time. To the extent there is a conflict
+between this manual and the effective statutory language, the statute will prevail.
+
+--- PDF page 4 ---
+4
+DEFINITIONS
+AMENDMENT The method of changing the terms, conditions, or
+requirements of a contract or agreement beyond
+what is specifically provided for in that contract or
+agreement. All amendments shall be approved with
+equal dignity and formality as the original contract
+signed by the individuals holding the positions of the
+original signatories: provided however, that any
+amendment which causes the total contract
+expenditure to exceed original signatory’s amount,
+shall be approved by the appropriate signatory.
+BEST AND FINAL OFFER (BAFO) A process requested from one proposer or short-
+listed proposers for their best price(s) for a specific
+solicitation prior to determining of contract award.
+Sometimes referred to as BAFO.
+BEST VALUE The process used in competitive, negotiated
+contracting to select the most advantageous offer
+by evaluating and comparing factors in addition to
+cost or price.
+CITY Shall mean the City of Panama City, Florida.
+CAPITAL IMPROVEMENT PROJECT Construction or reconstruction in whole or in part of
+any building, road, highway, street, right -of-way,
+plant, structure, or facility and any other
+construction necessary in carrying out the functions
+of the City government.
+CHANGE ORDER A written order amending a purchase order to
+correct errors, omissions, or discrepancies in it, to
+cover acceptable cost over -runs and freight costs,
+to incorporate requirements to expand or reduce the
+scope of goods or services ordered, or to direct
+other changes in the contract execution to meet
+unforeseen circumstances including (but not limited
+to) field, emergency, climatic, regulatory, or market
+conditions.
+COMPETITIVE SOLICITATION The
+ document used to obtain sealed bids or
+proposals for the purpose of entering into a contract.
+
+CONSULTANT'S COMPETITIVE
+NEGOTIATION ACT (CCNA)
+The official name for F.S. § 287.055, relating to
+the procurement of architectural, engineering,
+
+--- PDF page 5 ---
+5
+landscape architecture, mapping, and registered
+land surveying services. These professional
+services shall be procured by letters of interest and
+qualifications, and competitive selection and
+negotiation.
+CONTRACT A written agreement between two or more
+competent parties to perform or not perform a
+specific act or acts. Any type of agreement
+regardless of what it is called for the procurement or
+disposal of supplies, services or construction. In
+addition to bilateral instruments, contracts include
+(but are not limited to) job orders or task  letters
+issued under basic ordering agreements; letter
+contracts; Purchase Orders, under which the
+contract becomes effective by written acceptance or
+performance; and bilateral contract modifications.
+The words "Contract" and "Agreement" may be used
+interchangeably.
+CONTRACTOR A person who contracts to sell commodities or
+contractual services to an agency.
+CONTRACTUAL SERVICES The rendering by a contractor of its time and effort
+rather than the furnishing of specific commodities.
+The term applies only to those services rendered by
+individuals and firms who are independent
+contractors, and such services may include, but are
+not limited to, evaluations; consultations;
+maintenance; accounting; security; management
+systems; management consulting; educationa l
+training programs; research and development
+studies or reports on the findings of consultants
+engaged thereunder; and professional, technical,
+and social services. "Contractual service" does not
+include any contract for the furnishing of labor or
+materials for the construction, renovation, repair,
+modification, or demolition of any facility, building,
+portion of building, utility, park, parking lot, or
+structure or other improvement to real property
+entered into pursuant to Chapter 255 of the Florida
+Statutes and rules adopted thereunder.
+DESIGN-BUILD The requirement for which a single contract with a
+Design-Build firm is entered into for the design and
+construction of a Capital Improvement construction
+project. Further, providing one single administrative
+
+--- PDF page 6 ---
+6
+entity (a firm as defined herein) responsible for
+design and construction under one contract where
+architectural and engineering services are
+performed by a registered architect or professional
+engineer and where construction ser vices are
+performed by a certified or registered contractor.
+DESIGN-BUILD CONTRACT A single contract with a design-build firm for the
+design and construction of a Capital Improvement
+project.
+DESIGN-BUILD FIRM A partnership, joint venture, corporation or other
+legal entity which is certified under Florida State
+Statute 489.119 to engage in contracting through a
+certified or registered general contractor or a
+certified or registered building contractor as a
+qualifying agent, or is certified under Florida State
+Statute 471.023 to practice or to offer to practice
+engineering, or is certified under Florida State
+Statute 481.219 to practice or offer to practice
+architecture; or certified under Florida State Statute
+481.319 to practice or offer to practice landscape
+architecture; or has among the principal parties to
+the legal entity a principal party which is certified
+under Florida State Statute 489.119 to engage in
+contracting through a certified or registered general
+contractor or a certified or  registered building
+contractor as a qualifying agent.
+EXTENSION An increase in the time allowed for the contract
+period due to circumstances which, without fault of
+either party, make performance impracticable or
+impossible, or which prevent a new contrac t from
+being executed, with or without a proportional
+increase in the total dollar amount, with any
+increase to be based on the method and rate
+previously established in the contract.
+INVITATION TO BID (ITB) A written solicitation for competitive sealed bids with
+the title, date, and hour of the public bid opening
+designated and specifically defining the commodity,
+group of commodities, or services for which bids are
+sought. It includes instructions prescribing all
+conditions for bidding. The invitation to bid is used
+when the agency is capable of specifically defining
+the scope of work for which a contractual service is
+required or  w he n  the
+ agency is capable of
+
+--- PDF page 7 ---
+7
+establishing precise specifications defining the
+actual commodity or group of commodities required.
+INVOICE A formal billing submitted by a vendor showing the
+amount due and terms of payment for materials
+and/or services rendered. Invoices must be
+itemized in sufficient detail to permit proper audit by
+the auditing body or department.
+
+MAY Denotes the permissive. However, the words "no
+person may..." means that no person is required,
+authorized, or permitted to do the act described.
+
+MEMORANDUM OF
+UNDERSTANDING (MOU)
+An agreement made between two or more parties
+that is not legally binding, but which outlines the
+responsibilities of each of the parties to the
+agreement. An MOU is often the first step toward
+creating a legally binding contract.
+MULTI-STEP SOLICITATION A method of source selection involving at least two
+competitive steps.
+PRE-QUALIFICATION The screening of potential vendors in which such
+factors as experience, financial capability,
+reputation, and management are considered in
+order to develop a list of qualified vendors who may
+then be allowed to submit bids/proposals. Pre-
+qualification is not a conclusive determination of
+responsibility, and a pre- qualified vendor may be
+rejected as non-responsible at a subsequent stage
+in the procurement process.
+PROPOSAL A written notice by a vendor setting forth the terms
+under which they will furnish supplies or services.
+PUBLIC EMERGENCY An accident or other unforeseen occurrence
+(natural disaster or man-made) or condition
+whereby circumstances affecting public buildings,
+public property or the life, health, safety, or
+property of inhabitants of a political subdivision are
+involved.
+PUBLIC/PRIVATE PARTNERSHIP Refer to F.S. 255.065.
+
+--- PDF page 8 ---
+8
+PURCHASE ORDER A formal notice to a vendor to furnish the supplies or
+services described in detail thereon.
+PURCHASING The act of obtaining supplies, equipment, or
+services necessary to carry out a particular function.
+PURCHASING MANAGER The person responsible for  the  organization’s
+purchasing/procurement program. The Purchasing
+Manager is given the responsibility and authority to
+act for the City in certain areas.
+QUALIFIED BIDDER The vendor meets all qualifications set forth in the
+solicitation document.
+RENEWAL Contracting with the same contractor for an
+additional contract period after the initial contract
+period, only if pursuant to contract terms specifically
+providing for such renewal.
+
+REQUEST FOR PROPOSAL
+(RFP)
+A written or electronically posted solicitation for
+competitive sealed bids for goods and/or services
+for which the scope of work, specifications or
+contractual terms and conditions cannot reasonably
+be closely defined, or when the City is requesting
+that a qualified v endor propose goods and/or
+services or when the City determines that it is in the
+best interest of the City that the award be made after
+determining the response that is the best value and
+most advantageous to the City.
+
+
+REQUEST FOR INFORMATION (RFI)
+   A written or electronically posted request made by
+an agency to vendors for information concerning
+commodities or contractual services. Responses to
+these requests are not offers and may not be
+accepted by the agency to form a binding contract.
+
+REQUEST FOR QUOTE (RFQ) An oral, electronic, or written request for written
+pricing or services information from a state term
+contract vendor for commodities or contractual
+services available on a state term contract from that
+vendor.
+REQUESTING DEPARTMENT The department originating the written or electronic
+
+--- PDF page 9 ---
+9
+request to the Purchasing Division. The requesting
+department shall approve the Request for
+Qualifications, RFP, etc. and any addendum prior to
+posting to the public.
+REQUISITION A written or electronic request to the Purchasing
+Division for one or more items or services
+necessary to perform or improve a particular
+function.
+RESPONDENT A person or entity who submits an offer in response
+to a solicitation. May also be referred to as
+proposer, offeror, or bidder.
+RESPONSE Any response of a respondent to a solicitation,
+which may include, as context requires, bids, offers,
+proposals, quotations, or other responses.
+RESPONSIBLE RESPONDENT An individual or business which has submitted a bid,
+offer, proposal, quotation, or response which, as
+determined by the city, has the capability in all
+respects to perform fully the contract requirements
+and the experience, integrity, reliability and
+capacity, facilities, equipment, and credit which give
+reasonable assurance of good faith and
+performance. The city may also consider and give
+weight to the respondent’s previous conduct and
+performance under previous contracts with the city
+and other agencies (including but not limited to
+delinquency) and determine the quality of the
+respondent’s previous work. City staff may, after bid
+opening, request additional information from the
+respondent concerning his ability to perform and the
+respondent may voluntarily, after opening, provide
+additional or corrective information concerning his
+responsibility as respondent.
+RESPONSIVE RESPONDENT An individual or business which had submitted a
+bid, offer, proposal, quotation, or response which, as
+determined by the city, conforms in all material
+respects to the solicitation which may include but is
+not limited to pricing, surety, insurance,
+specifications of the goods or services requested, or
+any other matter unequivocally stated in the
+invitation for bids as a determinant of
+responsiveness. A lack of conformity in these
+matters which is non-substantive in nature may be
+
+--- PDF page 10 ---
+10
+considered a technicality or irregularity which may
+be waived by the city. The Purchasing Division will
+notify any respondents of any non- substantive
+informalities in their response. The respondent will
+have twenty -four (24) hours from the time of the
+notification to furnish the requested information to the
+Purchasing Division. If the opening is on a Friday,
+they will have until Monday (5:00pm CT) to reply. If
+no response is received within twenty-four (24) hours
+of the notification, the respondent will be deemed
+non-responsive.
+RESPONSIVE BID A bid or proposal which conforms in all material
+respects to the competitive solicitation.
+SOLE SOURCE The only source of service or product relative to kind
+and availability.
+
+SPECIFICATIONS
+
+
+
+
+SPLIT PURCHASE
+A written description of needed supplies, equipment
+or services setting forth in a clear and concise
+manner the characteristics of the items and/or
+services to be purchased and the circumstances
+under which the purchase will be made.
+Using multiple transactions for a single purchase to
+circumvent the purchasing guidelines.
+STATE TERM CONTRACT A term contract that is competitively procured by the
+Florida Department of Management Services
+pursuant to Florida Statute 287.057 and that is used
+by the City and/or other eligible users.
+TASK ORDER An order for services placed against an established
+contract.
+TERM CONTRACT An indefinite quantity contract to furnish
+commodities or contractual services during a
+defined period.
+VENDOR A supplier of goods or services.
+
+--- PDF page 11 ---
+11
+CODE OF ETHICS AND CONDUCT
+All employees are required to maintain high standards of ethics and  conduct.
+Purchasing officials shall strive to maintain complete independence and
+impartiality in dealings with vendors to preserve the integrity of the competitive
+process and to promote public confidence that Purchase Orders and contracts
+are awarded equitably and economically.
+Each employee involved in purchasing shall read and follow the requirements
+of Chapter 112, Part III, Florida Statutes.
+
+For the purpose of this section:
+
+1. “Restricted individuals” are City reporting individuals within the
+meaning of section 112.3148(2)(d) and employees and agents of the
+City that would otherwise meet the definition of a procurement
+employee within the meaning of section 112.3148(2)(e).
+2. “Immediate family” means any parent, spouse, child, sibling,
+ in-law
+(father, mother, daughter, or son) or domestic partner of a restricted
+individual.
+
+3. “Employer” means any business or organization which employs a
+restricted individual or their immediate family in a managerial
+capacity, or any business or organization for which a restricted
+individual or their immediate family serves as an officer, agent,
+partner, or similar capacity. It shall not include a nonprofit
+organization for which a restricted individual or their immediate family
+serves as an officer without compensation.
+4. “Conflict of interest” means a circumstance in which any restricted
+individual, any member of his or her immediate family, or any
+employer of the foregoing, shall be financially interested or have any
+personal beneficial interest, directly or indirectly, in any purchase or
+contract of any supplies, materials, equipment, or services used by
+or furnished for the city.
+A. Restricted individuals shall recuse themselves from the
+selection, award, or administration of any City procurement in
+which they have a conflict of interest and shall disclose to their
+supervisor the nature of the conflict of interest. Restricted
+individuals who are appointed or elected public officials shall
+disclose, in writing, their conflict of interest on the Commission
+on Ethics forms promulgated for such purpose.
+B. Restricted individuals and their immediate family are prohibited
+
+--- PDF page 12 ---
+12
+from accepting or receiving from any City vendor or lobbyist any
+money, rebate, gift or anything of value or any promise,
+obligation or contract for future reward of compensation
+exceeding the amount of $25.00.  In the event a pre- existing
+relationship exists, that amount shall not exceed $250.00 and
+the gift shall not be due to or in any way r elevant to the
+employee’s position within the City.
+• Additionally, free attendance is allowable for a widely
+attended gathering (WAG) or event and is not considered
+a gift.
+• A gathering (or event) is considered “widely attended” if
+it is expected that one of the bellow descriptions applies:
+• A large number of persons will attend, usually
+25 or more persons and the invitation was
+disseminated broadly;
+• Persons with a diversity of views or interests
+will be present (e.g., if it is open to members
+from throughout an interested industry or
+profession); and
+• There will be an opportunity to exchange
+ideas and views among invited persons or the
+event (or meeting) is educational in nature and
+purpose.
+
+
+C. Notwithstanding the foregoing, with respect to restricted
+individuals who are only restricted individuals because of their
+appointment to a City board without compensation, the
+restrictions contained in section (B) and (C) shall only relate to
+contracts, vendors, and lobbyists related to the work of their
+board.
+
+D. As required by Title 2 of the Code of Federal Regulations (CFR)
+200.112, Conflict of Interest and 200.318(c)(1), General
+Procurement Standards, the City has designated the City
+Manager as the reporting official for all instances of real or
+apparent conflicts of interest. Any employee, officer, or manager
+of the C ity who has knowledge or suspicion of a conflict of
+interest will report this to their immediate supervisor who will
+then report the instance to the City Manager to further evaluate.
+In the case that the conflict of interest involves the employee,
+officer, or manager's immediate supervisor, the employee may
+report the instance to the next person in the City's hierarchy or
+directly to the City Manager. In the governance of performance
+of its employees engaged in the selection, award and
+
+--- PDF page 13 ---
+13
+administration of contracts associated with federal awards, the
+City will ensure that no employee, officer, or manager
+participates in the aforementioned activities if they have  a real
+or apparent conflict of interest. If the City Manager has
+determined that a real or apparent conflict of interest has
+occurred, disciplinary action, at a level consistent with the
+nature of the event and at management's discretion, will be
+taken to ensure that the conflict is eliminated, and that the City
+is not at risk for reoccurrence. The City Manager will submit in
+writing the nature and extent of any potential conflict of interest
+to the federal awarding agency as well as any actual conflict of
+interest that has occurred.
+
+The following individuals are required to file a Statement of Financial Interests no later than July
+1
+st of each year and should discuss with the City Attorney if there are any questions:
+
+Local Officers, s. 112.3145(1)(a), F.S.
+Every person elected to public office or appointed to fill a vacant elected office.
+
+Any appointed member of the following boards:
+o Councils
+o Commissions
+o Authorities or other bodies of any:
+ Municipality,
+ Independent special district, or other political subdivision of the State
+ Appointed members of a governing body of a political subdivision
+ Local Enforcement Board
+ Planning or Zoning Board
+ Board of Adjustment
+ Board of Appeals
+ Community Redevelopment Agency Board
+ Other boards having the power to recommend, create, or modify land
+planning or zoning (except for citizen advisory committees, technical
+coordinating committees and those who only have the power to make
+recommendations to planning or zoning boards).
+ Pension or Retirement Boards having the power to invest
+ Anyone appointed to a local government board where the appointing
+authority or law requires a statement of financial interests.
+
+Any person holding the following position:
+o Mayor
+o City Manager
+o Chief administrative employee of a municipality, or other political subdivision
+o Municipal attorney
+o Finance director of a municipality, or other political subdivision
+
+--- PDF page 14 ---
+14
+o Chief municipal building code inspector
+o Municipal water resources coordinator
+o Municipal pollution control director
+o Municipal environmental control director
+o Municipal administrator (with power to grant/deny a land development permit)
+o Chief of police
+o Fire chief
+o Municipal clerk
+o Purchasing agent exceeding CATEGORY TWO (over $35,000)
+
+DUTIES AND RESPONSIBILITIES
+ACCOUNTING DEPARTMENT
+
+The Accounting Department shall be responsible for confirming each item presented to the
+department for payment has the proper general ledger codes applied, the proper documentation
+attached, and that it has received the proper approvals. The Accounting Department is also
+responsible for obtaining the proper W-9 forms from the requesting department.
+
+PURCHASING DIVISION
+
+1. The Purchasing Manager shall be responsible for developing and administering the
+purchasing program for the City of Panama City.
+2. The Purchasing Division shall cooperate with City Departments and Divisions in the
+procurement of supplies and equipment and shall maintain adequate records necessary
+to create an audit trail for Purchasing transactions.
+3. The Purchasing Manager, in conjunction with the Logistics Director, has authority for
+issuing and setting spending limits on City Purchase Cards (P -Cards) issued to City
+Employees, in accordance with provisions established by the VISA Purchasing Card
+Agreement and the P-Card Policy.
+4. The Purchasing Division will assist the requesting department in soliciting quotes where
+formal bidding is not required.
+5. The Purchasing Division has the sole authority for issuing purchase orders. Purchase
+Orders will be required for all purchases over $3,499.99 unless the procurement of goods
+or services is governed by a written contract, follows a rule for exemption (as defined on
+page 25-27 of this policy) or is an emergency as determined by the City Manager or their
+designee.
+6. Although Purchase Orders are preferred, City P-Cards may be used for purchases up to
+$3,499.99 and must follow the P-Card Policy.
+7. The Purchasing Division shall issue a purchase order number to the selected vendor.
+8. The Purchasing Division shall maintain a detailed database of all City contracts, leases,
+and agreements.
+9. The Purchasing Division, in cooperation with the City’s Accounting Department, will strive
+to take advantage of discounts offered by vendors for early and prompt payments of
+invoices.
+10. The Purchasing Division shall maintain all original  competitive solicitation documents,
+
+--- PDF page 15 ---
+15
+including any necessary pre- qualification documents. Copies of the original competitive
+solicitation documents will be provided upon request to the applicable department upon
+completion of the award and contract execution. Original competitive solicitation
+documents shall not be attached as exhibits to subsequent or resulting contracts, leases,
+or agreements.
+11. The Purchasing Division shall verify that insurance and bond information are valid
+throughout the life of the contract.
+
+REQUESTING DEPARTMENT
+
+1. The requesting department is the Department originating the purchase, procurement, and
+requisition of commodities and/or services.
+2. Departments are responsible for following the Purchasing Manual. Department Directors
+may establish internal operating procedures to fully implement the Purchasing Manual, so
+long as such procedures are consistent with the Purchasing Manual.
+3. Departments will follow the Purchasing Manual supplied by the Purchasing Division for
+procuring services, equipment and/or supplies.
+4. Department Directors are responsible for ensuring that sufficient budgetary funds are
+available for all expenditures made by a contract, purchase order, and City credit cards.
+5. Departments shall monitor the City P-Card purchases of its employees
+6. Departments shall formulate specifications or the scope of work, including any pre-
+qualification requirements, for competitive bids or requests for proposals or qualifications,
+to include any terms and conditions specified in related funding documents (i.e. Federal
+and State grant funding).
+7. Departments will verify, when a low bidder proposes an equal item to that specified, that
+the equal is in fact a comparable item and will provide documentation of such to the
+Purchasing Division.
+
+VENDOR POLICIES
+1. Full and Open Competition
+It is the intent of the City to provide all vendors, with the exception of those on the
+State Department of Management Services Convicted Vendor List, with a fair and
+impartial opportunity in which to compete for the City's business.
+
+2. Public Entity Crime: Denial and Revocation of Rights
+In accordance with F.S. 287.133, any entity listed on the State Department of
+Management Services Convicted Vendor List shall be denied the right to conduct
+business or render any type of service for any City Department to the extent
+required by the debarment, suspension, or other determination of ineligibility by the
+State.
+3. Suspension and Debarment
+A. Suspension. After consultation with the City Attorney and the Logistics
+Director, the Purchasing Manager is authorized to suspend a vendor from
+consideration for award of contracts if there is probable cause to believe that
+
+--- PDF page 16 ---
+16
+the vendor has engaged in any activity which might lead to debarment
+pursuant to section (C) below. The suspension shall be for a period not to
+exceed six (6) months.
+B. Debarment. After reasonable notice and an opportunity for the suspended
+vendor to be heard, the City shall either debar such vendor or terminate the
+suspension. The debarment should be for a period of not more than three
+(3) years.
+C. Grounds for debarment include:
+(1) Entry of a plea of guilty, or no contest, or nolo contendere to, or
+conviction of a criminal offense as an incident to obtaining or
+attempting to obtain a public or private contract or subcontract, or in
+the performance of such contract or subcontract; or
+(2) Entry of a plea of guilty, no contest, nolo contendere to, or conviction
+under State or Federal statutes of embezzlement, theft, forgery,
+bribery, falsification, or destruction of records, receiving stolen
+property, or any other offense indicating a lack of business integrity
+or business honesty; or
+(3) Entry of a plea of guilty, no contest, or nolo contendere to, or
+conviction under State or Federal antitrust statutes arising out of the
+submission of bids or proposals; or
+(4) Violation of contract provisions, as s et forth below, the character
+which is regarded by the City to be so serious as to justify debarment
+action:
+a.) Deliberate failure without good cause to perform in
+accordance with the specifications or within the time limit
+provided in the contract; or
+b.) A past record of failure to perform or of unsatisfactory
+performance in accordance with the terms of one or more
+contracts.
+(5) Having been adjudicated guilty of any violation of the City of Panama
+City Municipal Code and/or Land Development Regulations or the
+State of Florida Construction Industry Licensing Department within
+the past twelve (12) month period prior to the time of bid submittal;
+or
+(6) Having been adjudicated guilty by the City of Panama City Municipal
+Code or the Department of Environmental Protection of any violation
+of an environmental ordinance within the past six (6) month period at
+the time of bid submittal; or
+(7) Having been disqualified or found non- responsive, based on the
+vendor’s fraud or disqualification; or
+(8) Having been adjudicated insolvent, having proceedings in
+bankruptcy instituted against it, or having a receiver or trustee
+appointed over its property; or
+(9) Being in a proceeding (i.e., court proceeding, arbitration, or
+administrative proceeding) adverse to the City arising from or related
+to the vendor’s performance of a contract with the City, or having
+
+--- PDF page 17 ---
+17
+unresolved financial claims pending by or against the City for a
+period of more than sixty (60) days; or
+(10) Having been suspended or debarred by any other government entity;
+or incurred any fines or penalties from the FDEP, EPA or OSHA.
+(11) Any other cause the City of Panama City determines to be so serious
+and compelling as to affect responsibility as a City vendor, including,
+but not limited to, debarment by another governmental entity.
+D. Notice of decision. The City Manager or designee shall issue a written
+notice to the vendor of the decision to debar or suspend. The final decision
+shall state the reasons for the action taken and inform the debarred or
+suspended person or entity involved of their rights concerning judicial
+review by certiorari appeal to the Fourteenth Judicial Circuit Court in and
+for Bay County. The written decision shall be mailed or otherwis e
+furnished immediately to the debarred or suspended vendor.
+
+4. Reinstatement
+Vendors that have been suspended from doing business with the City may be
+reinstated upon written request; however, debarred, or suspended firms shall not
+be reinstated during the period of a debarment or suspension.
+
+5. Litigation and Arbitration
+The City Staff shall not issue any Purchase Orders or contracts to any vendors
+currently involved in litigation or arbitration with City of Panama City until such time
+as a satisfactory resolution is reached with such vendors.
+
+6. Dispute Resolution
+In the event a dispute occurs between a vendor and a Department, and the dispute
+cannot be resolved, the following procedures shall apply:
+
+A. The vendor shall submit a written statement via certified mail no later than
+forty-five (45) days from the time when the invoice was submitted to the City
+specifying the nature of the dispute regarding payment of the invoice.
+B. Within five (5) business days of the receipt of the written statement
+submitted by the vendor, the appropriate Department Director or Project
+Manager shall investigate the dispute and submit a decision to the City
+Manager.
+C. Within five (5) business days of the receipt of the written decision, the City
+Manager will review the dispute and make a final decision on the matter. The
+Purchasing Manager will notify the vendor in writing, via certified mail and
+within five (5) business days of the date of the final decision.
+
+
+
+
+
+
+
+--- PDF page 18 ---
+18
+PURCHASING AUTHORITY
+Purchasing authority identifies who must approve the purchase of goods and services
+up to a dollar threshold amount and when a purchase must be brought before the City
+of Panama City Commission for approval and award.
+
+
+Department Director / Senior Manager /
+Assistant Director / Deputy Director Not to Exceed $20,000
+City Clerk - Treasurer  Not to Exceed $20,000
+Assistant City Manager Not to Exceed $50,000
+
+City Manager Not to Exceed $100,000
+
+City of Panama City Commission Over $100,000
+or Designee
+
+
+The purchasing authorities stated in this section shall apply to each individual project
+as described in a task order that is issued pursuant to a continuing professional
+services contract as defined in Section 2(g) of 287.055, Florida Statutes.
+
+CONTRACTS, LEASES AND AGREEMENTS SIGNATURE AUTHORITY*
+Assistant City Manager Agreements for up to $50,000
+City Manager Agreements for up to $100,000
+City of Panama City Commission Agreements over $100,000
+or Designee
+
+
+*All contracts, leases, and agreements, regardless of amount, must be reviewed by the
+Purchasing Division, the City Attorney or designee and the City Manager or designee
+prior to signature. All continuing professional services contracts as defined in Section 2
+(g) of 287.055, Florida Statutes, shall be approved by the City Commission.
+
+--- PDF page 19 ---
+19
+PURCHASING CATEGORIES: REQUIREMENTS
+The following categories establish requirements for purchases by amount (exclusive of
+RFP and Request for Qualifications). Each order must be signed by the appropriate
+approval authority.
+
+Orders up to $3,499.99 • Purchase Order - a written
+estimate or quote is required
+for purchase verification.
+OR
+• P-Card – receipt required or in
+accordance with the P-Card
+Policy herein.
+• Best practices should be
+implemented and used to
+ensure a comparable price.
+Orders $3,500 up to $100,000
+• Minimum Quote Certification
+Form with three (3)
+comparative quotes in
+digital or written form from
+separate vendors are
+required.
+• Purchase Order
+Orders over $100,000
+• Competitive Solicitation
+Procedures required.
+• Purchase Order
+
+--- PDF page 20 ---
+20
+EXCEPTIONS
+
+EMERGENCY PURCHASES
+
+Emergency: An immediate need for equipment, services, or commodities, the lack of which would cause
+a disruption of essential operations where the protection or preservation of public properties or interests
+would not be possible through normal purchase procedures or where there exists a threat to public health,
+welfare, or safety.
+An emergency condition, as determined by the City Manager or designee, in consultation with the City
+Attorney and City Clerk, is one that creates an immediate and serious need for materials, services, or
+construction that cannot be met through normal purchasing methods and that seriously threatens the
+functioning of the City or the protection of property or the health or safety of any person.
+Emergency purchases are for critical, unforeseen government needs. Because the City’s ability to serve the
+public would be impaired if purchases are not made immediately, emergency purchases are exempt from
+standard purchasing procedures.
+When an emergency occurs, the need for quotes will be eliminated; however, a written explanation must
+be indicated on the purchasing request or memorandum that follows.
+1. If the product or service is under $200,000, obtain the City Manager’s authorization. Once authorization
+has been received, submit a request to the Purchasing Division and obtain a Purchase Order, call
+the vendor to initiate services or arrange taking possession of equipment or commodities.
+Immediately or as soon as feasible, submit a copy of the invoice, delivery ticket and/or the irregular
+purchase form to the Purchasing Division.
+2. In the event the emergency expenditure exceeds $200,000, follow the same procedures outlined in
+item 1 above, and prepare an agenda item and/or resolution for City Commission approval prior to
+payment for the products or services purchased.
+3. In extreme cases involving a disaster, an emergency declaration will be made. Every reasonable
+effort will be made to ensure purchases will be documented through proper City, State, or Federal
+forms, or memorandum. Refer to Disaster Procurement Policy section below.
+An emergency created through neglect will not be processed as an emergency. Examples of such
+neglect include, but is not limited to:
+1. Depletion of stock due to lack of planning.
+2. Building or equipment needing repairs for some time, suddenly becoming an emergency repair.
+3. Orders of materials for projects, most of which must be planned weeks or months ahead of time and
+requested just before desired use.
+
+DISASTER PROCUREMENT POLICY (FEDERAL)
+1. PURPOSE - This policy modifies the City of Panama City’s normal purchasing/procurement practices
+to assure that, in both emergency and exigent circumstances caused by a proclaimed disaster or
+emergency condition, the City is able to acquire the goods and services required to address an
+immediate threat to life, public health, or safety, or to eliminate/reduce an immediate threat of
+significant damage to improve public and private property through cost-effective measures while still
+maintaining an effective purchasing process and complying with applicable local and state purchasing
+
+--- PDF page 21 ---
+21
+laws. Where the City is included in a major disaster or emergency declared by the President of the
+United States, this policy also assures that City procurements comply with Federal regulations
+applicable to FEMA disaster grant reimbursement as defined in Title 2 of the Code of Federal
+Regulations, Part 200. (2CFR Part 200)
+
+2. DEFINITIONS:
+For the purposes of this policy,
+A. A proclaimed disaster or emergency exists if the Governor of Florida has declared a state of
+emergency for an area which includes the geographic territory of the City of Panama City; or
+B. The Chief Executive Officer (Mayor, City Manager, or designee) of the City of Panama City
+has declared an emergency in the City.  Exigent Circumstances are short-lived situations in
+which:
+(1) A disaster or emergency has been proclaimed,
+(2) The public exigency for goods and services required to address an immediate threat to
+life, public health, or safety, or to eliminate/reduce an immediate threat of significant
+damage to improved public and private property through cost-effective measures, will
+not permit competitive solicitation.
+3. DELEGATIONS OF PURCHASING AUTHORITY IN EXIGENT CIRCUMSTANCES
+A. Delegation - If the City Manager determines that goods and services must be purchased before
+the City Commission is able to assemble and approve purchases, the City Manager has the
+authority, subject to the limitation set forth in subparagraph a(i) and a(ii), to approve the
+immediate rental or purchase of any equipment, supplies, services or other items necessary
+to respond to an immediate threat to life, public health, or safety, or to eliminate/reduce an
+immediate threat of significant damage to improved public and private property through cost-
+effective measures.
+(1) Limits of Single Purchase Authority - The City Manager, shall have the authority to
+make individual purchases of up to $200,000 on their signature alone.
+(2) Limits of Aggregate Purchase Authority - The City Manager shall have the authority
+to make aggregate purchases of up to $500,000 on their signature alone.
+B. Sub-Delegation to the Assistant City Manager - The Assistant City Manager shall be a
+designee of the City Manager at any time that the City Manager is not available to approve
+purchases as allowed in this section.
+C. Sub-Delegation of Purchasing Authority - If neither the City Manager or the Assistant City
+Manager is available, the following department heads have authority to rent or purchase from
+the nearest available source any equipment, supplies, services, or other items necessary for
+this or the department to respond to an immediate threat to life, public health, or safety, or to
+eliminate/reduce an immediate threat of significant damage to improved public and private
+property through cost-effective measures, up to a maximum of $200,000.
+(1) Department Heads:
+Police Chief
+Fire Chief
+Public Works Director
+Logistics Director
+
+--- PDF page 22 ---
+22
+4. ADMINISTRATIVE PROCEDURES: Reporting Requirements.
+A. As soon as possible after purchases are made, the City Manager, Assistant City Manager, or
+Department Director shall submit to the Purchasing Manager a request and a notation that
+the commodity has been ordered on an emergency basis or in exigent circumstances from
+the vendor designated.
+B. The Purchasing Manager will inform the City Manager, the Logistics Director, the City Attorney,
+and the City Commission of any individual purchase under this section with a contract amount
+greater than $100,000, and also whenever the aggregate of purchases under this section is
+greater than $250,000.
+C. The Purchasing Manager will obtain the City Manager's (or Assistant City Manager as the City
+Manager’s designee) approval prior to any purchase by a department head if the amount is
+$100,000 or more.
+D. If the City Manager/Assistant City Manager is unavailable, and the delay in getting their
+signature would imperil life, safety, or improved property, any of the department heads as
+listed in 3(C)(1) above may approve the emergency purchase of $250,000 or more.
+E. The Purchasing Manager shall have the authority to approve all disaster -related purchases
+under $100,000.
+F. The Purchasing Manager will expedite the verification of funds available and complete the
+preparation of the purchase order.
+
+5. PURCHASING PROCEDURES IN EXIGENT CIRCUMSTANCES
+Upon receipt of requisitions under Section 3, the Purchasing Manager shall prepare purchase orders
+for the emergency equipment, supplies, services, or other items in accordance with the requirements
+of this section.
+A. Exempt Purchases - Purchases below $100,000 shall not be required to be formally bid.
+Purchases greater than $100,000 may be made following the procedures specified in this
+section. The signature(s) of the City Manager, Assistant City Manager, Purchasing Manager,
+and/or Department Director are still required as provided in Section 3.
+B. Justification of Sole Source or No-bid Contracts - Where exigent circumstances require
+immediate purchase from the nearest available source. Federal procurement requirements
+apply to sole-sourcing or No-bid contracts even under exigent or emergency circumstances.
+Those requirements include:
+(1) Contracts must include the required contract clauses (2 C.F.R. § 200.326 & Appendix
+II)
+(2) Contracts exceeding the Federal simplified acquisition threshold ($250,000) must
+include the Federal bonding requirements if the contract is for construction or facility
+improvement (2 C.F.R. § 200.325).
+(3) Contracts must be awarded to a responsible contractor (2 C.F.R. § 200.318(h)).
+(4) The City must complete a cost or price analysis to determine whether the cost or price
+of the contract is fair and reasonable if the contract exceeds or is expected to exceed
+the Federal simplified acquisition threshold (2 C.F.R. § 200.323(a) and (b)).
+(5) The
+ use of cost-plus-percentage-of-cost contracting is prohibited (2 C.F.R. §
+
+--- PDF page 23 ---
+23
+200.323(c)).
+(6) Use of time and materials contracts must comply with 2 C.F.R. § 200.318(j).
+(7) The City must follow documentation, oversight, and conflict of interest requirements
+among other general procurement requirements in 2 C.F.R. § 200.318. If a conflict of
+interest is unavoidable due to the exigent/emergency circumstances, the City must
+explain that in the procurement documentation.
+C. The Purchasing Manager shall use the "Justification Form for Emergency Sole Source or
+No-Bid Purchase" to document Federal requirements are met.
+Purchasing should be limited to that portion of the work that must be performed
+immediately, allowing subsequent procurement by competitive proposals of the
+remainder of the work.
+“Sole source” or “no-bid” acquisitions shall be necessary for one of the following
+reasons: placement of emergency protective measures, procurement of scarce
+commodities, goods, or services, or acquisition or rental of emergency equipment,
+emergency consulting services, emergency road clearance or other emergency
+requirements.
+6. Provision for Alternate Bid Solicitation Procedures – The City's normal requirements for sealed
+bids shall not apply to acquisitions under this Section. However, the Purchasing Manager shall
+conduct written, telephonic, or other electronic bid solicitation from potential vendors or suppliers, in
+lieu of sealed bids, in an effort to obtain multiple competitive proposals when and if time allows in
+light of the exigent circumstances.
+7. Locations of Postings for Request for Proposals or Invitation to Bids – The Purchasing
+Manager may waive normal requirements for public posting of requests for proposals or solicitation
+of bids. Notices soliciting bids or requests for proposals shall be posted at City Hall if practical.
+8. Length of Time for Posting Requests – The Purchasing Manager may shorten the normal bid
+period to expedite the award of contracts for emergency equipment, goods, or services. The
+Purchasing Manager should seek to assure that the shortened bid period allows multiple suppliers
+to submit bids.
+9. Number of Bids Required – Solicited bids that are non-responsive shall count towards the minimum
+number of bids required when there is a declared emergency or disaster in the Jurisdiction. All such
+no-bids must be documented as to time, date, and person/company contacted, with a reason for no-
+bid, if possible.
+10. NOTIFICATION AND RATIFICATION
+A. Posting of Contracts and Awards – Under this section, all contracts awarded that exceed
+$200,000 shall be presented to the City Commission for ratification and publicly posted within
+sixty (60) calendar days.
+B. Authority to Cancel Emergency Procurements – The City has the absolute authority to
+rescind a contract for non- performance within twenty -four (24) hours when a contractor or
+vendor, once awarded a contract, is unable to perform under the terms of the contract and
+the resulting delay or non-performance presents an immediate threat to life, public health, or
+safety, or an immediate threat of significant damage to improved public and private property.
+C. Notification Requirement for Emergency Purchases – For any purchase in excess of
+$100,000, but less than $200,000, the P
+ urchasing Manager shall report all such purchases,
+through the City Manager, to the City Commission within sixty (60) calendar days of the onset
+of the disaster.
+
+--- PDF page 24 ---
+24
+D. Requirement for Separate Invoicing - All purchases or rentals made during proclaimed
+emergency or disaster conditions shall require separate invoicing from routine (non-disaster
+related) purchases. All invoices shall state the goods, services or equipment provided and
+shall specify where the goods or services were delivered. All invoices shall specify the
+locations where the goods or services were used, if possible.
+E. Auditing of Invoices for Debris Clearance Prior to Payment - All invoices for debris
+clearance and removal shall be audited by the City prior to payment to the vendor. Vendors
+shall be notified of this requirement prior to the awarding of any contract for debris clearance
+and/or removal. Audits shall be in accordance with procedures for debris removal monitoring
+specified in FEMA’s Publication 325, Debris Management Guide.
+F. Limitations of Disaster Purchasing Policy - For the purposes of this section, an
+emergency or disaster shall be deemed to exist when a condition exists that presents an
+immediate threat to life, public health, or safety, or to eliminate/reduce an immediate threat
+of significant damage to improved public and private property through cost -effective
+measures and a local emergency or disaster has been proclaimed. Any purchases that do
+not meet the standard of being necessary for responding to an immediate threat to life, public
+health, or safety, or to eliminate/reduce an immediate threat of significant damage to
+improved public and private property shall follow the City's regular purchasing provisions.
+Notwithstanding the terms of this policy, nothing contained herein shall conflict with Federal
+procurement regulations as currently defined in 2 CFR Part 200.
+
+11. OTHER EXCEPTIONS:
+Items approved by the City Commission as a budget line item do not require approval if purchased
+from a State Term Contract or other authorized cooperative agreement that has been competitively
+procured.
+
+EXEMPTIONS
+The following exemptions do not preclude the City from utilizing competitive purchasing or
+procurement practices. The following types of purchase activities shall be exempt from the
+purchasing guidelines:
+1. Purchasing contracts between the City of Panama City and non- profit organizations, other
+governments, or other public entities.
+2. Purchasing of dues and memberships in trade or professional organizations.
+3. Purchases made from petty cash accounts under $50.
+4. Any purchase under the State of Florida purchasing agreements and contracts. Purchases may
+also be through contracts competitively awarded by counties or municipalities within the state if the
+vendors agree to provide City of Panama City the same goods or services, under the same
+conditions, terms, and prices.
+5. Purchase of goods and services as part of the process of apprehending persons suspected of
+violating the law.
+6. Books, periodicals, and other published materials not available by competitive pricing.
+7. Services of attorneys and other legally related services, including legislative consultants. Contracts
+for attorney services and other legal services shall be secured by negotiation of the City Attorney
+as approved by the City of Panama City Commission.
+
+--- PDF page 25 ---
+25
+8. Appraisers and expert witnesses, and similar services; sale, acquisition, or lease of real property;
+real estate brokers; title insurance, abstracts or opinions or title commitments; surveys in
+connection with acquisition, sale, or lease of real property. Contracts for these services shall be
+negotiated by the City Manager or the City Attorney and approved by the City of Panama City
+Commission.
+9. Real Estate Purchase Agreements in which the City is acquiring an interest in real property for less
+than the appraised value.
+10. Service/Maintenance Contracts: Continuing service and/or maintenance contracts that are initially
+awarded by the City as part of a product acquisition/installation to a vendor who is the manufacturer,
+developer, or who is the authorized service agent thereof and for which funds are annually
+appropriated in the budget , are exempt from further competitive requirements. Examples are
+software/hardware maintenance, building systems maintenance, security systems, etc.
+11. Software, upgrades, software modification services by the copyright holder, and related software
+enhancements to installed software purchased through competitive means are exempt. The
+purchase of new software packages or systems or any related hardware shall follow the thresholds
+and procedures of the policy to ensure competitive selection and receive advance approval  from
+the Information Technology (IT) Division Manager or designee.
+12. Pharmaceutical products and health services involving examination, diagnosis, treatment,
+prevention, medical consultation, or administration. Including, but not limited to, substance abuse
+and mental health services, involving examination, diagnosis, treatment, prevention, or medical
+consultation, when such services are offered to eligible individuals participating in a specific program
+that qualifies multiple providers and uses a standard payment methodology. Reimbursement of
+administrative costs for providers of services purchased in this manner shall also be exempt. For
+purposes of this sub- subparagraph, “providers” means health professionals, health facilities, or
+organizations that deliver or arrange for the delivery of health services.
+13. Training and educational courses, meeting rooms, and hotels; continuing education events or
+programs; and lectures by individuals.
+14. Advertisements; works of art for public display; performances, shows or other cultural events.
+15. Payroll, personnel, full or part-time, whether in the classified service or not.
+16. Water, sewer, gas, electrical, cable television, telephone, fiber, or other utility services.
+17. Agreements between the City and other entities for grants and incentive programs approved by
+the City of Panama City.
+18. Travel arrangements and expenses.
+19. Petroleum products (fuel and oil).
+20. Procurement of general accounting services and banking services for any bond or loan issuance,
+refund, or other related activities.
+21. Purchases of insurance coverages for the City.
+22. Purchases made with the proceeds from any grant, gift, bequest, or donation to the extent the
+application of this chapter would conflict with the requirements, conditions, or limitations attached
+to the grant, gift, bequest, or donation.
+23. Any other professional service or consulting service that does not require procurement by State
+Statute or have State and Federal grant requirements.
+These exemptions shall not apply to any purchase governed by explicit provisions of general law
+or other City ordinance or policies unless the solicitation indicates the applicability of the
+exemption, and the exemption shall apply only to the extent set out in the solicitation.
+
+--- PDF page 26 ---
+26
+GRANT FUNDED PROCUREMENT AND CONTRACTING
+This procedure shall be a general guideline for externally funded purchases and sub- recipient contracts.
+Funding sources may include State and Federal grants. Recognizing that each grant will have its own
+terms, conditions and contingencies, the guideline below is not inclusive of all requirements or steps that
+may be required of the user Department (or any of its Divisions) for regulatory compliance. Awarded grants
+must be accepted and approved by the City Commission as well as any accompanying budget
+amendments before Departments may begin executing any procurement of good or services.
+1. DEPARTMENTAL PRE-PROCUREMENT/CONTRACTING ACTIVITIES
+A. Grant applications shall be the responsibility of the user Department.
+B. The Department shall conduct analysis to determine if the contract relationship is a
+Contractor/Supplier or Sub-Recipient. This analysis shall be based on program requirements
+and regulatory definitions (if applicable). Concurrence from the City Attorney is strongly
+encouraged to ensure the appropriate contract format is selected.
+2. SUBMITTAL REQUIREMENTS - DOCUMENTATION
+A. It is the Department’s responsibility to understand the grant and to communicate special
+requirements impacting purchasing/contracting to the Purchasing Division. The Department
+shall be particularly aware of prohibited practices, sole source, and emergency limitations. All
+requirements impacting the purchase shall be communicated to the Purchasing Division at
+the time of submittal.
+B. For any federally assisted construction contract, the Department shall provide a Davis-Bacon
+Prevailing Wage Validation.
+C. Departments shall factor the following into their analysis:
+(1) The competitive thresholds associated with Federal procurements are distinct from the
+City’s competitive thresholds.
+(2) Geographic requirements may be disallowed.
+(3) Additional marketing to small or disadvantaged business segments may be required.
+(4) Sole sources and emergencies may be subject to the validation/approval of the external
+funding source.
+(5) In procurements where Federal grant funds are a consideration and the contract value
+exceeds $10,000, the non-Federal entity must negotiate profit as a separate element
+of the price for each contract in which there is no price competition and, in all cases,
+where cost analysis is performed, including but not limited to all contract modifications.
+To establish a fair and reasonable profit, consideration must be given to the complexity
+of the wo rk to be performed, the risk borne by the contractor, the contractor's
+investment, the amount of subcontracting, the quality of its record of past performance,
+and industry profit rates in the surrounding geographical area for similar work. A cost
+analysis may be required to accompany a Sole Source Procurement unless otherwise
+waived by the Funding Agency.
+
+--- PDF page 27 ---
+27
+(6) Pre-qualification may be disallowed.
+(7) Piggybacking is disallowed.
+(8) Compliance with Davis -Bacon Prevailing Wage determinations may be required for
+construction projects.
+(9) Cost-plus pricing structure may be disallowed.
+(10) Brand specific requirements and/or standardizations may be disallowed.
+
+(11) Adequate competition, as defined by the funding source, may not consider “no-quotes”
+as quotes and may specify a minimum number of responses.
+(12) For federally funded procurements only, the City must take all necessary affirmative
+steps to assure that minority businesses, women's business enterprises, and labor
+surplus area firms are used when possible. Affirmative steps will include:
+
+a.) Placing qualified small and minority businesses and women's business
+enterprises on solicitation lists , thereby assuring that small and minority
+businesses, and women's business enterprises are solicited whenever they are
+potential sources;
+b.) Dividing total requirements, when economically feasible, into smaller tasks or
+quantities to permit maximum participation by small and minority businesses,
+and women's business enterprises;
+c.) Establishing delivery schedules, where the requirement permits, which
+encourage participation by small and minority businesses, and women's
+business enterprises;
+d.) Using the services and assistance, as appropriate, of such organizations as the
+Small Business Administration and the Minority Business Development Agency
+of the Department of Commerce; and
+e.) Requiring the prime contractor, if subcontracts are to be let, to take the
+affirmative steps listed above.
+3. COMPLIANCE REQUIREMENTS
+A. Departments shall be responsible for:
+(1) Complying with cost principles for the initial procurement and all change orders.
+(2) Development of independent estimates, if applicable.
+(3) Development of price analysis/cost analysis, if applicable.
+(4) Providing the Purchasing Manager with any Notices of Award, after-the-fact conditions
+or Modification of Award documents for the life of the grant.
+(5) Monitoring sub-recipients.
+(6) Risk Assessments.
+(7) Producing outcomes.
+
+--- PDF page 28 ---
+28
+(8) Grant file close-out.
+(9) All non-procurement related deliverables and requirements of the grant.
+(10) Compliance with all City of Panama City administrative regulations concerning grants
+and contract administration as well as processing of all budget amendments and
+agenda requests.
+
+AUTHORITY TO SETTLE CERTAIN TYPES OF CLAIMS
+1. The City Manager, in addition to any authority previously delegated to them, is hereby delegated
+authority to negotiate and compromise settlements of routine claims, litigation, administrative matters
+and liens, for and against the City of Panama City, with outside parties, and to execute releases and
+satisfactions of judgments and other liens so long as the payment by the City from non-  insurance
+proceeds does not exceed his/her purchasing authority. These settlements include, but are not
+limited to:
+
+A. Attorney's fees and court cost claims arising from actual or potential litigation;
+B. Real property actions, such as eminent domain, inverse condemnation, property, and
+easement acquisition;
+C. Contract disputes;
+D. Garnishment actions;
+E. Billing and collection disputes with customers or suppliers of goods and services;
+F. Compromise of bankruptcy claims;
+G. In the context of mortgage foreclosure cases, liens for lot-clearing, code enforcement
+violations, other civil fines, and judgments of record;
+H. Settlements of claims or litigation;
+I. Releases of paid assessment and time payment agreement liens;
+J. Claims, suits or demands based on employment or civil rights laws;
+K. Permit fee disputes; and
+L. Tort and workers' compensation claims.
+2. Regarding claims against the City of Panama City, the above-delegated authority is limited to cases
+or situations where a claimant has or appears to have plausible allegations and as to which the City
+has or may have exposure to liability under the law and as to which the amount in controversy does
+not exceed $1,000,000.00.
+
+3. The City Manager may further delegate the authority granted in this section to members of their staff,
+which must be done in writing.
+
+4. The City Manager shall present any proposed settlement of amounts exceeding the above limit to
+the City Commission for approval.
+5. The City Manager may include a summary of settlements made under this delegated authority to the
+City Commission in an annual report.
+
+--- PDF page 29 ---
+29
+PURCHASE ORDER PROCESS
+A purchase order is required for the purchase of goods and services for $3,500 or more, unless
+the purchase of goods or services is governed by a written contract or exempt from issuing a
+purchase order as authorized by this manual.
+
+1. A purchase order to purchase goods and services must have the appropriate documentation and be
+approved by the appropriate authority level before the Purchasing Division will facilitate the purchase
+order process. The following information shall be provided with the purchase order:
+
+A. Name, Department, and individual requesting materials.
+B. Vendor name (if a new vendor, the Department will assist the Purchasing Division to
+establish a new vendor account with the Accounting Department).
+C. Fund/account number.
+D. Total amount of order.
+E. Contract and proposal number (if applicable).
+F. Department purchasing authority signature.
+G. Quantity, unit size, catalog or part number, description, unit cost, and total cost of items.
+H. Remarks (in body of requisition) - this is for further breakdowns in fund/budget/line-item
+numbers and any special "ship to", "bill to", or project information.
+I. Complete Deliver To line and Delivery Date desired.
+J. All back up documentation to substantiate the costs including but not limited to quotes
+(if applicable), notes and/or other documents.
+2. The purchase order request is completed by the requesting department and entered into New World
+or the current financial management system in effect.
+3. Any software or computer-related purchase (hardware or software) must be pre-approved by the IT
+Manager or designee. Unapproved software will be blocked from City computers.
+4. Distribution of purchase order copies will be emailed by the Purchasing Division once final approval
+has occurred.
+5. The splitting of purchases, to circumvent the above purchase limits, shall be avoided without
+exception.
+
+AFTER-THE-FACT PURCHASES
+Any purchase made outside the City’s Purchasing Policy and prior to the issuance of a purchase order
+or required approval is considered an after-the-fact purchase.
+
+PROCEDURES
+1. All bidders are on notice not to perform any service or deliver any commodities without a duly
+authorized Purchase Order.  The City is not liable for payment of any commodities or services
+received without a Purchase Order.
+2. Purchasing Division will include language on each Purchase Order that commodities or services
+provided without a purchase order will not be an obligation of the City.
+3. If a purchase exceeding the established procurement single transactions limit occurs outside of the
+standard purchasing process and ratification of the purchase is sought, the requesting department
+
+--- PDF page 30 ---
+30
+must submit to the Purchasing Division a written memorandum signed by the Department Director
+containing the following information.
+A. The circumstances that resulted in an after-the-fact purchase.
+B. The necessity of the purchase and its public purpose.
+C. Evidence that the price charged was fair and reasonable and,
+D. Actions taken by the department to preclude recurrence of the after-the-fact purchase.
+4. Any violation of the Purchasing Policy can result in:
+A. Revocation of purchasing authority and ability.
+B. Reimbursement from employee to the City for any personal items purchased via a
+purchase order.
+C. Individuals attending additional training by the Purchasing Division.
+5. Recurring occurrences of after-the-fact purchases will be tracked and reported to City Management.
+6. A check request form will be required with the Department Director’s signature, along w ith an
+explanation in writing as to why the purchase/procurement and/or Purchase Order process was not
+followed.
+A. Such explanation will be routed to the Purchasing Division prior to final signature
+authority.
+
+CHECK REQUESTS
+An electronic check request form must be filled out with appropriate departmental signature
+authorization and sent to the Purchasing Division. Checks will not be issued without a correctly
+completed and Accounting Department approved W-9. The execution of all signature authorizations
+will be required before payment can be rendered. These check requests will apply to the purchase
+of goods or services that are:
+1. On the exception and exemptions list.
+2. An after-the-fact purchase. (see pages 29/30)
+3. Exclusions for issuing purchase orders. (see page 31)
+4. Emergency Purchases.
+
+BLANKET PURCHASE ORDERS
+A blanket purchase order is an “open end” contract which designates one company as the supplier
+for items frequently needed by a specific department. A blanket purchase order is issued for a period
+of time no less than one quarter and not to exceed one year or beyond the current fiscal year end.
+A blanket purchase order allows a department to make multiple purchases with one purchase order
+number, limited by the time period allowed and the specified dollar amount as indicated on the
+blanket purchase order.
+
+1. It is the responsibility of the Department Director to ensure invoices or receipts are acquired and
+properly sent to the Accounting Department. All department-issued blanket purchase orders will be
+notified in writing by the Purchasing Division of the PO number, amount, and "good through"
+dates.
+2. Those departments issuing quarterly, or annual purchase orders will be asked to account for their
+expenditures on an individual basis.
+
+--- PDF page 31 ---
+31
+
+3. Blanket purchase orders should only be used for operating expenditures and may not be used for
+capital expenditures. Any purchases of capital expenditures made with a blanket purchase order will
+be denied.
+
+4. Each department must have their own blanket purchase order when purchasing from the same
+vendor for accounting purposes.
+
+EXCLUSIONS FOR ISSUING PURCHASE ORDERS
+There are certain expenditures for which the processing of a Purchase Order or contract is
+unnecessary. The following purchases may be made without Purchase Orders or contract.
+Invoices should be signed by the designated department employee.
+
+1. Utility, Telephone Bills, etc.
+2. Insurance Premiums.
+3. Interdepartmental billing such as worker's compensation premiums and other insurance premiums.
+4. Petroleum Products (Fuel-Gas/Diesel).
+
+PURCHASING QUOTES
+The purchase of goods and services, between $3,500 and up to $100,000, shall require requested
+comparative quotations from three (3) or more separate vendors, unless a specified exemption
+exists ( See Exceptions and Exemptions section). The quotations may be obtained by the
+requesting department or the Purchasing Division. Quotes must be on company letterhead, quote
+forms, or in a similar format with a date and signature of an authorized representative of the
+department or vendor. Before any order is placed, an approved purchase order must be obtained,
+and appropriate signatures are required.
+If requesting department cannot obtain three (3) separate quotes from three (3) separate qualified
+vendors, a Minimum Quote Certification Form (See Exhibit B) will need to be completed, signed
+by the Department Director, Senior Manager, Assistant Director, or Deputy Director and attached
+in New World, or the financial management system in effect at the time, to the purchase order
+request.
+
+COMPETITIVE SOLICITATIONS
+1. The requesting department, in conjunction with the Purchasing Division, will determine which
+competitive procurement method is most practical and advantageous to the City.
+
+Those methods may be by:
+A. Invitation to Bid. (ITB)
+B. Request for qualifications pursuant to Consultant’s Competitive Negotiation Act
+
+--- PDF page 32 ---
+32
+(CCNA) or those not governed by the CCNA.
+C. Request for proposals. (RFP)
+D. Sole source procurement.
+E. Design-build services contract in accordance with the CCNA and after coordination
+with the City Manager or designee.
+F. Request for qualification for construction management at risk services; or
+G. Multi-step bidding, including pre-qualification of respondents, if necessary or required.
+
+2. Goods and services produced in the United States will be given preference when all other
+aspects in the bid selection process are equal.
+3. It will be the objective of the City of Panama City to consolidate for purchase and bidding, all
+goods, and services of a similar nature.
+4. The City of Panama City is an Equal Opportunity Employer. To the extent permitted by law, as
+a condition of conducting business with the City, all individuals or organizations desiring to do
+business with the City shall have an Equal Opportunity Employment Policy consistent with
+state and federal law.
+5. All competitive solicitations should include the following provisions:
+“The City of Panama City reserves the right to accept or reject any and all bids,
+proposals, competitive or otherwise, in whole or in part, to waive minor
+informalities in the solicitation documents, to obtain new bids,  or to postpone
+the bid opening pursuant to the City's purchasing policies as they may deem in
+the best interest of the City.”
+A. The period of time responses are valid after the date of the opening.
+B. Public Entity Crimes Statement pursuant to Section 287.133(3)(a), Florida Statutes.
+C. The number, duration and condition of any intended renewal periods.
+D. If predictable, an estimated time for contract award.
+E. The basis for award.
+F. Procedures to award when tie bids are received.
+G. All other requirements of the solicitation or related funding agreements.
+6. The requesting department, in conjunction with the Purchasing Division, will formulate
+specifications.
+7. The requesting department shall provide cost estimates to the Purchasing Division.
+8. The Purchasing Manager will be advised if funds are available. If funds are not available, the
+requesting department is responsible for requesting any fund transfers and for notifying the
+Purchasing Division when completed (as soon as possible).
+9. Federally funded projects will follow Federal procurement standards in the “Uniform
+Administrative Requirements, Cost Principles and Audit Requirements for Federal Awards”, 2
+C.F.R. Sections 200.213 and 200.317-326.
+10. The Purchasing Division shall determine the date, time, and location for submitting bids, as
+well as the date, time and location of the Public Bid Opening.
+11. The Purchasing Division will advertise the request for bids on the Bay County Public Notice
+Website, the City’s website and may advertise on third-party bid solicitation ser vice(s), at
+least ten (10) calendar days prior to when vendor(s) are required to respond. Projects
+projected to be valued at over $200,000 will be advertised for  at least twenty-one (21) days
+prior to responses being due. Projects projected to be valued at  over $500,000 will be
+advertised for at least thirty (30) days prior to responses being due. The Purchasing Division
+is responsible for determining the proper advertisement requirements and adhering to those
+
+--- PDF page 33 ---
+33
+requirements. See Florida Statute 255.0525 and Florida Statute 50.0311 for publication of
+advertisements on a publicly accessible website in lieu of publication in a newspaper of
+general circulation.
+12. The Purchasing Division will distribute bid documents.
+13. If a bid or proposal requires payment for a copy of the bid or proposal, the Purchasing Division
+shall collect such payment before releasing a copy of the bid or proposal package.
+14. Acceptance and Evaluation. Responses shall be accepted without alteration or correction,
+except as authorized in this manual. Responses shall be evaluated based on the
+requirements set forth in the solicitation document, which may include, but are not limited to,
+criteria to determine acceptability such as: inspection, testing, quality, recycled or degradable
+materials content, workmanship, delivery, and suitability for a particular purpose and/or
+factors to determine a respondent’s level of responsibility such as references, work history,
+bonding capacity, licensure, certifications, etc. Those criteria that will affect the price and that
+are to be considered in evaluation for award shall be objectively measured, such as
+discounts, transportation costs, and total or life- cycle costs. No criteria may be used in an
+evaluation that is not set forth in the solicitation, or in this manual.
+15. After the opening, the Purchasing Division will notify any respondents of any informalities in
+their response. They will have twenty-four (24) hours from the time of the notification to furnish
+the requested information to the Purchasing Division. If the opening is on a Friday, they will
+have until Monday (5:00pm CT) to reply. If no response is received within twenty -four (24)
+hours of the notification, the package will be deemed non-responsive.
+16. The requesting department will attend the opening and will review the submitted responses
+to ascertain the responsive, responsible respondent in accordance with the solicitation
+document that provides the best value to the City. All responses will be opened in public, and
+prices will be read aloud by the Purchasing Division, as applicable to the solicitation.
+17. The Purchasing Division or the requesting department will place the item on the Commission
+agenda for approval if amounts exceed $100,000 or otherwise as required by law, statute, or
+the Municipal Code.
+18. The Purchasing Division will post the award decision, and issue a Notice of Award, when
+necessary, after the bidding and selection process is totally complete.
+19. The Purchasing Division, in conjunction with the requesting department, is responsible for
+conducting any pre-construction meeting, if necessary, and issuing a Notice to Proceed after
+the full execution of any contract or agreement for a project that has been approved by the
+City Attorney or designee.
+20. Solicitations may be canceled or rejected in whole or in part when it is in the best interest of
+the City, as determined by the City Manager or designee. Notice of cancellation shall be
+posted on the City website. The notice shall identify the solicitation, and, where appropriate,
+explain that an opportunity will be given to compete on any re- solicitation or any future
+procurement of similar items.
+21. If less than two (2) responses are received in response to a solicitation, the Purchasing
+Manager and/or the Logistics Director may negotiate, in coordination with the City Attorney,
+on the best terms and conditions. The Purchasing Division shall document the reasons that
+such action is in the best interest of the City in lieu of resoliciting.
+
+
+
+
+
+--- PDF page 34 ---
+34
+
+WRITING SPECIFICATIONS – INVITATION TO BID
+1. Solicitations must include specifications that are clear, accurate, and complete. Unnecessarily
+restrictive specifications or requirements that might unduly limit the number of bidders or
+proposals are prohibited. The solicitation should include all documents, whether  attached or
+incorporated by reference, that are elements of the specifications and requirements for the
+solicitation.
+2. Specifications are written descriptions of needed supplies, equipment, or services, clearly and
+concisely set out in the solicitation along with other material elements of the particular project.
+Alternative specifications are highly discouraged.
+3. There are several types of specifications that can be considered:
+
+A. Performance Specifications
+(1) The results of the product are more important than the product itself.
+(2) Specific end product capabilities, not method of construction.
+B. Descriptive Specifications
+(1) Describes precisely what is needed.
+(2) Covers every detail to the end product.
+C. Brand Name Specifications
+(1) Specified by manufacturers name and model number.
+(2) A product has been determined desirable based on past performance.
+
+D. Closed Specification
+(1) Two general types.
+a) Single Product - e.g., HP computers
+b) Multi product - e.g., HP computers, Dell computers
+(2) General brand name specifications.
+E. Open Specifications
+(1) All manufacturers whose product meets the performance or description specified
+may bid.
+(2) All performance specifications and all descriptive specifications are open
+specifications.
+(3) Brand name specifications are open specifications if the phrase “or equal” is
+added.
+(4) The phrase “or equal" establishes the brand name as a standard, and all
+equal products are acceptable.
+F. Reference Specifications
+(1) The item desired is referred to by a number as established in a published
+specification or standard.
+(2) Should use national specifications and standards.
+(3) Be sure to read and understand what is referenced.
+(4) A reference specification may include a number of different items. Be specific.
+
+--- PDF page 35 ---
+35
+G. Combination Specifications
+(1) Not possible to combine open and closed specifications.
+(2) Can combine performance, descriptive, and reference specifications.
+(3) Used in describing a product that must meet both physical and performance
+criteria.
+(4) Be positive the combination will produce the desired result.
+
+4. The requesting department and the Purchasing Division are responsible for ensuring that
+the specifications include the following elements:
+A. Description of the item to be purchased or a sufficient explanation of the services to
+be procured.
+B. Dimensions, tolerance, and performance expected of the item.
+C. Reference to a sample, if any.
+D. Bid price is to include net delivered price or no separate charges for delivery or other
+hidden cost.
+E. The estimated quantity to be furnished by the vendor.
+F. Time and place of delivery, and any conditions for the delivery.
+G. If additives to a bid are to be considered, all details must be included.
+H. If trade-in(s) is involved, the appropriate information must be included.
+I. Pre-qualification requirements, if any. All contractors bidding on road projects shall
+be certified with the Florida Department of Transportation.
+J. Bid, performance, and construction bond requirements, depending on the goods or
+services to be provided and the recommendation of the Risk Management Office.
+K. If direct purchases will be used, the specifications should include direct purchase
+procedures.
+L. Li quidated damages, if applicable.
+M. The date and time requested for a pre-bid conference, if applicable.
+N. The date and time requested for a notice to proceed date, if applicable.
+O. The position title and a brief explanation of the duties of the City’s representative(s)
+for the project.
+P. The types and estimated timeframes for any inspections of the project to be
+conducted by the City’s representative(s), if applicable.
+Q. For federal projects, the requirement to make maximum use of
+recovered/recycled materials.
+
+MULTI-STEP SOLICITATIONS
+Vendors may be prequalified as part of a multi -step solicitation based on such factors including,
+but not limited to, experience, financial capability, reputation, and management. The pre-qualified
+vendors may then be allowed to submit bids/proposals in response to the solicitation. Pre-
+qualification is not a conclusive determination of responsibility, and a pre-qualified vendor may be
+rejected as non-responsible at a subsequent stage in the procurement process.
+
+CONSULTANTS COMPETITIVE NEGOTIATION ACT
+The purpose of this section is to ensure compliance with Section 287.055 Florida Statutes, known
+as the Consultants Competitive Negotiation Act (CCNA), as it may be amended from time to time.
+Architectural, engineering, landscaping architectural, registered land surveying, and registered
+
+--- PDF page 36 ---
+36
+mapping services are required to be requested through a Request for Qualifications in accordance
+with the CCNA.
+1. Public Announcement
+It is the policy of the City to publicly announce all requirements for professional
+architectural,engineering, landscape architectural, land surveying, and mapping services,
+and to negotiate such contracts on the basis of demonstrated competence and qualifications
+at fair and reasonable prices. In the procurement of such services, the Purchasing Division
+may require firms to submit a statement of qualifications, performance data, and other
+information related to the performance of professional services.
+2. Scope of Project Requirements
+A. For specific projects, the City department requesting the professional services shall
+submit to the Purchasing Division written project requirements indicating the nature
+and scope of the professional services needed by the requesting department, including
+but not limited to the following:
+(1) the general purpose of the service or study.
+(2) the objectives of the study or service.
+(3) estimated period of time needed for the service or the study.
+(4) the estimated cost of the service or study.
+(5) whether the proposed study or service would or would not duplicate any prior or
+existing study or service; and
+(6) the desired qualifications, listed in order of importance, applicable to the scope
+and nature of the services requested.
+
+B. For Continuing Services, the City department requesting the professional services shall
+submit to the Purchasing Division, written project requirements indicating the nature
+and scope of the professional services needed, including but not limited to the following:
+(1) the general purpose of the service or study.
+(2) estimated period of time needed for the service or the study.
+(3) the estimated cost of the service or study.
+(4) the desired qualifications, listed in order of importance, applicable to the scope
+and nature of the services requested.
+
+3. Review of Project Requirements
+The Purchasing Division shall review the scope of project requirements and prepare a draft
+Request for Qualifications. The draft Request for Qualifications shall be submitted to the
+requesting department for consideration and revision, as may be needed, prior to public
+distribution of the Request for Qualifications.
+
+4. Distribution of Request for Qualifications
+The Purchasing Division can distribute the Request for Qualifications in accordance with
+standard procedures, including publication of legal notice, and provide notification of the date
+and time when such quotes are due.
+
+5. Exemptions
+This section shall not apply to any requirement for professional services if a continuing
+services contract is in effect and a determination is made to utilize the continuing contract to
+obtain such services in accordance with 287.055(2)(g), Florida Statutes, where the
+
+--- PDF page 37 ---
+37
+estimated construction cost of each individual project under the contract does not exceed
+$7.5 million as it may be amended yearly on July 1st, per Florida Statute 287.055, or for a
+study activity if the fee for the professional services for each individual study does not
+exceed $500,000.00.
+6. Evaluation
+The following language shall be used in its substantial form in solicitations where evaluations
+are required. The solicitation document shall specify evaluation procedures.
+
+A. The City Manager or designee shall determine the Evaluation Group that will
+best serve the needs of the City.
+B. Contact with the Evaluation Group. Members of the Evaluation Group are
+prohibited from discussing a project with any professional or professional firm
+that may submit a proposal during the procurement process, except in formal
+meetings as stated in section E. Presentations/Interviews.
+C. Evaluation of Proposals. Only written responses of statements of
+qualifications, performance data, and other data received in the purchasing
+office by the publicized submission time and date shall be evaluated.
+D. The initial ranking of proposals is based upon the criteria specified in the
+solicitation.
+E. Presentations/Interviews. The Evaluation Group may choose to conduct
+formal presentations/interviews with firms prior to final ranking. Any
+presentation/interview that is not open to the public shall be recorded and
+nothing shall be off the record. These recordings remain exempt from public
+disclosure until after the award.
+F. Final Ranking. The Evaluation Group shall use the ordinal process to rank the
+firms at a publicly noticed meeting. The respondents shall be listed in order of
+preference. The list of best-qualified respondents shall be forwarded to the
+City Manager or the City Commission, as appropriate, for approval prior to
+beginning contract negotiations.
+7. Negotiation
+Contract negotiations may be conducted by the requesting department or by a
+Negotiation Group to be determined by the City Manager or designee.
+
+A. Negotiation Group. Membership of the Negotiation Group may include:
+(1) Purchasing Manager or designee,
+(2) Agent of the requesting department or designee,
+(3) City Attorney or designee.
+B. Negotiation. The Negotiator(s) shall negotiate a contract with the firm
+considered to be the most qualified to provide the services at compensation
+and upon terms which the Negotiator(s) determines to be fair and reasonable
+to the City. In making this decision, the Negotiator(s) shall consider the
+estimated value, the scope, the complexity, and the professional nature of the
+services to be rendered. Should the Negotiator(s) be unable to negotiate a
+satisfactory contract with the firm considered to be the most qualified,
+negotiations with that firm may be formally terminated. The Negotiator(s) shall
+then undertake negotiations with the second most qualified firm. Failing with
+the second most qualified firm, the Negotiator(s) may formally terminate
+
+--- PDF page 38 ---
+38
+negotiations, and may then undertake negotiations with the third most qualified
+firm. Should the Negotiator(s) be unable to negotiate a satisfactory contract
+with any of the selected firms, the Selection Group may select additional firms
+in order of their competence and qualifications, and the Negotiator(s) may
+continue negotiations in accordance with this Section until an agreement is
+reached or until a determination has been made not to contract for such
+services.
+
+DESIGN-BUILD CONTRACTS
+1. Use of Design-Build Contracts (See F.S. # 287.055)
+The requesting department will determine if the design- build method is appropriate
+for a particular requirement subject to approval by the City Manager or designee. In
+determining whether design-build or contracting separately for professional design
+and construction services is in the best interest of the City, the following factors should
+be considered:
+A. The potential for cost savings and/or cost reduction.
+B. The need or potential for reducing the time to complete the project.
+C. The need or potential for enhancing revenue production by expediting
+completion, activation, and operational use of the project.
+D. The need or potential to expedite the completion, activation, and operation of
+the project due to public service considerations or user department operational
+needs and requirements.
+E. The potential for collaboration to develop designs and construction
+methodology that could provide a project with enhanced qualities of aesthetics,
+innovative use of materials, economy of construction, operational efficiency,
+and/or functional effectiveness.
+F. The need or potential for protecting, preserving, and enhancing the health,
+safety and welfare of the public.
+2. Design Criteria Package (DCP)
+A DCP must be prepared and sealed by a design/engineer professional on staff or
+retained by the department. A design criteria professional who prepares the DCP is
+not eligible to render services under the same design- build contract that utili zes the
+DCP.
+3. Review and Evaluation
+The Evaluation Group shall review and evaluate all submittals that have been
+received prior to the announced deadline at a publicly noticed meeting. This
+evaluation shall include a determination that the firms submitting proposals meet the
+design-build firm definition. Qualifications of the firm and project manager shall be
+considered for the design team , as well as the construction team. The group shall
+select no fewer than three design- build firms as the most qualified, based on the
+qualifications, availability, and past work of the firms, including the partners or
+members of the firms.
+4. Technical and Price Proposals
+When using an adjusted score method, the selected design- build firm shall be
+required to submit a technical and price proposal. These proposals shall form the
+
+--- PDF page 39 ---
+39
+basis of contract negotiation and award of the design-build contract.
+
+
+5. Design-Build Contract Award
+The Evaluation Group shall submit a recommendation for award to the City Manager
+or designee for selection of one firm and two ranked alternates, and approval to
+negotiate and award a design-build contract with the selected firm, provided the final
+negotiated price does not exceed the project budget. Prior to award and execution of
+the design- build contract, the City may negotiate minor changes in the technical
+proposal and contract price for the purpose of clarifying and/or refining the project
+requirements and the services to be performed and/or the work to be done.
+
+PIGGYBACK
+Departments may request to piggyback on contracts for goods and services with other
+governmental entities, except for emergency purchases. The following must be submitted
+as a part of the request and specifications package:
+1. A copy of the other agency’s solicitation to include the awarded vendor’s submittal.
+2. A copy of the other agency’s Purchase Order or contract and expiration date.
+3. A letter from the awarded vendor, offering to honor the same prices under the same
+terms and conditions as indicated in the other agency’s solicitation and subsequent
+contract.
+4. Verification from the other agency that the vendor is performing satisfactorily.
+5. Evidence and documentation of the procurement method used by the other agency.
+
+SOLE SOURCE/NON-COMPETITIVE NEGOTIATIONS
+Non-competitive selection of vendors and non-competitive purchasing may be used as a
+procurement method for purchases of products or services when available from only one
+source (sole source), or when it is determined by the City Manager, unless otherwise
+delegated, that there is only one practicable and reasonable source wherein competitive
+bidding is not feasible or not advantageous to the City.
+The Purchasing Division may negotiate and use a sole source/non-competitive supplier or
+vendor if one or more of the following justifications exist:
+
+1. The item is a component or replacement part for which there is no
+commercially available substitute and can be purchased only from the
+manufacturer, sole distributor, or provider.
+2. Compatibility is the overriding consideration.
+3. A statement that describes why there is only one qualified sole source and a list of
+how many attempts and to who alternative sources were made.
+4. A noncompetitive purchase will result in verifiable financial savings to the City.
+5. The needed product or service is available from only one known source, and such
+determination has been made by the Purchasing Manager or Logistics Senior
+Manager.
+6. The product or service is wanted for experimental trial/pilot or testing (Non-
+
+--- PDF page 40 ---
+40
+Competitive Purchase).
+7. The product is purchased for resale.
+8. Additional products or services are needed to complete an ongoing vital task (Non-
+Competitive Purchase).
+9. A product or service is purchased from, or a sale is made to, another unit of
+government.
+10. The needed product or service may be available from more than one source.
+However, due to documented advantages such as uniqueness, vendor qualifications,
+timeliness, etc., a non- competitive purchase may be initiated when such
+determination has been justified that there is only one practicable and reasonable
+source, with confirmation by the Purchasing Manager or the Logistics Director.
+11. Funds have become readily available through a grant process and must be spent in
+a time frame that does not permit competitive bidding.
+The requesting department must complete the sole source provider form (See Exhibit A)
+including, appropriate signature(s), and provide it to the Purchasing Division with the
+request for procurement.
+
+RENEWAL AND EXTENSION
+Renewals are pursuant to contract terms specifically providing for such renewal. Contract
+renewal options approved by the City Commission may be executed by the City Manager
+or designee.
+
+TIE BIDS
+In the event of a tie bid, the Evaluation Group shall hold a public meeting and conduct a
+thorough review of the bid documents to determine if the bids are indeed tied.  The
+meeting shall be publicly noticed as required by law. Members of the Evaluation Group
+shall not consult with one another regarding the tie bids, except at the public meeting.
+Award recommendations shall be based upon bid criteria, delivery dates, reputation of
+the vendors involved, past performance, and location of the vendor. If all factors and
+conditions relating to the bids are equal, then the awarding of the bid will be determined
+by a flip of a coin, facilitated by the Purchasing Division, with all appropriate and relevant
+parties in attendance, unless attendance is otherwise waived by a relevant party.
+
+CHANGE ORDERS
+After a contract has been approved by the City Commission or the City Manager, if a
+change order is required to correct errors, omissions, or discrepancies, or to direct
+other changes to meet unforeseen field, emergency, climatic, regulatory, or market
+conditions, the following shall apply:
+
+1. All change orders must be in writing and include the additional scope of work or
+quantities, the amount of the change order, and any additional days added to the
+term or delivery date.
+2. Change orders, deductive or additive, exceeding a cumulative total of ten percent
+
+--- PDF page 41 ---
+41
+(10%) of the contract price or a cumulative cost exceeding $100,000, whichever
+amount is less, or where there is a materially significant change in the scope of
+services, the change shall be approved by the City Commission.  If an amount is
+approved by the City Commission as a contingency amount, then once deductive or
+additive change orders exceed the cumulative amount of the contingency, the change shall
+be approved by the City Commission.
+3. If direct purchasing is being utilized in connection to a construction project, a deduct
+change order to the contractor in the amount of the direct purchase shall be made
+in writing.
+4. If the project is unable to proceed without the immediate approval of a change
+order, the City Manager has the authority to approve the change order and bring it
+before the City for ratification, as required, at the next regularly scheduled
+Commission meeting with documented explanation of the condition.
+
+LOCAL PREFERENCE
+Local preference shall not be used for any formal competitive solicitation or bid.
+
+
+BID PROTEST PROCEDURES
+In any competitive solicitation context, no later than seventy-two hours (72) following the
+day approval is granted, the Purchasing Division will electronically notify the representative
+of each respondent of the award decision. Notification of an award does not constitute
+formation of a contract.
+
+After notification of the award decision, any party with standing may challenge the decision
+by initiating an action in the Circuit Court of the Fourteenth Judicial Circuit in and for Bay
+County against the City of Panama City. If a party intends to initiate such an action, it must
+electronically notify the Purchasing Manager and the City Attorney no later than one (1)
+business day after the award. If no such notice is received by the City, the City may
+proceed to execute a contract to formalize the award decision. If the City does receive notice
+of intent to challenge the decision, the City will stay the contracting process, unless the City
+Manager or designee determines that the contract must proceed without delay to protect
+substantial interests of the City. If a party notifies the City of its intent to challenge a
+decision under this subsection, it must file its challenge within five
+(5) business days after providing its notice with the 14 th Judicial Circuit Court in and for
+Bay County. If the party fails to file its action within this period, the City may proceed with
+the contracting process as if no challenge was received. If the party files its action, the
+Court will uphold the City’s decision unless the Court determines that the awarding
+authority did not act in good faith and the challenger demonstrates illegality, fraud,
+oppression or misconduct by the City or anyone acting on the City’s behalf.
+No action other than an award decision can be protested, including (i) requests for
+quotations or requests for qualifications; (ii) rejection of some, all or parts of bids or
+proposals; (iii) disqualification of bidders as non- responsive or non- responsible; or (iv)
+recommended awards less than the mandatory bid or proposal amount.
+
+--- PDF page 42 ---
+42
+
+
+PURCHASING CARD (P-Card)
+1. PURPOSE/OBJECTIVE
+A. To provide City personnel with the ability to secure products and services, with costs no greater
+than $3,499.99, as required, specific to their roles in serving the public. The P-Card program allows
+for a streamlined, prompt, and transparent response to those needs.
+
+2. AUTHORIZATION
+A. All P -Card requests are initiated by the Department Director. Department Directors will also
+recommend the spending limit associated with each card they request.
+(1) Spending limits require approval by the Logistics Director or the Assistant City Manager.
+(2) The Purchasing Card Administrator (PCA) will set up P-Card accounts, provide training
+to P-Card holders, make alterations as requested, and be the liaison between the bank
+(or financial institution), the department and the P-Card holder.
+3. RESPONSIBILITIES
+A. The cardholder is responsible for the following:
+(1) P-Card Security.
+(2) Adhering to P-Card policies.
+(3) Obtaining and submitting all relevant Receipts.
+B. The Departmental Purchasing Card Representative is responsible for the following:
+(1) Ensuring all departmental transactions comply with the P-Card policy.
+(2) Reconciliation of monthly statements with the cardholder.
+C. The Department Director is responsible for the following:
+(1) Requesting P-Cards and establishing spending limits.
+(2) Designating P-Card representatives.
+(3) Ensuring departmental compliance with all P-Card policies.
+(4) Approving transactions in Bank of America Works, or other financial institution
+managing the P-Card program monthly by the 5th.
+D. The Accounting Department is responsible for the following:
+(1) Flagging and reporting questionable expenditures.
+(2) Balancing Bank P-Card transactions with the master statement.
+(3) Processing payment by the 25th of the month.
+
+4. LIMITS AND RESTRICTIONS
+A. The P-Card is for official City business only.
+B. All items paid for with the P-Card are the property of the City of Panama City.
+C. Fuel may only be purchased in the following instances:
+(1) For City vehicles on authorized City trips outside of Bay County;
+(2) For an approved rental car on an authorized City trip outside of Bay County;
+(3) For Undercover Police Officers;
+(4) For City equipment, when emergencies with rental equipment or unforeseen times
+warrant the need to purchase fuel, instead of using the City’s fuel facilities.
+
+
+--- PDF page 43 ---
+43
+
+5. RESTRICTED ITEMS
+A. The following types of items may NOT be purchased on a P-Card, regardless of the dollar
+amount:
+(1) Cash advances.
+(2) Purchase of goods or services for personal benefit/gain.
+(3) Recurring maintenance, rental or lease of equipment that exceeds $1,500 per year
+unless prior approval is received by the Purchasing Division.
+(4) Alcoholic beverages or tobacco products.
+(5) Entertainment expenses.
+(6) Utilities (i.e., telephone services, cable, electricity).
+(7) Merchants Rebate – purchases that merchants offer a rebate for must be processed
+through a Purchase Order.
+(8) Travel costs for a City traveler’s companion, i.e., airline tickets, even if the traveler is
+reimbursing the City.
+(9) Travel meals are not to be purchased on the P-Card. In all cases, per diem rates
+must be used and requested in accordance with the City’s travel policy.
+(10) Travel perks such as spas, movies, or mini bar contents purchased by the traveler
+for personal use.
+(11) Purchases from vendors that create a conflict of interest.
+(12) Any software or computer-related purchase (hardware, software, or online services)
+not pre-approved by the IT Manager or designee. Unapproved software will be blocked
+from City Computers.
+(13) Any additional goods or services specifically restricted by Federal Law, Florida
+Statutes, the City Manager or their designee, your Director, the City’s budget, or
+the Employee Handbook.
+(14) A ny  other purchase deemed prohibited by the respective Department Director or
+Assistant City Manager.
+
+6. COMPLETING TRANSACTIONS WITH VENDORS
+A. Telephone/Email Orders
+(1) The Cardholder must confirm that the vendor agrees to charge the P -Card when
+shipment is made so that receipt of the supplies or service may be certified on the
+monthly billing statement.
+(2) Make sure the vendor understands that charges are not to be billed until the item has
+been shipped.
+
+7. TAXES
+A. Most purchases are exempt from sales tax. The tax-exempt identification number is listed on
+the face of the P-Card.
+B. The City is required to pay sales tax on fuel, airline fees, and resort/tourist taxes.
+
+8. CREDITS AND RETURNS
+A. Merchandise returned to the vendor must be credited to the City’s account to which the
+transaction was charged. Cardholders are not authorized to receive a cash payment or
+store credit for returned merchandise.
+
+--- PDF page 44 ---
+44
+
+
+9. SUSPENSION AND ACCOUNTABILITY
+A. Suspension is a progressive step policy and may be put into effect due to:
+(1) Failure to submit proper documentation to the PCA or departmental P-Card
+representative by the established deadlines.
+(2) Lost receipts.
+(3) Inappropriate purchases of goods or services.
+(4) Purchases that exceed the Cardholder’s established P-Card limits for single item
+purchases.
+(5) Circumventing established single transaction limits by “splitting” purchases into
+multiple transactions.
+(6) Keeping a rebate or refund from a vendor, bank, or other financial institution for
+personal use.
+(7) Acceptance of a cash refund in lieu of credit to the P-Card account.
+(8) Failure to report a lost or stolen P-Card.
+(9) Purchases from vendors that create conflicts of interest.
+
+B. Depending on the severity of the offense, the first offense could result in permanent
+revocation of card privileges. The cardholder’s Department Director, Senior Manager,
+Assistant Director, or Deputy Director may take disciplinary action beyond the steps listed
+here.
+
+(1) First Offense: the PCA will send a written notification to the cardholder and their
+Department Director, Senior Manager, Assistant Director, or Deputy Director.
+(2) Second Offense: the PCA will send a written notification to the cardholder and their
+Department Director, Senior Manager, Assistant Director, or Deputy Director and
+suspend their card privileges for a period of up to three (3)
+months.
+(3) Third Offense: the PCA will send a written notification to the cardholder and their
+Department Director, Senior Manager, Assistant Director or Deputy Director and their
+card privileges will be permanently revoked.
+
+C. Department Directors will be notified when approvals on the bank website are not completed
+by the 5th of the month and all cards may be suspended for that department until compliance
+is complete.
+
+10. RECORDKEEPING AND RECEIPTS
+A. When an allowable food or meal has been purchased, the itemized, detailed receipt must
+include the names written down of the people or group of people who ate, along with the City
+event, or the reason the employees were prevented from seeking a meal on their own time.
+B. In the event all efforts to obtain documentation of a transaction have failed, the cardholder
+must attach a written description of the purchase along with a signed statement that the
+purchase was made in accordance with the City’s P -Card policy. Failure to provide a
+statement may result in loss of the card and/or disciplinary action and the employee may
+be required to pay the City for the undocumented expense.
+C. Repeated occurrences of lost receipts may result in suspension or revocation of the P-Card.
+
+
+
+--- PDF page 45 ---
+45
+
+
+FEDERAL PROCUREMENTS
+When property or services are procured using funds derived from a Federal grant or
+agreement (whether directly to the City or “pass-through” from another entity such as the
+State), the City is required to and will follow the Federal procurement standards in the
+“Uniform Administrative Requirements, Cost Principles, and Audit Requirements  for
+Federal Awards”, 2 C.F.R. Sections 200.213 and 200.317 through 200.326. All
+procurements must be conducted in a manner that provides full and open competition.
+Micro-purchases of $10,000 or less do not require competition or a cost/price analysis
+provided the City considers the price reasonable. Small purchases, $10,000 to $250,000,
+require price and rate quotes from an adequate number of qualified sources. Sealed bids,
+competitive proposals and noncompetitive proposals may be used pursuant to the
+requirements of 2 C.F.R. Section 200.320.
+1. It is the responsibility of the requesting department to notify the Purchasing Division
+whether federal funds will be used on any project and of any special conditions that are
+imposed upon the City through such federal funding.
+2. The City shall use the same procedures as otherwise contained in this Purchasing Manual
+to the extent that they do not conflict with the Federal procurement standards. The
+requirements of 2 C.F.R. Sections 200.213 and 200.317 through 200.326 will apply in the
+case of a conflict. Applicable Davis-Bacon wage determinations must be submitted by the
+requesting department, along with the technical specifications. Departments should ensure
+that Federal grant requirements do not prohibit the use of previously awarded vendors. The
+following additional procedures shall apply:
+A. Equipment.
+Management and disposition of equipment purchased with funds deriving from
+Federal grants shall be in accordance with 2 C.F.R. Section 200.313. All property
+acquired must be used for federally authorized purposes until project funding
+ceases or until the property is no longer needed for the project and shall not be
+encumbered without approval of the federal awarding agency. Property will be
+managed and disposed of as follows:
+(1) Property records will be maintained that include a description of all
+federally funded equipment, a serial number, the source of funding
+including the FAIN, record of title, the date of acquisition, the cost, the
+percentage of Federal participation in the purchase, the property
+location, use and condition, and the ultimate disposition of the property.
+(2) A physical inventory of the property will be taken, and the results will be
+reconciled once every two (2) years.
+(3) The City’s existing and customary property control system will be utilized
+to ensure against loss, damage or theft.
+(4) Property authorized for sale shall be sold in a manner ensuring the
+highest possible return.
+
+--- PDF page 46 ---
+46
+(5) Surplus property no longer needed for its original purpose may be used
+for other federally supported activities.
+(6) The City may sell or otherwise dispose of federally funded equipment with
+a current fair market value under $5,000 in accordance with current
+disposition policy.
+(7) The City will request permission from the Federal granting entity prior to
+disposal of equipment with a current fair market value over $5,000.
+B. Conflicts of Interest.
+All City employees and officers are subject to the provisions of the Code of Ethics
+for Public Officers and Employees (Sections 112.311, Florida Statutes); Division
+3, the Conflict-of-Interest provisions in this Manual and the provisions governing
+Federal conflicts of interest outlined herein.
+
+For Federal procurements, no employee or officer of the City may participate
+in the selection, award, or administration of a contract supported by a
+Federal award if he or she has a real or apparent conflict of interest. Such a
+conflict of interest would arise when the employee, officer, any member of
+his or her immediate family, his or her partner, or an organization which
+employs or is about to employ any of the parties indicated above has a
+financial or other interest in, or a tangible personal benefit from a firm
+considered for a contract. Except as limited by City P olicy 3.25, officers,
+employees, and agents of the City may neither solicit nor accept gratuities,
+favors, or anything of monetary value from contractors or parties to
+subcontracts. Any potential conflicts of interest must be disclosed, in a timely
+manner and in writing, to the Federal awarding or pass-through agency. The
+assigned Grant Coordinator for the federally funded project is responsible
+for making this disclosure. Please see the Grants Administration handbook,
+1st Edition, Version 1.0 and City Policy 3.25 – Conflict of Interest.
+In addition to the penalties provided in the Florida Statutes, a violation of
+any provision of the Code of Ethics for Public Officers and Employees; or
+this section, may subject an employee to disciplinary action up to and
+including discharge from employment.
+C. Suspension and Debarment. The City is subject to the debarment and suspension
+regulations implementing Executive Orders 12549 and 12689, 2 C.F.R. Part 180.
+
+The City may not enter into an agreement for property or services with an
+entity or person who has been disqualified (suspended or debarred) from
+participation in Federal programs or activities unless the Federal granting
+agency grants an exception.
+
+The City shall take reasonable steps to determine whether any vendor,
+contractor or consultant is or has been excluded or disqualified from
+participating in such transaction. Prior to awarding any bid, the Grants
+
+--- PDF page 47 ---
+47
+Coordinator shall check with SAMS EPLS to ensure that the bidder or
+subcontractors, if applicable, are not disbarred or suspended from working
+with federally funded contracts.
+The City shall include a provision in all agreements requiring contractors,
+vendors, or consultants to comply with Part 180 when entering into covered
+transactions with subcontractors, sub-vendors and subconsultants, etc.
+
+The City shall comply with all reporting requirements as mandated by the
+Federal granting agency.
+D. Settlement of Procurement and Contract Disputes. Any person or entity wishing to
+dispute the award of a bid, acceptance of a proposal, other procurement of property
+or services, or the application or interpretation of a contract or agreement relating
+to property or services procured using Federal grant funds shall submit all relevant
+information to the Purchasing Manager. Protested awards shall follow procedures
+set forth in the City of Panama City Procurement Manual. For all other disputes, the
+Purchasing Manager shall review all information presented and shall conduct such
+further investigation as he or she deems appropriate under the circumstances. After
+review of all relevant information, the Purchasing Manager shall render a decision
+concerning the dispute, which decision shall be the final decision of the City.
+Persons not satisfied with the decision of the Purchasing Manager may proceed in
+accordance with Florida law.
+E. Minority- and Women-Owned Business Enterprises. The City of Panama City does
+not discriminate on any basis within its procurement and contracting process and
+encourages the participation of minority- and women-owned business enterprises
+(collectively, “MBEs”). Within the limits of the U.S. Constitution, the City will consider
+the firm’s status as an MBE or a certified MBE, and also the status of any sub-
+contractors or sub- consultants proposed to be utilized by the firm, within the
+evaluation process. Interested MBEs and certified MBEs are encouraged to
+respond.
+F. The City will take constitutionally permissible affirmative steps to assure that
+minority and women-owned businesses are used whenever possible.
+Whenever feasible, the City will procure items designated in the guidelines of the
+Environmental Protection Agency (EPA)  at 40 C.F.R. Part 247 that contain the
+highest percentage of recovered materials practicable, consistent with maintaining
+a satisfactory level of competition, where the purchase price of the item exceeds
+$10,000 or the value of the quantity acquired during the preceding fiscal year
+exceeded $10,000.
+The City will procure solid waste management services in a manner that maximizes
+energy and resource recovery.
+The City will maintain an affirmative preference program for procurement of recovered
+materials identified in the EPA guidelines. The City may consider the Minimum Content
+Standard, the Case-by-Case Standard, or a substantially equivalent standard, as set forth
+in the Resource Conservation and Recovery Act (RCRA) Section 6002(i)(3), as
+appropriate to any situation.
+
+--- PDF page 48 ---
+48
+Contract Cost and Price. For every procurement in excess of $100,000, including contract
+modifications or change orders greater than $100,000, the City shall perform a cost or price
+analysis in connection with every procurement subject to Federal procurement guidelines,
+which shall include an independent estimate of cost prior to issuing bids or proposals. For
+proposals where price is not considered in the award, profit shall be negotiated as a
+separate element of the price. In determining whether profit is fair and reasonable, the City
+shall consider the complexity of work, the risk to be borne by the contractor, the contractor’s
+investment, the amount of subcontracting necessary, the quality of the contractor’s record
+and past performance, and industry profit rates for the surrounding geographical area. “Cost
+Plus Percentage” methods for determining profit may not be used.
+3. Contract Provisions. All contracts or Purchase Orders must contain the applicable
+provisions required pursuant to Section 200.326 and Appendix II to Part 200 of the Code of
+Federal Regulations. These include, but are not limited to:
+A. Contracts in excess of $100,000 must address legal remedies in instances where
+contractors violate or breach contract terms and provide for sanctions and penalties
+as appropriate.
+B. Contracts in excess of $10,000 must address termination for cause and for
+convenience by the City.
+C. All contracts must include the Equal Employment Opportunity clause as provided
+in Appendix II;
+When required, all prime construction contracts in excess of $2,000 must
+include a provision for compliance with the Davis-Bacon Act, as supplemented, requiring
+contractors to pay laborers and mechanics at a rate not less than the prevailing wages
+specified in a wage determination issued by the U.S. Department of Labor, which
+determination must be included with all solicitations.
+D. Where applicable, all contracts in excess of $100,000 that involve mechanics or
+laborers must i nclude a provision for compliance with the Contract Work Hours
+and Safety Standards Act, 40 U.S.C. 3701-3708;
+E. Where applicable, a clause requiring compliance with the Rights to Inventions
+made by Nonprofit Organizations and Small Business Firms Under Gover nment
+Grants, Contracts and Cooperative Agreements, 37
+C.F.R. Part 401;
+F. Contracts more than $100,000 must require compliance with the Clean Air Act and
+Clean Water Act and associated regulations.
+G. Contracts must include requirements concerning mandatory standards relating to
+energy efficiency as contained in Florida’s Energy Conservation Plan.
+H. Contracts must include requirements that a contract award may not be made to
+debarred and suspended parties as listed on the Excluded Parties List System
+(EPLS) in System for Award Management (SAM).
+I. For contracts more than $100,000, requirements for compliance with the Byrd Anti-
+Lobbying Amendment.
+
+
+--- PDF page 49 ---
+49
+J. Contracts must include a provision for compliance with the Copeland “Anti -
+Kickback” Act (40 U.S.C. 3145) as s upplemented by Department of Labor
+regulations (29 C.F.R. Part 3, “Contractors and Subcontractors on Public Building
+or Public Work Financed in Whole or in Part by Loans or Grants from the United
+States”) stating that each contractor or subrecipient must be prohibited from
+including, by any means, any person employed in the construction, completion or
+repair of public work, to give up any part of the compensation to which he or she
+is otherwise entitled; Contracts for federally funded projects must include clauses
+required by Federal statutes and executive orders and their implementing
+regulations, including the provisions listed in Appendix II to 2 C.F.R. Part 200 –
+Contract Provisions for Non-Federal Contracts under Federal Awards.
+
+
+INSURANCE REQUIREMENTS
+The City Manager or designee shall determine what insurance, and conditions will be
+provided based on the type of goods or services to be purchased. Generally, any of the
+following insurance requirements may be included in a contract, lease, or agreement, as
+applicable:
+
+1. Indemnification and Hold Harmless Agreement
+2. Waivers of Subrogation
+3. Additional Insured Endorsements
+4. Deductibles and Self-Insured Retentions
+5. Liability Insurance Coverages (all or some)
+A. Commercial General Liability
+B. Umbrella or Excess Liability
+C. Owners Protective Liability
+D. Automobile Liability
+E. Leased Employee Liability
+F. Garage Keepers Liability
+G. Watercraft Liability
+H. Host Liquor Legal
+I. Liquor Liability
+J. Aircraft Liability
+K. Pollution/Environmental Impairment Liability
+L. Professional Liability, Malpractice and/or Errors or Omissions
+6. Property Coverages
+A. Property Coverage (leased property)
+B. Builders Risk Coverage
+C. Installation Floater
+D. Contractors’ Equipment
+7. Workers’ Compensation
+A. Workers’ Compensation Policy
+B. Employers Liability
+C. United States Longshoreman and Harbor Workers Act Coverage
+D. Alternate Employers Endorsement
+
+--- PDF page 50 ---
+50
+
+8. Other Requirements
+A. Motor Truck Cargo
+B. Drug Free Workplace Program
+C. Sub-Contractor Agreements
+D. Fidelity/Dishonesty Coverage
+E. Bonding
+FLORIDA PROMPT PAYMENT ACT
+Payment for all purchases by the City shall be made in accordance with the contract or in
+accordance with the provisions of the “Local Government Prompt Payment Act,” sections
+218.70 – 218.79, Florida Statutes.
+
+DIRECT PURCHASE
+The City may elect to purchase materials and equipment included in any contractor's bid
+for a portion of the work directly from the supplier of such materials or equipment in order
+to achieve sales tax savings. Direct purchase language should be included in the
+solicitation documents if it may be applicable to the project.
+The contractor shall submit to the City a list of materials and equipment suitable for
+consideration by the owner as direct-purchase materials. If the City elects to purchase any
+direct purchase materials, the contractor shall promptly furnish to the City, at least seven
+(7) days prior to the date such direct purchase materials are needed, a written cost estimate
+to purchase the approved direct purchase materials. Upon the City's receipt of the estimate
+and supporting materials, the City will review the same and, if approved, issue a purchase
+order directly to the supplier of the applicable direct purchase material. A copy of the
+Purchase Order will be sent to the vendor and contractor. The contractor shall fully
+cooperate with the City, providing verification of direct purchase orders, monitoring
+deliveries, obtaining delivery tickets and invoices. A deductive change order to the contract
+will be issued for the project to account for direct purchases.
+
+--- PDF page 51 ---
+51
+EXHIBIT A SOLE SOURCE FORM
+Non-competitive selection of vendors and non- competitive purchasing may be used as a procurement
+method for purchases of products or services when available from only one source (sole source), when at
+least one of the questions below are answered affirmatively.
+
+1. I
+s the item a component or replacement part for which there is no commercially available substitute
+and can be purchased only from the manufacturer, sole distributor, or provider?
+
+2. Do you have a statement that describes why there is only one qualified sole source and a list of how
+many attempts and to whom alternative sources were made?
+
+3. The needed product or service is available from only one known source, and such determination has
+been made by the Purchasing Manager or the Logistics Director?
+
+4. Is the product or service wanted for experimental trial/pilot or testing?
+5. Is the product being purchased for resale?
+
+6. Are these items additional products or services needed to complete an ongoing vital task?
+
+7. Is this a product or service being purchased from another unit of government?
+
+8. Is the needed product or service one that may be available from more than one source? However,
+due to documented advantages such as uniqueness, vendor qualifications, timeliness, etc., a non-
+competitive purchase may be initiated when such determination has been justified that there is only
+one practicable and reasonable source, with confirmation by the Purchasing Manager or the Senior
+Logistics Manager
+9. Is the purchase being made with funds that have become readily available through a grant process
+and must be spent in a time frame that does not permit competitive bidding?
+
+
+Department Employee Print  Signature
+Department Director / Logistics Director / Assistant Director / Deputy Director
+Print  Si gnature
+***** Signatures from the Department Director is required *****
+Department
+Date
+If you answered yes to any of the sole source questions listed above, list the exception number
+here, and please explain why your purchase or service fits the exception.
+
+--- PDF page 52 ---
+52
+
+
+
+EXHIBIT B
+
+
+MINIMUM QUOTE CERTIFICATION FORM
+
+Item(s) Requested:
+
+
+
+
+Vendor/Contractor 1:
+
+• Date(s) of Request(s):
+• Time(s) of Request(s):
+• Amount $
+
+Vendor/Contractor 2:
+• Date(s) of Request(s):
+• Time(s) of Request(s):
+• Amount $
+
+Vendor/Contractor 3:
+
+• Date(s) of Request(s):
+• Time(s) of Request(s):
+• Amount $
+
+
+Department Director / Senior Manager / Assistant Director /
+Deputy Director
+Signature:   Date:
+
+
+--- PDF page 53 ---
+53
+Effective Date: October 1, 2021
+Adopted Date: October 12, 2021
+Revised Date: April 8, 2022
+Revised Date: October 17, 2022
+Revised Date: March 1, 2025
+Revised Date: October 28, 2025
