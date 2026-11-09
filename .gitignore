@@ -1,10 +1,17 @@
-# Publish only reviewed policy sources and aggregate reports.
+# Publish app source, branding, reviewed policy sources and aggregate reports.
 /*
 !/.gitignore
 !/README.md
 !/assets/
 /assets/*
 !/assets/spending-blaze-logo.png
+!/app/
+/app/*
+!/app/index.html
+!/app/style.css
+!/app/app.js
+!/app/server.py
+!/app/spending-blaze-logo.png
 !/policies/
 /policies/*
 !/policies/panama-city/

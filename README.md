@@ -14,6 +14,12 @@ This first-pass analysis identifies where itemized purchase documentation would 
 
 **FY25 reconciliation remains unresolved:** detailed records total $136,616.98 less than the workbook summary. FY26 reconciles. See the report for methodology and limitations.
 
-Only reviewed policy sources and aggregate reports are published. Original transaction spreadsheets and employee-level analysis remain local. The Git ignore rules use an explicit publication allowlist; review content before adding new exceptions.
+App source, branding, reviewed policy sources and aggregate reports are published. Original transaction spreadsheets, dashboard transaction data and employee-level analysis remain local. The Git ignore rules use an explicit publication allowlist; review content before adding new exceptions.
+
+## Local app
+
+Run `python3 app/server.py` from the repository root, then open http://127.0.0.1:4310. The app uses the Spending Blaze logo and name.
+
+The dashboard requires the local `app/data.json` dataset; it is intentionally excluded from GitHub. A fresh clone does not include transaction records or staff photos. This repository publishes source code, not a hosted GitHub Pages app.
 
 Analysis and source retrieval date: November 9, 2026.
