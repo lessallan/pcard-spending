@@ -1,0 +1,22 @@
+# Publish only reviewed policy sources and aggregate reports.
+/*
+!/.gitignore
+!/README.md
+!/policies/
+/policies/*
+!/policies/panama-city/
+/policies/panama-city/*
+!/policies/panama-city/README.md
+!/policies/panama-city/sources.json
+!/policies/panama-city/purchasing-card-policy-2025-06-24.pdf
+!/policies/panama-city/purchasing-card-policy-2025-06-24.txt
+!/policies/panama-city/purchasing-policy-and-procedures.pdf
+!/policies/panama-city/purchasing-policy-and-procedures.txt
+!/policies/panama-city/resolution-20250624-2.pdf
+!/policies/panama-city/resolution-20250624-2.txt
+!/policies/panama-city/commission-minutes-2025-06-24.pdf
+!/policies/panama-city/commission-minutes-2025-06-24.txt
+!/reports/
+/reports/*
+!/reports/merchant-review.md
+!/reports/merchant-summary.csv

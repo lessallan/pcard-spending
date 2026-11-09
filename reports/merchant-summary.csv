@@ -1,0 +1,31 @@
+merchant,category,transactions,purchases,credits,gross,refunds,net,over1000,over2500,FY25_transactions,FY25_net,FY26_transactions,FY26_net
+Amazon,General merchandise / marketplaces,3467,3298,169,652081.1,19715.52,632365.58,115,13,1742,351587.55,1725,280778.03
+Lowe's,Hardware / tools / farm,1650,1576,74,268275.42,7492.83,260782.59,25,2,857,130112.37,793,130670.22
+Home Depot,Hardware / tools / farm,594,575,19,122635.64,3694.55,118941.09,18,2,285,60289.54,309,58651.55
+Sam's Club,General merchandise / marketplaces,307,300,7,72315.61,390.71,71924.9,7,1,177,37117.35,130,34807.55
+Harbor Freight,Hardware / tools / farm,310,303,7,54526.88,519.04,54007.84,3,0,162,29494.6,148,24513.24
+Uline,Office / industrial catalogs,56,53,3,41966.95,494.65,41472.3,16,1,26,16720.01,30,24752.29
+Tractor Supply,Hardware / tools / farm,146,141,5,40638.91,1098.49,39540.42,8,0,81,21949.94,65,17590.48
+Office Depot / ODP,Office / industrial catalogs,255,246,9,38032.02,2283.78,35748.24,4,0,141,20831.76,114,14916.48
+Walmart,General merchandise / marketplaces,256,252,4,27556.3,491.98,27064.32,1,0,135,15844.68,121,11219.64
+Ace hardware stores,Hardware / tools / farm,79,78,1,24038.67,30.0,24008.67,8,4,48,14367.21,31,9641.46
+Hobby Lobby,Other mixed-category retailers,66,59,7,10365.23,348.17,10017.06,0,0,43,6492.04,23,3525.02
+Wayfair / Joss & Main,Other mixed-category retailers,9,9,0,9125.8,0.0,9125.8,4,1,6,4708.9,3,4416.9
+Best Buy,Other mixed-category retailers,17,16,1,7727.27,32.28,7694.99,2,1,8,3634.21,9,4060.78
+Publix,Grocery / pharmacy,70,68,2,6647.13,170.81,6476.32,0,0,29,2963.88,41,3512.44
+Academy Sports,Other mixed-category retailers,11,11,0,6170.08,0.0,6170.08,1,1,8,5742.35,3,427.73
+Grainger,Office / industrial catalogs,20,20,0,4220.24,0.0,4220.24,0,0,11,2724.6,9,1495.64
+Dollar General,General merchandise / marketplaces,97,94,3,3412.74,88.13,3324.61,0,0,64,1944.95,33,1379.66
+Northern Tool,Hardware / tools / farm,2,2,0,3319.44,0.0,3319.44,1,1,1,2869.49,1,449.95
+Global Industrial,Office / industrial catalogs,5,5,0,2932.71,0.0,2932.71,1,0,1,621.27,4,2311.44
+eBay,General merchandise / marketplaces,3,3,0,1415.11,0.0,1415.11,1,0,3,1415.11,0,0.0
+Alibaba,General merchandise / marketplaces,1,1,0,947.51,0.0,947.51,0,0,1,947.51,0,0.0
+Zoro,Office / industrial catalogs,3,2,1,895.88,32.9,862.98,0,0,3,862.98,0,0.0
+Dollar Tree,General merchandise / marketplaces,24,22,2,751.57,116.08,635.49,0,0,13,326.24,11,309.25
+Target,General merchandise / marketplaces,9,9,0,458.94,0.0,458.94,0,0,3,91.98,6,366.96
+Winn-Dixie,Grocery / pharmacy,5,5,0,273.17,0.0,273.17,0,0,4,238.2,1,34.97
+Walgreens,Grocery / pharmacy,5,5,0,196.9,0.0,196.9,0,0,5,196.9,0,0.0
+Aldi,Grocery / pharmacy,3,2,1,208.5,32.07,176.43,0,0,1,176.43,2,0.0
+Family Dollar,General merchandise / marketplaces,4,4,0,165.75,0.0,165.75,0,0,1,6.0,3,159.75
+Costco,General merchandise / marketplaces,1,1,0,117.49,0.0,117.49,0,0,0,0.0,1,117.49
+CVS,Grocery / pharmacy,2,2,0,10.38,0.0,10.38,0,0,1,4.99,1,5.39
