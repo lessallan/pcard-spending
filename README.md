@@ -20,6 +20,12 @@ App source, branding, reviewed policy sources and aggregate reports are publishe
 
 Run `python3 app/server.py` from the repository root, then open http://127.0.0.1:4310. The app uses the Spending Blaze logo and name.
 
-The dashboard requires the local `app/data.json` dataset; it is intentionally excluded from GitHub. A fresh clone does not include transaction records or staff photos. This repository publishes source code, not a hosted GitHub Pages app.
+The dashboard requires the local `app/data.json` dataset; it is intentionally excluded from GitHub. A fresh clone does not include transaction records or staff photos. The online app lets you open this dataset directly in your browser without uploading it.
 
 Analysis and source retrieval date: November 9, 2026.
+
+## Online app
+
+Open [Spending Blaze](https://lessallan.github.io/pcard-spending/), then choose your local `app/data.json` file. Records remain in your browser; refresh requires reopening the file. Review decisions are stored in that browser’s local storage. Staff photos remain local.
+
+GitHub Pages serves `docs/` from `main`. After changing app files, run `python3 tools/build_pages.py` and commit the rebuilt files. The build copies only the app, logo and linked public policy; it excludes transaction datasets and staff records.

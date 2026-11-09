@@ -1,0 +1,119 @@
+'use strict';
+const $=id=>document.getElementById(id);
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const money=c=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(c/100);
+const exact=c=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'}).format(c/100);
+const number=n=>n.toLocaleString('en-US');
+let data, rows=[], page=0, view='overview', rankMetric='spend', selectedId=null;
+let reviews={};
+try{reviews=JSON.parse(localStorage.getItem('pcard-reviews-v1')||'{}')}catch{}
+const statuses={needs:'Needs review',none:'No issue detected',historical:'Historical policy unverified',compliant:'Verified compliant',exception:'Approved exception',violation:'Confirmed noncompliance'};
+const titles={overview:['The spending picture','A clearer view of purchases, travel, and the records behind them.'],travel:['Travel & lodging','Follow travel charges by cardholder, merchant, and cost center.'],centers:['Spending by cost center','Use verified accounting codes until department names are available.'],people:['Spending by cardholder','Compare the cards used to buy goods and services for the City.'],merchants:['Where the money goes','Explore merchants, purchase volume, and broad-selection retailers.'],review:['A closer look at policy','Evidence first. Flags start a review; they do not establish a violation.'],staff:['The people directory','Published City contact details, imported November 9, 2026.']};
+function displayName(s){if(s.includes(',')){let [last,...first]=s.split(',');return `${first.join(' ').trim()} ${last}`.toLowerCase().replace(/\b\w/g,c=>c.toUpperCase())}return s.toLowerCase().replace(/\b\w/g,c=>c.toUpperCase())}
+function status(t){return reviews[t.id]?.status||(t.flags.length?'needs':t.historical?'historical':'none')}
+function tag(t){const s=status(t);return `<span class="tag ${s}">${statuses[s]||'Needs review'}</span>`}
+function fillSelect(id,values,label){$(id).innerHTML=`<option value="">${label}</option>`+[...new Set(values)].sort().map(v=>`<option value="${esc(v)}">${esc(id==='person'?displayName(v):v)}</option>`).join('')}
+function filters(){return Object.fromEntries(new FormData($('filters')))}
+function filtered(){
+ const f=filters();let result=[];
+ if(f.from&&f.to&&f.from>f.to){$('filter-error').textContent='The start date must be on or before the end date.';return []}
+ $('filter-error').textContent='';
+ for(const t of data.transactions){
+  if(f.fy&&t.fy!==f.fy||f.person&&t.person!==f.person||f.merchant&&t.merchant!==f.merchant||f.from&&t.date<f.from||f.to&&t.date>f.to||f.minimum&&t.amount<Math.round(Number(f.minimum)*100)||f.status&&status(t)!==f.status)continue;
+  if(f.search&&!`${t.id} ${t.person} ${displayName(t.person)} ${t.merchant} ${t.raw} ${t.comments.join(' ')}`.toLowerCase().includes(f.search.toLowerCase()))continue;
+  const allocations=t.allocations.filter(a=>(!f.fund||a.fund===f.fund)&&(!f.center||a.center===f.center));
+  if(!allocations.length)continue;
+  result.push({...t,allocations,scoped:allocations.reduce((n,a)=>n+a.amount,0)});
+ }
+ return result;
+}
+function aggregate(ts,key,allocated=false){
+ const groups=new Map();
+ for(const t of ts){const items=allocated?t.allocations.map(a=>[a.center,a.amount]):[[t[key],t.scoped]];
+  for(const [name,amount] of items){if(!groups.has(name))groups.set(name,{name,net:0,ids:new Set(),purchases:new Set(),travel:new Set()});const g=groups.get(name);g.net+=amount;g.ids.add(t.id);if(t.amount>0)g.purchases.add(t.id);if(t.travel!=='Not identified as travel'&&t.amount>0)g.travel.add(t.id)}
+ }
+ return [...groups.values()].sort((a,b)=>rankMetric==='count'?b.purchases.size-a.purchases.size:b.net-a.net);
+}
+function stat(label,value,note=''){return `<div class="stat"><small>${label}</small><strong>${value}</strong><span class="fine">${note}</span></div>`}
+function stats(ts){const net=ts.reduce((n,t)=>n+t.scoped,0),gross=ts.reduce((n,t)=>n+Math.max(t.scoped,0),0),credits=-ts.reduce((n,t)=>n+Math.min(t.scoped,0),0);return `<div class="stats">${stat('Net recorded amount',money(net),'After negative entries')}${stat('Positive charges',money(gross),number(ts.filter(t=>t.amount>0).length)+' purchases')}${stat('Credits / adjustments',money(credits),'Includes unresolved entries')}${stat('Transactions',number(ts.length),'Unique transaction IDs')}</div>`}
+function bars(groups,type,limit=8){
+ const gs=groups.filter(g=>rankMetric==='count'?g.purchases.size>0:g.net>0).slice(0,limit),value=g=>rankMetric==='count'?g.purchases.size:g.net,max=Math.max(...gs.map(value),1);
+ if(!gs.length)return '<p class="empty">No positive values in this selection. Widen the filters to see a comparison.</p>';
+ return `<div role="img" aria-label="${esc(rankMetric==='count'?'Purchase count ranking':'Positive net spending ranking')}">${gs.map(g=>`<div class="chart-row"><button type="button" data-filter="${type}" data-value="${esc(g.name)}" aria-label="Filter to ${esc(g.name)}">${esc(type==='person'?displayName(g.name):type==='center'?'Cost center '+g.name:g.name)}</button><div class="track" title="${esc(g.name)}: ${rankMetric==='count'?number(value(g)):exact(value(g))}"><div class="bar" style="width:${value(g)/max*100}%"></div></div><span class="chart-value">${rankMetric==='count'?number(value(g)):money(value(g))}</span></div>`).join('')}<div class="axis"><span>0</span><span>${rankMetric==='count'?'Purchase transactions':'USD · net after credits'} · top ${gs.length}</span></div></div>`;
+}
+function timeline(ts){const months=new Map();for(const t of ts){const m=t.post.slice(0,7);months.set(m,(months.get(m)||0)+t.scoped)}const sorted=[...months].sort(),max=Math.max(...sorted.map(x=>Math.abs(x[1])),1);return `<div class="timeline" role="img" aria-label="Net recorded amount by posting month">${sorted.map(([m,n])=>`<div class="month" title="${m}: ${exact(n)}"><div class="shaft"><div class="bar" style="height:${Math.abs(n)/max*100}%;background:${n<0?'var(--rose)':'#638569'}"></div></div><span>${m}</span></div>`).join('')}</div><p class="fine">Posting month · heights show magnitude; hover for exact net amounts. Negative months are marked in red.</p>`}
+function board(title,note,body,full=false){return `<section class="board ${full?'full':''}"><div class="board-head"><div><h2>${title}</h2><p class="sub">${note}</p></div></div>${body}</section>`}
+function rankingControls(){return `<div class="controls-row"><label>Rank by<select id="rank-metric"><option value="spend" ${rankMetric==='spend'?'selected':''}>Net spending</option><option value="count" ${rankMetric==='count'?'selected':''}>Purchase count</option></select></label></div>`}
+function table(ts){const start=page*30,shown=ts.slice(start,start+30);return `<div class="table-wrap"><table><thead><tr><th>Purchase / transaction</th><th>Cardholder</th><th>Merchant</th><th class="num">Amount</th><th>Review status</th></tr></thead><tbody>${shown.map(t=>`<tr><td><button type="button" class="link" data-detail="${t.id}">${t.date}</button><span class="fine">${t.id}</span></td><td>${esc(displayName(t.person))}<span class="fine">${[...new Set(t.allocations.map(a=>a.center))].join(', ')}</span></td><td>${esc(t.merchant)}<span class="fine">${esc(t.travel==='Not identified as travel'?t.category:t.travel)}</span></td><td class="num">${exact(t.scoped)}${t.scoped!==t.amount?`<span class="fine">${exact(t.amount)} full charge</span>`:''}</td><td>${tag(t)}</td></tr>`).join('')}</tbody></table></div>${!ts.length?'<p class="empty">No matching transactions. Reset or widen the filters to continue.</p>':''}<div class="pagination"><span>${ts.length?`${start+1}–${Math.min(start+30,ts.length)} of ${number(ts.length)}`:'0 transactions'}</span><button type="button" id="prev" ${page===0?'disabled':''}>Previous</button><button type="button" id="next" ${start+30>=ts.length?'disabled':''}>Next</button></div>`}
+function rankingTable(groups,type){return `<div class="table-wrap"><table><thead><tr><th>${type==='center'?'Cost center':type==='person'?'Cardholder':'Merchant'}</th><th class="num">Net amount</th><th class="num">Purchases</th><th class="num">All transactions</th></tr></thead><tbody>${groups.slice(0,50).map(g=>`<tr><td><button type="button" class="link" data-filter="${type}" data-value="${esc(g.name)}">${esc(type==='person'?displayName(g.name):g.name)}</button></td><td class="num">${exact(g.net)}</td><td class="num">${number(g.purchases.size)}</td><td class="num">${number(g.ids.size)}</td></tr>`).join('')}</tbody></table></div><p class="fine">Showing ${Math.min(50,groups.length)} of ${groups.length} groups. Click a name or code to inspect its transactions.</p>`}
+function staffView(){
+ const q=$('search').value.toLowerCase();const staff=data.staff.filter(s=>`${s.name} ${s.title} ${s.departments.join(' ')} ${s.email}`.toLowerCase().includes(q));
+ return `<p class="section-note">${staff.length} directory entries. Multiple roles are preserved as separate entries. These are current published roles, not verified roles during FY25/FY26. Cardholders have not been automatically matched to these profiles.</p><div class="staff-grid">${staff.map(s=>{const mismatch=s.email_display?.includes('@')&&s.email!==s.email_display;return `<article class="staff-person"><div class="staff-top">${s.photo_file&&['localhost','127.0.0.1'].includes(location.hostname)?`<img class="avatar" src="/${esc(s.photo_file)}" alt="" loading="lazy">`:`<div class="avatar" aria-hidden="true">${esc(s.name.split(/\s+/).map(x=>x[0]).slice(0,2).join(''))}</div>`}<div><h3>${esc(s.name)}</h3><p>${esc(s.title||'Title not published')}</p></div></div><p>${esc(s.departments.join(' · '))}</p>${s.email?`<a href="mailto:${esc(s.email)}">${esc(s.email)}</a>`:'<p>Email not published</p>'}${mismatch?`<p class="warning">Directory mismatch: displayed as ${esc(s.email_display)}. Verify before contacting.</p>`:''}<p><a href="${esc(s.source_url)}" target="_blank" rel="noopener">Official profile ↗</a></p></article>`}).join('')}</div>${!staff.length?'<p class="empty">No staff match this search. Clear the search to see the directory.</p>':''}`;
+}
+function render(){
+ if(!data)return;
+ view=location.hash.slice(1)||'overview';if(!titles[view])view='overview';
+ $('title').textContent=titles[view][0];$('subtitle').textContent=titles[view][1];document.title=titles[view][0]+' · Spending Blaze';
+ document.querySelectorAll('nav a').forEach(a=>{a.classList.toggle('active',a.hash==='#'+view);a.setAttribute('aria-current',a.hash==='#'+view?'page':'false')});
+ const staff=view==='staff';$('export').hidden=staff;
+ document.querySelectorAll('#filters label').forEach(l=>l.hidden=staff&&!l.classList.contains('search-label'));
+ const active=Object.values(filters()).filter(Boolean).length;$('filter-count').textContent=staff?'Search directory':active?`${active} active`:'';
+ $('review-count').textContent=number(data.transactions.filter(t=>status(t)==='needs').length);
+ if(staff){$('content').innerHTML=staffView();return}
+ rows=filtered();if(view==='travel')rows=rows.filter(t=>t.travel!=='Not identified as travel');
+ rows.sort((a,b)=>b.scoped-a.scoped);
+ let out=stats(rows);const centered=aggregate(rows,'center',true),people=aggregate(rows,'person'),merchants=aggregate(rows,'merchant');
+ if(filters().fund||filters().center)out+='<p class="section-note">Amounts reflect only the selected accounting allocations. Transaction counts remain unique IDs; minimum-charge and policy checks use the full original charge.</p>';
+ if(view==='overview'){
+  out+='<div class="boards">'+board('Where spending lands','Click a merchant to explore its purchases.',bars(merchants,'merchant'))+board('By cost center','Accounting allocations, not inferred department names.',bars(centered,'center'))+board('Across the year','Both fiscal years · figures from provided detail.',timeline(rows),true)+board('Travel & lodging','Card charges attributed to the cardholder, not necessarily the traveler.',bars(aggregate(rows.filter(t=>t.travel!=='Not identified as travel'),'person'),'person'))+board('Itemized receipts first','Broad-selection merchants in the initial review.',bars(aggregate(rows.filter(t=>t.mixed),'merchant'),'merchant'))+'</div>';
+ }else if(view==='travel'){
+  out+='<div class="budget-note"><h3>Budget comparison awaits approved allocations</h3><p>No travel budgets were supplied. Spending is available; remaining budget and over-budget status are not yet calculable.</p></div><p class="section-note">Travel is inferred from recognizable merchant names and travel account 54000. It may include personal context, shared bookings, or non-travel charges and may miss other travel. Counts are purchase transactions, not trips or nights. Cardholders may book for other people.</p>'+rankingControls();
+  out+='<div class="boards">'+board(rankMetric==='count'?'Most travel purchase transactions':'Highest travel spending','By cardholder · not a traveler ranking.',bars(people,'person'))+board('Travel merchants','Hotels, airfare, transport, and unclassified travel-account charges.',bars(merchants,'merchant'))+board('Travel through the year','Net recorded amounts by posting month.',timeline(rows),true)+'</div>';
+ }else if(['centers','people','merchants'].includes(view)){
+  const type={centers:'center',people:'person',merchants:'merchant'}[view],gs={centers:centered,people,merchants}[view];
+  out+=rankingControls()+(view==='people'?'<p class="section-note">Names are normalized for spacing and capitalization only. Different name spellings remain separate. Spending reflects the card used; it does not establish who benefited or traveled.</p>':'')+(view==='centers'?'<p class="section-note">Cost-center names are pending a verified code list. Split transactions are allocated by their actual accounting rows; a transaction can appear in more than one center’s count.</p>':'');
+  out+=board(rankMetric==='count'?'Most purchase transactions':'Largest net amounts','Top positive groups · complete signed amounts in the table below.',bars(gs,type,12));out+=rankingTable(gs,type);
+ }else if(view==='review'){
+  out='<div class="review-legend"><div><strong>No issue detected</strong><p>No automated signal in the available data. Receipts and full compliance remain unverified.</p></div><div><strong>Needs review</strong><p>Threshold, restricted-item wording, or receipt follow-up needs context and supporting records.</p></div><div><strong>Evidence-based decisions</strong><p>Verified compliant, approved exception, or confirmed noncompliance requires a reviewer and evidence.</p></div></div>';
+  out+=stats(rows)+'<p class="section-note">Automated checks apply to purchases on or after June 24, 2025: charges over $3,499 need prior-approval review; alcohol/tobacco-related and selected travel-perk wording needs receipt review; receipt follow-up comments may already be resolved. Earlier purchases are marked historical unless a data-quality flag applies. No automated result establishes a violation. No itemized receipt has been imported.</p>';
+  out+='<div class="controls-row"><button type="button" id="only-needs">Show needs review</button><button type="button" id="export-reviews">Export saved decisions</button></div>';
+ }
+ out+=`<section class="transactions"><div class="board-head" style="margin-top:30px"><div><h2>${view==='review'?'Review transactions':'Explore transactions'}</h2><p class="sub">${number(rows.length)} matching records · largest amounts first · select a date for details</p></div></div>${table(rows)}</section>`;
+ $('content').innerHTML=out;
+ $('prev')?.addEventListener('click',()=>{page--;render()});$('next')?.addEventListener('click',()=>{page++;render()});
+ $('rank-metric')?.addEventListener('change',e=>{rankMetric=e.target.value;render()});
+ $('only-needs')?.addEventListener('click',()=>{$('status').value='needs';page=0;render()});
+ $('export-reviews')?.addEventListener('click',()=>download('pcard-review-decisions.json',JSON.stringify(reviews,null,2),'application/json'));
+}
+function openDetail(id){
+ const t=data.transactions.find(t=>t.id===id);if(!t)return;selectedId=id;
+ const r=reviews[id]||{};$('detail-title').textContent=t.id+' · '+exact(t.amount);
+ $('detail-body').innerHTML=`${tag(t)}<dl class="detail-grid"><div><dt>Merchant</dt><dd>${esc(t.raw)}</dd></div><div><dt>Cardholder</dt><dd>${esc(displayName(t.person))}</dd></div><div><dt>Purchase / posted</dt><dd>${t.date} / ${t.post}</dd></div><div><dt>Source</dt><dd>${esc(t.source)} · ${esc(t.sheet)} · rows ${t.rows.join(', ')}</dd></div></dl><h3>What needs checking</h3><p>${t.flags.length?t.flags.map(esc).join('<br>'):t.historical?'Historical policy version has not been verified.':'No automated issue detected. Receipts, purpose, approvals, and complete compliance remain unverified.'}</p><p class="section-note">Itemized receipt: not available in this project. Comments may refer to documents held elsewhere.</p><h3>Accounting allocations</h3><div class="table-wrap"><table><thead><tr><th>Fund</th><th>Cost center</th><th>Account</th><th class="num">Amount</th></tr></thead><tbody>${t.allocations.map(a=>`<tr><td>${a.fund}</td><td>${a.center}</td><td>${a.account}</td><td class="num">${exact(a.amount)}</td></tr>`).join('')}</tbody></table></div><h3 style="margin-top:20px">Original comments</h3><div class="comments">${esc(t.comments.join('\n\n')||'No comments supplied.')}</div><form id="review-form" class="review-form"><h3>Record a review decision</h3><label>Decision<select id="decision" name="decision"><option value="">Keep automated status</option><option value="needs">Needs review</option><option value="compliant">Verified compliant</option><option value="exception">Approved exception</option><option value="violation">Confirmed noncompliance</option></select></label><label>Reviewer<input id="reviewer" name="reviewer" value="${esc(r.reviewer||'')}" autocomplete="name"></label><label>Evidence and reasoning<textarea id="evidence" name="evidence" placeholder="Receipt or folio reference, applicable policy, approval, and reasoning…">${esc(r.evidence||'')}</textarea></label><p class="fine">Decisions stay in this browser. Export them to keep a separate record. A saved decision is a human assessment, not independent validation.</p><p id="decision-error" role="alert"></p><button class="primary" type="submit">Save review</button><p id="decision-saved" role="status"></p></form>`;
+ $('decision').value=r.status||'';
+ $('review-form').addEventListener('submit',e=>{e.preventDefault();const decision=$('decision').value,reviewer=$('reviewer').value.trim(),evidence=$('evidence').value.trim();if(decision&&(!reviewer||!evidence)){$('decision-error').textContent='Add the reviewer and supporting evidence before saving a decision.';return}const next={...reviews};if(decision)next[id]={status:decision,reviewer,evidence,updated:new Date().toISOString()};else delete next[id];try{localStorage.setItem('pcard-reviews-v1',JSON.stringify(next));reviews=next;$('decision-error').textContent='';$('decision-saved').textContent='Review saved in this browser.';render()}catch{$('decision-error').textContent='The browser could not save this review. Enable local storage or copy your evidence before closing.'}});
+ $('detail').showModal();
+}
+function download(filename,content,type){const url=URL.createObjectURL(new Blob([content],{type}));const a=document.createElement('a');a.href=url;a.download=filename;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}
+function csvCell(v){let s=String(v??'');if(/^[=+@\-]/.test(s))s="'"+s;return '"'+s.replace(/"/g,'""')+'"'}
+$('export').addEventListener('click',()=>{const head=['Transaction','Fiscal year','Purchase date','Post date','Cardholder','Merchant','Selected amount USD','Full amount USD','Travel classification','Review status'];const content=[head,...rows.map(t=>[t.id,t.fy,t.date,t.post,t.person,t.merchant,(t.scoped/100).toFixed(2),(t.amount/100).toFixed(2),t.travel,statuses[status(t)]])].map(r=>r.map(csvCell).join(',')).join('\r\n');download(`pcard-${view}-filtered.csv`,content,'text/csv')});
+$('content').addEventListener('click',e=>{const detail=e.target.closest('[data-detail]');if(detail)openDetail(detail.dataset.detail);const filter=e.target.closest('[data-filter]');if(filter){$(filter.dataset.filter).value=filter.dataset.value;page=0;render();document.querySelector('.transactions')?.scrollIntoView({behavior:'instant'})}});
+$('close-detail').addEventListener('click',()=>$('detail').close());
+$('filters').addEventListener('submit',e=>e.preventDefault());
+let timer;$('filters').addEventListener('input',()=>{clearTimeout(timer);timer=setTimeout(()=>{page=0;render()},180)});
+$('reset').addEventListener('click',()=>{HTMLFormElement.prototype.reset.call($('filters'));page=0;render()});
+window.addEventListener('hashchange',()=>{page=0;rankMetric='spend';$('nav').classList.remove('open');document.querySelector('.mobile-menu').setAttribute('aria-expanded','false');render();window.scrollTo(0,0)});
+document.querySelector('.mobile-menu').addEventListener('click',e=>{const open=$('nav').classList.toggle('open');e.target.setAttribute('aria-expanded',String(open))});
+if(innerWidth<=600)document.querySelector('.filter-box').open=false;
+function loadDataset(d){
+ const strings=['id','fy','date','post','person','merchant','raw','category','source','sheet','travel'];
+ if(!d||!Array.isArray(d.transactions)||!Array.isArray(d.staff)||!d.transactions.every(t=>t&&strings.every(k=>typeof t[k]==='string')&&Number.isFinite(t.amount)&&Array.isArray(t.allocations)&&t.allocations.every(a=>a&&['fund','center','account'].every(k=>typeof a[k]==='string'&&/^[\w .-]*$/.test(a[k]))&&Number.isFinite(a.amount))&&['comments','flags'].every(k=>Array.isArray(t[k])&&t[k].every(v=>typeof v==='string'))&&Array.isArray(t.rows)&&t.rows.every(Number.isInteger)&&/^[\w.-]+$/.test(t.id))||!d.staff.every(s=>s&&['name','source_url'].every(k=>typeof s[k]==='string')&&['title','email'].every(k=>s[k]===null||typeof s[k]==='string')&&Array.isArray(s.departments)&&s.departments.every(v=>typeof v==='string')&&/^https?:\/\//.test(s.source_url)))throw Error('Choose a valid Spending Blaze app/data.json dataset.');
+ data=d;page=0;HTMLFormElement.prototype.reset.call($('filters'));
+ for(const [id,values,label] of [['fund',d.transactions.flatMap(t=>t.allocations.map(a=>a.fund)),'All funds'],['center',d.transactions.flatMap(t=>t.allocations.map(a=>a.center)),'All cost centers'],['person',d.transactions.map(t=>t.person),'All cardholders'],['merchant',d.transactions.map(t=>t.merchant),'All merchants']])fillSelect(id,values,label);
+ $('loading').hidden=true;$('dataset-error').textContent='';$('export').disabled=false;render();
+}
+$('export').disabled=true;
+$('dataset').addEventListener('change',async e=>{
+ const file=e.target.files[0];if(!file)return;
+ try{const parsed=JSON.parse(await file.text());loadDataset(parsed)}catch{$('dataset-error').textContent='This file could not be opened. Choose a valid Spending Blaze app/data.json dataset.'}
+});
+if(['localhost','127.0.0.1'].includes(location.hostname))fetch('./data.json').then(r=>{if(!r.ok)throw Error();return r.json()}).then(loadDataset).catch(()=>{});

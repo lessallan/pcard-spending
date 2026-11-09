@@ -4,3 +4,5 @@
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
 
 [hidden]{display:none!important}
+
+.data-picker{padding:18px;background:#eef2e9;border-radius:8px;margin-bottom:20px}.data-picker input{height:auto;margin-block:8px}.data-picker p{font-size:13px;margin:0}#dataset-error{color:#924642}
