@@ -297,6 +297,69 @@ const radarGroups=[
       "TXN00056469",
       "TXN00056573"
     ]
+  },
+  {
+    "title": "Selected office desks",
+    "reason": "Four desk purchases ranging from $864.74 to $1,499.99. Receipts, specifications and replacement needs would explain the costs. Refunded desk purchases are excluded from this selection.",
+    "context": true,
+    "ids": [
+      "TXN00045063",
+      "TXN00044977",
+      "TXN00054569",
+      "TXN00051319"
+    ]
+  },
+  {
+    "title": "Additional City & holiday meals",
+    "reason": "City lunches, employee Christmas meals, appreciation coffee and a City Manager’s luncheon. What were the attendance counts, per-person costs and approved purposes? These are selected charges across multiple events.",
+    "context": true,
+    "ids": [
+      "TXN00043449",
+      "TXN00043473",
+      "TXN00043495",
+      "TXN00043538",
+      "TXN00043541",
+      "TXN00043579",
+      "TXN00050224",
+      "TXN00051754",
+      "TXN00051780",
+      "TXN00051802",
+      "TXN00051940",
+      "TXN00053044",
+      "TXN00053456",
+      "TXN00053493",
+      "TXN00053526",
+      "TXN00053556"
+    ]
+  },
+  {
+    "title": "World Changers activities",
+    "reason": "Includes a $2,450.22 anniversary lunch, plus postcards and labels. Headcount, program purpose and funding would explain the cost. Purchases span FY25 and FY26, not a single confirmed event.",
+    "context": true,
+    "ids": [
+      "TXN00046955",
+      "TXN00055231",
+      "TXN00055346",
+      "TXN00056686"
+    ]
+  },
+  {
+    "title": "GoDaddy annual charges",
+    "reason": "Two $999.98 charges on February 27 and March 22, 2026. One note says yearly charge; the other says SSL Yearly Renewal. Check invoices, covered services and billing periods. Matching amounts alone do not establish duplication.",
+    "context": true,
+    "ids": [
+      "TXN00053541",
+      "TXN00054141"
+    ]
+  },
+  {
+    "title": "Vehicle-camera subscriptions",
+    "reason": "Two $1,904 charges on April 16 and May 6, 2026. Check the billing periods, vehicles and services covered. Matching amounts alone do not establish duplication.",
+    "context": true,
+    "ids": [
+      "TXN00054802",
+      "TXN00055287"
+    ]
   }
 ];
 function radarReport(ts){
