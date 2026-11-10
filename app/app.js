@@ -24,7 +24,7 @@ function filtered(){
  for(const t of data.transactions){
   if(f.purchaseType==='travel'&&t.travel==='Not identified as travel')continue;
   if(f.fy&&t.fy!==f.fy||f.person&&t.person!==f.person||f.merchant&&t.merchant!==f.merchant||f.from&&t.date<f.from||f.to&&t.date>f.to||f.minimum&&t.amount<Math.round(Number(f.minimum)*100))continue;
-  if(f.search&&!`${transactionTitle(t)} ${t.id} ${t.person} ${displayName(t.person)} ${t.merchant} ${t.raw}`.toLowerCase().includes(f.search.toLowerCase()))continue;
+  if(f.search&&!`${transactionTitle(t)} ${merchantLocation(t)?.address||''} ${t.id} ${t.person} ${displayName(t.person)} ${t.merchant} ${t.raw}`.toLowerCase().includes(f.search.toLowerCase()))continue;
   const allocations=t.allocations.filter(a=>(!f.fund||a.fund===f.fund)&&(!f.center||a.center===f.center));
   if(!allocations.length)continue;
   result.push({...t,allocations,scoped:allocations.reduce((n,a)=>n+a.amount,0)});
@@ -61,7 +61,72 @@ function timeline(ts){
 function board(title,note,body,full=false){return `<section class="board ${full?'full':''}"><div class="board-head"><div><h2>${title}</h2><p class="sub">${note}</p></div></div>${body}</section>`}
 function rankingControls(){return `<div class="controls-row"><label>Rank by<select id="rank-metric"><option value="spend" ${rankMetric==='spend'?'selected':''}>Net spending</option><option value="count" ${rankMetric==='count'?'selected':''}>Purchase count</option></select></label></div>`}
 // Labels describe the recorded charge, never the items bought or who benefited.
+// Exact recorded descriptors matched to official store directories, checked 2026-11-09.
+// Current directory addresses are context, not proof of historical location or a visit.
+const merchantLocations = {
+  "CHEVRON 0309488": {
+    "name": "Chevron #0309488",
+    "city": "College Park, GA",
+    "address": "5631 W Fayetteville Rd, College Park, GA 30349-7542",
+    "source": "https://www.chevronwithtechron.com/en_us/home/gas-station-near-me.html?/station/5631-W-FAYETTEVILLE-RD-COLLEGE-PARK-GA-30349-7542-id309488"
+  },
+  "LOWES #00448": {
+    "name": "Lowe’s #448",
+    "city": "Panama City, FL",
+    "address": "300 East 23rd St, Panama City, FL 32405",
+    "source": "https://www.lowes.com/store/FL-Panama-City/0448"
+  },
+  "O'REILLY 1160": {
+    "name": "O’Reilly Auto Parts #1160",
+    "city": "Panama City, FL",
+    "address": "1345 West 15th Street, Panama City, FL 32401",
+    "source": "https://locations.oreillyauto.com/en-us/fl/panamacity/autoparts-1160.html"
+  },
+  "SAMS CLUB #8151": {
+    "name": "Sam’s Club #8151",
+    "city": "Panama City, FL",
+    "address": "1707 W 23rd St, Panama City, FL 32405",
+    "source": "https://www.samsclub.com/club/8151-panama-city-fl"
+  },
+  "SAMSCLUB #8151": {
+    "name": "Sam’s Club #8151",
+    "city": "Panama City, FL",
+    "address": "1707 W 23rd St, Panama City, FL 32405",
+    "source": "https://www.samsclub.com/club/8151-panama-city-fl"
+  },
+  "SAMS CLUB#8151": {
+    "name": "Sam’s Club #8151",
+    "city": "Panama City, FL",
+    "address": "1707 W 23rd St, Panama City, FL 32405",
+    "source": "https://www.samsclub.com/club/8151-panama-city-fl"
+  },
+  "WAL-MART #3075": {
+    "name": "Walmart #3075",
+    "city": "Panama City, FL",
+    "address": "513 W 23rd St, Panama City, FL 32405",
+    "source": "https://www.walmart.com/store/3075-panama-city-fl"
+  },
+  "PUBLIX #481": {
+    "name": "Publix #481",
+    "city": "Panama City, FL",
+    "address": "650 W 23rd St, Panama City, FL 32405-3921",
+    "source": "https://www.publix.com/locations/481-23rd-street-plaza"
+  },
+  "HOBBY LOBBY #339": {
+    "name": "Hobby Lobby #339",
+    "city": "Panama City, FL",
+    "address": "530 Hawkins Ave, Panama City, FL 32405",
+    "source": "https://www.hobbylobby.com/stores/search/339"
+  }
+};
+function merchantLocation(t){return merchantLocations[(t.raw||'').trim().toUpperCase()]||null}
+function merchantLocationDetail(t){
+ const m=merchantLocation(t);if(!m)return '';
+ return `<div class="budget-note"><h3>Merchant location</h3><p>${esc(m.name)} · ${esc(m.address)}</p><p><a href="${esc(m.source)}" target="_blank" rel="noopener">Official store directory ↗</a></p><p class="fine">Matched by the recorded store number. Directory checked November 9, 2026; this is a current listing, not confirmation of its address on the purchase date or an in-person visit.</p></div>`;
+}
 function transactionTitle(t){
+ const location=merchantLocation(t);
+ if(location)return (t.amount<0?'Credit / adjustment · ':t.amount===0?'Zero-amount entry · ':'')+location.name+' — '+location.city;
  const names={'HERC RENTALS':'Herc Rentals','ENTERPRISE RENT-A-CAR':'Enterprise Rent-A-Car','EMBASSY SUITES':'Embassy Suites','HILTON CONVENTION CTR':'Hilton Convention Center'};
  const recorded=(t.merchant||'').trim();
  const merchant=names[recorded]||recorded;
@@ -294,7 +359,7 @@ function render(){
 function openDetail(id){
  const original=data.transactions.find(t=>t.id===id);if(!original)return;const t=view==='travel'?travelTransaction(original):original;selectedId=id;
  $('detail-title').textContent=transactionTitle(t);
- $('detail-body').innerHTML=`<p class="transaction-meta">${esc(purchaseDateLabel(t.date))} · <strong>${exact(t.amount)}</strong> · ${esc(t.id)}</p><dl class="detail-grid"><div><dt>Recorded merchant</dt><dd>${esc(t.raw)}</dd></div><div><dt>Cardholder</dt><dd>${esc(displayName(t.person))}</dd></div><div><dt>Purchase / posted</dt><dd>${t.date} / ${t.post}</dd></div><div><dt>Source</dt><dd>${esc(t.source)} · ${esc(t.sheet)} · rows ${t.rows.join(', ')}</dd></div></dl><p class="section-note">P-card transactions only; separate expense reimbursements are not included. Cardholders may purchase for others.</p><h3>Accounting allocations</h3><div class="table-wrap"><table><thead><tr><th>Fund</th><th>Spending area</th><th>Account</th><th class="num">Amount</th></tr></thead><tbody>${t.allocations.map(a=>`<tr><td>${esc(a.fund)}</td><td>${esc(centerLabel(a.center))}</td><td>${esc(a.account)}</td><td class="num">${exact(a.amount)}</td></tr>`).join('')}</tbody></table></div>`;
+ $('detail-body').innerHTML=`<p class="transaction-meta">${esc(purchaseDateLabel(t.date))} · <strong>${exact(t.amount)}</strong> · ${esc(t.id)}</p>${merchantLocationDetail(t)}<dl class="detail-grid"><div><dt>Recorded merchant</dt><dd>${esc(t.raw)}</dd></div><div><dt>Cardholder</dt><dd>${esc(displayName(t.person))}</dd></div><div><dt>Purchase / posted</dt><dd>${t.date} / ${t.post}</dd></div><div><dt>Source</dt><dd>${esc(t.source)} · ${esc(t.sheet)} · rows ${t.rows.join(', ')}</dd></div></dl><p class="section-note">P-card transactions only; separate expense reimbursements are not included. Cardholders may purchase for others.</p><h3>Accounting allocations</h3><div class="table-wrap"><table><thead><tr><th>Fund</th><th>Spending area</th><th>Account</th><th class="num">Amount</th></tr></thead><tbody>${t.allocations.map(a=>`<tr><td>${esc(a.fund)}</td><td>${esc(centerLabel(a.center))}</td><td>${esc(a.account)}</td><td class="num">${exact(a.amount)}</td></tr>`).join('')}</tbody></table></div>`;
  if(view==='travel'){ $('detail-body').innerHTML+=tripReviewForm(t);bindTripReview(t) }
  $('detail').showModal();
 }
