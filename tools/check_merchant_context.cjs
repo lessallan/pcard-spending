@@ -33,7 +33,16 @@ assert.ok(merchantProfiles.every(p=>new URL(p.url).protocol==='https:'));
  await page.setViewportSize({width:390,height:844});assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
  await page.screenshot({path:'/tmp/pcards-purchase-context-mobile.png'});
  await page.locator('#close-detail').click();await page.goto((process.env.PCARDS_TEST_URL||'http://127.0.0.1:4310')+'/#merchants');await page.waitForSelector('.company-description');
- assert.ok(await page.locator('.company-description').count()>0);assert.deepEqual(errors,[]);
+ assert.ok(await page.locator('.company-description').count()>0);
+ const base=(process.env.PCARDS_TEST_URL||'http://127.0.0.1:4310').replace(/\/$/,'')+'/';
+ const fs=require('node:fs');const expected=JSON.parse(fs.readFileSync('docs/data.json','utf8'));
+ const published=await (await page.request.get(base+'data.json?v=company-notes-1')).json();assert.deepEqual(published,expected);
+ for(const route of ['overview','travel','retail','centers','staff','transactions','travel/person/BRANCH%20%2C%20ALLAN']){
+  await page.goto(base+'#'+route);await page.waitForFunction(()=>document.getElementById('content').textContent.trim().length>0);
+  assert.doesNotMatch(await page.locator('#content').innerText(),/undefined|NaN/);
+ }
+ for(const route of ['review/','review/reports/merchant-review.html']){await page.goto(base+route);await page.waitForURL(base);await page.waitForFunction(()=>document.getElementById('content').textContent.trim().length>0)}
+ assert.deepEqual(errors,[]);
  console.log('PASS: exact vendor matching, administrative and vague notes, mixed items, deduplication, qualification preservation, escaping, source links, dialog, merchant listing and mobile overflow.');
  }finally{await browser.close()}
 })().catch(e=>{console.error(e);process.exit(1)});
