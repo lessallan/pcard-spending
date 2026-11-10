@@ -179,7 +179,7 @@ const radarGroups=[
   },
   {
     "title": "Awards purchases needing item details",
-    "reason": "Additional purchases at the recorded merchant “Engraving, Awards,” including shipping. Notes do not identify the items; request the itemized invoices before judging the cost.",
+    "reason": "Additional purchases at the recorded merchant \u201cEngraving, Awards,\u201d including shipping. Notes do not identify the items; request the itemized invoices before judging the cost.",
     "context": true,
     "ids": [
       "TXN00049214",
@@ -277,7 +277,7 @@ const radarGroups=[
   },
   {
     "title": "Refrigerators & ice makers",
-    "reason": "Two commercial refrigerators, two ice makers and a beverage refrigerator for the Mayor/Commissioners’ office. Locations, replacement reasons and usage would explain the need.",
+    "reason": "Two commercial refrigerators, two ice makers and a beverage refrigerator for the Mayor/Commissioners\u2019 office. Locations, replacement reasons and usage would explain the need.",
     "context": true,
     "ids": [
       "TXN00044783",
@@ -311,7 +311,7 @@ const radarGroups=[
   },
   {
     "title": "Additional City & holiday meals",
-    "reason": "City lunches, employee Christmas meals, appreciation coffee and a City Manager’s luncheon. What were the attendance counts, per-person costs and approved purposes? These are selected charges across multiple events.",
+    "reason": "City lunches, employee Christmas meals, appreciation coffee and a City Manager\u2019s luncheon. What were the attendance counts, per-person costs and approved purposes? These are selected charges across multiple events.",
     "context": true,
     "ids": [
       "TXN00043449",
@@ -353,81 +353,160 @@ const radarGroups=[
     ]
   },
   {
-    "title": "Vehicle-camera subscriptions",
-    "reason": "Two $1,904 charges on April 16 and May 6, 2026. Check the billing periods, vehicles and services covered. Matching amounts alone do not establish duplication.",
+    "title": "Vehicle-camera services",
+    "reason": "Review covered vehicles, service levels, invoices and billing periods. Includes recurring camera storage, support and subscription charges. Repeated same-day $493 charges and changes in billed amounts need invoice context; matching amounts alone do not establish duplicate billing. Camera hardware and installation purchases are excluded.",
     "context": true,
     "ids": [
       "TXN00054802",
-      "TXN00055287"
+      "TXN00055287",
+      "TXN00041704",
+      "TXN00041688",
+      "TXN00043050",
+      "TXN00043474",
+      "TXN00044449",
+      "TXN00044490",
+      "TXN00045115",
+      "TXN00046849",
+      "TXN00046822",
+      "TXN00047677",
+      "TXN00048470",
+      "TXN00050996",
+      "TXN00051817",
+      "TXN00053189",
+      "TXN00053209",
+      "TXN00054118",
+      "TXN00055904"
     ]
   },
-{
-  "title": "Selected software subscriptions and Plaud device",
-  "context": true,
-  "reason": "Review active users, license counts, usage and renewal needs for Grammarly, SurveyMonkey, LinkedIn and Plaud. Includes the Plaud device and a $540 Grammarly credit. SurveyMonkey transaction TXN00049523 is included by merchant; it has no recorded purchase note. Annual renewals alone do not establish duplicate billing.",
-  "ids": [
-    "TXN00043082",
-    "TXN00044790",
-    "TXN00046143",
-    "TXN00047880",
-    "TXN00049523",
-    "TXN00051922",
-    "TXN00054641",
-    "TXN00055079",
-    "TXN00055186",
-    "TXN00055547",
-    "TXN00056232",
-    "TXN00058079"
-  ]
-},
-{
-  "title": "Charter Review meals and refreshments",
-  "context": true,
-  "reason": "Review catering frequency, attendance, per-person costs and receipts. Notes flag a receipt mismatch and a $35 tip not shown on a receipt. The total subtracts a $16.99 card credit. A separate note reports tax refunded in cash without an amount, so that cash refund is not deducted.",
-  "ids": [
-    "TXN00048834",
-    "TXN00049618",
-    "TXN00050793",
-    "TXN00050797",
-    "TXN00051797",
-    "TXN00052329",
-    "TXN00052748",
-    "TXN00053373",
-    "TXN00053376",
-    "TXN00053576",
-    "TXN00053704",
-    "TXN00054357",
-    "TXN00054621",
-    "TXN00054636",
-    "TXN00054663",
-    "TXN00054989",
-    "TXN00055753",
-    "TXN00056023",
-    "TXN00056041"
-  ]
-},
-{
-  "title": "Additional health-screening purchases",
-  "context": true,
-  "reason": "Review itemized receipts, attendance and the split between food and raffle giveaways. The $550 Drury Inns charge carries a health-screening note naming other vendors; its actual purpose needs receipt confirmation. Previously listed wellness prizes are not included in this selection.",
-  "ids": [
-    "TXN00053414",
-    "TXN00053418",
-    "TXN00053441",
-    "TXN00053464"
-  ]
-},
-{
-  "title": "Dover Kohl meeting meals",
-  "context": true,
-  "reason": "Four lunch and dinner charges associated with Dover Kohl meetings. Review attendance, per-person costs and the approved meeting purpose; the notes alone do not establish unnecessary spending.",
-  "ids": [
-    "TXN00052688",
-    "TXN00052723",
-    "TXN00054468",
-    "TXN00054488"
-  ]
-}
+  {
+    "title": "Selected software subscriptions and Plaud device",
+    "context": true,
+    "reason": "Review active users, license counts, usage and renewal needs for Grammarly, SurveyMonkey, LinkedIn and Plaud. Includes the Plaud device and a $540 Grammarly credit. SurveyMonkey transaction TXN00049523 is included by merchant; it has no recorded purchase note. Annual renewals alone do not establish duplicate billing.",
+    "ids": [
+      "TXN00043082",
+      "TXN00044790",
+      "TXN00046143",
+      "TXN00047880",
+      "TXN00049523",
+      "TXN00051922",
+      "TXN00054641",
+      "TXN00055079",
+      "TXN00055186",
+      "TXN00055547",
+      "TXN00056232",
+      "TXN00058079"
+    ]
+  },
+  {
+    "title": "Charter Review meals and refreshments",
+    "context": true,
+    "reason": "Review catering frequency, attendance, per-person costs and receipts. Notes flag a receipt mismatch and a $35 tip not shown on a receipt. The total subtracts a $16.99 card credit. A separate note reports tax refunded in cash without an amount, so that cash refund is not deducted.",
+    "ids": [
+      "TXN00048834",
+      "TXN00049618",
+      "TXN00050793",
+      "TXN00050797",
+      "TXN00051797",
+      "TXN00052329",
+      "TXN00052748",
+      "TXN00053373",
+      "TXN00053376",
+      "TXN00053576",
+      "TXN00053704",
+      "TXN00054357",
+      "TXN00054621",
+      "TXN00054636",
+      "TXN00054663",
+      "TXN00054989",
+      "TXN00055753",
+      "TXN00056023",
+      "TXN00056041"
+    ]
+  },
+  {
+    "title": "Additional health-screening purchases",
+    "context": true,
+    "reason": "Review itemized receipts, attendance and the split between food and raffle giveaways. The $550 Drury Inns charge carries a health-screening note naming other vendors; its actual purpose needs receipt confirmation. Previously listed wellness prizes are not included in this selection.",
+    "ids": [
+      "TXN00053414",
+      "TXN00053418",
+      "TXN00053441",
+      "TXN00053464"
+    ]
+  },
+  {
+    "title": "Dover Kohl meeting meals",
+    "context": true,
+    "reason": "Four lunch and dinner charges associated with Dover Kohl meetings. Review attendance, per-person costs and the approved meeting purpose; the notes alone do not establish unnecessary spending.",
+    "ids": [
+      "TXN00052688",
+      "TXN00052723",
+      "TXN00054468",
+      "TXN00054488"
+    ]
+  },
+  {
+    "title": "Christmas decorations and setup",
+    "context": true,
+    "reason": "Review quantities, reuse, storage and setup costs. Includes $1,486.92 for a scissor lift to remove decorations, $509.82 across three ornament charges and a $179.09 training-room tree. Three recorded credits totaling $42.94 reduce this total. Mixed purchases include headlight bulbs or thumb drives at their full recorded charge; item-level costs are unavailable. This is not a complete holiday budget.",
+    "ids": [
+      "TXN00042704",
+      "TXN00043063",
+      "TXN00043040",
+      "TXN00043235",
+      "TXN00043248",
+      "TXN00043289",
+      "TXN00043413",
+      "TXN00043186",
+      "TXN00043255",
+      "TXN00043296",
+      "TXN00043081",
+      "TXN00043149",
+      "TXN00043780",
+      "TXN00049720",
+      "TXN00049738",
+      "TXN00049780",
+      "TXN00049796",
+      "TXN00050436",
+      "TXN00050980",
+      "TXN00051180",
+      "TXN00051545",
+      "TXN00051574",
+      "TXN00051609",
+      "TXN00051645",
+      "TXN00051809",
+      "TXN00051833",
+      "TXN00051920",
+      "TXN00052544"
+    ]
+  },
+  {
+    "title": "CRA socials: printing and supplies",
+    "context": true,
+    "reason": "Review print quantities, unit prices and event attendance. Includes $3,792 for maps and $421.25 for signs. A reviewer asked whether the maps were special prints or copies; the response says they were interactive maps for CRA socials. A mixed boxes/snacks purchase is included at its full recorded charge.",
+    "ids": [
+      "TXN00043957",
+      "TXN00044170",
+      "TXN00043904",
+      "TXN00043953",
+      "TXN00043968",
+      "TXN00044414",
+      "TXN00044436",
+      "TXN00053356"
+    ]
+  },
+  {
+    "title": "City/County utilities meeting meals",
+    "context": true,
+    "reason": "Review attendance, per-person costs and meal documentation. These five charges cover four meeting dates. An Olive Garden note requests an itemized receipt after attendee names were provided; the notes do not establish whether that request was subsequently resolved.",
+    "ids": [
+      "TXN00049055",
+      "TXN00049105",
+      "TXN00051365",
+      "TXN00055452",
+      "TXN00057581"
+    ]
+  }
 ];
 function radarReport(ts){
  const lookup=new Map(ts.map(t=>[t.id,t]));
