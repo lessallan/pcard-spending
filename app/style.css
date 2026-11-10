@@ -110,3 +110,12 @@ body>.resident-guide{max-width:1144px;margin:24px auto 28px;padding:28px 36px;ba
 .staff-person h3{margin:0 0 4px;text-wrap:balance}
 .staff-person .leadership-total{margin:16px 0 0;padding-top:12px;border-top:1px solid var(--line);width:100%;max-width:28ch}
 @media(max-width:600px){.staff-person{padding:22px 18px}.staff-person h3 a{justify-content:center}.staff-grid{gap:16px}}
+
+/* The overview leads with spending areas; detailed filters live on report pages. */
+.filter-box[hidden]{display:none}
+.overview-primary{grid-column:1/-1;background:#eef2e9;border-radius:10px;padding:28px}
+.overview-primary .board{border-top:0;padding-top:0}
+.overview-primary h2{font-size:28px}
+.overview-primary .chart-row{grid-template-columns:minmax(210px,1fr) minmax(120px,1.5fr) 110px;font-size:16px;gap:20px;margin:18px 0}
+.overview-primary .track{height:22px}
+@media(max-width:600px){.overview-primary{padding:18px}.overview-primary h2{font-size:24px}.overview-primary .chart-row{grid-template-columns:1fr 90px;gap:6px;font-size:14px;margin:20px 0}.overview-primary .chart-row button{grid-column:1/-1}.overview-primary .track{height:18px}}

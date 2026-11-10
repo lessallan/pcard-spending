@@ -5,7 +5,7 @@ const money=c=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',ma
 const exact=c=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'}).format(c/100);
 const number=n=>n.toLocaleString('en-US');
 let data, rows=[], page=0, view='overview', rankMetric='spend', selectedId=null, selectedLeader=null;
-const titles={leader:['Associated card charges','Recorded cardholder transactions, not personal spending.'],retail:['Amazon, Walmart & similar stores','Explore purchases at stores that sell many kinds of goods; itemized receipts explain what was bought.'],overview:['Your city’s P-card spending','Understand how public money supports everyday City work.'],travel:['Travel & lodging','Explore travel charges by merchant and spending area.'],centers:['Spending by area','Understand the accounting areas charged for City purchases.'],merchants:['Where the money goes','Explore merchants, purchase volume, and broad-selection retailers.'],staff:['City leadership','Elected officials, city management, and department leadership.']};
+const titles={transactions:['Explore transactions','Search and filter individual City P-card purchases.'],leader:['Associated card charges','Recorded cardholder transactions, not personal spending.'],retail:['Amazon, Walmart & similar stores','Explore purchases at stores that sell many kinds of goods; itemized receipts explain what was bought.'],overview:['Your city’s P-card spending','Understand how public money supports everyday City work.'],travel:['Travel & lodging','Explore travel charges by merchant and spending area.'],centers:['Spending by area','Understand the accounting areas charged for City purchases.'],merchants:['Where the money goes','Explore merchants, purchase volume, and broad-selection retailers.'],staff:['City leadership','Elected officials, city management, and department leadership.']};
 // Published reference labels: FY25/FY26 budget books; 4150 identified in June 29, 2026 budget workshop.
 // Additional evidence: analysis/cost-center-expanded-search.md (private research, not published).
 // Not a verified FY26 chart of accounts or proof of an employee's department.
@@ -17,7 +17,7 @@ function displayName(s){if(!s)return 'Not publicly identified';if(s.includes(','
 function fillSelect(id,values,label){$(id).innerHTML=`<option value="">${label}</option>`+[...new Set(values)].sort().map(v=>`<option value="${esc(v)}">${esc(id==='person'?displayName(v):id==='center'?centerLabel(v):v)}</option>`).join('')}
 function filters(){return Object.fromEntries(new FormData($('filters')))}
 function filtered(){
- const f=filters();let result=[];if(selectedLeader)f.person='';
+ const f=view==='overview'?{}:filters();let result=[];if(selectedLeader)f.person='';
  if(f.from&&f.to&&f.from>f.to){$('filter-error').textContent='The start date must be on or before the end date.';return []}
  $('filter-error').textContent='';
  for(const t of data.transactions){
@@ -115,6 +115,7 @@ function render(){
  $('title').textContent=selectedLeader||titles[view][0];$('subtitle').textContent=titles[view][1];document.title=(selectedLeader||titles[view][0])+' · Penny Ping';
  document.querySelectorAll('nav a').forEach(a=>{a.classList.toggle('active',a.hash==='#'+(selectedLeader?'staff':view));a.setAttribute('aria-current',a.hash==='#'+(selectedLeader?'staff':view)?'page':'false')});
  const staff=view==='staff';
+ document.querySelector('.filter-box').hidden=view==='overview';
  document.querySelectorAll('#filters label').forEach(l=>l.hidden=(staff&&!l.classList.contains('search-label'))||!!selectedLeader&&l.contains($('person')));
  const active=Object.values(filters()).filter(Boolean).length;$('filter-count').textContent=staff?'Search leadership':active?`${active} active`:'';
  if(staff){$('content').innerHTML=staffView();return}
@@ -130,22 +131,24 @@ function render(){
  if(view==='retail')rows=rows.filter(retailerMatches);if(view==='travel')rows=rows.filter(t=>t.travel!=='Not identified as travel');
  rows.sort((a,b)=>b.scoped-a.scoped);
  let out=(selectedLeader?leadershipIntro(selectedLeader)+`<p class="section-note">Name-matched cardholder in source records: <strong>${esc(leadershipCardholders[selectedLeader])}</strong>. Totals below reflect the selected filters.</p>`:'')+stats(rows,!!selectedLeader);const centered=aggregate(rows,'center',true),people=aggregate(rows,'person'),merchants=aggregate(rows,'merchant');
- if(filters().fund||filters().center)out+='<p class="section-note">Amounts reflect only the selected accounting allocations. Transaction counts remain unique IDs; minimum-charge and policy checks use the full original charge.</p>';
+ if(view!=='overview'&&(filters().fund||filters().center))out+='<p class="section-note">Amounts reflect only the selected accounting allocations. Transaction counts remain unique IDs; minimum-charge and policy checks use the full original charge.</p>';
  if(view==='overview'){
-  out+='<div class="boards">'+board('Where spending lands','Click a merchant to explore its purchases.',bars(merchants,'merchant'))+board('By spending area','Codes identify accounting areas; names are published budget references.',bars(centered,'center'))+board('Across the year','Both fiscal years · figures from provided detail.',timeline(rows),true)+board('Travel & lodging','Travel-related charges grouped by merchant.',bars(aggregate(rows.filter(t=>t.travel!=='Not identified as travel'),'merchant'),'merchant'))+board('Everyday retailers','Store totals do not identify the individual items purchased.',bars(aggregate(rows.filter(t=>t.mixed),'merchant'),'merchant'))+'</div>';
+  const travelRows=rows.filter(t=>t.travel!=='Not identified as travel');
+  out+='<div class="boards overview-boards"><div class="overview-primary">'+board('By spending area','The largest accounting areas for City P-card purchases. Select an area to explore its transactions.',bars(centered,'center',12),true)+'</div>'+board('All spending across the year','All recorded P-card spending · both fiscal years.',timeline(rows),true)+board('Where spending lands','Businesses the City buys from.',bars(merchants,'merchant',5))+board('Everyday retailers','Store totals do not identify the individual items purchased.',bars(aggregate(rows.filter(t=>t.mixed),'merchant'),'merchant',5))+board('Travel & lodging by spending area','Accounting areas with the most recorded travel spending. Purchases may support several people or services.','<div data-destination="travel">'+bars(aggregate(travelRows,'center',true),'center',8)+'</div><p><a href="#travel">Explore travel &amp; lodging →</a></p>',true)+'</div>';
+
  }else if(view==='retail'){
   out+=retailerReport(rows);
  }else if(view==='travel'){
   out+='<div class="budget-note"><h3>How travel fits the budget</h3><p>Travel is part of City operations. Employees are expected to follow approved budgets and travel rules. This dataset does not include those budget allocations, so it cannot show remaining budget or establish overspending.</p></div><p class="section-note">Travel is inferred from recognizable merchant names and travel account 54000. It may include personal context, shared bookings, or non-travel charges and may miss other travel. Hotel classification uses recognizable lodging merchants; hotel totals may include meals, tuition and incidentals. Counts are purchase transactions, not trips or nights. Cardholders may book for other people.</p>'+rankingControls();
   out+=annualTravel(rows);
-  out+='<div class="boards">'+board('Travel merchants','Hotels, airfare, transport, and unclassified travel-account charges.',bars(merchants,'merchant'))+board('Travel through the year','Net recorded amounts by posting month.',timeline(rows),true)+'</div>';
+  out+='<div class="boards">'+board('Travel spending by area','Allocated travel charges by accounting area; purchases may support several people.',bars(centered,'center',12),true)+board('Travel merchants','Hotels, airfare, transport, and unclassified travel-account charges.',bars(merchants,'merchant'))+board('Travel through the year','Net recorded amounts by posting month.',timeline(rows),true)+'</div>';
  }else if(['centers','merchants'].includes(view)){
   const type={centers:'center',people:'person',merchants:'merchant'}[view],gs={centers:centered,people,merchants}[view];
   out+=rankingControls()+(view==='people'?'<p class="section-note">A cardholder is the employee named on the payment card, not necessarily the person using the goods or taking the trip. One employee may purchase for a whole team. The table shows recorded cost centers, not a verified job title. <a href="#staff">Browse City leadership</a> for current published roles; identities and historical roles still need confirmation.</p>':'')+(view==='centers'?'<p class="section-note">A cost center is an accounting code used to group spending by a City function or service. Names come from City budget books and budget-workshop records; year-specific labels are marked. Codes awaiting confirmation remain as codes. Split purchases can appear in multiple centers. Source: '+centerSource+'</p>':'');
   out+=board(rankMetric==='count'?'Purchases by group':'Recorded spending by group','Top positive groups · complete signed amounts in the table below.',bars(gs,type,12));out+=rankingTable(gs,type);
 
  }
- out+=`<section class="transactions"><div class="board-head" style="margin-top:30px"><div><h2>Explore transactions</h2><p class="sub">${number(rows.length)} matching records · largest amounts first · select a date for details</p></div></div>${table(rows)}</section>`;
+ if(view!=='overview')out+=`<section class="transactions"><div class="board-head" style="margin-top:30px"><div><h2>Explore transactions</h2><p class="sub">${number(rows.length)} matching records · largest amounts first · select a date for details</p></div></div>${table(rows)}</section>`;
  $('content').innerHTML=out;
  $('prev')?.addEventListener('click',()=>{page--;render()});$('next')?.addEventListener('click',()=>{page++;render()});
  if($('retailer-scope')){$('retailer-scope').value=retailerScope;$('retailer-scope').addEventListener('change',e=>{retailerScope=e.target.value;page=0;render()})}
@@ -157,7 +160,7 @@ function openDetail(id){
  $('detail-body').innerHTML=`<dl class="detail-grid"><div><dt>Merchant</dt><dd>${esc(t.raw)}</dd></div><div><dt>Cardholder</dt><dd>${esc(displayName(t.person))}</dd></div><div><dt>Purchase / posted</dt><dd>${t.date} / ${t.post}</dd></div><div><dt>Source</dt><dd>${esc(t.source)} · ${esc(t.sheet)} · rows ${t.rows.join(', ')}</dd></div></dl><p class="section-note">P-card transactions only; separate expense reimbursements are not included. Cardholders may purchase for others.</p><h3>Accounting allocations</h3><div class="table-wrap"><table><thead><tr><th>Fund</th><th>Spending area</th><th>Account</th><th class="num">Amount</th></tr></thead><tbody>${t.allocations.map(a=>`<tr><td>${esc(a.fund)}</td><td>${esc(centerLabel(a.center))}</td><td>${esc(a.account)}</td><td class="num">${exact(a.amount)}</td></tr>`).join('')}</tbody></table></div>`;
  $('detail').showModal();
 }
-$('content').addEventListener('click',e=>{const detail=e.target.closest('[data-detail]');if(detail)openDetail(detail.dataset.detail);const filter=e.target.closest('[data-filter]');if(filter){$(filter.dataset.filter).value=filter.dataset.value;page=0;render();document.querySelector('.transactions')?.scrollIntoView({behavior:'instant'})}});
+$('content').addEventListener('click',e=>{const detail=e.target.closest('[data-detail]');if(detail)openDetail(detail.dataset.detail);const filter=e.target.closest('[data-filter]');if(filter){if(view==='overview'){HTMLFormElement.prototype.reset.call($('filters'));$(filter.dataset.filter).value=filter.dataset.value;location.hash=filter.closest('[data-destination]')?.dataset.destination||'transactions';return}$(filter.dataset.filter).value=filter.dataset.value;page=0;render();document.querySelector('.transactions')?.scrollIntoView({behavior:'instant'})}});
 $('close-detail').addEventListener('click',()=>$('detail').close());
 $('filters').addEventListener('submit',e=>e.preventDefault());
 let timer;$('filters').addEventListener('input',()=>{clearTimeout(timer);timer=setTimeout(()=>{page=0;render()},180)});
