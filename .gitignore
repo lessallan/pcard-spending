@@ -140,3 +140,7 @@
 !/tools/build_leadership_associations.cjs
 !/docs/leadership-associations.json
 !/tools/check_leadership_associations.cjs
+
+!/app/radar.js
+!/docs/radar.js
+!/tools/check_radar_release.cjs

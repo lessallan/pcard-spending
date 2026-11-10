@@ -6,7 +6,7 @@ ROOT=Path(__file__).resolve().parents[1]
 class Handler(SimpleHTTPRequestHandler):
     def do_GET(self):
         path=unquote(urlparse(self.path).path)
-        allowed={'/penny-ping-logo.png':'app/penny-ping-logo.png','/porchping-logo.svg':'app/porchping-logo.svg','/spending-blaze-logo.png':'app/spending-blaze-logo.png','/':'app/index.html','/index.html':'app/index.html','/style.css':'app/style.css','/app.js':'app/app.js','/data.json':'app/data.json'}
+        allowed={'/radar.js':'app/radar.js','/penny-ping-logo.png':'app/penny-ping-logo.png','/porchping-logo.svg':'app/porchping-logo.svg','/spending-blaze-logo.png':'app/spending-blaze-logo.png','/':'app/index.html','/index.html':'app/index.html','/style.css':'app/style.css','/app.js':'app/app.js','/data.json':'app/data.json'}
         rel=allowed.get(path)
         if path.startswith('/photos/'):rel='staff/'+path.lstrip('/')
         if path.startswith('/policies/'):rel=path.lstrip('/')

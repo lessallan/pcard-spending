@@ -10,7 +10,7 @@ assert set(public)=={'version','records'} and public['version']==1
 assert len(public['records'])>=1446
 for key,record in public['records'].items():
     assert key in original
-    assert set(record)=={'person','group','reason','range','analysis','nonTrip'}
+    assert set(record)=={'person','group','reason','range','analysis','nonTrip','recipients'}
     assert record['person']==(original[key]['person'] if record['group'] or original[key]['travel']!='Not identified as travel' else '')
     assert set(record['analysis'])=={'kind','destinations','evidence','events'}
     assert not record['nonTrip'] or not record['group']
