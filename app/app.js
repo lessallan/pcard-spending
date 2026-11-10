@@ -5,7 +5,7 @@ const money=c=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',ma
 const exact=c=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'}).format(c/100);
 const number=n=>n.toLocaleString('en-US');
 let data, rows=[], page=0, view='overview', rankMetric='spend', selectedId=null, selectedLeader=null, selectedTravelPerson=null;
-const titles={radar:['Radar','Explore projects, programs, events and selected purchases through their recorded notes.'],transactions:['Explore transactions','Search and filter individual City P-card purchases.'],leader:['Associated card charges','Recorded cardholder transactions, not personal spending.'],overview:['Your city’s P-card spending','Understand how public money supports everyday City work.'],travel:['Travel & lodging','Explore travel charges by merchant and spending area.'],centers:['Spending by area','Understand the accounting areas charged for City purchases.'],merchants:['Merchants','Explore merchants, purchase volume, and broad-selection retailers.'],staff:['City leadership','Elected officials, city management, and department leadership.']};
+const titles={radar:['Radar','Explore projects, programs, events and selected purchases through their recorded notes.'],transactions:['Explore transactions','Explore City P-card purchases across all years or one fiscal year.'],leader:['Associated card charges','Recorded cardholder transactions, not personal spending.'],overview:['Your city’s P-card spending','Understand how public money supports everyday City work.'],travel:['Travel & lodging','Explore travel charges by merchant and spending area.'],centers:['Spending by area','Understand the accounting areas charged for City purchases.'],staff:['City leadership','Elected officials, city management, and department leadership.']};
 // Reference labels: FY25/FY26 budget books, supplemented by Brandy Waldron’s November 10, 2026 definitions.
 // Additional evidence: analysis/cost-center-expanded-search.md (private research, not published).
 // Not a verified FY26 chart of accounts or proof of an employee's department.
@@ -16,25 +16,13 @@ function personContext(name){const codes=[...new Set(rows.filter(t=>t.person===n
 // Allan confirmed source cardholder JONES, BEAU J is Jared Jones.
 function displayName(s){if(s&&s.trim().toUpperCase()==='JONES, BEAU J')return 'Jared Jones';if(!s)return 'Not publicly identified';if(s.includes(',')){let [last,...first]=s.split(',');return `${first.join(' ').trim()} ${last}`.toLowerCase().replace(/\b\w/g,c=>c.toUpperCase())}return s.toLowerCase().replace(/\b\w/g,c=>c.toUpperCase())}
 function fillSelect(id,values,label){$(id).innerHTML=`<option value="">${label}</option>`+[...new Set(values)].sort().map(v=>`<option value="${esc(v)}">${esc(id==='person'?displayName(v):id==='center'?centerLabel(v):v)}</option>`).join('')}
-function filters(){return view==='transactions'?Object.fromEntries(new FormData($('filters'))):{}}
+function filters(){return Object.fromEntries(new FormData($('filters')))}
 let appliedTransactionRoute=null, travelYear='', overviewRetailers=false;
-function transactionLink(params={}){const query=new URLSearchParams(Object.entries(params).filter(([,v])=>v));return '#transactions?'+(query.size?query:'scope=all')}
-function matchingTransactionsLink(params,count){return `<p><a class="matching-transactions" href="${esc(transactionLink(params))}">View matching transactions (${number(count)}) →</a></p>`}
+function transactionLink(){return '#transactions'}
+function matchingTransactionsLink(){return '<p><a href="#transactions">View transactions →</a></p>'}
 function filtered(){
- const f=view==='overview'||selectedTravelPerson?{}:filters();let result=[];if(selectedLeader)f.person='';
- if(f.from&&f.to&&f.from>f.to){$('filter-error').textContent='The start date must be on or before the end date.';return []}
- $('filter-error').textContent='';
- for(const t of data.transactions){
-  if(f.purchaseType==='travel'&&t.travel==='Not identified as travel')continue;
-  if(f.purchaseType==='retailers'&&!t.mixed)continue;
-  if(f.retailerGroup&&(!t.mixed||(f.retailerGroup==='amazon-walmart'?!['Amazon','Walmart'].includes(t.merchant):t.category!==f.retailerGroup)))continue;
-  if(f.fy&&t.fy!==f.fy||f.person&&t.person!==f.person||f.merchant&&t.merchant!==f.merchant||f.from&&t.date<f.from||f.to&&t.date>f.to||f.minimum&&t.amount<Math.round(Number(f.minimum)*100))continue;
-  if(f.search&&!`${transactionTitle(t)} ${merchantLocation(t)?.address||''} ${t.id} ${t.person} ${displayName(t.person)} ${t.merchant} ${t.raw}`.toLowerCase().includes(f.search.toLowerCase()))continue;
-  const allocations=t.allocations.filter(a=>(!f.fund||a.fund===f.fund)&&(!f.center||a.center===f.center));
-  if(!allocations.length)continue;
-  result.push({...t,allocations,scoped:allocations.reduce((n,a)=>n+a.amount,0)});
- }
- return result;
+ const fy=filters().fy;
+ return data.transactions.filter(t=>!fy||t.fy===fy).map(t=>({...t,scoped:t.allocations.reduce((n,a)=>n+a.amount,0)}));
 }
 function aggregate(ts,key,allocated=false){
  const groups=new Map();
@@ -48,7 +36,7 @@ function stats(ts,associated=false){const net=ts.reduce((n,t)=>n+t.scoped,0),gro
 function bars(groups,type,limit=8){
  const gs=groups.filter(g=>rankMetric==='count'?g.purchases.size>0:g.net>0).slice(0,limit),value=g=>rankMetric==='count'?g.purchases.size:g.net,max=Math.max(...gs.map(value),1);
  if(!gs.length)return '<p class="empty">No positive values in this selection. Widen the filters to see a comparison.</p>';
- return `<div role="img" aria-label="${esc(rankMetric==='count'?'Purchase count ranking':'Positive net spending ranking')}">${gs.map(g=>`<div class="chart-row"><button type="button" data-filter="${type}" data-value="${esc(g.name)}" aria-label="Filter to ${esc(g.name)}">${esc(type==='person'?displayName(g.name):type==='center'?centerLabel(g.name):g.name)}</button><div class="track" title="${esc(g.name)}: ${rankMetric==='count'?number(value(g)):exact(value(g))}"><div class="bar" style="width:${value(g)/max*100}%"></div></div><span class="chart-value">${rankMetric==='count'?number(value(g)):money(value(g))}</span></div>`).join('')}</div>`;
+ return `<div role="img" aria-label="${esc(rankMetric==='count'?'Purchase count ranking':'Positive net spending ranking')}">${gs.map(g=>`<div class="chart-row"><span class="chart-label">${esc(type==='person'?displayName(g.name):type==='center'?centerLabel(g.name):g.name)}</span><div class="track" title="${esc(g.name)}: ${rankMetric==='count'?number(value(g)):exact(value(g))}"><div class="bar" style="width:${value(g)/max*100}%"></div></div><span class="chart-value">${rankMetric==='count'?number(value(g)):money(value(g))}</span></div>`).join('')}</div>`;
 }
 function timeline(ts){
  const months=new Map();
@@ -456,7 +444,7 @@ function transactionTable(items,{travel=false,radar=false}={}){
 }
 function table(ts){const showAll=!!selectedLeader,start=showAll?0:page*30,shown=showAll?ts:ts.slice(start,start+30);return transactionTable(shown)+`${!ts.length?'<p class="empty">No matching transactions. Reset or widen the filters to continue.</p>':''}${showAll?`<p class="fine">Showing all ${number(ts.length)} matching transactions.</p>`:`<div class="pagination"><span>${ts.length?`${start+1}–${Math.min(start+30,ts.length)} of ${number(ts.length)}`:'0 transactions'}</span><button type="button" id="prev" ${page===0?'disabled':''}>Previous</button><button type="button" id="next" ${start+30>=ts.length?'disabled':''}>Next</button></div>`}`}
 
-function rankingTable(groups,type){return `<div class="table-wrap"><table><thead><tr><th>${type==='center'?'Cost center':type==='person'?'Cardholder':'Merchant'}</th><th class="num">Net amount</th><th class="num">Purchases</th><th class="num">All transactions</th></tr></thead><tbody>${groups.map(g=>`<tr><td><button type="button" class="link" data-filter="${type}" data-value="${esc(g.name)}">${esc(type==='person'?displayName(g.name):type==='center'?centerLabel(g.name):g.name)}</button>${type==='person'?personContext(g.name):type==='merchant'?companyDescription(g.name,true):''}</td><td class="num">${exact(g.net)}</td><td class="num">${number(g.purchases.size)}</td><td class="num">${number(g.ids.size)}</td></tr>`).join('')}</tbody></table></div><p class="fine">Showing all ${groups.length} groups. Click a name or code to inspect its transactions.</p>`}
+function rankingTable(groups,type){return `<div class="table-wrap"><table><thead><tr><th>${type==='center'?'Cost center':type==='person'?'Cardholder':'Merchant'}</th><th class="num">Net amount</th><th class="num">Purchases</th><th class="num">All transactions</th></tr></thead><tbody>${groups.map(g=>`<tr><td><span class="chart-label">${esc(type==='person'?displayName(g.name):type==='center'?centerLabel(g.name):g.name)}</span>${type==='person'?personContext(g.name):type==='merchant'?companyDescription(g.name,true):''}</td><td class="num">${exact(g.net)}</td><td class="num">${number(g.purchases.size)}</td><td class="num">${number(g.ids.size)}</td></tr>`).join('')}</tbody></table></div><p class="fine">Showing all ${groups.length} groups.</p>`}
 // Approved leadership selection, in the reviewed order; retain one profile per person.
 const leadershipProfiles=[["Allan Branch", "Mayor"], ["Robbie Hughes", "Commissioner, Ward 1"], ["Janice Lucas", "Commissioner Ward 2"], ["Brian Grainger", "Commissioner Ward 3"], ["Josh Street", "Commissioner Ward 4"], ["Jonathan Hayes", "City Manager"], ["Leslie Glaze", "City Clerk-Treasurer"], ["Nevin J. Zimmerman", "City Attorney"], ["Michael Fuller", "Development Services Director"], ["David Collier", "Fire Chief"], ["Mark Smith", "Chief of Police"], ["Sheila Ware", "Director"], ["Vickie Lewis", "Director"], ["Shawn Selph", "Director of Logistics"], ["Clint Murphy", "Public Works Director"], ["Keith Meyerl", "Director of Parks, Culture & Recreation"], ["Brandy Waldron", "Assistant City Manager"], ["Jared Jones", "Assistant City Manager"], ["Stacy Rausch, P.E.", "Assistant Public Works Director / City Engineer"], ["Trent Massey", "Chief Building Official"], ["Cody Klingelhoets", "IT Senior Manager"], ["Gia Del Pozzo", "Purchasing Manager"], ["Samantha Perman", "Budget Manager"], ["Kristen Kennedy", "Public Affairs Manager"]];
 // Observed name matches plus explicitly confirmed alternate names. No department attribution.
@@ -896,7 +884,7 @@ function leadershipTotals(name,ts){
  return `<div class="stats">${stat('All associated charges',sum(ts),ts.length+' unique transactions')}${stat('Paid on their card',sum(own),own.length+' transactions')}${stat('Paid on other cards',sum(other),other.length+' transactions naming this leader')}</div>`;
 }
 function leadershipSummary(name){
- const records=leadershipRecords(name);
+ const records=leadershipRecords(name).filter(t=>!filters().fy||t.fy===filters().fy);
  return records.length?`${exact(records.reduce((n,t)=>n+leadershipShare(t,name,t.amount),0))} net associated charges · ${number(records.length)} transactions`:
  unconfirmedLeadershipNames.has(name)?'Cardholder name match needs confirmation':'No associated transactions found';
 }
@@ -909,20 +897,19 @@ function leadershipIntro(name){
 
 function staffView(){
  const q=(filters().search||'').toLowerCase();const staff=leadershipProfiles.map(([name,title])=>data.staff.find(s=>s.name===name&&s.title===title)).filter(Boolean).filter(s=>`${s.name} ${s.title} ${s.departments.join(' ')} ${s.email}`.toLowerCase().includes(q));
- return `${reimbursementNotice}<p class="section-note">Showing ${staff.length} of ${leadershipProfiles.length} leadership profiles. Only the 24 selected leadership profiles are named; other cardholders are not publicly identified. Roles come from the City directory imported November 9, 2026; they are not verified roles during FY25/FY26. Associated charges include their card purchases and purchases naming them in the notes. Purchases with reviewed participant lists use equal-share estimates. Other shared charges may appear on more than one profile and are not individual spending totals. Totals cover both supplied fiscal years; no match does not mean no costs.</p><div class="staff-grid">${staff.map(s=>{return `<article class="staff-person"><div class="staff-top">${s.photo_file?`<img class="avatar" src="./${esc(s.photo_file)}" alt="" loading="lazy">`:`<div class="avatar" aria-hidden="true">${esc(s.name.split(/\s+/).map(x=>x[0]).slice(0,2).join(''))}</div>`}<div><h3><a href="#leader/${leadershipId(s.name)}">${esc(s.name)}</a></h3><p>${esc(s.title==='Director'?s.departments.join(' · ')+' Director':s.title||'Title not published')}</p>${s.email?`<a class="staff-email" href="mailto:${esc(s.email)}">${esc(s.email)}</a>`:''}</div></div><p class="leadership-total">${esc(leadershipSummary(s.name))}</p></article>`}).join('')}</div>${!staff.length?'<p class="empty">No leadership profiles match this search. Clear the search to see all City leadership.</p>':''}`;
+ return `${reimbursementNotice}<p class="section-note">Showing ${staff.length} of ${leadershipProfiles.length} leadership profiles. Only the 24 selected leadership profiles are named; other cardholders are not publicly identified. Roles come from the City directory imported November 9, 2026; they are not verified roles during FY25/FY26. Associated charges include their card purchases and purchases naming them in the notes. Purchases with reviewed participant lists use equal-share estimates. Other shared charges may appear on more than one profile and are not individual spending totals. Totals reflect the selected fiscal year; no match does not mean no costs.</p><div class="staff-grid">${staff.map(s=>{return `<article class="staff-person"><div class="staff-top">${s.photo_file?`<img class="avatar" src="./${esc(s.photo_file)}" alt="" loading="lazy">`:`<div class="avatar" aria-hidden="true">${esc(s.name.split(/\s+/).map(x=>x[0]).slice(0,2).join(''))}</div>`}<div><h3><a href="#leader/${leadershipId(s.name)}">${esc(s.name)}</a></h3><p>${esc(s.title==='Director'?s.departments.join(' · ')+' Director':s.title||'Title not published')}</p>${s.email?`<a class="staff-email" href="mailto:${esc(s.email)}">${esc(s.email)}</a>`:''}</div></div><p class="leadership-total">${esc(leadershipSummary(s.name))}</p></article>`}).join('')}</div>${!staff.length?'<p class="empty">No leadership profiles match this search. Clear the search to see all City leadership.</p>':''}`;
 }
 
 function isHotel(t){return t.travel==='Hotels & lodging'}
 function travelBreakdown(ts){
- const selected=ts.filter(t=>!travelYear||t.fy===travelYear),hotels=selected.filter(isHotel);
- return `<section id="travel-breakdown"><h2>Recorded travel spending</h2><div class="controls-row"><label>Breakdown year<select id="travel-year"><option value="">Both fiscal years</option><option value="FY25">FY25 · Oct 2024–Sep 2025</option><option value="FY26">FY26 · Oct 2025–Sep 2026</option></select></label></div><p class="section-note">The year selector applies to this spending breakdown. People and trip estimates above cover both years.</p>${rankingControls()}<div class="annual-totals">${stat('Net travel-related',exact(selected.reduce((n,t)=>n+t.scoped,0)))}${stat('Included hotel merchants',exact(hotels.reduce((n,t)=>n+t.scoped,0)))}</div><div class="boards">${board('Travel merchants','Net recorded charges, including credits.',bars(aggregate(selected,'merchant'),'merchant',10)+'<details><summary>View all travel merchants</summary>'+rankingTable(aggregate(selected,'merchant'),'merchant')+'</details>')}${board('Travel spending by area','Allocated recorded charges; a purchase may span multiple spending areas.',bars(aggregate(selected,'center',true),'center',12)+'<details><summary>View all spending areas</summary>'+rankingTable(aggregate(selected,'center',true),'center')+'</details>')}${board('Travel through the year','Net recorded amounts by posting month.',timeline(selected),true)}</div>${matchingTransactionsLink({purchaseType:'travel',fy:travelYear},selected.length)}<details class="trip-method"><summary>About recorded travel spending</summary><p>Travel is identified from merchant names and travel account 54000. Some charges may be unrelated, and others may be missed. Hotel charges can include meals, tuition and incidentals. These are purchase counts, not trips or nights. Budget allocations and expense reimbursements are not included, so these records cannot establish remaining budget or overspending.</p></details></section>`;
+ const selected=ts,hotels=selected.filter(isHotel);
+ return `<section id="travel-breakdown"><h2>Recorded travel spending</h2>${rankingControls()}<div class="annual-totals">${stat('Net travel-related',exact(selected.reduce((n,t)=>n+t.scoped,0)))}${stat('Included hotel merchants',exact(hotels.reduce((n,t)=>n+t.scoped,0)))}</div><div class="boards">${board('Travel merchants','Net recorded charges, including credits.',bars(aggregate(selected,'merchant'),'merchant',10)+'<details><summary>View all travel merchants</summary>'+rankingTable(aggregate(selected,'merchant'),'merchant')+'</details>')}${board('Travel spending by area','Allocated recorded charges; a purchase may span multiple spending areas.',bars(aggregate(selected,'center',true),'center',12)+'<details><summary>View all spending areas</summary>'+rankingTable(aggregate(selected,'center',true),'center')+'</details>')}${board('Travel through the year','Net recorded amounts by posting month.',timeline(selected),true)}</div>${matchingTransactionsLink({purchaseType:'travel',fy:travelYear},selected.length)}<details class="trip-method"><summary>About recorded travel spending</summary><p>Travel is identified from merchant names and travel account 54000. Some charges may be unrelated, and others may be missed. Hotel charges can include meals, tuition and incidentals. These are purchase counts, not trips or nights. Budget allocations and expense reimbursements are not included, so these records cannot establish remaining budget or overspending.</p></details></section>`;
 }
 let merchantScope='all';
 let retailerScope='all';
 function retailerMatches(t){return t.mixed&&(retailerScope==='all'||retailerScope==='amazon-walmart'&&['Amazon','Walmart'].includes(t.merchant)||t.category===retailerScope)}
 function retailerReport(ts){
- const cats=[...new Set(data.transactions.filter(t=>t.mixed).map(t=>t.category))].sort();
- let out='<div class="controls-row"><label>Retailer group<select id="retailer-scope"><option value="all">All broad-selection retailers</option><option value="amazon-walmart">Amazon and Walmart only</option>'+cats.map(c=>'<option value="'+esc(c)+'">'+esc(c)+'</option>').join('')+'</select></label></div><p class="section-note">Scope uses the reviewed merchant groupings: marketplaces, hardware/tools, office/industrial catalogs, grocery/pharmacy and other mixed-category retailers. This is an initial identified set, not every possible retailer. Net spending includes credits. Cost centers use actual accounting allocations; department names remain unverified. Split accounting rows are not receipt line items.</p>'+rankingControls();
+ let out='<p class="section-note">Scope uses the reviewed merchant groupings: marketplaces, hardware/tools, office/industrial catalogs, grocery/pharmacy and other mixed-category retailers. This is an initial identified set, not every possible retailer. Net spending includes credits. Cost centers use actual accounting allocations; department names remain unverified. Split accounting rows are not receipt line items.</p>'+rankingControls();
  out+='<div class="boards">';
  for(const fy of ['FY25','FY26'].filter(fy=>!filters().fy||filters().fy===fy)){
   const year=ts.filter(t=>t.fy===fy);const mg=aggregate(year,'merchant'),cg=aggregate(year,'center',true);
@@ -1036,7 +1023,7 @@ function travelSummaries(groups,transactions){
   {ids:['TXN00042284','TXN00042221','TXN00042348'],title:'IEMO II · October 2024',names:'Brian Grainger and Janice Lucas',evidence:'Comments connect both to IEMO II, with hotel and parking purchases October 27–28. Victoria Mullaney’s hotel booking names Lucas; it does not establish that Mullaney traveled.'}
  ];
  const shared=examples.filter(e=>e.ids.every(id=>data.transactions.some(t=>t.id===id)&&tripReviews[id]?.status!=='excluded')&&e.ids.some(id=>visible.has(id)));
- return `<section class="travel-summary" aria-labelledby="travel-summary-title"><h2 id="travel-summary-title">Travel at a glance</h2><p>P-card purchases only — reimbursements are not included. Across the supplied FY25 and FY26 records. Cardholders may book for other people; suggested groups are not verified trips taken. People named in travel notes are included even when someone else paid. The cardholder is the fallback when no person is identified in the notes. Identified costs match the person’s trip view; $0 means no included grouped cost, not no travel spending.</p><div class="travel-summary-grid">
+ return `<section class="travel-summary" aria-labelledby="travel-summary-title"><h2 id="travel-summary-title">Travel at a glance</h2><p>P-card purchases only — reimbursements are not included. For the selected fiscal year. Cardholders may book for other people; suggested groups are not verified trips taken. People named in travel notes are included even when someone else paid. The cardholder is the fallback when no person is identified in the notes. Identified costs match the person’s trip view; $0 means no included grouped cost, not no travel spending.</p><div class="travel-summary-grid">
  ${travelPeopleRanking(m)}
  <article><span class="estimate-label">Destination clues</span><h3>Common destinations</h3>${list(m.destinations,([city,count])=>`<li><span>${esc(tripDestinationLabel(city))}</span><strong>${count} groups</strong></li>`)}<p class="section-note">Cities named in hotel descriptions, counted once per associated group. These are clues, not a complete destination ranking.</p></article>
  <article class="shared-travel"><span class="estimate-label">Possible shared travel · needs confirmation</span><h3>Who may have traveled together</h3>${shared.length?shared.map(e=>`<div class="shared-travel-example"><h4>${esc(e.title)}</h4><p><strong>${esc(e.names)}</strong></p><p>${esc(e.evidence)}</p><details><summary>View supporting purchases</summary>${transactionTable(e.ids.map(id=>data.transactions.find(t=>t.id===id)).filter(Boolean))}</details></div>`).join(''):'<p>No reviewed shared-travel examples match this selection.</p>'}<p class="section-note">Selected examples, not a complete list. Related purchases may fall outside the filters. Similar purchase dates alone do not prove shared travel.</p></article>
@@ -1078,11 +1065,6 @@ function render(){
  if(!data)return;
  const rawRoute=location.hash.slice(1)||'overview';
  let route=rawRoute.split('?')[0];
- if(route==='transactions'&&rawRoute!==appliedTransactionRoute){
-  if(rawRoute.includes('?')){HTMLFormElement.prototype.reset.call($('filters'));for(const [key,value] of new URLSearchParams(rawRoute.split('?')[1])){const field=$('filters').elements.namedItem(key);if(field)field.value=value}}
-  appliedTransactionRoute=rawRoute;
- }else if(route!=='transactions')appliedTransactionRoute=null;
- if(route==='retail'){merchantScope='retailers';route='merchants';history.replaceState(null,'','#merchants')}
  selectedTravelPerson=null;if(route.startsWith('travel/person/')){try{selectedTravelPerson=decodeURIComponent(route.slice(14))}catch{selectedTravelPerson='Unknown cardholder'}}
  selectedLeader=route.startsWith('leader/')?leadershipProfiles.find(([name])=>leadershipId(name)===route.slice(7))?.[0]||null:null;
  view=selectedTravelPerson?'travel':selectedLeader?'leader':titles[route]&&route!=='leader'?route:'overview';
@@ -1090,9 +1072,7 @@ function render(){
  $('title').textContent=selectedTravelPerson?travelName(selectedTravelPerson)+' · Travel':selectedLeader||titles[view][0];$('subtitle').textContent=titles[view][1];document.title=(selectedTravelPerson?travelName(selectedTravelPerson)+' · Travel':selectedLeader||titles[view][0])+' · Penny Ping';
  document.querySelectorAll('nav a').forEach(a=>{a.classList.toggle('active',a.hash==='#'+(selectedLeader?'staff':view));a.setAttribute('aria-current',a.hash==='#'+(selectedLeader?'staff':view)?'page':'false')});
  const staff=view==='staff';
- document.querySelector('.filter-box').hidden=view!=='transactions';
- document.querySelectorAll('#filters label').forEach(l=>l.hidden=(staff&&!l.classList.contains('search-label'))||!!selectedLeader&&l.contains($('person')));
- const active=Object.values(filters()).filter(Boolean).length;$('filter-count').textContent=staff?'Search leadership':active?`${active} active`:'';
+ $('title').setAttribute('role','heading');$('title').setAttribute('aria-level',view==='overview'?'2':'1');
  if(staff){$('content').innerHTML=staffView();return}
  rows=filtered();
  if(view==='radar'){$('content').innerHTML=radarReport(rows);return}
@@ -1108,17 +1088,14 @@ function render(){
  rows.sort((a,b)=>b.scoped-a.scoped);
  let out=(selectedLeader?leadershipIntro(selectedLeader)+leadershipTotals(selectedLeader,rows):'')+(view==='transactions'?stats(rows):'');const centered=aggregate(rows,'center',true),people=aggregate(rows,'person'),merchants=aggregate(rows,'merchant');
  if(view!=='overview'&&(filters().fund||filters().center))out+='<p class="section-note">Amounts reflect only the selected accounting allocations. Transaction counts remain unique IDs; minimum-charge and policy checks use the full original charge.</p>';
- if(view==='merchants')out+='<div class="controls-row"><label>Merchant view<select id="merchant-scope"><option value="all">All merchants</option><option value="retailers">Retailers</option></select></label></div>';
- if(view==='merchants'&&merchantScope==='retailers'){
-  out+=retailerReport(rows);
- }else if(view==='overview'){
+ if(view==='overview'){
   const travelRows=rows.filter(t=>t.travel!=='Not identified as travel');
-  out+='<div class="boards overview-boards"><div class="overview-primary">'+board('By spending area','The largest accounting areas for City P-card purchases. Select an area to explore its transactions.',bars(centered,'center',12),true)+'</div>'+board('Where spending lands','Businesses the City buys from. Select a merchant to explore its purchases.','<label>Merchant view<select id="overview-merchants"><option value="all">All merchants</option><option value="retailers">Retailers</option></select></label>'+bars(overviewRetailers?aggregate(rows.filter(t=>t.mixed),'merchant'):merchants,'merchant',5))+board('Travel & lodging by spending area','Accounting areas with the most recorded travel spending. Purchases may support several people or services.','<div data-destination="travel">'+bars(aggregate(travelRows,'center',true),'center',8)+'</div><p><a href="#travel">Explore travel &amp; lodging →</a></p>',true)+'</div>';
+  out+='<div class="boards overview-boards"><div class="overview-primary">'+board('By spending area','The largest accounting areas for City P-card purchases.',bars(centered,'center',12),true)+'</div>'+board('Where spending lands','Businesses the City buys from. ',bars(overviewRetailers?aggregate(rows.filter(t=>t.mixed),'merchant'):merchants,'merchant',5))+board('Travel & lodging by spending area','Accounting areas with the most recorded travel spending. Purchases may support several people or services.','<div data-destination="travel">'+bars(aggregate(travelRows,'center',true),'center',8)+'</div><p><a href="#travel">Explore travel &amp; lodging →</a></p>',true)+'</div>';
 
  }else if(view==='travel'){
   out+=tripReport()+travelBreakdown(rows);
- }else if(['centers','merchants'].includes(view)){
-  const type={centers:'center',people:'person',merchants:'merchant'}[view],gs={centers:centered,people,merchants}[view];
+ }else if(view==='centers'){
+  const type='center',gs=centered;
   out+=rankingControls()+(view==='people'?'<p class="section-note">A cardholder is the employee named on the payment card, not necessarily the person using the goods or taking the trip. One employee may purchase for a whole team. The table shows recorded cost centers, not a verified job title. <a href="#staff">Browse City leadership</a> for current published roles; identities and historical roles still need confirmation.</p>':'')+(view==='centers'?'<p class="section-note">A cost center is an accounting code used to group spending by a City function or service. Names come from City budget references and definitions supplied by Assistant City Manager Brandy Waldron on November 10, 2026. Year-specific labels are marked. Her definition of 7210 applies to Fund 370; the export also contains Fund 001 entries that need confirmation. Codes awaiting confirmation remain as recorded. Split purchases can appear in multiple centers. Source: '+centerSource+'</p>':'');
   out+=board(rankMetric==='count'?'Purchases by group':'Recorded spending by group','Top positive groups · complete signed amounts in the table below.',bars(gs,type,20));out+=rankingTable(gs,type);
 
@@ -1128,7 +1105,6 @@ function render(){
  $('content').innerHTML=out;
  $('prev')?.addEventListener('click',()=>{page--;render()});$('next')?.addEventListener('click',()=>{page++;render()});
  if($('merchant-scope')){$('merchant-scope').value=merchantScope;$('merchant-scope').addEventListener('change',e=>{merchantScope=e.target.value;page=0;render();$('merchant-scope').focus({preventScroll:true})})}
- if($('retailer-scope')){$('retailer-scope').value=retailerScope;$('retailer-scope').addEventListener('change',e=>{retailerScope=e.target.value;page=0;render();$('retailer-scope').focus({preventScroll:true})})}
  if($('travel-year')){$('travel-year').value=travelYear;$('travel-year').addEventListener('change',e=>{travelYear=e.target.value;render();$('travel-year').focus({preventScroll:true})})}
  if($('overview-merchants')){$('overview-merchants').value=overviewRetailers?'retailers':'all';$('overview-merchants').addEventListener('change',e=>{overviewRetailers=e.target.value==='retailers';render();$('overview-merchants').focus({preventScroll:true})})}
  $('travel-sort')?.addEventListener('change',e=>{travelSort=e.target.value;render();$('travel-sort')?.focus({preventScroll:true})});
@@ -1141,22 +1117,17 @@ function openDetail(id){
  if(view==='travel'){ $('detail-body').innerHTML+=tripReviewForm(t);bindTripReview(t) }
  $('detail').showModal();
 }
-$('content').addEventListener('click',e=>{const detail=e.target.closest('[data-detail]');if(detail)openDetail(detail.dataset.detail);const filter=e.target.closest('[data-filter]');if(filter){if(view!=='transactions'){const travel=view==='travel'||filter.closest('[data-destination]')?.dataset.destination==='travel';HTMLFormElement.prototype.reset.call($('filters'));$(filter.dataset.filter).value=filter.dataset.value;$('purchaseType').value=travel?'travel':'';if(travel&&filter.closest('#travel-breakdown'))$('fy').value=travelYear;$('retailerGroup').value='';if(view==='merchants'&&merchantScope==='retailers'){ $('purchaseType').value='retailers';$('retailerGroup').value=retailerScope==='all'?'':retailerScope }location.hash='transactions';return}$(filter.dataset.filter).value=filter.dataset.value;page=0;render();document.querySelector('.transactions')?.scrollIntoView({behavior:'instant'})}});
+$('content').addEventListener('click',e=>{const detail=e.target.closest('[data-detail]');if(detail)openDetail(detail.dataset.detail)});
 $('close-detail').addEventListener('click',()=>$('detail').close());
 $('filters').addEventListener('submit',e=>e.preventDefault());
 let timer;$('filters').addEventListener('input',()=>{clearTimeout(timer);timer=setTimeout(()=>{page=0;render()},180)});
-$('reset').addEventListener('click',()=>{retailerScope='all';HTMLFormElement.prototype.reset.call($('filters'));if(view==='transactions'){history.replaceState(null,'','#transactions');appliedTransactionRoute='transactions'}page=0;render()});
-window.addEventListener('hashchange',()=>{if(location.hash.startsWith('#travel/person/')||location.hash==='#travel'||location.hash.startsWith('#leader/')||selectedLeader&&location.hash==='#staff'){HTMLFormElement.prototype.reset.call($('filters'));retailerScope='all'}page=0;rankMetric='spend';$('nav').classList.remove('open');document.querySelector('.mobile-menu').setAttribute('aria-expanded','false');render();window.scrollTo(0,0)});
+window.addEventListener('hashchange',()=>{page=0;rankMetric='spend';$('nav').classList.remove('open');document.querySelector('.mobile-menu').setAttribute('aria-expanded','false');render();window.scrollTo(0,0)});
 document.querySelector('.mobile-menu').addEventListener('click',e=>{const open=$('nav').classList.toggle('open');e.target.setAttribute('aria-expanded',String(open))});
-if(innerWidth<=600)document.querySelector('.filter-box').open=false;
 function loadDataset(d){
  const strings=['id','fy','date','post','person','merchant','raw','category','source','sheet','travel'];
  if(!d||!Array.isArray(d.transactions)||!Array.isArray(d.staff)||!d.transactions.every(t=>t&&strings.every(k=>typeof t[k]==='string')&&Number.isFinite(t.amount)&&Array.isArray(t.allocations)&&t.allocations.every(a=>a&&['fund','center','account'].every(k=>typeof a[k]==='string'&&/^[\w .-]*$/.test(a[k]))&&Number.isFinite(a.amount))&&['comments','flags'].every(k=>Array.isArray(t[k])&&t[k].every(v=>typeof v==='string'))&&Array.isArray(t.rows)&&t.rows.every(Number.isInteger)&&/^[\w.-]+$/.test(t.id))||!d.staff.every(s=>s&&['name','source_url'].every(k=>typeof s[k]==='string')&&['title','email'].every(k=>s[k]===null||typeof s[k]==='string')&&Array.isArray(s.departments)&&s.departments.every(v=>typeof v==='string')&&/^https?:\/\//.test(s.source_url)))throw Error('Spending records could not be read.');
  data=d;page=0;HTMLFormElement.prototype.reset.call($('filters'));
  for(const transaction of d.transactions)if(!Array.isArray(transaction.purchaseNotes))transaction.purchaseNotes=[];
- for(const [id,values,label] of [['fund',d.transactions.flatMap(t=>t.allocations.map(a=>a.fund)),'All funds'],['center',d.transactions.flatMap(t=>t.allocations.map(a=>a.center)),'All cost centers'],['person',d.transactions.map(t=>t.person).filter(Boolean),'All listed leaders'],['merchant',d.transactions.map(t=>t.merchant),'All merchants']])fillSelect(id,values,label);
- fillSelect('retailerGroup',['amazon-walmart',...new Set(d.transactions.filter(t=>t.mixed).map(t=>t.category))],'All retailer groups');
- $('retailerGroup').querySelector('[value="amazon-walmart"]').textContent='Amazon and Walmart only';
  $('loading').hidden=true;render();
 }
 Promise.all(['./data.json?v=company-notes-1','./travel.json?v=associated-20261110','./leadership-associations.json?v=1'].map(url=>fetch(url).then(r=>{if(!r.ok)throw Error();return r.json()}))).then(([d,t,a])=>{if(a.version!==1||!a.records)throw Error('Invalid leadership associations');leadershipAssociations=a;if(t.version!==1||!t.records)throw Error('Invalid travel snapshot');travelSnapshot=t;loadDataset(d)}).catch(()=>{$('loading').hidden=false;$('loading').textContent='Spending records could not load. Reload this page to try again.'});

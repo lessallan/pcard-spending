@@ -199,3 +199,6 @@ body>.report-navigation{max-width:1144px;margin:24px auto}
 }
 
 .profile-notice{margin-bottom:24px}.profile-notice h3{font-size:16px;margin:0 0 8px}.profile-notice p{margin:0 0 8px}.profile-notice p:last-child{margin-bottom:0}.profile-notice summary{cursor:pointer;font-weight:600;padding:6px 0}.profile-notice details p{margin-top:8px}
+
+/* The year selection applies to every report and persists across navigation. */
+form#filters{display:block;margin:0}.year-toggle{border:0;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px;align-items:center}.year-toggle legend{font-size:13px;font-weight:600;margin-bottom:8px}.year-toggle label{position:relative;display:block;cursor:pointer}.year-toggle input{position:absolute;opacity:0;width:1px;height:1px}.year-toggle span{display:block;border:1px solid #29342f40;border-radius:7px;padding:9px 16px;font-size:14px}.year-toggle input:checked+span{background:var(--green);border-color:var(--green);color:white}.year-toggle input:focus-visible+span{outline:3px solid #9e591d;outline-offset:3px}.chart-label{overflow-wrap:anywhere}
