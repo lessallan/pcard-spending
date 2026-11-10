@@ -144,3 +144,5 @@
 !/app/radar.js
 !/docs/radar.js
 !/tools/check_radar_release.cjs
+
+!/tools/check_radar_activities.cjs
