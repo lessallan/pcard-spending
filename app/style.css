@@ -124,10 +124,8 @@ body>.resident-guide{max-width:1144px;margin:24px auto 28px;padding:28px 36px;ba
 body>.report-navigation{max-width:1144px;margin:24px auto}
 @media(max-width:900px){body>.report-navigation{margin:24px 16px}}
 @media(max-width:600px){body>.report-navigation{margin:20px 10px}}
-/* The public-spending promise is the main page headline. */
-.header-inner{flex-direction:column;align-items:flex-start;gap:28px;padding-block:28px 48px}
-.header-credit{margin-left:0;max-width:900px;gap:16px}
-.header-credit .hero-title{font-size:clamp(38px,5.4vw,68px);line-height:1.08;letter-spacing:-.045em;font-weight:600;max-width:21ch;margin:0;text-wrap:balance}
-.header-credit>span{max-width:66ch;font-size:15px;line-height:1.6}
-.header-credit a{font-size:17px;min-height:44px;display:inline-flex;align-items:center}
-@media(max-width:600px){.header-inner{padding:24px 24px 32px;gap:24px}.header-credit{gap:14px}}
+/* Compact header with an italic creator credit. */
+.header-inner{flex-direction:row;align-items:center;gap:28px;padding-block:24px}
+.header-credit{margin-left:auto;max-width:540px}
+.header-credit>span{font-style:italic;font-size:15px;line-height:1.6}
+@media(max-width:700px){.header-inner{flex-direction:column;align-items:flex-start;gap:16px;padding:24px}.header-credit{margin-left:0;max-width:100%}}
