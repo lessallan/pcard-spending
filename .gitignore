@@ -135,3 +135,8 @@
 !/tools/travel-research-engine.cjs
 !/tools/travel-research-catalog.cjs
 !/tools/check_travel_research.cjs
+
+!/tools/leadership-matcher.cjs
+!/tools/build_leadership_associations.cjs
+!/docs/leadership-associations.json
+!/tools/check_leadership_associations.cjs

@@ -49,3 +49,5 @@ for relative, target in [('review/index.html', '../'), ('review/reports/merchant
 print('Built public dashboard: approved leadership only; cardholder identities restricted; extracted purchase notes included; raw comments and flags excluded.')
 
 subprocess.run(['node', 'tools/build_travel.cjs'], cwd=ROOT, check=True)
+
+subprocess.run(['node', 'tools/build_leadership_associations.cjs'], cwd=ROOT, check=True)

@@ -28,3 +28,7 @@ Allan explicitly approved publishing all extracted notes, including any names/de
 `tools/travel-research-engine.cjs` derives purpose, destination clues and explicit date ranges from local records. `tools/build_travel.cjs` publishes these explanations in `docs/travel.json`; raw comments remain excluded and the existing public transaction dataset is unchanged. Event dates are context, not travel dates. Broad organization references do not identify a particular conference.
 
 Validate with `node tools/check_travel_research.cjs`, `python3 tools/test_public_travel.py` and `python3 tools/test_public_data.py` after `python3 tools/build_pages.py`.
+
+### Leadership purchases paid by others
+
+The build derives `docs/leadership-associations.json` from the approved purchase-note extractor, matching selected leaders while checking name ambiguity against the source roster. Profiles combine their card purchases with explicit note matches, retain the recorded payer and supporting note, and deduplicate transaction IDs. A mention and an explicit “for / on behalf of” statement use separate labels. Totals show full associated charges, including credits; shared charges are not an inferred personal allocation. Run `node tools/check_leadership_associations.cjs` after building.
