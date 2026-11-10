@@ -211,3 +211,45 @@ form#filters{display:block;margin:0}.year-toggle{border:0;padding:0;margin:0;dis
 .people-section{margin-top:32px}.people-section>.sub{margin-bottom:20px}.staff-person .cardholder-total{font-size:14px;margin:12px 0 0;overflow-wrap:anywhere}.staff-person .cardholder-total a{font-size:inherit}@media(max-width:600px){.staff-person .cardholder-total{font-size:16px}}
 
 .staff-search{max-width:480px;margin-bottom:24px}.staff-search label{font-size:16px;font-weight:600;margin-bottom:8px}.staff-search input{font-size:16px;min-height:44px}.staff-person[hidden],.people-empty[hidden]{display:none}.people-result-count{margin:12px 0}.people-empty{padding:16px 0;color:var(--muted)}
+
+/* Leadership and staff: aligned rows, with stacked details on smaller screens. */
+.staff-list{--staff-columns:minmax(0,1.2fr) minmax(0,1fr) minmax(0,1fr);width:100%}
+.staff-list-heading,.staff-list .staff-person{display:grid;grid-template-columns:var(--staff-columns);gap:24px;align-items:start;text-align:left}
+.staff-list-heading{padding:12px 0;color:var(--muted);font-size:13px;border-bottom:1px solid var(--line)}
+.staff-list .staff-person{padding:18px 0;border:0;border-bottom:1px solid var(--line);border-radius:0;background:none}
+.staff-list .staff-top{display:flex;flex-direction:row;align-items:flex-start;gap:12px;margin:0;width:auto}.staff-list .staff-person .avatar{width:40px;height:40px;flex-shrink:0}
+.staff-list .staff-person h3{text-wrap:pretty;font-size:17px;margin:0 0 3px}
+.staff-list .staff-person .leadership-total,.staff-list .staff-person .cardholder-total{margin:0;padding:3px 0;border:0;max-width:none;width:auto;font-size:14px;line-height:1.6;font-variant-numeric:tabular-nums}
+.staff-column-label{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+@media(max-width:700px){
+ .staff-list-heading{display:none}
+ .staff-list .staff-person{grid-template-columns:minmax(0,1fr);gap:12px;padding:20px 0}
+ .staff-list .staff-person h3 a{justify-content:flex-start}
+ .staff-list .staff-person .leadership-total,.staff-list .staff-person .cardholder-total{font-size:16px;padding:0}
+ .staff-list .staff-person .staff-email{font-size:16px;min-height:44px;display:inline-flex;align-items:center;padding:0}
+ .staff-column-label{position:static;display:block;width:auto;height:auto;margin:0;overflow:visible;clip-path:none;white-space:normal;font-size:14px;color:var(--muted)}
+ .staff-list .cardholder-total a{display:inline-block;min-height:44px;padding:6px 0}
+}
+
+.staff-search{max-width:480px;margin-bottom:24px}.staff-search label{font-size:16px;font-weight:600;margin-bottom:8px}.staff-search input{font-size:16px;min-height:44px}.staff-person[hidden],.people-empty[hidden]{display:none}.people-result-count{margin:12px 0}.people-empty{padding:16px 0;color:var(--muted)}
+
+/* Compact directory metrics: amount first, context once per column. */
+.staff-list{--staff-columns:minmax(0,1.5fr) minmax(0,1fr) minmax(0,1fr)}
+.staff-list-heading>span:not(:first-child),.staff-list .leadership-total,.staff-list .cardholder-total{text-align:right}
+.staff-list .staff-person{padding:14px 0}
+.staff-list .staff-amount{display:block;font-size:19px;font-weight:600;line-height:1.4;white-space:nowrap}
+.staff-list .staff-amount a{font-size:inherit}
+.staff-list .staff-count{display:block;font-size:13px;color:var(--muted);margin-top:3px}
+.staff-list .staff-empty{color:var(--muted);font-size:13px}
+.staff-notes{margin:0 0 24px;color:var(--muted);font-size:13px}
+.staff-notes summary{cursor:pointer;width:fit-content;padding:5px 0;text-decoration:underline;text-underline-offset:3px}
+.staff-notes .notice{margin-top:12px}
+@media(max-width:700px){
+ .staff-list .staff-person{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 16px;padding:18px 0}
+ .staff-list .staff-top{grid-column:1/-1}
+ .staff-list .leadership-total,.staff-list .cardholder-total{text-align:left}
+ .staff-list .staff-amount{font-size:18px}
+ .staff-list .cardholder-total .staff-amount a{min-height:44px;padding:7px 0;margin:-7px 0}
+ .staff-list .staff-count,.staff-list .staff-empty,.staff-column-label{font-size:14px}
+ .staff-notes{font-size:16px}.staff-notes summary{min-height:44px;padding:10px 0}
+}
