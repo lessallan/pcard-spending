@@ -82,3 +82,5 @@
 
 # Full current dashboard dataset explicitly approved for public hosting.
 !/docs/data.json
+
+!/tools/test_public_data.py

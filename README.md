@@ -1,39 +1,15 @@
-<p align="center">
-  <img src="assets/spending-blaze-logo.png" alt="Spending Blaze dragon logo" width="460">
-</p>
-
 # Spending Blaze
 
-[Browse the public spending report](https://lessallan.github.io/pcard-spending/review/)
+[Explore City spending](https://lessallan.github.io/pcard-spending/)
 
-Public purchasing policies and aggregate analysis for the City of Panama City, Florida.
+A public transparency app for City of Panama City FY25 and FY26 P-card spending, grouped by merchant, accounting area, and time. It does not rank employees or provide compliance decisions or receipt-request workflows.
 
-- [Merchant spending review — FY25 and FY26](reports/merchant-review.md)
-- [Aggregate merchant data](reports/merchant-summary.csv)
-- [Policy documents and official source links](policies/panama-city/README.md)
+The public dataset excludes cardholder identities, staff profiles, original free-text comments, and automated review flags. Original workbooks and the private `app/data.json` remain local. The build uses an explicit field allowlist; never copy the private dataset directly into `docs/`.
 
-This first-pass analysis identifies where itemized purchase documentation would help review spending. It does not establish waste, misconduct, or policy violations.
+FY25 detail totals differ from the workbook summary by $136,616.98; FY26 reconciles. The app describes supplied records, not certified complete City spending.
 
-**FY25 reconciliation remains unresolved:** detailed records total $136,616.98 less than the workbook summary. FY26 reconciles. See the report for methodology and limitations.
+## Build and publish
 
-App source, branding, reviewed policy sources and aggregate reports are published. The current dashboard dataset, including cardholder names, transaction details and comments, is approved for public hosting. Original spreadsheets and separate employee-level analysis remain local. The Git ignore rules use an explicit publication allowlist; review content before adding new exceptions.
+Run `python3 tools/build_pages.py`, then `python3 tools/test_public_data.py`. GitHub Pages serves `docs/` from `main`. Prior review-report URLs redirect to the transparency app. Historical research files are not part of the public app.
 
-## Local app
-
-Run `python3 app/server.py` from the repository root, then open http://127.0.0.1:4310. The app uses the Spending Blaze logo and name.
-
-The dashboard requires the local `app/data.json` dataset; it is intentionally excluded from GitHub. A fresh clone does not include transaction records or staff photos. The online app loads its published copy automatically.
-
-Analysis and source retrieval date: November 9, 2026.
-
-## Online app
-
-Open [Spending Blaze](https://lessallan.github.io/pcard-spending/) to explore the full published dataset immediately. No installation, local server or file selection is required. Review decisions are stored in that browser’s local storage. Staff photos remain local.
-
-GitHub Pages serves `docs/` from `main`. After changing app files, run `python3 tools/build_pages.py` and commit the rebuilt files. The build copies the app, logo, linked public policy and explicitly approved current dataset to `docs/data.json`. Future dataset changes must be reviewed for publication.
-
-## Updating the website
-
-Edit the reviewed report Markdown or merchant CSV, then run `python3 scripts/build-site.py` to regenerate the public site under `docs/review/`. Commit the source and generated pages together. The small renderer supports the headings, paragraphs, lists, tables, links, emphasis, and inline code used in these reports.
-
-The public report is published at `/review/`; the full public dashboard stays at the homepage. The full `tools/build_pages.py` build also rebuilds the public report. Keep the explicit publication allowlist in `.gitignore`; do not add original spreadsheets or employee-level analysis.
+Previously published versions may remain in Git history or external caches; this change does not erase those copies.
