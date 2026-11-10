@@ -15,3 +15,9 @@ The private source `app/data.json` remains local and ignored. Never copy it dire
 Serve `docs/` locally and run `node tools/check_public.cjs` to verify the rendered public artifact. Set `BASE_URL` for a different local or live URL. GitHub Pages serves `docs/` from `main`; retain `docs/CNAME`. Retired review URLs redirect to the dashboard. No hosting setting change is required.
 
 FY25 detail totals differ from the workbook summary by $136,616.98; FY26 reconciles. Historical published versions may remain in Git history or external caches; the current publication restrictions do not erase those copies.
+
+## Company descriptions and purchase notes
+
+Company descriptions use explicit merchant aliases and cited sources in `app/merchant-context.js`. Unknown merchants receive no guessed profile. Transaction descriptions quote extracted source notes, preserving mixed items and qualifications while removing common administrative-only text and duplicates. No merchant, department or cardholder-based purchase guesses are generated.
+
+Allan explicitly approved publishing all extracted notes, including any names/details in their text, on November 9, 2026. The builder adds only `purchaseNotes`; raw comments and flags stay empty, existing cardholder anonymity and approved leadership profiles remain unchanged. Notes are not verified receipts. Run the public-data and browser checks before release.

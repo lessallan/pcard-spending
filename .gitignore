@@ -122,3 +122,8 @@
 !/docs/photos/91.jpg
 !/assets/leadership/42.jpg
 !/docs/photos/42.jpg
+
+# Reviewed company descriptions and approved extracted purchase notes.
+!/app/merchant-context.js
+!/docs/merchant-context.js
+!/tools/check_merchant_context.cjs

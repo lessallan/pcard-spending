@@ -12,7 +12,7 @@ assert all(set(p) == ({'name','title','departments','source_url','email'} | ({'p
 cardholders = set(approved['cardholders'].values())
 assert len(cardholders) == 22
 assert len(private['transactions']) == len(public['transactions']) == 16793
-fields = {'id','fy','date','post','merchant','raw','category','amount','allocations','source','sheet','rows','travel','mixed','historical','person','comments','flags'}
+fields = {'id','fy','date','post','merchant','raw','category','amount','allocations','source','sheet','rows','travel','mixed','historical','person','comments','flags','purchaseNotes'}
 for original, published in zip(private['transactions'], public['transactions']):
     assert set(published) == fields
     assert published['person'] == (original['person'] if original['person'] in cardholders else '')
@@ -22,7 +22,10 @@ for original, published in zip(private['transactions'], public['transactions']):
         assert original[field] == published[field]
 for fy, expected in [('FY25',228954946),('FY26',246143299)]:
     assert sum(t['amount'] for t in public['transactions'] if t['fy']==fy) == expected
-payload = json.dumps(public).casefold()
+# Notes are explicitly approved to include source names; identity restrictions still
+# apply to the remainder of the public payload.
+without_notes = dict(public, transactions=[{k:v for k,v in t.items() if k != 'purchaseNotes'} for t in public['transactions']])
+payload = json.dumps(without_notes).casefold()
 for person in {t['person'] for t in private['transactions']} - cardholders - {'Unassigned'}:
     assert person.casefold() not in payload, 'Non-approved cardholder in public data'
 for profile in private['staff']:
@@ -43,3 +46,9 @@ print('Passed: all selected portraits published and no extra photos included.')
 
 assert approved["cardholders"]["Jared Jones"] == "JONES, BEAU J"
 assert sum(t["person"] == "JONES, BEAU J" for t in public["transactions"]) == 46
+
+import subprocess
+expected_notes = json.loads(subprocess.check_output(['node','-e',"const fs=require('fs');const {purchaseNotes}=require('./app/merchant-context.js');process.stdout.write(JSON.stringify(JSON.parse(fs.readFileSync('app/data.json')).transactions.map(t=>purchaseNotes(t.comments))));"],cwd=root))
+assert [t['purchaseNotes'] for t in public['transactions']] == expected_notes
+assert all(isinstance(n,str) for t in public['transactions'] for n in t['purchaseNotes'])
+print('Passed: public notes exactly match approved extractor; raw comment histories remain excluded.')

@@ -146,3 +146,13 @@ body>.report-navigation{max-width:1144px;margin:24px auto}
 .trip-identity .trip-destination{font-size:17px;color:var(--ink);font-weight:500}.trip-cost .trip-reimbursement{font-size:13px}@media(max-width:600px){.trip-cost .trip-reimbursement{font-size:16px}}
 
 .transaction-title{font-weight:600;max-width:34ch;overflow-wrap:anywhere}.transaction-meta{margin-top:12px;color:var(--muted)}.transaction-meta strong{color:var(--ink);font-variant-numeric:tabular-nums}
+
+
+.company-description { max-width: 44rem; font-size: .9rem; font-weight: 400; }
+.company-description p { margin: .4rem 0; }
+.purchase-context { margin: 1rem 0; padding: 1rem; border: 1px solid #d8dee4; border-radius: 8px; }
+.purchase-context h3 { margin-top: .5rem; }
+.purchase-notes { padding-left: 1.3rem; }
+.purchase-notes li { margin: .5rem 0; overflow-wrap: anywhere; white-space: pre-wrap; }
+.purchase-note-preview { max-width: 30rem; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; overflow-wrap: anywhere; }
+.company-description > .fine { display: block; margin-top: .3rem; }
