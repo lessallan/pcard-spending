@@ -4,7 +4,7 @@ const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const money=c=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(c/100);
 const exact=c=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'}).format(c/100);
 const number=n=>n.toLocaleString('en-US');
-let data, rows=[], page=0, view='overview', rankMetric='spend', selectedId=null, selectedLeader=null;
+let data, rows=[], page=0, view='overview', rankMetric='spend', selectedId=null, selectedLeader=null, selectedTravelPerson=null;
 const titles={transactions:['Explore transactions','Search and filter individual City P-card purchases.'],leader:['Associated card charges','Recorded cardholder transactions, not personal spending.'],retail:['Amazon, Walmart & similar stores','Explore purchases at stores that sell many kinds of goods; itemized receipts explain what was bought.'],overview:['Your city’s P-card spending','Understand how public money supports everyday City work.'],travel:['Travel & lodging','Explore travel charges by merchant and spending area.'],centers:['Spending by area','Understand the accounting areas charged for City purchases.'],merchants:['Where the money goes','Explore merchants, purchase volume, and broad-selection retailers.'],staff:['City leadership','Elected officials, city management, and department leadership.']};
 // Published reference labels: FY25/FY26 budget books; 4150 identified in June 29, 2026 budget workshop.
 // Additional evidence: analysis/cost-center-expanded-search.md (private research, not published).
@@ -18,7 +18,7 @@ function displayName(s){if(s&&s.trim().toUpperCase()==='JONES, BEAU J')return 'J
 function fillSelect(id,values,label){$(id).innerHTML=`<option value="">${label}</option>`+[...new Set(values)].sort().map(v=>`<option value="${esc(v)}">${esc(id==='person'?displayName(v):id==='center'?centerLabel(v):v)}</option>`).join('')}
 function filters(){return view==='transactions'?Object.fromEntries(new FormData($('filters'))):{}}
 function filtered(){
- const f=view==='overview'?{}:filters();let result=[];if(selectedLeader)f.person='';
+ const f=view==='overview'||selectedTravelPerson?{}:filters();let result=[];if(selectedLeader)f.person='';
  if(f.from&&f.to&&f.from>f.to){$('filter-error').textContent='The start date must be on or before the end date.';return []}
  $('filter-error').textContent='';
  for(const t of data.transactions){
@@ -261,10 +261,11 @@ function travelSummaryData(groups,transactions){
  const byName=(a,b)=>displayName(a.person).localeCompare(displayName(b.person));
  return {counts:[...people.values()].sort((a,b)=>b.groups-a.groups||byName(a,b)),days:[...people.values()].filter(r=>r.dated).sort((a,b)=>b.days.size-a.days.size||byName(a,b)),spending:[...spending].map(([person,amount])=>({person,amount})).sort((a,b)=>b.amount-a.amount||byName(a,b)),destinations:[...destinations].sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0])),dated};
 }
+function travelPersonLink(person){return `<a href="#travel/person/${encodeURIComponent(person)}">${esc(displayName(person))}</a>`}
 function travelSummaries(groups,transactions){
  const m=travelSummaryData(groups,transactions),visible=new Set(transactions.map(t=>t.id));
  const list=(items,render)=>items.length?`<ol class="travel-summary-list">${items.slice(0,5).map(render).join('')}</ol>`:'<p class="section-note">No matching records in this selection.</p>';
- const personRow=(r,value)=>`<li><span>${esc(displayName(r.person))}</span><strong>${value}</strong></li>`;
+ const personRow=(r,value)=>`<li>${travelPersonLink(r.person)}<strong>${value}</strong></li>`;
  // Reviewed examples are tied to source IDs and disappear when excluded or outside the selection.
  const examples=[
   {ids:['TXN00042729','TXN00042757','TXN00042769'],title:'Atlanta · November 2024',names:'Corey Mesko, Sean Hellings and Johnathan Crutchfield',evidence:'Three Hampton Inn charges dated November 15 name these guests in their comments. All were booked on Jonathan Crutchfield’s card. Shared stay dates are not confirmed.'},
@@ -279,14 +280,17 @@ function travelSummaries(groups,transactions){
  <article class="shared-travel"><span class="estimate-label">Possible shared travel · needs confirmation</span><h3>Who may have traveled together</h3>${shared.length?shared.map(e=>`<div class="shared-travel-example"><h4>${esc(e.title)}</h4><p><strong>${esc(e.names)}</strong></p><p>${esc(e.evidence)}</p><details><summary>View supporting purchases</summary><p>${e.ids.map(id=>`<button type="button" class="link" data-detail="${id}">${id}</button>`).join(' · ')}</p></details></div>`).join(''):'<p>No reviewed shared-travel examples match this selection.</p>'}<p class="section-note">Selected examples, not a complete list. Related purchases may fall outside the filters. Similar purchase dates alone do not prove shared travel.</p></article>
  </div></section>`;
 }
-function tripReport(){
+function tripReport(person=null){
  const visible=new Set(filtered().map(t=>t.id));
- const all=tripGroups(),groups=all.filter(g=>g.items.some(t=>visible.has(t.id)));
+ const all=tripGroups(),groups=all.map(g=>person?{...g,items:g.items.filter(t=>t.person===person)}:g).filter(g=>g.items.some(t=>visible.has(t.id)));
+ if(person)groups.sort((a,b)=>tripFacts(b).included.reduce((n,t)=>n+t.amount,0)-tripFacts(a).included.reduce((n,t)=>n+t.amount,0)||a.label.localeCompare(b.label));
  const known=new Set(all.flatMap(g=>g.items.map(t=>t.id)));
- const ungrouped=data.transactions.filter(t=>visible.has(t.id)&&t.travel!=='Not identified as travel'&&!known.has(t.id)).map(travelTransaction);
+ const ungrouped=data.transactions.filter(t=>visible.has(t.id)&&t.travel!=='Not identified as travel'&&!known.has(t.id)).map(travelTransaction).filter(t=>!person||t.person===person);
  const charge=t=>`<tr><td><button type="button" class="link" data-detail="${t.id}">${esc(t.raw)}</button><span class="fine">${esc(t.date)} · ${esc(displayName(t.person))}</span></td><td>${exact(t.amount)}<span class="fine">${esc(t.tripStatus||'Ungrouped')}</span></td></tr>`;
  const table=items=>`<div class="table-wrap"><table><thead><tr><th>Purchase / cardholder</th><th>Amount / membership</th></tr></thead><tbody>${items.map(charge).join('')}</tbody></table></div>`;
- return `${travelSummaries(groups,filtered().map(travelTransaction))}<section id="trip-report" class="trip-report"><div class="trip-heading"><h2>Suggested trips</h2><span>${groups.length} groups</span></div><p>P-card purchases only — reimbursements are not included. The cardholder is shown first and may be the traveler or may have booked for someone else. Open a purchase to confirm or adjust its membership.</p><details class="trip-method"><summary>How estimates work</summary><p>Destinations are clues from comments or hotel names. Travel dates use explicit ranges in comments; an omitted year is estimated from the purchase year. Days include both endpoints, not nights. Without a range, only purchase dates are shown. Conflicting ranges need review.</p><p>Filters find groups with matching charges; totals include full charges in each group. Excluded charges do not count. Credits reduce costs. Missing purchases and reimbursements mean these are not complete trip costs. Reviews stay in this browser. Confirming membership does not verify policy compliance.</p></details>${tripComparison(groups)}${groups.length?groups.map(g=>{
+ const included=groups.flatMap(g=>tripFacts(g).included),total=included.reduce((n,t)=>n+t.amount,0),confirmed=included.filter(t=>t.tripStatus==='confirmed').reduce((n,t)=>n+t.amount,0);
+ const intro=person?`<p><a href="#travel">← Back to all travel</a></p><section class="travel-person-summary"><h2>${esc(displayName(person))}’s associated trips</h2><div class="stats">${stat('Total identified cost',exact(total),'Suggested and confirmed charges in these groups')}${stat('Confirmed identified cost',exact(confirmed),'Charges confirmed in this browser')}${stat('Suggested trip groups',number(groups.length),'Not verified trips taken')}${stat('Ungrouped travel charges',exact(ungrouped.reduce((n,t)=>n+t.amount,0)),ungrouped.length+' purchases · excluded from trip total')}</div><p>Only this cardholder’s charges are included, even when a group contains other cardholders. Credits reduce costs; excluded charges and reimbursements do not count. Cardholders may book for others.</p></section>`:travelSummaries(groups,filtered().map(travelTransaction));
+ return `${intro}<section id="trip-report" class="trip-report"><div class="trip-heading"><h2>Suggested trips</h2><span>${groups.length} groups</span></div><p>P-card purchases only — reimbursements are not included. The cardholder is shown first and may be the traveler or may have booked for someone else. Open a purchase to confirm or adjust its membership.</p><details class="trip-method"><summary>How estimates work</summary><p>Destinations are clues from comments or hotel names. Travel dates use explicit ranges in comments; an omitted year is estimated from the purchase year. Days include both endpoints, not nights. Without a range, only purchase dates are shown. Conflicting ranges need review.</p><p>Filters find groups with matching charges; totals include full charges in each group. Excluded charges do not count. Credits reduce costs. Missing purchases and reimbursements mean these are not complete trip costs. Reviews stay in this browser. Confirming membership does not verify policy compliance.</p></details>${tripComparison(groups)}${groups.length?groups.map(g=>{
  const f=tripFacts(g),sum=status=>g.items.filter(t=>t.tripStatus===status).reduce((n,t)=>n+t.amount,0),confirmed=g.items.filter(t=>t.tripStatus==='confirmed').length;
  const title=g.label.split(' · ')[0],people=[...new Set(g.items.map(t=>displayName(t.person)))].join(', ');
  const destination=f.destinations.length?f.destinations.map(tripDestinationLabel).join(' / '):/, [A-Z]{2}$/.test(title)?tripDestinationLabel(title):'Destination not identified';
@@ -312,9 +316,10 @@ function bindTripReview(t){
 function render(){
  if(!data)return;
  const route=location.hash.slice(1)||'overview';
+ selectedTravelPerson=null;if(route.startsWith('travel/person/')){try{selectedTravelPerson=decodeURIComponent(route.slice(14))}catch{selectedTravelPerson='Unknown cardholder'}}
  selectedLeader=route.startsWith('leader/')?leadershipProfiles.find(([name])=>leadershipId(name)===route.slice(7))?.[0]||null:null;
- view=selectedLeader?'leader':titles[route]&&route!=='leader'?route:'overview';
- $('title').textContent=selectedLeader||titles[view][0];$('subtitle').textContent=titles[view][1];document.title=(selectedLeader||titles[view][0])+' · Penny Ping';
+ view=selectedTravelPerson?'travel':selectedLeader?'leader':titles[route]&&route!=='leader'?route:'overview';
+ $('title').textContent=selectedTravelPerson?displayName(selectedTravelPerson)+' · Travel':selectedLeader||titles[view][0];$('subtitle').textContent=titles[view][1];document.title=(selectedTravelPerson?displayName(selectedTravelPerson)+' · Travel':selectedLeader||titles[view][0])+' · Penny Ping';
  document.querySelectorAll('nav a').forEach(a=>{a.classList.toggle('active',a.hash==='#'+(selectedLeader?'staff':view));a.setAttribute('aria-current',a.hash==='#'+(selectedLeader?'staff':view)?'page':'false')});
  const staff=view==='staff';
  document.querySelector('.filter-box').hidden=view!=='transactions';
@@ -322,6 +327,7 @@ function render(){
  const active=Object.values(filters()).filter(Boolean).length;$('filter-count').textContent=staff?'Search leadership':active?`${active} active`:'';
  if(staff){$('content').innerHTML=staffView();return}
  rows=filtered();
+ if(selectedTravelPerson){$('content').innerHTML=tripReport(selectedTravelPerson);return}
  if(selectedLeader){
   const cardholder=leadershipCardholders[selectedLeader];
   rows=cardholder?rows.filter(t=>t.person===cardholder):[];
@@ -368,7 +374,7 @@ $('close-detail').addEventListener('click',()=>$('detail').close());
 $('filters').addEventListener('submit',e=>e.preventDefault());
 let timer;$('filters').addEventListener('input',()=>{clearTimeout(timer);timer=setTimeout(()=>{page=0;render()},180)});
 $('reset').addEventListener('click',()=>{retailerScope='all';HTMLFormElement.prototype.reset.call($('filters'));page=0;render()});
-window.addEventListener('hashchange',()=>{if(location.hash.startsWith('#leader/')||selectedLeader&&location.hash==='#staff'){HTMLFormElement.prototype.reset.call($('filters'));retailerScope='all'}page=0;rankMetric='spend';$('nav').classList.remove('open');document.querySelector('.mobile-menu').setAttribute('aria-expanded','false');render();window.scrollTo(0,0)});
+window.addEventListener('hashchange',()=>{if(location.hash.startsWith('#travel/person/')||location.hash==='#travel'||location.hash.startsWith('#leader/')||selectedLeader&&location.hash==='#staff'){HTMLFormElement.prototype.reset.call($('filters'));retailerScope='all'}page=0;rankMetric='spend';$('nav').classList.remove('open');document.querySelector('.mobile-menu').setAttribute('aria-expanded','false');render();window.scrollTo(0,0)});
 document.querySelector('.mobile-menu').addEventListener('click',e=>{const open=$('nav').classList.toggle('open');e.target.setAttribute('aria-expanded',String(open))});
 if(innerWidth<=600)document.querySelector('.filter-box').open=false;
 function loadDataset(d){
