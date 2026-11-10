@@ -127,3 +127,7 @@
 !/app/merchant-context.js
 !/docs/merchant-context.js
 !/tools/check_merchant_context.cjs
+
+# Exact-store location regression checks and source review notes.
+!/tools/check_merchant_locations.cjs
+!/reports/merchant-location-research.md

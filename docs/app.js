@@ -117,6 +117,300 @@ const merchantLocations = {
     "city": "Panama City, FL",
     "address": "530 Hawkins Ave, Panama City, FL 32405",
     "source": "https://www.hobbylobby.com/stores/search/339"
+  },
+  "CHEVRON 0042081": {
+    "name": "Chevron #0042081",
+    "city": "Lake City, FL",
+    "address": "128 W Duval St, Lake City, FL 32055-3977",
+    "source": "https://www.chevronwithtechron.com/en_us/home/gas-station-near-me.html?/station/128-W-Duval-St-Lake-City-FL-32055-3977-id42081"
+  },
+  "CHEVRON 0042097": {
+    "name": "Chevron #0042097",
+    "city": "Live Oak, FL",
+    "address": "6647 US HWY 129, Live Oak, FL 32060-8459",
+    "source": "https://www.chevronwithtechron.com/en_us/home/gas-station-near-me.html?/station/6647-US-HWY-129-Live-Oak-FL-32060-8459-id42097"
+  },
+  "CHEVRON 0200464": {
+    "name": "Chevron #0200464",
+    "city": "Doral, FL",
+    "address": "2498 NW 87TH AVE, Doral, FL 33172-2410",
+    "source": "https://www.chevronwithtechron.com/en_us/home/gas-station-near-me.html?/station/2498-NW-87TH-AVE-Doral-FL-33172-2410-id200464"
+  },
+  "CHEVRON 0202466": {
+    "name": "Chevron #0202466",
+    "city": "Panama City, FL",
+    "address": "3534 18TH ST, Panama City, FL 32401",
+    "source": "https://www.chevronwithtechron.com/en_us/home/gas-station-near-me.html?/station/3534-18TH-ST-Panama-City-FL-32401-id202466"
+  },
+  "CHEVRON 0207484": {
+    "name": "Chevron #0207484",
+    "city": "Marianna, FL",
+    "address": "4153 LAFAYETTE ST, Marianna, FL 32446-8247",
+    "source": "https://www.chevronwithtechron.com/en_us/home/gas-station-near-me.html?/station/4153-LAFAYETTE-ST-Marianna-FL-32446-8247-id207484"
+  },
+  "CHEVRON 0209169": {
+    "name": "Chevron #0209169",
+    "city": "Lucedale, MS",
+    "address": "6239 HWY 98, Lucedale, MS 39452-3981",
+    "source": "https://www.chevronwithtechron.com/en_us/home/gas-station-near-me.html?/station/6239-HWY-98-Lucedale-MS-39452-3981-id209169"
+  },
+  "CHEVRON 0301151": {
+    "name": "Chevron #0301151",
+    "city": "Montgomery, AL",
+    "address": "2682 ZELDA ROAD, Montgomery, AL 36101",
+    "source": "https://www.chevronwithtechron.com/en_us/home/gas-station-near-me.html?/station/2682-ZELDA-ROAD-Montgomery-AL-36101-id301151"
+  },
+  "CHEVRON 0302416": {
+    "name": "Chevron #0302416",
+    "city": "Orlando, FL",
+    "address": "6932 S. KIRKMAN RD., Orlando, FL 32819",
+    "source": "https://www.chevronwithtechron.com/en_us/home/gas-station-near-me.html?/station/6932-S-KIRKMAN-RD-Orlando-FL-32819-id302416"
+  },
+  "CHEVRON 0305725": {
+    "name": "Chevron #0305725",
+    "city": "Panama City, FL",
+    "address": "1136 BECK AVENUE, Panama City, FL 32401-1468",
+    "source": "https://www.chevronwithtechron.com/en_us/home/gas-station-near-me.html?/station/1136-BECK-AVENUE-Panama-City-FL-32401-1468-id305725"
+  },
+  "CHEVRON 0309334": {
+    "name": "Chevron #0309334",
+    "city": "Brewton, AL",
+    "address": "13315  HWY 113, Brewton, AL 36426",
+    "source": "https://www.chevronwithtechron.com/en_us/home/gas-station-near-me.html?/station/13315--HWY-113-Brewton-AL-36426-id309334"
+  },
+  "CHEVRON 0359421": {
+    "name": "Chevron #0359421",
+    "city": "Panama City, FL",
+    "address": "1409 N. HWY. 231, Panama City, FL 32405",
+    "source": "https://www.chevronwithtechron.com/en_us/home/gas-station-near-me.html?/station/1409-N-HWY-231-Panama-City-FL-32405-id359421"
+  },
+  "CHEVRON 0377344": {
+    "name": "Chevron #0377344",
+    "city": "Vienna, GA",
+    "address": "1525  EAST UNION ST., Vienna, GA 31092",
+    "source": "https://www.chevronwithtechron.com/en_us/home/gas-station-near-me.html?/station/1525--EAST-UNION-ST-Vienna-GA-31092-id377344"
+  },
+  "CHEVRON 0379629": {
+    "name": "Chevron #0379629",
+    "city": "Salt Lake City, UT",
+    "address": "375 N TERMINAL DRIVE, Salt Lake City, UT 84104",
+    "source": "https://www.chevronwithtechron.com/en_us/home/gas-station-near-me.html?/station/375-N-TERMINAL-DRIVE-Salt-Lake-City-UT-84104-id379629"
+  },
+  "CHEVRON 0388420": {
+    "name": "Chevron #0388420",
+    "city": "Headland, AL",
+    "address": "17909 US HIGHWAY 431 N, Headland, AL 36345-8211",
+    "source": "https://www.chevronwithtechron.com/en_us/home/gas-station-near-me.html?/station/17909-US-HIGHWAY-431-N-Headland-AL-36345-8211-id388420"
+  },
+  "TEXACO 0305573": {
+    "name": "Texaco #0305573",
+    "city": "Prattville, AL",
+    "address": "203 INTERSTATE PARK LOOP, Prattville, AL 36066-7330",
+    "source": "https://www.chevronwithtechron.com/en_us/home/gas-station-near-me.html?/station/203-INTERSTATE-PARK-LOOP-Prattville-AL-36066-7330-id305573"
+  },
+  "BAKER DISTRIBUTING#280": {
+    "name": "Baker Distributing #280",
+    "city": "Panama City, FL",
+    "address": "1252 W 17th St, Panama City, FL 32405",
+    "source": "https://www.bakerdist.com/express-stores"
+  },
+  "SHERWIN-WILLIAMS702024": {
+    "name": "Sherwin-Williams #702024",
+    "city": "Panama City, FL",
+    "address": "742 W 15th St, Panama City, FL 32401-2266",
+    "source": "https://www.sherwin-williams.com/en-us/store-listings"
+  },
+  "SHERWIN-WILLIAMS723891": {
+    "name": "Sherwin-Williams #723891",
+    "city": "Lynn Haven, FL",
+    "address": "1220 Ohio Ave, Lynn Haven, FL 32444-2557",
+    "source": "https://www.sherwin-williams.com/en-us/store-listings"
+  },
+  "SHERWIN-WILLIAMS727645": {
+    "name": "Sherwin-Williams #727645",
+    "city": "Panama City, FL",
+    "address": "3407 US Hwy 98, Panama City, FL 32401",
+    "source": "https://www.sherwin-williams.com/store-locator/commercial-paint-store/panama-city/fl/727645"
+  },
+  "AUTOZONE #0147": {
+    "name": "AutoZone #147",
+    "city": "Panama City, FL",
+    "address": "1301 W 15th St, Panama City, FL 32401",
+    "source": "https://www.autozone.com/locations/fl/panama-city/1301-w-15th-st.html"
+  },
+  "AUTOZONE #5150": {
+    "name": "AutoZone #5150",
+    "city": "Panama City, FL",
+    "address": "2329 Dr. MLK Jr Blvd, Panama City, FL 32405",
+    "source": "https://www.autozone.com/locations/fl/panama-city/2329-dr-mlk-jr-blvd"
+  },
+  "AUTOZONE 05150": {
+    "name": "AutoZone #5150",
+    "city": "Panama City, FL",
+    "address": "2329 Dr. MLK Jr Blvd, Panama City, FL 32405",
+    "source": "https://www.autozone.com/locations/fl/panama-city/2329-dr-mlk-jr-blvd"
+  },
+  "O'REILLY 2368": {
+    "name": "O’Reilly Auto Parts #2368",
+    "city": "Lynn Haven, FL",
+    "address": "1602 Ohio Avenue, Lynn Haven, FL",
+    "source": "https://locations.oreillyauto.com/en-us/fl/lynnhaven/autoparts-2368.html"
+  },
+  "WAL-MART #1207": {
+    "name": "Walmart #1207",
+    "city": "Callaway, FL",
+    "address": "725 N Tyndall Pkwy, Callaway, FL 32404",
+    "source": "https://www.walmart.com/store/1207-callaway-fl"
+  },
+  "WAL-MART #1032": {
+    "name": "Walmart #1032",
+    "city": "Lynn Haven, FL",
+    "address": "2101 S Highway 77, Lynn Haven, FL 32444",
+    "source": "https://www.walmart.com/store/1032-lynn-haven-fl"
+  },
+  "WAL-MART #0818": {
+    "name": "Walmart #818",
+    "city": "Panama City Beach, FL",
+    "address": "10270 Front Beach Rd, Panama City Beach, FL 32407",
+    "source": "https://www.walmart.com/store/818-panama-city-beach-fl"
+  },
+  "LOWES #02367": {
+    "name": "Lowe’s #2367",
+    "city": "Panama City Beach, FL",
+    "address": "11751 Panama City Beach Pkwy, Panama City Beach, FL 32407",
+    "source": "https://www.lowes.com/store/2367-panama-city-beach-fl/paint-store"
+  },
+  "LOWES #01843": {
+    "name": "Lowe’s #1843",
+    "city": "Bradenton, FL",
+    "address": "4012 14th Street West, Bradenton, FL 34205",
+    "source": "https://www.lowes.com/store/FL-Bradenton/1843"
+  },
+  "LOWES #00441": {
+    "name": "Lowe’s #441",
+    "city": "Montgomery, AL",
+    "address": "1950 Eastern Blvd, Montgomery, AL 36117",
+    "source": "https://www.lowes.com/store/0441-montgomery-al/hardware-store"
+  },
+  "PUBLIX #823": {
+    "name": "Publix #823",
+    "city": "Lynn Haven, FL",
+    "address": "2310 S Highway 77, Lynn Haven, FL 32444-4616",
+    "source": "https://www.publix.com/locations/823-lynn-haven-center"
+  },
+  "PUBLIX #681": {
+    "name": "Publix #681",
+    "city": "Holmes Beach, FL",
+    "address": "3900 E Bay Dr, Holmes Beach, FL 34217-1983",
+    "source": "https://www.publix.com/locations/681-publix-at-holmes-beach"
+  },
+  "PUBLIX #2034": {
+    "name": "Publix #2034",
+    "city": "Panama City, FL",
+    "address": "3213 W Hwy 390, Panama City, FL 32405-2734",
+    "source": "https://www.publix.com/locations/2034-sweetbay-town-center"
+  },
+  "PUBLIX #1875": {
+    "name": "Publix #1875",
+    "city": "Panama City, FL",
+    "address": "4601 Lindsey Crossing, Panama City, FL 32404-9325",
+    "source": "https://www.publix.com/locations/1875-panama-city-centre"
+  },
+  "SAMS CLUB #8201": {
+    "name": "Sam’s Club #8201",
+    "city": "Bradenton, FL",
+    "address": "5300 30th St E, Bradenton, FL 34203",
+    "source": "https://www.samsclub.com/club/8201-bradenton-fl"
+  },
+  "SAMS CLUB#8201": {
+    "name": "Sam’s Club #8201",
+    "city": "Bradenton, FL",
+    "address": "5300 30th St E, Bradenton, FL 34203",
+    "source": "https://www.samsclub.com/club/8201-bradenton-fl"
+  },
+  "SAMS CLUB #8253": {
+    "name": "Sam’s Club #8253",
+    "city": "Jacksonville, FL",
+    "address": "300 Busch Dr, Jacksonville, FL 32218",
+    "source": "https://www.samsclub.com/club/8253-jacksonville-fl"
+  },
+  "LOVE'S #0379 INSIDE": {
+    "name": "Love’s #379",
+    "city": "Lee, FL",
+    "address": "3204 SE County Road 255, Lee, FL 32059",
+    "source": "https://www.loves.com/locations/379"
+  },
+  "LOVE'S #0379 OUTSIDE": {
+    "name": "Love’s #379",
+    "city": "Lee, FL",
+    "address": "3204 SE County Road 255, Lee, FL 32059",
+    "source": "https://www.loves.com/locations/379"
+  },
+  "LOVE'S #0802 OUTSIDE": {
+    "name": "Love’s #802",
+    "city": "Milton, FL",
+    "address": "3840 Garcon Point Rd, Milton, FL 32583",
+    "source": "https://www.loves.com/locations/802"
+  },
+  "LOVE'S #0453 INSIDE": {
+    "name": "Love’s #453",
+    "city": "Cottondale, FL",
+    "address": "2510 Highway 231, Cottondale, FL 32431",
+    "source": "https://www.loves.com/locations/453"
+  },
+  "LOVE'S #0453 OUTSIDE": {
+    "name": "Love’s #453",
+    "city": "Cottondale, FL",
+    "address": "2510 Highway 231, Cottondale, FL 32431",
+    "source": "https://www.loves.com/locations/453"
+  },
+  "LOVE'S #0724 INSIDE": {
+    "name": "Love’s #724",
+    "city": "Lake City, FL",
+    "address": "13700 S US Highway 441, Lake City, FL 32025",
+    "source": "https://www.loves.com/locations/724"
+  },
+  "LOVE'S #0724 OUTSIDE": {
+    "name": "Love’s #724",
+    "city": "Lake City, FL",
+    "address": "13700 S US Highway 441, Lake City, FL 32025",
+    "source": "https://www.loves.com/locations/724"
+  },
+  "LOVE'S #0363 INSIDE": {
+    "name": "Love’s #363",
+    "city": "Ocala, FL",
+    "address": "7791 NW 47th Avenue, Ocala, FL 34482",
+    "source": "https://www.loves.com/locations/363"
+  },
+  "LOVE'S #0363 OUTSIDE": {
+    "name": "Love’s #363",
+    "city": "Ocala, FL",
+    "address": "7791 NW 47th Avenue, Ocala, FL 34482",
+    "source": "https://www.loves.com/locations/363"
+  },
+  "LOVE'S #0868 OUTSIDE": {
+    "name": "Love’s #868",
+    "city": "Mims, FL",
+    "address": "4440 Hwy 46, Mims, FL 32754",
+    "source": "https://www.loves.com/locations/868"
+  },
+  "LOVE'S #0561 OUTSIDE": {
+    "name": "Love’s #561",
+    "city": "Mossy Head, FL",
+    "address": "17750 Hwy 285 Drive S, Mossy Head, FL 32435",
+    "source": "https://www.loves.com/locations/561"
+  },
+  "LOVE'S #0708 OUTSIDE": {
+    "name": "Love’s #708",
+    "city": "Bushnell, FL",
+    "address": "2615 W C-48, Bushnell, FL 33513",
+    "source": "https://www.loves.com/locations/708"
+  },
+  "LOVE'S #0964 OUTSIDE": {
+    "name": "Love’s #964",
+    "city": "Gretna, FL",
+    "address": "265 Opportunity Way, Gretna, FL 32332",
+    "source": "https://www.loves.com/locations/964"
   }
 };
 function merchantLocation(t){return merchantLocations[(t.raw||'').trim().toUpperCase()]||null}
