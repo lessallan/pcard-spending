@@ -21,3 +21,10 @@ FY25 detail totals differ from the workbook summary by $136,616.98; FY26 reconci
 Company descriptions use explicit merchant aliases and cited sources in `app/merchant-context.js`. Unknown merchants receive no guessed profile. Transaction descriptions quote extracted source notes, preserving mixed items and qualifications while removing common administrative-only text and duplicates. No merchant, department or cardholder-based purchase guesses are generated.
 
 Allan explicitly approved publishing all extracted notes, including any names/details in their text, on November 9, 2026. The builder adds only `purchaseNotes`; raw comments and flags stay empty, existing cardholder anonymity and approved leadership profiles remain unchanged. Notes are not verified receipts. Run the public-data and browser checks before release.
+
+### Published trip research
+
+`tools/travel-research-catalog.cjs` stores sourced hotel and event editions.
+`tools/travel-research-engine.cjs` derives purpose, destination clues and explicit date ranges from local records. `tools/build_travel.cjs` publishes these explanations in `docs/travel.json`; raw comments remain excluded and the existing public transaction dataset is unchanged. Event dates are context, not travel dates. Broad organization references do not identify a particular conference.
+
+Validate with `node tools/check_travel_research.cjs`, `python3 tools/test_public_travel.py` and `python3 tools/test_public_data.py` after `python3 tools/build_pages.py`.

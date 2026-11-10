@@ -131,3 +131,7 @@
 # Exact-store location regression checks and source review notes.
 !/tools/check_merchant_locations.cjs
 !/reports/merchant-location-research.md
+
+!/tools/travel-research-engine.cjs
+!/tools/travel-research-catalog.cjs
+!/tools/check_travel_research.cjs
