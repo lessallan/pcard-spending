@@ -60,3 +60,25 @@ body>.resident-guide{max-width:1144px;margin:24px auto 28px;padding:28px 36px;ba
 .site-intro{max-width:1144px;margin:28px auto;padding:0 36px}.site-intro h1{font-size:36px;max-width:30ch;text-wrap:balance}.site-intro p{max-width:85ch}.site-intro>.eyebrow{margin-bottom:8px}.page-heading #title{font-size:32px;letter-spacing:-1px;margin:4px 0;font-weight:600}
 @media(max-width:900px){.site-intro{margin:24px 16px;padding:0 25px}}
 @media(max-width:600px){.site-intro{margin:24px 10px;padding:0 18px}.site-intro h1{font-size:29px}.page-heading #title{font-size:28px}}
+/* Monthly amounts: signed dollar scale, keyboard/touch values, readable months. */
+.monthly-scroll{overflow-x:auto;padding:28px 6px 8px 0}
+.monthly-chart{display:grid;grid-template-columns:106px 1fr;min-width:calc(106px + var(--months)*46px);padding-bottom:72px}
+.monthly-axis{position:relative;height:220px;font-size:12px;font-variant-numeric:tabular-nums;color:var(--muted)}
+.monthly-axis>span{position:absolute;right:12px;transform:translateY(-50%);white-space:nowrap}
+.monthly-plot{position:relative;height:220px}
+.monthly-grid{position:absolute;inset:0;pointer-events:none}
+.monthly-grid i{position:absolute;left:0;right:0;border-top:1px solid var(--line)}
+.monthly-grid i.zero{border-color:#59645d}
+.monthly-bars{display:flex;height:100%;position:relative}
+.monthly-month{position:relative;flex:1;min-width:44px;height:100%;padding:0;border:0;border-radius:0;background:transparent!important}
+.monthly-bar{position:absolute;left:15%;width:70%;background:#638569;min-height:1px;border-radius:2px}
+.monthly-month.negative .monthly-bar{background:var(--rose)}
+.monthly-label{position:absolute;top:100%;left:50%;writing-mode:vertical-rl;margin-top:10px;font-size:12px;color:var(--muted)}
+.monthly-value{display:none;position:absolute;top:4px;left:50%;transform:translateX(-50%);padding:7px 10px;white-space:nowrap;background:#29342f;color:white;border-radius:5px;font-size:13px;z-index:3;pointer-events:none}
+.monthly-month:hover .monthly-value,.monthly-month:focus .monthly-value{display:block}
+.monthly-month:first-child .monthly-value{left:0;transform:none}
+.monthly-month:last-child .monthly-value{left:auto;right:0;transform:none}
+.monthly-data summary{cursor:pointer;color:var(--green);padding:8px 0;min-height:44px}
+.porchping-banner img{display:block;width:180px;max-width:100%;height:auto;max-height:64px;object-fit:contain;flex:0 0 auto}
+
+.monthly-label{white-space:nowrap}.monthly-axis{position:sticky;left:0;z-index:4;background:var(--paper)}
