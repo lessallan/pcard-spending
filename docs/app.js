@@ -125,7 +125,8 @@ function tripGroups(){
   if(!groups.has(label))groups.set(label,{label,items:[]});
   groups.get(label).items.push({...t,tripStatus:['confirmed','excluded'].includes(saved?.status)?saved.status:'suggested',tripReason:saved?.note||suggestion?.reason||'Manually assigned; review supporting records.'});
  }
- return [...groups.values()].sort((a,b)=>a.label.localeCompare(b.label));
+ const identifiedCost=g=>g.items.reduce((sum,t)=>sum+(t.tripStatus==='excluded'?0:t.amount),0);
+ return [...groups.values()].sort((a,b)=>identifiedCost(b)-identifiedCost(a)||a.label.localeCompare(b.label));
 }
 // Dates come only from explicit ranges in travel comments, never review timestamps.
 function tripDateRange(t){return t.tripRange||null}
