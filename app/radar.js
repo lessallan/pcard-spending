@@ -150,6 +150,97 @@ const radarGroups=[
       "TXN00041932",
       "TXN00041858"
     ]
+  },
+  {
+    "title": "Awards & retirement recognition",
+    "reason": "Service and retirement awards, badge holders, and plaques for officials. What items, quantities and recognition policy support these costs?",
+    "context": true,
+    "ids": [
+      "TXN00042328",
+      "TXN00041900",
+      "TXN00041734",
+      "TXN00041583",
+      "TXN00041710",
+      "TXN00041621",
+      "TXN00043002",
+      "TXN00043195",
+      "TXN00043601",
+      "TXN00047193",
+      "TXN00047064",
+      "TXN00046809",
+      "TXN00051126",
+      "TXN00051713",
+      "TXN00052317",
+      "TXN00053678",
+      "TXN00055769",
+      "TXN00056454",
+      "TXN00057345"
+    ]
+  },
+  {
+    "title": "Awards purchases needing item details",
+    "reason": "Additional purchases at the recorded merchant “Engraving, Awards,” including shipping. Notes do not identify the items; request the itemized invoices before judging the cost.",
+    "context": true,
+    "ids": [
+      "TXN00049214",
+      "TXN00049563",
+      "TXN00050639",
+      "TXN00050821",
+      "TXN00057620",
+      "TXN00057973"
+    ]
+  },
+  {
+    "title": "Employee safety & team-building meals",
+    "reason": "Food and supplies across several Environmental Services, Streets and equipment-maintenance luncheons. Attendance counts and per-person costs would explain the expense.",
+    "context": true,
+    "ids": [
+      "TXN00042358",
+      "TXN00042335",
+      "TXN00042184",
+      "TXN00042174",
+      "TXN00045847",
+      "TXN00045895",
+      "TXN00045898",
+      "TXN00045916",
+      "TXN00045963",
+      "TXN00048770",
+      "TXN00048787",
+      "TXN00050725",
+      "TXN00050761",
+      "TXN00050826",
+      "TXN00050857",
+      "TXN00050869"
+    ]
+  },
+  {
+    "title": "Public Works Week meals & supplies",
+    "reason": "Catering, cake and supplies across FY25 and FY26. Includes $3,782.28 in refunds. What were the attendance counts and approved event budgets?",
+    "context": true,
+    "ids": [
+      "TXN00047236",
+      "TXN00047091",
+      "TXN00055735",
+      "TXN00055738",
+      "TXN00055740",
+      "TXN00055760",
+      "TXN00055762",
+      "TXN00056143",
+      "TXN00056144",
+      "TXN00056162",
+      "TXN00056163",
+      "TXN00056173",
+      "TXN00056186"
+    ]
+  },
+  {
+    "title": "Plaque restoration",
+    "reason": "Restoration of Police/PCR plaques and a McKenzie House plaque. The condition, restoration work and historic or public purpose would explain these costs.",
+    "context": true,
+    "ids": [
+      "TXN00054789",
+      "TXN00056280"
+    ]
   }
 ];
 function radarReport(ts){
