@@ -19,7 +19,7 @@
 
 /* Compact horizontal report navigation at every viewport width. */
 .report-navigation nav,.report-navigation nav.open{display:flex;flex-wrap:nowrap;gap:6px;overflow-x:auto;padding:4px 0;background:none}
-.report-navigation nav a{display:flex;flex-direction:row;align-items:center;justify-content:center;gap:7px;flex:0 0 auto;min-height:44px;padding:8px 12px;border:1px solid #b7c5b3;background:#f3f5ee;white-space:nowrap;color:var(--ink);user-select:none}
+.report-navigation nav a{display:flex;flex-direction:row;align-items:center;justify-content:center;gap:7px;flex:1 0 auto;min-height:44px;padding:8px 12px;border:1px solid #b7c5b3;background:#f3f5ee;white-space:nowrap;color:var(--ink);user-select:none}
 .report-navigation nav a svg{width:20px;height:20px;flex-shrink:0;color:var(--green)}
 .report-navigation nav a.active{background:#d3decf;border-color:#6b876b}
 .report-navigation nav a:hover{background:#e1e9db}
