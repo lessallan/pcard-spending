@@ -11,7 +11,7 @@
 
 .annual-totals{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px}.annual-totals .stat{padding:12px}.annual-totals strong{font-size:24px}.annual-travel details{margin-top:20px}.receipt-list{margin-top:20px}.receipt-card{padding:20px 0;border-bottom:1px solid var(--line,#ddd)}.receipt-card p{overflow-wrap:anywhere}.receipt-card h3{margin-top:10px}.annual-travel .board{min-width:0}
 
-.resident-guide{background:#eef2e9;padding:24px;margin-bottom:24px;border-radius:8px}.resident-guide h2{font-size:26px;margin-top:5px}.guide-intro{max-width:76ch;font-size:17px}.guide-columns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin:22px 0 16px}.guide-columns h3{margin-bottom:6px}.guide-columns p,.resident-guide details{font-size:14px}.resident-guide summary{cursor:pointer;color:var(--green);font-weight:600}.resident-guide details p{margin-top:14px;max-width:85ch}.reading-note{font-size:14px;color:var(--muted);border-left:3px solid #638569;padding-left:12px;margin-bottom:20px}.brand-logo{width:150px}.stat small{white-space:nowrap}.guide-columns p{margin:0}
+.resident-guide{background:#eef2e9;padding:24px;margin-bottom:24px;border-radius:8px}.resident-guide h2{font-size:26px;margin-top:5px}.guide-intro{max-width:76ch;font-size:17px}.guide-columns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin:22px 0 16px}.guide-columns h3{margin-bottom:6px}.guide-columns p,.resident-guide details{font-size:14px}.resident-guide summary{cursor:pointer;color:var(--green);font-weight:600}.resident-guide details p{margin-top:14px;max-width:85ch}.reading-note{font-size:14px;color:var(--muted);border-left:3px solid #638569;padding-left:12px;margin-bottom:20px}.brand-logo{width:150px}.stat small{white-space:normal}.guide-columns p{margin:0}
 @media(max-width:600px){.resident-guide{padding:20px 16px}.guide-columns{grid-template-columns:1fr;gap:18px}.guide-intro{font-size:16px}.brand-logo{width:120px}.resident-guide h2{font-size:24px}}
 
 .report-navigation{margin:24px 0 10px}.report-navigation nav{padding:0;gap:3px;flex-wrap:wrap}.report-navigation nav a{padding:9px 11px}.report-navigation .mobile-menu{margin:0 0 10px}
@@ -154,7 +154,7 @@ body>.report-navigation{max-width:1144px;margin:24px auto}
 .purchase-context h3 { margin-top: .5rem; }
 .purchase-notes { padding-left: 1.3rem; }
 .purchase-notes li { margin: .5rem 0; overflow-wrap: anywhere; white-space: pre-wrap; }
-.purchase-note-preview { max-width: 30rem; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; overflow-wrap: anywhere; }
+.purchase-note-preview { max-width: 30rem; display: block; overflow-wrap: anywhere; }
 .company-description > .fine { display: block; margin-top: .3rem; }
 
 .travel-person-cost{display:flex;flex-direction:column;align-items:flex-end;text-align:right;gap:4px;flex-shrink:0}.travel-person-cost>span{font-size:14px;color:var(--muted)}.travel-summary-list a{min-width:0;overflow-wrap:anywhere}@media(max-width:600px){.travel-summary-list li{flex-wrap:wrap}.travel-person-cost>span{font-size:16px}}
