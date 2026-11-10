@@ -580,7 +580,8 @@ module.exports={
     "TXN00053043": "Lyft trip assignment pending: the note does not name a trip or destination. Obtain the referenced memo/receipt-replacement letter or itinerary. Nearby booking dates alone do not establish a ride destination or a shared trip.",
     "TXN00055465": "Lyft trip assignment pending: the note does not name a trip or destination. Obtain the referenced memo/receipt-replacement letter or itinerary. Nearby booking dates alone do not establish a ride destination or a shared trip.",
     "TXN00056257": "Lyft trip assignment pending: the note does not name a trip or destination. Obtain the referenced memo/receipt-replacement letter or itinerary. Nearby booking dates alone do not establish a ride destination or a shared trip.",
-    "TXN00056670": "Lyft trip assignment pending: the note does not name a trip or destination. Obtain the referenced memo/receipt-replacement letter or itinerary. Nearby booking dates alone do not establish a ride destination or a shared trip."
+    "TXN00056670": "Lyft trip assignment pending: the note does not name a trip or destination. Obtain the referenced memo/receipt-replacement letter or itinerary. Nearby booking dates alone do not establish a ride destination or a shared trip.",
+    "TXN00056327": "Cross-card match withheld: same-day HOMES TO SUITES BY HILTON purchases for Shaw and Smith say Orlando (TXN00056328 / TXN00056346), while this record says Tall. FL for PD accreditation. A generic chain and matching purchase date cannot resolve conflicting destinations. Obtain the folio or referenced email."
   },
   "nonTrip": {
     "TXN00041922": {
@@ -1478,6 +1479,82 @@ module.exports={
       ],
       "reason": "November bookings explicitly say SC Visit and name Hayes, Fuller or Collier; Collier\u2019s flight records December 15\u201318. December 18 hotel, rental and parking name the Greenville SC site visit. Flight-change notes say SC Visit but do not identify each passenger. Lodging-insurance charges on Mullaney\u2019s card name Collier and Fuller. Shared trip remains inferred.",
       "city": "Greenville, SC"
+    },
+    {
+      "key": "bush-forbes-weftec-2024",
+      "name": "Possible shared WEFTEC hotel booking \u00b7 October 2024",
+      "ids": [
+        "TXN00041854",
+        "TXN00041890"
+      ],
+      "evidenceIds": [
+        "TXN00041854",
+        "TXN00041890"
+      ],
+      "reason": "Cross-card inference: Bush and Forbes have the exact SONESTA ES SUITES NEW descriptor and October 10, 2024 purchase date. Forbes explicitly says Weftec conference Hotel; Bush says hotel. Forbes\u2019s note supplies a probable event association for Bush, not proof of shared rooms, identical stay dates or attendance. The truncated descriptor does not establish the city."
+    },
+    {
+      "key": "hughes-strongtowns-2026",
+      "name": "Hughes \u00b7 Strong Towns \u00b7 May 2026",
+      "ids": [
+        "TXN00055205",
+        "TXN00055234",
+        "TXN00055591",
+        "TXN00055570",
+        "TXN00055663"
+      ],
+      "evidenceIds": [
+        "TXN00055205",
+        "TXN00055234",
+        "TXN00055591",
+        "TXN00055663"
+      ],
+      "city": "Fayetteville, AR",
+      "reason": "Hughes\u2019s registration, flight and May 20 Uber explicitly name Strong Towns. Terry\u2019s May 20 Hilton charge explicitly names Hughes and explains his card problem; same-day Hilton notes on Street\u2019s and Branch\u2019s cards (TXN00055649 / TXN00055658) name Strong Towns. The second Hughes Uber has the same descriptor/date as his named conference ride. Hotel and unnamed ride links are inferred; payment remains attributed to the recorded cardholder."
+    },
+    {
+      "key": "daugherty-swana-2025",
+      "name": "Daugherty \u00b7 possible SWANA hotel booking 2025",
+      "ids": [
+        "TXN00048265",
+        "TXN00048653"
+      ],
+      "evidenceIds": [
+        "TXN00048265",
+        "TXN00048653"
+      ],
+      "reason": "Daugherty\u2019s July 8 HILTON CONVENTION CTR charge ($259.88) is linked to his July 23 charge ($740.12), whose note explicitly says SWANA. Cross-card corroboration: Murphy has the identical descriptor and $259.88 / $740.12 amounts, with SWANA named on both records (TXN00047246 / TXN00048638). This suggests matching booking installments, not identical stay dates or a confirmed shared room."
+    },
+    {
+      "key": "taylor-scoggin-safety-2024",
+      "name": "Possible shared Safety and Health Conference \u00b7 December 2024",
+      "ids": [
+        "TXN00043389",
+        "TXN00043338",
+        "TXN00043223",
+        "TXN00043316"
+      ],
+      "evidenceIds": [
+        "TXN00043389",
+        "TXN00043338",
+        "TXN00043223",
+        "TXN00043316"
+      ],
+      "city": "Kissimmee, FL",
+      "reason": "Taylor\u2019s December 10 Embassy Suites note only says completed. Scoggin\u2019s December 9 charge has the exact merchant and names Safety and Health Conference. Taylor\u2019s own December 8 fuel notes independently name that conference and Kissimmee. These combined clues support a probable hotel/trip association; hotel address, shared stay dates and attendance remain unverified."
+    },
+    {
+      "key": "street-fpl-insurance-2025",
+      "name": "Street \u00b7 FPL symposium lodging / insurance \u00b7 2025",
+      "ids": [
+        "TXN00042701",
+        "TXN00045043"
+      ],
+      "evidenceIds": [
+        "TXN00042701",
+        "TXN00045043"
+      ],
+      "reason": "The November insurance note explicitly says FPL and Commissioner Street; the February Hotel Effie note explicitly says FPL Symposium Street Lodging. A same-day AGASERVICECO charge for Lucas (TXN00042713) spells out FPL Symposium, corroborating the abbreviation. This is an advance-insurance association, not a stay-date inference."
     }
   ],
   "sourceTopics": [
@@ -1700,5 +1777,25 @@ module.exports={
     "TXN00055953": [
       "Christopher Ryan Smith"
     ]
-  }
+  },
+  "vendorEvidence": [
+    {
+      "pattern": "^AGASERVICECO MAR\\s+TT$",
+      "ids": [
+        "TXN00044268",
+        "TXN00045157"
+      ],
+      "text": "Shared-descriptor evidence: TXN00044268 calls this Allianz insurance; the later correction on TXN00045157 identifies Allianz trip protection despite its earlier lodging wording. This supports insurance purpose across this exact descriptor, not a particular destination or trip."
+    },
+    {
+      "pattern": "^HILTON CONVENTION CTR$",
+      "ids": [
+        "TXN00047246",
+        "TXN00048638",
+        "TXN00048265",
+        "TXN00048653"
+      ],
+      "text": "Shared-descriptor evidence: Murphy and Daugherty each have $259.88 and $740.12 charges; SWANA is named on Murphy\u2019s records and Daugherty\u2019s later charge. This supports the specifically reviewed SWANA bookings only; other charges under this descriptor name different conferences."
+    }
+  ]
 };

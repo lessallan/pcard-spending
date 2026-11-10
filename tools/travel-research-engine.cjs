@@ -191,6 +191,7 @@ function transactionTravelAnalysis(t){
  const add=(city,text,url)=>{destinations.push(city);evidence.push({text,url});};
  const reviewed=reviewedTripById.get(t.id);
  if(reviewed){const note='Reviewed suggested association: '+reviewed.reason+' Supporting records: '+reviewed.evidenceIds.join(', ')+'.';if(reviewed.city)add(reviewed.city,note);else evidence.push({text:note});}
+ for(const hint of travelResearch.vendorEvidence||[])if(new RegExp(hint.pattern,'i').test(raw))evidence.push({text:hint.text+' Supporting records: '+hint.ids.join(', ')+'.'});
  if(travelResearch.notes[t.id])evidence.push({text:travelResearch.notes[t.id]});
  if(travelResearch.nonTrip[t.id])evidence.push(travelResearch.nonTrip[t.id]);
  if(travelNonTrip(t))return {kind,destinations:[],evidence,events:[]};

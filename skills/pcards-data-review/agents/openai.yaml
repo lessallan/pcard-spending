@@ -1,0 +1,6 @@
+interface:
+  display_name: "Penny Ping Data Review"
+  short_description: "Review imports, merchants and travel evidence"
+  default_prompt: "Use $pcards-data-review to review new Penny Ping purchase data and trace supported travel connections."
+policy:
+  allow_implicit_invocation: true

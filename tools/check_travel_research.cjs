@@ -26,6 +26,18 @@ for(const g of catalog.reviewedGroups){
  for(const id of g.ids){assert(!seen.has(id));seen.add(id);assert.equal(snapshot.records[id].group,label)}
  assert.deepEqual(Object.entries(snapshot.records).filter(([,v])=>v.group===label).map(([id])=>id).sort(),g.ids.slice().sort());
 }
-assert.equal(catalog.reviewedGroups.length,39);assert.equal(seen.size,197);
+assert.equal(catalog.reviewedGroups.length,44);assert.equal(seen.size,212);
 for(const record of Object.values(snapshot.records)){assert(!('comments' in record));assert(!('amount' in record))}
-console.log('PASS: 39 reviewed groups, 197 fixed memberships, no unrelated members and scoped snapshot schema');
+console.log('PASS: 44 reviewed groups, 212 fixed memberships, no unrelated members and scoped snapshot schema');
+
+const group=id=>snapshot.records[id]?.group;
+assert.equal(group('TXN00041854'),group('TXN00041890'));
+assert.equal(group('TXN00055663'),group('TXN00055205'));
+assert.equal(group('TXN00055570'),group('TXN00055591'));
+assert.equal(group('TXN00048265'),group('TXN00048653'));
+assert.equal(group('TXN00043389'),group('TXN00043223'));
+assert.equal(group('TXN00042701'),group('TXN00045043'));
+assert.notEqual(group('TXN00056327'),group('TXN00056328'));
+assert.notEqual(group('TXN00048433'),group('TXN00048265'));
+assert(snapshot.records.TXN00042483.analysis.evidence.some(e=>e.text.includes('TXN00045157')));
+console.log('PASS: cross-card vendor/date/amount evidence, service interpretation and conflicting-location boundaries');

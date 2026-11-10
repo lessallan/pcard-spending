@@ -153,3 +153,19 @@
 
 # Travel backfill release regression checks.
 !/tools/check_travel_backfill_release.cjs
+
+# Project workflow instructions; source documentation only, not site assets.
+!/AGENTS.md
+!/skills/
+/skills/*
+!/skills/pcards-data-review/
+/skills/pcards-data-review/*
+!/skills/pcards-data-review/SKILL.md
+!/skills/pcards-data-review/agents/
+/skills/pcards-data-review/agents/*
+!/skills/pcards-data-review/agents/openai.yaml
+!/skills/pcards-data-review/references/
+/skills/pcards-data-review/references/*
+!/skills/pcards-data-review/references/intake.md
+!/skills/pcards-data-review/references/research.md
+!/skills/pcards-data-review/references/validation-release.md
