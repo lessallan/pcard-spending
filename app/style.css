@@ -156,3 +156,5 @@ body>.report-navigation{max-width:1144px;margin:24px auto}
 .purchase-notes li { margin: .5rem 0; overflow-wrap: anywhere; white-space: pre-wrap; }
 .purchase-note-preview { max-width: 30rem; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; overflow-wrap: anywhere; }
 .company-description > .fine { display: block; margin-top: .3rem; }
+
+.travel-person-cost{display:flex;flex-direction:column;align-items:flex-end;text-align:right;gap:4px;flex-shrink:0}.travel-person-cost>span{font-size:14px;color:var(--muted)}.travel-summary-list a{min-width:0;overflow-wrap:anywhere}@media(max-width:600px){.travel-summary-list li{flex-wrap:wrap}.travel-person-cost>span{font-size:16px}}

@@ -257,11 +257,15 @@ function tripComparison(groups){
 }
 function travelSummaryData(groups,transactions){
  const people=new Map(),destinations=new Map();let dated=0;
+ const ensure=person=>{if(!people.has(person))people.set(person,{person,groups:0,days:new Set(),dated:0,identified:0});return people.get(person)};
+ for(const t of transactions.filter(t=>t.travel!=='Not identified as travel'))ensure(t.person);
  for(const g of groups){
   const f=tripFacts(g),positive=f.included.filter(t=>t.amount>0);
+  for(const t of g.items)ensure(t.person);
+  for(const t of f.included)ensure(t.person).identified+=t.amount;
   if(f.range)dated++;
   for(const person of new Set(positive.map(t=>t.person))){
-   if(!people.has(person))people.set(person,{person,groups:0,days:new Set(),dated:0});
+   ensure(person);
    const row=people.get(person);row.groups++;
    if(f.range&&new Set(f.included.map(t=>t.person)).size===1){row.dated++;for(let day=Date.parse(f.range.start);day<=Date.parse(f.range.end);day+=86400000)row.days.add(day)}
   }
@@ -270,23 +274,23 @@ function travelSummaryData(groups,transactions){
  const spending=new Map();
  for(const t of transactions.filter(t=>t.travel!=='Not identified as travel'))spending.set(t.person,(spending.get(t.person)||0)+(t.scoped??t.amount));
  const byName=(a,b)=>displayName(a.person).localeCompare(displayName(b.person));
- return {counts:[...people.values()].sort((a,b)=>b.groups-a.groups||byName(a,b)),days:[...people.values()].filter(r=>r.dated).sort((a,b)=>b.days.size-a.days.size||byName(a,b)),spending:[...spending].map(([person,amount])=>({person,amount})).sort((a,b)=>b.amount-a.amount||byName(a,b)),destinations:[...destinations].sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0])),dated};
+ return {counts:[...people.values()].sort((a,b)=>b.groups-a.groups||byName(a,b)),days:[...people.values()].sort((a,b)=>Number(!!b.dated)-Number(!!a.dated)||b.days.size-a.days.size||byName(a,b)),spending:[...people.values()].map(r=>({...r,amount:spending.get(r.person)||0})).sort((a,b)=>b.identified-a.identified||byName(a,b)),destinations:[...destinations].sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0])),dated};
 }
 function travelPersonLink(person){return `<a href="#travel/person/${encodeURIComponent(person)}">${esc(displayName(person))}</a>`}
 function travelSummaries(groups,transactions){
  const m=travelSummaryData(groups,transactions),visible=new Set(transactions.map(t=>t.id));
- const list=(items,render)=>items.length?`<ol class="travel-summary-list">${items.slice(0,5).map(render).join('')}</ol>`:'<p class="section-note">No matching records in this selection.</p>';
- const personRow=(r,value)=>`<li>${travelPersonLink(r.person)}<strong>${value}</strong></li>`;
+ const list=(items,render)=>items.length?`<ol class="travel-summary-list">${items.map(render).join('')}</ol>`:'<p class="section-note">No matching records in this selection.</p>';
+ const personRow=(r,value)=>`<li>${travelPersonLink(r.person)}<span class="travel-person-cost"><strong>${exact(r.identified)} identified</strong><span>${value}</span></span></li>`;
  // Reviewed examples are tied to source IDs and disappear when excluded or outside the selection.
  const examples=[
   {ids:['TXN00042729','TXN00042757','TXN00042769'],title:'Atlanta · November 2024',names:'Corey Mesko, Sean Hellings and Johnathan Crutchfield',evidence:'Three Hampton Inn charges dated November 15 name these guests in their comments. All were booked on Jonathan Crutchfield’s card. Shared stay dates are not confirmed.'},
   {ids:['TXN00042284','TXN00042221','TXN00042348'],title:'IEMO II · October 2024',names:'Brian Grainger and Janice Lucas',evidence:'Comments connect both to IEMO II, with hotel and parking purchases October 27–28. Victoria Mullaney’s hotel booking names Lucas; it does not establish that Mullaney traveled.'}
  ];
  const shared=examples.filter(e=>e.ids.every(id=>data.transactions.some(t=>t.id===id)&&tripReviews[id]?.status!=='excluded')&&e.ids.some(id=>visible.has(id)));
- return `<section class="travel-summary" aria-labelledby="travel-summary-title"><h2 id="travel-summary-title">Travel at a glance</h2><p>P-card purchases only — reimbursements are not included. Across the supplied FY25 and FY26 records. Cardholders may book for other people; suggested groups are not verified trips taken.</p><div class="travel-summary-grid">
+ return `<section class="travel-summary" aria-labelledby="travel-summary-title"><h2 id="travel-summary-title">Travel at a glance</h2><p>P-card purchases only — reimbursements are not included. Across the supplied FY25 and FY26 records. Cardholders may book for other people; suggested groups are not verified trips taken. All cardholders with travel records or associated trip groups are listed. Identified costs match the person’s trip view; $0 means no included grouped cost, not no travel spending.</p><div class="travel-summary-grid">
  <article><span class="estimate-label">Suggested groups</span><h3>Most trips associated with a cardholder</h3>${list(m.counts,r=>personRow(r,`${r.groups} groups`))}<p class="section-note">Counts groups with positive, non-excluded purchases. Separate trips can be grouped together, and one trip can appear in several groups.</p></article>
- <article><span class="estimate-label">Recorded amounts · travel classification inferred</span><h3>Highest travel spending</h3>${list(m.spending,r=>personRow(r,exact(r.amount)))}<p class="section-note">Net card charges after credits, including ungrouped travel purchases. Uses selected accounting allocations; excludes reimbursements. These are cardholder totals, not personal expenses.</p></article>
- <article><span class="estimate-label">Estimated · incomplete coverage</span><h3>Days associated with travel</h3><p class="travel-coverage"><strong>${m.dated} of ${groups.length}</strong> groups have usable date ranges.</p>${list(m.days,r=>personRow(r,`${r.days.size} days`))}<p class="section-note">Distinct calendar days in dated groups, including both endpoints. Missing dates are unknown, not zero. This cannot establish who was away longest.</p></article>
+ <article><span class="estimate-label">Recorded amounts · travel classification inferred</span><h3>Total identified trip costs</h3>${list(m.spending,r=>personRow(r,`${exact(r.amount)} recorded travel`))}<p class="section-note">Identified costs total suggested and confirmed trip charges after credits, excluding excluded charges and reimbursements. Recorded travel also includes ungrouped purchases and may differ. These are cardholder totals, not personal expenses.</p></article>
+ <article><span class="estimate-label">Estimated · incomplete coverage</span><h3>Days associated with travel</h3><p class="travel-coverage"><strong>${m.dated} of ${groups.length}</strong> groups have usable date ranges.</p>${list(m.days,r=>personRow(r,r.dated?`${r.days.size} days`:'Days unknown'))}<p class="section-note">Distinct calendar days in dated groups, including both endpoints. Missing dates are unknown, not zero. This cannot establish who was away longest.</p></article>
  <article><span class="estimate-label">Destination clues</span><h3>Common destinations</h3>${list(m.destinations,([city,count])=>`<li><span>${esc(tripDestinationLabel(city))}</span><strong>${count} groups</strong></li>`)}<p class="section-note">Cities named in hotel descriptions, counted once per associated group. These are clues, not a complete destination ranking.</p></article>
  <article class="shared-travel"><span class="estimate-label">Possible shared travel · needs confirmation</span><h3>Who may have traveled together</h3>${shared.length?shared.map(e=>`<div class="shared-travel-example"><h4>${esc(e.title)}</h4><p><strong>${esc(e.names)}</strong></p><p>${esc(e.evidence)}</p><details><summary>View supporting purchases</summary><p>${e.ids.map(id=>`<button type="button" class="link" data-detail="${id}">${id}</button>`).join(' · ')}</p></details></div>`).join(''):'<p>No reviewed shared-travel examples match this selection.</p>'}<p class="section-note">Selected examples, not a complete list. Related purchases may fall outside the filters. Similar purchase dates alone do not prove shared travel.</p></article>
  </div></section>`;
