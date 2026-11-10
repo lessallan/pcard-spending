@@ -108,6 +108,129 @@ function retailerReport(ts){
  out+=board('Retailer spending','Current filters · net after credits.',bars(aggregate(ts,'merchant'),'merchant',12),true)+'</div>';
  return out;
 }
+let travelSnapshot={records:{}};
+// Trip membership is independent of policy reviews. Suggestions are never confirmations.
+let tripReviews={};
+try{const saved=JSON.parse(localStorage.getItem('pcard-trips-v1')||'{}');if(saved&&typeof saved==='object'&&!Array.isArray(saved))tripReviews=saved}catch{}
+function travelTransaction(t){return {...t,person:travelSnapshot.records[t.id]?.person||t.person,tripRange:travelSnapshot.records[t.id]?.range||null}}
+function suggestedTrips(transactions){return new Map(transactions.filter(t=>travelSnapshot.records[t.id]?.group).map(t=>[t.id,{label:travelSnapshot.records[t.id].group,reason:travelSnapshot.records[t.id].reason}]))}
+function tripGroups(){
+ const suggestions=suggestedTrips(data.transactions),groups=new Map();
+ for(const original of data.transactions){
+  const t=travelTransaction(original);
+  const saved=tripReviews[t.id],suggestion=suggestions.get(t.id);
+  const label=typeof saved?.group==='string'&&saved.group.trim()?saved.group:suggestion?.label;
+  if(!label)continue;
+  if(!groups.has(label))groups.set(label,{label,items:[]});
+  groups.get(label).items.push({...t,tripStatus:['confirmed','excluded'].includes(saved?.status)?saved.status:'suggested',tripReason:saved?.note||suggestion?.reason||'Manually assigned; review supporting records.'});
+ }
+ return [...groups.values()].sort((a,b)=>a.label.localeCompare(b.label));
+}
+// Dates come only from explicit ranges in travel comments, never review timestamps.
+function tripDateRange(t){return t.tripRange||null}
+function tripDestination(t){
+ // Literal city names in hotel descriptors are clues, not geocoded itineraries.
+ const raw=t.raw||'';
+ if(!/hotel|suites|sheraton|marriott|hyatt|hampton|hilton|marquis|resort/i.test(raw))return null;
+ return ['Salt Lake City','Boston','Chicago','Denver','Orlando','Atlanta','Tampa','Jacksonville','Tallahassee','Pensacola','Miami'].find(city=>raw.toLowerCase().includes(city.toLowerCase()))||null;
+}
+function tripDestinationLabel(value){
+ const cities={'Atlanta':'Georgia','Boston':'Massachusetts','Chicago':'Illinois','Denver':'Colorado','Salt Lake City':'Utah','Orlando':'Florida','Tampa':'Florida','Jacksonville':'Florida','Tallahassee':'Florida','Pensacola':'Florida','Miami':'Florida'};
+ const states={FL:'Florida',MA:'Massachusetts',GA:'Georgia',DC:'District of Columbia',NV:'Nevada',TX:'Texas',NY:'New York'};
+ const clean=value.replace(/ \(hotel clue\)$/,'');
+ if(cities[clean])return clean+', '+cities[clean];
+ return clean.replace(/, (FL|MA|GA|DC|NV|TX|NY)$/,(_,state)=>', '+states[state]);
+}
+function tripFacts(g){
+ const included=g.items.filter(t=>t.tripStatus!=='excluded');
+ const dates=included.map(t=>t.date).sort();
+ const ranges=included.filter(t=>t.amount>0).map(tripDateRange).filter(Boolean);
+ const unique=[...new Map(ranges.map(r=>[r.start+'/'+r.end,r])).values()];
+ const range=unique.length===1?{...unique[0],inferred:ranges.some(r=>r.inferred)}:null;
+ return {included,range,conflict:unique.length>1,start:dates[0],end:dates.at(-1),destinations:[...new Set(included.map(tripDestination).filter(Boolean))]};
+}
+function tripDateLabel(date){return new Date(date+'T00:00:00Z').toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric',timeZone:'UTC'})}
+function tripDateSpan(a,b){return a===b?tripDateLabel(a):tripDateLabel(a)+' – '+tripDateLabel(b)}
+function tripComparison(groups){
+ const people=new Map();let dated=0;
+ for(const g of groups){
+  const f=tripFacts(g);if(f.range)dated++;
+  for(const person of new Set(f.included.filter(t=>t.amount>0).map(t=>t.person))){
+   if(!people.has(person))people.set(person,{person,count:0,dated:0,days:new Set()});
+   const row=people.get(person);row.count++;
+   // A multi-cardholder group does not establish each person's travel dates.
+   if(f.range&&new Set(f.included.map(t=>t.person)).size===1){row.dated++;for(let d=Date.parse(f.range.start);d<=Date.parse(f.range.end);d+=86400000)row.days.add(d)}
+  }
+ }
+ const ranked=[...people.values()].sort((a,b)=>b.count-a.count||displayName(a.person).localeCompare(displayName(b.person)));
+ const longest=groups.map(g=>({g,f:tripFacts(g)})).filter(x=>x.f.range).sort((a,b)=>b.f.range.days-a.f.range.days)[0];
+ return `<details class="trip-comparison"><summary>Compare associated trip groups by cardholder</summary><p>Counts are suggested groups with positive, non-excluded charges, not verified trips taken. Only ${dated} of ${groups.length} groups have a single date range in the comments. Days below count distinct calendar dates in those ranges; missing dates are not zero days.</p>${longest?`<p><strong>Longest available date range: ${longest.f.range.days} days</strong> · ${esc(longest.g.label.split(' · purchases from ')[0].replace(' (hotel clue)',''))} · ${tripDateSpan(longest.f.range.start,longest.f.range.end)}. This is a comment-based estimate, not confirmed attendance.</p>`:''}<div class="table-wrap"><table><thead><tr><th>Cardholder</th><th>Associated groups</th><th>Groups with dates</th><th>Estimated days in dated groups</th></tr></thead><tbody>${ranked.map(r=>`<tr><td>${esc(displayName(r.person))}</td><td>${r.count}</td><td>${r.dated}</td><td>${r.dated?r.days.size:'Unknown'}</td></tr>`).join('')}</tbody></table></div></details>`;
+}
+function travelSummaryData(groups,transactions){
+ const people=new Map(),destinations=new Map();let dated=0;
+ for(const g of groups){
+  const f=tripFacts(g),positive=f.included.filter(t=>t.amount>0);
+  if(f.range)dated++;
+  for(const person of new Set(positive.map(t=>t.person))){
+   if(!people.has(person))people.set(person,{person,groups:0,days:new Set(),dated:0});
+   const row=people.get(person);row.groups++;
+   if(f.range&&new Set(f.included.map(t=>t.person)).size===1){row.dated++;for(let day=Date.parse(f.range.start);day<=Date.parse(f.range.end);day+=86400000)row.days.add(day)}
+  }
+  for(const city of new Set(positive.map(tripDestination).filter(Boolean)))destinations.set(city,(destinations.get(city)||0)+1);
+ }
+ const spending=new Map();
+ for(const t of transactions.filter(t=>t.travel!=='Not identified as travel'))spending.set(t.person,(spending.get(t.person)||0)+(t.scoped??t.amount));
+ const byName=(a,b)=>displayName(a.person).localeCompare(displayName(b.person));
+ return {counts:[...people.values()].sort((a,b)=>b.groups-a.groups||byName(a,b)),days:[...people.values()].filter(r=>r.dated).sort((a,b)=>b.days.size-a.days.size||byName(a,b)),spending:[...spending].map(([person,amount])=>({person,amount})).sort((a,b)=>b.amount-a.amount||byName(a,b)),destinations:[...destinations].sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0])),dated};
+}
+function travelSummaries(groups,transactions){
+ const m=travelSummaryData(groups,transactions),visible=new Set(transactions.map(t=>t.id));
+ const list=(items,render)=>items.length?`<ol class="travel-summary-list">${items.slice(0,5).map(render).join('')}</ol>`:'<p class="section-note">No matching records in this selection.</p>';
+ const personRow=(r,value)=>`<li><span>${esc(displayName(r.person))}</span><strong>${value}</strong></li>`;
+ // Reviewed examples are tied to source IDs and disappear when excluded or outside the selection.
+ const examples=[
+  {ids:['TXN00042729','TXN00042757','TXN00042769'],title:'Atlanta · November 2024',names:'Corey Mesko, Sean Hellings and Johnathan Crutchfield',evidence:'Three Hampton Inn charges dated November 15 name these guests in their comments. All were booked on Jonathan Crutchfield’s card. Shared stay dates are not confirmed.'},
+  {ids:['TXN00042284','TXN00042221','TXN00042348'],title:'IEMO II · October 2024',names:'Brian Grainger and Janice Lucas',evidence:'Comments connect both to IEMO II, with hotel and parking purchases October 27–28. Victoria Mullaney’s hotel booking names Lucas; it does not establish that Mullaney traveled.'}
+ ];
+ const shared=examples.filter(e=>e.ids.every(id=>data.transactions.some(t=>t.id===id)&&tripReviews[id]?.status!=='excluded')&&e.ids.some(id=>visible.has(id)));
+ return `<section class="travel-summary" aria-labelledby="travel-summary-title"><h2 id="travel-summary-title">Travel at a glance</h2><p>P-card purchases only — reimbursements are not included. Across the supplied FY25 and FY26 records. Cardholders may book for other people; suggested groups are not verified trips taken.</p><div class="travel-summary-grid">
+ <article><span class="estimate-label">Suggested groups</span><h3>Most trips associated with a cardholder</h3>${list(m.counts,r=>personRow(r,`${r.groups} groups`))}<p class="section-note">Counts groups with positive, non-excluded purchases. Separate trips can be grouped together, and one trip can appear in several groups.</p></article>
+ <article><span class="estimate-label">Recorded amounts · travel classification inferred</span><h3>Highest travel spending</h3>${list(m.spending,r=>personRow(r,exact(r.amount)))}<p class="section-note">Net card charges after credits, including ungrouped travel purchases. Uses selected accounting allocations; excludes reimbursements. These are cardholder totals, not personal expenses.</p></article>
+ <article><span class="estimate-label">Estimated · incomplete coverage</span><h3>Days associated with travel</h3><p class="travel-coverage"><strong>${m.dated} of ${groups.length}</strong> groups have usable date ranges.</p>${list(m.days,r=>personRow(r,`${r.days.size} days`))}<p class="section-note">Distinct calendar days in dated groups, including both endpoints. Missing dates are unknown, not zero. This cannot establish who was away longest.</p></article>
+ <article><span class="estimate-label">Destination clues</span><h3>Common destinations</h3>${list(m.destinations,([city,count])=>`<li><span>${esc(tripDestinationLabel(city))}</span><strong>${count} groups</strong></li>`)}<p class="section-note">Cities named in hotel descriptions, counted once per associated group. These are clues, not a complete destination ranking.</p></article>
+ <article class="shared-travel"><span class="estimate-label">Possible shared travel · needs confirmation</span><h3>Who may have traveled together</h3>${shared.length?shared.map(e=>`<div class="shared-travel-example"><h4>${esc(e.title)}</h4><p><strong>${esc(e.names)}</strong></p><p>${esc(e.evidence)}</p><details><summary>View supporting purchases</summary><p>${e.ids.map(id=>`<button type="button" class="link" data-detail="${id}">${id}</button>`).join(' · ')}</p></details></div>`).join(''):'<p>No reviewed shared-travel examples match this selection.</p>'}<p class="section-note">Selected examples, not a complete list. Related purchases may fall outside the filters. Similar purchase dates alone do not prove shared travel.</p></article>
+ </div></section>`;
+}
+function tripReport(){
+ const visible=new Set(filtered().map(t=>t.id));
+ const all=tripGroups(),groups=all.filter(g=>g.items.some(t=>visible.has(t.id)));
+ const known=new Set(all.flatMap(g=>g.items.map(t=>t.id)));
+ const ungrouped=data.transactions.filter(t=>visible.has(t.id)&&t.travel!=='Not identified as travel'&&!known.has(t.id)).map(travelTransaction);
+ const charge=t=>`<tr><td><button type="button" class="link" data-detail="${t.id}">${esc(t.raw)}</button><span class="fine">${esc(t.date)} · ${esc(displayName(t.person))}</span></td><td>${exact(t.amount)}<span class="fine">${esc(t.tripStatus||'Ungrouped')}</span></td></tr>`;
+ const table=items=>`<div class="table-wrap"><table><thead><tr><th>Purchase / cardholder</th><th>Amount / membership</th></tr></thead><tbody>${items.map(charge).join('')}</tbody></table></div>`;
+ return `${travelSummaries(groups,filtered().map(travelTransaction))}<section id="trip-report" class="trip-report"><div class="trip-heading"><h2>Suggested trips</h2><span>${groups.length} groups</span></div><p>P-card purchases only — reimbursements are not included. The cardholder is shown first and may be the traveler or may have booked for someone else. Open a purchase to confirm or adjust its membership.</p><details class="trip-method"><summary>How estimates work</summary><p>Destinations are clues from comments or hotel names. Travel dates use explicit ranges in comments; an omitted year is estimated from the purchase year. Days include both endpoints, not nights. Without a range, only purchase dates are shown. Conflicting ranges need review.</p><p>Filters find groups with matching charges; totals include full charges in each group. Excluded charges do not count. Credits reduce costs. Missing purchases and reimbursements mean these are not complete trip costs. Reviews stay in this browser. Confirming membership does not verify policy compliance.</p></details>${tripComparison(groups)}${groups.length?groups.map(g=>{
+ const f=tripFacts(g),sum=status=>g.items.filter(t=>t.tripStatus===status).reduce((n,t)=>n+t.amount,0),confirmed=g.items.filter(t=>t.tripStatus==='confirmed').length;
+ const title=g.label.split(' · ')[0],people=[...new Set(g.items.map(t=>displayName(t.person)))].join(', ');
+ const destination=f.destinations.length?f.destinations.map(tripDestinationLabel).join(' / '):/, [A-Z]{2}$/.test(title)?tripDestinationLabel(title):'Destination not identified';
+ const when=f.range?`Estimated travel · ${tripDateSpan(f.range.start,f.range.end)}`:f.start?`Purchases · ${tripDateSpan(f.start,f.end)}`:'All charges excluded';
+ const length=f.range?`${f.range.days} estimated days`:f.conflict?'Dates need review':'Length unknown';
+ return `<details class="trip-group trip-card"><summary><span class="trip-identity"><strong>${esc(people)}</strong><span class="trip-destination">${esc(destination)}</span><span class="trip-dates">${esc(when)}</span>${!/, [A-Z]{2}$/.test(title)&&!title.endsWith(' (hotel clue)')?`<span>${esc(title)}</span>`:''}</span><span class="trip-cost"><span class="trip-duration">${length}</span><strong>${exact(sum('suggested')+sum('confirmed'))}</strong><span>Identified cost · ${f.included.length} ${f.included.length===1?'purchase':'purchases'}</span><span class="trip-reimbursement">Excludes reimbursements</span><span class="trip-confirmed">Confirmed identified cost: ${confirmed?exact(sum('confirmed')):'—'}</span></span></summary><div class="trip-expanded"><p>${f.range?`Estimated day 1: ${tripDateLabel(f.range.start)} · End: ${tripDateLabel(f.range.end)}.${f.range.inferred?' Year inferred from purchase date.':''}`:f.conflict?'Comments contain different date ranges. Review the purchases before estimating trip length.':'Stay dates are not recorded as a range. The purchase window is not the trip duration.'} ${g.items.filter(t=>t.tripStatus==='excluded').length} excluded.</p>${table(g.items)}<p class="fine">Select a purchase for its accounting details and trip confirmation.</p></div></details>`;
+ }).join(''):'<p>No suggested trips match. Clear filters or assign a trip from a purchase.</p>'}<details class="trip-group"><summary>Ungrouped travel purchases (${ungrouped.length})</summary>${table(ungrouped)}</details></section>`;
+}
+function tripReviewForm(t){
+ const suggestion=suggestedTrips(data.transactions).get(t.id),r=tripReviews[t.id]||{};
+ return `<form id="trip-form" class="review-form"><h3>Review trip membership</h3><p>Use the same trip name to combine charges across cardholders. Give separate trips distinct names. Confirm only the portion represented by this full charge; split-purpose charges should remain suggested until clarified.</p><label>Trip name<input name="group" maxlength="200" list="trip-names" value="${esc(r.group||suggestion?.label||'')}" required></label><datalist id="trip-names">${tripGroups().map(g=>`<option value="${esc(g.label)}"></option>`).join('')}</datalist><label>Membership<select name="status">${[['suggested','Suggested — needs review'],['confirmed','Confirmed for this trip'],['excluded','Excluded from this trip']].map(([v,l])=>`<option value="${v}" ${r.status===v?'selected':''}>${l}</option>`).join('')}</select></label><label>Evidence / review note<textarea name="note" maxlength="2000">${esc(r.note||'')}</textarea></label><p class="fine">Confirmation and exclusion require a note explaining the evidence. This does not change policy-review status.</p><button type="submit">Save trip review</button><button type="button" id="reset-trip">Restore suggestion</button><p id="trip-feedback" role="status"></p></form>`;
+}
+function bindTripReview(t){
+ $('trip-form').addEventListener('submit',e=>{
+  e.preventDefault();const r=Object.fromEntries(new FormData(e.target));r.group=r.group.trim();r.note=r.note.trim();
+  if(!r.group||r.status!=='suggested'&&!r.note){$('trip-feedback').textContent='Enter a trip name and an evidence note for confirmed or excluded charges.';return}
+  save({...tripReviews,[t.id]:{...r,updatedAt:new Date().toISOString()}},'Trip review saved in this browser.');
+ });
+ $('reset-trip').addEventListener('click',()=>{const next={...tripReviews};delete next[t.id];if(save(next,'Suggestion restored.')){openDetail(t.id);$('trip-feedback').textContent='Suggestion restored.'}});
+ function save(next,message){try{localStorage.setItem('pcard-trips-v1',JSON.stringify(next));tripReviews=next;render();$('trip-feedback').textContent=message;return true}catch{$('trip-feedback').textContent='Could not save. Browser storage may be full or unavailable. Your entries are still here.'}}
+}
+
 function render(){
  if(!data)return;
  const route=location.hash.slice(1)||'overview';
@@ -141,7 +264,7 @@ function render(){
   out+=retailerReport(rows);
  }else if(view==='travel'){
   out+='<div class="budget-note"><h3>How travel fits the budget</h3><p>Travel is part of City operations. Employees are expected to follow approved budgets and travel rules. This dataset does not include those budget allocations, so it cannot show remaining budget or establish overspending.</p></div><p class="section-note">Travel is inferred from recognizable merchant names and travel account 54000. It may include personal context, shared bookings, or non-travel charges and may miss other travel. Hotel classification uses recognizable lodging merchants; hotel totals may include meals, tuition and incidentals. Counts are purchase transactions, not trips or nights. Cardholders may book for other people.</p>'+rankingControls();
-  out+=annualTravel(rows);
+  out+=tripReport()+annualTravel(rows);
   out+='<div class="boards">'+board('Travel spending by area','Allocated travel charges by accounting area; purchases may support several people.',bars(centered,'center',12),true)+board('Travel merchants','Hotels, airfare, transport, and unclassified travel-account charges.',bars(merchants,'merchant'))+board('Travel through the year','Net recorded amounts by posting month.',timeline(rows),true)+'</div>';
  }else if(['centers','merchants'].includes(view)){
   const type={centers:'center',people:'person',merchants:'merchant'}[view],gs={centers:centered,people,merchants}[view];
@@ -156,9 +279,10 @@ function render(){
  $('rank-metric')?.addEventListener('change',e=>{rankMetric=e.target.value;render()});
 }
 function openDetail(id){
- const t=data.transactions.find(t=>t.id===id);if(!t)return;selectedId=id;
+ const original=data.transactions.find(t=>t.id===id);if(!original)return;const t=view==='travel'?travelTransaction(original):original;selectedId=id;
  $('detail-title').textContent=t.id+' · '+exact(t.amount);
  $('detail-body').innerHTML=`<dl class="detail-grid"><div><dt>Merchant</dt><dd>${esc(t.raw)}</dd></div><div><dt>Cardholder</dt><dd>${esc(displayName(t.person))}</dd></div><div><dt>Purchase / posted</dt><dd>${t.date} / ${t.post}</dd></div><div><dt>Source</dt><dd>${esc(t.source)} · ${esc(t.sheet)} · rows ${t.rows.join(', ')}</dd></div></dl><p class="section-note">P-card transactions only; separate expense reimbursements are not included. Cardholders may purchase for others.</p><h3>Accounting allocations</h3><div class="table-wrap"><table><thead><tr><th>Fund</th><th>Spending area</th><th>Account</th><th class="num">Amount</th></tr></thead><tbody>${t.allocations.map(a=>`<tr><td>${esc(a.fund)}</td><td>${esc(centerLabel(a.center))}</td><td>${esc(a.account)}</td><td class="num">${exact(a.amount)}</td></tr>`).join('')}</tbody></table></div>`;
+ if(view==='travel'){ $('detail-body').innerHTML+=tripReviewForm(t);bindTripReview(t) }
  $('detail').showModal();
 }
 $('content').addEventListener('click',e=>{const detail=e.target.closest('[data-detail]');if(detail)openDetail(detail.dataset.detail);const filter=e.target.closest('[data-filter]');if(filter){if(view!=='transactions'){const travel=view==='travel'||filter.closest('[data-destination]')?.dataset.destination==='travel';HTMLFormElement.prototype.reset.call($('filters'));$(filter.dataset.filter).value=filter.dataset.value;$('purchaseType').value=travel?'travel':'';location.hash='transactions';return}$(filter.dataset.filter).value=filter.dataset.value;page=0;render();document.querySelector('.transactions')?.scrollIntoView({behavior:'instant'})}});
@@ -176,4 +300,4 @@ function loadDataset(d){
  for(const [id,values,label] of [['fund',d.transactions.flatMap(t=>t.allocations.map(a=>a.fund)),'All funds'],['center',d.transactions.flatMap(t=>t.allocations.map(a=>a.center)),'All cost centers'],['person',d.transactions.map(t=>t.person).filter(Boolean),'All listed leaders'],['merchant',d.transactions.map(t=>t.merchant),'All merchants']])fillSelect(id,values,label);
  $('loading').hidden=true;render();
 }
-fetch('./data.json?v=leadership-photos-4').then(r=>{if(!r.ok)throw Error();return r.json()}).then(loadDataset).catch(()=>{$('loading').hidden=false;$('loading').textContent='Spending records could not load. Reload this page to try again.'});
+Promise.all(['./data.json?v=travel-release-1','./travel.json?v=travel-release-1'].map(url=>fetch(url).then(r=>{if(!r.ok)throw Error();return r.json()}))).then(([d,t])=>{if(t.version!==1||!t.records)throw Error('Invalid travel snapshot');travelSnapshot=t;loadDataset(d)}).catch(()=>{$('loading').hidden=false;$('loading').textContent='Spending records could not load. Reload this page to try again.'});

@@ -2,6 +2,7 @@
 from pathlib import Path
 import json
 import shutil
+import subprocess
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'docs'
 OUT.mkdir(exist_ok=True)
@@ -42,3 +43,5 @@ for relative, target in [('review/index.html', '../'), ('review/reports/merchant
     legacy.parent.mkdir(parents=True, exist_ok=True)
     legacy.write_text('<!doctype html><html lang="en"><meta charset="utf-8"><title>Penny Ping</title><meta http-equiv="refresh" content="0;url=' + target + '"><p><a href="' + target + '">Explore City spending</a></p></html>')
 print('Built public dashboard: approved leadership only; other identities, comments and flags excluded.')
+
+subprocess.run(['node', 'tools/build_travel.cjs'], cwd=ROOT, check=True)
