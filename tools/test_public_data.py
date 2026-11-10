@@ -10,7 +10,7 @@ assert len(set(p['name'] for p in public['staff'])) == 24
 assert [(p['name'], p['title']) for p in public['staff']] == [tuple(p) for p in approved['profiles']]
 assert all(set(p) == ({'name','title','departments','source_url','email'} | ({'photo_file'} if p['name'] in approved.get('photos', {}) else set())) and p['email'] is None for p in public['staff'])
 cardholders = set(approved['cardholders'].values())
-assert len(cardholders) == 21
+assert len(cardholders) == 22
 assert len(private['transactions']) == len(public['transactions']) == 16793
 fields = {'id','fy','date','post','merchant','raw','category','amount','allocations','source','sheet','rows','travel','mixed','historical','person','comments','flags'}
 for original, published in zip(private['transactions'], public['transactions']):
@@ -31,7 +31,7 @@ for profile in private['staff']:
 assert min(t['date'] for t in public['transactions']) == '2024-08-27'
 assert max(t['date'] for t in public['transactions']) == '2026-09-30'
 assert (root/'docs/CNAME').read_text().strip() == 'pennyping.app'
-print('Passed: 24 approved profiles, 21 exact cardholder links, no other identities/comments/flags, all accounting records/totals retained, dates and domain preserved.')
+print('Passed: 24 approved profiles, 22 exact cardholder links, no other identities/comments/flags, all accounting records/totals retained, dates and domain preserved.')
 
 for profile in public['staff']:
     photo = approved.get('photos', {}).get(profile['name'])
@@ -40,3 +40,6 @@ for profile in public['staff']:
         assert (root/'docs/photos'/photo).read_bytes() == (root/'assets/leadership'/photo).read_bytes()
 assert {p.name for p in (root/'docs/photos').iterdir()} == set(approved['photos'].values())
 print('Passed: all selected portraits published and no extra photos included.')
+
+assert approved["cardholders"]["Jared Jones"] == "JONES, BEAU J"
+assert sum(t["person"] == "JONES, BEAU J" for t in public["transactions"]) == 46
