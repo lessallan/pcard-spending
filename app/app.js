@@ -925,6 +925,18 @@ function leadershipIntro(name){
  return `<p class="section-note">${esc(leadershipProfiles.find(p=>p[0]===name)[1])}${source}</p><aside class="notice profile-notice" aria-label="About these totals"><h3>A quick note about these totals</h3><p>These are City P-card purchases connected to this person—not a record of personal spending. Expense reimbursements aren’t included, so this isn’t a complete picture of their associated costs.</p><p>Shared purchases with reviewed participant lists use an estimated equal share. You can still see the full charge and recorded notes on each transaction.</p><details><summary>How amounts are associated</summary><p>Includes purchases on this person’s card and purchases naming them in the notes, including those paid on another card. Each transaction appears once on this profile. Reviewed shares include people without profiles; payment contacts and refund processors receive no share simply for being mentioned. Other purchases retain their recorded associated charge, so totals across profiles should not be added together.</p></details></aside>`;
 }
 
+let staffSearch='';
+function applyStaffSearch(){
+ const normalize=value=>value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
+ const terms=normalize(staffSearch).split(' ').filter(Boolean);
+ for(const section of document.querySelectorAll('.people-section')){
+  const cards=[...section.querySelectorAll('.staff-person')];
+  for(const card of cards){const name=normalize(card.dataset.personName||'');card.hidden=!terms.every(term=>name.includes(term))}
+  const shown=cards.filter(card=>!card.hidden).length;
+  section.querySelector('.people-result-count').textContent=`${shown} of ${cards.length} people`;
+  section.querySelector('.people-empty').hidden=shown!==0;
+ }
+}
 function staffView(){
  const elected=leadershipProfiles.filter(([,title])=>title==='Mayor'||title.startsWith('Commissioner'));
  const electedNames=new Set(elected.map(([name])=>name));
@@ -941,8 +953,9 @@ function staffView(){
  const knownStaff=leadershipProfiles.filter(([name])=>!electedNames.has(name));
  const represented=new Set(leadershipProfiles.map(([name])=>leadershipCardholders[name]).filter(Boolean));
  const remaining=[...holders.values()].filter(h=>!represented.has(h.raw)).sort((a,b)=>displayName(a.raw).localeCompare(displayName(b.raw)));
- const staffCards=knownStaff.map(profileCard).join('')+remaining.map(h=>`<article class="staff-person" data-cardholder="${esc(h.raw)}"><div class="staff-top"><div><h3>${filterLink('person',h.raw,displayName(h.raw))}</h3><p>Recorded cardholder</p></div></div><p class="cardholder-total">${filterLink('person',h.raw,`${exact(h.net)} net on their card · ${number(h.count)} transactions`)}</p></article>`).join('');
- return `${reimbursementNotice}<p class="section-note">Every recorded cardholder is included, with no minimum spending amount. Cardholders may buy for a department or other people; these totals are not personal expenses. Staff roles are shown where already available, and do not establish employment during the purchase dates.</p><section class="people-section" aria-labelledby="city-leadership-heading"><h2 id="city-leadership-heading">City leadership</h2><p class="sub">Mayor and city commissioners</p><div class="staff-grid">${elected.map(profileCard).join('')}</div></section><section class="people-section" aria-labelledby="city-staff-heading"><h2 id="city-staff-heading">City staff</h2><p class="sub">City management, department heads, and all other recorded cardholders · ${number(holders.size)} cardholders across both sections in the selected years</p><div class="staff-grid">${staffCards}</div></section>`;
+ const entries=[...knownStaff.map(profile=>({profile,name:profile[0],net:holders.get(leadershipCardholders[profile[0]])?.net??-Infinity})),...remaining.map(holder=>({holder,name:displayName(holder.raw),net:holder.net}))].sort((a,b)=>b.net-a.net||a.name.localeCompare(b.name));
+ const staffCards=entries.map(entry=>entry.profile?profileCard(entry.profile):((h)=>`<article class="staff-person" data-person-name="${esc(displayName(h.raw))}" data-cardholder="${esc(h.raw)}"><div class="staff-top"><div><h3>${filterLink('person',h.raw,displayName(h.raw))}</h3><p>Recorded cardholder</p></div></div><p class="cardholder-total">${filterLink('person',h.raw,`${exact(h.net)} net on their card · ${number(h.count)} transactions`)}</p></article>`)(entry.holder)).join('');
+ return `<div class="staff-search"><label for="staff-search">Find someone by name</label><input id="staff-search" type="search" value="${esc(staffSearch)}" placeholder="Search leadership and staff" autocomplete="off" aria-controls="people-directory"></div>${reimbursementNotice}<div id="people-directory"><p class="section-note">Every recorded cardholder is included, with no minimum spending amount. Cardholders may buy for a department or other people; these totals are not personal expenses. Staff roles are shown where already available, and do not establish employment during the purchase dates.</p><section class="people-section" aria-labelledby="city-leadership-heading"><h2 id="city-leadership-heading">City leadership</h2><p class="sub">Mayor and city commissioners</p><p class="people-result-count fine" role="status"></p><div class="staff-grid">${elected.map(profileCard).join('')}</div><p class="people-empty" hidden>No city leadership matches this name.</p></section><section class="people-section" aria-labelledby="city-staff-heading"><h2 id="city-staff-heading">City staff</h2><p class="sub">Highest net cardholder spending first, after credits · ${number(holders.size)} cardholders across both sections in the selected years</p><p class="people-result-count fine" role="status"></p><div class="staff-grid">${staffCards}</div><p class="people-empty" hidden>No city staff matches this name.</p></section></div>`;
 }
 
 function isHotel(t){return t.travel==='Hotels & lodging'}
@@ -1119,7 +1132,7 @@ function render(){
  const staff=view==='staff';
  $('transaction-filters').hidden=view!=='transactions';$('transaction-filters').disabled=view!=='transactions';
  $('title').setAttribute('role','heading');$('title').setAttribute('aria-level',view==='overview'?'2':'1');
- if(staff){$('content').innerHTML=staffView();return}
+ if(staff){$('content').innerHTML=staffView();applyStaffSearch();return}
  rows=filtered();
  if(view==='radar'){$('content').innerHTML=radarReport(rows);return}
  if(selectedTravelPerson){$('content').innerHTML=tripReport(selectedTravelPerson);return}
@@ -1164,6 +1177,7 @@ function openDetail(id){
  $('detail').showModal();
 }
 $('content').addEventListener('click',e=>{const detail=e.target.closest('[data-detail]');if(detail)openDetail(detail.dataset.detail)});
+$('content').addEventListener('input',e=>{if(e.target.id==='staff-search'){staffSearch=e.target.value;applyStaffSearch()}});
 $('close-detail').addEventListener('click',()=>$('detail').close());
 document.addEventListener('click',e=>{const link=e.target.closest('a.transaction-filter-link');if(link&&link.hash===location.hash&&!e.ctrlKey&&!e.metaKey&&!e.shiftKey&&!e.altKey){e.preventDefault();applyTransactionRoute();page=0;if($('detail').open)$('detail').close();render();window.scrollTo(0,0)}});
 $('filters').addEventListener('submit',e=>e.preventDefault());

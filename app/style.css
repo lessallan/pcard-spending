@@ -209,3 +209,5 @@ form#filters{display:block;margin:0}.year-toggle{border:0;padding:0;margin:0;dis
 .transaction-filter-link{overflow-wrap:anywhere}.chart-row .transaction-filter-link{display:inline-flex;align-items:center;min-height:32px}.transaction-filter-link:hover{text-decoration-thickness:2px}@media(max-width:600px){.chart-row .transaction-filter-link{min-height:44px}}
 
 .people-section{margin-top:32px}.people-section>.sub{margin-bottom:20px}.staff-person .cardholder-total{font-size:14px;margin:12px 0 0;overflow-wrap:anywhere}.staff-person .cardholder-total a{font-size:inherit}@media(max-width:600px){.staff-person .cardholder-total{font-size:16px}}
+
+.staff-search{max-width:480px;margin-bottom:24px}.staff-search label{font-size:16px;font-weight:600;margin-bottom:8px}.staff-search input{font-size:16px;min-height:44px}.staff-person[hidden],.people-empty[hidden]{display:none}.people-result-count{margin:12px 0}.people-empty{padding:16px 0;color:var(--muted)}
