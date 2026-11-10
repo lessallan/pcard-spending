@@ -1,0 +1,123 @@
+{
+  "profiles": [
+    [
+      "Allan Branch",
+      "Mayor"
+    ],
+    [
+      "Robbie Hughes",
+      "Commissioner, Ward 1"
+    ],
+    [
+      "Janice Lucas",
+      "Commissioner Ward 2"
+    ],
+    [
+      "Brian Grainger",
+      "Commissioner Ward 3"
+    ],
+    [
+      "Josh Street",
+      "Commissioner Ward 4"
+    ],
+    [
+      "Jonathan Hayes",
+      "City Manager"
+    ],
+    [
+      "Leslie Glaze",
+      "City Clerk-Treasurer"
+    ],
+    [
+      "Nevin J. Zimmerman",
+      "City Attorney"
+    ],
+    [
+      "Michael Fuller",
+      "Development Services Director"
+    ],
+    [
+      "David Collier",
+      "Fire Chief"
+    ],
+    [
+      "Mark Smith",
+      "Chief of Police"
+    ],
+    [
+      "Sheila Ware",
+      "Director"
+    ],
+    [
+      "Vickie Lewis",
+      "Director"
+    ],
+    [
+      "Shawn Selph",
+      "Director of Logistics"
+    ],
+    [
+      "Clint Murphy",
+      "Public Works Director"
+    ],
+    [
+      "Keith Meyerl",
+      "Director of Parks, Culture & Recreation"
+    ],
+    [
+      "Brandy Waldron",
+      "Assistant City Manager"
+    ],
+    [
+      "Jared Jones",
+      "Assistant City Manager"
+    ],
+    [
+      "Stacy Rausch, P.E.",
+      "Assistant Public Works Director / City Engineer"
+    ],
+    [
+      "Trent Massey",
+      "Chief Building Official"
+    ],
+    [
+      "Cody Klingelhoets",
+      "IT Senior Manager"
+    ],
+    [
+      "Gia Del Pozzo",
+      "Purchasing Manager"
+    ],
+    [
+      "Samantha Perman",
+      "Budget Manager"
+    ],
+    [
+      "Kristen Kennedy",
+      "Public Affairs Manager"
+    ]
+  ],
+  "cardholders": {
+    "Allan Branch": "BRANCH , ALLAN",
+    "Robbie Hughes": "HUGHES, ROBBIE",
+    "Janice Lucas": "LUCAS, JANICE L",
+    "Brian Grainger": "GRAINGER, BRIAN R",
+    "Josh Street": "STREET, JOSH",
+    "Jonathan Hayes": "HAYES, JONATHAN H",
+    "Leslie Glaze": "GLAZE, LESLIE",
+    "David Collier": "COLLIER, DAVID W",
+    "Mark Smith": "SMITH, MARK E",
+    "Sheila Ware": "WARE, SHEILA S",
+    "Shawn Selph": "SELPH, SHAWN E",
+    "Clint Murphy": "MURPHY, CLINT",
+    "Keith Meyerl": "MEYERL, KEITH",
+    "Brandy Waldron": "WALDRON, BRANDY L",
+    "Stacy Rausch, P.E.": "RAUSCH, STACY L",
+    "Cody Klingelhoets": "KLINGELHOETS, CODY",
+    "Samantha Perman": "PERMAN, SAMANTHA",
+    "Kristen Kennedy": "KENNEDY, KRISTEN P.",
+    "Michael Fuller": "FULLER, JAMES MICHAEL",
+    "Vickie Lewis": "LEWIS, VICTORIA M",
+    "Gia Del Pozzo": "DEL POZZO, GIOVANNA"
+  }
+}

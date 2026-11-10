@@ -1,24 +1,34 @@
-"""Guard the public publication boundary and preserve accounting totals."""
+"""Guard the approved publication boundary and preserve accounting totals."""
 import json
 from pathlib import Path
-
 root = Path(__file__).resolve().parents[1]
 public = json.loads((root / 'docs/data.json').read_text())
-assert public['staff'] == []
-allowed = {'id', 'fy', 'date', 'post', 'merchant', 'raw', 'category', 'amount', 'allocations', 'source', 'sheet', 'rows', 'travel', 'mixed', 'historical', 'comments', 'flags'}
-for transaction in public['transactions']:
-    assert set(transaction) <= allowed
-    assert transaction['comments'] == []
-    assert transaction['flags'] == []
-    assert transaction['category'] != 'Outside first-pass scope'
-private_path = root / 'app/data.json'
-if private_path.exists():
-    private = json.loads(private_path.read_text())
-    assert len(private['transactions']) == len(public['transactions'])
-    for original, published in zip(private['transactions'], public['transactions']):
-        for field in ('id', 'amount', 'allocations', 'date', 'post', 'fy'):
-            assert original[field] == published[field]
-    payload = json.dumps(public).casefold()
-    for name in {t['person'] for t in private['transactions'] if t.get('person') and t['person'] != 'Unassigned'}:
-        assert name.casefold() not in payload
-print('Public privacy boundary and accounting checks passed.')
+private = json.loads((root / 'app/data.json').read_text())
+approved = json.loads((root / 'app/leadership.json').read_text())
+assert len(approved['profiles']) == len(public['staff']) == 24
+assert len(set(p['name'] for p in public['staff'])) == 24
+assert [(p['name'], p['title']) for p in public['staff']] == [tuple(p) for p in approved['profiles']]
+assert all(set(p) == {'name','title','departments','source_url','email'} and p['email'] is None for p in public['staff'])
+cardholders = set(approved['cardholders'].values())
+assert len(cardholders) == 21
+assert len(private['transactions']) == len(public['transactions']) == 16793
+fields = {'id','fy','date','post','merchant','raw','category','amount','allocations','source','sheet','rows','travel','mixed','historical','person','comments','flags'}
+for original, published in zip(private['transactions'], public['transactions']):
+    assert set(published) == fields
+    assert published['person'] == (original['person'] if original['person'] in cardholders else '')
+    assert published['comments'] == published['flags'] == []
+    assert published['category'] != 'Outside first-pass scope'
+    for field in ('id','amount','allocations','date','post','fy'):
+        assert original[field] == published[field]
+for fy, expected in [('FY25',228954946),('FY26',246143299)]:
+    assert sum(t['amount'] for t in public['transactions'] if t['fy']==fy) == expected
+payload = json.dumps(public).casefold()
+for person in {t['person'] for t in private['transactions']} - cardholders - {'Unassigned'}:
+    assert person.casefold() not in payload, 'Non-approved cardholder in public data'
+for profile in private['staff']:
+    if profile['name'] not in {p['name'] for p in public['staff']}:
+        assert profile['name'].casefold() not in payload, 'Non-approved staff profile in public data'
+assert min(t['date'] for t in public['transactions']) == '2024-08-27'
+assert max(t['date'] for t in public['transactions']) == '2026-09-30'
+assert (root/'docs/CNAME').read_text().strip() == 'pennyping.app'
+print('Passed: 24 approved profiles, 21 exact cardholder links, no other identities/comments/flags, all accounting records/totals retained, dates and domain preserved.')

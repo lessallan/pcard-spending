@@ -90,3 +90,11 @@
 !/app/porchping-logo.svg
 !/docs/penny-ping-logo.png
 !/docs/porchping-logo.svg
+
+# Approved leadership and Penny Ping assets.
+!/app/leadership.json
+!/app/penny-ping-logo.png
+!/app/porchping-logo.svg
+!/docs/penny-ping-logo.png
+!/docs/porchping-logo.svg
+!/tools/check_public.cjs
