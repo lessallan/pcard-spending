@@ -93,3 +93,9 @@ body>.resident-guide{max-width:1144px;margin:24px auto 28px;padding:28px 36px;ba
 .porchping-brand{display:flex;flex-direction:column;align-items:center;gap:4px;flex:0 0 180px;max-width:100%}.porchping-brand>span{font-size:14px;font-weight:600;letter-spacing:.04em;line-height:1.4}@media(max-width:700px){.porchping-brand{flex-basis:auto}}
 
 .resident-guide h1{font-size:30px;letter-spacing:-.6px;margin:0 0 16px;text-wrap:balance}.resident-guide>p{max-width:90ch;font-size:16px;line-height:1.6}.resident-guide>p:last-child{margin-bottom:0}@media(max-width:600px){.resident-guide h1{font-size:26px}}
+/* Compact leadership summaries; names open the detailed profile. */
+.staff-person{padding-bottom:20px}.staff-top{align-items:flex-start;margin-bottom:0;gap:14px}.staff-top>div:last-child{min-width:0}
+.staff-person h3{font-size:18px;line-height:1.35;margin-bottom:4px}.staff-person h3 a{display:inline-block;padding:3px 0}
+.staff-person .leadership-total{margin:12px 0 0 62px;font-size:14px;line-height:1.5}
+.staff-person .staff-email{display:block;margin-top:5px;font-size:13px}
+@media(max-width:600px){.staff-person h3 a{min-height:44px;display:inline-flex;align-items:center}.staff-person h3{margin-bottom:0}.staff-person .leadership-total{font-size:16px}.staff-person .staff-email{font-size:16px;min-height:44px;padding-top:8px}}
