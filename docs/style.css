@@ -197,3 +197,5 @@ body>.report-navigation{max-width:1144px;margin:24px auto}
 .transaction-table td::before{content:attr(data-label);display:block;font-size:12px;font-weight:600;color:var(--muted);margin-bottom:4px}
 .transaction-table td.num{grid-row:2;font-size:18px}.transaction-table td.num .fine{font-size:13px}.transaction-table .transaction-title{max-width:none}
 }
+
+.profile-notice{margin-bottom:24px}.profile-notice h3{font-size:16px;margin:0 0 8px}.profile-notice p{margin:0 0 8px}.profile-notice p:last-child{margin-bottom:0}.profile-notice summary{cursor:pointer;font-weight:600;padding:6px 0}.profile-notice details p{margin-top:8px}
