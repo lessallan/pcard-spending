@@ -144,3 +144,5 @@ body>.report-navigation{max-width:1144px;margin:24px auto}
 @media(max-width:600px){.travel-summary-grid{grid-template-columns:1fr;gap:24px}.travel-summary-grid .section-note,.estimate-label{font-size:16px}.travel-summary-list li{align-items:baseline}.shared-travel{grid-column:auto}}
 
 .trip-identity .trip-destination{font-size:17px;color:var(--ink);font-weight:500}.trip-cost .trip-reimbursement{font-size:13px}@media(max-width:600px){.trip-cost .trip-reimbursement{font-size:16px}}
+
+.transaction-title{font-weight:600;max-width:34ch;overflow-wrap:anywhere}.transaction-meta{margin-top:12px;color:var(--muted)}.transaction-meta strong{color:var(--ink);font-variant-numeric:tabular-nums}
