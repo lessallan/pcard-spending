@@ -369,9 +369,11 @@
     {
       "id": "TXN00043618",
       "name": "Jared Jones",
-      "status": "likely",
-      "reason": "The secretary\u2019s note names only Jared. It likely refers to Jared Jones, but the receipt is needed to confirm.",
-      "participants": null,
+      "status": "supported",
+      "reason": "Allan confirmed the abbreviated name identifies Jared Jones and authorized allocating this clear purchase on November 10, 2026.",
+      "participants": [
+        "Jared Jones"
+      ],
       "expected": {
         "person": "MULLANEY, VICTORIA A",
         "amount": 9398,
@@ -380,14 +382,21 @@
         ],
         "merchant": "Amazon",
         "date": "2024-12-21"
+      },
+      "identity_confirmation": {
+        "by": "Allan Branch",
+        "date": "2026-11-10",
+        "scope": "This reviewed transaction; not a global first-name matching rule"
       }
     },
     {
       "id": "TXN00048280",
       "name": "Jared Jones",
-      "status": "likely",
-      "reason": "The secretary\u2019s note names only Jared. It likely refers to Jared Jones, but the receipt is needed to confirm.",
-      "participants": null,
+      "status": "supported",
+      "reason": "Allan confirmed the abbreviated name identifies Jared Jones and authorized allocating this clear purchase on November 10, 2026.",
+      "participants": [
+        "Jared Jones"
+      ],
       "expected": {
         "person": "TERRY, LINDSEY",
         "amount": 5014,
@@ -396,14 +405,21 @@
         ],
         "merchant": "Amazon",
         "date": "2025-07-10"
+      },
+      "identity_confirmation": {
+        "by": "Allan Branch",
+        "date": "2026-11-10",
+        "scope": "This reviewed transaction; not a global first-name matching rule"
       }
     },
     {
       "id": "TXN00049599",
       "name": "Jared Jones",
-      "status": "likely",
-      "reason": "The secretary\u2019s note names only Jared. It likely refers to Jared Jones, but the receipt is needed to confirm.",
-      "participants": null,
+      "status": "supported",
+      "reason": "Allan confirmed the abbreviated name identifies Jared Jones and authorized allocating this clear purchase on November 10, 2026.",
+      "participants": [
+        "Jared Jones"
+      ],
       "expected": {
         "person": "TERRY, LINDSEY",
         "amount": 4499,
@@ -412,14 +428,21 @@
         ],
         "merchant": "Amazon",
         "date": "2025-09-04"
+      },
+      "identity_confirmation": {
+        "by": "Allan Branch",
+        "date": "2026-11-10",
+        "scope": "This reviewed transaction; not a global first-name matching rule"
       }
     },
     {
       "id": "TXN00051978",
       "name": "Jared Jones",
-      "status": "likely",
-      "reason": "The secretary\u2019s note names only Jared. It likely refers to Jared Jones, but the receipt is needed to confirm.",
-      "participants": null,
+      "status": "supported",
+      "reason": "Allan confirmed the abbreviated name identifies Jared Jones and authorized allocating this clear purchase on November 10, 2026.",
+      "participants": [
+        "Jared Jones"
+      ],
       "expected": {
         "person": "TERRY, LINDSEY",
         "amount": 2095,
@@ -428,14 +451,21 @@
         ],
         "merchant": "Amazon",
         "date": "2025-12-14"
+      },
+      "identity_confirmation": {
+        "by": "Allan Branch",
+        "date": "2026-11-10",
+        "scope": "This reviewed transaction; not a global first-name matching rule"
       }
     },
     {
       "id": "TXN00045675",
       "name": "Jonathan Hayes",
-      "status": "likely",
-      "reason": "The secretary\u2019s note uses JH or Jonathan for an office item. It likely refers to Jonathan Hayes, but the receipt is needed to confirm.",
-      "participants": null,
+      "status": "supported",
+      "reason": "Allan confirmed the abbreviated name identifies Jonathan Hayes and authorized allocating this clear purchase on November 10, 2026.",
+      "participants": [
+        "Jonathan Hayes"
+      ],
       "expected": {
         "person": "MULLANEY, VICTORIA A",
         "amount": 1781,
@@ -444,14 +474,21 @@
         ],
         "merchant": "Amazon",
         "date": "2025-03-25"
+      },
+      "identity_confirmation": {
+        "by": "Allan Branch",
+        "date": "2026-11-10",
+        "scope": "This reviewed transaction; not a global first-name matching rule"
       }
     },
     {
       "id": "TXN00051116",
       "name": "Jonathan Hayes",
-      "status": "likely",
-      "reason": "The secretary\u2019s note uses JH or Jonathan for an office item. It likely refers to Jonathan Hayes, but the receipt is needed to confirm.",
-      "participants": null,
+      "status": "supported",
+      "reason": "Allan confirmed the abbreviated name identifies Jonathan Hayes and authorized allocating this clear purchase on November 10, 2026.",
+      "participants": [
+        "Jonathan Hayes"
+      ],
       "expected": {
         "person": "TERRY, LINDSEY",
         "amount": 2797,
@@ -460,13 +497,18 @@
         ],
         "merchant": "Amazon",
         "date": "2025-11-09"
+      },
+      "identity_confirmation": {
+        "by": "Allan Branch",
+        "date": "2026-11-10",
+        "scope": "This reviewed transaction; not a global first-name matching rule"
       }
     },
     {
       "id": "TXN00048450",
       "name": "Jonathan Hayes",
-      "status": "likely",
-      "reason": "The note likely refers to Hayes but combines his office item with shared supplies. His portion cannot be determined from the note.",
+      "status": "unresolved",
+      "reason": "Allan confirmed JH/Jonathan means Jonathan Hayes. This purchase also includes shared supplies; Hayes\u2019s portion is unresolved and remains excluded from totals.",
       "participants": null,
       "expected": {
         "person": "TERRY, LINDSEY",
@@ -481,8 +523,8 @@
     {
       "id": "TXN00048758",
       "name": "Jonathan Hayes",
-      "status": "likely",
-      "reason": "The note likely refers to Hayes but combines his office item with shared supplies. His portion cannot be determined from the note.",
+      "status": "unresolved",
+      "reason": "Allan confirmed JH/Jonathan means Jonathan Hayes. This purchase also includes shared supplies; Hayes\u2019s portion is unresolved and remains excluded from totals.",
       "participants": null,
       "expected": {
         "person": "TERRY, LINDSEY",
@@ -497,8 +539,8 @@
     {
       "id": "TXN00052022",
       "name": "Jonathan Hayes",
-      "status": "likely",
-      "reason": "The note likely refers to Hayes but combines his office item with shared supplies. His portion cannot be determined from the note.",
+      "status": "unresolved",
+      "reason": "Allan confirmed JH/Jonathan means Jonathan Hayes. This purchase also includes shared supplies; Hayes\u2019s portion is unresolved and remains excluded from totals.",
       "participants": null,
       "expected": {
         "person": "TERRY, LINDSEY",
@@ -513,9 +555,11 @@
     {
       "id": "TXN00057320",
       "name": "Brandy Waldron",
-      "status": "likely",
-      "reason": "The note says Brandy\u2019s office and code 1200. Brandy Waldron is the likely recipient; her full name is not recorded.",
-      "participants": null,
+      "status": "supported",
+      "reason": "Allan confirmed the abbreviated name identifies Brandy Waldron and authorized allocating this clear purchase on November 10, 2026.",
+      "participants": [
+        "Brandy Waldron"
+      ],
       "expected": {
         "person": "SCHWARTZ, DONALD R",
         "amount": 37799,
@@ -524,14 +568,21 @@
         ],
         "merchant": "Amazon",
         "date": "2026-08-13"
+      },
+      "identity_confirmation": {
+        "by": "Allan Branch",
+        "date": "2026-11-10",
+        "scope": "This reviewed transaction; not a global first-name matching rule"
       }
     },
     {
       "id": "TXN00046908",
       "name": "Janice Lucas",
-      "status": "likely",
-      "reason": "The secretary\u2019s event-registration note says \u201cLucs,\u201d likely a misspelling of Lucas. The registration confirmation is needed.",
-      "participants": null,
+      "status": "supported",
+      "reason": "Allan confirmed the abbreviated name identifies Janice Lucas and authorized allocating this clear purchase on November 10, 2026.",
+      "participants": [
+        "Janice Lucas"
+      ],
       "expected": {
         "person": "MULLANEY, VICTORIA A",
         "amount": 8000,
@@ -540,6 +591,11 @@
         ],
         "merchant": "FLORIDA STATE UNIV",
         "date": "2025-05-08"
+      },
+      "identity_confirmation": {
+        "by": "Allan Branch",
+        "date": "2026-11-10",
+        "scope": "This reviewed transaction; not a global first-name matching rule"
       }
     },
     {
