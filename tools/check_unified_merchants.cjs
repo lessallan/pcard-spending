@@ -20,7 +20,9 @@ const {chromium}=require('/Users/allanbranch/.cache/codex-runtimes/codex-primary
   const category=await page.locator('#retailer-scope option').nth(2).getAttribute('value');
   await page.selectOption('#retailer-scope',category);
   assert(await page.evaluate(c=>rows.length===data.transactions.filter(t=>t.mixed&&t.category===c).length,category));
+  await page.locator('.matching-transactions').click();await page.locator('.transactions').waitFor();
   await page.locator('.transactions [data-detail]').first().click();assert(await page.locator('#detail').isVisible());await page.locator('#close-detail').click();
+  await page.goto(base+'#merchants');await page.locator('#merchant-scope').waitFor();
   await page.selectOption('#merchant-scope','all');assert(await page.evaluate(()=>rows.length===data.transactions.length));
   await page.goto(base+'#retail');await page.locator('#retailer-scope').waitFor();assert.equal(new URL(page.url()).hash,'#merchants');
   assert.equal(await page.locator('#merchant-scope').inputValue(),'retailers');
