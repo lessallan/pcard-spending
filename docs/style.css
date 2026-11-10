@@ -17,15 +17,15 @@
 .report-navigation{margin:24px 0 10px}.report-navigation nav{padding:0;gap:3px;flex-wrap:wrap}.report-navigation nav a{padding:9px 11px}.report-navigation .mobile-menu{margin:0 0 10px}
 @media(max-width:600px){.report-navigation nav{padding:10px;border-radius:7px}.report-navigation .mobile-menu{width:100%;text-align:left}}
 
-/* Compact report tiles follow the existing green palette and spacing. */
-.report-navigation nav{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;overflow:visible}
-.report-navigation nav a{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:10px;min-height:210px;padding:24px 16px;border:1px solid #b7c5b3;background:#f3f5ee;white-space:normal;color:var(--ink);user-select:none}
-.report-navigation nav a svg{width:56px;height:56px;flex-shrink:0;color:var(--green)}
+/* Compact horizontal report navigation at every viewport width. */
+.report-navigation nav,.report-navigation nav.open{display:flex;flex-wrap:nowrap;gap:6px;overflow-x:auto;padding:4px 0;background:none}
+.report-navigation nav a{display:flex;flex-direction:row;align-items:center;justify-content:center;gap:7px;flex:0 0 auto;min-height:44px;padding:8px 12px;border:1px solid #b7c5b3;background:#f3f5ee;white-space:nowrap;color:var(--ink);user-select:none}
+.report-navigation nav a svg{width:20px;height:20px;flex-shrink:0;color:var(--green)}
 .report-navigation nav a.active{background:#d3decf;border-color:#6b876b}
 .report-navigation nav a:hover{background:#e1e9db}
-.report-navigation .report-label{font-size:17px;font-weight:600}
-.report-navigation .report-description{font-size:13px;line-height:1.5;max-width:28ch;color:var(--muted)}
-@media(max-width:600px){.report-navigation nav{display:none;grid-template-columns:repeat(2,minmax(0,1fr));padding:0;background:none;gap:8px}.report-navigation nav.open{display:grid}.report-navigation nav a{padding:20px 12px;gap:10px;min-height:220px}}
+.report-navigation .report-label{font-size:14px;font-weight:600}
+.report-navigation .report-description,.report-navigation .mobile-menu{display:none}
+
 
 .staff-person h3 a{font-size:inherit}.staff-person .leadership-total{margin-top:12px;color:var(--ink);font-variant-numeric:tabular-nums}
 
