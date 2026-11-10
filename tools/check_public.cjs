@@ -10,8 +10,8 @@ const money=n=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'}).
  const page=await browser.newPage({viewport:{width:1440,height:1500}});const errors=[],failed=[];
  page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.url().startsWith(base)&&r.status()>=400)failed.push([r.status(),r.url()])});
  await page.goto(base);await page.waitForSelector('.stats');
- assert.match(await page.locator('.site-intro').innerText(),/historical snapshot, not a live view/);
- assert.match(await page.locator('.site-intro').innerText(),/August 27, 2024/);
+ assert.match(await page.locator('.resident-guide').innerText(),/historical snapshot, not a live view/);
+ assert.match(await page.locator('.resident-guide').innerText(),/August 27, 2024/);
  assert.equal(await page.locator('main .resident-guide').count(),0);
  assert.equal(await page.locator('#export, a[href="#review"], #status').count(),0);
  assert.equal(await page.locator('.brand-logo').evaluate(e=>e.complete&&e.naturalWidth>0),true);

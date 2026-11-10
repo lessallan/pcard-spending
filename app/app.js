@@ -110,7 +110,6 @@ function render(){
  const route=location.hash.slice(1)||'overview';
  selectedLeader=route.startsWith('leader/')?leadershipProfiles.find(([name])=>leadershipId(name)===route.slice(7))?.[0]||null:null;
  view=selectedLeader?'leader':titles[route]&&route!=='leader'?route:'overview';
- document.querySelector('.resident-guide').hidden=view!=='overview';
  $('title').textContent=selectedLeader||titles[view][0];$('subtitle').textContent=titles[view][1];document.title=(selectedLeader||titles[view][0])+' · Penny Ping';
  document.querySelectorAll('nav a').forEach(a=>{a.classList.toggle('active',a.hash==='#'+(selectedLeader?'staff':view));a.setAttribute('aria-current',a.hash==='#'+(selectedLeader?'staff':view)?'page':'false')});
  const staff=view==='staff';
