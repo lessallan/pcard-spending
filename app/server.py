@@ -6,7 +6,7 @@ ROOT=Path(__file__).resolve().parents[1]
 class Handler(SimpleHTTPRequestHandler):
     def do_GET(self):
         path=unquote(urlparse(self.path).path)
-        allowed={'/spending-blaze-logo.png':'app/spending-blaze-logo.png','/':'app/index.html','/index.html':'app/index.html','/style.css':'app/style.css','/app.js':'app/app.js','/data.json':'app/data.json'}
+        allowed={'/penny-ping-logo.png':'app/penny-ping-logo.png','/porchping-logo.svg':'app/porchping-logo.svg','/spending-blaze-logo.png':'app/spending-blaze-logo.png','/':'app/index.html','/index.html':'app/index.html','/style.css':'app/style.css','/app.js':'app/app.js','/data.json':'app/data.json'}
         rel=allowed.get(path)
         if path.startswith('/photos/'):rel='staff/'+path.lstrip('/')
         if path.startswith('/policies/'):rel=path.lstrip('/')
@@ -18,5 +18,5 @@ class Handler(SimpleHTTPRequestHandler):
     def do_HEAD(self):self.send_error(405)
     def log_message(self,*args):pass
 if __name__=='__main__':
-    print('Spending Blaze: http://127.0.0.1:4310',flush=True)
+    print('Penny Ping: http://127.0.0.1:4310',flush=True)
     ThreadingHTTPServer(('127.0.0.1',4310),Handler).serve_forever()

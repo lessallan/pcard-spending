@@ -66,7 +66,7 @@ function retailerReport(ts){
 function render(){
  if(!data)return;
  view=location.hash.slice(1)||'overview';if(!titles[view])view='overview';
- $('title').textContent=titles[view][0];$('subtitle').textContent=titles[view][1];document.title=titles[view][0]+' · Spending Blaze';
+ $('title').textContent=titles[view][0];$('subtitle').textContent=titles[view][1];document.title=titles[view][0]+' · Penny Ping';
  document.querySelectorAll('nav a').forEach(a=>{a.classList.toggle('active',a.hash==='#'+view);a.setAttribute('aria-current',a.hash==='#'+view?'page':'false')});
  const staff=false;$('export').hidden=staff;
  document.querySelectorAll('#filters label').forEach(l=>l.hidden=staff&&!l.classList.contains('search-label'));
@@ -114,7 +114,7 @@ document.querySelector('.mobile-menu').addEventListener('click',e=>{const open=$
 if(innerWidth<=600)document.querySelector('.filter-box').open=false;
 function loadDataset(d){
  const strings=['id','fy','date','post','merchant','raw','category','source','sheet','travel'];
- if(!d||!Array.isArray(d.transactions)||!Array.isArray(d.staff)||!d.transactions.every(t=>t&&strings.every(k=>typeof t[k]==='string')&&Number.isFinite(t.amount)&&Array.isArray(t.allocations)&&t.allocations.every(a=>a&&['fund','center','account'].every(k=>typeof a[k]==='string'&&/^[\w .-]*$/.test(a[k]))&&Number.isFinite(a.amount))&&['comments','flags'].every(k=>Array.isArray(t[k])&&t[k].every(v=>typeof v==='string'))&&Array.isArray(t.rows)&&t.rows.every(Number.isInteger)&&/^[\w.-]+$/.test(t.id))||!d.staff.every(s=>s&&['name','source_url'].every(k=>typeof s[k]==='string')&&['title','email'].every(k=>s[k]===null||typeof s[k]==='string')&&Array.isArray(s.departments)&&s.departments.every(v=>typeof v==='string')&&/^https?:\/\//.test(s.source_url)))throw Error('Choose a valid Spending Blaze app/data.json dataset.');
+ if(!d||!Array.isArray(d.transactions)||!Array.isArray(d.staff)||!d.transactions.every(t=>t&&strings.every(k=>typeof t[k]==='string')&&Number.isFinite(t.amount)&&Array.isArray(t.allocations)&&t.allocations.every(a=>a&&['fund','center','account'].every(k=>typeof a[k]==='string'&&/^[\w .-]*$/.test(a[k]))&&Number.isFinite(a.amount))&&['comments','flags'].every(k=>Array.isArray(t[k])&&t[k].every(v=>typeof v==='string'))&&Array.isArray(t.rows)&&t.rows.every(Number.isInteger)&&/^[\w.-]+$/.test(t.id))||!d.staff.every(s=>s&&['name','source_url'].every(k=>typeof s[k]==='string')&&['title','email'].every(k=>s[k]===null||typeof s[k]==='string')&&Array.isArray(s.departments)&&s.departments.every(v=>typeof v==='string')&&/^https?:\/\//.test(s.source_url)))throw Error('Choose a valid Penny Ping app/data.json dataset.');
  data=d;page=0;HTMLFormElement.prototype.reset.call($('filters'));
  for(const [id,values,label] of [['fund',d.transactions.flatMap(t=>t.allocations.map(a=>a.fund)),'All funds'],['center',d.transactions.flatMap(t=>t.allocations.map(a=>a.center)),'All cost centers'],['merchant',d.transactions.map(t=>t.merchant),'All merchants']])fillSelect(id,values,label);
  $('loading').hidden=true;$('dataset-error').textContent='';$('export').disabled=false;render();
@@ -122,6 +122,6 @@ function loadDataset(d){
 $('export').disabled=true;
 $('dataset').addEventListener('change',async e=>{
  const file=e.target.files[0];if(!file)return;
- try{const parsed=JSON.parse(await file.text());loadDataset(parsed)}catch{$('dataset-error').textContent='This file could not be opened. Choose a valid Spending Blaze app/data.json dataset.'}
+ try{const parsed=JSON.parse(await file.text());loadDataset(parsed)}catch{$('dataset-error').textContent='This file could not be opened. Choose a valid Penny Ping app/data.json dataset.'}
 });
 if(['localhost','127.0.0.1'].includes(location.hostname))fetch('./data.json').then(r=>{if(!r.ok)throw Error();return r.json()}).then(loadDataset).catch(()=>{});

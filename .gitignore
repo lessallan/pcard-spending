@@ -84,3 +84,9 @@
 !/docs/data.json
 
 !/tools/test_public_data.py
+
+# Penny Ping and related resident-tool branding.
+!/app/penny-ping-logo.png
+!/app/porchping-logo.svg
+!/docs/penny-ping-logo.png
+!/docs/porchping-logo.svg

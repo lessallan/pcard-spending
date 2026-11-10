@@ -4,7 +4,7 @@ import shutil
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'docs'
 OUT.mkdir(exist_ok=True)
-for name in ('index.html', 'style.css', 'app.js', 'spending-blaze-logo.png'):
+for name in ('index.html', 'style.css', 'app.js', 'penny-ping-logo.png', 'porchping-logo.svg'):
     shutil.copyfile(ROOT / 'app' / name, OUT / name)
 # Employee identities and free-text comments stay in the private input only.
 import json
@@ -40,4 +40,4 @@ print('Built public app with the approved transaction dataset.')
 for relative, target in [('review/index.html', '../'), ('review/reports/merchant-review.html', '../../')]:
     legacy = OUT / relative
     legacy.parent.mkdir(parents=True, exist_ok=True)
-    legacy.write_text('<!doctype html><html lang="en"><meta charset="utf-8"><title>Spending Blaze</title><meta http-equiv="refresh" content="0;url=' + target + '"><p><a href="' + target + '">Explore City spending</a></p></html>')
+    legacy.write_text('<!doctype html><html lang="en"><meta charset="utf-8"><title>Penny Ping</title><meta http-equiv="refresh" content="0;url=' + target + '"><p><a href="' + target + '">Explore City spending</a></p></html>')

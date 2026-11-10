@@ -11,3 +11,17 @@
 @media(max-width:600px){.chart-row{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr) 78px}}
 
 .annual-totals{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px}.annual-totals .stat{padding:12px}.annual-totals strong{font-size:24px}.annual-travel details{margin-top:20px}.receipt-list{margin-top:20px}.receipt-card{padding:20px 0;border-bottom:1px solid var(--line,#ddd)}.receipt-card p{overflow-wrap:anywhere}.receipt-card h3{margin-top:10px}.annual-travel .board{min-width:0}
+
+/* Penny Ping identity and related resident tool. */
+.brand-logo{width:240px;height:auto;display:block}
+.maker-note{margin-top:40px;padding-top:28px;border-top:1px solid var(--line)}
+.maker-note h2{font-size:22px;margin:0 0 10px;text-wrap:balance}
+.maker-note>p{max-width:80ch;margin:0 0 22px;font-size:15px;color:var(--muted);text-wrap:pretty}
+.porchping-banner{display:flex;align-items:center;gap:24px;background:#e7edf5;border-radius:8px;padding:22px 24px;color:#0b2f63;text-decoration:none}
+.porchping-banner:hover{background:#dce6f2}
+.porchping-banner img{width:180px;height:auto;flex:none}
+.porchping-copy{display:grid;gap:5px;flex:1}
+.porchping-copy strong{font-size:17px;font-weight:600}
+.porchping-copy>span{font-size:14px;max-width:57ch;color:#334b68}
+.porchping-cta{font-size:14px;font-weight:600;text-decoration:underline;text-underline-offset:4px;white-space:nowrap}
+@media(max-width:700px){.porchping-banner{flex-direction:column;align-items:flex-start;gap:14px;padding:20px}.porchping-copy>span,.maker-note>p{font-size:16px}.porchping-cta{font-size:16px}.brand-logo{width:210px}}

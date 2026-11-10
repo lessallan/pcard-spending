@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 500" role="img" aria-labelledby="logo-title logo-desc">
+  <title id="logo-title">PorchPing</title>
+  <desc id="logo-desc">A navy lightning bolt with three coral signal waves beside the PorchPing wordmark.</desc>
+
+  <g transform="translate(18 28) scale(.86)">
+    <path fill="#0b2f63" d="M205 30h96l-68 190h69L134 454l55-190h-65z"/>
+    <path fill="#f04444" d="M294 78c35-8 67 7 94 21 28 15 52 27 88 13v44c-37 17-69 5-99-11-26-14-49-25-85-16zm-18 96c38-10 71 5 100 21 28 15 53 29 100 12v44c-45 19-79 4-109-12-27-15-51-26-102-9zm-30 103c43-16 80-1 111 16 31 17 59 33 119 8v45c-55 24-95 7-129-12-29-16-54-27-116-2z"/>
+  </g>
+
+  <text x="470" y="326" fill="#0b2f63"
+        font-family="Avenir Next, Inter, Montserrat, Arial, sans-serif"
+        font-size="210" font-weight="800" letter-spacing="-10">PorchPing</text>
+  <circle cx="1216" cy="181" r="27" fill="#f04444"/>
+</svg>
