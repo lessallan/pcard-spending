@@ -119,3 +119,8 @@ body>.resident-guide{max-width:1144px;margin:24px auto 28px;padding:28px 36px;ba
 .overview-primary .chart-row{grid-template-columns:minmax(210px,1fr) minmax(120px,1.5fr) 110px;font-size:16px;gap:20px;margin:18px 0}
 .overview-primary .track{height:22px}
 @media(max-width:600px){.overview-primary{padding:18px}.overview-primary h2{font-size:24px}.overview-primary .chart-row{grid-template-columns:1fr 90px;gap:6px;font-size:14px;margin:20px 0}.overview-primary .chart-row button{grid-column:1/-1}.overview-primary .track{height:18px}}
+
+/* Report navigation sits on the page background, separate from report content. */
+body>.report-navigation{max-width:1144px;margin:24px auto}
+@media(max-width:900px){body>.report-navigation{margin:24px 16px}}
+@media(max-width:600px){body>.report-navigation{margin:20px 10px}}
