@@ -15,12 +15,13 @@ const centerSource='<a href="https://www.panamacity.gov/DocumentCenter/View/8951
 function personContext(name){const codes=[...new Set(rows.filter(t=>t.person===name).flatMap(t=>t.allocations.map(a=>a.center)))];return '<span class="fine">Recorded cost centers (budget reference names): '+codes.map(c=>esc(centerLabel(c))).join('; ')+'</span>'}
 function displayName(s){if(!s)return 'Not publicly identified';if(s.includes(',')){let [last,...first]=s.split(',');return `${first.join(' ').trim()} ${last}`.toLowerCase().replace(/\b\w/g,c=>c.toUpperCase())}return s.toLowerCase().replace(/\b\w/g,c=>c.toUpperCase())}
 function fillSelect(id,values,label){$(id).innerHTML=`<option value="">${label}</option>`+[...new Set(values)].sort().map(v=>`<option value="${esc(v)}">${esc(id==='person'?displayName(v):id==='center'?centerLabel(v):v)}</option>`).join('')}
-function filters(){return Object.fromEntries(new FormData($('filters')))}
+function filters(){return view==='transactions'?Object.fromEntries(new FormData($('filters'))):{}}
 function filtered(){
  const f=view==='overview'?{}:filters();let result=[];if(selectedLeader)f.person='';
  if(f.from&&f.to&&f.from>f.to){$('filter-error').textContent='The start date must be on or before the end date.';return []}
  $('filter-error').textContent='';
  for(const t of data.transactions){
+  if(f.purchaseType==='travel'&&t.travel==='Not identified as travel')continue;
   if(f.fy&&t.fy!==f.fy||f.person&&t.person!==f.person||f.merchant&&t.merchant!==f.merchant||f.from&&t.date<f.from||f.to&&t.date>f.to||f.minimum&&t.amount<Math.round(Number(f.minimum)*100))continue;
   if(f.search&&!`${t.id} ${t.person} ${displayName(t.person)} ${t.merchant} ${t.raw}`.toLowerCase().includes(f.search.toLowerCase()))continue;
   const allocations=t.allocations.filter(a=>(!f.fund||a.fund===f.fund)&&(!f.center||a.center===f.center));
@@ -80,7 +81,7 @@ function leadershipIntro(name){
  return `<p><a href="#staff">← Back to City leadership</a></p>${reimbursementNotice}<p class="section-note">${esc(leadershipProfiles.find(p=>p[0]===name)[1])}${source}</p><div class="budget-note"><h3>Associated card charges</h3><p>These are charges recorded under a matching cardholder name, not verified personal spending. A cardholder may purchase for others. Costs paid on someone else’s card are not attributed here, and the records do not establish who requested, approved, or benefited from each purchase.</p></div>`;
 }
 function staffView(){
- const q=$('search').value.toLowerCase();const staff=leadershipProfiles.map(([name,title])=>data.staff.find(s=>s.name===name&&s.title===title)).filter(Boolean).filter(s=>`${s.name} ${s.title} ${s.departments.join(' ')} ${s.email}`.toLowerCase().includes(q));
+ const q=(filters().search||'').toLowerCase();const staff=leadershipProfiles.map(([name,title])=>data.staff.find(s=>s.name===name&&s.title===title)).filter(Boolean).filter(s=>`${s.name} ${s.title} ${s.departments.join(' ')} ${s.email}`.toLowerCase().includes(q));
  return `${reimbursementNotice}<p class="section-note">Showing ${staff.length} of ${leadershipProfiles.length} leadership profiles. Only the 24 selected leadership profiles are named; other cardholders are not publicly identified. Roles come from the City directory imported November 9, 2026; they are not verified roles during FY25/FY26. Associated charges use cardholder name matches, not verified identity links or personal spending. Totals cover both supplied fiscal years; no match does not mean no costs.</p><div class="staff-grid">${staff.map(s=>{return `<article class="staff-person"><div class="staff-top">${s.photo_file?`<img class="avatar" src="./${esc(s.photo_file)}" alt="" loading="lazy">`:`<div class="avatar" aria-hidden="true">${esc(s.name.split(/\s+/).map(x=>x[0]).slice(0,2).join(''))}</div>`}<div><h3><a href="#leader/${leadershipId(s.name)}">${esc(s.name)}</a></h3><p>${esc(s.title==='Director'?s.departments.join(' · ')+' Director':s.title||'Title not published')}</p>${s.email?`<a class="staff-email" href="mailto:${esc(s.email)}">${esc(s.email)}</a>`:''}</div></div><p class="leadership-total">${esc(leadershipSummary(s.name))}</p></article>`}).join('')}</div>${!staff.length?'<p class="empty">No leadership profiles match this search. Clear the search to see all City leadership.</p>':''}`;
 }
 
@@ -115,7 +116,7 @@ function render(){
  $('title').textContent=selectedLeader||titles[view][0];$('subtitle').textContent=titles[view][1];document.title=(selectedLeader||titles[view][0])+' · Penny Ping';
  document.querySelectorAll('nav a').forEach(a=>{a.classList.toggle('active',a.hash==='#'+(selectedLeader?'staff':view));a.setAttribute('aria-current',a.hash==='#'+(selectedLeader?'staff':view)?'page':'false')});
  const staff=view==='staff';
- document.querySelector('.filter-box').hidden=view==='overview';
+ document.querySelector('.filter-box').hidden=view!=='transactions';
  document.querySelectorAll('#filters label').forEach(l=>l.hidden=(staff&&!l.classList.contains('search-label'))||!!selectedLeader&&l.contains($('person')));
  const active=Object.values(filters()).filter(Boolean).length;$('filter-count').textContent=staff?'Search leadership':active?`${active} active`:'';
  if(staff){$('content').innerHTML=staffView();return}
@@ -130,7 +131,7 @@ function render(){
  }
  if(view==='retail')rows=rows.filter(retailerMatches);if(view==='travel')rows=rows.filter(t=>t.travel!=='Not identified as travel');
  rows.sort((a,b)=>b.scoped-a.scoped);
- let out=(selectedLeader?leadershipIntro(selectedLeader)+`<p class="section-note">Name-matched cardholder in source records: <strong>${esc(leadershipCardholders[selectedLeader])}</strong>. Totals below reflect the selected filters.</p>`:'')+stats(rows,!!selectedLeader);const centered=aggregate(rows,'center',true),people=aggregate(rows,'person'),merchants=aggregate(rows,'merchant');
+ let out=(selectedLeader?leadershipIntro(selectedLeader)+`<p class="section-note">Name-matched cardholder in source records: <strong>${esc(leadershipCardholders[selectedLeader])}</strong>. Recorded P-card purchases are shown below.</p>`:'')+(view==='transactions'?stats(rows):'');const centered=aggregate(rows,'center',true),people=aggregate(rows,'person'),merchants=aggregate(rows,'merchant');
  if(view!=='overview'&&(filters().fund||filters().center))out+='<p class="section-note">Amounts reflect only the selected accounting allocations. Transaction counts remain unique IDs; minimum-charge and policy checks use the full original charge.</p>';
  if(view==='overview'){
   const travelRows=rows.filter(t=>t.travel!=='Not identified as travel');
@@ -160,7 +161,7 @@ function openDetail(id){
  $('detail-body').innerHTML=`<dl class="detail-grid"><div><dt>Merchant</dt><dd>${esc(t.raw)}</dd></div><div><dt>Cardholder</dt><dd>${esc(displayName(t.person))}</dd></div><div><dt>Purchase / posted</dt><dd>${t.date} / ${t.post}</dd></div><div><dt>Source</dt><dd>${esc(t.source)} · ${esc(t.sheet)} · rows ${t.rows.join(', ')}</dd></div></dl><p class="section-note">P-card transactions only; separate expense reimbursements are not included. Cardholders may purchase for others.</p><h3>Accounting allocations</h3><div class="table-wrap"><table><thead><tr><th>Fund</th><th>Spending area</th><th>Account</th><th class="num">Amount</th></tr></thead><tbody>${t.allocations.map(a=>`<tr><td>${esc(a.fund)}</td><td>${esc(centerLabel(a.center))}</td><td>${esc(a.account)}</td><td class="num">${exact(a.amount)}</td></tr>`).join('')}</tbody></table></div>`;
  $('detail').showModal();
 }
-$('content').addEventListener('click',e=>{const detail=e.target.closest('[data-detail]');if(detail)openDetail(detail.dataset.detail);const filter=e.target.closest('[data-filter]');if(filter){if(view==='overview'){HTMLFormElement.prototype.reset.call($('filters'));$(filter.dataset.filter).value=filter.dataset.value;location.hash=filter.closest('[data-destination]')?.dataset.destination||'transactions';return}$(filter.dataset.filter).value=filter.dataset.value;page=0;render();document.querySelector('.transactions')?.scrollIntoView({behavior:'instant'})}});
+$('content').addEventListener('click',e=>{const detail=e.target.closest('[data-detail]');if(detail)openDetail(detail.dataset.detail);const filter=e.target.closest('[data-filter]');if(filter){if(view!=='transactions'){const travel=view==='travel'||filter.closest('[data-destination]')?.dataset.destination==='travel';HTMLFormElement.prototype.reset.call($('filters'));$(filter.dataset.filter).value=filter.dataset.value;$('purchaseType').value=travel?'travel':'';location.hash='transactions';return}$(filter.dataset.filter).value=filter.dataset.value;page=0;render();document.querySelector('.transactions')?.scrollIntoView({behavior:'instant'})}});
 $('close-detail').addEventListener('click',()=>$('detail').close());
 $('filters').addEventListener('submit',e=>e.preventDefault());
 let timer;$('filters').addEventListener('input',()=>{clearTimeout(timer);timer=setTimeout(()=>{page=0;render()},180)});
