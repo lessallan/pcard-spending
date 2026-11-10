@@ -172,3 +172,8 @@
 
 # Explorer filters, drilldowns and staff directory regression check.
 !/tools/check_explorer_navigation.cjs
+
+# Reviewed, evidence-bound name associations and regression checks.
+!/tools/leadership-name-review.json
+!/tools/leadership-name-review.cjs
+!/tools/check_leadership_name_review.cjs

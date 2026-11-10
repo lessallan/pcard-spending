@@ -1,0 +1,578 @@
+{
+  "reviewed": "2026-11-10",
+  "items": [
+    {
+      "id": "TXN00042207",
+      "name": "Janice Lucas",
+      "status": "supported",
+      "reason": "Lucas/Com. Lucas is the named registration or flight/lodging recipient in Victoria Mullaney\u2019s booking notes. \u201cCom.\u201d was missed by the matcher.",
+      "participants": [
+        "Janice Lucas"
+      ],
+      "expected": {
+        "person": "MULLANEY, VICTORIA A",
+        "amount": 25000,
+        "purchaseNotes": [
+          "NLC Lucas Caucus Reg"
+        ],
+        "merchant": "NATIONAL LE",
+        "date": "2024-10-24"
+      }
+    },
+    {
+      "id": "TXN00041737",
+      "name": "Janice Lucas",
+      "status": "supported",
+      "reason": "Lucas/Com. Lucas is the named registration or flight/lodging recipient in Victoria Mullaney\u2019s booking notes. \u201cCom.\u201d was missed by the matcher.",
+      "participants": [
+        "Janice Lucas"
+      ],
+      "expected": {
+        "person": "MULLANEY, VICTORIA A",
+        "amount": 49500,
+        "purchaseNotes": [
+          "Com. Lucas forgot P-Card. Room charged on V.Mullaney card on behalf of Lucas. for IEMO Conference"
+        ],
+        "merchant": "EMBASSY SUITES",
+        "date": "2024-10-06"
+      }
+    },
+    {
+      "id": "TXN00042727",
+      "name": "Janice Lucas",
+      "status": "supported",
+      "reason": "Lucas/Com. Lucas is the named registration or flight/lodging recipient in Victoria Mullaney\u2019s booking notes. \u201cCom.\u201d was missed by the matcher.",
+      "participants": [
+        "Janice Lucas"
+      ],
+      "expected": {
+        "person": "MULLANEY, VICTORIA A",
+        "amount": 74500,
+        "purchaseNotes": [
+          "NLC CCC Conference Registration Com. Lucas"
+        ],
+        "merchant": "NATIONAL LE",
+        "date": "2024-11-15"
+      }
+    },
+    {
+      "id": "TXN00043979",
+      "name": "Janice Lucas",
+      "status": "supported",
+      "reason": "Lucas/Com. Lucas is the named registration or flight/lodging recipient in Victoria Mullaney\u2019s booking notes. \u201cCom.\u201d was missed by the matcher.",
+      "participants": [
+        "Janice Lucas"
+      ],
+      "expected": {
+        "person": "MULLANEY, VICTORIA A",
+        "amount": 70096,
+        "purchaseNotes": [
+          "DELTA Flight FLC Leadership Course Lucas"
+        ],
+        "merchant": "DELTA AIR   0062297849533",
+        "date": "2025-01-13"
+      }
+    },
+    {
+      "id": "TXN00044094",
+      "name": "Janice Lucas",
+      "status": "supported",
+      "reason": "Lucas/Com. Lucas is the named registration or flight/lodging recipient in Victoria Mullaney\u2019s booking notes. \u201cCom.\u201d was missed by the matcher.",
+      "participants": [
+        "Janice Lucas"
+      ],
+      "expected": {
+        "person": "MULLANEY, VICTORIA A",
+        "amount": 2100,
+        "purchaseNotes": [
+          "Delta Flight Change Lucas  FLC Leadership Course"
+        ],
+        "merchant": "DELTA AIR   0062298006549",
+        "date": "2025-01-17"
+      }
+    },
+    {
+      "id": "TXN00047721",
+      "name": "Janice Lucas",
+      "status": "supported",
+      "reason": "Lucas/Com. Lucas is the named registration or flight/lodging recipient in Victoria Mullaney\u2019s booking notes. \u201cCom.\u201d was missed by the matcher.",
+      "participants": [
+        "Janice Lucas"
+      ],
+      "expected": {
+        "person": "MULLANEY, VICTORIA A",
+        "amount": 58000,
+        "purchaseNotes": [
+          "Florida Housing Coalition Annual Conference Lucas"
+        ],
+        "merchant": "Florida Housing Coalit",
+        "date": "2025-06-14"
+      }
+    },
+    {
+      "id": "TXN00042578",
+      "name": "Jonathan Hayes",
+      "status": "supported",
+      "reason": "Hayes is the named registration recipient in Victoria Mullaney\u2019s or Lindsey Terry\u2019s booking notes.",
+      "participants": [
+        "Jonathan Hayes"
+      ],
+      "expected": {
+        "person": "TERRY, LINDSEY",
+        "amount": 35000,
+        "purchaseNotes": [
+          "FPL Symposium Reg Hayes"
+        ],
+        "merchant": "GULF POWER",
+        "date": "2024-11-08"
+      }
+    },
+    {
+      "id": "TXN00043188",
+      "name": "Jonathan Hayes",
+      "status": "supported",
+      "reason": "Hayes is the named registration recipient in Victoria Mullaney\u2019s or Lindsey Terry\u2019s booking notes.",
+      "participants": [
+        "Jonathan Hayes"
+      ],
+      "expected": {
+        "person": "MULLANEY, VICTORIA A",
+        "amount": 74500,
+        "purchaseNotes": [
+          "NLC Congressional City Conference Hayes"
+        ],
+        "merchant": "NATIONAL LE",
+        "date": "2024-12-03"
+      }
+    },
+    {
+      "id": "TXN00045570",
+      "name": "Jonathan Hayes",
+      "status": "supported",
+      "reason": "Hayes is the named registration recipient in Victoria Mullaney\u2019s or Lindsey Terry\u2019s booking notes.",
+      "participants": [
+        "Jonathan Hayes"
+      ],
+      "expected": {
+        "person": "MULLANEY, VICTORIA A",
+        "amount": 55000,
+        "purchaseNotes": [
+          "2025 Hayes FCCMA Registration"
+        ],
+        "merchant": "FLORIDA CITY AND COUNT",
+        "date": "2025-03-19"
+      }
+    },
+    {
+      "id": "TXN00045596",
+      "name": "Jonathan Hayes",
+      "status": "supported",
+      "reason": "Hayes is the named registration recipient in Victoria Mullaney\u2019s or Lindsey Terry\u2019s booking notes.",
+      "participants": [
+        "Jonathan Hayes"
+      ],
+      "expected": {
+        "person": "MULLANEY, VICTORIA A",
+        "amount": 52000,
+        "purchaseNotes": [
+          "FCCMA 2025 Hayes Registration"
+        ],
+        "merchant": "FLORIDA CITY AND COUNT",
+        "date": "2025-03-21"
+      }
+    },
+    {
+      "id": "TXN00042536",
+      "name": "Janice Lucas",
+      "status": "supported",
+      "reason": "Both Lucas and Hayes are explicitly named in this shared event/registration charge. Count the transaction once overall; any per-person half is an estimate.",
+      "participants": [
+        "Janice Lucas",
+        "Jonathan Hayes"
+      ],
+      "expected": {
+        "person": "MULLANEY, VICTORIA A",
+        "amount": 20000,
+        "purchaseNotes": [
+          "NLC City Summit Hayes & Lucas Sat Evening Event"
+        ],
+        "merchant": "NATIONAL LE",
+        "date": "2024-11-05"
+      }
+    },
+    {
+      "id": "TXN00042536",
+      "name": "Jonathan Hayes",
+      "status": "supported",
+      "reason": "Both Lucas and Hayes are explicitly named in this shared event/registration charge. Count the transaction once overall; any per-person half is an estimate.",
+      "participants": [
+        "Janice Lucas",
+        "Jonathan Hayes"
+      ],
+      "expected": {
+        "person": "MULLANEY, VICTORIA A",
+        "amount": 20000,
+        "purchaseNotes": [
+          "NLC City Summit Hayes & Lucas Sat Evening Event"
+        ],
+        "merchant": "NATIONAL LE",
+        "date": "2024-11-05"
+      }
+    },
+    {
+      "id": "TXN00045382",
+      "name": "Janice Lucas",
+      "status": "supported",
+      "reason": "Both Lucas and Hayes are explicitly named in this shared event/registration charge. Count the transaction once overall; any per-person half is an estimate.",
+      "participants": [
+        "Janice Lucas",
+        "Jonathan Hayes"
+      ],
+      "expected": {
+        "person": "MULLANEY, VICTORIA A",
+        "amount": 197000,
+        "purchaseNotes": [
+          "NLC City Summit Lucas / Hayes Registrations"
+        ],
+        "merchant": "NATIONAL LE",
+        "date": "2025-03-11"
+      }
+    },
+    {
+      "id": "TXN00045382",
+      "name": "Jonathan Hayes",
+      "status": "supported",
+      "reason": "Both Lucas and Hayes are explicitly named in this shared event/registration charge. Count the transaction once overall; any per-person half is an estimate.",
+      "participants": [
+        "Janice Lucas",
+        "Jonathan Hayes"
+      ],
+      "expected": {
+        "person": "MULLANEY, VICTORIA A",
+        "amount": 197000,
+        "purchaseNotes": [
+          "NLC City Summit Lucas / Hayes Registrations"
+        ],
+        "merchant": "NATIONAL LE",
+        "date": "2025-03-11"
+      }
+    },
+    {
+      "id": "TXN00054418",
+      "name": "Jonathan Hayes",
+      "status": "supported",
+      "reason": "Cables explicitly for Hayes, with City Manager office code 1200 in the note. This is an office purchase associated with Hayes, not personal expenditure.",
+      "participants": [
+        "Jonathan Hayes"
+      ],
+      "expected": {
+        "person": "WELLS, MOLLY",
+        "amount": 799,
+        "purchaseNotes": [
+          "Cables for Hayes 1200"
+        ],
+        "merchant": "Amazon",
+        "date": "2026-04-01"
+      }
+    },
+    {
+      "id": "TXN00042796",
+      "name": "Brian Grainger",
+      "status": "supported",
+      "reason": "Grainger is named in Victoria Mullaney\u2019s registration/refund note. Include credits as negative amounts, not additional spending.",
+      "participants": [
+        "Brian Grainger"
+      ],
+      "expected": {
+        "person": "MULLANEY, VICTORIA A",
+        "amount": -21488,
+        "purchaseNotes": [
+          "Hilton Refund FLC Policy Committee Conference Grainger"
+        ],
+        "merchant": "HILTON CONVENTION CTR",
+        "date": "2024-11-08"
+      }
+    },
+    {
+      "id": "TXN00045368",
+      "name": "Brian Grainger",
+      "status": "supported",
+      "reason": "Grainger is named in Victoria Mullaney\u2019s registration/refund note. Include credits as negative amounts, not additional spending.",
+      "participants": [
+        "Brian Grainger"
+      ],
+      "expected": {
+        "person": "MULLANEY, VICTORIA A",
+        "amount": 83500,
+        "purchaseNotes": [
+          "NLC City Summit 2025 Grainger Registration"
+        ],
+        "merchant": "NATIONAL LE",
+        "date": "2025-03-11"
+      }
+    },
+    {
+      "id": "TXN00045703",
+      "name": "Brian Grainger",
+      "status": "supported",
+      "reason": "Grainger is named in Victoria Mullaney\u2019s registration/refund note. Include credits as negative amounts, not additional spending.",
+      "participants": [
+        "Brian Grainger"
+      ],
+      "expected": {
+        "person": "MULLANEY, VICTORIA A",
+        "amount": -27500,
+        "purchaseNotes": [
+          "Grainger FLC Leadership Refund"
+        ],
+        "merchant": "FLORIDA LEAGUE OF CITI",
+        "date": "2025-03-25"
+      }
+    },
+    {
+      "id": "TXN00045043",
+      "name": "Josh Street",
+      "status": "supported",
+      "reason": "Victoria Mullaney\u2019s \u201cFPL Symposium Street Lodging\u201d identifies a booking recipient, not a road or hotel address. This is a record-specific match, not permission to match every use of Street.",
+      "participants": [
+        "Josh Street"
+      ],
+      "expected": {
+        "person": "MULLANEY, VICTORIA A",
+        "amount": 57800,
+        "purchaseNotes": [
+          "FPL Symposium Street Lodging"
+        ],
+        "merchant": "HOTEL EFFIE AUTOGRAPH",
+        "date": "2025-02-26"
+      }
+    },
+    {
+      "id": "TXN00051196",
+      "name": "David Collier",
+      "status": "supported",
+      "reason": "Stamps explicitly for Chief Collier and Assistant Chief Taylor. A half-share is an estimate, not a documented item price.",
+      "participants": [
+        "David Collier",
+        "Assistant Chief Taylor"
+      ],
+      "expected": {
+        "person": "PETERS, DONITA",
+        "amount": 1916,
+        "purchaseNotes": [
+          "Stamps for Chief Collier and Asst. Chief Taylor"
+        ],
+        "merchant": "Amazon",
+        "date": "2025-11-11"
+      }
+    },
+    {
+      "id": "TXN00043618",
+      "name": "Jared Jones",
+      "status": "likely",
+      "reason": "The secretary\u2019s note names only Jared. It likely refers to Jared Jones, but the receipt is needed to confirm.",
+      "participants": null,
+      "expected": {
+        "person": "MULLANEY, VICTORIA A",
+        "amount": 9398,
+        "purchaseNotes": [
+          "Amazon Receipt 30DEc24 Screen Protector Monitor Arm Jared"
+        ],
+        "merchant": "Amazon",
+        "date": "2024-12-21"
+      }
+    },
+    {
+      "id": "TXN00048280",
+      "name": "Jared Jones",
+      "status": "likely",
+      "reason": "The secretary\u2019s note names only Jared. It likely refers to Jared Jones, but the receipt is needed to confirm.",
+      "participants": null,
+      "expected": {
+        "person": "TERRY, LINDSEY",
+        "amount": 5014,
+        "purchaseNotes": [
+          "Amazon notebooks and speaker for JARED"
+        ],
+        "merchant": "Amazon",
+        "date": "2025-07-10"
+      }
+    },
+    {
+      "id": "TXN00049599",
+      "name": "Jared Jones",
+      "status": "likely",
+      "reason": "The secretary\u2019s note names only Jared. It likely refers to Jared Jones, but the receipt is needed to confirm.",
+      "participants": null,
+      "expected": {
+        "person": "TERRY, LINDSEY",
+        "amount": 4499,
+        "purchaseNotes": [
+          "Jared Screen Protector iPad"
+        ],
+        "merchant": "Amazon",
+        "date": "2025-09-04"
+      }
+    },
+    {
+      "id": "TXN00051978",
+      "name": "Jared Jones",
+      "status": "likely",
+      "reason": "The secretary\u2019s note names only Jared. It likely refers to Jared Jones, but the receipt is needed to confirm.",
+      "participants": null,
+      "expected": {
+        "person": "TERRY, LINDSEY",
+        "amount": 2095,
+        "purchaseNotes": [
+          "CMO-Jared Office Wall Clock"
+        ],
+        "merchant": "Amazon",
+        "date": "2025-12-14"
+      }
+    },
+    {
+      "id": "TXN00045675",
+      "name": "Jonathan Hayes",
+      "status": "likely",
+      "reason": "The secretary\u2019s note uses JH or Jonathan for an office item. It likely refers to Jonathan Hayes, but the receipt is needed to confirm.",
+      "participants": null,
+      "expected": {
+        "person": "MULLANEY, VICTORIA A",
+        "amount": 1781,
+        "purchaseNotes": [
+          "JH Phone Case"
+        ],
+        "merchant": "Amazon",
+        "date": "2025-03-25"
+      }
+    },
+    {
+      "id": "TXN00051116",
+      "name": "Jonathan Hayes",
+      "status": "likely",
+      "reason": "The secretary\u2019s note uses JH or Jonathan for an office item. It likely refers to Jonathan Hayes, but the receipt is needed to confirm.",
+      "participants": null,
+      "expected": {
+        "person": "TERRY, LINDSEY",
+        "amount": 2797,
+        "purchaseNotes": [
+          "Certificate Frame Jonathan's Office"
+        ],
+        "merchant": "Amazon",
+        "date": "2025-11-09"
+      }
+    },
+    {
+      "id": "TXN00048450",
+      "name": "Jonathan Hayes",
+      "status": "likely",
+      "reason": "The note likely refers to Hayes but combines his office item with shared supplies. His portion cannot be determined from the note.",
+      "participants": null,
+      "expected": {
+        "person": "TERRY, LINDSEY",
+        "amount": 7722,
+        "purchaseNotes": [
+          "Mints Coffee Creamer Frame for JH Office CMO Supplies"
+        ],
+        "merchant": "Amazon",
+        "date": "2025-07-16"
+      }
+    },
+    {
+      "id": "TXN00048758",
+      "name": "Jonathan Hayes",
+      "status": "likely",
+      "reason": "The note likely refers to Hayes but combines his office item with shared supplies. His portion cannot be determined from the note.",
+      "participants": null,
+      "expected": {
+        "person": "TERRY, LINDSEY",
+        "amount": 8639,
+        "purchaseNotes": [
+          "CMO Supplies Cups, Creamer and Printer Ink for Jonathan's Printer"
+        ],
+        "merchant": "Amazon",
+        "date": "2025-07-29"
+      }
+    },
+    {
+      "id": "TXN00052022",
+      "name": "Jonathan Hayes",
+      "status": "likely",
+      "reason": "The note likely refers to Hayes but combines his office item with shared supplies. His portion cannot be determined from the note.",
+      "participants": null,
+      "expected": {
+        "person": "TERRY, LINDSEY",
+        "amount": 4922,
+        "purchaseNotes": [
+          "JH Printer Ink CM Hooks"
+        ],
+        "merchant": "Amazon",
+        "date": "2025-12-16"
+      }
+    },
+    {
+      "id": "TXN00057320",
+      "name": "Brandy Waldron",
+      "status": "likely",
+      "reason": "The note says Brandy\u2019s office and code 1200. Brandy Waldron is the likely recipient; her full name is not recorded.",
+      "participants": null,
+      "expected": {
+        "person": "SCHWARTZ, DONALD R",
+        "amount": 37799,
+        "purchaseNotes": [
+          "TV for Brandy's Office 1200"
+        ],
+        "merchant": "Amazon",
+        "date": "2026-08-13"
+      }
+    },
+    {
+      "id": "TXN00046908",
+      "name": "Janice Lucas",
+      "status": "likely",
+      "reason": "The secretary\u2019s event-registration note says \u201cLucs,\u201d likely a misspelling of Lucas. The registration confirmation is needed.",
+      "participants": null,
+      "expected": {
+        "person": "MULLANEY, VICTORIA A",
+        "amount": 8000,
+        "purchaseNotes": [
+          "FSU NWFLC  Summer Event 2025  Lucs"
+        ],
+        "merchant": "FLORIDA STATE UNIV",
+        "date": "2025-05-08"
+      }
+    },
+    {
+      "id": "TXN00051850",
+      "name": "David Collier",
+      "status": "unresolved",
+      "reason": "Collier is named, but the item, beneficiary or individual share is unclear. An itemized receipt is needed.",
+      "participants": null,
+      "expected": {
+        "person": "DEMRO, HOWARD X",
+        "amount": 27900,
+        "purchaseNotes": [
+          "Chief Collier"
+        ],
+        "merchant": "Walmart",
+        "date": "2025-12-09"
+      }
+    },
+    {
+      "id": "TXN00052672",
+      "name": "David Collier",
+      "status": "unresolved",
+      "reason": "Collier is named, but the item, beneficiary or individual share is unclear. An itemized receipt is needed.",
+      "participants": null,
+      "expected": {
+        "person": "PETERS, DONITA",
+        "amount": 34999,
+        "purchaseNotes": [
+          "Demro/Collier"
+        ],
+        "merchant": "Amazon",
+        "date": "2026-01-21"
+      }
+    }
+  ]
+}

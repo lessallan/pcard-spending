@@ -9,5 +9,7 @@ for(const t of data.transactions){
  const associations=match({...t,comments:purchaseNotes(t.comments)}).people.filter(p=>allowed.has(p.name));
  if(associations.length)records[t.id]={cardholder:t.person,associations};
 }
-fs.writeFileSync('docs/leadership-associations.json',JSON.stringify({version:1,records}));
+const {applyNameReview}=require('./leadership-name-review.cjs');
+const reviewTransactions=data.transactions.map(t=>({...t,purchaseNotes:t.purchaseNotes||purchaseNotes(t.comments)}));
+fs.writeFileSync('docs/leadership-associations.json',JSON.stringify(applyNameReview({version:1,records},reviewTransactions)));
 console.log('Built leadership associations for '+Object.keys(records).length+' purchases.');
