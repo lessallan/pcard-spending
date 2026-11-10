@@ -17,6 +17,13 @@ for name, title in leadership['profiles']:
     profile = next(p for p in private['staff'] if p['name'] == name and p['title'] == title)
     public['staff'].append({key: profile[key] for key in ('name', 'title', 'departments', 'source_url')})
     public['staff'][-1]['email'] = None
+    photo = leadership.get('photos', {}).get(name)
+    if photo:
+        if Path(photo).name != photo:
+            raise ValueError('Leadership photo must be a filename')
+        (OUT / 'photos').mkdir(exist_ok=True)
+        shutil.copyfile(ROOT / 'assets/leadership' / photo, OUT / 'photos' / photo)
+        public['staff'][-1]['photo_file'] = 'photos/' + photo
 public['transactions'] = []
 for original in private['transactions']:
     transaction = {key: original[key] for key in fields}

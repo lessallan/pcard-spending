@@ -98,3 +98,27 @@
 !/docs/penny-ping-logo.png
 !/docs/porchping-logo.svg
 !/tools/check_public.cjs
+
+# Selected official leadership portraits only.
+!/assets/leadership/
+/assets/leadership/*
+!/docs/photos/
+/docs/photos/*
+!/assets/leadership/260.jpg
+!/docs/photos/260.jpg
+!/assets/leadership/259.jpg
+!/docs/photos/259.jpg
+!/assets/leadership/7.jpg
+!/docs/photos/7.jpg
+!/assets/leadership/5.jpg
+!/docs/photos/5.jpg
+!/assets/leadership/4.jpg
+!/docs/photos/4.jpg
+!/assets/leadership/104.jpg
+!/docs/photos/104.jpg
+!/assets/leadership/147.png
+!/docs/photos/147.png
+!/assets/leadership/91.jpg
+!/docs/photos/91.jpg
+!/assets/leadership/42.jpg
+!/docs/photos/42.jpg

@@ -8,7 +8,7 @@ approved = json.loads((root / 'app/leadership.json').read_text())
 assert len(approved['profiles']) == len(public['staff']) == 24
 assert len(set(p['name'] for p in public['staff'])) == 24
 assert [(p['name'], p['title']) for p in public['staff']] == [tuple(p) for p in approved['profiles']]
-assert all(set(p) == {'name','title','departments','source_url','email'} and p['email'] is None for p in public['staff'])
+assert all(set(p) == ({'name','title','departments','source_url','email'} | ({'photo_file'} if p['name'] in approved.get('photos', {}) else set())) and p['email'] is None for p in public['staff'])
 cardholders = set(approved['cardholders'].values())
 assert len(cardholders) == 21
 assert len(private['transactions']) == len(public['transactions']) == 16793
@@ -32,3 +32,11 @@ assert min(t['date'] for t in public['transactions']) == '2024-08-27'
 assert max(t['date'] for t in public['transactions']) == '2026-09-30'
 assert (root/'docs/CNAME').read_text().strip() == 'pennyping.app'
 print('Passed: 24 approved profiles, 21 exact cardholder links, no other identities/comments/flags, all accounting records/totals retained, dates and domain preserved.')
+
+for profile in public['staff']:
+    photo = approved.get('photos', {}).get(profile['name'])
+    if photo:
+        assert profile['photo_file'] == 'photos/' + photo
+        assert (root/'docs/photos'/photo).read_bytes() == (root/'assets/leadership'/photo).read_bytes()
+assert {p.name for p in (root/'docs/photos').iterdir()} == set(approved['photos'].values())
+print('Passed: all selected portraits published and no extra photos included.')
