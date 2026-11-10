@@ -360,7 +360,74 @@ const radarGroups=[
       "TXN00054802",
       "TXN00055287"
     ]
-  }
+  },
+{
+  "title": "Selected software subscriptions and Plaud device",
+  "context": true,
+  "reason": "Review active users, license counts, usage and renewal needs for Grammarly, SurveyMonkey, LinkedIn and Plaud. Includes the Plaud device and a $540 Grammarly credit. SurveyMonkey transaction TXN00049523 is included by merchant; it has no recorded purchase note. Annual renewals alone do not establish duplicate billing.",
+  "ids": [
+    "TXN00043082",
+    "TXN00044790",
+    "TXN00046143",
+    "TXN00047880",
+    "TXN00049523",
+    "TXN00051922",
+    "TXN00054641",
+    "TXN00055079",
+    "TXN00055186",
+    "TXN00055547",
+    "TXN00056232",
+    "TXN00058079"
+  ]
+},
+{
+  "title": "Charter Review meals and refreshments",
+  "context": true,
+  "reason": "Review catering frequency, attendance, per-person costs and receipts. Notes flag a receipt mismatch and a $35 tip not shown on a receipt. The total subtracts a $16.99 card credit. A separate note reports tax refunded in cash without an amount, so that cash refund is not deducted.",
+  "ids": [
+    "TXN00048834",
+    "TXN00049618",
+    "TXN00050793",
+    "TXN00050797",
+    "TXN00051797",
+    "TXN00052329",
+    "TXN00052748",
+    "TXN00053373",
+    "TXN00053376",
+    "TXN00053576",
+    "TXN00053704",
+    "TXN00054357",
+    "TXN00054621",
+    "TXN00054636",
+    "TXN00054663",
+    "TXN00054989",
+    "TXN00055753",
+    "TXN00056023",
+    "TXN00056041"
+  ]
+},
+{
+  "title": "Additional health-screening purchases",
+  "context": true,
+  "reason": "Review itemized receipts, attendance and the split between food and raffle giveaways. The $550 Drury Inns charge carries a health-screening note naming other vendors; its actual purpose needs receipt confirmation. Previously listed wellness prizes are not included in this selection.",
+  "ids": [
+    "TXN00053414",
+    "TXN00053418",
+    "TXN00053441",
+    "TXN00053464"
+  ]
+},
+{
+  "title": "Dover Kohl meeting meals",
+  "context": true,
+  "reason": "Four lunch and dinner charges associated with Dover Kohl meetings. Review attendance, per-person costs and the approved meeting purpose; the notes alone do not establish unnecessary spending.",
+  "ids": [
+    "TXN00052688",
+    "TXN00052723",
+    "TXN00054468",
+    "TXN00054488"
+  ]
+}
 ];
 function radarReport(ts){
  const lookup=new Map(ts.map(t=>[t.id,t]));
