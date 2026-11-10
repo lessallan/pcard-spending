@@ -449,7 +449,7 @@ function purchaseExplanation(t,compact=false){
 function transactionRow(t,{evidence=null,alsoIn=[],travel=false}={}){
  const amount=travel?t.amount:(t.scoped??t.amount),full=t.fullAmount??t.amount;
  const notes=t.purchaseNotes??evidence??[];
- return `<tr class="transaction-row"><td data-label="Transaction / purchase date"><button type="button" class="link transaction-title" data-detail="${esc(t.id)}">${esc(transactionTitle(t))}</button><span class="fine">${esc(purchaseDateLabel(t.date))} · ${esc(t.id)}</span>${full<0?'<span class="fine">Credit / refund</span>':''}</td><td data-label="Cardholder">${esc(displayName(selectedLeader?leadershipPayer(t):t.person))}${selectedLeader?leadershipEvidence(t,selectedLeader):''}<span class="fine">${[...new Set((t.allocations||[]).map(a=>a.center))].map(c=>esc(centerLabel(c))).join(', ')}</span></td><td data-label="Recorded merchant">${esc(t.merchant||t.raw)}<span class="fine">${esc(t.travel==='Not identified as travel'?t.category:t.travel||t.category||'')}</span>${notes.length?notes.map(note=>`<span class="fine purchase-note-preview ${evidence?'radar-note':''}">Recorded note: ${esc(note)}</span>`).join(''):'<span class="fine">Purchase details not specified in the comments.</span>'}${alsoIn.length?`<span class="fine">Also included in: ${alsoIn.map(esc).join('; ')}. The overall Radar total counts this purchase once.</span>`:''}${travel?`<span class="fine">${esc(transactionTravelAnalysis(t)?.kind||'Purpose not identified')} · ${esc(t.tripStatus||'Ungrouped')}</span>`:''}</td><td class="num" data-label="Amount">${exact(amount)}${amount!==full||t.fullAmount!==undefined?`<span class="fine">${exact(full)} full charge${t.fullAmount!==undefined?' · estimated share':''}</span>`:''}</td></tr>`;
+ return `<tr class="transaction-row"><td data-label="Transaction / purchase date"><button type="button" class="link transaction-title" data-detail="${esc(t.id)}">${esc(transactionTitle(t))}</button><span class="fine">${esc(purchaseDateLabel(t.date))} · ${esc(t.id)}</span>${full<0?'<span class="fine">Credit / refund</span>':''}</td><td data-label="Cardholder">${esc(displayName(selectedLeader?leadershipPayer(t):t.person))}${selectedLeader?leadershipEvidence(t,selectedLeader):purchaseAllocationSummary(t.fullAmount===undefined?t:{...t,amount:t.fullAmount})}<span class="fine">${[...new Set((t.allocations||[]).map(a=>a.center))].map(c=>esc(centerLabel(c))).join(', ')}</span></td><td data-label="Recorded merchant">${esc(t.merchant||t.raw)}<span class="fine">${esc(t.travel==='Not identified as travel'?t.category:t.travel||t.category||'')}</span>${notes.length?notes.map(note=>`<span class="fine purchase-note-preview ${evidence?'radar-note':''}">Recorded note: ${esc(note)}</span>`).join(''):'<span class="fine">Purchase details not specified in the comments.</span>'}${alsoIn.length?`<span class="fine">Also included in: ${alsoIn.map(esc).join('; ')}. The overall Radar total counts this purchase once.</span>`:''}${travel?`<span class="fine">${esc(transactionTravelAnalysis(t)?.kind||'Purpose not identified')} · ${esc(t.tripStatus||'Ungrouped')}</span>`:''}</td><td class="num" data-label="Amount">${exact(amount)}${amount!==full||t.fullAmount!==undefined?`<span class="fine">${exact(full)} full charge${t.fullAmount!==undefined?' · estimated share':''}</span>`:''}</td></tr>`;
 }
 function transactionTable(items,{travel=false,radar=false}={}){
  return `<div class="table-wrap ${radar?'radar-purchases':''}"><table class="transaction-table"><thead><tr><th scope="col">Transaction / purchase date</th><th scope="col">Cardholder</th><th scope="col">Recorded merchant</th><th scope="col" class="num">Amount</th></tr></thead><tbody>${items.map(item=>radar?transactionRow(item.t,{evidence:item.evidence,alsoIn:item.alsoIn}):transactionRow(item,{travel})).join('')}</tbody></table></div>`;
@@ -465,8 +465,17 @@ const leadershipCardholders={"Jared Jones": "JONES, BEAU J", "Allan Branch": "BR
 const unconfirmedLeadershipNames=new Set();
 function leadershipId(name){return name.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/-$/,'')}
 let leadershipAssociations={records:{}};
-// Reviewed meal attendee lists from recorded purchase notes; includes attendees without public profiles.
-const mealAttendees={
+// Reviewed purchase participant lists from recorded notes, across all expense types.
+// Full rosters override partial name matching. Card-payment contacts and refund processors are not beneficiaries.
+const purchaseParticipants={
+  "TXN00042630": [
+    "A. Calasso",
+    "M. Kelly"
+  ],
+  "TXN00043634": [
+    "B. McCloy",
+    "T. Casey"
+  ],
   "TXN00043907": [
     "Jonathan Hayes",
     "Brandy Waldron",
@@ -476,11 +485,27 @@ const mealAttendees={
     "Lori Sagehorn",
     "Joy Masters"
   ],
+  "TXN00045158": [
+    "Kristen Kennedy",
+    "Jonathan Hayes",
+    "Brian Grainger",
+    "Keith Meyerl"
+  ],
   "TXN00047408": [
     "Jonathan Hayes",
     "Brian Grainger",
     "Janice Lucas",
     "Allan Branch"
+  ],
+  "TXN00047799": [
+    "Jonathan Hayes",
+    "Robbie Hughes"
+  ],
+  "TXN00047815": [
+    "Allan Branch",
+    "Brian Grainger",
+    "Janice Lucas",
+    "Josh Street"
   ],
   "TXN00047915": [
     "Josh Street",
@@ -491,11 +516,32 @@ const mealAttendees={
     "Mike Burke",
     "Natalie McSwane"
   ],
-  "TXN00048339": [
-    "Allan Branch",
-    "Janice Lucas",
-    "Brian Grainger",
-    "Jonathan Hayes"
+  "TXN00048592": [
+    "Jonathan Hayes",
+    "Brandy Waldron",
+    "Jared Jones",
+    "Jan Smith",
+    "Natalie McSwane",
+    "Nevin J. Zimmerman",
+    "Josh Street"
+  ],
+  "TXN00048381": [
+    "Rodney Bland",
+    "Scott Colyer"
+  ],
+  "TXN00048834": [
+    "Jonathan Hayes",
+    "Jared Jones",
+    "Brandy Waldron",
+    "Nevin J. Zimmerman",
+    "Jan Smith",
+    "Kristen Kennedy",
+    "Caroline Smith",
+    "Brandon Burg",
+    "Brandon Henderson",
+    "Cecile Scoon",
+    "JP Ferreira",
+    "Ron Danzey"
   ],
   "TXN00049105": [
     "Bob Majka",
@@ -516,6 +562,23 @@ const mealAttendees={
     "Ian Crelling",
     "Jonathan Hayes"
   ],
+  "TXN00049618": [
+    "Brandon Burg",
+    "Brandon Henderson-Jansenius",
+    "JP Ferreira",
+    "Cecila Scoon",
+    "Ron Danzey",
+    "Jonathan Hayes",
+    "Nevin J. Zimmerman",
+    "Jan Smith",
+    "Caroline Smith"
+  ],
+  "TXN00050136": [
+    "Carlos Sanchez",
+    "Jared Jones",
+    "Mark Smith",
+    "Shawn Selph"
+  ],
   "TXN00050388": [
     "Sheila Ware",
     "Jonathan Hayes",
@@ -534,10 +597,40 @@ const mealAttendees={
     "Caroline Smith",
     "Jan Smith"
   ],
+  "TXN00051197": [
+    "Carlos Sanchez",
+    "Chris Forehand",
+    "Jared Jones",
+    "Jonathan Hayes",
+    "Mike Burke",
+    "Nevin J. Zimmerman",
+    "Robbie Hughes",
+    "Shawn Selph"
+  ],
+  "TXN00051365": [
+    "Jonathan Hayes",
+    "Stacy Rausch, P.E.",
+    "Matt DeVito",
+    "Jared Jones",
+    "Nevin J. Zimmerman",
+    "Michael Fuller",
+    "Kevin Kennoy",
+    "Cale Madden",
+    "Bob Majka",
+    "Joel Schubert",
+    "Clint Murphy",
+    "Ian Crelling",
+    "Heath Roberts",
+    "Jiwuan Haley"
+  ],
   "TXN00051897": [
     "Keith Meyerl",
     "Vickie Lewis",
     "Jared Jones"
+  ],
+  "TXN00051988": [
+    "Joseph Sullivan",
+    "Marcus Hodge"
   ],
   "TXN00052329": [
     "Brandon Burg",
@@ -549,6 +642,101 @@ const mealAttendees={
     "Nevin J. Zimmerman",
     "Caroline Smith",
     "Jan Smith"
+  ],
+  "TXN00052673": [
+    "Jonathan Hayes",
+    "Kristen Kennedy"
+  ],
+  "TXN00053250": [
+    "Brandy Waldron",
+    "Jan Lohse",
+    "Jared Jones",
+    "Priscilla Hagler",
+    "Samantha Perman",
+    "Shawn Selph"
+  ],
+  "TXN00053251": [
+    "Brandy Waldron",
+    "Jan Lohse",
+    "Jared Jones",
+    "Priscilla Hagler",
+    "Samantha Perman",
+    "Shawn Selph"
+  ],
+  "TXN00053254": [
+    "Brandy Waldron",
+    "Jan Lohse",
+    "Jared Jones",
+    "Priscilla Hagler",
+    "Samantha Perman",
+    "Shawn Selph"
+  ],
+  "TXN00053260": [
+    "Brandy Waldron",
+    "Jan Lohse",
+    "Jared Jones",
+    "Priscilla Hagler",
+    "Samantha Perman",
+    "Shawn Selph"
+  ],
+  "TXN00053269": [
+    "Brandy Waldron",
+    "Jan Lohse",
+    "Jared Jones",
+    "Priscilla Hagler",
+    "Samantha Perman",
+    "Shawn Selph"
+  ],
+  "TXN00053280": [
+    "Brandy Waldron",
+    "Jan Lohse",
+    "Jared Jones",
+    "Priscilla Hagler",
+    "Samantha Perman",
+    "Shawn Selph"
+  ],
+  "TXN00053282": [
+    "Brandy Waldron",
+    "Jan Lohse",
+    "Jared Jones",
+    "Priscilla Hagler",
+    "Samantha Perman",
+    "Shawn Selph"
+  ],
+  "TXN00053288": [
+    "Brandy Waldron",
+    "Jan Lohse",
+    "Jared Jones",
+    "Priscilla Hagler",
+    "Samantha Perman",
+    "Shawn Selph"
+  ],
+  "TXN00053291": [
+    "Brandy Waldron",
+    "Jan Lohse",
+    "Jared Jones",
+    "Priscilla Hagler",
+    "Samantha Perman",
+    "Shawn Selph"
+  ],
+  "TXN00053376": [
+    "Brandon Burg",
+    "Brandon Henderson",
+    "Caroline Smith",
+    "Cecile Scoon",
+    "Janette Smith",
+    "Jonathan Hayes",
+    "JP Ferreira",
+    "Nevin J. Zimmerman",
+    "Ron Danzey"
+  ],
+  "TXN00053528": [
+    "Carla Cloud",
+    "Cody Klingelhoets"
+  ],
+  "TXN00053690": [
+    "Nathan Hedden",
+    "Scott Colyer"
   ],
   "TXN00053704": [
     "Brandon Burg",
@@ -571,10 +759,24 @@ const mealAttendees={
     "Shawn Selph",
     "Keith Meyerl"
   ],
+  "TXN00053997": [
+    "Amanda Encinias",
+    "Lesli McDade"
+  ],
+  "TXN00054000": [
+    "Amanda Encinias",
+    "Lesli McDade"
+  ],
   "TXN00054059": [
     "Brandy Waldron",
     "Jared Jones",
     "Samantha Perman"
+  ],
+  "TXN00054293": [
+    "Michelle Zirkle",
+    "Jonathan Hayes",
+    "Nancy Anne",
+    "Nancy\u2019s co-worker"
   ],
   "TXN00054357": [
     "Brandon Burg",
@@ -587,6 +789,11 @@ const mealAttendees={
     "Jan Smith",
     "Nevin J. Zimmerman",
     "Caroline Smith"
+  ],
+  "TXN00054451": [
+    "Allan Branch",
+    "Jonathan Hayes",
+    "Josh Street"
   ],
   "TXN00054488": [
     "Jonathan Hayes",
@@ -602,6 +809,9 @@ const mealAttendees={
     "Clair Williams",
     "Nevin J. Zimmerman",
     "Joy Marler"
+  ],
+  "TXN00055160": [
+    "Vickie Lewis"
   ],
   "TXN00055452": [
     "Michael Fuller",
@@ -620,6 +830,12 @@ const mealAttendees={
     "Carlos Sanchez",
     "Clint Murphy"
   ],
+  "TXN00055663": [
+    "Robbie Hughes"
+  ],
+  "TXN00055770": [
+    "C. R. Smith"
+  ],
   "TXN00056041": [
     "Brandon Burg",
     "Brandon Henderson",
@@ -633,57 +849,46 @@ const mealAttendees={
     "Caroline Smith",
     "Doreen Geldert"
   ],
-  "TXN00048834": [
-    "Jonathan Hayes",
+  "TXN00058008": [
+    "Lisa Roberts",
+    "Nadia Dawson"
+  ],
+  "TXN00058015": [
+    "Amanda Scoggin"
+  ],
+  "TXN00058016": [
+    "Amanda Scoggin"
+  ],
+  "TXN00048339": [
+    "Allan Branch",
+    "Janice Lucas",
+    "Brian Grainger",
+    "Jonathan Hayes"
+  ],
+  "TXN00049491": [
     "Jared Jones",
     "Brandy Waldron",
-    "Nevin J. Zimmerman",
     "Jan Smith",
-    "Kristen Kennedy",
-    "Caroline Smith",
-    "Brandon Burg",
-    "Brandon Henderson",
-    "Cecile Scoon",
-    "JP Ferreira",
-    "Ron Danzey"
-  ],
-  "TXN00049618": [
-    "Brandon Burg",
-    "Brandon Henderson-Jansenius",
-    "JP Ferreira",
-    "Cecila Scoon",
-    "Ron Danzey",
-    "Jonathan Hayes",
     "Nevin J. Zimmerman",
-    "Jan Smith",
-    "Caroline Smith"
-  ],
-  "TXN00051365": [
+    "Shawn Selph",
     "Jonathan Hayes",
-    "Stacy Rausch, P.E.",
-    "Matt DeVito",
-    "Jared Jones",
-    "Nevin J. Zimmerman",
-    "Michael Fuller",
-    "Kevin Kennoy",
-    "Cale Madden",
-    "Bob Majka",
-    "Joel Schubert",
-    "Clint Murphy",
-    "Ian Crelling",
-    "Heath Roberts",
-    "Jiwuan Haley"
+    "Natalie McSwane"
+  ],
+  "TXN00044103": [
+    "Janice Lucas",
+    "Brian Grainger"
   ]
 };
-function leadershipShare(t,name,amount=t.scoped??t.amount){const attendees=mealAttendees[t.id];return attendees?(attendees.includes(name)?amount/attendees.length:0):amount}
-function mealShareLabel(t,name){const attendees=mealAttendees[t.id];if(!attendees)return '';return `<span class="fine meal-share"><strong>${attendees.includes(name)?'Estimated meal share: 1 of '+attendees.length+' attendees ('+(100/attendees.length).toFixed(2)+'%)':'Payment only: not listed as an attendee'}</strong> · ${exact(t.amount)} full charge. Equal split of the recorded attendee list; actual individual orders are unknown.</span>`}
+function leadershipShare(t,name,amount=t.scoped??t.amount){const attendees=purchaseParticipants[t.id];return attendees?(attendees.includes(name)?amount/attendees.length:0):amount}
+function purchaseShareLabel(t,name){const attendees=purchaseParticipants[t.id];if(!attendees)return '';return `<span class="fine meal-share"><strong>${attendees.includes(name)?'Estimated allocated share: 1 of '+attendees.length+' people ('+(100/attendees.length).toFixed(2)+'%)':'Payment / note reference only: not a listed recipient'}</strong> · ${exact(t.amount)} full charge. Equal split among the people associated with this purchase; actual individual costs are not recorded.</span>`}
+function purchaseAllocationSummary(t){const people=purchaseParticipants[t.id];if(!people||people.length<2)return '';return `<span class="fine purchase-allocation"><strong>Shared purchase · ${people.length} people · ${exact(t.amount/people.length)} each (estimated)</strong><br>${people.map(esc).join(' · ')}. Full recorded charge: ${exact(t.amount)}.</span>`}
 function leadershipAssociation(t,name){return leadershipAssociations.records[t.id]?.associations.find(a=>a.name===name)}
 function leadershipPayer(t){return leadershipAssociations.records[t.id]?.cardholder||t.person}
-function leadershipMatches(t,name){return t.person===leadershipCardholders[name]||!!leadershipAssociation(t,name)||!!mealAttendees[t.id]?.includes(name)}
+function leadershipMatches(t,name){return t.person===leadershipCardholders[name]||!!leadershipAssociation(t,name)||!!purchaseParticipants[t.id]?.includes(name)}
 function leadershipRecords(name){return data.transactions.filter(t=>leadershipMatches(t,name))}
 function leadershipEvidence(t,name){
  const a=leadershipAssociation(t,name);const own=leadershipPayer(t)===leadershipCardholders[name];
- return mealShareLabel(t,name)+`<span class="fine association-label">${own?'Paid on their card':'Paid on another person’s card'}${a?' · '+esc(a.relationship):''}</span>${a?`<span class="fine association-evidence">Recorded note: ${esc(a.evidence)}</span>`:''}`;
+ return purchaseShareLabel(t,name)+`<span class="fine association-label">${own?'Paid on their card':'Paid on another person’s card'}${a?' · '+esc(a.relationship):''}</span>${a?`<span class="fine association-evidence">Recorded note: ${esc(a.evidence)}</span>`:''}`;
 }
 function leadershipTotals(name,ts){
  const own=ts.filter(t=>leadershipPayer(t)===leadershipCardholders[name]),other=ts.filter(t=>leadershipPayer(t)!==leadershipCardholders[name]);
@@ -701,11 +906,11 @@ function leadershipIntro(name){
  const travelPerson=leadershipCardholders[name];
  const tripsLink=travelPerson&&data.transactions.some(t=>t.travel!=='Not identified as travel'&&travelRecipients(t).includes(travelPerson))?`<p><a href="#travel/person/${encodeURIComponent(travelPerson)}">View associated trips →</a></p>`:'';
  const source=profile?` · <a href="${esc(profile.source_url)}" target="_blank" rel="noopener">Official City profile ↗</a>`:'';
- return `<p><a href="#staff">← Back to City leadership</a></p>${reimbursementNotice}<p class="section-note">${esc(leadershipProfiles.find(p=>p[0]===name)[1])}${source}</p>${tripsLink}<div class="budget-note"><h3>Associated card charges</h3><p>Includes purchases on this leader’s card and purchases naming them in the notes, including bookings paid by another cardholder. Each purchase appears once on this profile. The recorded cardholder and matching note explain the association. Meals with reviewed attendee lists are split equally among all listed attendees, including those without profiles. Profile totals use the estimated share; full charges remain visible for reference. Other purchases retain their recorded associated charge, so totals across profiles should not be added together. Meals without a complete reviewed attendee list are not assumed to be individual meals.</p></div>`;
+ return `<p><a href="#staff">← Back to City leadership</a></p>${reimbursementNotice}<p class="section-note">${esc(leadershipProfiles.find(p=>p[0]===name)[1])}${source}</p>${tripsLink}<div class="budget-note"><h3>Associated card charges</h3><p>Includes purchases on this leader’s card and purchases naming them in the notes, including bookings paid by another cardholder. Each purchase appears once on this profile. The recorded cardholder and matching note explain the association. Purchases with reviewed participant lists are split equally among all associated people, including those without profiles, regardless of expense type. Profile totals use the estimated share; full charges remain visible for reference. Other purchases retain their recorded associated charge, so totals across profiles should not be added together. Names appearing only as payment contacts or refund processors do not receive a share.</p></div>`;
 }
 function staffView(){
  const q=(filters().search||'').toLowerCase();const staff=leadershipProfiles.map(([name,title])=>data.staff.find(s=>s.name===name&&s.title===title)).filter(Boolean).filter(s=>`${s.name} ${s.title} ${s.departments.join(' ')} ${s.email}`.toLowerCase().includes(q));
- return `${reimbursementNotice}<p class="section-note">Showing ${staff.length} of ${leadershipProfiles.length} leadership profiles. Only the 24 selected leadership profiles are named; other cardholders are not publicly identified. Roles come from the City directory imported November 9, 2026; they are not verified roles during FY25/FY26. Associated charges include their card purchases and purchases naming them in the notes. Meals with reviewed attendee lists use equal-share estimates. Other shared charges may appear on more than one profile and are not individual spending totals. Totals cover both supplied fiscal years; no match does not mean no costs.</p><div class="staff-grid">${staff.map(s=>{return `<article class="staff-person"><div class="staff-top">${s.photo_file?`<img class="avatar" src="./${esc(s.photo_file)}" alt="" loading="lazy">`:`<div class="avatar" aria-hidden="true">${esc(s.name.split(/\s+/).map(x=>x[0]).slice(0,2).join(''))}</div>`}<div><h3><a href="#leader/${leadershipId(s.name)}">${esc(s.name)}</a></h3><p>${esc(s.title==='Director'?s.departments.join(' · ')+' Director':s.title||'Title not published')}</p>${s.email?`<a class="staff-email" href="mailto:${esc(s.email)}">${esc(s.email)}</a>`:''}</div></div><p class="leadership-total">${esc(leadershipSummary(s.name))}</p></article>`}).join('')}</div>${!staff.length?'<p class="empty">No leadership profiles match this search. Clear the search to see all City leadership.</p>':''}`;
+ return `${reimbursementNotice}<p class="section-note">Showing ${staff.length} of ${leadershipProfiles.length} leadership profiles. Only the 24 selected leadership profiles are named; other cardholders are not publicly identified. Roles come from the City directory imported November 9, 2026; they are not verified roles during FY25/FY26. Associated charges include their card purchases and purchases naming them in the notes. Purchases with reviewed participant lists use equal-share estimates. Other shared charges may appear on more than one profile and are not individual spending totals. Totals cover both supplied fiscal years; no match does not mean no costs.</p><div class="staff-grid">${staff.map(s=>{return `<article class="staff-person"><div class="staff-top">${s.photo_file?`<img class="avatar" src="./${esc(s.photo_file)}" alt="" loading="lazy">`:`<div class="avatar" aria-hidden="true">${esc(s.name.split(/\s+/).map(x=>x[0]).slice(0,2).join(''))}</div>`}<div><h3><a href="#leader/${leadershipId(s.name)}">${esc(s.name)}</a></h3><p>${esc(s.title==='Director'?s.departments.join(' · ')+' Director':s.title||'Title not published')}</p>${s.email?`<a class="staff-email" href="mailto:${esc(s.email)}">${esc(s.email)}</a>`:''}</div></div><p class="leadership-total">${esc(leadershipSummary(s.name))}</p></article>`}).join('')}</div>${!staff.length?'<p class="empty">No leadership profiles match this search. Clear the search to see all City leadership.</p>':''}`;
 }
 
 function isHotel(t){return t.travel==='Hotels & lodging'}
@@ -787,7 +992,7 @@ function tripComparison(groups){
  const longest=groups.map(g=>({g,f:tripFacts(g)})).filter(x=>x.f.range).sort((a,b)=>b.f.range.days-a.f.range.days)[0];
  return `<details class="trip-comparison"><summary>Compare associated trip groups by cardholder</summary><p>Counts are suggested groups with positive, non-excluded charges, not verified trips taken. Only ${dated} of ${groups.length} groups have a single date range in the comments. Days below count distinct calendar dates in those ranges; missing dates are not zero days.</p>${longest?`<p><strong>Longest available date range: ${longest.f.range.days} days</strong> · ${esc(longest.g.label.split(' · purchases from ')[0].replace(' (hotel clue)',''))} · ${tripDateSpan(longest.f.range.start,longest.f.range.end)}. This is a comment-based estimate, not confirmed attendance.</p>`:''}<div class="table-wrap"><table><thead><tr><th>Cardholder</th><th>Associated groups</th><th>Groups with dates</th><th>Estimated days in dated groups</th></tr></thead><tbody>${ranked.map(r=>`<tr><td>${esc(displayName(r.person))}</td><td>${r.count}</td><td>${r.dated}</td><td>${r.dated?r.days.size:'Unknown'}</td></tr>`).join('')}</tbody></table></div></details>`;
 }
-function travelRecipients(t){const r=travelSnapshot.records[t.id];return r?.recipients?.length?r.recipients:[t.person].filter(Boolean)}
+function travelRecipients(t){const participants=purchaseParticipants[t.id];if(participants)return participants.map(name=>leadershipCardholders[name]||name);const r=travelSnapshot.records[t.id];return r?.recipients?.length?r.recipients:[t.person].filter(Boolean)}
 function travelShare(t,person){const names=[...new Set(travelRecipients(t))].sort();const i=names.indexOf(person);if(i<0)return 0;const n=Math.abs(t.amount);return Math.sign(t.amount)*(Math.floor(n/names.length)+(i<n%names.length?1:0))}
 function travelForPerson(t,person){return {...t,fullAmount:t.amount,amount:travelShare(t,person)}}
 function travelSummaryData(groups,transactions){
@@ -933,7 +1138,7 @@ function render(){
 function openDetail(id){
  const original=data.transactions.find(t=>t.id===id);if(!original)return;const t=view==='travel'?travelTransaction(original):original;selectedId=id;
  $('detail-title').textContent=transactionTitle(t);
- $('detail-body').innerHTML=`<p class="transaction-meta">${esc(purchaseDateLabel(t.date))} · <strong>${exact(t.amount)}</strong> · ${esc(t.id)}</p>${merchantLocationDetail(t)}${selectedLeader?leadershipEvidence(t,selectedLeader):''}${travelAnalysisHtml(t)}<dl class="detail-grid"><div><dt>Recorded merchant</dt><dd>${esc(t.raw)}</dd></div><div><dt>Cardholder</dt><dd>${esc(displayName(selectedLeader?leadershipPayer(t):t.person))}</dd></div><div><dt>Purchase / posted</dt><dd>${t.date} / ${t.post}</dd></div><div><dt>Source</dt><dd>${esc(t.source)} · ${esc(t.sheet)} · rows ${t.rows.join(', ')}</dd></div></dl><section class="purchase-context"><h3>About the company</h3>${companyDescription(t.merchant)}<h3>Purchase details from comments</h3>${purchaseExplanation(t)}</section><p class="section-note">P-card transactions only; separate expense reimbursements are not included. Cardholders may purchase for others.</p><h3>Accounting allocations</h3><div class="table-wrap"><table><thead><tr><th>Fund</th><th>Spending area</th><th>Account</th><th class="num">Amount</th></tr></thead><tbody>${t.allocations.map(a=>`<tr><td>${esc(a.fund)}</td><td>${esc(centerLabel(a.center))}</td><td>${esc(a.account)}</td><td class="num">${exact(a.amount)}</td></tr>`).join('')}</tbody></table></div>`;
+ $('detail-body').innerHTML=`<p class="transaction-meta">${esc(purchaseDateLabel(t.date))} · <strong>${exact(t.amount)}</strong> · ${esc(t.id)}</p>${merchantLocationDetail(t)}${selectedLeader?leadershipEvidence(t,selectedLeader):''}${purchaseAllocationSummary(t)}${travelAnalysisHtml(t)}<dl class="detail-grid"><div><dt>Recorded merchant</dt><dd>${esc(t.raw)}</dd></div><div><dt>Cardholder</dt><dd>${esc(displayName(selectedLeader?leadershipPayer(t):t.person))}</dd></div><div><dt>Purchase / posted</dt><dd>${t.date} / ${t.post}</dd></div><div><dt>Source</dt><dd>${esc(t.source)} · ${esc(t.sheet)} · rows ${t.rows.join(', ')}</dd></div></dl><section class="purchase-context"><h3>About the company</h3>${companyDescription(t.merchant)}<h3>Purchase details from comments</h3>${purchaseExplanation(t)}</section><p class="section-note">P-card transactions only; separate expense reimbursements are not included. Cardholders may purchase for others.</p><h3>Accounting allocations</h3><div class="table-wrap"><table><thead><tr><th>Fund</th><th>Spending area</th><th>Account</th><th class="num">Amount</th></tr></thead><tbody>${t.allocations.map(a=>`<tr><td>${esc(a.fund)}</td><td>${esc(centerLabel(a.center))}</td><td>${esc(a.account)}</td><td class="num">${exact(a.amount)}</td></tr>`).join('')}</tbody></table></div>`;
  if(view==='travel'){ $('detail-body').innerHTML+=tripReviewForm(t);bindTripReview(t) }
  $('detail').showModal();
 }
