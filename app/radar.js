@@ -241,6 +241,62 @@ const radarGroups=[
       "TXN00054789",
       "TXN00056280"
     ]
+  },
+  {
+    "title": "Rotunda displays",
+    "reason": "Historical objects, seasonal decorations and display supplies. What public purpose, display plan and budget supported these purchases?",
+    "context": true,
+    "ids": [
+      "TXN00042741",
+      "TXN00047365",
+      "TXN00047380",
+      "TXN00048255",
+      "TXN00049976"
+    ]
+  },
+  {
+    "title": "Public Works Halloween decorations",
+    "reason": "Two Amazon purchases two days apart. What event or workplace purpose and approved budget supported the decorations?",
+    "context": true,
+    "ids": [
+      "TXN00050291",
+      "TXN00050305"
+    ]
+  },
+  {
+    "title": "Wellness-event prizes",
+    "reason": "Five giveaway purchases, including resistance bands and a dehydrator. What items, recipients and health-program purpose supported the prizes?",
+    "context": true,
+    "ids": [
+      "TXN00052769",
+      "TXN00052783",
+      "TXN00052791",
+      "TXN00052803",
+      "TXN00052811"
+    ]
+  },
+  {
+    "title": "Refrigerators & ice makers",
+    "reason": "Two commercial refrigerators, two ice makers and a beverage refrigerator for the Mayor/Commissioners’ office. Locations, replacement reasons and usage would explain the need.",
+    "context": true,
+    "ids": [
+      "TXN00044783",
+      "TXN00050190",
+      "TXN00050889",
+      "TXN00051111",
+      "TXN00051479"
+    ]
+  },
+  {
+    "title": "Promotional supplies",
+    "reason": "Four purchases at Ninja Transfers. One note says the attached invoice does not match the transaction; later notes do not explain the resolution. Item descriptions, quantities and intended events need receipts.",
+    "context": true,
+    "ids": [
+      "TXN00056409",
+      "TXN00056420",
+      "TXN00056469",
+      "TXN00056573"
+    ]
   }
 ];
 function radarReport(ts){
@@ -252,6 +308,7 @@ function radarReport(ts){
 }
 // Match purchase descriptions only, never reviewer names or approval histories.
 const radarActivities=[
+ {id:'backpack-giveaway',title:'Backpack giveaway',type:'Program',pattern:/\bback\s*pack\s+giveaway\b/i,batches:'fy',note:'One purchase note identifies a donations project code. Funding has not been verified; these charges should not be described as taxpayer-funded discretionary spending without that context.'},
  {id:'station-1-kitchen',title:'Station 1 kitchen remodel',type:'Project',pattern:/\bstation\s*1\s*[-–:]?\s*kitchen\s*remodel\b|\bkitchen\s*remodel\s*[-–:]?\s*(?:fire\s+)?station\s*1\b/i,batches:'fy'},
  {id:'asap',title:'ASAP program',type:'Program',pattern:/\b(?:for\s+ASAP|ASAP\s+(?:snacks?|supplies|license|elevator|training|doorbell|building)|Glenwood\s+ASAP|GW\s+ASAP|Book Taco\s+ASAP|NAC Online renewal[^;]*\bASAP)\b/i,batches:'fy'},
  {id:'accreditation',title:'Accreditation',type:'Event / activity',pattern:/\baccreditation\b/i,batches:'month'},
@@ -272,5 +329,5 @@ function radarActivityPurchase({t,evidence}){
  return `<li><div class="radar-purchase-head"><button class="link" type="button" data-detail="${esc(t.id)}">${esc(t.raw||t.merchant)}</button><strong>${exact(radarActivityAmount(t))}</strong></div><p class="fine">${esc(purchaseDateLabel(t.date))} · ${esc(displayName(t.person))} · ${esc(t.id)}${t.amount<0?' · Credit / refund':''}</p><p class="fine">Recorded purchase notes</p>${evidence.map(note=>`<p class="radar-note">${esc(note)}</p>`).join('')}${radarActivityAmount(t)!==t.amount?`<p class="fine">${exact(t.amount)} full charge</p>`:''}</li>`;
 }
 function radarActivityContents(g){
- return `<p class="section-note">${g.batches==='month'?'Shown in purchase-month batches. Room numbers and refunds remain as recorded; other accreditation expenses can appear alongside lodging.':'Shown by posting fiscal year.'} Select a merchant to open the full transaction details and other recorded notes.</p>${radarActivityBatches(g).map(([key,items])=>`<section class="radar-activity-batch"><h3>${g.batches==='month'?'Purchases in '+esc(key):esc(key)+' postings'}</h3><p class="fine">${items.length} transactions · ${exact(items.reduce((n,r)=>n+radarActivityAmount(r.t),0))} net</p><ul class="radar-purchases">${items.sort((a,b)=>a.t.date.localeCompare(b.t.date)||a.t.id.localeCompare(b.t.id)).map(radarActivityPurchase).join('')}</ul></section>`).join('')}`;
+ return `${g.note?`<p class="radar-question">${esc(g.note)}</p>`:''}<p class="section-note">${g.batches==='month'?'Shown in purchase-month batches. Room numbers and refunds remain as recorded; other accreditation expenses can appear alongside lodging.':'Shown by posting fiscal year.'} Select a merchant to open the full transaction details and other recorded notes.</p>${radarActivityBatches(g).map(([key,items])=>`<section class="radar-activity-batch"><h3>${g.batches==='month'?'Purchases in '+esc(key):esc(key)+' postings'}</h3><p class="fine">${items.length} transactions · ${exact(items.reduce((n,r)=>n+radarActivityAmount(r.t),0))} net</p><ul class="radar-purchases">${items.sort((a,b)=>a.t.date.localeCompare(b.t.date)||a.t.id.localeCompare(b.t.id)).map(radarActivityPurchase).join('')}</ul></section>`).join('')}`;
 }
