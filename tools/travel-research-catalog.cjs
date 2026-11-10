@@ -1,5 +1,5 @@
-// Source-backed travel enrichment, reviewed 2026-11-10. Published event schedules are not traveler itineraries.
-const travelResearch = {
+// Reviewed travel evidence; schedules are not traveler itineraries.
+module.exports={
   "reviewed": "2026-11-10",
   "hotels": [
     {
@@ -145,6 +145,30 @@ const travelResearch = {
       "city": "Las Vegas, NV",
       "name": "Best Western Plus Casino Royale",
       "url": "https://www.casinoroyalehotel.com/"
+    },
+    {
+      "pattern": "^HAMPTON INN BARTOW FL$",
+      "city": "Bartow, FL",
+      "name": "Hampton Inn Bartow",
+      "url": "https://www.hilton.com/en/hotels/bowflhx-hampton-bartow/"
+    },
+    {
+      "pattern": "^HILTON BUENA VISTA PAL",
+      "city": "Lake Buena Vista, FL",
+      "name": "Hilton Orlando Buena Vista Palace",
+      "url": "https://www.hilton.com/en/hotels/mcobuhh-hilton-orlando-buena-vista-palace/hotel-location/"
+    },
+    {
+      "pattern": "^CROWNE PLAZA CHARLESTON$",
+      "city": "North Charleston, SC",
+      "name": "Crowne Plaza Charleston Airport",
+      "url": "https://www.ihg.com/crowneplaza/hotels/us/en/north-charleston/chssc/hoteldetail"
+    },
+    {
+      "pattern": "^HAMPTON INN STS MOBILE PP$",
+      "city": "Mobile, AL",
+      "name": "Hampton Inn & Suites Mobile, Providence Park address",
+      "url": "https://www.hilton.com/en/hotels/mobmchx-hampton-suites-mobile-airport-university-area/offers/senior-rate-2000000292/"
     }
   ],
   "events": [
@@ -446,7 +470,7 @@ const travelResearch = {
       "url": "https://members.flcities.com/FLC/FLC/Events/Event_Display.aspx?EventKey=IEMOLD0325"
     },
     {
-      "pattern": "chief[’\\x27]?s?\\s+conference",
+      "pattern": "chief[\u2019\\x27]?s?\\s+conference",
       "name": "FPCA Summer Conference 2025",
       "city": "Miami Beach, FL",
       "start": "2025-06-14",
@@ -527,7 +551,7 @@ const travelResearch = {
     },
     {
       "pattern": "FLC.*Policy Committee",
-      "name": "FLC Policy Committee · late 2024",
+      "name": "FLC Policy Committee \u00b7 late 2024",
       "city": "Orlando",
       "start": "2024-12-05",
       "end": "2024-12-06",
@@ -537,11 +561,11 @@ const travelResearch = {
   ],
   "notes": {
     "TXN00044102": "Conflicting event descriptions: the same record mentions both an Opal pension conference and HR Florida. Registration receipt is needed before choosing an event or destination.",
-    "TXN00050894": "Source conflict: comment says ICMA Chicago, while the hotel descriptor says Tampa. ICMA publishes Tampa for its October 25–29, 2025 annual conference. Preserve the original comment; Tampa is the better-supported interpretation.",
+    "TXN00050894": "Source conflict: comment says ICMA Chicago, while the hotel descriptor says Tampa. ICMA publishes Tampa for its October 25\u201329, 2025 annual conference. Preserve the original comment; Tampa is the better-supported interpretation.",
     "TXN00047075": "Source conflict: comment says Greenville NC; Westin Poinsett is in Greenville SC. Other May 16 visit notes also say SC. Keep both clues visible.",
     "TXN00050330": "Bundled lodging and member tuition. Accounting explicitly requested a breakdown; no allocation is supplied. Do not count the full amount as hotel room cost.",
     "TXN00053414": "Source conflict: merchant is Drury Inns, but comment describes health-screening food and raffle giveaways. Purchase purpose needs the itemized receipt.",
-    "TXN00043883": "Date conflict: GovOS comment spans 02.26.24–02.28.25, unlike the February 2025 dates in related records. Do not interpret this as a year-long stay.",
+    "TXN00043883": "Date conflict: GovOS comment spans 02.26.24\u201302.28.25, unlike the February 2025 dates in related records. Do not interpret this as a year-long stay.",
     "TXN00054981": "Fayetteville, NC economic-development visit; distinct from the May 2026 Strong Towns event in Fayetteville, AR.",
     "TXN00055260": "Record says the charge was disputed and never made. It is not evidence of a completed stay.",
     "TXN00056507": "Record says the charge was disputed and never made. It is not evidence of a completed stay.",
@@ -552,11 +576,15 @@ const travelResearch = {
     "TXN00045372": "The comment explicitly says UVC Ride. The merchant alone does not establish the operator identity or route.",
     "TXN00054333": "Membership and conference are bundled; the record does not split their amounts.",
     "TXN00053853": "Membership and conference are bundled; the record does not split their amounts.",
-    "TXN00054319": "Membership and conference are bundled; the record does not split their amounts."
+    "TXN00054319": "Membership and conference are bundled; the record does not split their amounts.",
+    "TXN00053043": "Lyft trip assignment pending: the note does not name a trip or destination. Obtain the referenced memo/receipt-replacement letter or itinerary. Nearby booking dates alone do not establish a ride destination or a shared trip.",
+    "TXN00055465": "Lyft trip assignment pending: the note does not name a trip or destination. Obtain the referenced memo/receipt-replacement letter or itinerary. Nearby booking dates alone do not establish a ride destination or a shared trip.",
+    "TXN00056257": "Lyft trip assignment pending: the note does not name a trip or destination. Obtain the referenced memo/receipt-replacement letter or itinerary. Nearby booking dates alone do not establish a ride destination or a shared trip.",
+    "TXN00056670": "Lyft trip assignment pending: the note does not name a trip or destination. Obtain the referenced memo/receipt-replacement letter or itinerary. Nearby booking dates alone do not establish a ride destination or a shared trip."
   },
   "nonTrip": {
     "TXN00041922": {
-      "kind": "Virtual training registration — no travel indicated",
+      "kind": "Virtual training registration \u2014 no travel indicated",
       "url": "https://fccma-members.flcities.com/FCCMA/FCCMA/Events/Event_Display.aspx?EventKey=FCCMAFS24",
       "text": "FCCMA identifies its November 21, 2024 Fall Symposium as a virtual Zoom event."
     }
@@ -564,7 +592,7 @@ const travelResearch = {
   "related": {
     "TXN00043596": {
       "city": "Austin, TX",
-      "name": "GovOS Conference · February 2025 (record-linked)",
+      "name": "GovOS Conference \u00b7 February 2025 (record-linked)",
       "ids": [
         "TXN00045022",
         "TXN00045069"
@@ -574,7 +602,7 @@ const travelResearch = {
     },
     "TXN00043855": {
       "city": "Austin, TX",
-      "name": "GovOS Conference · February 2025 (record-linked)",
+      "name": "GovOS Conference \u00b7 February 2025 (record-linked)",
       "ids": [
         "TXN00045022",
         "TXN00045069"
@@ -584,7 +612,7 @@ const travelResearch = {
     },
     "TXN00043883": {
       "city": "Austin, TX",
-      "name": "GovOS Conference · February 2025 (record-linked)",
+      "name": "GovOS Conference \u00b7 February 2025 (record-linked)",
       "ids": [
         "TXN00045022",
         "TXN00045069"
@@ -594,7 +622,7 @@ const travelResearch = {
     },
     "TXN00044430": {
       "city": "Austin, TX",
-      "name": "GovOS Conference · February 2025 (record-linked)",
+      "name": "GovOS Conference \u00b7 February 2025 (record-linked)",
       "ids": [
         "TXN00045022",
         "TXN00045069"
@@ -604,7 +632,7 @@ const travelResearch = {
     },
     "TXN00044445": {
       "city": "Austin, TX",
-      "name": "GovOS Conference · February 2025 (record-linked)",
+      "name": "GovOS Conference \u00b7 February 2025 (record-linked)",
       "ids": [
         "TXN00045022",
         "TXN00045069"
@@ -614,7 +642,7 @@ const travelResearch = {
     },
     "TXN00044962": {
       "city": "Austin, TX",
-      "name": "GovOS Conference · February 2025 (record-linked)",
+      "name": "GovOS Conference \u00b7 February 2025 (record-linked)",
       "ids": [
         "TXN00045022",
         "TXN00045069"
@@ -624,7 +652,7 @@ const travelResearch = {
     },
     "TXN00044975": {
       "city": "Austin, TX",
-      "name": "GovOS Conference · February 2025 (record-linked)",
+      "name": "GovOS Conference \u00b7 February 2025 (record-linked)",
       "ids": [
         "TXN00045022",
         "TXN00045069"
@@ -634,7 +662,7 @@ const travelResearch = {
     },
     "TXN00045022": {
       "city": "Austin, TX",
-      "name": "GovOS Conference · February 2025 (record-linked)",
+      "name": "GovOS Conference \u00b7 February 2025 (record-linked)",
       "ids": [
         "TXN00045022",
         "TXN00045069"
@@ -644,7 +672,7 @@ const travelResearch = {
     },
     "TXN00045032": {
       "city": "Austin, TX",
-      "name": "GovOS Conference · February 2025 (record-linked)",
+      "name": "GovOS Conference \u00b7 February 2025 (record-linked)",
       "ids": [
         "TXN00045022",
         "TXN00045069"
@@ -654,7 +682,7 @@ const travelResearch = {
     },
     "TXN00045069": {
       "city": "Austin, TX",
-      "name": "GovOS Conference · February 2025 (record-linked)",
+      "name": "GovOS Conference \u00b7 February 2025 (record-linked)",
       "ids": [
         "TXN00045022",
         "TXN00045069"
@@ -669,7 +697,7 @@ const travelResearch = {
         "TXN00049282"
       ],
       "url": "https://assetlifecycle.trimble.com/en/learn/innovate/conference-schedule",
-      "text": "Possible event association: same cardholder and Cityworks wording as TXN00049282, whose merchant explicitly identifies Trimble Innovate 2025. Published event: Salt Lake City, October 14–17. Booking dates are not travel dates."
+      "text": "Possible event association: same cardholder and Cityworks wording as TXN00049282, whose merchant explicitly identifies Trimble Innovate 2025. Published event: Salt Lake City, October 14\u201317. Booking dates are not travel dates."
     },
     "TXN00049316": {
       "city": "Salt Lake City",
@@ -678,7 +706,7 @@ const travelResearch = {
         "TXN00049282"
       ],
       "url": "https://assetlifecycle.trimble.com/en/learn/innovate/conference-schedule",
-      "text": "Possible event association: same cardholder and Cityworks wording as TXN00049282, whose merchant explicitly identifies Trimble Innovate 2025. Published event: Salt Lake City, October 14–17. Booking dates are not travel dates."
+      "text": "Possible event association: same cardholder and Cityworks wording as TXN00049282, whose merchant explicitly identifies Trimble Innovate 2025. Published event: Salt Lake City, October 14\u201317. Booking dates are not travel dates."
     },
     "TXN00049252": {
       "city": "Salt Lake City",
@@ -687,7 +715,7 @@ const travelResearch = {
         "TXN00049260"
       ],
       "url": "https://assetlifecycle.trimble.com/en/learn/innovate/conference-schedule",
-      "text": "Possible event association: same cardholder and Cityworks wording as TXN00049260, whose merchant explicitly identifies Trimble Innovate 2025. Published event: Salt Lake City, October 14–17. Booking dates are not travel dates."
+      "text": "Possible event association: same cardholder and Cityworks wording as TXN00049260, whose merchant explicitly identifies Trimble Innovate 2025. Published event: Salt Lake City, October 14\u201317. Booking dates are not travel dates."
     },
     "TXN00049290": {
       "city": "Salt Lake City",
@@ -696,7 +724,7 @@ const travelResearch = {
         "TXN00049260"
       ],
       "url": "https://assetlifecycle.trimble.com/en/learn/innovate/conference-schedule",
-      "text": "Possible event association: same cardholder and Cityworks wording as TXN00049260, whose merchant explicitly identifies Trimble Innovate 2025. Published event: Salt Lake City, October 14–17. Booking dates are not travel dates."
+      "text": "Possible event association: same cardholder and Cityworks wording as TXN00049260, whose merchant explicitly identifies Trimble Innovate 2025. Published event: Salt Lake City, October 14\u201317. Booking dates are not travel dates."
     },
     "TXN00049881": {
       "city": "Salt Lake City",
@@ -714,7 +742,7 @@ const travelResearch = {
         "TXN00049282"
       ],
       "url": "https://assetlifecycle.trimble.com/en/learn/innovate/conference-schedule",
-      "text": "Possible event association: same cardholder and Cityworks wording as TXN00049282, whose merchant explicitly identifies Trimble Innovate 2025. Published event: Salt Lake City, October 14–17. Booking dates are not travel dates."
+      "text": "Possible event association: same cardholder and Cityworks wording as TXN00049282, whose merchant explicitly identifies Trimble Innovate 2025. Published event: Salt Lake City, October 14\u201317. Booking dates are not travel dates."
     },
     "TXN00050635": {
       "city": "Salt Lake City",
@@ -723,9 +751,954 @@ const travelResearch = {
         "TXN00049282"
       ],
       "url": "https://assetlifecycle.trimble.com/en/learn/innovate/conference-schedule",
-      "text": "Possible event association: same cardholder and Cityworks wording as TXN00049282, whose merchant explicitly identifies Trimble Innovate 2025. Published event: Salt Lake City, October 14–17. Booking dates are not travel dates."
+      "text": "Possible event association: same cardholder and Cityworks wording as TXN00049282, whose merchant explicitly identifies Trimble Innovate 2025. Published event: Salt Lake City, October 14\u201317. Booking dates are not travel dates."
+    },
+    "TXN00055551": {
+      "city": "Fayetteville, AR",
+      "name": "Strong Towns National Gathering 2026",
+      "ids": [
+        "TXN00055583",
+        "TXN00055670"
+      ],
+      "url": "https://gathering.strongtowns.org/faq",
+      "text": "Suggested trip association: this Lyft charge shares Janice Lucas as cardholder and the surrounding conference travel period with TXN00055583, TXN00055670, whose notes explicitly identify the event. This charge reports a missing receipt. The trip link is inferred; rider, route, airport and service date remain unverified. Scooter descriptors remain scooter rides."
+    },
+    "TXN00055608": {
+      "city": "Fayetteville, AR",
+      "name": "Strong Towns National Gathering 2026",
+      "ids": [
+        "TXN00055583",
+        "TXN00055670"
+      ],
+      "url": "https://gathering.strongtowns.org/faq",
+      "text": "Suggested trip association: this Lyft charge shares Janice Lucas as cardholder and the surrounding conference travel period with TXN00055583, TXN00055670, whose notes explicitly identify the event. This charge reports a missing receipt. The trip link is inferred; rider, route, airport and service date remain unverified. Scooter descriptors remain scooter rides."
+    },
+    "TXN00055630": {
+      "city": "Fayetteville, AR",
+      "name": "Strong Towns National Gathering 2026",
+      "ids": [
+        "TXN00055583",
+        "TXN00055670"
+      ],
+      "url": "https://gathering.strongtowns.org/faq",
+      "text": "Suggested trip association: this Lyft charge shares Janice Lucas as cardholder and the surrounding conference travel period with TXN00055583, TXN00055670, whose notes explicitly identify the event. This charge reports a missing receipt. The trip link is inferred; rider, route, airport and service date remain unverified. Scooter descriptors remain scooter rides."
+    },
+    "TXN00057350": {
+      "city": "Hollywood, FL",
+      "name": "FLC Annual Conference 2026",
+      "ids": [
+        "TXN00057313",
+        "TXN00057405"
+      ],
+      "url": "https://flm-members.flcities.com/FLM/FLM/Event_Display.aspx?EventKey=FLMAUG26",
+      "text": "Suggested trip association: this Lyft charge shares Janice Lucas as cardholder and the surrounding conference travel period with TXN00057313, TXN00057405, whose notes explicitly identify the event. This charge reports a missing receipt. The trip link is inferred; rider, route, airport and service date remain unverified. Scooter descriptors remain scooter rides."
+    },
+    "TXN00057369": {
+      "city": "Hollywood, FL",
+      "name": "FLC Annual Conference 2026",
+      "ids": [
+        "TXN00057313",
+        "TXN00057405"
+      ],
+      "url": "https://flm-members.flcities.com/FLM/FLM/Event_Display.aspx?EventKey=FLMAUG26",
+      "text": "Suggested trip association: this Lyft charge shares Janice Lucas as cardholder and the surrounding conference travel period with TXN00057313, TXN00057405, whose notes explicitly identify the event. This charge reports a missing receipt. The trip link is inferred; rider, route, airport and service date remain unverified. Scooter descriptors remain scooter rides."
+    },
+    "TXN00057392": {
+      "city": "Hollywood, FL",
+      "name": "FLC Annual Conference 2026",
+      "ids": [
+        "TXN00057313",
+        "TXN00057405"
+      ],
+      "url": "https://flm-members.flcities.com/FLM/FLM/Event_Display.aspx?EventKey=FLMAUG26",
+      "text": "Suggested trip association: this Lyft charge shares Janice Lucas as cardholder and the surrounding conference travel period with TXN00057313, TXN00057405, whose notes explicitly identify the event. This charge reports a missing receipt. The trip link is inferred; rider, route, airport and service date remain unverified. Scooter descriptors remain scooter rides."
     }
+  },
+  "reviewedGroups": [
+    {
+      "key": "kenawy-prima-2026",
+      "name": "PRIMA conference \u00b7 June 2026",
+      "ids": [
+        "TXN00055893",
+        "TXN00055934",
+        "TXN00055914",
+        "TXN00055967",
+        "TXN00055976",
+        "TXN00055992",
+        "TXN00056008",
+        "TXN00056019",
+        "TXN00056028",
+        "TXN00056044",
+        "TXN00056073",
+        "TXN00056086",
+        "TXN00056102"
+      ],
+      "evidenceIds": [
+        "TXN00055934",
+        "TXN00056073"
+      ],
+      "reason": "Same cardholder; PRIMA fee on June 7 and June 7\u201313 rides, hotel and fuel all explicitly say the conference. The June 4 association fee is included as an association-related charge, not lodging. Attendance and full itinerary remain unverified.",
+      "city": "Fort Lauderdale, FL"
+    },
+    {
+      "key": "hayes-marina-2025",
+      "name": "West Palm Beach marina visit \u00b7 December 2025",
+      "ids": [
+        "TXN00051924",
+        "TXN00052093",
+        "TXN00052094",
+        "TXN00052117",
+        "TXN00052183",
+        "TXN00052191",
+        "TXN00052192",
+        "TXN00052203"
+      ],
+      "evidenceIds": [
+        "TXN00052093",
+        "TXN00052203"
+      ],
+      "reason": "Every note names the marina trip; West Palm Beach appears in seat-fee notes and the Marriott folio. The seat-fee credit reduces this group; it does not prove the whole trip was canceled.",
+      "city": "West Palm Beach, FL"
+    },
+    {
+      "key": "mefford-lights-2024",
+      "name": "Christmas-lights visit \u00b7 October 2024",
+      "ids": [
+        "TXN00042034",
+        "TXN00042025",
+        "TXN00042020",
+        "TXN00041949",
+        "TXN00041932",
+        "TXN00041858",
+        "TXN00041968",
+        "TXN00041929"
+      ],
+      "evidenceIds": [
+        "TXN00042025",
+        "TXN00041858"
+      ],
+      "reason": "Six records explicitly name the Christmas-lights trip. Two same-cardholder BRG charges say hotel parking on the hotel/visit dates. Destination is unresolved; the separate airfare with only Angie Bates in the note is not attached."
+    },
+    {
+      "key": "aldridge-asfpm-2025",
+      "name": "ASFPM conference \u00b7 May 2025",
+      "ids": [
+        "TXN00044548",
+        "TXN00047097",
+        "TXN00047138",
+        "TXN00047155",
+        "TXN00047219"
+      ],
+      "evidenceIds": [
+        "TXN00044548",
+        "TXN00047097"
+      ],
+      "reason": "Same cardholder and explicit ASFPM wording connect February registration with May 19\u201322 Sheraton parking. New Orleans is supported by the specific hotel descriptor.",
+      "city": "New Orleans, LA"
+    },
+    {
+      "key": "howard-pretreatment-2025",
+      "name": "Pretreatment class \u00b7 February 2025",
+      "ids": [
+        "TXN00044861",
+        "TXN00044884"
+      ],
+      "evidenceIds": [
+        "TXN00044861",
+        "TXN00044884"
+      ],
+      "reason": "Same cardholder; consecutive-day hotel booking fee and hotel charge both explicitly identify the pretreatment class. No location is assigned from the truncated booking descriptor."
+    },
+    {
+      "key": "mefford-lakecity-2025",
+      "name": "Lake City visit \u00b7 April 2025",
+      "ids": [
+        "TXN00046338",
+        "TXN00046695"
+      ],
+      "evidenceIds": [
+        "TXN00046338",
+        "TXN00046695"
+      ],
+      "reason": "Same cardholder; hotel and tax credit explicitly name Keith Mefford and Lake City. The credit records April 17\u201318 stay dates.",
+      "city": "Lake City, FL"
+    },
+    {
+      "key": "chapple-cityworks-2025",
+      "name": "Cityworks / Innovate \u00b7 October 2025",
+      "ids": [
+        "TXN00045762",
+        "TXN00049557",
+        "TXN00049550",
+        "TXN00050475",
+        "TXN00050625",
+        "TXN00050642",
+        "TXN00050660"
+      ],
+      "evidenceIds": [
+        "TXN00045762",
+        "TXN00050642"
+      ],
+      "reason": "Same cardholder; Cityworks registration and Salt Lake City hotel anchor the suggested trip. September 2 airfare and seat fee share the booking day; baggage on October 13/17 and airport parking on October 17 bracket the hotel date. Those ancillary links are probable, not receipt-confirmed.",
+      "city": "Salt Lake City"
+    },
+    {
+      "key": "chapple-trimble-2025",
+      "name": "Trimble conference \u00b7 November 2025",
+      "ids": [
+        "TXN00045894",
+        "TXN00045941",
+        "TXN00050261",
+        "TXN00051250",
+        "TXN00051288",
+        "TXN00051314",
+        "TXN00051550"
+      ],
+      "evidenceIds": [
+        "TXN00045894",
+        "TXN00050261",
+        "TXN00051288"
+      ],
+      "reason": "Trimble registration, flight and Venetian hotel explicitly identify the event. Same-cardholder rental says conference on November 13; airport parking follows November 14. Same hotel/day credit remains included as a credit.",
+      "city": "Las Vegas, NV"
+    },
+    {
+      "key": "chapple-esri-2026",
+      "name": "Esri conference \u00b7 July 2026",
+      "ids": [
+        "TXN00056450",
+        "TXN00056679",
+        "TXN00056790",
+        "TXN00056803",
+        "TXN00056810",
+        "TXN00056830"
+      ],
+      "evidenceIds": [
+        "TXN00056450",
+        "TXN00056790"
+      ],
+      "reason": "Esri flight and hotel notes anchor this cardholder\u2019s trip. Baggage on July 11/17, conference rental July 17 and airport parking July 17 fit the travel window. Ancillary connections remain inferred.",
+      "city": "San Diego, CA"
+    },
+    {
+      "key": "lightfoot-pwx-2025",
+      "name": "Lightfoot \u00b7 APWA PWX 2025",
+      "ids": [
+        "TXN00046394",
+        "TXN00048114",
+        "TXN00048218",
+        "TXN00048111",
+        "TXN00048115",
+        "TXN00048116",
+        "TXN00048130",
+        "TXN00048131",
+        "TXN00049161",
+        "TXN00049328"
+      ],
+      "evidenceIds": [
+        "TXN00046394",
+        "TXN00048114"
+      ],
+      "reason": "Same cardholder; explicit PWX registration/airfare anchor this edition. Airline fees or insurance share the booking date/airline, or bracket the conference/hotel dates; airport parking is an origin service. Ancillary links are probable, not verified itineraries.",
+      "city": "Chicago"
+    },
+    {
+      "key": "rausch-pwx-2025",
+      "name": "Rausch \u00b7 APWA PWX 2025",
+      "ids": [
+        "TXN00046422",
+        "TXN00046817",
+        "TXN00049353",
+        "TXN00049310",
+        "TXN00049334"
+      ],
+      "evidenceIds": [
+        "TXN00046422",
+        "TXN00046817",
+        "TXN00049353"
+      ],
+      "reason": "Same cardholder; explicit PWX registration/airfare anchor this edition. Airline fees or insurance share the booking date/airline, or bracket the conference/hotel dates; airport parking is an origin service. Ancillary links are probable, not verified itineraries.",
+      "city": "Chicago"
+    },
+    {
+      "key": "mandel-pwx-2025",
+      "name": "Mandel \u00b7 APWA PWX 2025",
+      "ids": [
+        "TXN00046420",
+        "TXN00046848",
+        "TXN00048647",
+        "TXN00049356",
+        "TXN00049195",
+        "TXN00049215",
+        "TXN00049348"
+      ],
+      "evidenceIds": [
+        "TXN00046420",
+        "TXN00046848",
+        "TXN00049356"
+      ],
+      "reason": "Same cardholder; explicit PWX registration/airfare anchor this edition. Airline fees or insurance share the booking date/airline, or bracket the conference/hotel dates; airport parking is an origin service. Ancillary links are probable, not verified itineraries.",
+      "city": "Chicago"
+    },
+    {
+      "key": "rausch-pwx-2026",
+      "name": "Rausch \u00b7 APWA PWX 2026",
+      "ids": [
+        "TXN00054923",
+        "TXN00056512",
+        "TXN00057821",
+        "TXN00056488",
+        "TXN00056515",
+        "TXN00056519",
+        "TXN00057815"
+      ],
+      "evidenceIds": [
+        "TXN00054923",
+        "TXN00056512",
+        "TXN00057821"
+      ],
+      "reason": "Same cardholder; explicit PWX registration/airfare anchor this edition. Airline fees or insurance share the booking date/airline, or bracket the conference/hotel dates; airport parking is an origin service. Ancillary links are probable, not verified itineraries.",
+      "city": "Houston, TX"
+    },
+    {
+      "key": "mandel-pwx-2026",
+      "name": "Mandel \u00b7 APWA PWX 2026",
+      "ids": [
+        "TXN00054934",
+        "TXN00055805",
+        "TXN00057025",
+        "TXN00057696",
+        "TXN00057847",
+        "TXN00055777",
+        "TXN00057626",
+        "TXN00057643",
+        "TXN00057645",
+        "TXN00057674",
+        "TXN00057723",
+        "TXN00057777"
+      ],
+      "evidenceIds": [
+        "TXN00054934",
+        "TXN00055805",
+        "TXN00057847"
+      ],
+      "reason": "Same cardholder; explicit PWX registration/airfare anchor this edition. Airline fees or insurance share the booking date/airline, or bracket the conference/hotel dates; airport parking is an origin service. Ancillary links are probable, not verified itineraries.",
+      "city": "Houston, TX"
+    },
+    {
+      "key": "devito-pwx-2026",
+      "name": "DeVito \u00b7 APWA PWX 2026",
+      "ids": [
+        "TXN00054896",
+        "TXN00055131",
+        "TXN00056702",
+        "TXN00057843",
+        "TXN00057694",
+        "TXN00057824"
+      ],
+      "evidenceIds": [
+        "TXN00054896",
+        "TXN00055131",
+        "TXN00057843"
+      ],
+      "reason": "Same cardholder; explicit PWX registration/airfare anchor this edition. Airline fees or insurance share the booking date/airline, or bracket the conference/hotel dates; airport parking is an origin service. Ancillary links are probable, not verified itineraries.",
+      "city": "Houston, TX"
+    },
+    {
+      "key": "cloud-newworld-2026",
+      "name": "Cloud / Klingelhoets \u00b7 New World conference 2026",
+      "ids": [
+        "TXN00053508",
+        "TXN00053528",
+        "TXN00053542",
+        "TXN00053545",
+        "TXN00054519",
+        "TXN00054630",
+        "TXN00054644"
+      ],
+      "evidenceIds": [
+        "TXN00053528",
+        "TXN00054644"
+      ],
+      "reason": "Registration and hotel notes name Carla and Cody; Carla\u2019s April 6/10 baggage notes abbreviate the same conference as NW. Separate hotel charges are preserved, not assumed duplicate.",
+      "city": "Las Vegas, NV"
+    },
+    {
+      "key": "robinson-march-2026",
+      "name": "Robinson \u00b7 mechanic training \u00b7 March 9\u201314 purchases",
+      "ids": [
+        "TXN00053806",
+        "TXN00053939",
+        "TXN00053953",
+        "TXN00053963",
+        "TXN00053965",
+        "TXN00053980",
+        "TXN00053925",
+        "TXN00053946",
+        "TXN00053734"
+      ],
+      "evidenceIds": [
+        "TXN00053806",
+        "TXN00053963",
+        "TXN00053925"
+      ],
+      "reason": "Mechanic-training airfare/hotel/rental and named Robinson return flights support this episode. March 8/12 checked-bag charges bracket the flights. Later March/April training and ambiguous January advance flights remain separate. Chicago is a recorded flight origin, not proof of the training venue."
+    },
+    {
+      "key": "crutchfield-march-2026",
+      "name": "Crutchfield \u00b7 mechanic training \u00b7 March 9\u201313 purchases",
+      "ids": [
+        "TXN00053809",
+        "TXN00053930",
+        "TXN00053923",
+        "TXN00053938",
+        "TXN00053931",
+        "TXN00053971",
+        "TXN00052825"
+      ],
+      "evidenceIds": [
+        "TXN00053809",
+        "TXN00053930",
+        "TXN00053923",
+        "TXN00052825"
+      ],
+      "reason": "Mechanic-training airfare/hotel, explicitly named Crutchfield return flights/bag on Robinson\u2019s card, and rental protection explicitly dated March 9\u201313 support the link. Chicago is a recorded return-flight origin, not a verified training venue."
+    },
+    {
+      "key": "robinson-booking-march24-2026",
+      "name": "Robinson \u00b7 mechanic-training booking \u00b7 March 23\u201324",
+      "ids": [
+        "TXN00054163",
+        "TXN00054166",
+        "TXN00054179",
+        "TXN00054185",
+        "TXN00054216"
+      ],
+      "evidenceIds": [
+        "TXN00054163",
+        "TXN00054166",
+        "TXN00054185"
+      ],
+      "reason": "Booking fee and hotel notes cross-reference the exact $982.19 total less $17.99 fee. Airfare explicitly says mechanic training on the same booking day; insurance and rental protection are adjacent booking charges. Actual travel dates are unknown; this is not merged into the earlier or April trip."
+    },
+    {
+      "key": "robinson-april-2026",
+      "name": "Robinson \u00b7 mechanic training \u00b7 April 2026",
+      "ids": [
+        "TXN00054497",
+        "TXN00054534",
+        "TXN00054599",
+        "TXN00054607",
+        "TXN00054617",
+        "TXN00054629"
+      ],
+      "evidenceIds": [
+        "TXN00054534",
+        "TXN00054617"
+      ],
+      "reason": "April 6 rental gas and April 11 Hertz both name mechanic training; checked-bag fees bracket those dates on the same card. The receipt-duplication warning on TXN00054607 is preserved; charges are not removed as duplicates."
+    },
+    {
+      "key": "nguyen-backflow-2026",
+      "name": "Backflow training \u00b7 February 2026 reference",
+      "ids": [
+        "TXN00052721",
+        "TXN00055400"
+      ],
+      "evidenceIds": [
+        "TXN00052721",
+        "TXN00055400"
+      ],
+      "reason": "Same cardholder and specific backflow-training wording connect the January advance hotel purchase with a May toll explicitly referencing February training. Actual stay dates remain unknown; April toll without February wording remains separate."
+    },
+    {
+      "key": "campbell-airbnb-2025",
+      "name": "Airbnb booking HM4YFDQRE4 \u00b7 2025",
+      "ids": [
+        "TXN00048927",
+        "TXN00050432"
+      ],
+      "evidenceIds": [
+        "TXN00048927",
+        "TXN00050432"
+      ],
+      "reason": "Same cardholder and exact Airbnb booking reference connect purchase and partial credit. Destination, purpose and travel dates remain unresolved."
+    },
+    {
+      "key": "fuller-canceled-hotel-2025",
+      "name": "Hotel booking / cancellation \u00b7 January\u2013February 2025",
+      "ids": [
+        "TXN00044252",
+        "TXN00044970"
+      ],
+      "evidenceIds": [
+        "TXN00044970",
+        "TXN00044252"
+      ],
+      "reason": "Same cardholder, exact Residence Inn descriptor and equal/opposite $2,070.54 amounts; the negative record explicitly says transaction canceled. This is a booking adjustment, not evidence of a completed trip."
+    },
+    {
+      "key": "nix-canceled-hotel-2026",
+      "name": "Hotel booking / cancellation \u00b7 February 26, 2026",
+      "ids": [
+        "TXN00053506",
+        "TXN00053516",
+        "TXN00053524"
+      ],
+      "evidenceIds": [
+        "TXN00053506",
+        "TXN00053516",
+        "TXN00053524"
+      ],
+      "reason": "Same cardholder/day, exact hotel descriptor, equal/opposite hotel amounts and separate booking fee. Cancellation note supports linking these booking records; no completed trip or connection to the March Autocar stay is asserted."
+    },
+    {
+      "key": "swisher-booking-2025",
+      "name": "Radisson booking adjustments \u00b7 September\u2013October 2025",
+      "ids": [
+        "TXN00049825",
+        "TXN00050239",
+        "TXN00050297"
+      ],
+      "evidenceIds": [
+        "TXN00049825",
+        "TXN00050239",
+        "TXN00050297"
+      ],
+      "reason": "Same cardholder and exact RTI hotel descriptor; original hotel reservation, full credit and next-day replacement charge. Notes identify conference lodging but not which conference or city."
+    },
+    {
+      "key": "murphy-fdem-2026",
+      "name": "FDEM conference booking \u00b7 May\u2013June 2026",
+      "ids": [
+        "TXN00055430",
+        "TXN00055502",
+        "TXN00056123",
+        "TXN00055946"
+      ],
+      "evidenceIds": [
+        "TXN00055430",
+        "TXN00055502",
+        "TXN00056123",
+        "TXN00055946"
+      ],
+      "reason": "Same cardholder; FDEM car prepayment and hotel name the conference. Two explicit Avis prepayment refunds ($858.32 and $50) exactly offset the $908.32 prepayment. Later rental/toll records are not assigned without a clearer event or itinerary.",
+      "city": "Orlando"
+    },
+    {
+      "key": "moore-fpca-2024",
+      "name": "FPCA conference booking \u00b7 November 2024",
+      "ids": [
+        "TXN00042470",
+        "TXN00042412"
+      ],
+      "evidenceIds": [
+        "TXN00042470",
+        "TXN00042412"
+      ],
+      "reason": "Same cardholder and consecutive-day FPCA conference charge and explicit overpayment refund. Named attendees remain in the source notes; destination and event edition are unresolved."
+    },
+    {
+      "key": "sbdc-gary-2025",
+      "name": "SBDC 2025 booking / cancellation",
+      "ids": [
+        "TXN00043425",
+        "TXN00046880"
+      ],
+      "evidenceIds": [
+        "TXN00043425",
+        "TXN00046880"
+      ],
+      "reason": "Same cardholder, merchant, SBDC wording and equal/opposite $250 charges. Cancellation note is retained; later November registration is a separate episode."
+    },
+    {
+      "key": "scoggin-airbnb-refund",
+      "name": "Scoggin \u00b7 Palmetto booking / cancellation",
+      "ids": [
+        "TXN00047790",
+        "TXN00047955"
+      ],
+      "evidenceIds": [
+        "TXN00047790",
+        "TXN00047955"
+      ],
+      "reason": "Same cardholder and exact Airbnb booking code HMBY4BT5PH, with equal/opposite amounts eight days apart. Original booking names Palmetto and December dates; refund is not evidence of attendance.",
+      "city": "Palmetto, FL"
+    },
+    {
+      "key": "taylor-smokediver-refund",
+      "name": "Jacob Taylor \u00b7 Smoke Divers booking / cancellation",
+      "ids": [
+        "TXN00045501",
+        "TXN00047062"
+      ],
+      "evidenceIds": [
+        "TXN00045501",
+        "TXN00047062"
+      ],
+      "reason": "Original course names J. Taylor; same-cardholder and merchant refund explicitly names Jacob Taylor and says unable to attend. Vega\u2019s separate equal-priced registration is not included."
+    },
+    {
+      "key": "smith-waterrescue-refunds",
+      "name": "C. R. Smith \u00b7 water-rescue conference booking / cancellation",
+      "ids": [
+        "TXN00054668",
+        "TXN00055770",
+        "TXN00055953"
+      ],
+      "evidenceIds": [
+        "TXN00054668",
+        "TXN00055770",
+        "TXN00055953"
+      ],
+      "reason": "Same-cardholder and merchant registration names Christopher Ryan Smith; both credits identify his cancellation. Credits total $275 against a $500 original charge. The unexplained $225 difference remains visible; do not call this a full refund.",
+      "city": "South Bend, IN"
+    },
+    {
+      "key": "branning-insurance-refund",
+      "name": "Branning \u00b7 insurance purchase / refund",
+      "ids": [
+        "TXN00044206",
+        "TXN00044268"
+      ],
+      "evidenceIds": [
+        "TXN00044206",
+        "TXN00044268"
+      ],
+      "reason": "Same cardholder and insurance descriptor, equal/opposite amounts two days apart, explicit refund note. Trip and destination are unknown."
+    },
+    {
+      "key": "maedke-hilton-credit",
+      "name": "Maedke \u00b7 conference hotel booking / credit",
+      "ids": [
+        "TXN00048050",
+        "TXN00049255"
+      ],
+      "evidenceIds": [
+        "TXN00048050",
+        "TXN00049255"
+      ],
+      "reason": "Same cardholder and exact Hilton advance-purchase descriptor; the later note explicitly says credit/refund. $1,340.60 credit offsets most of $1,365.60 reservation; $25 remains unexplained. Destination and itinerary are not assigned."
+    },
+    {
+      "key": "maedke-uber-refund",
+      "name": "Maedke \u00b7 Uber fare / refund",
+      "ids": [
+        "TXN00056115",
+        "TXN00056245"
+      ],
+      "evidenceIds": [
+        "TXN00056115",
+        "TXN00056245"
+      ],
+      "reason": "Same cardholder and merchant, equal/opposite $9.96, and explicit Uber REFUND note. Destination and conference are unknown."
+    },
+    {
+      "key": "crutchfield-march27-2026",
+      "name": "Crutchfield \u00b7 mechanic training \u00b7 March 23\u201327 reference",
+      "ids": [
+        "TXN00052826",
+        "TXN00054337"
+      ],
+      "evidenceIds": [
+        "TXN00052826",
+        "TXN00054337"
+      ],
+      "reason": "Rental protection explicitly specifies March 23\u201327; same-cardholder March 27 rental says mechanic training. Distinct from the March 9\u201313 protection/flight/hotel episode."
+    },
+    {
+      "key": "murphy-swana-2025",
+      "name": "Murphy \u00b7 SWANA conference booking 2025",
+      "ids": [
+        "TXN00046913",
+        "TXN00047246",
+        "TXN00048638",
+        "TXN00048720"
+      ],
+      "evidenceIds": [
+        "TXN00046913",
+        "TXN00047246",
+        "TXN00048638",
+        "TXN00048720"
+      ],
+      "reason": "Same-cardholder registration and Hilton booking notes explicitly name SWANA. July 23 credit is same-day, same hotel descriptor as the reservation and says incorrect-charge refund. Purchase dates are not stay dates."
+    },
+    {
+      "key": "mcgowan-training-2025",
+      "name": "McGowan \u00b7 training expenses \u00b7 January 2025",
+      "ids": [
+        "TXN00044325",
+        "TXN00044339"
+      ],
+      "evidenceIds": [
+        "TXN00044325",
+        "TXN00044339"
+      ],
+      "reason": "Consecutive-day hotel and parking on the same card both explicitly say Travel/Training. Probable shared trip; city and dates remain unknown."
+    },
+    {
+      "key": "latorre-hardrock-2026",
+      "name": "Latorre \u00b7 Hard Rock hotel charges / credit \u00b7 July\u2013August 2026",
+      "ids": [
+        "TXN00056987",
+        "TXN00057122",
+        "TXN00057153",
+        "TXN00057734"
+      ],
+      "evidenceIds": [
+        "TXN00056987",
+        "TXN00057122",
+        "TXN00057153",
+        "TXN00057734"
+      ],
+      "reason": "Same cardholder and exact Hard Rock PMS descriptor; two nearby hotel charges and an equal/opposite $53.25 adjustment. Probable common booking; no city inferred from the generic Hard Rock name."
+    },
+    {
+      "key": "hayes-sc-visit-2024",
+      "name": "Greenville site visit \u00b7 December 2024",
+      "ids": [
+        "TXN00042514",
+        "TXN00042520",
+        "TXN00042537",
+        "TXN00042539",
+        "TXN00042545",
+        "TXN00042682",
+        "TXN00042691",
+        "TXN00042693",
+        "TXN00043599",
+        "TXN00043563",
+        "TXN00043566",
+        "TXN00043586",
+        "TXN00043588"
+      ],
+      "evidenceIds": [
+        "TXN00042539",
+        "TXN00043586",
+        "TXN00043588"
+      ],
+      "reason": "November bookings explicitly say SC Visit and name Hayes, Fuller or Collier; Collier\u2019s flight records December 15\u201318. December 18 hotel, rental and parking name the Greenville SC site visit. Flight-change notes say SC Visit but do not identify each passenger. Lodging-insurance charges on Mullaney\u2019s card name Collier and Fuller. Shared trip remains inferred.",
+      "city": "Greenville, SC"
+    }
+  ],
+  "sourceTopics": [
+    {
+      "name": "ManageEngine conference",
+      "pattern": "manage\\s*engine.*conference",
+      "days": 21
+    },
+    {
+      "name": "WEFTEC conference",
+      "pattern": "weftec[h]?\\s+conference",
+      "days": 21
+    },
+    {
+      "name": "SWANA conference",
+      "pattern": "\\bswana\\b",
+      "days": 21
+    },
+    {
+      "name": "ESRI conference",
+      "pattern": "\\besri\\b.*conference",
+      "days": 21
+    },
+    {
+      "name": "FRMA conference",
+      "pattern": "\\bFRMA\\b|FL Records Management Conference",
+      "days": 21
+    },
+    {
+      "name": "FASRO conference",
+      "pattern": "\\bFASRO\\b.*conference",
+      "days": 21
+    },
+    {
+      "name": "FAPA conference",
+      "pattern": "\\bFAPA\\b.*conference",
+      "days": 21
+    },
+    {
+      "name": "WCI conference",
+      "pattern": "\\bWCI\\b.*conference|work(?:ers.?|\\s+comp).*compensation.*conference|Work Comp Conference",
+      "days": 21
+    },
+    {
+      "name": "FPCA mid-winter conference",
+      "pattern": "mid.winter conference",
+      "days": 21
+    },
+    {
+      "name": "FPCA conference \u2014 edition unresolved",
+      "pattern": "\\bFPCA\\b.*conference",
+      "days": 21
+    },
+    {
+      "name": "DEMA conference",
+      "pattern": "\\bDEMA\\b",
+      "days": 21
+    },
+    {
+      "name": "FPL economic symposium",
+      "pattern": "Florida Power and Light Economic Symposium",
+      "days": 21
+    },
+    {
+      "name": "SBDC conference \u2014 edition unresolved",
+      "pattern": "\\bSBDC\\b.*conference",
+      "days": 21
+    },
+    {
+      "name": "FEPA conference",
+      "pattern": "\\bFEPA\\b.*conference",
+      "days": 21
+    },
+    {
+      "name": "National Hurricane Conference",
+      "pattern": "National Hurricane Conference",
+      "days": 21
+    },
+    {
+      "name": "Urban Forestry Institute",
+      "pattern": "Urban Forestry Institute",
+      "days": 21
+    },
+    {
+      "name": "FACE conference",
+      "pattern": "\\bFACE\\b.*conference",
+      "days": 21
+    },
+    {
+      "name": "Permit Tech Experience",
+      "pattern": "Permit Tech Experience",
+      "days": 21
+    },
+    {
+      "name": "Autocar plant visit",
+      "pattern": "auto\\s*car (?:tour|plant)",
+      "days": 7
+    },
+    {
+      "name": "Backflow training",
+      "pattern": "backflow.*(?:training|certification)",
+      "days": 7
+    },
+    {
+      "name": "Flood Symposium",
+      "pattern": "Flood Symposium",
+      "days": 21
+    },
+    {
+      "name": "Florida Civic Advance meeting",
+      "pattern": "Fl Civic Advance Meeting",
+      "days": 21
+    },
+    {
+      "name": "Asphalt conference",
+      "pattern": "Asphalt Conference",
+      "days": 21
+    },
+    {
+      "name": "ICSC conference",
+      "pattern": "\\bICSC\\b.*conference",
+      "days": 21
+    },
+    {
+      "name": "Tennessee Smoke Divers course",
+      "pattern": "Tennessee Smoke Divers",
+      "days": 21
+    },
+    {
+      "name": "Cummins service training",
+      "pattern": "Cummins Service Training",
+      "days": 21
+    },
+    {
+      "name": "NFPA standards meeting",
+      "pattern": "NFPA 2500 and 1006 Meetings",
+      "days": 21
+    },
+    {
+      "name": "Emerald Coast Fire Conference",
+      "pattern": "Emerald Coast.*Fire.*Emergency Conference",
+      "days": 21
+    },
+    {
+      "name": "FRPA education meeting",
+      "pattern": "\\bFRPA\\b.*(?:conference|meeting)",
+      "days": 21
+    },
+    {
+      "name": "FLGISA conference",
+      "pattern": "\\bFLGISA\\b.*conference",
+      "days": 21
+    },
+    {
+      "name": "Safety and Health Conference",
+      "pattern": "Safety and Health Conference",
+      "days": 21
+    },
+    {
+      "name": "Florida PE board exam",
+      "pattern": "Florida PE Board Exam",
+      "days": 21
+    },
+    {
+      "name": "Government Finance Officers conference \u2014 edition unresolved",
+      "pattern": "Government Financ(?:e|ial) Officers Association.*conference",
+      "days": 21
+    },
+    {
+      "name": "Florida Emergency Response training",
+      "pattern": "FL Emergency Response Training",
+      "days": 21
+    },
+    {
+      "name": "FFMA conference",
+      "pattern": "\\bFFMA\\b.*conference",
+      "days": 21
+    },
+    {
+      "name": "FPCA conference \u2014 edition unresolved",
+      "pattern": "FLORIDA POLICE CHIEFS.*conference",
+      "days": 21
+    },
+    {
+      "name": "NWFLC summer event",
+      "pattern": "\\bNWFLC\\b.*(?:event|conference)",
+      "days": 21
+    },
+    {
+      "name": "Tennessee Smoke Divers course",
+      "pattern": "Tennessee Smoke Diver Course",
+      "days": 21
+    }
+  ],
+  "travelers": {
+    "TXN00053923": [
+      "Jonathan Crutchfield"
+    ],
+    "TXN00053938": [
+      "Jonathan Crutchfield"
+    ],
+    "TXN00053931": [
+      "Jonathan Crutchfield"
+    ],
+    "TXN00053971": [
+      "Jonathan Crutchfield"
+    ],
+    "TXN00045501": [
+      "Jacob Taylor"
+    ],
+    "TXN00047062": [
+      "Jacob Taylor"
+    ],
+    "TXN00054668": [
+      "Christopher Ryan Smith"
+    ],
+    "TXN00055770": [
+      "Christopher Ryan Smith"
+    ],
+    "TXN00055953": [
+      "Christopher Ryan Smith"
+    ]
   }
 };
-
-module.exports=travelResearch;

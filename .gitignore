@@ -150,3 +150,6 @@
 !/tools/radar-reviewed-expectations.json
 
 !/tools/check_transaction_presentation.cjs
+
+# Travel backfill release regression checks.
+!/tools/check_travel_backfill_release.cjs

@@ -1,9 +1,78 @@
 const travelResearch=require('./travel-research-catalog.cjs');
-
+const reviewedTripById=new Map((travelResearch.reviewedGroups||[]).flatMap(g=>g.ids.map(id=>[id,g])));
+function displayName(s){return s||'Unknown traveler'}
+function tripDestination(t){return transactionTravelAnalysis(t).destinations[0]||null}
+function namedTripDestination(t){
+ const c=tripComment(t),raw=t.raw||'';
+ if(/\b(?:DC|D\.C\.)\s+(?:trip|rental|metrorail)|\btrip\s+(?:to\s+)?(?:DC|D\.C\.)\b/i.test(c))return 'Washington, DC';
+ if(!/greenville\s*,?\s*NC\b/i.test(c)&&(/\bgreenville\s*,?\s*SC\b|\bSC\s+Greenville\b/i.test(c)||/^(?:GREENVILLE PARKINGPOINSET|THE WESTIN POINSETT)$/i.test(raw)))return 'Greenville, SC';
+ return null;
+}
+function tripClue(t){
+ const text=tripComment(t);
+ if(travelNonTrip(t))return null;
+ const reviewed=reviewedTripById.get(t.id);
+ if(reviewed)return {name:reviewed.name,days:0,reason:reviewed.reason};
+ const related=travelResearch.related[t.id];
+ if(related)return {name:related.name,days:240,reason:related.text};
+ const researched=researchedEvents(t);
+ if(researched.length===1)return {name:researched[0].name,days:240,reason:'Event wording and purchase timing suggest this published edition; see transaction evidence. Attendance and travel dates remain unverified.'};
+ const events=[['APWA — event unspecified',/\bAPWA\b/i],['Brownfields Conference',/brownfields?/i],['Strong Towns',/strong\s*towns?/i],['GovOS Conference',/GovOS/i],['FBC-LEO',/FBC[ -]?LEO/i],['FRA — course / event unspecified',/\bFRA\b|Florida redevelopment/i],['FCCMA — training / event unspecified',/\bFCCMA\b/i],['Trimble — event unspecified',/trimble/i],['Cityworks — event unspecified',/city\s*works/i],['New World — event unspecified',/new world/i],['HR Florida',/HR\s*FL|HRFL|SHRM/i],['Florida Housing Coalition',/housing.*conf/i],['FPL Symposium',/FPL.*symposium/i],['Chief’s Conference',/\bchief[’\x27]?s?\s+conference\b/i],['IEMO II',/\bIEMO\s*(?:II|2)\b/i],['IEMO',/\bIEMO\b/i],['NLC Congressional City Conference',/\bNLC\s+(?:CCC|cong(?:ressional)?\b)/i],['NLC City Summit',/\bcity summitt?\b/i],['NLC — event unspecified',/\bNLC\b/i],['FGCU budget training',/\bFGCU\b|budget training/i],['FGFOA',/\bFGFOA\b/i],['FLC Leadership',/\bFLC\s+Leadership\b/i],['FLC Policy Committee',/\bFLC\s+Policy Committee\b/i],['FLC Annual Conference',/\bFLC\s+annual\s+conference\b/i],['FLC — event unspecified',/\bFLC\b|Florida League of Cities/i],['SHRUG',/\bSHRUG\b/i]];
+ const found=events.find(([,pattern])=>pattern.test(text));
+ if(found){const broad=/unspecified|^HR Florida$|^FPL Symposium$|^FRA|^APWA/.test(found[0]);return {name:found[0],days:broad?21:120,reason:'Shared event wording and people in comments; purchases within '+(broad?21:120)+' days of the first charge. Broad organization references use a shorter window to avoid combining separate meetings. Attendance remains unverified.'};}
+ const topic=(travelResearch.sourceTopics||[]).find(x=>new RegExp(x.pattern,'i').test((t.raw||'')+' '+text));
+ if(topic)return {name:topic.name,days:topic.days,reason:'Specific event or purpose wording in source notes; destination and actual travel dates require separate evidence.'};
+ const named=namedTripDestination(t);
+ if(named)return {name:named+' trip',days:named==='Washington, DC'?35:21,reason:'Explicit trip wording or specific Greenville property, matching traveler and bounded purchase window; inferred association, not confirmed attendance.'};
+ const city=text.match(/\b([A-Z][a-z]+(?: [A-Z][a-z]+){0,2}),\s*(FL|MA|GA|DC|NV|TX|NY)\b/);
+ if(city&&(t.travel&&t.travel!=='Not identified as travel'||/\b(?:travel|training|conference|lodging|hotel|flight)\b/i.test(text)))return {name:city[0],days:21,reason:'Shared destination wording and cardholder; purchases within 21 days of the first charge. Separate visits may be mixed.'};
+ const hotel=tripDestination(t);if(hotel)return {name:hotel+' (hotel clue)',days:21,reason:'Location clue in merchant or comments; purchases within 21 days. Separate stays may be mixed.'};
+ return null;
+}
+function suggestedTrips(transactions,peopleFor=t=>[t.person]){
+ const groups=[],assigned=new Map();
+ const records=transactions.map(t=>({t,clue:tripClue(t),names:peopleFor(t),range:tripDateRange(t)})).filter(r=>r.clue&&!reviewedTripById.has(r.t.id));
+ // Resolve generic FLC wording only if exactly one nearby specific event matches a named person.
+ for(const r of records){
+  if(r.clue.name!=='FLC — event unspecified'||!r.names.length)continue;
+  const events=[...new Set(records.filter(x=>/^FLC (Annual Conference(?: 20\d{2})?|Leadership(?: March 2025)?|Policy Committee)$/.test(x.clue.name)&&x.names.some(n=>r.names.includes(n))&&Math.abs(Date.parse(x.t.date)-Date.parse(r.t.date))<=120*86400000).map(x=>x.clue.name))];
+  if(events.length===1)r.clue={...r.clue,name:events[0],reason:'FLC wording and named people match one specific nearby event in the notes; association is estimated.'};
+ }
+ // Attach undated purchases only to one matching recorded itinerary near its dates.
+ // Candidate ranges are captured first so inferred attachments cannot create further links.
+ const dated=records.filter(r=>r.range);
+ for(const r of records.filter(r=>!r.range&&r.names.length)){
+  const candidates=dated.filter(x=>x.clue.name===r.clue.name&&x.names.some(n=>r.names.includes(n))&&Date.parse(r.t.date)>=Date.parse(x.range.start)-3*86400000&&Date.parse(r.t.date)<=Date.parse(x.range.end)+3*86400000);
+  const ranges=[...new Set(candidates.map(x=>x.range.start+'/'+x.range.end))];
+  if(ranges.length===1){r.range=candidates[0].range;r.clue={...r.clue,reason:'Inferred from matching trip clue and traveler, with purchase within three days of recorded travel dates. Supporting records: '+candidates.map(x=>x.t.id).join(', ')+'.'};}
+ }
+ for(const {t,clue,names,range} of records.sort((a,b)=>a.t.date.localeCompare(b.t.date)||a.t.id.localeCompare(b.t.id))){
+  const dateKey=range?range.start+'/'+range.end:null;
+  const candidates=groups.filter(g=>g.clue===clue.name&&
+   (names.length?g.names.some(n=>names.includes(n)):!g.names.length&&g.person===t.person)&&
+   (dateKey&&g.dateKey?dateKey===g.dateKey:!dateKey&&!g.dateKey&&Math.abs(Date.parse(t.date)-Date.parse(g.start))<=clue.days*86400000));
+  let g=candidates.length===1?candidates[0]:null;
+  if(!g){g={person:t.person,names:[...names],dateKey,clue:clue.name,start:t.date,label:`${clue.name} · ${names.join(', ')||'Traveler unknown; cardholder '+displayName(t.person)}${dateKey?' · stay '+dateKey:''} · purchases from ${t.date} · ${t.id}`,reason:clue.reason};groups.push(g)}
+  else g.names=[...new Set([...g.names,...names])];
+  assigned.set(t.id,g);
+ }
+ // Reviewed ID lists may connect advance bookings, cross-card payments and later refunds.
+ // Never add a non-member merely because it is nearby or uses the same merchant.
+ const byId=new Map(transactions.map(t=>[t.id,t]));
+ for(const reviewed of travelResearch.reviewedGroups||[]){
+  const members=reviewed.ids.map(id=>byId.get(id)).filter(t=>t&&!travelNonTrip(t));
+  // A partial dataset must contain every supporting record before applying the association.
+  if(!members.length||!reviewed.evidenceIds.every(id=>byId.has(id)))continue;
+  const names=[...new Set(members.flatMap(peopleFor))];
+  const g={clue:reviewed.name,names,start:members.map(t=>t.date).sort()[0],label:reviewed.name+' · reviewed '+reviewed.key,reason:'Reviewed suggested association: '+reviewed.reason+' Supporting records: '+reviewed.evidenceIds.join(', ')+'.'};
+  for(const t of members)assigned.set(t.id,g);
+ }
+ return assigned;
+}
 function tripComment(t){return (t.comments||[]).join(' ').replace(/\([^)]*\d{1,2}\/\d{1,2}\/\d{2}[^)]*\)/g,' ')}
 function tripDateRange(t){
  const months={JAN:1,FEB:2,MAR:3,APR:4,MAY:5,JUN:6,JUL:7,AUG:8,SEP:9,OCT:10,NOV:11,DEC:12};
- const text=tripComment(t).replace(/\b(\d{1,2})\s*(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)(?:[a-z]*)\s*(\d{4}|\d{2})?\b/gi,(_,d,m,y)=>months[m.toUpperCase()]+'/'+d+(y?'/'+y:''))
+ const text=tripComment(t).replace(/\b(\d{1,2})[- ]*(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)(?:[a-z]*)\s*(\d{4}|\d{2})?\b/gi,(_,d,m,y)=>months[m.toUpperCase()]+'/'+d+(y?'/'+y:''))
  .replace(/\b(\d{1,2})\.(\d{1,2})\.(\d{4}|\d{2})\b/g,'$1/$2/$3').replace(/[-–]\.(?=\d)/g,'-'),ranges=[];
  const pattern=/\b(\d{1,2})\/(\d{1,2})(?:\/(\d{4}|\d{2}))?\s*[-–]\s*(\d{1,2})\/(\d{1,2})(?:\/(\d{4}|\d{2})|,\s*(\d{4}))?\b/g;
  const year=v=>v?(+v<100?2000+(+v):+v):null;
@@ -55,7 +124,7 @@ function researchedEvents(t){
 }
 function travelPurpose(t){
  const raw=t.raw||'',c=tripComment(t),text=raw+' '+c,non=travelNonTrip(t);
- if(non)return {kind:non,clue:'Recorded purchase is not evidence of a trip'};
+ if(non)return {kind:non,clue:c};
  const rules=[
  ['Membership and conference — allocation unknown',/memberships? and conference/i],
  ['Training materials',/training books/i],
@@ -98,7 +167,7 @@ function travelLocationClues(t){
  const h=travelResearch.hotels.find(h=>new RegExp(h.pattern,'i').test(raw));
  if(h)add(h.city,'Probable property match: '+h.name+'.',h.url);
  // Specific city names and documented abbreviations. No geolocation from generic chain names.
- const cities=[['Orlando',/\borlando\b/i],['Tampa',/\btampa\b/i],['Atlanta',/\batlanta\b/i],['Boston',/\bboston\b/i],['Chicago',/\bchicago\b/i],['Denver',/\bdenver\b/i],['Salt Lake City',/salt lake city/i],['Jacksonville',/jacksonv/i],['Miami',/\bmiami\b/i],['West Palm Beach, FL',/west pl?am beach|west palm|\bw palm beach/i],['Fort Myers, FL',/fort myers|ft\.? myers|fort mye/i],['St. Augustine, FL',/st\.? augustin/i],['Daytona Beach, FL',/daytona|hard rock hotel dayton/i],['Pensacola',/pensacol/i],['Tallahassee',/tallahasse|hilton tall\b/i],['Gainesville, FL',/gainesville|gainsville/i],['Houston, TX',/housto/i],['New Orleans, LA',/new orleans/i],['Indianapolis, IN',/indianapolis/i],['Sarasota, FL',/sarasota/i],['Ocala, FL',/\bocala\b/i],['Gettysburg, PA',/gettysburg/i],['Fort Pierce, FL',/fort pierce/i],['Fayetteville, NC',/fayetteville\s*,?\s*NC\b/i],['Greenville, SC',/green(?:s)?ville\s*,?\s*SC\b/i],['Greenville, NC',/greenville\s*,?\s*NC\b/i],['Austin, TX',/\baustin\b/i],['Palmetto, FL',/palmetto\s*,?\s*FL/i],['Kissimmee, FL',/kissimmee/i],['Las Vegas, NV',/\b(?:las )?vegas\b/i],['Panama City, FL',/panama city\s*,?\s*FL|^hotel indigo panama/i]];
+ const cities=[['Crestview, FL',/\bCrestview\s+FL\b/i],['Lake City, FL',/\bLake City\s+FL\b/i],['Orange Beach, AL',/\bOrange Beach,?\s*Al\b/i],['Orlando',/\borlando\b/i],['Tampa',/\btampa\b/i],['Atlanta',/\batlanta\b/i],['Boston',/\bboston\b/i],['Chicago',/\bchicago\b/i],['Denver',/\bdenver\b/i],['Salt Lake City',/salt lake city/i],['Jacksonville',/jacksonv/i],['Miami',/\bmiami\b/i],['West Palm Beach, FL',/west pl?am beach|west palm|\bw palm beach/i],['Fort Myers, FL',/fort myers|ft\.? myers|fort mye/i],['St. Augustine, FL',/st\.? augustin/i],['Daytona Beach, FL',/daytona|hard rock hotel dayton/i],['Pensacola',/pensacol/i],['Tallahassee',/tallahasse|hilton tall\b/i],['Gainesville, FL',/gainesville|gainsville/i],['Houston, TX',/housto/i],['New Orleans, LA',/new orleans/i],['Indianapolis, IN',/indianapolis/i],['Sarasota, FL',/sarasota/i],['Ocala, FL',/\bocala\b/i],['Gettysburg, PA',/gettysburg/i],['Fort Pierce, FL',/fort pierce/i],['Fayetteville, NC',/fayetteville\s*,?\s*NC\b/i],['Greenville, SC',/green(?:s)?ville\s*,?\s*SC\b|\bSC\s+Greenville\b/i],['Greenville, NC',/greenville\s*,?\s*NC\b/i],['Austin, TX',/\baustin\b/i],['Palmetto, FL',/palmetto\s*,?\s*FL/i],['Kissimmee, FL',/kissimmee/i],['Las Vegas, NV',/\b(?:las )?vegas\b/i],['Panama City, FL',/panama city\s*,?\s*FL|^hotel indigo panama/i]];
  const isTravel=!!(t.travel&&t.travel!=='Not identified as travel')||travelPurpose(t).kind!=='Purpose not identified'||/conference|training|trip|travel|class/i.test(comment);
  if(isTravel)for(const [city,re] of cities)if(re.test(h?comment:text))add(city,'Location wording: “'+(h?comment:text).match(re)[0]+'”; may describe a stop, origin, or destination.');
  // City/state pairs with punctuation, initials and reviewer metadata removed upstream.
@@ -120,11 +189,16 @@ function transactionTravelAnalysis(t){
  const match=kind!=='Purpose not identified';
  const destinations=[];
  const add=(city,text,url)=>{destinations.push(city);evidence.push({text,url});};
+ const reviewed=reviewedTripById.get(t.id);
+ if(reviewed){const note='Reviewed suggested association: '+reviewed.reason+' Supporting records: '+reviewed.evidenceIds.join(', ')+'.';if(reviewed.city)add(reviewed.city,note);else evidence.push({text:note});}
  if(travelResearch.notes[t.id])evidence.push({text:travelResearch.notes[t.id]});
  if(travelResearch.nonTrip[t.id])evidence.push(travelResearch.nonTrip[t.id]);
  if(travelNonTrip(t))return {kind,destinations:[],evidence,events:[]};
  const related=travelResearch.related[t.id];
  if(related)add(related.city,related.text,related.url);
+ const named=namedTripDestination(t);if(named)add(named,'Trip association clue: destination explicitly named in notes or a specific Greenville property descriptor.');
+ if(/^LAZ PARKING M06316WC$/i.test(raw))evidence.push({text:'Probable ECP airport parking: exact descriptor also appears on TXN00045361 and TXN00058093 with explicit ECP parking notes. This identifies an airport service, not the destination or a shared trip across cardholders.',url:'https://www.iflybeaches.com/airport-info/parking'});
+ if(t.tripReason)evidence.push({text:t.tripReason});
  const researched=researchedEvents(t);
  for(const clue of travelLocationClues(t))add(clue.city,clue.text,clue.url);
  for(const event of researched)add(event.city,'Possible event: '+event.name+' · '+event.city+' · '+(event.dateNote||('Published dates '+event.start+' to '+event.end))+'. '+event.editionBasis+'. Event dates do not establish travel dates.',event.url);
@@ -140,31 +214,6 @@ function transactionTravelAnalysis(t){
  if(kind==='Purpose not identified')evidence.push({text:'Purchase purpose unresolved: merchant and comments do not identify the item or service.'});
  return {kind,destinations:[...new Set(destinations.map(normalizeTripCity))],evidence,events:researched};
 }
-function tripDestination(t){return transactionTravelAnalysis(t).destinations[0]||null;}
 function normalizeTripCity(city){const m={'Tampa, FL':'Tampa','Orlando, FL':'Orlando','Tallahassee, FL':'Tallahassee','Pensacola, FL':'Pensacola','Miami, FL':'Miami','Chicago, IL':'Chicago','Denver, CO':'Denver','Atlanta, GA':'Atlanta','Boston, MA':'Boston','Salt Lake City, UT':'Salt Lake City','Jacksonville, FL':'Jacksonville'};return m[city]||city;}
-function tripDestinationLabel(value){
- const cities={'Atlanta':'Georgia','Boston':'Massachusetts','Chicago':'Illinois','Denver':'Colorado','Washington, DC':'District of Columbia','Salt Lake City':'Utah','Orlando':'Florida','Tampa':'Florida','Jacksonville':'Florida','Tallahassee':'Florida','Pensacola':'Florida','Miami':'Florida'};
- const states={FL:'Florida',MA:'Massachusetts',GA:'Georgia',DC:'District of Columbia',NV:'Nevada',TX:'Texas',NY:'New York'};
- const clean=value.replace(/ \(hotel clue\)$/,'');
- if(clean==='Washington, DC')return 'Washington, DC';
- if(cities[clean])return clean+', '+cities[clean];
- return clean.replace(/, (FL|MA|GA|DC|NV|TX|NY)$/,(_,state)=>', '+states[state]);
-}
 
-function tripClue(t){
- const text=tripComment(t);
- if(travelNonTrip(t))return null;
- const related=travelResearch.related[t.id];
- if(related)return {name:related.name,days:240,reason:related.text};
- const researched=researchedEvents(t);
- if(researched.length===1)return {name:researched[0].name,days:240,reason:'Event wording and purchase timing suggest this published edition; see transaction evidence. Attendance and travel dates remain unverified.'};
- const events=[['APWA — event unspecified',/\bAPWA\b/i],['Brownfields Conference',/brownfields?/i],['Strong Towns',/strong\s*towns?/i],['GovOS Conference',/GovOS/i],['FBC-LEO',/FBC[ -]?LEO/i],['FRA — course / event unspecified',/\bFRA\b|Florida redevelopment/i],['FCCMA — training / event unspecified',/\bFCCMA\b/i],['Trimble — event unspecified',/trimble/i],['Cityworks — event unspecified',/city\s*works/i],['New World — event unspecified',/new world/i],['HR Florida',/HR\s*FL|HRFL|SHRM/i],['Florida Housing Coalition',/housing.*conf/i],['FPL Symposium',/FPL.*symposium/i],['Chief’s Conference',/\bchief[’\x27]?s?\s+conference\b/i],['IEMO II',/\bIEMO\s*(?:II|2)\b/i],['IEMO',/\bIEMO\b/i],['NLC Congressional City Conference',/\bNLC\s+(?:CCC|cong(?:ressional)?\b)/i],['NLC City Summit',/\bcity summitt?\b/i],['NLC — event unspecified',/\bNLC\b/i],['FGCU budget training',/\bFGCU\b|budget training/i],['FGFOA',/\bFGFOA\b/i],['FLC Leadership',/\bFLC\s+Leadership\b/i],['FLC Policy Committee',/\bFLC\s+Policy Committee\b/i],['FLC Annual Conference',/\bFLC\s+annual\s+conference\b/i],['FLC — event unspecified',/\bFLC\b|Florida League of Cities/i],['SHRUG',/\bSHRUG\b/i]];
- const found=events.find(([,pattern])=>pattern.test(text));
- if(found){const broad=/unspecified|^HR Florida$|^FPL Symposium$|^FRA|^APWA/.test(found[0]);return {name:found[0],days:broad?21:120,reason:'Shared event wording and people in comments; purchases within '+(broad?21:120)+' days of the first charge. Broad organization references use a shorter window to avoid combining separate meetings. Attendance remains unverified.'};}
- const city=text.match(/\b([A-Z][a-z]+(?: [A-Z][a-z]+){0,2}),\s*(FL|MA|GA|DC|NV|TX|NY)\b/);
- if(city&&(t.travel&&t.travel!=='Not identified as travel'||/\b(?:travel|training|conference|lodging|hotel|flight)\b/i.test(text)))return {name:city[0],days:21,reason:'Shared destination wording and cardholder; purchases within 21 days of the first charge. Separate visits may be mixed.'};
- const hotel=tripDestination(t);if(hotel)return {name:hotel+' (hotel clue)',days:21,reason:'Location clue in merchant or comments; purchases within 21 days. Separate stays may be mixed.'};
- return null;
-}
-
-module.exports={tripClue,tripDateRange,transactionTravelAnalysis,travelNonTrip};
+module.exports={tripClue,tripDateRange,transactionTravelAnalysis,travelNonTrip,suggestedTrips};

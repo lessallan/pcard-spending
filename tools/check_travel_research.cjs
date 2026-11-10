@@ -20,3 +20,12 @@ assert.equal(r.tripDateRange(sample('02/30/25-03/02/25')),null);
 assert.equal(r.tripDateRange(t('TXN00049301')),null);
 assert.equal(r.transactionTravelAnalysis({raw:'LYFT RIDE SAT',comments:[],date:'2025-03-01'}).destinations.length,0);
 console.log('PASS: researched destinations, conflicting clues, purpose, exclusions, date validation and unknown destinations');
+const catalog=require('./travel-research-catalog.cjs'),snapshot=require('../docs/travel.json'),seen=new Set();
+for(const g of catalog.reviewedGroups){
+ const label=snapshot.records[g.ids[0]].group;
+ for(const id of g.ids){assert(!seen.has(id));seen.add(id);assert.equal(snapshot.records[id].group,label)}
+ assert.deepEqual(Object.entries(snapshot.records).filter(([,v])=>v.group===label).map(([id])=>id).sort(),g.ids.slice().sort());
+}
+assert.equal(catalog.reviewedGroups.length,39);assert.equal(seen.size,197);
+for(const record of Object.values(snapshot.records)){assert(!('comments' in record));assert(!('amount' in record))}
+console.log('PASS: 39 reviewed groups, 197 fixed memberships, no unrelated members and scoped snapshot schema');
