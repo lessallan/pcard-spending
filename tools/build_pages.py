@@ -1,4 +1,4 @@
-"""Build the public dashboard with only approved leadership identities."""
+"""Build the public dashboard with approved cardholder names and leadership profiles."""
 from pathlib import Path
 import json
 import shutil
@@ -10,7 +10,6 @@ for name in ('index.html', 'style.css', 'app.js', 'merchant-context.js', 'radar.
     shutil.copyfile(ROOT / 'app' / name, OUT / name)
 private = json.loads((ROOT / 'app/data.json').read_text())
 leadership = json.loads((ROOT / 'app/leadership.json').read_text())
-allowed_names = set(leadership['cardholders'].values())
 fields = ('id', 'fy', 'date', 'post', 'merchant', 'raw', 'category', 'amount', 'allocations', 'source', 'sheet', 'rows', 'travel', 'mixed', 'historical')
 public = {key: private[key] for key in ('checks', 'generated', 'policyStart')}
 public['staff'] = []
@@ -26,12 +25,12 @@ for name, title in leadership['profiles']:
         shutil.copyfile(ROOT / 'assets/leadership' / photo, OUT / 'photos' / photo)
         public['staff'][-1]['photo_file'] = 'photos/' + photo
 # Explicitly approved: extracted purchase notes may contain names/details from comments.
-# Raw histories, flags, cardholder identity allowlist and accounting fields stay unchanged.
+# Raw histories, flags, accounting fields stay unchanged; all recorded cardholder names were approved November 10, 2026.
 notes_by_id = json.loads(subprocess.check_output(['node', '-e', "const fs=require('fs');const {purchaseNotes}=require('./app/merchant-context.js');const d=JSON.parse(fs.readFileSync('app/data.json'));process.stdout.write(JSON.stringify(Object.fromEntries(d.transactions.map(t=>[t.id,purchaseNotes(t.comments)]))));"], cwd=ROOT))
 public['transactions'] = []
 for original in private['transactions']:
     transaction = {key: original[key] for key in fields}
-    transaction.update(person=original['person'] if original['person'] in allowed_names else '', comments=[], flags=[])
+    transaction.update(person=original['person'], hasSourceContext=bool(original['flags']), comments=[], flags=[])
     if transaction['category'] == 'Outside first-pass scope':
         transaction['category'] = 'Other purchases'
     transaction['purchaseNotes'] = notes_by_id[original['id']]
@@ -46,7 +45,7 @@ for relative, target in [('review/index.html', '../'), ('review/reports/merchant
     legacy = OUT / relative
     legacy.parent.mkdir(parents=True, exist_ok=True)
     legacy.write_text('<!doctype html><html lang="en"><meta charset="utf-8"><title>Penny Ping</title><meta http-equiv="refresh" content="0;url=' + target + '"><p><a href="' + target + '">Explore City spending</a></p></html>')
-print('Built public dashboard: approved leadership only; cardholder identities restricted; extracted purchase notes included; raw comments and flags excluded.')
+print('Built public dashboard: all approved cardholders; leadership profiles; extracted purchase notes included; raw comments and flags excluded.')
 
 subprocess.run(['node', 'tools/build_travel.cjs'], cwd=ROOT, check=True)
 

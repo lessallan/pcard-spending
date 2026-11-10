@@ -169,3 +169,6 @@
 !/skills/pcards-data-review/references/intake.md
 !/skills/pcards-data-review/references/research.md
 !/skills/pcards-data-review/references/validation-release.md
+
+# Explorer filters, drilldowns and staff directory regression check.
+!/tools/check_explorer_navigation.cjs
