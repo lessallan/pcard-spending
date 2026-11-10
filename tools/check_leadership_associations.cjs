@@ -16,3 +16,12 @@ const allowed=new Set(leadership.profiles.map(p=>p[0]));
 for(const [id,record] of Object.entries(associations.records)){const t=fixture.transactions.find(t=>t.id===id);assert(t);for(const a of record.associations){assert(allowed.has(a.name));assert(t.purchaseNotes.some(note=>note.includes(a.evidence)),'Evidence must be drawn from approved purchase notes');}}
 assert.equal(fs.readFileSync('app/app.js','utf8'),fs.readFileSync('docs/app.js','utf8'));
 console.log('PASS: cross-card bookings, actual payer, explicit evidence, own-card inclusion, no duplicates, ambiguous names and comment authors excluded');
+const olive=fixture.transactions.find(t=>t.id==='TXN00049105'),granny=fixture.transactions.find(t=>t.id==='TXN00054488');
+assert.equal(ctx.leadershipShare(olive,'Jonathan Hayes'),40597/17);
+assert.equal(ctx.leadershipShare(granny,'Jonathan Hayes'),40784/13);
+assert.equal(ctx.leadershipShare({...olive,scoped:1700},'Jonathan Hayes'),100);
+assert.equal(ctx.leadershipShare(olive,'Allan Branch'),0);
+const rosters=vm.runInContext('mealAttendees',ctx);
+for(const [id,attendees]of Object.entries(rosters)){assert.equal(new Set(attendees).size,attendees.length);const t=fixture.transactions.find(t=>t.id===id);assert(t);assert(Math.abs(attendees.reduce((sum,name)=>sum+ctx.leadershipShare(t,name,t.amount),0)-t.amount)<0.00001);}
+assert.match(ctx.leadershipEvidence(olive,'Jonathan Hayes'),/1 of 17 attendees/);
+console.log('PASS: meal shares include non-profile attendees, conserve charges, respect filtered allocations and exclude non-attendee payers');

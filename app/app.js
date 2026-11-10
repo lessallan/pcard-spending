@@ -456,13 +456,225 @@ const leadershipCardholders={"Jared Jones": "JONES, BEAU J", "Allan Branch": "BR
 const unconfirmedLeadershipNames=new Set();
 function leadershipId(name){return name.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/-$/,'')}
 let leadershipAssociations={records:{}};
+// Reviewed meal attendee lists from recorded purchase notes; includes attendees without public profiles.
+const mealAttendees={
+  "TXN00043907": [
+    "Jonathan Hayes",
+    "Brandy Waldron",
+    "Lena Webb",
+    "Michelle Zirkle",
+    "Ashley Gary",
+    "Lori Sagehorn",
+    "Joy Masters"
+  ],
+  "TXN00047408": [
+    "Jonathan Hayes",
+    "Brian Grainger",
+    "Janice Lucas",
+    "Allan Branch"
+  ],
+  "TXN00047915": [
+    "Josh Street",
+    "Jonathan Hayes",
+    "Brandy Waldron",
+    "Jared Jones",
+    "Michael Fuller",
+    "Mike Burke",
+    "Natalie McSwane"
+  ],
+  "TXN00048339": [
+    "Allan Branch",
+    "Janice Lucas",
+    "Brian Grainger",
+    "Jonathan Hayes"
+  ],
+  "TXN00049105": [
+    "Bob Majka",
+    "Samar Mazloum",
+    "Stacy Rausch, P.E.",
+    "Matt DeVito",
+    "Nevin J. Zimmerman",
+    "Michael Fuller",
+    "Kevin Kennoy",
+    "Heath Roberty",
+    "Cale Madden",
+    "Joel Schubert",
+    "Jared Jones",
+    "Clint Murphy",
+    "Keith Bryant",
+    "Donall Hamm",
+    "Brian Leebrick",
+    "Ian Crelling",
+    "Jonathan Hayes"
+  ],
+  "TXN00050388": [
+    "Sheila Ware",
+    "Jonathan Hayes",
+    "Joe Garner",
+    "Amber Tubbs",
+    "Terri Gainer",
+    "Karlene Dempter"
+  ],
+  "TXN00050793": [
+    "Brandon Burg",
+    "Brandon Henderson",
+    "Ron Danzey",
+    "JP Ferreira",
+    "Cecile Scoon",
+    "Jonathan Hayes",
+    "Caroline Smith",
+    "Jan Smith"
+  ],
+  "TXN00051897": [
+    "Keith Meyerl",
+    "Vickie Lewis",
+    "Jared Jones"
+  ],
+  "TXN00052329": [
+    "Brandon Burg",
+    "Brandon Henderson",
+    "Ron Danzey",
+    "JP Denzey",
+    "Cecile Scoon",
+    "Jonathan Hayes",
+    "Nevin J. Zimmerman",
+    "Caroline Smith",
+    "Jan Smith"
+  ],
+  "TXN00053704": [
+    "Brandon Burg",
+    "Brandon Henderson",
+    "Ron Danzey",
+    "JP Ferreira",
+    "Cecile Scoon",
+    "Jonathan Hayes",
+    "Doreen Geldert",
+    "Brandy Waldron",
+    "Caroline Smith",
+    "Nevin J. Zimmerman"
+  ],
+  "TXN00053838": [
+    "Robbie Hughes",
+    "Jonathan Hayes",
+    "Jared Jones",
+    "Brandy Waldron",
+    "Nevin J. Zimmerman",
+    "Shawn Selph",
+    "Keith Meyerl"
+  ],
+  "TXN00054059": [
+    "Brandy Waldron",
+    "Jared Jones",
+    "Samantha Perman"
+  ],
+  "TXN00054357": [
+    "Brandon Burg",
+    "Brandon Henderson",
+    "Ron Danzey",
+    "JP Ferreira",
+    "Cecile Scoon",
+    "Jonathan Hayes",
+    "Jared Jones",
+    "Jan Smith",
+    "Nevin J. Zimmerman",
+    "Caroline Smith"
+  ],
+  "TXN00054488": [
+    "Jonathan Hayes",
+    "Brandy Waldron",
+    "Jared Jones",
+    "Michelle Zirkle",
+    "Lena Webb",
+    "Keith Meyerl",
+    "Shawn Selph",
+    "Clint Murphy",
+    "Stacy Rausch, P.E.",
+    "Matt DeVito",
+    "Clair Williams",
+    "Nevin J. Zimmerman",
+    "Joy Marler"
+  ],
+  "TXN00055452": [
+    "Michael Fuller",
+    "Brandy Waldron",
+    "Stacy Rausch, P.E.",
+    "Ali Yuncuoglu",
+    "Mike Allen",
+    "Matt DeVito",
+    "Jiwuan Haley",
+    "Raymond Nolind",
+    "Ian Crelling",
+    "Bob Majka",
+    "Joel Schubert",
+    "Jared Jones",
+    "Donald Hamm",
+    "Carlos Sanchez",
+    "Clint Murphy"
+  ],
+  "TXN00056041": [
+    "Brandon Burg",
+    "Brandon Henderson",
+    "Cecile Scoon",
+    "JP Ferreira",
+    "Ron Danzey",
+    "Jonathan Hayes",
+    "Jared Jones",
+    "Brandy Waldron",
+    "Nevin J. Zimmerman",
+    "Caroline Smith",
+    "Doreen Geldert"
+  ],
+  "TXN00048834": [
+    "Jonathan Hayes",
+    "Jared Jones",
+    "Brandy Waldron",
+    "Nevin J. Zimmerman",
+    "Jan Smith",
+    "Kristen Kennedy",
+    "Caroline Smith",
+    "Brandon Burg",
+    "Brandon Henderson",
+    "Cecile Scoon",
+    "JP Ferreira",
+    "Ron Danzey"
+  ],
+  "TXN00049618": [
+    "Brandon Burg",
+    "Brandon Henderson-Jansenius",
+    "JP Ferreira",
+    "Cecila Scoon",
+    "Ron Danzey",
+    "Jonathan Hayes",
+    "Nevin J. Zimmerman",
+    "Jan Smith",
+    "Caroline Smith"
+  ],
+  "TXN00051365": [
+    "Jonathan Hayes",
+    "Stacy Rausch, P.E.",
+    "Matt DeVito",
+    "Jared Jones",
+    "Nevin J. Zimmerman",
+    "Michael Fuller",
+    "Kevin Kennoy",
+    "Cale Madden",
+    "Bob Majka",
+    "Joel Schubert",
+    "Clint Murphy",
+    "Ian Crelling",
+    "Heath Roberts",
+    "Jiwuan Haley"
+  ]
+};
+function leadershipShare(t,name,amount=t.scoped??t.amount){const attendees=mealAttendees[t.id];return attendees?(attendees.includes(name)?amount/attendees.length:0):amount}
+function mealShareLabel(t,name){const attendees=mealAttendees[t.id];if(!attendees)return '';return `<span class="fine meal-share"><strong>${attendees.includes(name)?'Estimated meal share: 1 of '+attendees.length+' attendees ('+(100/attendees.length).toFixed(2)+'%)':'Payment only: not listed as an attendee'}</strong> · ${exact(t.amount)} full charge. Equal split of the recorded attendee list; actual individual orders are unknown.</span>`}
 function leadershipAssociation(t,name){return leadershipAssociations.records[t.id]?.associations.find(a=>a.name===name)}
 function leadershipPayer(t){return leadershipAssociations.records[t.id]?.cardholder||t.person}
-function leadershipMatches(t,name){return t.person===leadershipCardholders[name]||!!leadershipAssociation(t,name)}
+function leadershipMatches(t,name){return t.person===leadershipCardholders[name]||!!leadershipAssociation(t,name)||!!mealAttendees[t.id]?.includes(name)}
 function leadershipRecords(name){return data.transactions.filter(t=>leadershipMatches(t,name))}
 function leadershipEvidence(t,name){
  const a=leadershipAssociation(t,name);const own=leadershipPayer(t)===leadershipCardholders[name];
- return `<span class="fine association-label">${own?'Paid on their card':'Paid on another person’s card'}${a?' · '+esc(a.relationship):''}</span>${a?`<span class="fine association-evidence">Recorded note: ${esc(a.evidence)}</span>`:''}`;
+ return mealShareLabel(t,name)+`<span class="fine association-label">${own?'Paid on their card':'Paid on another person’s card'}${a?' · '+esc(a.relationship):''}</span>${a?`<span class="fine association-evidence">Recorded note: ${esc(a.evidence)}</span>`:''}`;
 }
 function leadershipTotals(name,ts){
  const own=ts.filter(t=>leadershipPayer(t)===leadershipCardholders[name]),other=ts.filter(t=>leadershipPayer(t)!==leadershipCardholders[name]);
@@ -471,7 +683,7 @@ function leadershipTotals(name,ts){
 }
 function leadershipSummary(name){
  const records=leadershipRecords(name);
- return records.length?`${exact(records.reduce((n,t)=>n+t.amount,0))} net associated charges · ${number(records.length)} transactions`:
+ return records.length?`${exact(records.reduce((n,t)=>n+leadershipShare(t,name,t.amount),0))} net associated charges · ${number(records.length)} transactions`:
  unconfirmedLeadershipNames.has(name)?'Cardholder name match needs confirmation':'No associated transactions found';
 }
 const reimbursementNotice='<p class="notice"><strong>P-card transactions only.</strong> These records do not include expense reimbursements. Some officials and employees may have paid expenses personally and received reimbursement separately. Those amounts are not shown here, so these totals are not a complete picture of expenses associated with a person.</p>';
@@ -480,11 +692,11 @@ function leadershipIntro(name){
  const travelPerson=leadershipCardholders[name];
  const tripsLink=travelPerson&&data.transactions.some(t=>t.travel!=='Not identified as travel'&&travelRecipients(t).includes(travelPerson))?`<p><a href="#travel/person/${encodeURIComponent(travelPerson)}">View associated trips →</a></p>`:'';
  const source=profile?` · <a href="${esc(profile.source_url)}" target="_blank" rel="noopener">Official City profile ↗</a>`:'';
- return `<p><a href="#staff">← Back to City leadership</a></p>${reimbursementNotice}<p class="section-note">${esc(leadershipProfiles.find(p=>p[0]===name)[1])}${source}</p>${tripsLink}<div class="budget-note"><h3>Associated card charges</h3><p>Includes purchases on this leader’s card and purchases naming them in the notes, including bookings paid by another cardholder. Each purchase appears once on this profile. The recorded cardholder and matching note explain the association. Shared purchases show the full charge, not an individual share; totals across profiles should not be added together.</p></div>`;
+ return `<p><a href="#staff">← Back to City leadership</a></p>${reimbursementNotice}<p class="section-note">${esc(leadershipProfiles.find(p=>p[0]===name)[1])}${source}</p>${tripsLink}<div class="budget-note"><h3>Associated card charges</h3><p>Includes purchases on this leader’s card and purchases naming them in the notes, including bookings paid by another cardholder. Each purchase appears once on this profile. The recorded cardholder and matching note explain the association. Meals with reviewed attendee lists are split equally among all listed attendees, including those without profiles. Profile totals use the estimated share; full charges remain visible for reference. Other purchases retain their recorded associated charge, so totals across profiles should not be added together. Meals without a complete reviewed attendee list are not assumed to be individual meals.</p></div>`;
 }
 function staffView(){
  const q=(filters().search||'').toLowerCase();const staff=leadershipProfiles.map(([name,title])=>data.staff.find(s=>s.name===name&&s.title===title)).filter(Boolean).filter(s=>`${s.name} ${s.title} ${s.departments.join(' ')} ${s.email}`.toLowerCase().includes(q));
- return `${reimbursementNotice}<p class="section-note">Showing ${staff.length} of ${leadershipProfiles.length} leadership profiles. Only the 24 selected leadership profiles are named; other cardholders are not publicly identified. Roles come from the City directory imported November 9, 2026; they are not verified roles during FY25/FY26. Associated charges include their card purchases and purchases naming them in the notes. Shared charges may appear on more than one profile and are not individual spending totals. Totals cover both supplied fiscal years; no match does not mean no costs.</p><div class="staff-grid">${staff.map(s=>{return `<article class="staff-person"><div class="staff-top">${s.photo_file?`<img class="avatar" src="./${esc(s.photo_file)}" alt="" loading="lazy">`:`<div class="avatar" aria-hidden="true">${esc(s.name.split(/\s+/).map(x=>x[0]).slice(0,2).join(''))}</div>`}<div><h3><a href="#leader/${leadershipId(s.name)}">${esc(s.name)}</a></h3><p>${esc(s.title==='Director'?s.departments.join(' · ')+' Director':s.title||'Title not published')}</p>${s.email?`<a class="staff-email" href="mailto:${esc(s.email)}">${esc(s.email)}</a>`:''}</div></div><p class="leadership-total">${esc(leadershipSummary(s.name))}</p></article>`}).join('')}</div>${!staff.length?'<p class="empty">No leadership profiles match this search. Clear the search to see all City leadership.</p>':''}`;
+ return `${reimbursementNotice}<p class="section-note">Showing ${staff.length} of ${leadershipProfiles.length} leadership profiles. Only the 24 selected leadership profiles are named; other cardholders are not publicly identified. Roles come from the City directory imported November 9, 2026; they are not verified roles during FY25/FY26. Associated charges include their card purchases and purchases naming them in the notes. Meals with reviewed attendee lists use equal-share estimates. Other shared charges may appear on more than one profile and are not individual spending totals. Totals cover both supplied fiscal years; no match does not mean no costs.</p><div class="staff-grid">${staff.map(s=>{return `<article class="staff-person"><div class="staff-top">${s.photo_file?`<img class="avatar" src="./${esc(s.photo_file)}" alt="" loading="lazy">`:`<div class="avatar" aria-hidden="true">${esc(s.name.split(/\s+/).map(x=>x[0]).slice(0,2).join(''))}</div>`}<div><h3><a href="#leader/${leadershipId(s.name)}">${esc(s.name)}</a></h3><p>${esc(s.title==='Director'?s.departments.join(' · ')+' Director':s.title||'Title not published')}</p>${s.email?`<a class="staff-email" href="mailto:${esc(s.email)}">${esc(s.email)}</a>`:''}</div></div><p class="leadership-total">${esc(leadershipSummary(s.name))}</p></article>`}).join('')}</div>${!staff.length?'<p class="empty">No leadership profiles match this search. Clear the search to see all City leadership.</p>':''}`;
 }
 
 function isHotel(t){return t.travel==='Hotels & lodging'}
@@ -674,7 +886,7 @@ function render(){
  if(view==='radar'){$('content').innerHTML=radarReport(rows);return}
  if(selectedTravelPerson){$('content').innerHTML=tripReport(selectedTravelPerson);return}
  if(selectedLeader){
-  rows=rows.filter(t=>leadershipMatches(t,selectedLeader));
+  rows=rows.filter(t=>leadershipMatches(t,selectedLeader)).map(t=>({...t,scoped:leadershipShare(t,selectedLeader)}));
   if(!leadershipRecords(selectedLeader).length){
    $('content').innerHTML=leadershipIntro(selectedLeader)+`<h2>${unconfirmedLeadershipNames.has(selectedLeader)?'Name match needs confirmation':'No associated transactions found'}</h2><p>Associated charges are unavailable for this profile. This does not mean $0 in costs: purchases may have been processed by another cardholder or recorded under a different name.</p><p>Browse <a href="#centers">spending areas</a> to explore recorded accounting allocations without attributing them to this person.</p>`;
    return;
