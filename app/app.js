@@ -8,7 +8,7 @@ let data, rows=[], page=0, view='overview', rankMetric='spend', selectedId=null;
 let reviews={};
 try{reviews=JSON.parse(localStorage.getItem('pcard-reviews-v1')||'{}')}catch{}
 const statuses={needs:'Needs review',none:'No issue detected',historical:'Historical policy unverified',compliant:'Verified compliant',exception:'Approved exception',violation:'Confirmed noncompliance'};
-const titles={overview:['The spending picture','A clearer view of purchases, travel, and the records behind them.'],travel:['Travel & lodging','Follow travel charges by cardholder, merchant, and cost center.'],centers:['Spending by cost center','Use verified accounting codes until department names are available.'],people:['Spending by cardholder','Compare the cards used to buy goods and services for the City.'],merchants:['Where the money goes','Explore merchants, purchase volume, and broad-selection retailers.'],review:['A closer look at policy','Evidence first. Flags start a review; they do not establish a violation.'],staff:['The people directory','Published City contact details, imported November 9, 2026.']};
+const titles={retail:['Amazon, Walmart & similar stores','Compare annual spending and retrieve the itemized records behind each purchase.'],overview:['The spending picture','A clearer view of purchases, travel, and the records behind them.'],travel:['Travel & lodging','Follow travel charges by cardholder, merchant, and cost center.'],centers:['Spending by cost center','Use verified accounting codes until department names are available.'],people:['Spending by cardholder','Compare the cards used to buy goods and services for the City.'],merchants:['Where the money goes','Explore merchants, purchase volume, and broad-selection retailers.'],review:['A closer look at policy','Evidence first. Flags start a review; they do not establish a violation.'],staff:['The people directory','Published City contact details, imported November 9, 2026.']};
 function displayName(s){if(s.includes(',')){let [last,...first]=s.split(',');return `${first.join(' ').trim()} ${last}`.toLowerCase().replace(/\b\w/g,c=>c.toUpperCase())}return s.toLowerCase().replace(/\b\w/g,c=>c.toUpperCase())}
 function status(t){return reviews[t.id]?.status||(t.flags.length?'needs':t.historical?'historical':'none')}
 function tag(t){const s=status(t);return `<span class="tag ${s}">${statuses[s]||'Needs review'}</span>`}
@@ -76,6 +76,34 @@ function receiptReport(ts){const requests=receiptRows(ts);return board('Itemized
  '<p>Request hotel folios with separate restaurant/bar itemizations, guests, stay dates, nightly rates, taxes, parking, incidentals and refunds. No receipts have been imported; comments may refer to records held elsewhere. These requests do not establish policy violations.</p><button type="button" id="export-receipts">Export receipt requests</button><details class="receipt-list"><summary>View prioritized charges ('+requests.length+')</summary>'+requests.map(t=>'<article class="receipt-card"><span class="tag needs">'+esc(t.requestInfo.priority)+'</span><h3><button class="link" type="button" data-detail="'+t.id+'">'+t.id+'</button> · '+exact(t.amount)+'</h3><p>'+esc(displayName(t.person))+' · '+esc(t.raw)+' · '+t.fy+' · '+t.date+'</p><p>'+esc(t.requestInfo.reason)+'</p><p><strong>Request:</strong> '+esc(t.requestInfo.request)+'</p></article>').join('')+'</details>',true)}
 function exportReceipts(){const head=['Priority','FY','Transaction','Purchase date','Cardholder','Merchant','Full charge USD','Selected amount USD','Reason','Documents requested','Source','Sheet','Source rows'];const csv=[head,...receiptRows(rows).map(t=>[t.requestInfo.priority,t.fy,t.id,t.date,displayName(t.person),t.raw,(t.amount/100).toFixed(2),(t.scoped/100).toFixed(2),t.requestInfo.reason,t.requestInfo.request,t.source,t.sheet,t.rows.join(';')])].map(r=>r.map(csvCell).join(',')).join('\r\n');download('travel-receipt-requests.csv',csv,'text/csv')}
 
+
+let retailerScope='all';
+function retailerMatches(t){return t.mixed&&(retailerScope==='all'||retailerScope==='amazon-walmart'&&['Amazon','Walmart'].includes(t.merchant)||t.category===retailerScope)}
+function retailerRequest(t){
+ if(t.amount<=0)return null;
+ const docs='Itemized vendor receipt or invoice with item descriptions, quantities, unit prices, tax, shipping and total; business purpose, recipient/location and related returns. For Amazon, include order and shipment invoices matching this card charge.';
+ if(/missing receipt|lost receipt|receipt lost|no receipt|itemized|itemised|multiple invoices/i.test(t.comments.join(' ')))return {priority:'1 — Check documentation comments',reason:'Comments mention receipt details, missing-receipt documentation or multiple invoices. Retrieve the records and check later corrections; this does not establish an unresolved issue.',request:docs};
+ if(t.amount>=100000)return {priority:'2 — Larger purchase',reason:'Full charge is at least $1,000. This is a review-priority threshold, not a policy limit or evidence of waste.',request:docs};
+ return {priority:'3 — Remaining purchases',reason:'A broad-selection merchant total does not identify the purchased items. Retrieve the itemized record.',request:docs};
+}
+function retailerRequests(ts){return ts.map(t=>({...t,requestInfo:retailerRequest(t)})).filter(t=>t.requestInfo).sort((a,b)=>a.requestInfo.priority.localeCompare(b.requestInfo.priority)||b.amount-a.amount)}
+function retailerReport(ts){
+ const cats=[...new Set(data.transactions.filter(t=>t.mixed).map(t=>t.category))].sort();
+ let out='<div class="controls-row"><label>Retailer group<select id="retailer-scope"><option value="all">All broad-selection retailers</option><option value="amazon-walmart">Amazon and Walmart only</option>'+cats.map(c=>'<option value="'+esc(c)+'">'+esc(c)+'</option>').join('')+'</select></label></div><p class="section-note">Scope uses the reviewed merchant groupings: marketplaces, hardware/tools, office/industrial catalogs, grocery/pharmacy and other mixed-category retailers. This is an initial identified set, not every possible retailer. Net spending includes credits. Cardholder totals identify the card used, not the recipient. Cost centers use actual accounting allocations; department names remain unverified. Split accounting rows are not receipt line items.</p>'+rankingControls();
+ out+='<div class="boards">';
+ for(const fy of ['FY25','FY26'].filter(fy=>!filters().fy||filters().fy===fy)){
+  const year=ts.filter(t=>t.fy===fy);const pg=aggregate(year,'person'),cg=aggregate(year,'center',true);
+  out+=board(fy+' · Cardholders',exact(year.reduce((n,t)=>n+t.scoped,0))+' net · '+year.length+' transactions · '+(fy==='FY25'?'Oct 2024–Sep 2025':'Oct 2025–Sep 2026')+' postings',bars(pg,'person',5)+'<details><summary>View cardholder rankings</summary>'+rankingTable(pg,'person')+'</details>');
+  out+=board(fy+' · Cost centers','Allocated net spending · a transaction can span several cost centers.',bars(cg,'center',5)+'<details><summary>View cost-center rankings</summary>'+rankingTable(cg,'center')+'</details>');
+ }
+ out+=board('Retailer spending','Current filters · net after credits.',bars(aggregate(ts,'merchant'),'merchant',12),true)+'</div>';
+ const requests=retailerRequests(ts),first=requests.filter(t=>t.requestInfo.priority.startsWith('1')).length,large=requests.filter(t=>t.requestInfo.priority.startsWith('2')).length;
+ out+=board('Itemized receipts to request',number(requests.length)+' positive purchases · '+first+' documentation-comment checks · '+large+' additional purchases of $1,000 or more',
+ '<p>No itemized receipts are imported. Request the itemized records for all positive purchases; start with documentation comments, then larger purchases. Existing comments may confirm that documents are already stored elsewhere. These priorities are not compliance decisions. Credits remain in spending totals; request related return records with the original purchase.</p><button type="button" id="export-retailer-receipts">Export all receipt requests</button><details class="receipt-list"><summary>First '+Math.min(30,requests.length)+' requests by priority</summary>'+requests.slice(0,30).map(t=>'<article class="receipt-card"><span class="tag needs">'+esc(t.requestInfo.priority)+'</span><h3><button type="button" class="link" data-detail="'+t.id+'">'+t.id+'</button> · '+exact(t.amount)+'</h3><p>'+esc(displayName(t.person))+' · '+esc(t.raw)+' · '+t.fy+' · '+t.date+'</p><p>'+esc(t.requestInfo.reason)+'</p><p><strong>Request:</strong> '+esc(t.requestInfo.request)+'</p></article>').join('')+'</details><p class="fine">The export includes every matching positive purchase, source rows and requested documents. Use fiscal year, merchant, person, cost center or minimum-charge filters to narrow it.</p>',true);
+ return out;
+}
+function exportRetailerReceipts(){const head=['Priority','FY','Transaction','Purchase date','Cardholder','Merchant','Cost centers in selection','Full charge USD','Selected amount USD','Reason','Documents requested','Source','Sheet','Source rows'];download('retailer-receipt-requests.csv',[head,...retailerRequests(rows).map(t=>[t.requestInfo.priority,t.fy,t.id,t.date,displayName(t.person),t.raw,[...new Set(t.allocations.map(a=>a.center))].join(';'),(t.amount/100).toFixed(2),(t.scoped/100).toFixed(2),t.requestInfo.reason,t.requestInfo.request,t.source,t.sheet,t.rows.join(';')])].map(r=>r.map(csvCell).join(',')).join('\r\n'),'text/csv')}
+
 function render(){
  if(!data)return;
  view=location.hash.slice(1)||'travel';if(!titles[view])view='travel';
@@ -86,12 +114,14 @@ function render(){
  const active=Object.values(filters()).filter(Boolean).length;$('filter-count').textContent=staff?'Search directory':active?`${active} active`:'';
  $('review-count').textContent=number(data.transactions.filter(t=>status(t)==='needs').length);
  if(staff){$('content').innerHTML=staffView();return}
- rows=filtered();if(view==='travel')rows=rows.filter(t=>t.travel!=='Not identified as travel');
+ rows=filtered();if(view==='retail')rows=rows.filter(retailerMatches);if(view==='travel')rows=rows.filter(t=>t.travel!=='Not identified as travel');
  rows.sort((a,b)=>b.scoped-a.scoped);
  let out=stats(rows);const centered=aggregate(rows,'center',true),people=aggregate(rows,'person'),merchants=aggregate(rows,'merchant');
  if(filters().fund||filters().center)out+='<p class="section-note">Amounts reflect only the selected accounting allocations. Transaction counts remain unique IDs; minimum-charge and policy checks use the full original charge.</p>';
  if(view==='overview'){
   out+='<div class="boards">'+board('Where spending lands','Click a merchant to explore its purchases.',bars(merchants,'merchant'))+board('By cost center','Accounting allocations, not inferred department names.',bars(centered,'center'))+board('Across the year','Both fiscal years · figures from provided detail.',timeline(rows),true)+board('Travel & lodging','Card charges attributed to the cardholder, not necessarily the traveler.',bars(aggregate(rows.filter(t=>t.travel!=='Not identified as travel'),'person'),'person'))+board('Itemized receipts first','Broad-selection merchants in the initial review.',bars(aggregate(rows.filter(t=>t.mixed),'merchant'),'merchant'))+'</div>';
+ }else if(view==='retail'){
+  out+=retailerReport(rows);
  }else if(view==='travel'){
   out+='<div class="budget-note"><h3>Budget comparison awaits approved allocations</h3><p>No travel budgets were supplied. Spending is available; remaining budget and over-budget status are not yet calculable.</p></div><p class="section-note">Travel is inferred from recognizable merchant names and travel account 54000. It may include personal context, shared bookings, or non-travel charges and may miss other travel. Hotel classification also uses identifiable lodging names and booking comments; hotel totals may include meals, tuition and incidentals. Counts are purchase transactions, not trips or nights. Cardholders may book for other people.</p>'+rankingControls();
   out+=annualTravel(rows)+receiptReport(rows);
@@ -108,6 +138,8 @@ function render(){
  out+=`<section class="transactions"><div class="board-head" style="margin-top:30px"><div><h2>${view==='review'?'Review transactions':'Explore transactions'}</h2><p class="sub">${number(rows.length)} matching records · largest amounts first · select a date for details</p></div></div>${table(rows)}</section>`;
  $('content').innerHTML=out;
  $('prev')?.addEventListener('click',()=>{page--;render()});$('next')?.addEventListener('click',()=>{page++;render()});
+ if($('retailer-scope')){$('retailer-scope').value=retailerScope;$('retailer-scope').addEventListener('change',e=>{retailerScope=e.target.value;page=0;render()})}
+ $('export-retailer-receipts')?.addEventListener('click',exportRetailerReceipts);
  $('export-receipts')?.addEventListener('click',exportReceipts);
  $('rank-metric')?.addEventListener('change',e=>{rankMetric=e.target.value;render()});
  $('only-needs')?.addEventListener('click',()=>{$('status').value='needs';page=0;render()});
@@ -128,7 +160,7 @@ $('content').addEventListener('click',e=>{const detail=e.target.closest('[data-d
 $('close-detail').addEventListener('click',()=>$('detail').close());
 $('filters').addEventListener('submit',e=>e.preventDefault());
 let timer;$('filters').addEventListener('input',()=>{clearTimeout(timer);timer=setTimeout(()=>{page=0;render()},180)});
-$('reset').addEventListener('click',()=>{HTMLFormElement.prototype.reset.call($('filters'));page=0;render()});
+$('reset').addEventListener('click',()=>{retailerScope='all';HTMLFormElement.prototype.reset.call($('filters'));page=0;render()});
 window.addEventListener('hashchange',()=>{page=0;rankMetric='spend';$('nav').classList.remove('open');document.querySelector('.mobile-menu').setAttribute('aria-expanded','false');render();window.scrollTo(0,0)});
 document.querySelector('.mobile-menu').addEventListener('click',e=>{const open=$('nav').classList.toggle('open');e.target.setAttribute('aria-expanded',String(open))});
 if(innerWidth<=600)document.querySelector('.filter-box').open=false;
