@@ -148,3 +148,5 @@
 !/tools/check_radar_activities.cjs
 
 !/tools/radar-reviewed-expectations.json
+
+!/tools/check_transaction_presentation.cjs
