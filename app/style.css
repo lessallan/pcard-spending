@@ -6,3 +6,8 @@
 [hidden]{display:none!important}
 
 .data-picker{padding:18px;background:#eef2e9;border-radius:8px;margin-bottom:20px}.data-picker input{height:auto;margin-block:8px}.data-picker p{font-size:13px;margin:0}#dataset-error{color:#924642}
+
+.chart-row>*{min-width:0}.chart-row{width:100%;grid-template-columns:minmax(0,1.1fr) minmax(0,1.2fr) 85px}
+@media(max-width:600px){.chart-row{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr) 78px}}
+
+.annual-totals{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px}.annual-totals .stat{padding:12px}.annual-totals strong{font-size:24px}.annual-travel details{margin-top:20px}.receipt-list{margin-top:20px}.receipt-card{padding:20px 0;border-bottom:1px solid var(--line,#ddd)}.receipt-card p{overflow-wrap:anywhere}.receipt-card h3{margin-top:10px}.annual-travel .board{min-width:0}
