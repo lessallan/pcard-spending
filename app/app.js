@@ -1250,11 +1250,18 @@ function openDetail(id){
 $('content').addEventListener('click',e=>{const detail=e.target.closest('[data-detail]');if(detail)openDetail(detail.dataset.detail)});
 $('content').addEventListener('input',e=>{if(e.target.id==='staff-search'){staffSearch=e.target.value;applyStaffSearch()}});
 $('close-detail').addEventListener('click',()=>$('detail').close());
-document.addEventListener('click',e=>{const link=e.target.closest('a.transaction-filter-link');if(link&&link.hash===location.hash&&!e.ctrlKey&&!e.metaKey&&!e.shiftKey&&!e.altKey){e.preventDefault();applyTransactionRoute();page=0;if($('detail').open)$('detail').close();render();window.scrollTo(0,0)}});
+function scrollToReportStart(){
+ if(view!=='transactions'){window.scrollTo(0,0);return;}
+ const heading=$('title');
+ heading.setAttribute('tabindex','-1');
+ heading.focus({preventScroll:true});
+ window.scrollTo({top:Math.max(0,window.scrollY+heading.getBoundingClientRect().top-16),behavior:'instant'});
+}
+document.addEventListener('click',e=>{const link=e.target.closest('a.transaction-filter-link');if(link&&link.hash===location.hash&&!e.ctrlKey&&!e.metaKey&&!e.shiftKey&&!e.altKey){e.preventDefault();applyTransactionRoute();page=0;if($('detail').open)$('detail').close();render();scrollToReportStart()}});
 $('filters').addEventListener('submit',e=>e.preventDefault());
 $('reset').addEventListener('click',()=>{for(const control of $('transaction-filters').querySelectorAll('input,select'))control.value='';page=0;render()});
 let timer;$('filters').addEventListener('input',()=>{clearTimeout(timer);timer=setTimeout(()=>{page=0;render()},180)});
-window.addEventListener('hashchange',()=>{if($('detail').open)$('detail').close();applyTransactionRoute();page=0;rankMetric='spend';$('nav').classList.remove('open');document.querySelector('.mobile-menu').setAttribute('aria-expanded','false');render();window.scrollTo(0,0)});
+window.addEventListener('hashchange',()=>{if($('detail').open)$('detail').close();applyTransactionRoute();page=0;rankMetric='spend';$('nav').classList.remove('open');document.querySelector('.mobile-menu').setAttribute('aria-expanded','false');render();scrollToReportStart()});
 document.querySelector('.mobile-menu').addEventListener('click',e=>{const open=$('nav').classList.toggle('open');e.target.setAttribute('aria-expanded',String(open))});
 function loadDataset(d){
  const strings=['id','fy','date','post','person','merchant','raw','category','source','sheet','travel'];
@@ -1262,6 +1269,6 @@ function loadDataset(d){
  data=d;page=0;HTMLFormElement.prototype.reset.call($('filters'));
  for(const transaction of d.transactions)if(!Array.isArray(transaction.purchaseNotes))transaction.purchaseNotes=[];
  for(const [id,values,label] of [['fund',d.transactions.flatMap(t=>t.allocations.map(a=>a.fund)),'All funds'],['center',d.transactions.flatMap(t=>t.allocations.map(a=>a.center)),'All spending areas'],['person',d.transactions.map(t=>t.person),'All cardholders'],['merchant',d.transactions.map(t=>t.merchant),'All merchants']])fillSelect(id,values,label);
- applyTransactionRoute();$('loading').hidden=true;render();
+ applyTransactionRoute();$('loading').hidden=true;render();if(view==='transactions')scrollToReportStart();
 }
 Promise.all(['./data.json?v=staff-filters-20261110','./travel.json?v=cross-card-20261110','./leadership-associations.json?v=name-confirmed-20261110'].map(url=>fetch(url).then(r=>{if(!r.ok)throw Error();return r.json()}))).then(([d,t,a])=>{if(a.version!==1||!a.records)throw Error('Invalid leadership associations');leadershipAssociations=a;if(t.version!==1||!t.records)throw Error('Invalid travel snapshot');travelSnapshot=t;loadDataset(d)}).catch(()=>{$('loading').hidden=false;$('loading').textContent='Spending records could not load. Reload this page to try again.'});
