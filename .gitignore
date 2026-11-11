@@ -200,3 +200,5 @@
 # DPC vendor report regression check.
 !/tools/dpc/
 !/tools/dpc/check-vendors.cjs
+
+!/tools/dpc/check-shared.cjs
