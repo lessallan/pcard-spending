@@ -1,5 +1,7 @@
 // Reviewed travel evidence; schedules are not traveler itineraries.
 module.exports={
+  // Dated, source-backed merchant findings. Research only: never blanket trip assignments.
+  "merchantResearch": require('./travel-merchant-research.json'),
   "purchasePurposes": {
     "TXN00044010": {
       "merchant": "NATIONAL LE", "amount": 22500,
