@@ -25,6 +25,14 @@
 .report-navigation nav a:hover{background:#e1e9db}
 .report-navigation .report-label{font-size:17px;font-weight:600}
 .report-navigation .report-description,.report-navigation .mobile-menu{display:none}
+/* Keep every report visible on phones, in two columns with wrapping labels. */
+@media(max-width:700px){
+ .report-navigation nav,.report-navigation nav.open{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;overflow:visible}
+ .report-navigation nav a{min-width:0;min-height:88px;padding:12px 8px;gap:8px;white-space:normal;text-align:center}
+ .report-navigation nav a svg{width:26px;height:26px}
+ .report-navigation .report-label{font-size:16px;line-height:1.3;overflow-wrap:anywhere}
+}
+
 
 
 .staff-person h3 a{font-size:inherit}.staff-person .leadership-total{margin-top:12px;color:var(--ink);font-variant-numeric:tabular-nums}
