@@ -192,3 +192,7 @@
 /analysis/expense-review/
 
 !/tools/check_organizations.cjs
+
+# Authorized DPC report and reviewed public document copies.
+!/docs/dpc/
+!/docs/dpc/**

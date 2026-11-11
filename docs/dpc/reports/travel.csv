@@ -1,0 +1,342 @@
+id,row,date,account,name,amount,description,event_group,group_evidence,source
+gl-13391,13391,2024-11-03,54000 Travel per Diem Staff,First Federal Bank,144591,"First Fed CC - Staff Hotels for travel writer meet up, TechSummit Conference, NY Travel and Adventure trade show hotel, I-75 showcase hotel",Unassigned / mixed travel,mixed allocation; do not assign whole charge,General Ledger Sheet1
+gl-13392,13392,2024-12-03,54000 Travel per Diem Staff,First Federal Bank,133550,First Fed CC - Staff Travel Flight to ITI Conf,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13393,13393,2024-12-11,54000 Travel per Diem Staff,Jennifer Vigil - VENDOR,45158,"J Vigil Per Diem STS Board Meeting Buford, GA 12/11-12/13",STS meetings 2025,series; not one trip,General Ledger Sheet1
+gl-13394,13394,2025-01-03,54000 Travel per Diem Staff,First Federal Bank,218992,First Fed CC - Staff Travel,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13395,13395,2025-02-03,54000 Travel per Diem Staff,First Federal Bank,172501,First Fed CC - Staff Travel NYC trade show,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13397,13397,2025-03-04,54000 Travel per Diem Staff,Sweet Indulgences,311,SWEETINDULGEST2746 2443106204NAV (staff meal),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13398,13398,2025-03-05,54000 Travel per Diem Staff,Delta,3500,DELTA AIR Baggage Fee 247170521T  (staff travel),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13399,13399,2025-03-06,54000 Travel per Diem Staff,Uber.com,4484,UBER *TRIP 240362921LP7WDY0P UBE (staff transportation),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13400,13400,2025-03-06,54000 Travel per Diem Staff,Uber.com,500,UBER *TRIP 240362921LP8LMWB6 UBE (staff transportation),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13401,13401,2025-03-06,54000 Travel per Diem Staff,The Great Dane Pub,3133,TST*THE GREAT DANE PUB & 2469216 (staff meal),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13402,13402,2025-03-06,54000 Travel per Diem Staff,Tipsy Cow,6323,TIPSY COW MADISON 240372422S66EV (staff meal-Canoecopia Trade Show),Canoecopia 2025,explicit event,General Ledger Sheet1
+gl-13403,13403,2025-03-07,54000 Travel per Diem Staff,Uber.com,3098,UBER *TRIP 240362922LV4NBFK6 UBE (staff transportation),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13404,13404,2025-03-07,54000 Travel per Diem Staff,Uber.com,1294,UBER *TRIP 240362922LPDMW7RB UBE (staff transportation),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13405,13405,2025-03-07,54000 Travel per Diem Staff,Uber.com,1947,UBER *TRIP 240362922MM406NXJ UBE (staff transportation),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13406,13406,2025-03-07,54000 Travel per Diem Staff,Uber.com,1494,UBER *TRIP 240362922MM34Q6S0 UBE (staff transportation),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13407,13407,2025-03-07,54000 Travel per Diem Staff,Uber.com,1296,UBER *TRIP 240362922MM6LL00R UBE (staff transportation),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13408,13408,2025-03-07,54000 Travel per Diem Staff,The Old Fashioned,3762,THE OLD FASHIONED 240372424S66QV (staff meal),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13409,13409,2025-03-07,54000 Travel per Diem Staff,Marigold Kitchen,1771,TST*MARIGOLD KITCHEN [reference redacted] (staff meal),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13410,13410,2025-03-07,54000 Travel per Diem Staff,Wonderstate Coffee,1176,SQ *WONDERSTATE COFFEE - 2469216 (staff meal),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13411,13411,2025-03-08,54000 Travel per Diem Staff,Uber.com,1495,UBER *TRIP 240362923MKGAWZAY UBE  (staff transportation),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13412,13412,2025-03-08,54000 Travel per Diem Staff,Uber.com,1190,UBER *TRIP 240362923MKDQSMRP UBE  (staff transportation),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13413,13413,2025-03-08,54000 Travel per Diem Staff,Uber.com,1495,UBER *TRIP 240362923LTB6DP31 UBE  (staff transportation),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13414,13414,2025-03-08,54000 Travel per Diem Staff,Uber.com,1098,UBER *TRIP 240362923LTATPH13 UBE  (staff transportation),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13415,13415,2025-03-08,54000 Travel per Diem Staff,Uber.com,1299,UBER *TRIP 240362923MKDESZRM UBE (staff transportation),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13416,13416,2025-03-08,54000 Travel per Diem Staff,Uber.com,1426,UBER *TRIP 240362923MKDBXNHA UBE (staff transportation),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13417,13417,2025-03-08,54000 Travel per Diem Staff,Uber.com,1197,UBER *TRIP 240362923LTA33NJ9 UBE (staff transportation),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13418,13418,2025-03-08,54000 Travel per Diem Staff,The Settle Down Tavern,6170,TST* THE SETTLE DOWN TAVE 241374 (staff meal),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13419,13419,2025-03-09,54000 Travel per Diem Staff,Uber.com,300,UBER *TRIP 240362924LVF3PM63 UBE  (staff transportation),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13420,13420,2025-03-09,54000 Travel per Diem Staff,Uber.com,1696,UBER *TRIP 240362924LTG5PZ40 UBE  (staff transportation),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13421,13421,2025-03-09,54000 Travel per Diem Staff,Uber.com,1293,UBER *TRIP 240362924MKHLVJ65 UBE  (staff transportation),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13422,13422,2025-03-09,54000 Travel per Diem Staff,Uber.com,1396,UBER *TRIP 240362924MMHHG8M3 UBE  (staff transportation),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13423,13423,2025-03-09,54000 Travel per Diem Staff,Uber.com,898,UBER *TRIP 240362924MMHMDAV0 UBE  (staff transportation),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13424,13424,2025-03-09,54000 Travel per Diem Staff,Uber.com,3971,UBER *TRIP 240362924LTFD80XP UBE (staff transportation),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13425,13425,2025-03-09,54000 Travel per Diem Staff,Uber.com,4154,UBER *TRIP 240362924LTFVRP0F UBE (staff transportation),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13426,13426,2025-03-09,54000 Travel per Diem Staff,Delta,3500,DELTA AIR Baggage Fee 247170525T  (staff travel),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13427,13427,2025-03-09,54000 Travel per Diem Staff,Sheraton,1622,SHERATON MADISON FB 2475542254QB  (staff meal),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13428,13428,2025-03-09,54000 Travel per Diem Staff,Bassett Street Brunch Club,2623,Bassett Street Brunch Clu 243428 (staff meal),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13429,13429,2025-03-09,54000 Travel per Diem Staff,Petersons,3348,PY *ROXANNE PETERSON 2444500248P (staff meal),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13430,13430,2025-03-09,54000 Travel per Diem Staff,Alliant Energy Center,1794,ALLIANT ENERGY CENTER [reference redacted] (staff meal),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13431,13431,2025-03-09,54000 Travel per Diem Staff,Alliant Energy Center,1085,ALLIANT ENERGY CENTER [reference redacted] (staff meal),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13432,13432,2025-03-10,54000 Travel per Diem Staff,Uber.com,1191,UBER *TRIP 240362925MMHT9EW6 UBE (staff transportation),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13433,13433,2025-03-10,54000 Travel per Diem Staff,Uber.com,1093,UBER *TRIP 240362925MMJ7GAMA UBE  (staff transportation),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13434,13434,2025-03-10,54000 Travel per Diem Staff,Uber.com,1098,UBER *TRIP 240362925MMK5EJYF UBE (staff transportation),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13435,13435,2025-03-10,54000 Travel per Diem Staff,Uber.com,1199,UBER *TRIP 240362925MMJYFWQ4 UBE (staff transportation),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13436,13436,2025-03-10,54000 Travel per Diem Staff,Canteen,2636,Canteen 2434285250FVQW9YD Cantee (staff meal),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13437,13437,2025-03-10,54000 Travel per Diem Staff,Atlanta Airport,1862,ATLANTA AIRPORT 2443106264TWZGKD (staff meal),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13438,13438,2025-03-10,54000 Travel per Diem Staff,LAZ Parking,4815,LAZ PARKING M06316WC 2405522267S (staff travel),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13439,13439,2025-03-10,54000 Travel per Diem Staff,Sheraton,64220,SHERATON MADISON 2475542268EPJ2D (staff lodging),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13440,13440,2025-03-10,54000 Travel per Diem Staff,Sheraton,64220,SHERATON MADISON 2475542268EPJ2D (Staff lodging-Canoecopia Trade Show),Canoecopia 2025,explicit event,General Ledger Sheet1
+gl-13441,13441,2025-03-10,54000 Travel per Diem Staff,Sheraton,1361,SHERATON MADISON FB 2475542264YZ (staff meal-Canoecopia Trade Show),Canoecopia 2025,explicit event,General Ledger Sheet1
+gl-13442,13442,2025-03-10,54000 Travel per Diem Staff,Tornado Steakhouse,16937,TORNADO STEAKHOUSE 24013392501VY (staff meal-Canoecopia Trade Show),Canoecopia 2025,explicit event,General Ledger Sheet1
+gl-13443,13443,2025-03-10,54000 Travel per Diem Staff,MSN Metcalfes,1771,MSN METCALFES JV 6701117 2475542 (staff meal),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13444,13444,2025-03-10,54000 Travel per Diem Staff,LAZ Parking,8239,LAZ PKG M06316CLOVERFL [reference redacted] (staff travel),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13445,13445,2025-03-10,54000 Travel per Diem Staff,MSN Metcalfes,1033,MSN METCALFES JV 6701117 2475542 (staff meal),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13446,13446,2025-03-17,54000 Travel per Diem Staff,Aubrey Haskell VENDOR,43820,A Haskell Mileage to SMPR Forum in Peachtree Corners GA 626 miles,STS SMPR 2025,explicit event,General Ledger Sheet1
+gl-13447,13447,2025-03-17,54000 Travel per Diem Staff,Dahlias Restaurant,3044,DAHLIAS RESTAURANT & P 24000972D (staff meal),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13448,13448,2025-03-17,54000 Travel per Diem Staff,McDonald's,1069,MCDONALD'S F11437 24427332QLYRAF,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13449,13449,2025-03-18,54000 Travel per Diem Staff,Dog Days,1613,DOG DAYS HOT DOGS & BU 24000972E (staff meal),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13450,13450,2025-03-18,54000 Travel per Diem Staff,Dahlias Restaurant,1633,DAHLIAS RESTAURANT & P 24000972E (staff meal),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13451,13451,2025-03-19,54000 Travel per Diem Staff,Hilton,38392,HILTON HOTELS 24755422F4QE41KY6 (staff lodging STS SMPR),STS SMPR 2025,explicit event,General Ledger Sheet1
+gl-13452,13452,2025-03-19,54000 Travel per Diem Staff,Chick-Fil-A,1021,CHICK-FIL-A #00683 24427332FLM7T (staff meal),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13453,13453,2025-03-22,54000 Travel per Diem Staff,Uber.com,5640,UBER *TRIP 24036292HLXDKTLPE UBE (staff transportation),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13454,13454,2025-03-22,54000 Travel per Diem Staff,Hyatt,5053,HYATT REGENCY SAVANNAH F 2494300 (**waiting on receipt),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13455,13455,2025-03-23,54000 Travel per Diem Staff,Delta,19500,DELTA AIR *********4772 [reference redacted]  (staff travel),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13456,13456,2025-03-23,54000 Travel per Diem Staff,Parkers,200,PARKERS 19 24431052K3JHV43FP PAR (staff meal),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13457,13457,2025-03-25,54000 Travel per Diem Staff,DoorDash,3607,DD *DOORDASH YATAIRAME 24011342L (staff meal-Destinations International Savannah),DI Savannah 2025,explicit event,General Ledger Sheet1
+gl-13458,13458,2025-03-25,54000 Travel per Diem Staff,The Grey Restaurant,4231,TST*THE GREY RESTAURANT [reference redacted]  (staff meal-Destinations International Savannah),DI Savannah 2025,explicit event,General Ledger Sheet1
+gl-13459,13459,2025-03-25,54000 Travel per Diem Staff,Hyatt,114077,HYATT REGENCY SAVANNAH 24943002M  (staff lodging-Destinations International Savannah),DI Savannah 2025,explicit event,General Ledger Sheet1
+gl-13460,13460,2025-03-26,54000 Travel per Diem Staff,LAZ Parking,4708,LAZ PARKING M06316WC 24055222M89 (staff travel),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13461,13461,2025-03-26,54000 Travel per Diem Staff,Cantina Laredo,4404,TST* CANTINA LAREDO - ATL 241374 (staff meals),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13462,13462,2025-03-28,54000 Travel per Diem Staff,Atlanta Airport,3226,ATLANTA AIRPORT 24431062R54HWPTH (staff meal),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13463,13463,2025-03-29,54000 Travel per Diem Staff,Uber.com,5349,UBER *TRIP 24036292RLTPV77KP UBE (staff transportation),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13464,13464,2025-03-29,54000 Travel per Diem Staff,AMK CC Public Foods,2000,AMK W E W CC PUBLIC FOODS 247554 (staff meal - Washington DC Trade Show),Washington DC Trade Show 2025,explicit event,General Ledger Sheet1
+gl-13465,13465,2025-03-30,54000 Travel per Diem Staff,Uber.com,3642,UBER *TRIP 24036292TLWSH0SE0 UBE (staff transportation),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13466,13466,2025-03-30,54000 Travel per Diem Staff,Capital Burger,7590,CAPITAL BURGER 0213400 24431062T (staff meal - Washington DC Trade Show),Washington DC Trade Show 2025,explicit event,General Ledger Sheet1
+gl-13467,13467,2025-03-30,54000 Travel per Diem Staff,Old Ebbitt Grill,5980,OLD EBBITT GRILL 24000972SDQG3K5 (staff meal - Washington DC Trade Show),Washington DC Trade Show 2025,explicit event,General Ledger Sheet1
+gl-13468,13468,2025-03-30,54000 Travel per Diem Staff,Holiday Inn,58366,HOLIDAY INN EXP WASHINGT 2494300 (staff lodging - Washington DC Trade Show),Washington DC Trade Show 2025,explicit event,General Ledger Sheet1
+gl-13469,13469,2025-03-31,54000 Travel per Diem Staff,Uber.com,5281,UBER *TRIP 24036292SLT5M12WG UBE (staff transportation),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13470,13470,2025-03-31,54000 Travel per Diem Staff,Delta,79837,DELTA AIR *********8095 [reference redacted] (Flight IPW Conference),IPW 2025,explicit event; edition inferred from service context,General Ledger Sheet1
+gl-13471,13471,2025-03-31,54000 Travel per Diem Staff,LAZ Parking,3531,LAZ PARKING M06316WC 24055222S8E (staff travel parking),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13472,13472,2025-03-31,54000 Travel per Diem Staff,Air Ventures Grill,4884,TST* AIR VENTURES - GRILL 241374 (staff travel-Washington DC Trade Show),Washington DC Trade Show 2025,explicit event,General Ledger Sheet1
+gl-13473,13473,2025-04-16,54000 Travel per Diem Staff,Cancuns Mexican Grill,9183,CANCUNS MEXICAN GRILL OF 2423900 - Staff Lunch HWY 231 welcome center,Welcome-center / visitor activations 2025,series; not one trip,General Ledger Sheet1
+gl-13474,13474,2025-05-15,54000 Travel per Diem Staff,Uber.com,3099,UBER *TRIP 240362947LV9RL96F UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13475,13475,2025-05-15,54000 Travel per Diem Staff,Uber.com,2996,UBER *TRIP 240362947MMQQS2WS UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13476,13476,2025-05-16,54000 Travel per Diem Staff,Uber.com,1150,UBER *TRIP 240362948MMFZWQJ1 UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13477,13477,2025-05-16,54000 Travel per Diem Staff,Uber.com,5753,UBER *TRIP 240362948MMFZWB07 UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13478,13478,2025-05-16,54000 Travel per Diem Staff,Westin,57922,WESTIN CAPE CORAL FD [reference redacted],Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13479,13479,2025-06-13,54000 Travel per Diem Staff,American Airlines,58037,AMERICAN AIR0012248736504 240359 La Crosse Sport Show 2026,La Crosse Sport Show 2026,explicit event; includes advance airfare in 2025,General Ledger Sheet1
+gl-13480,13480,2025-06-14,54000 Travel per Diem Staff,Delta,69237,DELTA AIR *********3593 [reference redacted],Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13481,13481,2025-06-15,54000 Travel per Diem Staff,Uber.com,10169,UBER *TRIP 240362956LP5716KT UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13482,13482,2025-06-15,54000 Travel per Diem Staff,,6059,RANALLI'S 2469216582Y2ZN8SD RANA,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13483,13483,2025-06-16,54000 Travel per Diem Staff,Uber.com,5070,UBER *TRIP 240362957LWRSGFWZ UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13484,13484,2025-06-16,54000 Travel per Diem Staff,Uber.com,6110,UBER *TRIP 240362957LWSFKQVS UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13485,13485,2025-06-16,54000 Travel per Diem Staff,Uber.com,3859,UBER *TRIP 240362957MK40837H UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13486,13486,2025-06-16,54000 Travel per Diem Staff,TGI Fridays,2598,TGI FRIDAYS 2472 2494300576KX55P,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13487,13487,2025-06-17,54000 Travel per Diem Staff,Uber.com,1894,UBER *TRIP 240362958LWZT6JDM UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13488,13488,2025-06-17,54000 Travel per Diem Staff,Uber.com,1690,UBER *TRIP 240362958MK9TDRWH UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13489,13489,2025-06-17,54000 Travel per Diem Staff,Uber.com,6411,UBER *TRIP 240362958MM34ES5E UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13490,13490,2025-06-17,54000 Travel per Diem Staff,Uber.com,2224,UBER *TRIP 240362958MM51PXHX UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13491,13491,2025-06-17,54000 Travel per Diem Staff,Uber.com,500,UBER *TRIP 240362958MM5K0GBQ UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13492,13492,2025-06-17,54000 Travel per Diem Staff,Uber.com,300,UBER *TRIP 240362958MM5K6SFL UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13493,13493,2025-06-17,54000 Travel per Diem Staff,Uber.com,5038,UBER *TRIP 240362958MM5M0XR8 UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13494,13494,2025-06-17,54000 Travel per Diem Staff,,6529,SQ *NOOKIES ON WELLS 2469216582Y,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13495,13495,2025-06-17,54000 Travel per Diem Staff,,16897,MILLERS PUB 240133958032H6WT3 MI,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13496,13496,2025-06-17,54000 Travel per Diem Staff,,1150,CURB CHI TAXI 240552359AYZSYJA9,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13497,13497,2025-06-17,54000 Travel per Diem Staff,,3600,CURB CHI TAXI 240552359AYZSYZJS,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13498,13498,2025-06-18,54000 Travel per Diem Staff,Uber.com,3592,UBER *TRIP 240362959LPDVG7SP UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13499,13499,2025-06-18,54000 Travel per Diem Staff,Uber.com,5392,UBER *TRIP 240362959LX1G54K9 UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13500,13500,2025-06-19,54000 Travel per Diem Staff,Uber.com,2271,UBER *TRIP 24036295ALX5ELL11 UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13501,13501,2025-06-19,54000 Travel per Diem Staff,Uber.com,9385,UBER TRIP* TRIP 24000775A2X4Y1QG,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13502,13502,2025-06-19,54000 Travel per Diem Staff,LAZ Parking,5564,LAZ PARKING M06316WC 24055225BB1,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13503,13503,2025-06-19,54000 Travel per Diem Staff,LAZ Parking,4601,LAZ PARKING M06316WC 24055225BB1,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13504,13504,2025-06-20,54000 Travel per Diem Staff,Chick-Fil-A,2370,TST* CHIC-FIL-A O'HARE 24137465B,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13505,13505,2025-07-01,54000 Travel per Diem Staff,,6659,"Hotel Lincoln 06/15/25, Other",Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13506,13506,2025-07-01,54000 Travel per Diem Staff,,101680,"Hotel Lincoln, 06/15/25, Travel/IPW Hotel Stay",IPW 2025,explicit event; edition inferred from service context,General Ledger Sheet1
+gl-13507,13507,2025-07-01,54000 Travel per Diem Staff,,6777,"Uber, 06/18/25, Transportation",Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13508,13508,2025-07-01,54000 Travel per Diem Staff,,1692,"South Loop Market, 6/18/25, Retail Stores",Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13509,13509,2025-07-01,54000 Travel per Diem Staff,,3667,"Uber, 06/18/25, Transportation",Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13510,13510,2025-07-01,54000 Travel per Diem Staff,,2601,"McCormick Place, 06/18/25, Misc Store",Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13511,13511,2025-07-01,54000 Travel per Diem Staff,,7976,"Uber, 06/18/25, transportatin",Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13512,13512,2025-07-01,54000 Travel per Diem Staff,,1584,"Firecakes, 06/18/25, Misc Store",Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13513,13513,2025-07-01,54000 Travel per Diem Staff,,3162,"Corcoran's Grill, 06/18/25, Travel/IPW Meal",IPW 2025,explicit event; edition inferred from service context,General Ledger Sheet1
+gl-13514,13514,2025-07-01,54000 Travel per Diem Staff,,1473,"Firecakes, 06/18/25, Travel/IPW Meal",IPW 2025,explicit event; edition inferred from service context,General Ledger Sheet1
+gl-13515,13515,2025-07-01,54000 Travel per Diem Staff,,1912,"South Loop Market, 06/18/25, Travel/IPW Meal",IPW 2025,explicit event; edition inferred from service context,General Ledger Sheet1
+gl-13516,13516,2025-07-01,54000 Travel per Diem Staff,,8315,"Burger Bar Chicago, 06/18/25, Travel/IPW Meal",IPW 2025,explicit event; edition inferred from service context,General Ledger Sheet1
+gl-13517,13517,2025-07-05,54000 Travel per Diem Staff,,1408,UBER *TRIP 24036295SLPSHYRYZ UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13518,13518,2025-07-07,54000 Travel per Diem Staff,Venmo,5665,VENMO *JOSIE FERRAIOLI 24027625W,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13519,13519,2025-07-09,54000 Travel per Diem Staff,,3328,TST*BLUEMOON ATL 24692165Y34WVTJ,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13520,13520,2025-07-09,54000 Travel per Diem Staff,,894,HYATT REG MCCORMICK F&B [reference redacted],Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13521,13521,2025-07-09,54000 Travel per Diem Staff,,3268,FATPOUR TAPWORKS MCCORMIC 240495,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13522,13522,2025-07-10,54000 Travel per Diem Staff,,2993,UBER *TRIP 24036295ZLPG6P29A UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13523,13523,2025-07-10,54000 Travel per Diem Staff,,1839,PORTILLOS HOT DOGS #40 [reference redacted],Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13524,13524,2025-07-10,54000 Travel per Diem Staff,,3487,HYATT REG MCCORMICK F&B [reference redacted],Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13525,13525,2025-07-11,54000 Travel per Diem Staff,,6129,UBER *TRIP 240362960LTF6ENZT UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13526,13526,2025-07-11,54000 Travel per Diem Staff,Uber.com,700,UBER *TRIP 240362960MKH81NGX UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13527,13527,2025-07-11,54000 Travel per Diem Staff,,4671,UBER *TRIP 240362960MKHHF2R4 UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13528,13528,2025-07-11,54000 Travel per Diem Staff,,3162,HYATT REG MCCORMICK F&B [reference redacted],Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13529,13529,2025-07-11,54000 Travel per Diem Staff,,101188,HYATT REGENCY MCCORMICK [reference redacted],Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13530,13530,2025-07-14,54000 Travel per Diem Staff,,15000,IN *JOSIE FERRAIOLI 24692166430L,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13531,13531,2025-07-17,54000 Travel per Diem Staff,,62436,DELTA AIR *********1646 [reference redacted],Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13532,13532,2025-07-20,54000 Travel per Diem Staff,,2202,SAM ADAMS 24055226AQ21QYHBE SAM,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13533,13533,2025-07-20,54000 Travel per Diem Staff,,8022,MARKET ON MAIN 24000976A2XW5NFJS,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13534,13534,2025-07-21,54000 Travel per Diem Staff,Uber.com,7454,UBER *TRIP 24036296ALPZ2RZ42 UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13535,13535,2025-07-21,54000 Travel per Diem Staff,,1287,STARBUCKS 25491 24755426B506Z8K2,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13536,13536,2025-07-21,54000 Travel per Diem Staff,Sheraton,14672,SHERATON 24755426B4DJZPDMP SHERA,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13537,13537,2025-07-21,54000 Travel per Diem Staff,LAZ Parking,2354,LAZ PARKING M06316WC 24055226BQ3,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13538,13538,2025-07-21,54000 Travel per Diem Staff,,982,CAE COLUMBIA NEWS 24793386A03DKQ,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13539,13539,2025-07-29,54000 Travel per Diem Staff,Jessica Bright,40880,J Bright Mileage I-95 welcome center activation,Welcome-center / visitor activations 2025,series; not one trip,General Ledger Sheet1
+gl-13540,13540,2025-08-07,54000 Travel per Diem Staff,,4248,TAVERNA 24540456W01MM7SD2 TAVERN,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13541,13541,2025-08-09,54000 Travel per Diem Staff,Allianz Travel,6600,ALLIANZ TRAVEL INS 24036296XMKNK,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13542,13542,2025-08-09,54000 Travel per Diem Staff,Delta,50237,DELTA AIR *********2823 [reference redacted],Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13543,13543,2025-08-25,54000 Travel per Diem Staff,Jennifer Vigil - VENDOR,52864,J Vigil mileage and tolls to Orlando Governor's Conference,Governors Conference 2025,explicit event,General Ledger Sheet1
+gl-13544,13544,2025-08-25,54000 Travel per Diem Staff,Jessica Bright,52864,J Bright Mileage & Tolls to Orlando for Governor's Conference,Governors Conference 2025,explicit event,General Ledger Sheet1
+gl-13545,13545,2025-08-29,54000 Travel per Diem Staff,Uber.com,2150,UBER *TRIP 24036297HLTBW9GJ7 UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13546,13546,2025-08-29,54000 Travel per Diem Staff,Uber.com,1951,UBER *TRIP 24036297HMKEEY5T9 UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13547,13547,2025-08-29,54000 Travel per Diem Staff,Omni Hotels,57674,OMNI HOTELS 24755427J7LQYM8J9 OM,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13548,13548,2025-08-29,54000 Travel per Diem Staff,Omni Hotels,53588,OMNI HOTELS 24755427J7LQYM8JT OM,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13549,13549,2025-08-29,54000 Travel per Diem Staff,Omni Hotels,73191,OMNI HOTELS 24755427J7LQYMQS4 OM,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13550,13550,2025-08-29,54000 Travel per Diem Staff,Zaxby's,2405,ZAXBY'S #08403 24692167J308Y3AQT,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13551,13551,2025-09-02,54000 Travel per Diem Staff,"Hotelbeds USA, Inc",1799,HOTELBOOKING*SERVFEE 24116417MLT,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13552,13552,2025-09-03,54000 Travel per Diem Staff,,63533,HTL*GOLDENNUGGETLA 24036297NLP7P,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13553,13553,2025-09-04,54000 Travel per Diem Staff,United Airlines,83036,UNITED *********2434 24692167N33,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13554,13554,2025-09-06,54000 Travel per Diem Staff,United Airlines,4000,UNITED *********2071 24692167S2X,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13555,13555,2025-09-08,54000 Travel per Diem Staff,,2831,LYFT *RIDE SUN 9PM 24011347V2X4V,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13556,13556,2025-09-30,54000 Travel per Diem Staff,,41813,First Federal CC - Travel STS Connections,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13557,13557,2025-10-14,54000 Travel per Diem Staff,First Federal Bank,68837,FF Credit Card (2nd statement)- Delta Travel meet up,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13558,13558,2025-11-03,54000 Travel per Diem Staff,First Federal Bank,73674,FF Credit Card - Staff travel TMM,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13559,13559,2025-12-03,54000 Travel per Diem Staff,First Federal Bank,222556,"FF Credit Card - Staff travel DEMA, Florida's Leadership, Destinations FL annual meeting",Unassigned / mixed travel,mixed allocation; do not assign whole charge,General Ledger Sheet1
+gl-13560,13560,2025-12-04,54000 Travel per Diem Staff,Holiday Inn,25543,HOLIDAY INN EXP PENSACOL 2494300 - Staff lodging FGNW leadership,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13561,13561,2025-12-04,54000 Travel per Diem Staff,That's Too Cute,9259,SP THATS TOO CUTE 2401134AJ2X59Q,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13562,13562,2025-12-05,54000 Travel per Diem Staff,PM USA,285,PMUSA 207010 PENSACOLA 2407105AL - Staff Travel Parking in Pensacola,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13563,13563,2025-12-05,54000 Travel per Diem Staff,Holiday Inn,300,HOLIDAY INN EXP PENSACOL 2494300 - Staff travel soda at hotel,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13564,13564,2025-12-11,54000 Travel per Diem Staff,LAZ Parking,2782,LAZ PARKING M06316WC 2405522ASGV - parking for sts meeting,STS meetings 2026,series; not one trip,General Ledger Sheet1
+gl-13565,13565,2025-12-11,54000 Travel per Diem Staff,Marriott Atlanta Gateway,3110,MARRIOTT ATL GATEWAY F 2469216AS -staff meal,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13566,13566,2025-12-11,54000 Travel per Diem Staff,Marriott Atlanta Gateway,23346,MARRIOTT ATL GATEWAY 2469216AS32 - Staff lodging STS meeting,STS meetings 2026,series; not one trip,General Ledger Sheet1
+gl-13567,13567,2025-12-13,54000 Travel per Diem Staff,,500,"CTLP*CONRIC LLC 2411641AWGX6EH1D - Soda at airport, no receipt",Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13568,13568,2025-12-18,54000 Travel per Diem Staff,Jennifer Vigil - VENDOR,50680,J Vigil mileage DEMA,DEMA 2025,explicit event,General Ledger Sheet1
+gl-13569,13569,2026-01-10,54000 Travel per Diem Staff,,50044,COURTYARD NEW YORK 2469216QV2XS9,NYC Travel Trade Show 2026,source reconciliation identifies JV event,General Ledger Sheet1
+gl-13570,13570,2026-01-10,54000 Travel per Diem Staff,Delta,56900,DELTA AIR *********0905 2471705Q,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13571,13571,2026-01-10,54000 Travel per Diem Staff,Delta,55660,DELTA AIR *********9358 2471705Q,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13572,13572,2026-01-10,54000 Travel per Diem Staff,Hilton,43425,HILTON CONVENTION CTR 2475542QV4,Florida Huddle 2026,source reconciliation / named credit,General Ledger Sheet1
+gl-13573,13573,2026-01-10,54000 Travel per Diem Staff,Hilton,43425,HILTON CONVENTION CTR 2475542QV4,Florida Huddle 2026,source reconciliation / named credit,General Ledger Sheet1
+gl-13574,13574,2026-01-12,54000 Travel per Diem Staff,Delta,65059,DELTA AIR *********1285 2471705Q,La Crosse Sport Show 2026,source reconciliation identifies JB event,General Ledger Sheet1
+gl-13575,13575,2026-01-12,54000 Travel per Diem Staff,Delta,76259,DELTA AIR *********8715 2471705Q,Florida Huddle 2026,source reconciliation / named credit,General Ledger Sheet1
+gl-13576,13576,2026-01-12,54000 Travel per Diem Staff,Hilton,43425,HILTON CONVENTION CTR 2475542QX4,Florida Huddle 2026,source reconciliation / named credit,General Ledger Sheet1
+gl-13577,13577,2026-01-23,54000 Travel per Diem Staff,,14784,UBER *TRIP 2403629D7LP4G8078 UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13578,13578,2026-01-23,54000 Travel per Diem Staff,,7498,SP BOSTON FRUIT SLICES 2401134D8,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13579,13579,2026-01-24,54000 Travel per Diem Staff,Uber.com,4049,UBER *TRIP 2403629D8LP5SDTPV UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13580,13580,2026-01-24,54000 Travel per Diem Staff,Uber.com,3791,UBER *TRIP 2403629D8LSYV7QH0 UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13581,13581,2026-01-24,54000 Travel per Diem Staff,,9408,TST*QUALITY BISTRO - WES 2469216,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13582,13582,2026-01-24,54000 Travel per Diem Staff,,2706,TST*RUSS & DAUGHTERS - 3 2469216,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13583,13583,2026-01-25,54000 Travel per Diem Staff,Uber.com,568,UBER *TRIP 2403629D9LWWENGSD UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13584,13584,2026-01-25,54000 Travel per Diem Staff,Uber.com,3563,UBER *TRIP 2403629D9LT62HK0W UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13585,13585,2026-01-25,54000 Travel per Diem Staff,Uber.com,2830,UBER *TRIP 2403629D9LV0ZE62L UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13586,13586,2026-01-26,54000 Travel per Diem Staff,,28923,COURTYARD NEW YORK 2469216DB31B1,NYC Travel Trade Show 2026,source reconciliation identifies JV event,General Ledger Sheet1
+gl-13587,13587,2026-01-26,54000 Travel per Diem Staff,LAZ Parking,5564,LAZ PARKING M06316WC 2405522DBJ9,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13588,13588,2026-01-27,54000 Travel per Diem Staff,Uber.com,15215,UBER *TRIP 2403629DBLTEGD478 UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13589,13589,2026-02-02,54000 Travel per Diem Staff,Uber.com,4097,UBER *TRIP 2403629DHMKJVJQ65 UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13590,13590,2026-02-04,54000 Travel per Diem Staff,Hilton,-43425,HILTON CONVENTION CTR 7475542DR4 Refund for overcharge on 020326 statement,Florida Huddle 2026,source reconciliation / named credit,General Ledger Sheet1
+gl-13591,13591,2026-02-04,54000 Travel per Diem Staff,Hilton,1784,HILTON MARKETPLACE 2475542DJ4YLK Staff Meal Visit Florida Huddle,Florida Huddle 2026,explicit event,General Ledger Sheet1
+gl-13592,13592,2026-02-04,54000 Travel per Diem Staff,Hilton,6006,HILTON FAST BREAK 2475542DJ4YLKW Staff Meal Visit Florida Huddle,Florida Huddle 2026,explicit event,General Ledger Sheet1
+gl-13593,13593,2026-02-04,54000 Travel per Diem Staff,LAZ Parking,2782,LAZ PARKING M06316WC 2405522DKJH ECP Parking-Visit Florida Huddle,Florida Huddle 2026,explicit event,General Ledger Sheet1
+gl-13594,13594,2026-02-04,54000 Travel per Diem Staff,Uber.com,6497,UBER *TRIP 2403629DKMKTPVBHV UBE / Staff Travel Visit Florida Huddle,Florida Huddle 2026,explicit event,General Ledger Sheet1
+gl-13595,13595,2026-02-04,54000 Travel per Diem Staff,Uber.com,1521,UBER *TRIP 2403629DJLXQ1VG0D UBE / Staff Travel Visit Florida Huddle,Florida Huddle 2026,explicit event,General Ledger Sheet1
+gl-13596,13596,2026-02-04,54000 Travel per Diem Staff,Hilton,3056,HILTON FAST BREAK 2475542DK4YLXH,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13597,13597,2026-02-04,54000 Travel per Diem Staff,Hilton,3163,HILTON MARKETPLACE 2475542DJ4YLK,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13598,13598,2026-02-04,54000 Travel per Diem Staff,Delta,23500,DELTA AIR Baggage Fee 2471705DJT,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13599,13599,2026-02-04,54000 Travel per Diem Staff,Hilton,1518,HILTON MARKETPLACE 2475542DJ4YLK,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13600,13600,2026-02-05,54000 Travel per Diem Staff,Hilton,86850,HILTON CONVENTION CTR 2475542DM4,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13601,13601,2026-02-05,54000 Travel per Diem Staff,,891,ATL POPEYES D 6683136 2475542DMM,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13602,13602,2026-02-05,54000 Travel per Diem Staff,Uber.com,3399,UBER *TRIP 2403629DLLT16LDM5 UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13603,13603,2026-02-05,54000 Travel per Diem Staff,Delta,3500,DELTA AIR Baggage Fee 2471705DMT,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13604,13604,2026-02-05,54000 Travel per Diem Staff,Delta,10000,DELTA AIR Baggage Fee 2471705DMT,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13605,13605,2026-02-06,54000 Travel per Diem Staff,Uber.com,680,UBER *TRIP 2403629DMLV161PFH UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13606,13606,2026-02-09,54000 Travel per Diem Staff,Delta,45680,DELTA AIR *********6596 2471705D STS Board Meeting,STS meetings 2026,series; not one trip,General Ledger Sheet1
+gl-13607,13607,2026-02-10,54000 Travel per Diem Staff,Delta,3500,DELTA AIR Baggage Fee 2471705DST,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13608,13608,2026-02-12,54000 Travel per Diem Staff,Blue Moon,4285,BLUE MOON 2427539DWS66EGZ4S BLUE Staff Meal LaCrosse Sports Show,La Crosse Sport Show 2026,explicit event; includes advance airfare in 2025,General Ledger Sheet1
+gl-13609,13609,2026-02-12,54000 Travel per Diem Staff,Stand 1,805,Stand 1 - Meeting Grounds 247933Staff Meal at LaCrosse Sports Show,La Crosse Sport Show 2026,explicit event; includes advance airfare in 2025,General Ledger Sheet1
+gl-13610,13610,2026-02-12,54000 Travel per Diem Staff,Travel Planners Holidays,328910,TRAVELPLANNERS HOLIDAYS L 747750 Staff Lodging IPW,IPW 2026,explicit event; edition inferred from service context,General Ledger Sheet1
+gl-13611,13611,2026-02-12,54000 Travel per Diem Staff,Buzzard Billy's,7213,TST*BUZZARD BILLYS LACR 2469216D Staff Meal LaCrosse Sports Show,La Crosse Sport Show 2026,explicit event; includes advance airfare in 2025,General Ledger Sheet1
+gl-13612,13612,2026-02-12,54000 Travel per Diem Staff,Courtyard Marriot,1783,COURTYARD MARRIOT DOWN 2469216DW,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13613,13613,2026-02-13,54000 Travel per Diem Staff,Courtyard Marriot,2510,COURTYARD MARRIOT DOWN 2469216DX Staff Meal LaCrosse Sports Show,La Crosse Sport Show 2026,explicit event; includes advance airfare in 2025,General Ledger Sheet1
+gl-13614,13614,2026-02-13,54000 Travel per Diem Staff,Uber.com,975,UBER *TRIP 2403629DWLX1BGH9T UBE Travel LaCrosse Sports Show,La Crosse Sport Show 2026,explicit event; includes advance airfare in 2025,General Ledger Sheet1
+gl-13615,13615,2026-02-13,54000 Travel per Diem Staff,Courtyard Marriot,2510,COURTYARD MARRIOT DOWN 2469216DX,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13616,13616,2026-02-13,54000 Travel per Diem Staff,,1964,HACIENDA MEXICAN BAR 2405523DYJW,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13617,13617,2026-02-13,54000 Travel per Diem Staff,,1680,Stand 1 - Meeting Grounds 247933,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13618,13618,2026-02-14,54000 Travel per Diem Staff,Courtyard Marriot,1830,COURTYARD MARRIOT DOWN 2469216DY Staff Meal LaCrosse Sports Show,La Crosse Sport Show 2026,explicit event; includes advance airfare in 2025,General Ledger Sheet1
+gl-13619,13619,2026-02-14,54000 Travel per Diem Staff,,1317,SQ *GROUNDED PATIO CAFE 2469216D,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13620,13620,2026-02-14,54000 Travel per Diem Staff,Courtyard Marriot,1994,COURTYARD MARRIOT DOWN 2469216DY,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13621,13621,2026-02-15,54000 Travel per Diem Staff,The Freight House,11884,THE FREIGHT HOUSE 2427539DZS66E7 Staff Meal - LaCrosse Sports Show,La Crosse Sport Show 2026,explicit event; includes advance airfare in 2025,General Ledger Sheet1
+gl-13622,13622,2026-02-15,54000 Travel per Diem Staff,Festival Foods,6553,FESTIVAL FOODS 2442733DYLYPNBLVB Candy for table at LaCrosse Sports Show,La Crosse Sport Show 2026,explicit event; includes advance airfare in 2025,General Ledger Sheet1
+gl-13623,13623,2026-02-15,54000 Travel per Diem Staff,Breakfast Club and Pub,1536,THE BREAKFAST CLUB & PUB 2480197,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13624,13624,2026-02-16,54000 Travel per Diem Staff,Mill City Tavern,5474,MSP MILL CITY TAVERN - EC 242697 Staff Meal LaCrosse Sports Show,La Crosse Sport Show 2026,explicit event; includes advance airfare in 2025,General Ledger Sheet1
+gl-13625,13625,2026-02-16,54000 Travel per Diem Staff,,1874,KWIK TRIP #414 2494300E0B1ZNB9DF Refuel Rental Car -LaCrosse Sports Show,La Crosse Sport Show 2026,explicit event; includes advance airfare in 2025,General Ledger Sheet1
+gl-13626,13626,2026-02-16,54000 Travel per Diem Staff,Budget Rent-a-Car,45492,BUDGET RENT A CAR 2494135E0R1DHB Rental Car LaCrosse Sports Show,La Crosse Sport Show 2026,explicit event; includes advance airfare in 2025,General Ledger Sheet1
+gl-13627,13627,2026-02-16,54000 Travel per Diem Staff,LAZ Parking,8346,LAZ PARKING M06316WC 2405522E0JY ECP Parking LaCrosse Sports Show,La Crosse Sport Show 2026,explicit event; includes advance airfare in 2025,General Ledger Sheet1
+gl-13628,13628,2026-02-16,54000 Travel per Diem Staff,Courtyard Marriot,70477,COURTYARD MARRIOT DOWN 2469216E0 Staff Lodging LaCrosse Sports Show,La Crosse Sport Show 2026,explicit event; includes advance airfare in 2025,General Ledger Sheet1
+gl-13629,13629,2026-02-16,54000 Travel per Diem Staff,Breakfast Club and Pub,3367,THE BREAKFAST CLUB & PUB 2480197 Staff Meal for LaCrosse Sports Show,La Crosse Sport Show 2026,explicit event; includes advance airfare in 2025,General Ledger Sheet1
+gl-13630,13630,2026-02-16,54000 Travel per Diem Staff,Courtyard Marriot,68430,COURTYARD MARRIOT DOWN 2469216E0 Staff Lodging LaCrosse Sports Show,La Crosse Sport Show 2026,explicit event; includes advance airfare in 2025,General Ledger Sheet1
+gl-13631,13631,2026-02-16,54000 Travel per Diem Staff,Mill City Tavern,543,MSP MILL CITY TAVERN - EC 242697,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13632,13632,2026-02-16,54000 Travel per Diem Staff,Uber.com,2408,UBER *EATS 2403629DZLVJWXXEF UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13633,13633,2026-02-16,54000 Travel per Diem Staff,Delta,3500,DELTA AIR Baggage Fee 2471705E0T,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13634,13634,2026-02-16,54000 Travel per Diem Staff,Mill City Tavern,4994,MSP MILL CITY TAVERN - EC 242697,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13635,13635,2026-02-19,54000 Travel per Diem Staff,Aloft Hotel,31200,ALOFT TALLAHASSEE DOWN 2475542E3 Staff Lodging Leadership NWFL,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13636,13636,2026-02-26,54000 Travel per Diem Staff,Jessica Bright,15400,J Bright Mileage VF Adventure Connect,Welcome-center / visitor activations 2026,series; not one trip,General Ledger Sheet1
+gl-13637,13637,2026-03-25,54000 Travel per Diem Staff,Uber.com,2099,UBER *TRIP 2403629F4LPEK16KK UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13638,13638,2026-03-25,54000 Travel per Diem Staff,LAZ Parking,1391,LAZ PARKING M06316WC 2405522F5L5,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13639,13639,2026-03-31,54000 Travel per Diem Staff,Delta,42940,DELTA AIR *********3300 2471705F,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13640,13640,2026-04-10,54000 Travel per Diem Staff,Hampton Inn,22825,Vigil Hotel,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13641,13641,2026-05-05,54000 Travel per Diem Staff,Delta,69640,DELTA AIR *********5391 2471705G,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13642,13642,2026-05-05,54000 Travel per Diem Staff,Delta,69640,DELTA *********0360 2469216GEBLS,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13643,13643,2026-05-08,54000 Travel per Diem Staff,Hotel Effie,35168,HOTEL EFFIE AUTOGRAPH 2469216GHB,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13644,13644,2026-05-08,54000 Travel per Diem Staff,LAZ Parking,4725,PMC - PAID PARKING 2449216GH2X4N,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13645,13645,2026-05-14,54000 Travel per Diem Staff,Justin Butler,35980,J Butler Travel Mileage to STS Marketing College,STS Marketing College 2026,receipt / reimbursement memo,General Ledger Sheet1
+gl-13646,13646,2026-05-14,54000 Travel per Diem Staff,Marriott Atlanta Gateway,2954,MARRIOTT PALMETTO RESO 2469216GP,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13647,13647,2026-05-15,54000 Travel per Diem Staff,Marriott Atlanta Gateway,45509,MARRIOTT PALMETTO RESO 2469216GR,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13648,13648,2026-05-15,54000 Travel per Diem Staff,LAZ Parking,4173,LAZ PARKING M06316WC 2405522GRMW,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13649,13649,2026-05-15,54000 Travel per Diem Staff,Uber.com,3793,UBER *TRIP 2403629GPLX2MNYQY UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13650,13650,2026-05-15,54000 Travel per Diem Staff,SRQ Motorworks,3581,SRQ MOTORWORKS BAR 1115 2475542G,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13651,13651,2026-05-17,54000 Travel per Diem Staff,Delta,4500,DELTA *********5434 2469216GSBN5,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13652,13652,2026-05-18,54000 Travel per Diem Staff,Uber.com,3599,UBER *TRIP 2403629GSMMTL2QV9 UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13653,13653,2026-05-18,54000 Travel per Diem Staff,Uber.com,2998,UBER *TRIP 2403629GSLXJV4G2P UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13654,13654,2026-05-18,54000 Travel per Diem Staff,Shooters Waterfront,11811,TST*SHOOTERS WATERFRONT 2469216G,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13655,13655,2026-05-18,54000 Travel per Diem Staff,S3,7832,S3 2480197GVMZS85FML S3 FORT LAU,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13656,13656,2026-05-19,54000 Travel per Diem Staff,Waxy O'Connors,4215,WAXY OCONNORS 2400097GWNGJ5KVQY,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13657,13657,2026-05-19,54000 Travel per Diem Staff,Uber.com,2498,UBER *TRIP 2403629GVLRZM9KMB UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13658,13658,2026-05-19,54000 Travel per Diem Staff,Uber.com,1998,UBER *TRIP 2403629GVLP7SFND2 UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13659,13659,2026-05-19,54000 Travel per Diem Staff,Uber.com,1597,UBER *TRIP 2403629GVLT2YTD8M UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13660,13660,2026-05-19,54000 Travel per Diem Staff,Savor F&B,600,BCCC SAVOR F&B 2411641GWN0VNYSE3,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13661,13661,2026-05-20,54000 Travel per Diem Staff,Casablanca Cafe,5136,CASABLANCA CAFE 2480197GXN1YR2J9,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13662,13662,2026-05-20,54000 Travel per Diem Staff,Uber.com,2910,UBER *TRIP 2403629GWLV3MP98W UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13663,13663,2026-05-21,54000 Travel per Diem Staff,Hidden Key,7954,HIDDEN KEY 2475542GY4ZLRE932 HID,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13664,13664,2026-05-21,54000 Travel per Diem Staff,Leeward Market,2775,LEEWARD MARKET 2475542GY4ZLRE31X,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13665,13665,2026-05-21,54000 Travel per Diem Staff,Delta,4500,DELTA AIR Baggage Fee 2471705GYT,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13666,13666,2026-05-21,54000 Travel per Diem Staff,Uber.com,1138,UBER *TRIP 2403629GXMM7B40A1 UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13667,13667,2026-05-21,54000 Travel per Diem Staff,Hilton,1524,HILTON FTL LEMARCHE 2475542GY4ZL,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13668,13668,2026-05-21,54000 Travel per Diem Staff,Uber.com,1799,UBER *TRIP 2403629GXLPHJ0AS0 UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13669,13669,2026-05-21,54000 Travel per Diem Staff,Uber.com,2097,UBER *TRIP 2403629GXLPHL32EE UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13670,13670,2026-05-21,54000 Travel per Diem Staff,Uber.com,1697,UBER *TRIP 2403629GXLX4MN6HQ UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13671,13671,2026-05-22,54000 Travel per Diem Staff,Hilton,24408,HILTON FT LAUDERDALE 2475542GZ7K,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13672,13672,2026-05-22,54000 Travel per Diem Staff,LAZ Parking,5885,LAZ PARKING M06316WC 2405522GZN4,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13673,13673,2026-05-22,54000 Travel per Diem Staff,15th Street Fisheries,2819,SPO*15THSTREETFISHERIES 2413746G,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13674,13674,2026-05-22,54000 Travel per Diem Staff,Uber.com,2399,UBER *TRIP 2403629GYLTEJ1GZ6 UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13675,13675,2026-05-22,54000 Travel per Diem Staff,15th Street Fisheries,5900,SPO*15THSTREETFISHERIES 2413746G,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13676,13676,2026-05-22,54000 Travel per Diem Staff,Hilton,28472,HILTON FT LAUDERDALE 2475542GZ7K,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13677,13677,2026-05-22,54000 Travel per Diem Staff,Uber.com,4679,UBER *TRIP 2403629GYMKK74Z2J UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13678,13678,2026-05-22,54000 Travel per Diem Staff,Half Moon Empanada,1773,HALF MOON EMPANADA FLL 2443106GZ,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13679,13679,2026-05-24,54000 Travel per Diem Staff,LAZ Parking,9737,LAZ PARKING M06316WC 2405522H1N6,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13680,13680,2026-05-31,54000 Travel per Diem Staff,Osaka Hibachi,1515,OSAKA HIBACHI 2476501H8NDVAQP82,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13681,13681,2026-06-09,54000 Travel per Diem Staff,Delta,49740,DELTA AIR *********3064 2471705H,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13682,13682,2026-06-09,54000 Travel per Diem Staff,Visit Florida,64500,VISIT FLORIDA SERVICE CEN 247554,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13683,13683,2026-06-10,54000 Travel per Diem Staff,Hilton,24188,HILTON WEST PALM BEACH 2475542HJ,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13684,13684,2026-06-12,54000 Travel per Diem Staff,Jessica Bright,25375,J Bright Mileage I 10 welcome center summer showcase,Welcome-center / visitor activations 2026,series; not one trip,General Ledger Sheet1
+gl-13685,13685,2026-06-12,54000 Travel per Diem Staff,Justin Butler,1285,J Butler Travel Mileage to STS Marketing College - mileage correction,STS Marketing College 2026,receipt / reimbursement memo,General Ledger Sheet1
+gl-13686,13686,2026-07-14,54000 Travel per Diem Staff,Delta,41639,DELTA AIR *********6456 2471705J,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13687,13687,2026-08-06,54000 Travel per Diem Staff,Delta,51739,DELTA *********6705 2469216KBBRE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13688,13688,2026-08-07,54000 Travel per Diem Staff,Hilton,24188,HILTON WEST PALM BEACH 2475542KQ,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13689,13689,2026-09-05,54000 Travel per Diem Staff,,-9259,Rcls Tyndall Federal Credit Union,Travel account reclassifications,"accounting transfer, not a trip",General Ledger Sheet1
+gl-13690,13690,2026-09-09,54000 Travel per Diem Staff,Uber.com,3299,UBER *TRIP 2403629LQMMJF2029 UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13691,13691,2026-09-09,54000 Travel per Diem Staff,Philips Seafood,6688,ATL PHILLIPS SEAFOOD 1119 247554,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13692,13692,2026-09-11,54000 Travel per Diem Staff,Chili's,4342,CHILI'S PBI CNP 2443106LFEM4GQ5E,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13693,13693,2026-09-11,54000 Travel per Diem Staff,Hilton,24188,HILTON WEST PALM BEACH 2475542LF,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13694,13694,2026-09-11,54000 Travel per Diem Staff,Uber.com,1897,UBER *TRIP 2403629LELT0E078Y UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13695,13695,2026-09-11,54000 Travel per Diem Staff,Hilton,29799,HILTON WEST PALM BEACH 2475542LF,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13696,13696,2026-09-11,54000 Travel per Diem Staff,Paradies Lagardere,425,PBI Seaside Mercantile 2479338LE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13697,13697,2026-09-12,54000 Travel per Diem Staff,Uber.com,5953,UBER *TRIP 2403629LFLT5DP1PF UBE,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13698,13698,2026-09-12,54000 Travel per Diem Staff,LAZ Parking,5564,LAZ PARKING M06316WC 2405522LGS0,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13699,13699,2026-09-14,54000 Travel per Diem Staff,Delta,-9510,DELTA *********1132 7469216LJBMK,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13700,13700,2026-09-14,54000 Travel per Diem Staff,Delta,-9051,DELTA AIR *********0780 7471705L (still waiting for receipt to be submitted from Jennifer as of 10/20/26),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13701,13701,2026-09-16,54000 Travel per Diem Staff,Delta,-19869,DELTA AIR *********0780 7471705L  (still waiting for receipt to be submitted from Jennifer as of 10/20/26),Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13704,13704,2024-11-03,54001 Travel Per Diem Non-Staff,First Federal Bank,15091,First Fed CC - Immersion Trip for marketing agency lunch,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13705,13705,2025-06-02,54001 Travel Per Diem Non-Staff,Aqua,126619,Aqua Staff Travel Lodging,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13706,13706,2025-07-21,54001 Travel Per Diem Non-Staff,,6616,HARRISONS - F&B 24000976B349PB26,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13707,13707,2025-09-19,54001 Travel Per Diem Non-Staff,Aqua,82114,Aqua staff travel for DPC Board Meeting on 9/16,Agency board-meeting travel,explicit purpose; separate service dates,General Ledger Sheet1
+gl-13708,13708,2025-09-30,54001 Travel Per Diem Non-Staff,,45865,First Federal CC - PR influencer,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13709,13709,2025-11-30,54001 Travel Per Diem Non-Staff,Aqua,166508,Agency travel to board meeting,Agency board-meeting travel,explicit purpose; separate service dates,General Ledger Sheet1
+gl-13710,13710,2026-05-29,54001 Travel Per Diem Non-Staff,Aqua,67844,Account Service DPC - Travel Expenses for 5/26/26 Board of Directors Meeting Agency Traveling Staff: • Travis McClure - Account Director,Agency board-meeting travel,explicit purpose; separate service dates,General Ledger Sheet1
+gl-13711,13711,2026-06-17,54001 Travel Per Diem Non-Staff,Hotel Indigo,21946,HOTEL INDIGO PANAMA 2494300HTD4N,Unassigned / mixed travel,unresolved,General Ledger Sheet1
+gl-13712,13712,2026-09-05,54001 Travel Per Diem Non-Staff,,-3636,Rcls Amazon,Travel account reclassifications,"accounting transfer, not a trip",General Ledger Sheet1
+gl-13396-detail-1,13396,3/1/2025,54000 Travel per Diem Staff,HOTEL LINCOLN,115765,"3/1/2025 HOTEL LINCOLN 54000 (1,157.65) $      IPW Staff Lodging 522 JENNIFER VIGIL",IPW 2025,source identifies event,2025/March 2025 Financial Package.pdf page 30
+gl-13396-detail-2,13396,3/1/2025,54000 Travel per Diem Staff,DELTA AIR   *********9767,53237,3/1/2025 DELTA AIR   *********9767 54000 (532.37) $          Staff Travel 522 JENNIFER VIGIL,Unassigned / mixed travel,unresolved,2025/March 2025 Financial Package.pdf page 30
+gl-13396-detail-3,13396,2/28/2025,54000 Travel per Diem Staff,DELTA AIR   *********0922,50237,2/28/2025 DELTA AIR   *********0922 54000 (502.37) $          Staff Travel 522 JENNIFER VIGIL,Unassigned / mixed travel,unresolved,2025/March 2025 Financial Package.pdf page 30
+gl-13396-detail-4,13396,2/28/2025,54000 Travel per Diem Staff,DELTA       *********2513,71436,2/28/2025 DELTA       *********2513 54000 (714.36) $          Staff Travel 522 JENNIFER VIGIL,Unassigned / mixed travel,unresolved,2025/March 2025 Financial Package.pdf page 30
+gl-13396-detail-5,13396,2/26/2025,54000 Travel per Diem Staff,DELTA AIR   *********7419,48737,2/26/2025 DELTA AIR   *********7419 54000 (487.37) $          Staff Travel 522 JENNIFER VIGIL,Unassigned / mixed travel,unresolved,2025/March 2025 Financial Package.pdf page 30
+gl-13396-detail-6,13396,2/24/2025,54000 Travel per Diem Staff,DELTA AIR   *********3881,30919,2/24/2025 DELTA AIR   *********3881 54000 (309.19) $          Staff Travel 522 JENNIFER VIGIL,Unassigned / mixed travel,unresolved,2025/March 2025 Financial Package.pdf page 30
+gl-13396-detail-7,13396,2/24/2025,54000 Travel per Diem Staff,DELTA AIR   *********5911,68918,2/24/2025 DELTA AIR   *********5911 54000 (689.18) $          Staff Travel 522 JENNIFER VIGIL,Unassigned / mixed travel,unresolved,2025/March 2025 Financial Package.pdf page 30
+gl-13396-detail-8,13396,2/16/2025,54000 Travel per Diem Staff,UBER   *TRIP,1897,2/16/2025 UBER   *TRIP 54000 (18.97) $            Staff Travel 522 JENNIFER VIGIL,Unassigned / mixed travel,unresolved,2025/March 2025 Financial Package.pdf page 30
+gl-13396-detail-9,13396,2/16/2025,54000 Travel per Diem Staff,UBER   *TRIP,799,2/16/2025 UBER   *TRIP 54000 (7.99) $               Staff Travel 522 JENNIFER VIGIL,Unassigned / mixed travel,unresolved,2025/March 2025 Financial Package.pdf page 30
+gl-13396-detail-10,13396,2/16/2025,54000 Travel per Diem Staff,UBER   *TRIP,2190,2/16/2025 UBER   *TRIP 54000 (21.90) $            Staff Travel 522 JENNIFER VIGIL,Unassigned / mixed travel,unresolved,2025/March 2025 Financial Package.pdf page 30
+gl-13396-detail-11,13396,2/6/2025,54000 Travel per Diem Staff,UBER   *TRIP,4439,2/6/2025 UBER   *TRIP 54000 (44.39) $            Staff Travel 522 JENNIFER VIGIL,Unassigned / mixed travel,unresolved,2025/March 2025 Financial Package.pdf page 30
+gl-13396-detail-12,13396,2/6/2025,54000 Travel per Diem Staff,WEC EMMA'S PATISSERIE,2677,2/6/2025 WEC EMMA'S PATISSERIE 54000 (26.77) $            Staff Meal 522 JENNIFER VIGIL,Unassigned / mixed travel,unresolved,2025/March 2025 Financial Package.pdf page 30
+gl-13396-detail-13,13396,2/6/2025,54000 Travel per Diem Staff,WEC LODGING,113397,"2/6/2025 WEC LODGING 54000 (1,133.97) $      Staff Lodging VF Huddle 522 JENNIFER VIGIL",Florida Huddle 2025,source identifies event,2025/March 2025 Financial Package.pdf page 30
+gl-13396-detail-14,13396,2/5/2025,54000 Travel per Diem Staff,IVY ON THE SQUARE,12090,2/5/2025 IVY ON THE SQUARE 54000 (120.90) $          Staff Meal 522 JENNIFER VIGIL,Unassigned / mixed travel,unresolved,2025/March 2025 Financial Package.pdf page 30
+gl-13396-detail-15,13396,2/5/2025,54000 Travel per Diem Staff,WEC EMMA'S PATISSERIE,2633,2/5/2025 WEC EMMA'S PATISSERIE 54000 (26.33) $            Staff Meal 522 JENNIFER VIGIL,Unassigned / mixed travel,unresolved,2025/March 2025 Financial Package.pdf page 30
+gl-13396-detail-16,13396,2/4/2025,54000 Travel per Diem Staff,WEC YELLOW PONY BAR & GRI,10308,2/4/2025 WEC YELLOW PONY BAR & GRI 54000 (103.08) $          Staff Meal 522 JENNIFER VIGIL,Unassigned / mixed travel,unresolved,2025/March 2025 Financial Package.pdf page 30
+gl-13396-detail-17,13396,2/3/2025,54000 Travel per Diem Staff,WEC FILO'S FIESTA MEXICAN,2838,2/3/2025 WEC FILO'S FIESTA MEXICAN 54000 (28.38) $            Staff Meal 522 JENNIFER VIGIL,Unassigned / mixed travel,unresolved,2025/March 2025 Financial Package.pdf page 30
+gl-13396-detail-18,13396,2/3/2025,54000 Travel per Diem Staff,LOVE'S #0453 INSIDE,965,2/3/2025 LOVE'S #0453 INSIDE 54000 (9.65) $               Staff Meal 522 JENNIFER VIGIL,Unassigned / mixed travel,unresolved,2025/March 2025 Financial Package.pdf page 30
+gl-13396-detail-19,13396,2/6/2025,54000 Travel per Diem Staff,WEC LODGING,113397,"2/6/2025 WEC LODGING 54000 (1,133.97) $      Staff Lodging VF Huddle 1694 AUBREY E HASKELL",Florida Huddle 2025,source identifies event,2025/March 2025 Financial Package.pdf page 30
+gl-13396-detail-20,13396,2/6/2025,54000 Travel per Diem Staff,WEC EMMA'S PATISSERIE,2443,2/6/2025 WEC EMMA'S PATISSERIE 54000 (24.43) $            Staff Meal 1694 AUBREY E HASKELL,Unassigned / mixed travel,unresolved,2025/March 2025 Financial Package.pdf page 30
+gl-13396-detail-21,13396,2/5/2025,54000 Travel per Diem Staff,WEC EMMA'S PATISSERIE,1639,2/5/2025 WEC EMMA'S PATISSERIE 54000 (16.39) $            Staff Meal 1694 AUBREY E HASKELL,Unassigned / mixed travel,unresolved,2025/March 2025 Financial Package.pdf page 30
+gl-13396-detail-22,13396,2/3/2025,54000 Travel per Diem Staff,WEC FILO'S FIESTA MEXICAN,2597,2/3/2025 WEC FILO'S FIESTA MEXICAN 54000 (25.97) $            Staff Meal 1694 AUBREY E HASKELL,Unassigned / mixed travel,unresolved,2025/March 2025 Financial Package.pdf page 30
