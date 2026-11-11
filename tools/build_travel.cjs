@@ -17,7 +17,7 @@ for(const t of data.transactions){
  const g=suggestions.get(t.id);
  if(!g&&!require('./travel-research-catalog.cjs').nonTrip[t.id]&&t.travel==='Not identified as travel'&&!/conference|IEMO|FGFOA|SHRUG|lodging|folio|hotel|\bFLC\b|\bNLC\b/i.test(t.comments.join(' ')))continue;
  const recipients=travelNonTrip(t)?[]:recipientsFor(t);
- records[t.id]={recipients,recipientOverride:!!catalog.travelers?.[t.id],groupName:g?.clue||null,person:g||t.travel!=='Not identified as travel'?t.person:'',group:g?.label||null,reason:g?.reason||null,range:tripDateRange(t),analysis:transactionTravelAnalysis(t),nonTrip:!!travelNonTrip(t)};
+ records[t.id]={recipients,recipientOverride:!!catalog.travelers?.[t.id],groupName:g?.clue||null,person:g||t.travel!=='Not identified as travel'?t.person:'',group:g?.label||null,reason:g?.reason||(t.amount<0?'Unmatched refund or credit. Does not establish a trip, destination or travel dates.':null),range:t.amount>0?tripDateRange(t):null,analysis:transactionTravelAnalysis(t),nonTrip:!!travelNonTrip(t)};
 }
 require('./refine_travel_groups.cjs').refineTravelGroups(data.transactions,records);
 fs.writeFileSync('docs/travel.json',JSON.stringify({version:1,records}));
