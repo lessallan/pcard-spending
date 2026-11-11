@@ -1,6 +1,6 @@
 interface:
-  display_name: "Penny Ping Data Review"
-  short_description: "Review imports, merchants and travel evidence"
-  default_prompt: "Use $pcards-data-review to review new Penny Ping purchase data and trace supported travel connections."
+  display_name: "Penny Ping Expense Review"
+  short_description: "Review expenses and preserve evidence-backed decisions"
+  default_prompt: "Use $pcards-data-review to review a Penny Ping import, compare the saved decision ledger, and report supported matches and unresolved expenses."
 policy:
   allow_implicit_invocation: true

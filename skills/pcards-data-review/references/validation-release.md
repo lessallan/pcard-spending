@@ -35,3 +35,7 @@ Discover current Pages branch/path and custom domain rather than assuming an old
 Check representative pages before, during and after cutover; preserve the previous healthy release until the replacement is ready. Monitor the actual deployment for the pushed SHA and verify live content, not only build success or HTTP 200. Investigate transient 404s. If a check fails, state the failure and continue authorized diagnosis; request a decision only when necessary.
 
 Verify live associations, totals/refunds, person views, saved-review precedence, desktop/mobile rendering, homepage video/navigation and report/policy links. Respect any private/authenticated routes if introduced later. Report the real live URL, release identity and verified outcome. Keep unpublished follow-up work clearly separate.
+
+## Ledger boundary
+
+Before an import release, resolve the [ledger comparison](decision-ledger.md) for every reused decision and append reviewed revisions with their evidence. Apply accepted changes through the owning catalog/snapshot; the ledger never mutates the site itself. Keep `analysis/expense-review/`, complete source snapshots and audit outputs outside `docs/` and the public artifact. Save the release SHA and verification report separately so published interpretations can be traced back to their ledger revisions.

@@ -1,28 +1,42 @@
 ---
 name: pcards-data-review
-description: Import or refresh Penny Ping purchase data, explain what merchants sold by comparing all cardholders' notes, label likely purchase and travel connections, and verify authorized publication. Use for PCards data-review work; not unrelated UI changes.
+description: Review imported Penny Ping expenses, reconcile changed records, research merchants and travel across cardholders, and preserve evidence-backed decisions across deliveries.
 ---
 
-# PCards data review
+# Penny Ping expense review
 
-Turn source purchase records into traceable, reviewable associations without rewriting the original evidence. Apply the relevant phase; a request for analysis does not automatically require ingestion, code changes or publication.
+Use this project workflow for new data, expense cleanup, unresolved charges, or publication of reviewed findings. Existing AGENTS.md routes those tasks here. Research and skill maintenance do not themselves authorize publication.
 
-## Choose the phase
+## Start with the right records
 
-- New files, additional fiscal years, replacement extracts, or refreshed data: read [intake](references/intake.md).
-- Merchant identification, what we were buying across everyone's notes, trip grouping, or biggest ungrouped purchases: read [research](references/research.md). Its cross-card merchant pass covers goods and services as well as travel.
-- Regression checks, integrating with the current application, or an authorized release: read [validation and release](references/validation-release.md).
+Find the current production implementation and preserve its source snapshot before changing anything. The older dirty workspace is not the live site. Identify whether the delivery replaces a period or adds records; do not infer this from file names.
 
-## Working contract
+For every import, read [intake](references/intake.md) and [decision ledger](references/decision-ledger.md). Run the ledger comparison **before** reusing prior decisions. If no new dataset is provided, work with the established snapshot; don't manufacture an import.
 
-1. Establish the current dataset and implementation before editing. The working directory may contain unpublished research while the latest remote has a different production architecture.
-2. Keep source dates, descriptors, cardholders, comments, amounts, credits and allocation rows intact. Store interpretations separately with supporting transaction IDs and a reason.
-3. Distinguish merchant/service identity, possible location, event association, traveler identity, membership in a trip and confirmed attendance. Evidence for one does not establish the others.
-4. Research across all relevant cardholders. Repeated merchant descriptors and other people’s notes are useful evidence, especially with matching dates, amounts, explicit event wording or named recipients. Do not restrict research to one person’s notes.
-5. Apply defensible inferences as labeled suggestions; retain competing evidence and unresolved cases. Do not repeatedly ask Allan to decide routine research choices. Request input only when a material ambiguity or authorization actually blocks the requested action.
-6. Report what changed, what remains unresolved, and the evidence required next. Separate new multi-purchase connections from standalone event/place clues. Report net amounts after credits and avoid claiming complete trip costs.
-7. Preserve distinct local, committed, pushed, deployed and live-verified states. Publication requires authorization covering the current changes and dataset.
+## Choose only the modules needed
 
-## Durable outputs
+| Work | Module |
+|---|---|
+| New delivery, duplicate detection, yearly/row totals | [Import and reconciliation](references/intake.md) |
+| What merchants sold, cross-card notes, sources | [Merchant research](references/research.md) |
+| Event editions, advance bookings, travel fees | [Travel matching](references/travel.md) |
+| Credits, cancellations, partial refunds | [Refund reconciliation](references/refunds.md) |
+| Parks, vehicles, fire stations and shared invoices | [Assets and places](references/assets.md) |
+| Named recipients, aliases, cardholders and departments | [People and allocations](references/people.md) |
+| Largest unresolved items and missing evidence | [Exception review](references/exceptions.md) |
+| Save, revise and carry forward interpretations | [Decision ledger](references/decision-ledger.md) |
+| Authorized publication and live verification | [Validation and release](references/validation-release.md) |
 
-Use the owning research catalog/engine and existing audit tools rather than copying findings into disconnected notes alone. Keep a dated local baseline and reproducible disposition report. Update this skill when an approved workflow changes; put changing counts and individual findings in audit artifacts, not permanent rules. Never automatically transfer a reviewed transaction ID to a new dataset without checking that the same source record still exists and means the same thing.
+## Shared rules
+
+- Preserve original notes, identities, dates, signed integer-cent amounts and allocation rows. Interpretations belong in separate metadata.
+- Distinguish payer, beneficiary, merchant identity, location, event, trip membership and attendance. One does not prove another.
+- Compare all relevant cardholders and periods. Preserve contradictions, annual editions and multiple nearby training sessions.
+- Label supported inferences **Likely**. Leave competing matches unresolved. Repeated prices/dates alone do not establish duplicates or shared purchases.
+- Credits reduce costs but never create trips, establish attendance or set travel dates. Shared full charges must not inflate aggregate totals.
+- Record decisions with evidence and missing confirmation. New evidence can supersede a prior interpretation; never silently erase its history.
+- Carry-forward eligibility is not confirmation or publication approval. Keep local, committed, deployed and live-verified states distinct.
+
+## Deliver the import review
+
+Report new/changed/missing records, exact duplicate IDs rejected, source and allocation reconciliation, eligible prior decisions, stale evidence, context review needed, and ranked unresolved positive charges with credits alongside. State which decisions were migrated, manually reviewed or generated as candidates. Save the report and append reviewed decisions to the local ledger; do not place raw inputs or the ledger under `docs/`.

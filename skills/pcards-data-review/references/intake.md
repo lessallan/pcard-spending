@@ -26,3 +26,9 @@ New input may contain less information than the prior extract. Preserve the dist
 ## Publication boundary
 
 A source import is local analysis authorization. Inspect the latest public builder’s field allowlist, identity handling, extracted-note rules and approved dataset scope before preparing publication. Never copy private `app/data.json`, spreadsheets, staff records, raw comment histories or local audit directories into `docs/` just because an older script did so. New delivery content needs publication review within the user’s authorized scope.
+
+## Import decision report
+
+Run `scripts/expense_ledger.py compare` as described in [the ledger module](decision-ledger.md), with the previous full normalized snapshot and the new candidate snapshot. Compare transaction IDs within the same dataset namespace; reused IDs across organizations must never collide. A missing ID in an incremental extract is not deletion: assemble the complete candidate snapshot with explicit overlap/conflict handling before comparing.
+
+The report is a source-change and decision-evidence audit, not an automatic categorizer. New records can contradict unchanged old anchors, so any changed dataset also requires context review of otherwise matching decisions. Check new notes across cardholders, competing bookings, credits and dated rosters before recording a new revision. Do not overwrite the previous snapshot until the import is reconciled.

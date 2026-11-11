@@ -177,3 +177,16 @@
 !/tools/leadership-name-review.json
 !/tools/leadership-name-review.cjs
 !/tools/check_leadership_name_review.cjs
+
+# Expense-review modules and tooling; private evidence stays outside publication.
+!/skills/pcards-data-review/references/travel.md
+!/skills/pcards-data-review/references/refunds.md
+!/skills/pcards-data-review/references/assets.md
+!/skills/pcards-data-review/references/people.md
+!/skills/pcards-data-review/references/exceptions.md
+!/skills/pcards-data-review/references/decision-ledger.md
+!/skills/pcards-data-review/scripts/
+/skills/pcards-data-review/scripts/*
+!/skills/pcards-data-review/scripts/expense_ledger.py
+!/skills/pcards-data-review/scripts/test_expense_ledger.py
+/analysis/expense-review/
