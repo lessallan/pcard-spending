@@ -641,6 +641,175 @@
           "APWA Conf. Marriott Folio"
         ]
       }
+    },
+    {
+      "id": "TXN00042525",
+      "group": "Gettysburg, PA (hotel clue) \u00b7 JONES, BEAU J \u00b7 purchases from 2025-04-11 \u00b7 TXN00046159",
+      "groupName": "Gettysburg, PA (hotel clue)",
+      "reason": "Flight note explicitly gives April 8\u201311, 2025; April 11 Jared Gettysburg folio TXN00046177 and ICMA rental TXN00046159 support the same trip. Advance registration TXN00042543 names J Jones ICMA Gettysburg. Itinerary confirmation still needed.",
+      "source": {
+        "date": "2024-11-06",
+        "person": "JONES, BEAU J",
+        "raw": "DELTA AIR   0062281054101",
+        "amount": 65796,
+        "purchaseNotes": [
+          "DELTA Flight 08APR25-11APR25"
+        ]
+      },
+      "supportingSources": [
+        {
+          "id": "TXN00046177",
+          "date": "2025-04-11",
+          "person": "JONES, BEAU J",
+          "raw": "GETTYSBURG HOTEL",
+          "amount": 49617,
+          "purchaseNotes": [
+            "Jared Gettysburg Folio"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TXN00042543",
+      "group": "Gettysburg, PA (hotel clue) \u00b7 JONES, BEAU J \u00b7 purchases from 2025-04-11 \u00b7 TXN00046159",
+      "groupName": "Gettysburg, PA (hotel clue)",
+      "reason": "Advance ICMA Gettysburg registration names J Jones; April 11 Jared hotel and ICMA rental match the April 8\u201311 flight dates in TXN00042525. Likely same 2025 event, not a November trip.",
+      "source": {
+        "date": "2024-11-04",
+        "person": "JONES, BEAU J",
+        "raw": "ICMA ONLINE",
+        "amount": 169500,
+        "purchaseNotes": [
+          "J Jones ICMA Gettysburg Reg"
+        ]
+      },
+      "supportingSources": [
+        {
+          "id": "TXN00046177",
+          "date": "2025-04-11",
+          "person": "JONES, BEAU J",
+          "raw": "GETTYSBURG HOTEL",
+          "amount": 49617,
+          "purchaseNotes": [
+            "Jared Gettysburg Folio"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TXN00042250",
+      "group": "Atlanta (hotel clue) \u00b7 WATKINS, KENNETH B \u00b7 purchases from 2024-10-26 \u00b7 TXN00042244",
+      "groupName": "Atlanta (hotel clue)",
+      "reason": "Likely October 2024 Cummins Atlanta training rental: same-day hotel notes TXN00042260 and TXN00042244 explicitly name Watkins and Stevers at Cummins training; Lamb paid their named training invoices TXN00042388 and TXN00042390. Rental agreement needed to confirm occupants; payer remains Lamb and no individual rental shares are inferred.",
+      "source": {
+        "date": "2024-10-26",
+        "person": "LAMB, GRADY T",
+        "raw": "ENTERPRISE RENT-A-CAR",
+        "amount": 125468,
+        "purchaseNotes": [
+          "Rental Car"
+        ]
+      },
+      "supportingSources": [
+        {
+          "id": "TXN00042260",
+          "date": "2024-10-26",
+          "person": "WATKINS, KENNETH B",
+          "raw": "HAMPTON INN ATLANTA",
+          "amount": 119610,
+          "purchaseNotes": [
+            "Kenneth Watkins hotel stay in Atlanta Ga. Cummins on the site training."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TXN00041879",
+      "group": "Christmas-lights visit \u00b7 October 2024 \u00b7 reviewed mefford-lights-2024",
+      "groupName": "Christmas-lights visit \u00b7 October 2024",
+      "reason": "Likely October 2024 Christmas-lights visit airfare: same-card same-day rental TXN00041858 and subsequent hotel TXN00042025 explicitly name that visit. Angie Bates is repeated administrative wording elsewhere, not proof of passenger identity. Itinerary needed to confirm.",
+      "source": {
+        "date": "2024-10-12",
+        "person": "MEFFORD, GARY KEITH",
+        "raw": "DELTA AIR   0062275086295",
+        "amount": 76595,
+        "purchaseNotes": [
+          "Angie Bates"
+        ]
+      },
+      "supportingSources": [
+        {
+          "id": "TXN00041858",
+          "date": "2024-10-12",
+          "person": "MEFFORD, GARY KEITH",
+          "raw": "BUDGET.COM PREPAY",
+          "amount": 29153,
+          "purchaseNotes": [
+            "City Trip for Christmas Lights"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TXN00042489",
+      "group": "Trimble \u2014 event unspecified \u00b7 FORBES, ALAN \u00b7 purchases from 2024-10-21 \u00b7 TXN00042097",
+      "groupName": "Trimble \u2014 event unspecified",
+      "reason": "Likely Trimble Dimensions 2024 conference hotel: Forbes paid named registration TXN00042097 on October 21 and this conference hotel on November 5. Folio/stay dates needed to confirm; no dates inferred from the purchase.",
+      "source": {
+        "date": "2024-11-05",
+        "person": "FORBES, ALAN",
+        "raw": "PRICELN TREASURE ISLAN",
+        "amount": 66652,
+        "purchaseNotes": [
+          "conference hotel"
+        ]
+      },
+      "supportingSources": [
+        {
+          "id": "TXN00042097",
+          "date": "2024-10-21",
+          "person": "FORBES, ALAN",
+          "raw": "TRIMBLE DIMENSIONS2024",
+          "amount": 94500,
+          "purchaseNotes": [
+            "Trimble Confrence"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TXN00052849",
+      "group": null,
+      "groupName": null,
+      "reason": "Likely cancellation refund pair: Robinson paid Delta $1,298.57 on January 28 and received -$1,298.57 on March 12 with explicit canceled-flight wording. Net $0. Ticket numbers differ; receipt confirmation remains needed. March training session remains unresolved; this pair creates no trip or travel dates.",
+      "source": {
+        "date": "2026-01-28",
+        "person": "ROBINSON, DELONDRE",
+        "raw": "DELTA AIR   0062400478528",
+        "amount": 129857,
+        "purchaseNotes": [
+          "Airfare for training."
+        ]
+      },
+      "refundWith": "TXN00053894"
+    },
+    {
+      "id": "TXN00053894",
+      "group": null,
+      "groupName": null,
+      "reason": "Likely cancellation refund pair: Robinson paid Delta $1,298.57 on January 28 and received -$1,298.57 on March 12 with explicit canceled-flight wording. Net $0. Ticket numbers differ; receipt confirmation remains needed. March training session remains unresolved; this pair creates no trip or travel dates.",
+      "source": {
+        "date": "2026-03-12",
+        "person": "ROBINSON, DELONDRE",
+        "raw": "DELTA AIR   0062411374334",
+        "amount": -129857,
+        "purchaseNotes": [
+          "Credit for canceled flight",
+          "Do you have an actual refund receipt?",
+          "credit refund"
+        ]
+      },
+      "refundWith": "TXN00052849"
     }
   ]
 }

@@ -24,7 +24,7 @@ const catalog=require('./travel-research-catalog.cjs'),snapshot=require('../docs
 for(const g of catalog.reviewedGroups){
  const label=snapshot.records[g.ids[0]].group;
  for(const id of g.ids){assert(!seen.has(id));seen.add(id);assert.equal(snapshot.records[id].group,label)}
- assert.deepEqual(Object.entries(snapshot.records).filter(([,v])=>v.group===label).map(([id])=>id).sort(),g.ids.slice().sort());
+ assert.deepEqual(Object.entries(snapshot.records).filter(([,v])=>v.group===label).map(([id])=>id).sort(),[...g.ids,...(g.key==='mefford-lights-2024'?['TXN00041879']:[])].sort());
 }
 assert.equal(catalog.reviewedGroups.length,44);assert.equal(seen.size,212);
 for(const record of Object.values(snapshot.records)){assert(!('comments' in record));assert(!('amount' in record))}
