@@ -1,5 +1,20 @@
 # Merchant and trip research
 
+## Cross-card merchant purchase review
+
+When Allan asks what was bought from merchants, compare the merchant's notes across **all cardholders and relevant years**, even when the question starts from one person's purchase. A precise note on another card can explain an otherwise vague descriptor. Apply this to goods, repairs, equipment, subscriptions and services as well as travel.
+
+- Summarize the actual items/services described, not merely the vendor's business category. For example, cover, toolbox, headache-rack and drawer-system notes together support truck accessories/storage. That does not establish every blank charge as a drawer system or assign it to the named truck.
+- Keep three conclusions distinct: **recorded in the notes**, **likely connection**, and **unresolved**. A likely connection needs the target IDs, independently informative supporting IDs/notes, the reason, and the missing receipt/folio/work-order detail that would confirm it. Do not promote a likely connection into evidence for another inference.
+- Compare dates, amounts, recurring descriptions, named units and projects as corroborating clues. Equal prices on the same day can describe different goods, separate equipment fleets or unrelated trips. Such matches alone are comparison candidates, not confirmed connections or duplicate charges.
+- Let corrections govern the interpretation while retaining all original wording. Preserve mixed purposes and contradictions; another person's clearer note cannot erase an inconsistent note on the target charge. A named cardholder, recipient, vehicle user and department are different facts.
+- For an all-merchant pass, account for every merchant, including those with blank, generic or administrative notes. Prioritize detailed review by spending and cross-card evidence, but clearly distinguish individually reviewed summaries from automatically assembled source-note excerpts. An automated scan is not a claim that every merchant or candidate was individually resolved.
+- Present yearly net totals, cardholders, biggest positive charges, credits and supporting original notes. Merchant totals include unresolved and unrelated purchases; do not label the entire total as spending on one example item or inferred purpose.
+
+The repository helper `tools/review_merchant_notes.py` assembles the searchable report, summary/transaction CSVs and structured evidence catalog from a dated review directory. It expects `baseline.json`, `reviewed-summaries.tsv`, `connections.json` and `reviewed-baseline.sha256`. Preserve a fresh baseline, validate anchor wording and identities, and reconcile transaction coverage and yearly totals. Its baseline-hash guard prevents silently reusing reviewed IDs after a dataset changes; re-review affected evidence before updating the guard. Prior run inputs are examples, not standing classifications for new records.
+
+Keep research local unless the user authorizes publication of the current findings. Saving or remembering this method does not authorize publishing purchase interpretations.
+
 ## Evidence passes
 
 Start with the baseline ungrouped set and keep a disposition for every candidate. Rank large positive charges for review, but examine credits and smaller companion purchases as supporting evidence. Use the full relevant dataset for research, not only the visible fiscal-year or person filter.

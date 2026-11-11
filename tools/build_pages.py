@@ -6,7 +6,7 @@ import subprocess
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'docs'
 OUT.mkdir(exist_ok=True)
-for name in ('index.html', 'style.css', 'app.js', 'merchant-context.js', 'radar.js', 'penny-ping-logo.png', 'porchping-logo.svg'):
+for name in ('index.html', 'style.css', 'app.js', 'assets.js', 'merchant-context.js', 'radar.js', 'penny-ping-logo.png', 'porchping-logo.svg'):
     shutil.copyfile(ROOT / 'app' / name, OUT / name)
 private = json.loads((ROOT / 'app/data.json').read_text())
 leadership = json.loads((ROOT / 'app/leadership.json').read_text())
@@ -50,3 +50,5 @@ print('Built public dashboard: all approved cardholders; leadership profiles; ex
 subprocess.run(['node', 'tools/build_travel.cjs'], cwd=ROOT, check=True)
 
 subprocess.run(['node', 'tools/build_leadership_associations.cjs'], cwd=ROOT, check=True)
+
+subprocess.run(['node', 'tools/build_assets.cjs'], cwd=ROOT, check=True)

@@ -1,6 +1,6 @@
 ---
 name: pcards-data-review
-description: Import or refresh Penny Ping purchase data, research merchant and travel associations, explain unresolved charges, and verify authorized publication. Use for PCards data-review work; not unrelated UI changes.
+description: Import or refresh Penny Ping purchase data, explain what merchants sold by comparing all cardholders' notes, label likely purchase and travel connections, and verify authorized publication. Use for PCards data-review work; not unrelated UI changes.
 ---
 
 # PCards data review
@@ -10,7 +10,7 @@ Turn source purchase records into traceable, reviewable associations without rew
 ## Choose the phase
 
 - New files, additional fiscal years, replacement extracts, or refreshed data: read [intake](references/intake.md).
-- Merchant identification, trip grouping, cross-card notes, or biggest ungrouped purchases: read [research](references/research.md).
+- Merchant identification, what we were buying across everyone's notes, trip grouping, or biggest ungrouped purchases: read [research](references/research.md). Its cross-card merchant pass covers goods and services as well as travel.
 - Regression checks, integrating with the current application, or an authorized release: read [validation and release](references/validation-release.md).
 
 ## Working contract
