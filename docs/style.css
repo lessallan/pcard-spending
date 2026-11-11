@@ -322,15 +322,15 @@ form#filters{display:block;margin:0}.year-toggle{border:0;padding:0;margin:0;dis
 /* Align expandable fee categories like ledger rows. */
 .fee-columns{display:flex;justify-content:space-between;padding:16px 0 8px 26px;color:var(--muted);font-size:13px;border-bottom:1px solid var(--line)}
 .travel-fees .fee-row{padding:0;border-bottom:1px solid var(--line)}
-.travel-fees .fee-row>summary{display:grid;grid-template-columns:12px minmax(0,1fr) max-content;align-items:start;gap:14px;padding:18px 0;list-style:none;min-height:64px}
+.travel-fees .fee-row>summary{display:grid;grid-template-columns:12px minmax(0,1fr) max-content;align-items:start;gap:14px;padding:12px 0;list-style:none;min-height:48px}
 .fee-row>summary::-webkit-details-marker{display:none}
 .fee-row>summary::before{content:'▸';color:var(--green);font-size:18px;line-height:1.5}
 .fee-row[open]>summary::before{content:'▾'}
 .fee-label,.fee-value{display:flex;flex-direction:column;gap:4px;min-width:0}
 .fee-label strong,.fee-value strong{font-size:18px;font-weight:600;line-height:1.5}
 .fee-value{align-items:flex-end;text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
-.fee-value em,.fee-note{font-size:14px;color:var(--muted);font-weight:400;line-height:1.5}
+.fee-note{font-size:14px;color:var(--muted);font-weight:400;line-height:1.5}
 .fee-unresolved .fee-value>span{font-size:14px;color:var(--muted);line-height:27px}
-@media(max-width:700px){.travel-fees .fee-row>summary{gap:10px;padding:16px 0}.fee-columns{padding-left:22px;font-size:14px}.fee-label strong,.fee-value strong{font-size:17px}.fee-label{overflow-wrap:normal}}
+@media(max-width:700px){.travel-fees .fee-row>summary{gap:10px;padding:12px 0}.fee-columns{padding-left:22px;font-size:14px}.fee-label strong,.fee-value strong{font-size:17px}.fee-label{overflow-wrap:normal}}
 
 .travel-summary-note{font-size:13px;line-height:1.45;color:var(--muted);margin:0 0 12px;max-width:85ch}
