@@ -1,0 +1,50 @@
+const {chromium}=require('/Users/allanbranch/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const assert=require('node:assert/strict');
+(async()=>{
+ const browser=await chromium.launch({headless:true,channel:'chrome'});
+ try{
+ const page=await browser.newPage({viewport:{width:1440,height:1000}});
+ const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ const base=process.env.PCARDS_TEST_URL||'http://127.0.0.1:4312/';
+ await page.goto(base+'#transactions');
+ await page.waitForSelector('.transactions');
+ const count=await page.evaluate(()=>data.transactions.length);
+ assert.ok(count>0);
+ await page.evaluate(()=>localStorage.setItem('pcard-trips-v1',JSON.stringify({switcherTest:{status:'excluded',note:'Preserve City review'}})));
+ await page.locator('#search').fill('hotel');
+ await page.locator('#organization').selectOption('destination-panama-city');
+ await page.waitForURL(/organization=destination-panama-city/);
+ await page.waitForFunction(()=>document.querySelector('#title').textContent==='Books awaiting import');
+ assert.equal(await page.evaluate(()=>data),null);
+ assert.equal(await page.evaluate(()=>Object.keys(tripReviews).length),0);
+ assert.match(await page.locator('#subtitle').innerText(),/No transactions have been imported/);
+ assert.equal(await page.locator('.filter-box').isVisible(),false);
+ assert.equal(await page.locator('.report-navigation').isVisible(),false);
+ assert.equal(await page.locator('.resident-guide').isVisible(),false);
+ assert.equal(await page.locator('footer a').count(),0);
+ const requests=[];page.on('request',r=>requests.push(r.url()));
+ await page.reload();await page.waitForFunction(()=>document.querySelector('#title').textContent==='Books awaiting import');
+ assert.ok(!requests.some(u=>/\/(data|travel|leadership-associations|assets)\.json(?:\?|$)/.test(u)));
+ await page.screenshot({path:'/tmp/organizations-desktop.png',fullPage:true});
+ await page.setViewportSize({width:390,height:844});
+ assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+ await page.screenshot({path:'/tmp/organizations-mobile.png',fullPage:true});
+ await page.locator('#organization').selectOption('panama-city');
+ await page.waitForURL(/organization=panama-city/);
+ await page.waitForFunction(()=>typeof data!=='undefined'&&data?.transactions.length>0);
+ assert.equal(await page.evaluate(()=>data.transactions.length),count);
+ assert.equal(await page.locator('#search').inputValue(),'');
+ assert.equal(await page.evaluate(()=>tripReviews.switcherTest.status),'excluded');
+ await page.evaluate(()=>localStorage.removeItem('pcard-trips-v1'));
+ await page.locator('.brand').click();
+ assert.match(page.url(),/organization=panama-city/);
+ for(const route of ['travel','parks','staff']){await page.goto(base+'?organization=panama-city#'+route);await page.waitForFunction(()=>data?.transactions.length>0);assert.ok((await page.locator('#content').innerText()).length>100)}
+ await page.goto(base+'?organization=destination-panama-city');await page.waitForFunction(()=>document.querySelector('#title').textContent==='Books awaiting import');await page.locator('#organization').selectOption('panama-city');await page.waitForURL(/organization=panama-city/);
+ await page.goBack();await page.waitForFunction(()=>document.querySelector('#title').textContent==='Books awaiting import');
+ await page.goto(base+'?organization=unknown#staff');
+ await page.waitForFunction(()=>document.querySelector('#title').textContent==='Choose an organization');
+ assert.equal(await page.evaluate(()=>data),null);
+ assert.deepEqual(errors,[]);
+ console.log('PASS: organization switching, isolated empty books, no City dataset request, refresh, Back, reset filters, unknown organization and mobile width.');
+ }finally{await browser.close()}
+})().catch(e=>{console.error(e);process.exit(1)});

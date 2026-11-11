@@ -4,6 +4,33 @@ const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const money=c=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(c/100);
 const exact=c=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'}).format(c/100);
 const number=n=>n.toLocaleString('en-US');
+const organizations={
+ 'panama-city':{name:'City of Panama City',namespace:'panama-city-pcards',dataset:'./data.json'},
+ 'destination-panama-city':{name:'Destination Panama City',namespace:'destination-panama-city-pcards',dataset:null}
+};
+const organizationId=new URLSearchParams(location.search).get('organization')||'panama-city';
+const organization=Object.hasOwn(organizations,organizationId)?organizations[organizationId]:null;
+// A full navigation discards all transaction, person, filter and research caches.
+$('organization').value=organization?organizationId:'';
+$('organization').addEventListener('change',()=>{
+ const url=new URL(location.href);
+ url.search='';url.searchParams.set('organization',$('organization').value);url.hash='overview';
+ location.assign(url.href);
+});
+function showOrganizationState(message){
+ data=null;rows=[];
+ document.querySelector('.resident-guide').hidden=true;
+ document.querySelector('.report-navigation').hidden=true;
+ document.querySelector('.filter-box').hidden=true;
+ document.querySelector('footer').textContent='Public spending transparency · Each organization’s books are kept separate.';
+ document.querySelector('.eyebrow').textContent=organization?.name||'Organization not found';
+ $('title').textContent=organization?'Books awaiting import':'Choose an organization';
+ $('subtitle').textContent=message;
+ document.title=(organization?.name||'Choose an organization')+' · Penny Ping';
+ $('content').replaceChildren();$('loading').hidden=true;
+}
+
+
 let data, rows=[], page=0, view='overview', rankMetric='spend', selectedId=null, selectedLeader=null, selectedTravelPerson=null;
 const titles={parks:['Parks & places','Explore purchases linked to parks, clubhouses and other City places.'],vehicles:['Vehicles & equipment','Explore purchases by the vehicle and unit numbers recorded in the notes.'],'fire-stations':['Fire stations','Explore purchases linked to named fire stations.'],radar:['Radar','Explore projects, programs, events and selected purchases through their recorded notes.'],transactions:['Explore transactions','Explore City P-card purchases across all years or one fiscal year.'],leader:['Associated card charges','Recorded cardholder transactions, not personal spending.'],overview:['Your city’s P-card spending','Understand how public money supports everyday City work.'],travel:['Travel & lodging','Explore travel charges by merchant and spending area.'],centers:['Spending by area','Understand the accounting areas charged for City purchases.'],staff:['City leadership & staff','Elected officials, city staff, and everyone with recorded cardholder purchases.']};
 // Reference labels: FY25/FY26 budget books, supplemented by Brandy Waldron’s November 10, 2026 definitions.
@@ -1005,7 +1032,7 @@ function retailerReport(ts){
 let travelSnapshot={records:{}};
 // Trip membership is independent of policy reviews. Suggestions are never confirmations.
 let tripReviews={};
-try{const saved=JSON.parse(localStorage.getItem('pcard-trips-v1')||'{}');if(saved&&typeof saved==='object'&&!Array.isArray(saved))tripReviews=saved}catch{}
+try{const saved=JSON.parse(localStorage.getItem(organizationId==='panama-city'?'pcard-trips-v1':'pcard-trips-v1:'+organizationId)||'{}');if(saved&&typeof saved==='object'&&!Array.isArray(saved))tripReviews=saved}catch{}
 function travelTransaction(t){return {...t,person:travelSnapshot.records[t.id]?.person||t.person,tripRange:travelSnapshot.records[t.id]?.range||null}}
 function suggestedTrips(transactions){return new Map(transactions.filter(t=>travelSnapshot.records[t.id]?.group).map(t=>[t.id,{label:travelSnapshot.records[t.id].group,reason:travelSnapshot.records[t.id].reason,name:travelSnapshot.records[t.id].groupName}]))}
 function tripGroups(){
@@ -1197,7 +1224,7 @@ function bindTripReview(t){
   save({...tripReviews,[t.id]:{...r,updatedAt:new Date().toISOString()}},'Trip review saved in this browser.');
  });
  $('reset-trip').addEventListener('click',()=>{const next={...tripReviews};delete next[t.id];if(save(next,'Suggestion restored.')){openDetail(t.id);$('trip-feedback').textContent='Suggestion restored.'}});
- function save(next,message){try{localStorage.setItem('pcard-trips-v1',JSON.stringify(next));tripReviews=next;render();$('trip-feedback').textContent=message;return true}catch{$('trip-feedback').textContent='Could not save. Browser storage may be full or unavailable. Your entries are still here.'}}
+ function save(next,message){try{localStorage.setItem(organizationId==='panama-city'?'pcard-trips-v1':'pcard-trips-v1:'+organizationId,JSON.stringify(next));tripReviews=next;render();$('trip-feedback').textContent=message;return true}catch{$('trip-feedback').textContent='Could not save. Browser storage may be full or unavailable. Your entries are still here.'}}
 }
 
 function render(){
@@ -1277,6 +1304,7 @@ let timer;$('filters').addEventListener('input',()=>{clearTimeout(timer);timer=s
 window.addEventListener('hashchange',()=>{if($('detail').open)$('detail').close();applyTransactionRoute();page=0;rankMetric='spend';$('nav').classList.remove('open');document.querySelector('.mobile-menu').setAttribute('aria-expanded','false');render();scrollToReportStart()});
 document.querySelector('.mobile-menu').addEventListener('click',e=>{const open=$('nav').classList.toggle('open');e.target.setAttribute('aria-expanded',String(open))});
 function loadDataset(d){
+ if(organizationId!=='panama-city'||(d?.namespace&&d.namespace!==organization.namespace))throw Error('Organization mismatch');
  const strings=['id','fy','date','post','person','merchant','raw','category','source','sheet','travel'];
  if(!d||!Array.isArray(d.transactions)||!Array.isArray(d.staff)||!d.transactions.every(t=>t&&strings.every(k=>typeof t[k]==='string')&&Number.isFinite(t.amount)&&Array.isArray(t.allocations)&&t.allocations.every(a=>a&&['fund','center','account'].every(k=>typeof a[k]==='string'&&/^[\w .-]*$/.test(a[k]))&&Number.isFinite(a.amount))&&['comments','flags'].every(k=>Array.isArray(t[k])&&t[k].every(v=>typeof v==='string'))&&Array.isArray(t.rows)&&t.rows.every(Number.isInteger)&&/^[\w.-]+$/.test(t.id))||!d.staff.every(s=>s&&['name','source_url'].every(k=>typeof s[k]==='string')&&['title','email'].every(k=>s[k]===null||typeof s[k]==='string')&&Array.isArray(s.departments)&&s.departments.every(v=>typeof v==='string')&&/^https?:\/\//.test(s.source_url)))throw Error('Spending records could not be read.');
  data=d;page=0;HTMLFormElement.prototype.reset.call($('filters'));
@@ -1284,4 +1312,9 @@ function loadDataset(d){
  for(const [id,values,label] of [['fund',d.transactions.flatMap(t=>t.allocations.map(a=>a.fund)),'All funds'],['center',d.transactions.flatMap(t=>t.allocations.map(a=>a.center)),'All spending areas'],['person',d.transactions.map(t=>t.person),'All cardholders'],['merchant',d.transactions.map(t=>t.merchant),'All merchants']])fillSelect(id,values,label);
  applyTransactionRoute();$('loading').hidden=true;render();if(view==='transactions')scrollToReportStart();
 }
+if(!organization){showOrganizationState('Select City of Panama City or Destination Panama City above.');}
+else if(!organization.dataset){showOrganizationState('Destination Panama City’s books are separate and ready for import. No transactions have been imported yet. This does not mean spending was zero.');}
+else{
 Promise.all(['./data.json?v=staff-filters-20261110','./travel.json?v=four-links-refund-20261111','./leadership-associations.json?v=name-confirmed-20261110','./assets.json?v=assets-20261111'].map(url=>fetch(url).then(r=>{if(!r.ok)throw Error();return r.json()}))).then(([d,t,a,assets])=>{if(assets.version!==1||!Array.isArray(assets.groups))throw Error('Invalid asset snapshot');assetSnapshot=assets;if(a.version!==1||!a.records)throw Error('Invalid leadership associations');leadershipAssociations=a;if(t.version!==1||!t.records)throw Error('Invalid travel snapshot');travelSnapshot=t;loadDataset(d)}).catch(()=>{$('loading').hidden=false;$('loading').textContent='Spending records could not load. Reload this page to try again.'});
+
+}

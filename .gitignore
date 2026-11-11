@@ -190,3 +190,5 @@
 !/skills/pcards-data-review/scripts/expense_ledger.py
 !/skills/pcards-data-review/scripts/test_expense_ledger.py
 /analysis/expense-review/
+
+!/tools/check_organizations.cjs
