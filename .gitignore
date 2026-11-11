@@ -196,3 +196,7 @@
 # Authorized DPC report and reviewed public document copies.
 !/docs/dpc/
 !/docs/dpc/**
+
+# DPC vendor report regression check.
+!/tools/dpc/
+!/tools/dpc/check-vendors.cjs

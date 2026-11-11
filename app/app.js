@@ -1313,7 +1313,7 @@ function loadDataset(d){
  applyTransactionRoute();$('loading').hidden=true;render();if(view==='transactions')scrollToReportStart();
 }
 if(!organization){showOrganizationState('Select City of Panama City or Destination Panama City above.');}
-else if(!organization.dataset){showOrganizationState('Destination Panama City’s books are separate and ready for import. No transactions have been imported yet. This does not mean spending was zero.');}
+else if(organizationId==='destination-panama-city'){location.replace('./dpc/vendors.html#overview');}
 else{
 Promise.all(['./data.json?v=staff-filters-20261110','./travel.json?v=four-links-refund-20261111','./leadership-associations.json?v=name-confirmed-20261110','./assets.json?v=assets-20261111'].map(url=>fetch(url).then(r=>{if(!r.ok)throw Error();return r.json()}))).then(([d,t,a,assets])=>{if(assets.version!==1||!Array.isArray(assets.groups))throw Error('Invalid asset snapshot');assetSnapshot=assets;if(a.version!==1||!a.records)throw Error('Invalid leadership associations');leadershipAssociations=a;if(t.version!==1||!t.records)throw Error('Invalid travel snapshot');travelSnapshot=t;loadDataset(d)}).catch(()=>{$('loading').hidden=false;$('loading').textContent='Spending records could not load. Reload this page to try again.'});
 
