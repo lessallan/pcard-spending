@@ -180,6 +180,8 @@ module.exports={
     }
   ],
   "events": [
+{"pattern": "\\bNLC\\b.*(?:\\bCCC\\b|\\bcong(?:ressional)?\\b)|National League of Cities.*congressional", "name": "NLC Congressional City Conference 2025", "city": "Washington, DC", "start": "2025-03-10", "end": "2025-03-12", "url": "https://www.nlc.org/wp-content/uploads/2025/02/2025-Presidential-Transition-Memo_About-NLC_Final.pdf"},
+{"pattern": "\\bNLC\\b.*(?:\\bCCC\\b|\\bcong(?:ressional)?\\b)|National League of Cities.*congressional", "name": "NLC Congressional City Conference 2026", "city": "Washington, DC", "start": "2026-03-16", "end": "2026-03-18", "url": "https://www.nlc.org/conferences-meetings/"},
     {
       "pattern": "\\b(?:APWA\\s*[- ]*PWX|AWPA\\s+PWX|PWX\\s+EXPO)\\b",
       "name": "APWA PWX 2025",
