@@ -972,7 +972,7 @@ function staffView(){
   const profile=data.staff.find(s=>s.name===name&&s.title===title);
   const raw=leadershipCardholders[name],holder=holders.get(raw);
   const displayTitle=title==='Mayor'?`Mayor ${name}`:title.startsWith('Commissioner')?`Commissioner ${name}`:name;
-  const department=profile?.departments?.length?`<p class="staff-department">${esc(profile.departments.join(' · '))}</p>`:spendingArea(holder);
+  const department=electedNames.has(name)?'':profile?.departments?.length?`<p class="staff-department">${esc(profile.departments.join(' · '))}</p>`:spendingArea(holder);
   return `<article class="staff-person" data-person-name="${esc(name)}" ${holder?`data-cardholder="${esc(raw)}"`:''}><div class="staff-top">${profile?.photo_file?`<img class="avatar" src="./${esc(profile.photo_file)}" alt="" loading="lazy">`:staffPlaceholder(name)}<div><h3><a href="#leader/${leadershipId(name)}">${esc(displayTitle)}</a></h3>${department}${profile?.email?`<a class="staff-email" href="mailto:${esc(profile.email)}">${esc(profile.email)}</a>`:''}</div></div><p class="leadership-total"><span class="staff-column-label">Associated (est.)</span>${associatedMetric(name)}</p><p class="cardholder-total"><span class="staff-column-label">Card spending</span>${cardMetric(holder)}</p></article>`;
  };
  const knownStaff=leadershipProfiles.filter(([name])=>!electedNames.has(name));
