@@ -1019,7 +1019,7 @@ function tripGroups(){
   groups.get(label).items.push({...t,tripStatus:['confirmed','excluded'].includes(saved?.status)?saved.status:'suggested',tripReason:saved?.note||suggestion?.reason||'Manually assigned; review supporting records.'});
  }
  const identifiedCost=g=>g.items.reduce((sum,t)=>sum+(t.tripStatus==='excluded'?0:t.amount),0);
- return [...groups.values()].sort((a,b)=>identifiedCost(b)-identifiedCost(a)||a.label.localeCompare(b.label));
+ return [...groups.values()].filter(g=>g.items.some(t=>t.amount>0&&t.tripStatus!=='excluded')).sort((a,b)=>identifiedCost(b)-identifiedCost(a)||a.label.localeCompare(b.label));
 }
 // Dates come only from explicit ranges in travel comments, never review timestamps.
 function tripDateRange(t){return t.tripRange||null}
@@ -1038,11 +1038,11 @@ function tripDestinationLabel(value){
 }
 function tripFacts(g){
  const included=g.items.filter(t=>t.tripStatus!=='excluded');
- const dates=included.map(t=>t.date).sort();
+ const dates=included.filter(t=>t.amount>0).map(t=>t.date).sort();
  const ranges=included.filter(t=>t.amount>0).map(tripDateRange).filter(Boolean);
  const unique=[...new Map(ranges.map(r=>[r.start+'/'+r.end,r])).values()];
  const range=unique.length===1?{...unique[0],inferred:ranges.some(r=>r.inferred)}:null;
- return {included,range,conflict:unique.length>1,start:dates[0],end:dates.at(-1),destinations:[...new Set(included.flatMap(t=>transactionTravelAnalysis(t)?.destinations||[]))]};
+ return {included,range,conflict:unique.length>1,start:dates[0],end:dates.at(-1),destinations:[...new Set(included.filter(t=>t.amount>0).flatMap(t=>transactionTravelAnalysis(t)?.destinations||[]))]};
 }
 function tripDateLabel(date){return new Date(date+'T00:00:00Z').toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric',timeZone:'UTC'})}
 function tripDateSpan(a,b){return a===b?tripDateLabel(a):tripDateLabel(a)+' – '+tripDateLabel(b)}
@@ -1164,13 +1164,14 @@ function travelSummaries(groups,transactions){
 }
 function tripReport(person=null){
  const visible=new Set(filtered().map(t=>t.id));
- const all=tripGroups(),groups=all.map(g=>person?{...g,items:g.items.filter(t=>travelRecipients(t).includes(person)).map(t=>travelForPerson(t,person))}:g).filter(g=>g.items.some(t=>visible.has(t.id)));
+ const all=tripGroups(),groups=all.map(g=>person?{...g,items:g.items.filter(t=>travelRecipients(t).includes(person)).map(t=>travelForPerson(t,person))}:g).filter(g=>g.items.some(t=>t.amount>0&&t.tripStatus!=='excluded')&&g.items.some(t=>visible.has(t.id)));
  if(person)groups.sort((a,b)=>tripFacts(b).included.reduce((n,t)=>n+t.amount,0)-tripFacts(a).included.reduce((n,t)=>n+t.amount,0)||a.label.localeCompare(b.label));
  const known=new Set(all.flatMap(g=>g.items.map(t=>t.id)));
- const ungrouped=data.transactions.filter(t=>visible.has(t.id)&&t.travel!=='Not identified as travel'&&!known.has(t.id)).map(travelTransaction).filter(t=>!person||travelRecipients(t).includes(person)).map(t=>person?travelForPerson(t,person):t);
+ const ungrouped=data.transactions.filter(t=>visible.has(t.id)&&(t.travel!=='Not identified as travel'||travelSnapshot.records[t.id]?.reason?.startsWith('Unmatched refund'))&&!known.has(t.id)).map(travelTransaction).filter(t=>!person||travelRecipients(t).includes(person)).map(t=>person?travelForPerson(t,person):t);
+ const unmatchedCredits=ungrouped.filter(t=>t.amount<0),ungroupedPurchases=ungrouped.filter(t=>t.amount>0);
  const table=items=>transactionTable(items,{travel:true});
  const included=groups.flatMap(g=>tripFacts(g).included),total=included.reduce((n,t)=>n+t.amount,0),confirmed=included.filter(t=>t.tripStatus==='confirmed').reduce((n,t)=>n+t.amount,0);
- const intro=person?`<section class="travel-person-summary"><h2>${esc(travelName(person))} · Associated trips</h2><div class="stats">${stat('Total identified cost',exact(total),'Suggested and confirmed charges in these groups')}${stat('Confirmed identified cost',exact(confirmed),'Charges confirmed in this browser')}${stat('Suggested trip groups',number(groups.length),'Not verified trips taken')}${stat('Ungrouped travel charges',exact(ungrouped.reduce((n,t)=>n+t.amount,0)),ungrouped.length+' purchases · excluded from trip total')}</div><p class="travel-summary-note">Travel linked to this person, even when someone else paid. Shared costs are split equally as an estimate. Totals subtract credits and leave out excluded charges and reimbursements.</p></section>`:travelSummaries(groups,filtered().map(travelTransaction));
+ const intro=person?`<section class="travel-person-summary"><h2>${esc(travelName(person))} · Associated trips</h2><div class="stats">${stat('Total identified cost',exact(total),'Suggested and confirmed charges in these groups')}${stat('Confirmed identified cost',exact(confirmed),'Charges confirmed in this browser')}${stat('Suggested trip groups',number(groups.length),'Not verified trips taken')}${stat('Ungrouped travel charges',exact(ungroupedPurchases.reduce((n,t)=>n+t.amount,0)),ungroupedPurchases.length+' purchases · excluded from trip total')}</div><p class="travel-summary-note">Travel linked to this person, even when someone else paid. Shared costs are split equally as an estimate. Totals subtract credits and leave out excluded charges and reimbursements.</p></section>`:travelSummaries(groups,filtered().map(travelTransaction));
  return `${intro}${person?travelFeesHtml(included,ungrouped):''}<section id="trip-report" class="trip-report"><div class="trip-heading"><h2>Suggested trips</h2><span>${groups.length} groups</span></div><p>P-card purchases only — reimbursements are not included. The cardholder is shown first and may be the traveler or may have booked for someone else. Open a purchase to confirm or adjust its membership.</p><details class="trip-method"><summary>How estimates work</summary><p>Destinations combine recorded wording with researched hotel properties, dated conference editions and related purchases. Open a purchase for purpose, location clues and source links. Reviewed associations cite supporting transaction IDs and remain suggestions. Some groups describe canceled bookings or unknown destinations. Conflicting clues remain visible; conference dates do not establish travel dates. Travel dates use explicit ranges in comments; an omitted year is estimated from the purchase year. Days include both endpoints, not nights. Without a range, only purchase dates are shown. Conflicting ranges need review.</p><p>Filters find groups with matching charges; totals include full charges in each group. Excluded charges do not count. Credits reduce costs. Missing purchases and reimbursements mean these are not complete trip costs. Reviews stay in this browser. Confirming membership does not verify policy compliance.</p></details>${tripComparison(groups)}${groups.length?groups.map(g=>{
  const f=tripFacts(g),sum=status=>g.items.filter(t=>t.tripStatus===status).reduce((n,t)=>n+t.amount,0),confirmed=g.items.filter(t=>t.tripStatus==='confirmed').length;
  const title=g.name||g.label.split(' · ')[0],people=[...new Set(g.items.map(t=>displayName(t.person)))].join(', ');
@@ -1178,7 +1179,7 @@ function tripReport(person=null){
  const when=f.range?`Estimated travel · ${tripDateSpan(f.range.start,f.range.end)}`:f.start?`Purchases · ${tripDateSpan(f.start,f.end)}`:'All charges excluded';
  const length=f.range?`${f.range.days} estimated days`:f.conflict?'Dates need review':'';
  return `<details class="trip-group trip-card"><summary><span class="trip-identity"><strong>${esc(people)}</strong><span class="trip-destination">${esc(destination)}</span><span class="trip-dates">${esc(when)}</span>${!/, [A-Z]{2}$/.test(title)&&!title.endsWith(' (hotel clue)')?`<span>${esc(title)}</span>`:''}</span><span class="trip-cost">${length?`<span class="trip-duration">${length}</span>`:''}<strong>${exact(sum('suggested')+sum('confirmed'))}</strong></span></summary><div class="trip-expanded"><p>${f.range?`Estimated day 1: ${tripDateLabel(f.range.start)} · End: ${tripDateLabel(f.range.end)}.${f.range.inferred?' Year inferred from purchase date.':''}`:f.conflict?'Comments contain different date ranges. Review the purchases before estimating trip length.':'Stay dates are not recorded as a range. The purchase window is not the trip duration.'} ${g.items.some(t=>t.tripStatus==='excluded')?`${g.items.filter(t=>t.tripStatus==='excluded').length} excluded.`:''}</p>${table(g.items)}<p class="fine">Select a purchase for its accounting details and trip confirmation.</p></div></details>`;
- }).join(''):'<p>No suggested trips match. Clear filters or assign a trip from a purchase.</p>'}<details class="trip-group"><summary>Ungrouped travel purchases (${ungrouped.length})</summary>${table(ungrouped)}</details></section>`;
+ }).join(''):'<p>No suggested trips match. Clear filters or assign a trip from a purchase.</p>'}<details class="trip-group"><summary>Ungrouped travel purchases (${ungroupedPurchases.length})</summary>${table(ungroupedPurchases)}</details>${unmatchedCredits.length?`<details class="trip-group"><summary>Unmatched refunds &amp; credits (${unmatchedCredits.length}) · ${exact(unmatchedCredits.reduce((n,t)=>n+t.amount,0))}</summary><p class="fine">Money returned. These records do not count as trips or establish travel dates.</p>${table(unmatchedCredits)}</details>`:''}</section>`;
 }
 function tripReviewForm(t){
  const suggestion=suggestedTrips(data.transactions).get(t.id),r=tripReviews[t.id]||{};

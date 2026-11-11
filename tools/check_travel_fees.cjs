@@ -5,7 +5,7 @@ vm.runInContext(code.slice(0,code.indexOf("$('content').addEventListener")),c);
 vm.runInContext('data=fixture;travelSnapshot=snapshot;leadershipAssociations=associations;',c);
 const tx=id=>fixture.transactions.find(t=>t.id===id),fee=id=>c.travelFeeClassification(tx(id));
 assert.equal(fee('TXN00054166'),null,'Hotel balance excludes the separately charged fee');
-assert(fee('TXN00042435').uncertain,'Cancellation refund is not the fee amount');
+assert.equal(fee('TXN00042435'),null,'Unmatched cancellation refund is not a trip fee');
 assert.equal(fee('TXN00043996').category,'Travel insurance & protection','Allianz merchant resolves the shared note');
 assert.equal(fee('TXN00044010'),null,'Likely registration does not become an insurance fee');
 for(const id of ['TXN00041968','TXN00041929','TXN00047713','TXN00056675'])assert.equal(fee(id).category,'Parking');
@@ -34,5 +34,12 @@ assert.equal(engine.transactionTravelAnalysis(registration).kind,'Likely confere
 assert.notEqual(engine.transactionTravelAnalysis({...registration,amount:1}).kind,'Likely conference registration','Reviewed purpose requires matching source amount');
 assert.notEqual(engine.transactionTravelAnalysis({...registration,comments:['Insurance']}).kind,'Likely conference registration','Reviewed purpose requires matching source note');
 for(const id of ['TXN00042134','TXN00048314','TXN00049043'])assert.equal(fee(id).category,'Travel insurance & protection');
-assert.equal(fixture.transactions.filter(t=>c.travelFeeClassification(t)?.uncertain).length,1,'Only the non-itemized cancellation refund remains unresolved');
+assert.equal(fixture.transactions.filter(t=>c.travelFeeClassification(t)?.uncertain).length,0,'Unmatched cancellation refund is separate from trip fees');
 console.log('PASS: reviewed registration source guards, abbreviated insurer notes, and remaining unresolved fee inventory.');
+// Refunds affect net accounting, never trip existence or timing.
+const positive={id:'POS',date:'2026-08-12',amount:10000,tripStatus:'suggested',person:'A',tripRange:null};
+const credit={id:'CREDIT',date:'2026-11-01',amount:-2000,tripStatus:'suggested',person:'A',tripRange:{start:'2026-10-01',end:'2026-10-09',days:9}};
+const facts=c.tripFacts({items:[positive,credit]});assert.equal(facts.start,'2026-08-12');assert.equal(facts.end,'2026-08-12');assert.equal(facts.range,null);assert.equal(facts.included.reduce((n,t)=>n+t.amount,0),8000);
+assert(c.tripGroups().every(g=>g.items.some(t=>t.amount>0&&t.tripStatus!=='excluded')));
+assert.equal(engine.suggestedTrips([{id:'ONLY_REFUND',person:'A',date:'2026-08-15',amount:-500,raw:'HOTEL',comments:['FLC Annual Conference 2026']}]).size,0);
+console.log('PASS: refunds cannot create trips, set travel dates or extend purchase windows; linked credits still reduce net costs.');

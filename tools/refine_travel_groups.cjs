@@ -5,7 +5,7 @@ function refineTravelGroups(transactions,records){
  const people=(t,r)=>[...new Set(r?.recipients?.length?r.recipients:[t.person])].filter(Boolean).sort();
  // Only specific, published event editions can reunite advance and in-trip purchases.
  // Generic city/organization matches are not sufficient.
- for(const t of transactions){const r=records[t.id];if(!r?.group||r.nonTrip||/reviewed /.test(r.group))continue;
+ for(const t of transactions){const r=records[t.id];if(t.amount<=0||!r?.group||r.nonTrip||/reviewed /.test(r.group))continue;
   if(!/20\d{2}/.test(r.groupName||''))continue;
   const key=JSON.stringify([r.groupName,people(t,r)]);if(!buckets.has(key))buckets.set(key,[]);buckets.get(key).push(t);
  }

@@ -31,7 +31,7 @@ function tripClue(t){
 }
 function suggestedTrips(transactions,peopleFor=t=>[t.person]){
  const groups=[],assigned=new Map();
- const records=transactions.map(t=>({t,clue:tripClue(t),names:peopleFor(t),range:tripDateRange(t)})).filter(r=>r.clue&&!reviewedTripById.has(r.t.id));
+ const records=transactions.filter(t=>t.amount>0).map(t=>({t,clue:tripClue(t),names:peopleFor(t),range:tripDateRange(t)})).filter(r=>r.clue&&!reviewedTripById.has(r.t.id));
  // Resolve generic FLC wording only if exactly one nearby specific event matches a named person.
  for(const r of records){
   if(r.clue.name!=='FLC — event unspecified'||!r.names.length)continue;
@@ -62,9 +62,9 @@ function suggestedTrips(transactions,peopleFor=t=>[t.person]){
  for(const reviewed of travelResearch.reviewedGroups||[]){
   const members=reviewed.ids.map(id=>byId.get(id)).filter(t=>t&&!travelNonTrip(t));
   // A partial dataset must contain every supporting record before applying the association.
-  if(!members.length||!reviewed.evidenceIds.every(id=>byId.has(id)))continue;
+  if(!members.some(t=>t.amount>0)||!reviewed.evidenceIds.every(id=>byId.has(id)))continue;
   const names=[...new Set(members.flatMap(peopleFor))];
-  const g={clue:reviewed.name,names,start:members.map(t=>t.date).sort()[0],label:reviewed.name+' · reviewed '+reviewed.key,reason:'Reviewed suggested association: '+reviewed.reason+' Supporting records: '+reviewed.evidenceIds.join(', ')+'.'};
+  const g={clue:reviewed.name,names,start:members.filter(t=>t.amount>0).map(t=>t.date).sort()[0],label:reviewed.name+' · reviewed '+reviewed.key,reason:'Reviewed suggested association: '+reviewed.reason+' Supporting records: '+reviewed.evidenceIds.join(', ')+'.'};
   for(const t of members)assigned.set(t.id,g);
  }
  return assigned;
