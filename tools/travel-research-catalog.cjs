@@ -1,5 +1,7 @@
 // Reviewed travel evidence; schedules are not traveler itineraries.
 module.exports={
+  eventCalendar: require('./event-calendar.json'),
+  eventCalendarProposals: require('./event-calendar-connections.json'),
   // Dated, source-backed merchant findings. Research only: never blanket trip assignments.
   "merchantResearch": require('./travel-merchant-research.json'),
   "purchasePurposes": {

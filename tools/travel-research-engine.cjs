@@ -69,7 +69,7 @@ function suggestedTrips(transactions,peopleFor=t=>[t.person]){
  }
  return assigned;
 }
-function tripComment(t){return (t.comments||[]).join(' ').replace(/\([^)]*\d{1,2}\/\d{1,2}\/\d{2}[^)]*\)/g,' ')}
+function tripComment(t){return (t.purchaseNotes?.length?t.purchaseNotes:(t.comments||[])).join(' ').replace(/\([^)]*\d{1,2}\/\d{1,2}\/\d{2}[^)]*\)/g,' ')}
 function tripDateRange(t){
  const months={JAN:1,FEB:2,MAR:3,APR:4,MAY:5,JUN:6,JUL:7,AUG:8,SEP:9,OCT:10,NOV:11,DEC:12};
  const text=tripComment(t).replace(/\b(\d{1,2})[- ]*(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)(?:[a-z]*)\s*(\d{4}|\d{2})?\b/gi,(_,d,m,y)=>months[m.toUpperCase()]+'/'+d+(y?'/'+y:''))

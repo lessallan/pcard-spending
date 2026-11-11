@@ -1,0 +1,437 @@
+[
+  {
+    "id": "TXN00051517",
+    "event_id": "nlc-congressional-city-conference-2026",
+    "confidence": "Likely",
+    "supporting_ids": [
+      "TXN00051544",
+      "TXN00051553",
+      "TXN00053981"
+    ],
+    "reason": "Names NLC Congressional City Conference and Lucas. November 2025 advance registration aligns with the March 2026 edition and later conference-named travel.",
+    "confirmation_needed": "Registration confirmation with event year",
+    "source_url": "https://www.nlc.org/events/2026-congressional-city-conference/",
+    "target_sha256": "208df8378eec6050c2b2bcca92c3a67e0baacefc4b18e7362bbe9c3b6449b760",
+    "evidence": [
+      {
+        "id": "TXN00051544",
+        "date": "2025-11-26",
+        "cardholder": "LUCAS, JANICE L",
+        "merchant": "DELTA AIR   Seat Fees",
+        "notes": "Delta Seat Fee NLC CCC",
+        "sha256": "2c37b3420601cf5b603e8c9a8ceca664ac75c4053a9fb80d8b78f0ba4133c144"
+      },
+      {
+        "id": "TXN00051553",
+        "date": "2025-11-26",
+        "cardholder": "LUCAS, JANICE L",
+        "merchant": "DELTA AIR   0062383790564",
+        "notes": "Delta flight comm Lucas NLC cong conf.",
+        "sha256": "24fd46bdb81fb43de7bfcbb200e195006e3ffcbbdf91057a75ca8cf21e81b087"
+      },
+      {
+        "id": "TXN00053981",
+        "date": "2026-03-13",
+        "cardholder": "LUCAS, JANICE L",
+        "merchant": "DELTA AIR   Baggage Fee",
+        "notes": "Delta Baggage Fee NLC Congressional Conference",
+        "sha256": "485aa7eb95f6f049da6ff3b6deb46e457705dabc936c0c1512a56995c8d5453f"
+      }
+    ],
+    "expectedRecords": [
+      {
+        "id": "TXN00051517",
+        "date": "2025-11-25",
+        "person": "LUCAS, JANICE L",
+        "raw": "NATIONAL LE",
+        "amount": 107000,
+        "purchaseNotes": [
+          "National league of cities congressional city conference lucas registration"
+        ]
+      },
+      {
+        "id": "TXN00051544",
+        "date": "2025-11-26",
+        "person": "LUCAS, JANICE L",
+        "raw": "DELTA AIR   Seat Fees",
+        "amount": 999,
+        "purchaseNotes": [
+          "Delta Seat Fee NLC CCC"
+        ]
+      },
+      {
+        "id": "TXN00051553",
+        "date": "2025-11-26",
+        "person": "LUCAS, JANICE L",
+        "raw": "DELTA AIR   0062383790564",
+        "amount": 45036,
+        "purchaseNotes": [
+          "Delta flight comm Lucas NLC cong conf."
+        ]
+      },
+      {
+        "id": "TXN00053981",
+        "date": "2026-03-13",
+        "person": "LUCAS, JANICE L",
+        "raw": "DELTA AIR   Baggage Fee",
+        "amount": 3500,
+        "purchaseNotes": [
+          "Delta Baggage Fee NLC Congressional Conference"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "TXN00056114",
+    "event_id": "face-annual-educational-conference-2026",
+    "confidence": "Likely",
+    "supporting_ids": [
+      "TXN00053972"
+    ],
+    "reason": "Brock\u2019s explicit June 9\u201311 hotel dates overlap June 9\u201312 FACE; his own FACE 2026 registration supplies the event identity and Embassy Suites matches the organizer hotel brand.",
+    "confirmation_needed": "Hotel folio confirming the specific Embassy Suites property",
+    "source_url": "https://face-online.org/AnnConf26/iCore/Events/Event_display.aspx?EventKey=ANNCONF26&WebsiteKey=059f5dff-d4b6-443a-9b29-5017f9833089",
+    "target_sha256": "827fe47ac4e1bcb145520de4673e80e138d4a8244802ef4c62e0e8753395bb68",
+    "evidence": [
+      {
+        "id": "TXN00053972",
+        "date": "2026-03-13",
+        "cardholder": "BROCK, JOHN T",
+        "merchant": "FLORIDA ASSOCIATION OF",
+        "notes": "Brock FACE Conference 2026 Admission",
+        "sha256": "2bd0d355971c08b27ae94a3bc6516e691b7b47a6159d773a86f7279cc8cd7118"
+      }
+    ],
+    "expectedRecords": [
+      {
+        "id": "TXN00056114",
+        "date": "2026-06-12",
+        "person": "BROCK, JOHN T",
+        "raw": "EMBASSY SUITES",
+        "amount": 54606,
+        "purchaseNotes": [
+          "Embassy Suites 6/9/26-6/11/26 Conference"
+        ]
+      },
+      {
+        "id": "TXN00053972",
+        "date": "2026-03-13",
+        "person": "BROCK, JOHN T",
+        "raw": "FLORIDA ASSOCIATION OF",
+        "amount": 61500,
+        "purchaseNotes": [
+          "Brock FACE Conference 2026 Admission"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "TXN00056106",
+    "event_id": "ffma-annual-conference-2026",
+    "confidence": "Likely",
+    "supporting_ids": [
+      "TXN00053400"
+    ],
+    "reason": "Aldridge has a $460 FFMA conference registration; Omni charge on the final conference day matches organizer venue and early member registration rate.",
+    "confirmation_needed": "Omni folio confirming ChampionsGate and stay dates",
+    "source_url": "https://flfloods.org/event/ffma2026conference",
+    "target_sha256": "4144775aa3390ac1c074e5bfd238eddb7b9fb49a45cc3ef41cd799c13700e04c",
+    "evidence": [
+      {
+        "id": "TXN00053400",
+        "date": "2026-02-20",
+        "cardholder": "ALDRIDGE, JENNIFER S",
+        "merchant": "FFMA",
+        "notes": "Aldridge Registration for Conference | Additional invoice attached.",
+        "sha256": "1da3d0c444af33f76b0973fe254173a6904a8998e2ded2954330ddcca93259c0"
+      }
+    ],
+    "expectedRecords": [
+      {
+        "id": "TXN00056106",
+        "date": "2026-06-12",
+        "person": "ALDRIDGE, JENNIFER S",
+        "raw": "OMNI HOTELS",
+        "amount": 89000,
+        "purchaseNotes": [
+          "Hotel Receipt."
+        ]
+      },
+      {
+        "id": "TXN00053400",
+        "date": "2026-02-20",
+        "person": "ALDRIDGE, JENNIFER S",
+        "raw": "FFMA",
+        "amount": 46000,
+        "purchaseNotes": [
+          "Aldridge Registration for Conference",
+          "Additional invoice attached."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "TXN00051750",
+    "event_id": "fsa-winter-conference-2025",
+    "confidence": "Likely",
+    "supporting_ids": [
+      "TXN00049920"
+    ],
+    "reason": "Aldridge\u2019s FSA 2025 registration plus Embassy Suites charge on December 5 aligns with the December 3\u20135 winter event and hotel brand.",
+    "confirmation_needed": "Specific Embassy Suites folio and stay dates",
+    "source_url": "https://www.florida-stormwater.org/dec25-sponsor-information",
+    "target_sha256": "63161aa59fed10daf10f98f7fe88a6af5074cff8a2902a776f0b642212c524e4",
+    "evidence": [
+      {
+        "id": "TXN00049920",
+        "date": "2025-09-16",
+        "cardholder": "ALDRIDGE, JENNIFER S",
+        "merchant": "FLORIDA STORMWATER ASSOCI",
+        "notes": "FSA 2025 Conference Registration",
+        "sha256": "32aca24754980ec91066bee453a5f1913307eaede8e5af2e8dcad2406f20e626"
+      }
+    ],
+    "expectedRecords": [
+      {
+        "id": "TXN00051750",
+        "date": "2025-12-05",
+        "person": "ALDRIDGE, JENNIFER S",
+        "raw": "EMBASSY SUITES",
+        "amount": 33800,
+        "purchaseNotes": [
+          "Hotel Receipt"
+        ]
+      },
+      {
+        "id": "TXN00049920",
+        "date": "2025-09-16",
+        "person": "ALDRIDGE, JENNIFER S",
+        "raw": "FLORIDA STORMWATER ASSOCI",
+        "amount": 57000,
+        "purchaseNotes": [
+          "FSA 2025 Conference Registration"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "TXN00051966",
+    "event_id": "fsa-winter-conference-2025",
+    "confidence": "Likely",
+    "supporting_ids": [
+      "TXN00049920"
+    ],
+    "reason": "Same cardholder and hotel brand as the published FSA winter venue; posting one week after the event could be a delayed charge. Weaker link, not proof of another stay.",
+    "confirmation_needed": "Folio or booking reference linking delayed charge to December 3\u20135",
+    "source_url": "https://www.florida-stormwater.org/dec25-sponsor-information",
+    "target_sha256": "6fcac1f79f1cb0ac096e1427858ef13d0ffcdd28261d6c9c752a9a3bb795c8d1",
+    "evidence": [
+      {
+        "id": "TXN00049920",
+        "date": "2025-09-16",
+        "cardholder": "ALDRIDGE, JENNIFER S",
+        "merchant": "FLORIDA STORMWATER ASSOCI",
+        "notes": "FSA 2025 Conference Registration",
+        "sha256": "32aca24754980ec91066bee453a5f1913307eaede8e5af2e8dcad2406f20e626"
+      }
+    ],
+    "expectedRecords": [
+      {
+        "id": "TXN00051966",
+        "date": "2025-12-12",
+        "person": "ALDRIDGE, JENNIFER S",
+        "raw": "EMBASSY SUITES",
+        "amount": 24604,
+        "purchaseNotes": [
+          "Hotel Receipt"
+        ]
+      },
+      {
+        "id": "TXN00049920",
+        "date": "2025-09-16",
+        "person": "ALDRIDGE, JENNIFER S",
+        "raw": "FLORIDA STORMWATER ASSOCI",
+        "amount": 57000,
+        "purchaseNotes": [
+          "FSA 2025 Conference Registration"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "TXN00048864",
+    "event_id": "frwa-annual-conference-2025",
+    "confidence": "Likely",
+    "supporting_ids": [
+      "TXN00047571"
+    ],
+    "reason": "Cain\u2019s FRWA registration plus conference hotel charge August 1 follows the July 29\u201331 event at Hilton Daytona Beach.",
+    "confirmation_needed": "Hilton folio identifying Daytona Beach",
+    "source_url": "https://assets.noviams.com/novi-file-uploads/frwa/AnnualConference/25FinalAgenda.pdf",
+    "target_sha256": "2b3ab1d71e2c1f35e8413dced185a36475f051c50aaa5ff94eb5de96facc8f58",
+    "evidence": [
+      {
+        "id": "TXN00047571",
+        "date": "2025-06-06",
+        "cardholder": "CAIN , BENJAMIN",
+        "merchant": "IN  FLORIDA RURAL WATER A",
+        "notes": "frwa conference",
+        "sha256": "26ec3fc83e139e14972610ab3a89fcc6556287654107b5fd28b40b6c20940014"
+      }
+    ],
+    "expectedRecords": [
+      {
+        "id": "TXN00048864",
+        "date": "2025-08-01",
+        "person": "CAIN , BENJAMIN",
+        "raw": "HILTON HOTELS",
+        "amount": 55437,
+        "purchaseNotes": [
+          "hotel for conference"
+        ]
+      },
+      {
+        "id": "TXN00047571",
+        "date": "2025-06-06",
+        "person": "CAIN , BENJAMIN",
+        "raw": "IN  FLORIDA RURAL WATER A",
+        "amount": 39500,
+        "purchaseNotes": [
+          "frwa conference"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "TXN00047545",
+    "event_id": "frwa-annual-conference-2025",
+    "confidence": "Likely",
+    "supporting_ids": [
+      "TXN00047571"
+    ],
+    "reason": "Cain\u2019s Hilton deposit is one day after his FRWA registration; published event hotel is Hilton Daytona Beach.",
+    "confirmation_needed": "Deposit confirmation identifying property and July stay",
+    "source_url": "https://assets.noviams.com/novi-file-uploads/frwa/AnnualConference/25FinalAgenda.pdf",
+    "target_sha256": "31cec82f58c6bf8578d3fc4ea86f843dbad73db86b94b40280bf629c5e207943",
+    "evidence": [
+      {
+        "id": "TXN00047571",
+        "date": "2025-06-06",
+        "cardholder": "CAIN , BENJAMIN",
+        "merchant": "IN  FLORIDA RURAL WATER A",
+        "notes": "frwa conference",
+        "sha256": "26ec3fc83e139e14972610ab3a89fcc6556287654107b5fd28b40b6c20940014"
+      }
+    ],
+    "expectedRecords": [
+      {
+        "id": "TXN00047545",
+        "date": "2025-06-07",
+        "person": "CAIN , BENJAMIN",
+        "raw": "HILTON HOTELS",
+        "amount": 18563,
+        "purchaseNotes": [
+          "hotel deposit"
+        ]
+      },
+      {
+        "id": "TXN00047571",
+        "date": "2025-06-06",
+        "person": "CAIN , BENJAMIN",
+        "raw": "IN  FLORIDA RURAL WATER A",
+        "amount": 39500,
+        "purchaseNotes": [
+          "frwa conference"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "TXN00057040",
+    "event_id": "frwa-annual-conference-2026",
+    "confidence": "Likely",
+    "supporting_ids": [
+      "TXN00055413"
+    ],
+    "reason": "Cain\u2019s conference hotel charge falls on July 29, final day of FRWA 2026; his own registration names FRWA and the organizer specifies Hilton Daytona Beach.",
+    "confirmation_needed": "Hilton folio identifying Daytona Beach",
+    "source_url": "https://www.frwa.net/Events/2026frwa-Annual-Conferencedaytona-Beach-72726-72926",
+    "target_sha256": "c0bdebee72954297337a958745acb3b68930edbfde8a33c604aa8b968a9476e2",
+    "evidence": [
+      {
+        "id": "TXN00055413",
+        "date": "2026-05-11",
+        "cardholder": "CAIN , BENJAMIN",
+        "merchant": "IN  FLORIDA RURAL WATER A",
+        "notes": "FRWA conference",
+        "sha256": "26cf6a9d2095fdc7bbb44b89aeb9a4678edac6f4aa9ddb3f61317ff84f2b314c"
+      }
+    ],
+    "expectedRecords": [
+      {
+        "id": "TXN00057040",
+        "date": "2026-07-29",
+        "person": "CAIN , BENJAMIN",
+        "raw": "HILTON HOTELS",
+        "amount": 31687,
+        "purchaseNotes": [
+          "hotel for conference"
+        ]
+      },
+      {
+        "id": "TXN00055413",
+        "date": "2026-05-11",
+        "person": "CAIN , BENJAMIN",
+        "raw": "IN  FLORIDA RURAL WATER A",
+        "amount": 42500,
+        "purchaseNotes": [
+          "FRWA conference"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "TXN00055453",
+    "event_id": "frwa-annual-conference-2026",
+    "confidence": "Likely",
+    "supporting_ids": [
+      "TXN00055413"
+    ],
+    "reason": "Cain\u2019s Hilton deposit is one day after his FRWA registration; matches the event hotel brand.",
+    "confirmation_needed": "Deposit confirmation with July 2026 stay dates",
+    "source_url": "https://www.frwa.net/Events/2026frwa-Annual-Conferencedaytona-Beach-72726-72926",
+    "target_sha256": "42c0cca36a0f39fbdf23cc5f685003ed33e54ce8746e6ca7b2fab590e2e21f48",
+    "evidence": [
+      {
+        "id": "TXN00055413",
+        "date": "2026-05-11",
+        "cardholder": "CAIN , BENJAMIN",
+        "merchant": "IN  FLORIDA RURAL WATER A",
+        "notes": "FRWA conference",
+        "sha256": "26cf6a9d2095fdc7bbb44b89aeb9a4678edac6f4aa9ddb3f61317ff84f2b314c"
+      }
+    ],
+    "expectedRecords": [
+      {
+        "id": "TXN00055453",
+        "date": "2026-05-12",
+        "person": "CAIN , BENJAMIN",
+        "raw": "HILTON HOTELS",
+        "amount": 19013,
+        "purchaseNotes": [
+          "deposit"
+        ]
+      },
+      {
+        "id": "TXN00055413",
+        "date": "2026-05-11",
+        "person": "CAIN , BENJAMIN",
+        "raw": "IN  FLORIDA RURAL WATER A",
+        "amount": 42500,
+        "purchaseNotes": [
+          "FRWA conference"
+        ]
+      }
+    ]
+  }
+]

@@ -32,7 +32,7 @@ const engine=require('./travel-research-engine.cjs');
 const registration={...tx('TXN00044010'),comments:tx('TXN00044010').purchaseNotes};
 assert.equal(engine.transactionTravelAnalysis(registration).kind,'Likely conference registration');
 assert.notEqual(engine.transactionTravelAnalysis({...registration,amount:1}).kind,'Likely conference registration','Reviewed purpose requires matching source amount');
-assert.notEqual(engine.transactionTravelAnalysis({...registration,comments:['Insurance']}).kind,'Likely conference registration','Reviewed purpose requires matching source note');
+assert.notEqual(engine.transactionTravelAnalysis({...registration,purchaseNotes:['Insurance'],comments:['Insurance']}).kind,'Likely conference registration','Reviewed purpose requires matching source note');
 for(const id of ['TXN00042134','TXN00048314','TXN00049043'])assert.equal(fee(id).category,'Travel insurance & protection');
 assert.equal(fixture.transactions.filter(t=>c.travelFeeClassification(t)?.uncertain).length,0,'Unmatched cancellation refund is separate from trip fees');
 console.log('PASS: reviewed registration source guards, abbreviated insurer notes, and remaining unresolved fee inventory.');
