@@ -1,0 +1,145 @@
+[
+  {
+    "id": "TXN00042134",
+    "amount": 2755,
+    "merchant": "ALLIANZ TRAVEL INS",
+    "notes": [
+      "NLC City Summit"
+    ],
+    "before": null,
+    "after": {
+      "category": "Travel insurance & protection"
+    }
+  },
+  {
+    "id": "TXN00041968",
+    "amount": 2400,
+    "merchant": "BRG HOLDINGS LLC",
+    "notes": [
+      "Hotel Parking"
+    ],
+    "before": {
+      "category": "Amount needs review",
+      "uncertain": true,
+      "reason": "Parking or tolls may be bundled with another travel purchase."
+    },
+    "after": {
+      "category": "Parking"
+    }
+  },
+  {
+    "id": "TXN00041929",
+    "amount": 2000,
+    "merchant": "BRG HOLDINGS LLC",
+    "notes": [
+      "Hotel Parking"
+    ],
+    "before": {
+      "category": "Amount needs review",
+      "uncertain": true,
+      "reason": "Parking or tolls may be bundled with another travel purchase."
+    },
+    "after": {
+      "category": "Parking"
+    }
+  },
+  {
+    "id": "TXN00043996",
+    "amount": 4731,
+    "merchant": "ALLIANZ TRAVEL INS",
+    "notes": [
+      "Comm. Lucas NLC CCC registration for add on FBC-LEO and Flight/travel insurance (Commissioner will be leaving one conference to immediately attend another)"
+    ],
+    "before": {
+      "category": "Amount needs review",
+      "uncertain": true,
+      "reason": "Notes combine registration and insurance; the separate insurance amount is not established."
+    },
+    "after": {
+      "category": "Travel insurance & protection"
+    }
+  },
+  {
+    "id": "TXN00044010",
+    "amount": 22500,
+    "merchant": "NATIONAL LE",
+    "notes": [
+      "Comm. Lucas NLC CCC registration for add on FBC-LEO and Flight/travel insurance (Commissioner will be leaving one conference to immediately attend another)"
+    ],
+    "before": {
+      "category": "Amount needs review",
+      "uncertain": true,
+      "reason": "Notes combine registration and insurance; the separate insurance amount is not established."
+    },
+    "after": null
+  },
+  {
+    "id": "TXN00047713",
+    "amount": 3909,
+    "merchant": "PMC - PAID PARKING",
+    "notes": [
+      "The parking was charged separately from the hotel. Lena has sent them the tax-exempt paperwork to have the tax removed.",
+      "06.13.25 FRA Parking-LW"
+    ],
+    "before": {
+      "category": "Amount needs review",
+      "uncertain": true,
+      "reason": "Parking or tolls may be bundled with another travel purchase."
+    },
+    "after": {
+      "category": "Parking"
+    }
+  },
+  {
+    "id": "TXN00048314",
+    "amount": 3341,
+    "merchant": "ALLIANZ TRAVEL INS",
+    "notes": [
+      "Allianz Travel Ins  Comm Lucas FLC Conference"
+    ],
+    "before": null,
+    "after": {
+      "category": "Travel insurance & protection"
+    }
+  },
+  {
+    "id": "TXN00049043",
+    "amount": 3539,
+    "merchant": "ALLIANZ TRAVEL INS",
+    "notes": [
+      "Florida Redevelopment Conference Comm Lucas Travel Ins"
+    ],
+    "before": null,
+    "after": {
+      "category": "Travel insurance & protection"
+    }
+  },
+  {
+    "id": "TXN00054008",
+    "amount": 4605,
+    "merchant": "ALLIANZ TRAVEL INS",
+    "notes": [
+      "Allianz Flight Protection MPOAC Quarterly Meeting Orlando FL"
+    ],
+    "before": null,
+    "after": {
+      "category": "Travel insurance & protection"
+    }
+  },
+  {
+    "id": "TXN00056675",
+    "amount": 500,
+    "merchant": "CITY OF FORT",
+    "notes": [
+      "Hotel Parking for APWA Conf - Public Works Dept."
+    ],
+    "before": {
+      "category": "Amount needs review",
+      "uncertain": true,
+      "reason": "Parking or tolls may be bundled with another travel purchase."
+    },
+    "after": {
+      "category": "Parking"
+    }
+  }
+]

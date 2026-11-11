@@ -1,5 +1,13 @@
 // Reviewed travel evidence; schedules are not traveler itineraries.
 module.exports={
+  "purchasePurposes": {
+    "TXN00044010": {
+      "merchant": "NATIONAL LE", "amount": 22500,
+      "note": "Comm. Lucas NLC CCC registration for add on FBC-LEO and Flight/travel insurance (Commissioner will be leaving one conference to immediately attend another)",
+      "kind": "Likely conference registration",
+      "reason": "NATIONAL LE registration notes across cardholders (TXN00042207, TXN00042727, TXN00043188) support a registration add-on. The identical note appears on the separate $47.31 Allianz insurance charge TXN00043996. Likely registration; an itemized receipt is needed to confirm the $225 purpose."
+    }
+  },
   "reviewed": "2026-11-10",
   "hotels": [
     {

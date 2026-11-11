@@ -6,7 +6,10 @@ vm.runInContext('data=fixture;travelSnapshot=snapshot;leadershipAssociations=ass
 const tx=id=>fixture.transactions.find(t=>t.id===id),fee=id=>c.travelFeeClassification(tx(id));
 assert.equal(fee('TXN00054166'),null,'Hotel balance excludes the separately charged fee');
 assert(fee('TXN00042435').uncertain,'Cancellation refund is not the fee amount');
-assert(fee('TXN00043996').uncertain,'Mixed registration/insurance stays unresolved');
+assert.equal(fee('TXN00043996').category,'Travel insurance & protection','Allianz merchant resolves the shared note');
+assert.equal(fee('TXN00044010'),null,'Likely registration does not become an insurance fee');
+for(const id of ['TXN00041968','TXN00041929','TXN00047713','TXN00056675'])assert.equal(fee(id).category,'Parking');
+assert.equal(fee('TXN00054008').category,'Travel insurance & protection');
 assert.equal(fee('TXN00046894').category,'Combined baggage & seating');
 assert.equal(fee('TXN00043224'),null,'Equipment seat is not travel');
 assert.equal(fee('TXN00050649').category,'Seat upgrades');
@@ -24,3 +27,12 @@ for(const fy of ['2025','2026']){const selected=fixture.transactions.filter(t=>S
 // Dataset evidence for a fee must be present; an analysis purpose label alone is insufficient.
 assert.equal(c.travelFeeClassification({...tx('TXN00054166'),purchaseNotes:[],merchant:'Hotel'}),null);
 console.log('PASS: fiscal-year subsets reconcile; source-free purpose labels do not manufacture fees.');
+
+const engine=require('./travel-research-engine.cjs');
+const registration={...tx('TXN00044010'),comments:tx('TXN00044010').purchaseNotes};
+assert.equal(engine.transactionTravelAnalysis(registration).kind,'Likely conference registration');
+assert.notEqual(engine.transactionTravelAnalysis({...registration,amount:1}).kind,'Likely conference registration','Reviewed purpose requires matching source amount');
+assert.notEqual(engine.transactionTravelAnalysis({...registration,comments:['Insurance']}).kind,'Likely conference registration','Reviewed purpose requires matching source note');
+for(const id of ['TXN00042134','TXN00048314','TXN00049043'])assert.equal(fee(id).category,'Travel insurance & protection');
+assert.equal(fixture.transactions.filter(t=>c.travelFeeClassification(t)?.uncertain).length,1,'Only the non-itemized cancellation refund remains unresolved');
+console.log('PASS: reviewed registration source guards, abbreviated insurer notes, and remaining unresolved fee inventory.');

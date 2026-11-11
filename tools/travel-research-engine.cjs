@@ -125,6 +125,8 @@ function researchedEvents(t){
 function travelPurpose(t){
  const raw=t.raw||'',c=tripComment(t),text=raw+' '+c,non=travelNonTrip(t);
  if(non)return {kind:non,clue:c};
+ const reviewedPurpose=travelResearch.purchasePurposes?.[t.id];
+ if(reviewedPurpose&&raw===reviewedPurpose.merchant&&t.amount===reviewedPurpose.amount&&c.includes(reviewedPurpose.note))return {kind:reviewedPurpose.kind,clue:reviewedPurpose.reason};
  const rules=[
  ['Membership and conference — allocation unknown',/memberships? and conference/i],
  ['Training materials',/training books/i],

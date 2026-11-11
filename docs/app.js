@@ -1073,13 +1073,16 @@ function travelFeeClassification(t){
  if(/hotel stay.*\d.*-.*service fee.*=/i.test(notes))return null;
  const uncertain=reason=>({category:'Amount needs review',uncertain:true,reason});
  if(/refund; cancellation fee/i.test(notes))return uncertain('Refund mentions a cancellation fee without itemizing the fee retained.');
+ // Merchant evidence separates copied multi-purchase notes into their actual services.
+ if(/^(?:ALLIANZ TRAVEL INS|TRAVEL GUARD GROUP INC)$/i.test(t.merchant))return {category:'Travel insurance & protection'};
+ if(travelSnapshot.records[t.id]?.analysis?.kind==='Likely conference registration')return null;
  if(/registration.*\band\b.*insurance/i.test(notes))return uncertain('Notes combine registration and insurance; the separate insurance amount is not established.');
  const bag=/baggage|luggage|EXCS_BAG/i.test(text),seat=/\bseat(?:s|ing)?\b|\bupgrade\b|CMFT SEG Upsell/i.test(text);
  if(bag&&seat)return {category:'Combined baggage & seating'};
  if(bag)return {category:'Baggage'};
  if(seat)return {category:/upgrade|upsell/i.test(text)?'Seat upgrades':'Seat selection & changes'};
  if(/flight change/i.test(notes))return {category:'Flight changes (may include fare difference)'};
- if(/insurance|trip protection|rental (?:car )?protection|car rental protection/i.test(text))return {category:'Travel insurance & protection'};
+ if(/insurance|(?:trip|flight) protection|rental (?:car )?protection|car rental protection/i.test(text))return {category:'Travel insurance & protection'};
  if(/taxes and fees/i.test(notes))return {category:'Combined travel taxes & fees'};
  if(/(?:cancel[al]*ation|cancelation) (?:service )?fee/i.test(notes))return {category:'Cancellation fees'};
  if(/booking fee|service fee|SERVFEE/i.test(text)){
@@ -1088,7 +1091,8 @@ function travelFeeClassification(t){
  }
  if(/resort fee|destination fee/i.test(notes))return uncertain('A fee is mentioned; verify its separate amount on the hotel folio.');
  if(/parking|\btoll(?:s| fee)?\b|ETOLL/i.test(text)){
-  if(/hotel|lodging|room|rental/i.test(notes)&&!/^(?:parking|toll)/i.test(notes))return uncertain('Parking or tolls may be bundled with another travel purchase.');
+  const separateParking=/^hotel parking(?:$| for\b)/i.test(notes)||/parking was charged separately from the hotel/i.test(notes);
+  if(!separateParking&&/hotel|lodging|room|rental/i.test(notes)&&!/^(?:parking|toll)/i.test(notes))return uncertain('Parking or tolls may be bundled with another travel purchase.');
   return {category:/toll|ETOLL/i.test(text)?'Tolls':'Parking'};
  }
  return null;
@@ -1271,4 +1275,4 @@ function loadDataset(d){
  for(const [id,values,label] of [['fund',d.transactions.flatMap(t=>t.allocations.map(a=>a.fund)),'All funds'],['center',d.transactions.flatMap(t=>t.allocations.map(a=>a.center)),'All spending areas'],['person',d.transactions.map(t=>t.person),'All cardholders'],['merchant',d.transactions.map(t=>t.merchant),'All merchants']])fillSelect(id,values,label);
  applyTransactionRoute();$('loading').hidden=true;render();if(view==='transactions')scrollToReportStart();
 }
-Promise.all(['./data.json?v=staff-filters-20261110','./travel.json?v=cross-card-20261110','./leadership-associations.json?v=name-confirmed-20261110'].map(url=>fetch(url).then(r=>{if(!r.ok)throw Error();return r.json()}))).then(([d,t,a])=>{if(a.version!==1||!a.records)throw Error('Invalid leadership associations');leadershipAssociations=a;if(t.version!==1||!t.records)throw Error('Invalid travel snapshot');travelSnapshot=t;loadDataset(d)}).catch(()=>{$('loading').hidden=false;$('loading').textContent='Spending records could not load. Reload this page to try again.'});
+Promise.all(['./data.json?v=staff-filters-20261110','./travel.json?v=insurance-review-20261111','./leadership-associations.json?v=name-confirmed-20261110'].map(url=>fetch(url).then(r=>{if(!r.ok)throw Error();return r.json()}))).then(([d,t,a])=>{if(a.version!==1||!a.records)throw Error('Invalid leadership associations');leadershipAssociations=a;if(t.version!==1||!t.records)throw Error('Invalid travel snapshot');travelSnapshot=t;loadDataset(d)}).catch(()=>{$('loading').hidden=false;$('loading').textContent='Spending records could not load. Reload this page to try again.'});
