@@ -1,7 +1,7 @@
 const assert=require('node:assert/strict'),cp=require('node:child_process');
 const data=require('../docs/data.json'),snapshot=require('../docs/travel.json'),engine=require('./travel-research-engine.cjs');
-const before=JSON.parse(cp.execFileSync('git',['show','origin/main:docs/travel.json'],{encoding:'utf8',maxBuffer:40*1024*1024}));
-const originalData=JSON.parse(cp.execFileSync('git',['show','origin/main:docs/data.json'],{encoding:'utf8',maxBuffer:40*1024*1024}));
+const before=JSON.parse(cp.execFileSync('git',['show','5db557a69ea6ea4353ab9e2d5c584714817dafaf:docs/travel.json'],{encoding:'utf8',maxBuffer:40*1024*1024}));
+const originalData=JSON.parse(cp.execFileSync('git',['show','5db557a69ea6ea4353ab9e2d5c584714817dafaf:docs/data.json'],{encoding:'utf8',maxBuffer:40*1024*1024}));
 assert.deepEqual(data,originalData,'Source data or amounts changed');
 const proposals=require('./event-calendar-connections.json'),apply=require('./apply_event_calendar.cjs').applyEventCalendar;
 assert.equal(proposals.length,9);assert.equal(new Set(proposals.map(p=>p.id)).size,9);
