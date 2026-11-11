@@ -202,3 +202,5 @@
 !/tools/dpc/check-vendors.cjs
 
 !/tools/dpc/check-shared.cjs
+
+!/tools/dpc/check-readonly.cjs
