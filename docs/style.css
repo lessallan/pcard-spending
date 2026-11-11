@@ -332,3 +332,5 @@ form#filters{display:block;margin:0}.year-toggle{border:0;padding:0;margin:0;dis
 .fee-value em,.fee-note{font-size:14px;color:var(--muted);font-weight:400;line-height:1.5}
 .fee-unresolved .fee-value>span{font-size:14px;color:var(--muted);line-height:27px}
 @media(max-width:700px){.travel-fees .fee-row>summary{gap:10px;padding:16px 0}.fee-columns{padding-left:22px;font-size:14px}.fee-label strong,.fee-value strong{font-size:17px}.fee-label{overflow-wrap:normal}}
+
+.travel-summary-note{font-size:13px;line-height:1.45;color:var(--muted);margin:0 0 12px;max-width:85ch}
