@@ -19,5 +19,6 @@ for(const t of data.transactions){
  const recipients=travelNonTrip(t)?[]:recipientsFor(t);
  records[t.id]={recipients,recipientOverride:!!catalog.travelers?.[t.id],groupName:g?.clue||null,person:g||t.travel!=='Not identified as travel'?t.person:'',group:g?.label||null,reason:g?.reason||null,range:tripDateRange(t),analysis:transactionTravelAnalysis(t),nonTrip:!!travelNonTrip(t)};
 }
+require('./refine_travel_groups.cjs').refineTravelGroups(data.transactions,records);
 fs.writeFileSync('docs/travel.json',JSON.stringify({version:1,records}));
 console.log('Built travel snapshot: '+Object.keys(records).length+' scoped records, no raw comments.');
