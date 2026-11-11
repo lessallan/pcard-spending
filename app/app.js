@@ -1061,9 +1061,53 @@ function tripComparison(groups){
  const longest=groups.map(g=>({g,f:tripFacts(g)})).filter(x=>x.f.range).sort((a,b)=>b.f.range.days-a.f.range.days)[0];
  return `<details class="trip-comparison"><summary>Compare associated trip groups by cardholder</summary><p>Counts are suggested groups with positive, non-excluded charges, not verified trips taken. Only ${dated} of ${groups.length} groups have a single date range in the comments. Days below count distinct calendar dates in those ranges; missing dates are not zero days.</p>${longest?`<p><strong>Longest available date range: ${longest.f.range.days} days</strong> · ${esc(longest.g.label.split(' · purchases from ')[0].replace(' (hotel clue)',''))} · ${tripDateSpan(longest.f.range.start,longest.f.range.end)}. This is a comment-based estimate, not confirmed attendance.</p>`:''}<div class="table-wrap"><table><thead><tr><th>Cardholder</th><th>Associated groups</th><th>Groups with dates</th><th>Estimated days in dated groups</th></tr></thead><tbody>${ranked.map(r=>`<tr><td>${esc(displayName(r.person))}</td><td>${r.count}</td><td>${r.dated}</td><td>${r.dated?r.days.size:'Unknown'}</td></tr>`).join('')}</tbody></table></div></details>`;
 }
-function travelRecipients(t){if(travelSnapshot.records[t.id]?.recipientOverride)return travelSnapshot.records[t.id].recipients;const participants=purchaseParticipantsFor(t);if(participants)return participants.map(name=>leadershipCardholders[name]||name);const r=travelSnapshot.records[t.id];return r?.recipients?.length?r.recipients:[t.person].filter(Boolean)}
+function travelRecipients(t){if(travelSnapshot.records[t.id]?.recipientOverride)return travelSnapshot.records[t.id].recipients;const participants=purchaseParticipantsFor(t);if(participants)return participants.map(name=>leadershipCardholders[name]||name);const r=travelSnapshot.records[t.id];if(r?.recipients?.length)return r.recipients;const reviewed=travelFeeClassification(t)?(leadershipAssociations.records[t.id]?.associations||[]).filter(a=>['Named recipient in reviewed purchase notes','For / on behalf of'].includes(a.relationship)).map(a=>leadershipCardholders[a.name]).filter(Boolean):[];return reviewed.length?[...new Set(reviewed)]:[t.person].filter(Boolean)}
 function travelShare(t,person){const names=[...new Set(travelRecipients(t))].sort();const i=names.indexOf(person);if(i<0)return 0;const n=Math.abs(t.amount);return Math.sign(t.amount)*(Math.floor(n/names.length)+(i<n%names.length?1:0))}
 function travelForPerson(t,person){return {...t,fullAmount:t.amount,amount:travelShare(t,person)}}
+// Fee amounts are only inferred for separately described charges. Source records stay intact.
+function travelFeeClassification(t){
+ const notes=(t.purchaseNotes||[]).join(' · '),text=t.merchant+' '+notes;
+ const travel=t.travel!=='Not identified as travel'||!!travelSnapshot.records[t.id]?.group;
+ if(!travel)return null;
+ // This hotel note explicitly subtracts the separately charged service fee.
+ if(/hotel stay.*\d.*-.*service fee.*=/i.test(notes))return null;
+ const uncertain=reason=>({category:'Amount needs review',uncertain:true,reason});
+ if(/refund; cancellation fee/i.test(notes))return uncertain('Refund mentions a cancellation fee without itemizing the fee retained.');
+ if(/registration.*\band\b.*insurance/i.test(notes))return uncertain('Notes combine registration and insurance; the separate insurance amount is not established.');
+ const bag=/baggage|luggage|EXCS_BAG/i.test(text),seat=/\bseat(?:s|ing)?\b|\bupgrade\b|CMFT SEG Upsell/i.test(text);
+ if(bag&&seat)return {category:'Combined baggage & seating'};
+ if(bag)return {category:'Baggage'};
+ if(seat)return {category:/upgrade|upsell/i.test(text)?'Seat upgrades':'Seat selection & changes'};
+ if(/flight change/i.test(notes))return {category:'Flight changes (may include fare difference)'};
+ if(/insurance|trip protection|rental (?:car )?protection|car rental protection/i.test(text))return {category:'Travel insurance & protection'};
+ if(/taxes and fees/i.test(notes))return {category:'Combined travel taxes & fees'};
+ if(/(?:cancel[al]*ation|cancelation) (?:service )?fee/i.test(notes))return {category:'Cancellation fees'};
+ if(/booking fee|service fee|SERVFEE/i.test(text)){
+  if(/hotel stay|room charge|airfare/i.test(notes))return uncertain('Booking and fee may be bundled; an itemized receipt is needed.');
+  return {category:'Booking & service fees'};
+ }
+ if(/resort fee|destination fee/i.test(notes))return uncertain('A fee is mentioned; verify its separate amount on the hotel folio.');
+ if(/parking|\btoll(?:s| fee)?\b|ETOLL/i.test(text)){
+  if(/hotel|lodging|room|rental/i.test(notes)&&!/^(?:parking|toll)/i.test(notes))return uncertain('Parking or tolls may be bundled with another travel purchase.');
+  return {category:/toll|ETOLL/i.test(text)?'Tolls':'Parking'};
+ }
+ return null;
+}
+function travelFeeData(items){
+ const categories=new Map(),uncertain=[];let charges=0,credits=0;
+ for(const t of new Map(items.filter(t=>t.tripStatus!=='excluded').map(t=>[t.id,t])).values()){
+  const fee=travelFeeClassification(t);if(!fee)continue;
+  if(fee.uncertain){uncertain.push({t,...fee});continue;}
+  if(!categories.has(fee.category))categories.set(fee.category,{category:fee.category,items:[],charges:0,credits:0});
+  const row=categories.get(fee.category);row.items.push(t);
+  if(t.amount>=0){row.charges+=t.amount;charges+=t.amount}else{row.credits+=t.amount;credits+=t.amount}
+ }
+ return {categories:[...categories.values()].sort((a,b)=>a.category.localeCompare(b.category)),uncertain,charges,credits,net:charges+credits};
+}
+function travelFeesHtml(included,ungrouped=[]){
+ const f=travelFeeData([...included,...ungrouped]),grouped=travelFeeData(included),other=travelFeeData(ungrouped);
+ return `<section class="travel-fees"><h3>Travel fees & extras</h3><div class="stats">${stat('Net identified extras',exact(f.net),'After fee credits; not an additional charge to add to travel totals')}${stat('Charges',exact(f.charges))}${stat('Credits',exact(f.credits))}</div><p class="section-note">${exact(grouped.net)} already included in trip costs · ${exact(other.net)} in ungrouped purchases. Covers separately described fees, flight changes, insurance, parking and tolls. Flight changes may include fare differences. Shared purchases use the same estimated shares as travel totals. Missing or bundled fees are not assumed to be zero.</p>${f.categories.map(r=>`<details class="trip-group"><summary>${esc(r.category)} · ${exact(r.charges+r.credits)} net · ${r.items.length} purchase${r.items.length===1?'':'s'}</summary>${transactionTable(r.items,{travel:true})}</details>`).join('')||'<p>No separately identified fees or extras in this selection.</p>'}${f.uncertain.length?`<details class="trip-group"><summary>Fee amount unresolved · ${f.uncertain.length} purchases · excluded from fee totals</summary>${f.uncertain.map(r=>`<p>${esc(r.reason)}</p>${transactionTable([r.t],{travel:true})}`).join('')}</details>`:''}</section>`;
+}
 function travelSummaryData(groups,transactions){
  const people=new Map(),destinations=new Map();let dated=0;
  const ensure=person=>{if(!people.has(person))people.set(person,{person,groups:0,days:new Set(),dated:0,identified:0,ownCard:0,otherCards:0});return people.get(person)};
@@ -1073,6 +1117,8 @@ function travelSummaryData(groups,transactions){
   for(const person of new Set(positive.flatMap(travelRecipients))){const r=ensure(person);r.groups++;if(f.range&&positive.every(t=>travelRecipients(t).includes(person))){r.dated++;for(let d=Date.parse(f.range.start);d<=Date.parse(f.range.end);d+=86400000)r.days.add(d)}}
   for(const city of new Set(positive.map(tripDestination).filter(Boolean)))destinations.set(city,(destinations.get(city)||0)+1);
  }
+ const groupedIds=new Set(groups.flatMap(g=>g.items.map(t=>t.id)));
+ for(const r of people.values()){const items=[...groups.flatMap(g=>tripFacts(g).included),...transactions.filter(t=>!groupedIds.has(t.id)&&tripReviews[t.id]?.status!=='excluded')].filter(t=>travelRecipients(t).includes(r.person)).map(t=>travelForPerson(t,r.person));r.fees=travelFeeData(items);}
  const values=[...people.values()],byName=(a,b)=>travelName(a.person).localeCompare(travelName(b.person));
  return {counts:values.slice().sort((a,b)=>b.groups-a.groups||byName(a,b)),days:values.slice().sort((a,b)=>b.days.size-a.days.size||byName(a,b)),spending:values.map(r=>({...r,amount:r.identified})).sort((a,b)=>b.identified-a.identified||byName(a,b)),destinations:[...destinations].sort((a,b)=>b[1]-a[1]),dated};
 }
@@ -1093,7 +1139,7 @@ function sortedTravelPeople(m){
 }
 function travelPeopleRanking(m){
  const options=[['cost','Highest cost'],['trips','Most trip groups'],['days','Most days associated with travel'],['name','Name · A–Z']];
- return `<article class="travel-people-ranking"><h3>Travel by person</h3><div class="controls-row"><label for="travel-sort">Sort people by<select id="travel-sort">${options.map(([v,label])=>`<option value="${v}" ${travelSort===v?'selected':''}>${label}</option>`).join('')}</select></label></div><ol class="travel-summary-list">${sortedTravelPeople(m).map(r=>`<li>${travelPersonLink(r.person)}<span class="travel-person-cost"><strong>${exact(r.identified)} estimated cost</strong><span>${exact(r.ownCard)} on own card · ${exact(r.otherCards)} on other cards</span><span>${r.groups} trip groups · ${r.dated?r.days.size+' days':'Days unknown'}</span></span></li>`).join('')}</ol><p class="section-note">Trip counts are suggested groups, not confirmed trips taken. Costs include grouped purchases on their own card and purchases naming them on other cards, after credits. Shared charges use estimated equal shares; they are not recorded individual prices. Days count distinct dates in recorded ranges; unknown days sort last. ${m.dated} groups have usable dates. Cardholders may book for others.</p></article>`;
+ return `<article class="travel-people-ranking"><h3>Travel by person</h3><div class="controls-row"><label for="travel-sort">Sort people by<select id="travel-sort">${options.map(([v,label])=>`<option value="${v}" ${travelSort===v?'selected':''}>${label}</option>`).join('')}</select></label></div><ol class="travel-summary-list">${sortedTravelPeople(m).map(r=>`<li>${travelPersonLink(r.person)}<span class="travel-person-cost"><strong>${exact(r.identified)} estimated cost</strong><span>${exact(r.fees.net)} fees &amp; extras (including ungrouped)${r.fees.uncertain.length?` · ${r.fees.uncertain.length} fee amounts unresolved`:""}</span><span>${exact(r.ownCard)} on own card · ${exact(r.otherCards)} on other cards</span><span>${r.groups} trip groups · ${r.dated?r.days.size+' days':'Days unknown'}</span></span></li>`).join('')}</ol><p class="section-note">Trip counts are suggested groups, not confirmed trips taken. Costs include grouped purchases on their own card and purchases naming them on other cards, after credits. Shared charges use estimated equal shares; they are not recorded individual prices. Days count distinct dates in recorded ranges; unknown days sort last. ${m.dated} groups have usable dates. Cardholders may book for others.</p></article>`;
 }
 function travelPersonLink(person){return `<a href="#travel/person/${encodeURIComponent(person)}">${esc(travelName(person))}</a>`}
 function travelSummaries(groups,transactions){
@@ -1121,7 +1167,7 @@ function tripReport(person=null){
  const table=items=>transactionTable(items,{travel:true});
  const included=groups.flatMap(g=>tripFacts(g).included),total=included.reduce((n,t)=>n+t.amount,0),confirmed=included.filter(t=>t.tripStatus==='confirmed').reduce((n,t)=>n+t.amount,0);
  const intro=person?`<section class="travel-person-summary"><h2>${esc(travelName(person))} · Associated trips</h2><div class="stats">${stat('Total identified cost',exact(total),'Suggested and confirmed charges in these groups')}${stat('Confirmed identified cost',exact(confirmed),'Charges confirmed in this browser')}${stat('Suggested trip groups',number(groups.length),'Not verified trips taken')}${stat('Ungrouped travel charges',exact(ungrouped.reduce((n,t)=>n+t.amount,0)),ungrouped.length+' purchases · excluded from trip total')}</div><p>Includes travel associated with this person in the notes, including bookings paid on other cards. Shared charges are estimated equal shares, not recorded individual prices. Credits reduce costs; excluded charges and reimbursements do not count. Cardholders may book for others.</p></section>`:travelSummaries(groups,filtered().map(travelTransaction));
- return `${intro}<section id="trip-report" class="trip-report"><div class="trip-heading"><h2>Suggested trips</h2><span>${groups.length} groups</span></div><p>P-card purchases only — reimbursements are not included. The cardholder is shown first and may be the traveler or may have booked for someone else. Open a purchase to confirm or adjust its membership.</p><details class="trip-method"><summary>How estimates work</summary><p>Destinations combine recorded wording with researched hotel properties, dated conference editions and related purchases. Open a purchase for purpose, location clues and source links. Reviewed associations cite supporting transaction IDs and remain suggestions. Some groups describe canceled bookings or unknown destinations. Conflicting clues remain visible; conference dates do not establish travel dates. Travel dates use explicit ranges in comments; an omitted year is estimated from the purchase year. Days include both endpoints, not nights. Without a range, only purchase dates are shown. Conflicting ranges need review.</p><p>Filters find groups with matching charges; totals include full charges in each group. Excluded charges do not count. Credits reduce costs. Missing purchases and reimbursements mean these are not complete trip costs. Reviews stay in this browser. Confirming membership does not verify policy compliance.</p></details>${tripComparison(groups)}${groups.length?groups.map(g=>{
+ return `${intro}${person?travelFeesHtml(included,ungrouped):''}<section id="trip-report" class="trip-report"><div class="trip-heading"><h2>Suggested trips</h2><span>${groups.length} groups</span></div><p>P-card purchases only — reimbursements are not included. The cardholder is shown first and may be the traveler or may have booked for someone else. Open a purchase to confirm or adjust its membership.</p><details class="trip-method"><summary>How estimates work</summary><p>Destinations combine recorded wording with researched hotel properties, dated conference editions and related purchases. Open a purchase for purpose, location clues and source links. Reviewed associations cite supporting transaction IDs and remain suggestions. Some groups describe canceled bookings or unknown destinations. Conflicting clues remain visible; conference dates do not establish travel dates. Travel dates use explicit ranges in comments; an omitted year is estimated from the purchase year. Days include both endpoints, not nights. Without a range, only purchase dates are shown. Conflicting ranges need review.</p><p>Filters find groups with matching charges; totals include full charges in each group. Excluded charges do not count. Credits reduce costs. Missing purchases and reimbursements mean these are not complete trip costs. Reviews stay in this browser. Confirming membership does not verify policy compliance.</p></details>${tripComparison(groups)}${groups.length?groups.map(g=>{
  const f=tripFacts(g),sum=status=>g.items.filter(t=>t.tripStatus===status).reduce((n,t)=>n+t.amount,0),confirmed=g.items.filter(t=>t.tripStatus==='confirmed').length;
  const title=g.name||g.label.split(' · ')[0],people=[...new Set(g.items.map(t=>displayName(t.person)))].join(', ');
  const destination=f.destinations.length?f.destinations.map(tripDestinationLabel).join(' / '):/, [A-Z]{2}$/.test(title)?tripDestinationLabel(title):'Destination not identified';
