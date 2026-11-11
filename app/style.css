@@ -334,3 +334,19 @@ form#filters{display:block;margin:0}.year-toggle{border:0;padding:0;margin:0;dis
 @media(max-width:700px){.travel-fees .fee-row>summary{gap:10px;padding:12px 0}.fee-columns{padding-left:22px;font-size:14px}.fee-label strong,.fee-value strong{font-size:17px}.fee-label{overflow-wrap:normal}}
 
 .travel-summary-note{font-size:13px;line-height:1.45;color:var(--muted);margin:0 0 12px;max-width:85ch}
+/* Places and assets follow the compact report rows, with no sideways mobile navigation. */
+.report-navigation nav,.report-navigation nav.open{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));overflow:visible}
+.report-navigation nav a{min-width:0;white-space:normal;text-align:center}
+.asset-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));padding:0;gap:8px;margin:0 0 20px;max-width:none}
+.asset-tabs a{display:flex;align-items:center;justify-content:center;text-align:center;white-space:normal;min-height:44px;padding:8px;color:var(--green);border:1px solid var(--line)}
+.asset-tabs a[aria-current=page]{background:#d3decf;color:#223e2e}
+.asset-controls{display:flex;flex-wrap:wrap;gap:12px;align-items:end;margin:20px 0}.asset-controls label:first-child{flex:1 1 260px}.asset-controls label{flex:1 1 140px;font-size:14px}.asset-controls button{min-height:42px}
+.asset-summary{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 24px;padding:16px 0 20px}.asset-summary>span:nth-child(2){margin-left:auto}.asset-summary>.fine{flex-basis:100%;font-size:13px}
+.asset-columns,.asset-row>summary{display:grid;grid-template-columns:minmax(0,1fr) repeat(3,minmax(110px,135px));gap:16px;align-items:start}
+.asset-columns{color:var(--muted);font-size:14px;padding:10px 0;border-bottom:1px solid var(--line)}.asset-columns>span:not(:first-child){text-align:right}
+.asset-row{border-bottom:1px solid var(--line)}.asset-row>summary{list-style:none;cursor:pointer;padding:16px 0;min-height:52px}.asset-row>summary::-webkit-details-marker{display:none}
+.asset-name{display:block;min-width:0;padding-left:20px;position:relative}.asset-name:before{content:'▸';position:absolute;left:0;color:var(--green)}.asset-row[open] .asset-name:before{content:'▾'}
+.asset-name>strong{font-size:17px}.asset-badges{display:inline;margin-left:8px}.asset-badge{display:inline-block;margin:2px 5px 2px 0;font-size:12px;line-height:1.5;padding:1px 6px;border-radius:4px;background:#f5ecd6;color:#664719;font-weight:500}.asset-badge.shared{background:#e9ede4;color:var(--muted)}
+.asset-year,.asset-total{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}.asset-row small{display:none}.asset-total{font-size:18px}
+.asset-detail{padding:8px 0 24px}.asset-accounting{margin:12px 0}.asset-accounting>summary{cursor:pointer;min-height:44px;color:var(--green);padding:10px 0}.asset-footnote{margin-top:20px}.asset-detail .transaction-table{width:100%}
+@media(max-width:700px){.report-navigation nav,.report-navigation nav.open{grid-template-columns:repeat(2,minmax(0,1fr))}.report-navigation nav a:last-child:nth-child(odd){grid-column:1/-1}.asset-controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.asset-controls label:first-child{grid-column:1/-1}.asset-controls label{font-size:16px}.asset-controls button{min-height:44px}.asset-summary{display:block}.asset-summary>strong{display:block;font-size:18px}.asset-summary>span{display:block;margin-top:6px}.asset-columns{display:none}.asset-row>summary{grid-template-columns:minmax(0,1fr) auto;gap:8px 12px;padding:16px 0}.asset-name{grid-column:1;grid-row:1}.asset-total{grid-column:2;grid-row:1;font-size:18px}.asset-year{font-size:15px;text-align:left;padding-left:20px}.asset-year:nth-child(3){text-align:right;padding-left:0}.asset-row .asset-year small{display:inline;font-size:13px;color:var(--muted);margin-right:6px}.asset-badges{display:block;margin:3px 0 0}.asset-tabs{gap:6px}.asset-tabs a{font-size:16px;padding:8px 4px}.asset-intro{font-size:16px}}

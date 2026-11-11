@@ -1,0 +1,646 @@
+{
+  "sourceSha256": "63036986b3e6a576f203e28b8a075ffd2c90a5f64a0b08b911a40c3493189929",
+  "reviewed": "2026-11-11",
+  "operations": [
+    {
+      "id": "TXN00042727",
+      "group": "NLC Congressional City Conference 2025 \u00b7 LUCAS, JANICE L \u00b7 purchases from 2025-03-08 \u00b7 TXN00045207",
+      "groupName": "NLC Congressional City Conference 2025",
+      "reason": "Registration explicitly names Commissioner Lucas and NLC CCC; connect to her March 2025 event-named travel, retaining Mullaney as payer.",
+      "source": {
+        "date": "2024-11-15",
+        "person": "MULLANEY, VICTORIA A",
+        "raw": "NATIONAL LE",
+        "amount": 74500,
+        "purchaseNotes": [
+          "NLC CCC Conference Registration Com. Lucas"
+        ]
+      }
+    },
+    {
+      "id": "TXN00043188",
+      "group": "NLC Congressional City Conference 2025 \u00b7 HAYES, JONATHAN H \u00b7 stay 2025-03-08/2025-03-14 \u00b7 purchases from 2025-01-13 \u00b7 TXN00043993",
+      "groupName": "NLC Congressional City Conference 2025",
+      "reason": "Registration explicitly names Hayes and NLC Congressional City Conference; connect to his March 2025 travel, retaining Mullaney as payer.",
+      "source": {
+        "date": "2024-12-03",
+        "person": "MULLANEY, VICTORIA A",
+        "raw": "NATIONAL LE",
+        "amount": 74500,
+        "purchaseNotes": [
+          "NLC Congressional City Conference Hayes"
+        ]
+      }
+    },
+    {
+      "id": "TXN00044010",
+      "group": "NLC Congressional City Conference 2025 \u00b7 LUCAS, JANICE L \u00b7 purchases from 2025-03-08 \u00b7 TXN00045207",
+      "groupName": "NLC Congressional City Conference 2025",
+      "reason": "NATIONAL LE charge and notes identify an NLC CCC registration add-on. FBC-LEO wording alone does not establish the separate February annual conference. Itemized registration still needed.",
+      "source": {
+        "date": "2025-01-13",
+        "person": "MULLANEY, VICTORIA A",
+        "raw": "NATIONAL LE",
+        "amount": 22500,
+        "purchaseNotes": [
+          "Comm. Lucas NLC CCC registration for add on FBC-LEO and Flight/travel insurance (Commissioner will be leaving one conference to immediately attend another)"
+        ]
+      }
+    },
+    {
+      "id": "TXN00043996",
+      "group": null,
+      "groupName": null,
+      "reason": "Travel insurance note names multiple events. The amount cannot be assigned to one event without the policy itinerary; retain it as ungrouped insurance.",
+      "source": {
+        "date": "2025-01-13",
+        "person": "MULLANEY, VICTORIA A",
+        "raw": "ALLIANZ TRAVEL INS",
+        "amount": 4731,
+        "purchaseNotes": [
+          "Comm. Lucas NLC CCC registration for add on FBC-LEO and Flight/travel insurance (Commissioner will be leaving one conference to immediately attend another)"
+        ]
+      }
+    },
+    {
+      "id": "TXN00046136",
+      "group": "APWA Florida Expo 2025 \u00b7 HAYES, JONATHAN H \u00b7 purchases from 2025-04-27 \u00b7 TXN00046505",
+      "groupName": "APWA Florida Expo 2025",
+      "reason": "Note describes a flight split with Matt DeVito on Hayes\u2019s card for APWA Expo. Connect to Hayes\u2019s event-named travel and retain both named users as estimated equal shares.",
+      "source": {
+        "date": "2025-04-12",
+        "person": "HAYES, JONATHAN H",
+        "raw": "SPIRIT AIRL 4870431230136",
+        "amount": 23134,
+        "purchaseNotes": [
+          "Spirit Airlines Flight Split with Matt Devito  APWA Expo"
+        ]
+      },
+      "recipients": [
+        "HAYES, JONATHAN H",
+        "Matt DeVito, P.E."
+      ]
+    },
+    {
+      "id": "TXN00051219",
+      "group": null,
+      "groupName": null,
+      "reason": "K9 instructor tax refund is not an accreditation purchase. Original K9 booking remains unidentified; refund does not establish a trip.",
+      "source": {
+        "date": "2025-11-11",
+        "person": "ALDERMAN, KAITLIN",
+        "raw": "HOTEL INDIGO PANAMA",
+        "amount": -1452,
+        "purchaseNotes": [
+          "K9 Training - Instructors (tax refund)"
+        ]
+      }
+    },
+    {
+      "id": "TXN00051633",
+      "group": "TAC accreditation lodging \u00b7 December 2025 \u00b7 reviewed notes 20261111 \u00b7 TXN00051633",
+      "groupName": "TAC accreditation lodging \u00b7 December 2025",
+      "reason": "Three December 1 room charges name TAC accreditation. Keep separate from November accreditation and January TAC bookings; guests and stay dates are unconfirmed.",
+      "source": {
+        "date": "2025-12-01",
+        "person": "ALDERMAN, KAITLIN",
+        "raw": "HOTEL INDIGO PANAMA",
+        "amount": 16226,
+        "purchaseNotes": [
+          "TAC Accreditation (room #1) (includes tax)"
+        ]
+      }
+    },
+    {
+      "id": "TXN00051650",
+      "group": "TAC accreditation lodging \u00b7 December 2025 \u00b7 reviewed notes 20261111 \u00b7 TXN00051633",
+      "groupName": "TAC accreditation lodging \u00b7 December 2025",
+      "reason": "Three December 1 room charges name TAC accreditation. Keep separate from November accreditation and January TAC bookings; guests and stay dates are unconfirmed.",
+      "source": {
+        "date": "2025-12-01",
+        "person": "ALDERMAN, KAITLIN",
+        "raw": "HOTEL INDIGO PANAMA",
+        "amount": 16226,
+        "purchaseNotes": [
+          "TAC Accreditation (room #3) (includes tax)"
+        ]
+      }
+    },
+    {
+      "id": "TXN00051636",
+      "group": "TAC accreditation lodging \u00b7 December 2025 \u00b7 reviewed notes 20261111 \u00b7 TXN00051633",
+      "groupName": "TAC accreditation lodging \u00b7 December 2025",
+      "reason": "Three December 1 room charges name TAC accreditation. Keep separate from November accreditation and January TAC bookings; guests and stay dates are unconfirmed.",
+      "source": {
+        "date": "2025-12-01",
+        "person": "ALDERMAN, KAITLIN",
+        "raw": "HOTEL INDIGO PANAMA",
+        "amount": 16226,
+        "purchaseNotes": [
+          "TAC Accreditation (room #2) (includes tax)"
+        ]
+      }
+    },
+    {
+      "id": "TXN00055160",
+      "group": "New Orleans, LA (hotel clue) \u00b7 LEWIS, VICTORIA M \u00b7 stay 2026-02-10/2026-02-13 \u00b7 purchases from 2026-02-13 \u00b7 TXN00053294",
+      "groupName": "New Orleans, LA (hotel clue)",
+      "reason": "Recorded note explicitly identifies Vickie Lewis\u2019s February 10\u201313 pension-conference room, paid later on Kellie Smith\u2019s card. Connect to the February pension hotel group; payer is not traveler.",
+      "source": {
+        "date": "2026-05-01",
+        "person": "SMITH, KELLIE S",
+        "raw": "ROYAL SONESTA HOTEL NE",
+        "amount": 115872,
+        "purchaseNotes": [
+          "Royal Sonesta-Pension Board CEU:  2.10.26-2.13.26.  Vickie Lewis Room- K. Smith PCARD.  Originally room was charged to an AMEX and refunded.  Room charged to my PCARD on 04.30.26",
+          "Pension Conference"
+        ]
+      },
+      "recipients": [
+        "LEWIS, VICTORIA M"
+      ]
+    },
+    {
+      "id": "TXN00053513",
+      "group": "D. Smith \u00b7 Pensacola lodging \u00b7 February 2026 \u00b7 reviewed notes 20261111 \u00b7 TXN00053513",
+      "groupName": "D. Smith \u00b7 Pensacola lodging \u00b7 February 2026",
+      "reason": "Source names D. Smith; separate from other people\u2019s March lodging paid by the same cardholder. Identity retained only as written; full name unconfirmed.",
+      "source": {
+        "date": "2026-02-25",
+        "person": "ALDERMAN, KAITLIN",
+        "raw": "HOLIDAY INN EXP PENSACOL",
+        "amount": 15750,
+        "purchaseNotes": [
+          "D. Smith - Pensacola, FL"
+        ]
+      },
+      "recipients": [
+        "D. Smith"
+      ]
+    },
+    {
+      "id": "TXN00053826",
+      "group": "C. Brown \u00b7 Pensacola lodging \u00b7 March 2026 \u00b7 reviewed notes 20261111 \u00b7 TXN00053826",
+      "groupName": "C. Brown \u00b7 Pensacola lodging \u00b7 March 2026",
+      "reason": "Two hotel charges and a tax refund explicitly name C. Brown in March. Retain signed refund; receipt needed for precise stay dates. Identity retained only as written; full name unconfirmed.",
+      "source": {
+        "date": "2026-03-09",
+        "person": "ALDERMAN, KAITLIN",
+        "raw": "HOLIDAY INN EXP PENSACOL",
+        "amount": 16763,
+        "purchaseNotes": [
+          "C. Brown - Pensacola, FL"
+        ]
+      },
+      "recipients": [
+        "C. Brown"
+      ]
+    },
+    {
+      "id": "TXN00053851",
+      "group": "C. Brown \u00b7 Pensacola lodging \u00b7 March 2026 \u00b7 reviewed notes 20261111 \u00b7 TXN00053826",
+      "groupName": "C. Brown \u00b7 Pensacola lodging \u00b7 March 2026",
+      "reason": "Two hotel charges and a tax refund explicitly name C. Brown in March. Retain signed refund; receipt needed for precise stay dates. Identity retained only as written; full name unconfirmed.",
+      "source": {
+        "date": "2026-03-11",
+        "person": "ALDERMAN, KAITLIN",
+        "raw": "HOLIDAY INN EXP PENSACOL",
+        "amount": 16763,
+        "purchaseNotes": [
+          "C. Brown - Pensacola, FL"
+        ]
+      },
+      "recipients": [
+        "C. Brown"
+      ]
+    },
+    {
+      "id": "TXN00054026",
+      "group": "C. Brown \u00b7 Pensacola lodging \u00b7 March 2026 \u00b7 reviewed notes 20261111 \u00b7 TXN00053826",
+      "groupName": "C. Brown \u00b7 Pensacola lodging \u00b7 March 2026",
+      "reason": "Two hotel charges and a tax refund explicitly name C. Brown in March. Retain signed refund; receipt needed for precise stay dates. Identity retained only as written; full name unconfirmed.",
+      "source": {
+        "date": "2026-03-16",
+        "person": "ALDERMAN, KAITLIN",
+        "raw": "HOLIDAY INN EXP PENSACOL",
+        "amount": -3726,
+        "purchaseNotes": [
+          "C. Brown - Pensacola, FL (tax refund)"
+        ]
+      },
+      "recipients": [
+        "C. Brown"
+      ]
+    },
+    {
+      "id": "TXN00053842",
+      "group": "Z. Miller \u00b7 Pensacola lodging \u00b7 March 2026 \u00b7 reviewed notes 20261111 \u00b7 TXN00053842",
+      "groupName": "Z. Miller \u00b7 Pensacola lodging \u00b7 March 2026",
+      "reason": "Source names Z. Miller; different traveler and property from C. Brown despite a shared payer. Identity retained only as written; full name unconfirmed.",
+      "source": {
+        "date": "2026-03-09",
+        "person": "ALDERMAN, KAITLIN",
+        "raw": "CANDLEWOOD SUITES PENSAC",
+        "amount": 47005,
+        "purchaseNotes": [
+          "Z. Miller - Pensacola, FL"
+        ]
+      },
+      "recipients": [
+        "Z. Miller"
+      ]
+    },
+    {
+      "id": "TXN00056248",
+      "group": "C. Karch \u00b7 Orlando lodging \u00b7 June 2026 \u00b7 reviewed notes 20261111 \u00b7 TXN00056248",
+      "groupName": "C. Karch \u00b7 Orlando lodging \u00b7 June 2026",
+      "reason": "Room charge and tax refund explicitly name C. Karch. Keep separate from Smith/Shaw and July hotel purchases. Identity retained only as written; full name unconfirmed.",
+      "source": {
+        "date": "2026-06-22",
+        "person": "SMITH, MARK E",
+        "raw": "HOMES TO SUITES BY HILTON",
+        "amount": 53220,
+        "purchaseNotes": [
+          "C. Karch - Orlando, FL (includes tax)"
+        ]
+      },
+      "recipients": [
+        "C. Karch"
+      ]
+    },
+    {
+      "id": "TXN00056402",
+      "group": "C. Karch \u00b7 Orlando lodging \u00b7 June 2026 \u00b7 reviewed notes 20261111 \u00b7 TXN00056248",
+      "groupName": "C. Karch \u00b7 Orlando lodging \u00b7 June 2026",
+      "reason": "Room charge and tax refund explicitly name C. Karch. Keep separate from Smith/Shaw and July hotel purchases. Identity retained only as written; full name unconfirmed.",
+      "source": {
+        "date": "2026-06-25",
+        "person": "SMITH, MARK E",
+        "raw": "HOMES TO SUITES BY HILTON",
+        "amount": -7500,
+        "purchaseNotes": [
+          "C. Karch - Orlando, FL (tax refund)",
+          "added"
+        ]
+      },
+      "recipients": [
+        "C. Karch"
+      ]
+    },
+    {
+      "id": "TXN00056346",
+      "group": "M. Smith \u00b7 Orlando lodging \u00b7 June 2026 \u00b7 reviewed notes 20261111 \u00b7 TXN00056346",
+      "groupName": "M. Smith \u00b7 Orlando lodging \u00b7 June 2026",
+      "reason": "Named traveler and June hotel purchase; July Rosen stay is a separate booking without evidence of a continuous stay.",
+      "source": {
+        "date": "2026-06-25",
+        "person": "SMITH, MARK E",
+        "raw": "HOMES TO SUITES BY HILTON",
+        "amount": 45720,
+        "purchaseNotes": [
+          "M. Smith - Orlando, FL"
+        ]
+      }
+    },
+    {
+      "id": "TXN00056328",
+      "group": "K. Shaw \u00b7 Orlando lodging \u00b7 June 2026 \u00b7 reviewed notes 20261111 \u00b7 TXN00056328",
+      "groupName": "K. Shaw \u00b7 Orlando lodging \u00b7 June 2026",
+      "reason": "Named traveler and June hotel purchase; keep distinct from July lodging and the conflicting Tallahassee record.",
+      "source": {
+        "date": "2026-06-25",
+        "person": "SHAW, KRISTAIN L",
+        "raw": "HOMES TO SUITES BY HILTON",
+        "amount": 45720,
+        "purchaseNotes": [
+          "K. Shaw - Orlando, FL"
+        ]
+      }
+    },
+    {
+      "id": "TXN00056646",
+      "group": "M. Smith \u00b7 Orlando lodging \u00b7 July 2026 \u00b7 reviewed notes 20261111 \u00b7 TXN00056646",
+      "groupName": "M. Smith \u00b7 Orlando lodging \u00b7 July 2026",
+      "reason": "July Rosen lodging for M. Smith is separate from the June Home2 Suites booking.",
+      "source": {
+        "date": "2026-07-10",
+        "person": "SMITH, MARK E",
+        "raw": "ROSEN HOTELS SHNGL CRK",
+        "amount": 84500,
+        "purchaseNotes": [
+          "M. Smith - Orlando, FL"
+        ]
+      }
+    },
+    {
+      "id": "TXN00056664",
+      "group": "K. Shaw \u00b7 Orlando lodging \u00b7 July 2026 \u00b7 reviewed notes 20261111 \u00b7 TXN00056664",
+      "groupName": "K. Shaw \u00b7 Orlando lodging \u00b7 July 2026",
+      "reason": "July Rosen lodging explicitly names K. Shaw, though paid by M. Smith. Keep distinct from Smith\u2019s own room and the June stay.",
+      "source": {
+        "date": "2026-07-10",
+        "person": "SMITH, MARK E",
+        "raw": "ROSEN HOTELS SHNGL CRK",
+        "amount": 84500,
+        "purchaseNotes": [
+          "K. Shaw - Orlando, FL"
+        ]
+      }
+    },
+    {
+      "id": "TXN00047126",
+      "group": "APWA Executive Committee \u00b7 Daytona \u00b7 July 2025 \u00b7 reviewed notes 20261111 \u00b7 TXN00047126",
+      "groupName": "APWA Executive Committee \u00b7 Daytona \u00b7 July 2025",
+      "reason": "Flight notes identify the July 17 Daytona APWA Executive Committee meeting; connect the May hotel deposit, June/July flights and seating. The hotel refund matches Hayes\u2019s original $190.13 deposit, not the seat-fee charge. Refund dates do not establish travel dates.",
+      "source": {
+        "date": "2025-05-19",
+        "person": "HAYES, JONATHAN H",
+        "raw": "DAYTONA GRANDE HOTEL",
+        "amount": 19013,
+        "purchaseNotes": [
+          "Daytona Hotel Initial Hold APWA executive committee member meeting"
+        ]
+      }
+    },
+    {
+      "id": "TXN00048010",
+      "group": "APWA Executive Committee \u00b7 Daytona \u00b7 July 2025 \u00b7 reviewed notes 20261111 \u00b7 TXN00047126",
+      "groupName": "APWA Executive Committee \u00b7 Daytona \u00b7 July 2025",
+      "reason": "Flight notes identify the July 17 Daytona APWA Executive Committee meeting; connect the May hotel deposit, June/July flights and seating. The hotel refund matches Hayes\u2019s original $190.13 deposit, not the seat-fee charge. Refund dates do not establish travel dates.",
+      "source": {
+        "date": "2025-06-27",
+        "person": "HAYES, JONATHAN H",
+        "raw": "DELTA       0064133612560",
+        "amount": 3999,
+        "purchaseNotes": [
+          "Seat Fee Cabin Preferred Seat DELTA flight Daytona APWA Executive Committee Meeting"
+        ]
+      }
+    },
+    {
+      "id": "TXN00048012",
+      "group": "APWA Executive Committee \u00b7 Daytona \u00b7 July 2025 \u00b7 reviewed notes 20261111 \u00b7 TXN00047126",
+      "groupName": "APWA Executive Committee \u00b7 Daytona \u00b7 July 2025",
+      "reason": "Flight notes identify the July 17 Daytona APWA Executive Committee meeting; connect the May hotel deposit, June/July flights and seating. The hotel refund matches Hayes\u2019s original $190.13 deposit, not the seat-fee charge. Refund dates do not establish travel dates.",
+      "source": {
+        "date": "2025-06-27",
+        "person": "HAYES, JONATHAN H",
+        "raw": "DELTA       0062343685731",
+        "amount": 23168,
+        "purchaseNotes": [
+          "Daytona Delta Flight APWA Executive Comm Meeting"
+        ]
+      }
+    },
+    {
+      "id": "TXN00048169",
+      "group": "APWA Executive Committee \u00b7 Daytona \u00b7 July 2025 \u00b7 reviewed notes 20261111 \u00b7 TXN00047126",
+      "groupName": "APWA Executive Committee \u00b7 Daytona \u00b7 July 2025",
+      "reason": "Flight notes identify the July 17 Daytona APWA Executive Committee meeting; connect the May hotel deposit, June/July flights and seating. The hotel refund matches Hayes\u2019s original $190.13 deposit, not the seat-fee charge. Refund dates do not establish travel dates.",
+      "source": {
+        "date": "2025-07-05",
+        "person": "HAYES, JONATHAN H",
+        "raw": "AMERICAN AIR0012254993015",
+        "amount": 29168,
+        "purchaseNotes": [
+          "American Flight booked after Delta Flight was canceled to Daytona on July 17 APWA Executive Committee meeting"
+        ]
+      }
+    },
+    {
+      "id": "TXN00048187",
+      "group": "APWA Executive Committee \u00b7 Daytona \u00b7 July 2025 \u00b7 reviewed notes 20261111 \u00b7 TXN00047126",
+      "groupName": "APWA Executive Committee \u00b7 Daytona \u00b7 July 2025",
+      "reason": "Flight notes identify the July 17 Daytona APWA Executive Committee meeting; connect the May hotel deposit, June/July flights and seating. The hotel refund matches Hayes\u2019s original $190.13 deposit, not the seat-fee charge. Refund dates do not establish travel dates.",
+      "source": {
+        "date": "2025-07-05",
+        "person": "HAYES, JONATHAN H",
+        "raw": "AMERICAN AIR0010630260099",
+        "amount": 8550,
+        "purchaseNotes": [
+          "American Flight Original Delta Flight Canceled. American Booked in its place. APWA Executive Committee Meeting"
+        ]
+      }
+    },
+    {
+      "id": "TXN00048178",
+      "group": "APWA Executive Committee \u00b7 Daytona \u00b7 July 2025 \u00b7 reviewed notes 20261111 \u00b7 TXN00047126",
+      "groupName": "APWA Executive Committee \u00b7 Daytona \u00b7 July 2025",
+      "reason": "Flight notes identify the July 17 Daytona APWA Executive Committee meeting; connect the May hotel deposit, June/July flights and seating. The hotel refund matches Hayes\u2019s original $190.13 deposit, not the seat-fee charge. Refund dates do not establish travel dates.",
+      "source": {
+        "date": "2025-07-05",
+        "person": "HAYES, JONATHAN H",
+        "raw": "DELTA       0060223525350",
+        "amount": -3999,
+        "purchaseNotes": [
+          "Delta Flight Seat Refund APWA Executive Committee Meeting"
+        ]
+      }
+    },
+    {
+      "id": "TXN00048160",
+      "group": "APWA Executive Committee \u00b7 Daytona \u00b7 July 2025 \u00b7 reviewed notes 20261111 \u00b7 TXN00047126",
+      "groupName": "APWA Executive Committee \u00b7 Daytona \u00b7 July 2025",
+      "reason": "Flight notes identify the July 17 Daytona APWA Executive Committee meeting; connect the May hotel deposit, June/July flights and seating. The hotel refund matches Hayes\u2019s original $190.13 deposit, not the seat-fee charge. Refund dates do not establish travel dates.",
+      "source": {
+        "date": "2025-07-05",
+        "person": "HAYES, JONATHAN H",
+        "raw": "DELTA       0060223525351",
+        "amount": -999,
+        "purchaseNotes": [
+          "Seat Refund Delta Flight APWA Exec Comm Meet"
+        ]
+      }
+    },
+    {
+      "id": "TXN00048039",
+      "group": "APWA Executive Committee \u00b7 Daytona \u00b7 July 2025 \u00b7 reviewed notes 20261111 \u00b7 TXN00047126",
+      "groupName": "APWA Executive Committee \u00b7 Daytona \u00b7 July 2025",
+      "reason": "Flight notes identify the July 17 Daytona APWA Executive Committee meeting; connect the May hotel deposit, June/July flights and seating. The hotel refund matches Hayes\u2019s original $190.13 deposit, not the seat-fee charge. Refund dates do not establish travel dates.",
+      "source": {
+        "date": "2025-06-27",
+        "person": "HAYES, JONATHAN H",
+        "raw": "DELTA       0064133388010",
+        "amount": 999,
+        "purchaseNotes": [
+          "Preferred Cabin Seating  Delta Flight Daytona FL"
+        ]
+      }
+    },
+    {
+      "id": "TXN00048170",
+      "group": "APWA Executive Committee \u00b7 Daytona \u00b7 July 2025 \u00b7 reviewed notes 20261111 \u00b7 TXN00047126",
+      "groupName": "APWA Executive Committee \u00b7 Daytona \u00b7 July 2025",
+      "reason": "Flight notes identify the July 17 Daytona APWA Executive Committee meeting; connect the May hotel deposit, June/July flights and seating. The hotel refund matches Hayes\u2019s original $190.13 deposit, not the seat-fee charge. Refund dates do not establish travel dates.",
+      "source": {
+        "date": "2025-07-03",
+        "person": "HAYES, JONATHAN H",
+        "raw": "DAYTONA GRANDE HOTEL",
+        "amount": -19013,
+        "purchaseNotes": [
+          "Refund Daytona Grande Hotel Jonathan Hayes booked a different hotel and was refunded this deposit."
+        ]
+      }
+    },
+    {
+      "id": "TXN00048449",
+      "group": "APWA \u2014 event unspecified \u00b7 MURPHY, CLINT \u00b7 purchases from 2025-06-23 \u00b7 TXN00047930",
+      "groupName": "APWA \u2014 event unspecified",
+      "reason": "Same payer and Daytona Grande descriptor as the $190.13 APWA reservation, followed by an explicitly described deposit refund for the same amount. Retain as a likely canceled booking; folio required for confirmation.",
+      "source": {
+        "date": "2025-07-15",
+        "person": "MURPHY, CLINT",
+        "raw": "DAYTONA GRANDE HOTEL",
+        "amount": -19013,
+        "purchaseNotes": [
+          "Deposit REFUND - Public Works Dept."
+        ]
+      }
+    },
+    {
+      "id": "TXN00055137",
+      "group": "FMCA Annual Conference 2026 \u00b7 HAYES, JONATHAN H \u00b7 purchases from 2026-01-20 \u00b7 TXN00052621",
+      "groupName": "FMCA Annual Conference 2026",
+      "reason": "Hayes\u2019s April 30 Delta flight change falls between his event-named April 29 ride and May 1 FMCA hotel folio. Likely same event; airline itinerary required to confirm.",
+      "source": {
+        "date": "2026-04-30",
+        "person": "HAYES, JONATHAN H",
+        "raw": "DELTA AIR   0062426093369",
+        "amount": 28501,
+        "purchaseNotes": [
+          "Flight Change Delta  Jonthan Hayes"
+        ]
+      }
+    },
+    {
+      "id": "TXN00045053",
+      "group": "Tiffani Hinds \u00b7 pension symposium lodging \u00b7 February 2025 \u00b7 reviewed TXN00045053",
+      "groupName": "Tiffani Hinds \u00b7 pension symposium lodging \u00b7 February 2025",
+      "reason": "Hotel note explicitly names Tiffani Hinds; separate from cardholder Shawn Selph\u2019s own hotel room and Priscilla Hagler\u2019s booking.",
+      "recipients": [
+        "Tiffani Hinds"
+      ],
+      "source": {
+        "date": "2025-02-28",
+        "person": "SELPH, SHAWN E",
+        "raw": "ROYAL SONESTA HOTEL NE",
+        "amount": 113505,
+        "purchaseNotes": [
+          "hotel stay for tiffani hinds for attending the investment education symposium"
+        ]
+      }
+    },
+    {
+      "id": "TXN00057673",
+      "group": "APWA PWX 2026 \u00b7 HAYES, JONATHAN H \u00b7 reviewed Houston episode",
+      "groupName": "APWA PWX 2026",
+      "reason": "APWA-named United fees and rides align with the Houston hotel folio and published PWX dates August 30\u2013September 2, 2026. The additional August 27 United baggage charge matches the same traveler, adjacent ticket reference and paired outbound/return fees. Likely same event; published dates do not establish attendance or exact travel dates.",
+      "sourceUrl": "https://www.apwa.org/event/pwx-2026/",
+      "source": {
+        "date": "2026-08-27",
+        "person": "HAYES, JONATHAN H",
+        "raw": "UNITED      0164726593998",
+        "amount": 5500,
+        "purchaseNotes": [
+          "Baggage Fee  United Flight"
+        ]
+      }
+    },
+    {
+      "id": "TXN00057691",
+      "group": "APWA PWX 2026 \u00b7 HAYES, JONATHAN H \u00b7 reviewed Houston episode",
+      "groupName": "APWA PWX 2026",
+      "reason": "APWA-named United fees and rides align with the Houston hotel folio and published PWX dates August 30\u2013September 2, 2026. The additional August 27 United baggage charge matches the same traveler, adjacent ticket reference and paired outbound/return fees. Likely same event; published dates do not establish attendance or exact travel dates.",
+      "sourceUrl": "https://www.apwa.org/event/pwx-2026/",
+      "source": {
+        "date": "2026-08-27",
+        "person": "HAYES, JONATHAN H",
+        "raw": "UNITED      0164726593997",
+        "amount": 4500,
+        "purchaseNotes": [
+          "APWA Conference United baggage fee"
+        ]
+      }
+    },
+    {
+      "id": "TXN00057724",
+      "group": "APWA PWX 2026 \u00b7 HAYES, JONATHAN H \u00b7 reviewed Houston episode",
+      "groupName": "APWA PWX 2026",
+      "reason": "APWA-named United fees and rides align with the Houston hotel folio and published PWX dates August 30\u2013September 2, 2026. The additional August 27 United baggage charge matches the same traveler, adjacent ticket reference and paired outbound/return fees. Likely same event; published dates do not establish attendance or exact travel dates.",
+      "sourceUrl": "https://www.apwa.org/event/pwx-2026/",
+      "source": {
+        "date": "2026-08-29",
+        "person": "HAYES, JONATHAN H",
+        "raw": "LYFT    AIRPORT",
+        "amount": 5504,
+        "purchaseNotes": [
+          "LYFT Ride APWA Conference"
+        ]
+      }
+    },
+    {
+      "id": "TXN00057764",
+      "group": "APWA PWX 2026 \u00b7 HAYES, JONATHAN H \u00b7 reviewed Houston episode",
+      "groupName": "APWA PWX 2026",
+      "reason": "APWA-named United fees and rides align with the Houston hotel folio and published PWX dates August 30\u2013September 2, 2026. The additional August 27 United baggage charge matches the same traveler, adjacent ticket reference and paired outbound/return fees. Likely same event; published dates do not establish attendance or exact travel dates.",
+      "sourceUrl": "https://www.apwa.org/event/pwx-2026/",
+      "source": {
+        "date": "2026-08-31",
+        "person": "HAYES, JONATHAN H",
+        "raw": "UNITED      0164727592219",
+        "amount": 4500,
+        "purchaseNotes": [
+          "United Baggage Fee APWA Conference"
+        ]
+      }
+    },
+    {
+      "id": "TXN00057773",
+      "group": "APWA PWX 2026 \u00b7 HAYES, JONATHAN H \u00b7 reviewed Houston episode",
+      "groupName": "APWA PWX 2026",
+      "reason": "APWA-named United fees and rides align with the Houston hotel folio and published PWX dates August 30\u2013September 2, 2026. The additional August 27 United baggage charge matches the same traveler, adjacent ticket reference and paired outbound/return fees. Likely same event; published dates do not establish attendance or exact travel dates.",
+      "sourceUrl": "https://www.apwa.org/event/pwx-2026/",
+      "source": {
+        "date": "2026-08-31",
+        "person": "HAYES, JONATHAN H",
+        "raw": "UNITED      0164727592220",
+        "amount": 5500,
+        "purchaseNotes": [
+          "APWA Conference United Baggage Fee"
+        ]
+      }
+    },
+    {
+      "id": "TXN00057776",
+      "group": "APWA PWX 2026 \u00b7 HAYES, JONATHAN H \u00b7 reviewed Houston episode",
+      "groupName": "APWA PWX 2026",
+      "reason": "APWA-named United fees and rides align with the Houston hotel folio and published PWX dates August 30\u2013September 2, 2026. The additional August 27 United baggage charge matches the same traveler, adjacent ticket reference and paired outbound/return fees. Likely same event; published dates do not establish attendance or exact travel dates.",
+      "sourceUrl": "https://www.apwa.org/event/pwx-2026/",
+      "source": {
+        "date": "2026-09-01",
+        "person": "HAYES, JONATHAN H",
+        "raw": "LYFT    SCHD AIR",
+        "amount": 4846,
+        "purchaseNotes": [
+          "APWA Conference Lyft Ride"
+        ]
+      }
+    },
+    {
+      "id": "TXN00057797",
+      "group": "APWA PWX 2026 \u00b7 HAYES, JONATHAN H \u00b7 reviewed Houston episode",
+      "groupName": "APWA PWX 2026",
+      "reason": "APWA-named United fees and rides align with the Houston hotel folio and published PWX dates August 30\u2013September 2, 2026. The additional August 27 United baggage charge matches the same traveler, adjacent ticket reference and paired outbound/return fees. Likely same event; published dates do not establish attendance or exact travel dates.",
+      "sourceUrl": "https://www.apwa.org/event/pwx-2026/",
+      "source": {
+        "date": "2026-09-01",
+        "person": "HAYES, JONATHAN H",
+        "raw": "MARRIOTT MARQUISHOUSTO",
+        "amount": 117932,
+        "purchaseNotes": [
+          "APWA Conf. Marriott Folio"
+        ]
+      }
+    }
+  ]
+}

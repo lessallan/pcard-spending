@@ -25,7 +25,7 @@ function createPeopleMatcher(transactions,leaders=[]){
   ['Allan Branch',['Mayor Branch']],['Jared Jones',['J. Jones','Jared Jones']],
   ['Michael Fuller',['James Michael Fuller']],['Kristain Shaw',['K. Shaw']],
   // Explicit names in TXN00047915; people need not hold a card or a leadership role.
-  ['Jonathan Hayes',['Jonthan Hayes']],
+  ['Jonathan Hayes',['Jonthan Hayes','Jonathan H. Hayes']],
   ['Mike Burke',['Mike Burke']],
   ['Natalie McSwane',['Natalie McSwane','N. McSwane']],
   // Board membership source: panamacity.gov/AgendaCenter/ViewFile/Item/16495?fileID=35493
@@ -33,7 +33,7 @@ function createPeopleMatcher(transactions,leaders=[]){
   ['Priscilla Hagler',['Priscilla Hagler','P. Hagler','P Hagler']],
   // Explicit misspellings in the supplied notes, not general fuzzy matching.
   ['Shawn Selph',['S. Sleph','S Sleph','Shan Selph']],
-  ['Matt DeVito, P.E.',['Matt Diveto']],
+  ['Matt DeVito, P.E.',['Matt Diveto','Matt Devito']],
   ['Janette Smith',['Jan Smith']],
   // Published CRA staff: panamacity.gov/AgendaCenter/ViewFile/Item/16611?fileID=36068
   ['Joy Marler',['Joy Marler']],
@@ -45,7 +45,7 @@ function createPeopleMatcher(transactions,leaders=[]){
  const patterns=[...aliases].map(([alias,names])=>({pattern:new RegExp('\\b'+escape(alias).replace(/ /g,'\\s+')+'\\b','ig'),names:[...names]}));
  return t=>{
   const matches=new Map(),ambiguous=[];
-  const bodies=(t.comments||[]).flatMap(c=>c.split(/\([^()]*?,\s*\d{1,2}\/\d{1,2}\/\d{2,4}\s+\d{1,2}:\d{2}\)/)).flatMap(c=>c.split(';')).map(c=>c.trim()).filter(c=>c&&!/^(?:approved|reviewed|sign(?:ing|ed)? off|please|completed|receipt attached)\b/i.test(c));
+  const bodies=(t.purchaseNotes?.length?t.purchaseNotes:(t.comments||[])).flatMap(c=>c.split(/\([^()]*?,\s*\d{1,2}\/\d{1,2}\/\d{2,4}\s+\d{1,2}:\d{2}\)/)).flatMap(c=>c.split(';')).map(c=>c.trim()).filter(c=>c&&!/^(?:approved|reviewed|sign(?:ing|ed)? off|please|completed|receipt attached)\b/i.test(c));
   for(const note of bodies)for(const {pattern,names} of patterns){
    pattern.lastIndex=0;
    for(const match of note.matchAll(pattern)){
