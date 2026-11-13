@@ -8415,7 +8415,11 @@
           "shared": false
         }
       ],
-      "description": "Vehicle or equipment unit; type unconfirmed"
+      "description": "Dump truck · Streets and Drainage, Public Works",
+      "vehicleType": "Dump truck",
+      "division": "Streets and Drainage",
+      "department": "Public Works",
+      "classificationSource": "Confirmed by Allan Branch on 2026-11-13"
     },
     {
       "id": "unit-289",
@@ -8632,7 +8636,11 @@
           "shared": false
         }
       ],
-      "description": "Vehicle or equipment unit; type unconfirmed"
+      "description": "Side loader garbage truck · Environmental Services, Public Works",
+      "vehicleType": "Side loader garbage truck",
+      "division": "Environmental Services",
+      "department": "Public Works",
+      "classificationSource": "Confirmed by Allan Branch on 2026-11-13"
     },
     {
       "id": "unit-3204",
@@ -8858,7 +8866,11 @@
           "shared": false
         }
       ],
-      "description": "Trailer mentioned in notes"
+      "description": "Trash trailer · Environmental Services, Public Works",
+      "vehicleType": "Trash trailer",
+      "division": "Environmental Services",
+      "department": "Public Works",
+      "classificationSource": "Confirmed by Allan Branch on 2026-11-13"
     },
     {
       "id": "unit-327",
@@ -9040,7 +9052,11 @@
           "shared": false
         }
       ],
-      "description": "Vehicle or equipment unit; type unconfirmed"
+      "description": "Knuckle boom truck · Environmental Services, Public Works",
+      "vehicleType": "Knuckle boom truck",
+      "division": "Environmental Services",
+      "department": "Public Works",
+      "classificationSource": "Confirmed by Allan Branch on 2026-11-13"
     },
     {
       "id": "unit-332a",
@@ -9837,7 +9853,11 @@
           "shared": true
         }
       ],
-      "description": "Vehicle or equipment unit; type unconfirmed"
+      "description": "Side loader garbage truck · Environmental Services, Public Works",
+      "vehicleType": "Side loader garbage truck",
+      "division": "Environmental Services",
+      "department": "Public Works",
+      "classificationSource": "Confirmed by Allan Branch on 2026-11-13"
     },
     {
       "id": "unit-386",
@@ -9897,7 +9917,11 @@
           "shared": false
         }
       ],
-      "description": "Vehicle or equipment unit; type unconfirmed"
+      "description": "Side loader garbage truck · Environmental Services, Public Works",
+      "vehicleType": "Side loader garbage truck",
+      "division": "Environmental Services",
+      "department": "Public Works",
+      "classificationSource": "Confirmed by Allan Branch on 2026-11-13"
     },
     {
       "id": "unit-387",
@@ -10016,7 +10040,11 @@
           "shared": false
         }
       ],
-      "description": "Truck mentioned in notes"
+      "description": "Side loader garbage truck · Environmental Services, Public Works",
+      "vehicleType": "Side loader garbage truck",
+      "division": "Environmental Services",
+      "department": "Public Works",
+      "classificationSource": "Confirmed by Allan Branch on 2026-11-13"
     },
     {
       "id": "unit-389a",
@@ -10753,7 +10781,11 @@
           "shared": false
         }
       ],
-      "description": "Vehicle or equipment unit; type unconfirmed"
+      "description": "Dump truck · Lift Stations, Public Works",
+      "vehicleType": "Dump truck",
+      "division": "Lift Stations",
+      "department": "Public Works",
+      "classificationSource": "Confirmed by Allan Branch on 2026-11-13"
     },
     {
       "id": "unit-608",
@@ -11245,7 +11277,11 @@
           "shared": false
         }
       ],
-      "description": "Vehicle or equipment unit; type unconfirmed"
+      "description": "Pickup truck · Lift Stations, Public Works",
+      "vehicleType": "Pickup truck",
+      "division": "Lift Stations",
+      "department": "Public Works",
+      "classificationSource": "Confirmed by Allan Branch on 2026-11-13"
     },
     {
       "id": "unit-6511",
@@ -11293,7 +11329,11 @@
           "shared": false
         }
       ],
-      "description": "Vehicle or equipment unit; type unconfirmed"
+      "description": "Crane truck · Lift Stations, Public Works",
+      "vehicleType": "Crane truck",
+      "division": "Lift Stations",
+      "department": "Public Works",
+      "classificationSource": "Confirmed by Allan Branch on 2026-11-13"
     },
     {
       "id": "unit-6642",
