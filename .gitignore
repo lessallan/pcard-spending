@@ -209,3 +209,6 @@
 !/tools/dpc/check-readonly.cjs
 
 !/tools/check_budget_release.py
+
+# Public responsive-layout regression.
+!/tools/check_no_horizontal_scroll.cjs
