@@ -1,0 +1,312 @@
+{
+  "001-2100": {
+    "department": "Police",
+    "budgetYear": 2027,
+    "departmentBudget": 17735146,
+    "retirementBudget": 2259551,
+    "retirementLines": [
+      {
+        "code": "52202",
+        "label": "FMPTF Contributions",
+        "amount": 222535
+      },
+      {
+        "code": "52203",
+        "label": "Police Pension Contribut",
+        "amount": 2037016
+      }
+    ],
+    "positions": 149.0,
+    "budgetSource": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=22",
+    "positionsSource": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=137",
+    "funding": {
+      "unfunded": 14752086,
+      "fundedPercent": 76.1,
+      "valuationDate": "October 1, 2025",
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1586#page=8"
+    },
+    "history": [
+      {
+        "year": 2007,
+        "value": 758019,
+        "basis": "City contribution reported by plan",
+        "stateContribution": 362523,
+        "source": "https://www.panamacity.gov/Archive/ViewFile/Item/156#page=124"
+      },
+      {
+        "year": 2008,
+        "value": 790612,
+        "basis": "City contribution reported by plan",
+        "stateContribution": 370849,
+        "source": "https://www.panamacity.gov/Archive/ViewFile/Item/157#page=125"
+      },
+      {
+        "year": 2009,
+        "value": 771845,
+        "basis": "City contribution reported by plan",
+        "stateContribution": 357227,
+        "source": "https://www.panamacity.gov/Archive/ViewFile/Item/158#page=125"
+      },
+      {
+        "year": 2010,
+        "value": 950357,
+        "basis": "City contribution reported by plan",
+        "stateContribution": 316846,
+        "source": "https://www.panamacity.gov/Archive/ViewFile/Item/159#page=132"
+      },
+      {
+        "year": 2011,
+        "value": 1050452,
+        "basis": "City contribution reported by plan",
+        "stateContribution": 304684,
+        "source": "https://www.panamacity.gov/Archive/ViewFile/Item/160#page=143"
+      },
+      {
+        "year": 2012,
+        "value": 1226048,
+        "basis": "City contribution reported by plan",
+        "stateContribution": 301928,
+        "source": "https://www.panamacity.gov/Archive/ViewFile/Item/161#page=150"
+      },
+      {
+        "year": 2013,
+        "value": 1295853,
+        "basis": "City contribution reported by plan",
+        "stateContribution": 276296,
+        "source": "https://www.panamacity.gov/Archive/ViewFile/Item/162#page=146"
+      },
+      {
+        "year": 2014,
+        "value": 1411641,
+        "basis": "City contribution reported by plan",
+        "stateContribution": 292899,
+        "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=161"
+      },
+      {
+        "year": 2015,
+        "value": 1292438,
+        "basis": "City contribution reported by plan",
+        "stateContribution": 312431,
+        "source": "https://www.panamacity.gov/Archive/ViewFile/Item/267#page=183"
+      },
+      {
+        "year": 2016,
+        "value": 1372342,
+        "basis": "City contribution reported by plan",
+        "stateContribution": 325836,
+        "source": "https://www.panamacity.gov/Archive/ViewFile/Item/305#page=187"
+      },
+      {
+        "year": 2017,
+        "value": 957303,
+        "basis": "City contribution reported by plan",
+        "stateContribution": 336697,
+        "source": "https://www.panamacity.gov/Archive/ViewFile/Item/348#page=191"
+      },
+      {
+        "year": 2018,
+        "value": 924910,
+        "basis": "City contribution reported by plan",
+        "stateContribution": 343438,
+        "source": "https://www.panamacity.gov/Archive/ViewFile/Item/399#page=203"
+      },
+      {
+        "year": 2019,
+        "value": 969030,
+        "basis": "City contribution reported by plan",
+        "stateContribution": 356414,
+        "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1439#page=222"
+      },
+      {
+        "year": 2020,
+        "value": 1237615,
+        "basis": "City contribution reported by plan",
+        "stateContribution": 353224,
+        "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1469#page=222"
+      },
+      {
+        "year": 2021,
+        "value": 1336324,
+        "basis": "City contribution reported by plan",
+        "stateContribution": 356877,
+        "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1493#page=224"
+      },
+      {
+        "year": 2022,
+        "value": 1514530,
+        "basis": "City contribution reported by plan",
+        "stateContribution": 394142,
+        "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1521#page=224"
+      },
+      {
+        "year": 2023,
+        "value": 1648376,
+        "basis": "City contribution reported by plan",
+        "stateContribution": 449205,
+        "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1536#page=222"
+      },
+      {
+        "year": 2024,
+        "value": 1728652,
+        "basis": "City contribution reported by plan",
+        "stateContribution": 507953,
+        "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=137"
+      }
+    ]
+  },
+  "001-2200": {
+    "department": "Fire",
+    "budgetYear": 2027,
+    "departmentBudget": 13604687,
+    "retirementBudget": 3191320,
+    "retirementLines": [
+      {
+        "code": "52202",
+        "label": "FMPTF Contributions",
+        "amount": 15076
+      },
+      {
+        "code": "52204",
+        "label": "Fire Pension Contribution",
+        "amount": 3176244
+      }
+    ],
+    "positions": 83.0,
+    "budgetSource": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=23",
+    "positionsSource": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=138",
+    "funding": {
+      "unfunded": 19118211,
+      "fundedPercent": 73.1,
+      "valuationDate": "October 1, 2025",
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1585#page=8"
+    },
+    "history": [
+      {
+        "year": 2007,
+        "value": 854454,
+        "basis": "City contribution reported by plan",
+        "stateContribution": 421809,
+        "source": "https://www.panamacity.gov/Archive/ViewFile/Item/156#page=124"
+      },
+      {
+        "year": 2008,
+        "value": 884859,
+        "basis": "City contribution reported by plan",
+        "stateContribution": 282667,
+        "source": "https://www.panamacity.gov/Archive/ViewFile/Item/157#page=125"
+      },
+      {
+        "year": 2009,
+        "value": 921232,
+        "basis": "City contribution reported by plan",
+        "stateContribution": 415633,
+        "source": "https://www.panamacity.gov/Archive/ViewFile/Item/158#page=125"
+      },
+      {
+        "year": 2010,
+        "value": 1210049,
+        "basis": "City contribution reported by plan",
+        "stateContribution": 339263,
+        "source": "https://www.panamacity.gov/Archive/ViewFile/Item/159#page=132"
+      },
+      {
+        "year": 2011,
+        "value": 1187778,
+        "basis": "City contribution reported by plan",
+        "stateContribution": 339755,
+        "source": "https://www.panamacity.gov/Archive/ViewFile/Item/160#page=143"
+      },
+      {
+        "year": 2012,
+        "value": 1553345,
+        "basis": "City contribution reported by plan",
+        "stateContribution": 320682,
+        "source": "https://www.panamacity.gov/Archive/ViewFile/Item/161#page=150"
+      },
+      {
+        "year": 2013,
+        "value": 1504333,
+        "basis": "City contribution reported by plan",
+        "stateContribution": 339845,
+        "source": "https://www.panamacity.gov/Archive/ViewFile/Item/162#page=146"
+      },
+      {
+        "year": 2014,
+        "value": 1433019,
+        "basis": "City contribution reported by plan",
+        "stateContribution": 355576,
+        "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=161"
+      },
+      {
+        "year": 2015,
+        "value": 1568772,
+        "basis": "City contribution reported by plan",
+        "stateContribution": 327139,
+        "source": "https://www.panamacity.gov/Archive/ViewFile/Item/267#page=183"
+      },
+      {
+        "year": 2016,
+        "value": 1641064,
+        "basis": "City contribution reported by plan",
+        "stateContribution": 331496,
+        "source": "https://www.panamacity.gov/Archive/ViewFile/Item/305#page=187"
+      },
+      {
+        "year": 2017,
+        "value": 1730909,
+        "basis": "City contribution reported by plan",
+        "stateContribution": 305820,
+        "source": "https://www.panamacity.gov/Archive/ViewFile/Item/348#page=191"
+      },
+      {
+        "year": 2018,
+        "value": 1912733,
+        "basis": "City contribution reported by plan",
+        "stateContribution": 313843,
+        "source": "https://www.panamacity.gov/Archive/ViewFile/Item/399#page=203"
+      },
+      {
+        "year": 2019,
+        "value": 1942755,
+        "basis": "City contribution reported by plan",
+        "stateContribution": 290472,
+        "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1439#page=222"
+      },
+      {
+        "year": 2020,
+        "value": 2134496,
+        "basis": "City contribution reported by plan",
+        "stateContribution": 315605,
+        "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1469#page=222"
+      },
+      {
+        "year": 2021,
+        "value": 2337612,
+        "basis": "City contribution reported by plan",
+        "stateContribution": 306137,
+        "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1493#page=224"
+      },
+      {
+        "year": 2022,
+        "value": 2638495,
+        "basis": "City contribution reported by plan",
+        "stateContribution": 334407,
+        "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1521#page=224"
+      },
+      {
+        "year": 2023,
+        "value": 3083769,
+        "basis": "City contribution reported by plan",
+        "stateContribution": 426195,
+        "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1536#page=222"
+      },
+      {
+        "year": 2024,
+        "value": 2914512,
+        "basis": "City contribution reported by plan",
+        "stateContribution": 466492,
+        "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=137"
+      }
+    ]
+  }
+}
