@@ -814,7 +814,7 @@
   const hint = document.createElement('p');
   hint.className = 'budget-term-hint';
   hint.textContent = 'Tap or click a dotted-underlined term for a quick definition.';
-  main.prepend(hint);
+  (document.querySelector('[data-definition-hint]') || main).prepend(hint);
 
   const popup = document.createElement('div');
   popup.id = 'budget-term-definition';

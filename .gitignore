@@ -212,3 +212,7 @@
 
 # Public responsive-layout regression.
 !/tools/check_no_horizontal_scroll.cjs
+
+# Simplified money guide.
+!/docs/money-guide.css
+!/docs/money-guide.js

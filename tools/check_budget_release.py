@@ -46,7 +46,9 @@ for relative in ('index.html','budget/index.html'):
 check_page(DOCS / 'review/index.html', anchors=False)
 home = (DOCS / 'index.html').read_text()
 assert 'Preview for review' not in home
-assert 'Follow Panama City' in home
+assert 'Watch how Panama City’s money flows' in home
+assert 'dh4u92jk35' in home
+assert all(f'id="{topic}"' in home for topic in ['watch', 'at-a-glance', 'revenue', 'expenses', 'housing', 'budget-words'])
 assert 'http-equiv="refresh"' not in (DOCS/'review/index.html').read_text()
 funding = (DOCS/'budget/index.html').read_text()
 funds = re.findall(r'<details class="fund-detail">(.*?)</details>', funding, re.S)
