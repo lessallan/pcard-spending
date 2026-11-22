@@ -1,0 +1,26 @@
+/* Definition controls inherit the surrounding text and do not change table widths. */
+button.budget-term {
+  display:inline; appearance:none; border:0; border-radius:2px; padding:2px 0;
+  margin:0; min-width:0; min-height:0; background:transparent; color:inherit;
+  font:inherit; letter-spacing:inherit; text-align:inherit; white-space:normal;
+  text-decoration:underline dotted; text-decoration-thickness:1px;
+  text-underline-offset:4px; cursor:pointer; touch-action:manipulation;
+}
+button.budget-term:hover { background:#e3eee6; color:#173e2b; }
+button.budget-term:focus-visible { outline:3px solid #9e591d; outline-offset:3px; }
+.budget-term-hint { font-size:14px; line-height:1.5; color:var(--muted,#435e60); margin:0 0 20px; }
+.budget-definition {
+  position:fixed; inset:auto; margin:0; z-index:1000; box-sizing:border-box;
+  border:1px solid #718478; border-radius:10px; padding:18px;
+  background:#fff; color:#203c2e; box-shadow:0 8px 28px rgb(0 0 0 / 18%);
+  overflow:auto; overscroll-behavior:contain; font:16px/1.5 'Avenir Next',Avenir,'Segoe UI',sans-serif;
+  text-align:left; overflow-wrap:anywhere;
+}
+.budget-definition[hidden] { display:none !important; }
+.budget-definition-header { display:flex; align-items:flex-start; gap:12px; margin-bottom:12px; }
+.budget-definition h2 { flex:1; font:700 18px/1.3 'Avenir Next',Avenir,'Segoe UI',sans-serif; letter-spacing:normal; margin:8px 0 0; }
+.budget-definition p { font:inherit; margin:0 0 12px; }
+.budget-definition-close { flex:none; min-width:44px; min-height:44px; padding:8px; border:1px solid #718478; border-radius:6px; background:white; color:#203c2e; font:inherit; cursor:pointer; }
+.budget-definition-close:hover { background:#e3eee6; }
+.budget-definition-source { display:inline-block; color:#205937; text-decoration:underline; text-underline-offset:3px; padding:8px 0; min-height:44px; }
+.budget-definition :focus-visible { outline:3px solid #9e591d; outline-offset:3px; }
