@@ -1,0 +1,2958 @@
+{
+  "population": 37806,
+  "populationYear": 2025,
+  "populationSource": "https://www.census.gov/quickfacts/fact/table/panamacitycityflorida/LFE305223",
+  "budgetYear": 2027,
+  "propertyTax": 19750649,
+  "generalFund": 62593981,
+  "fireAssessment": 6059224,
+  "accounts": [
+    {
+      "id": "1100",
+      "name": "City Commission",
+      "amount": 348684,
+      "page": 9,
+      "key": "001-1100",
+      "fund": "General Fund",
+      "fundId": "001",
+      "positions": {
+        "count": 5.5,
+        "page": 125
+      },
+      "retirement": 20386,
+      "retirementLines": [
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 18769
+        },
+        {
+          "code": "52205",
+          "label": "Sr. Manag Supp Retire",
+          "amount": 1617
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 313637
+        },
+        {
+          "label": "Operations",
+          "amount": 35047
+        }
+      ]
+    },
+    {
+      "id": "1200",
+      "name": "City Manager",
+      "amount": 1316235,
+      "page": 10,
+      "key": "001-1200",
+      "fund": "General Fund",
+      "fundId": "001",
+      "positions": {
+        "count": 7.5,
+        "page": 126
+      },
+      "retirement": 83094,
+      "retirementLines": [
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 77959
+        },
+        {
+          "code": "52205",
+          "label": "Sr. Manag Supp Retire",
+          "amount": 5135
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 1071084
+        },
+        {
+          "label": "Operations",
+          "amount": 245151
+        },
+        {
+          "label": "Projects / equipment",
+          "amount": 0
+        },
+        {
+          "label": "Debt",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "id": "1310",
+      "name": "City Clerk-Treasurer",
+      "amount": 1433304,
+      "page": 11,
+      "key": "001-1310",
+      "fund": "General Fund",
+      "fundId": "001",
+      "positions": {
+        "count": 13.0,
+        "page": 127
+      },
+      "retirement": 87212,
+      "retirementLines": [
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 84769
+        },
+        {
+          "code": "52205",
+          "label": "Sr. Manag Supp Retire",
+          "amount": 2443
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 1169627
+        },
+        {
+          "label": "Operations",
+          "amount": 263677
+        },
+        {
+          "label": "Debt",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "id": "1330",
+      "name": "Purchasing",
+      "amount": 511851,
+      "page": 12,
+      "key": "001-1330",
+      "fund": "General Fund",
+      "fundId": "001",
+      "positions": {
+        "count": 6.5,
+        "page": 128
+      },
+      "retirement": 31716,
+      "retirementLines": [
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 31716
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 441089
+        },
+        {
+          "label": "Operations",
+          "amount": 70762
+        },
+        {
+          "label": "Projects / equipment",
+          "amount": 0
+        },
+        {
+          "label": "Debt",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "id": "1340",
+      "name": "Human Resources",
+      "amount": 917126,
+      "page": 13,
+      "key": "001-1340",
+      "fund": "General Fund",
+      "fundId": "001",
+      "positions": {
+        "count": 6.0,
+        "page": 129
+      },
+      "retirement": 43808,
+      "retirementLines": [
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 42604
+        },
+        {
+          "code": "52205",
+          "label": "Sr. Manag Supp Retire",
+          "amount": 1204
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 603203
+        },
+        {
+          "label": "Operations",
+          "amount": 313923
+        },
+        {
+          "label": "Debt",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "id": "1350",
+      "name": "Information Technology",
+      "amount": 1610437,
+      "page": 14,
+      "key": "001-1350",
+      "fund": "General Fund",
+      "fundId": "001",
+      "positions": {
+        "count": 7.0,
+        "page": 130
+      },
+      "retirement": 54997,
+      "retirementLines": [
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 54077
+        },
+        {
+          "code": "52205",
+          "label": "Sr. Manag Supp Retire",
+          "amount": 920
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 739849
+        },
+        {
+          "label": "Operations",
+          "amount": 613025
+        },
+        {
+          "label": "Projects / equipment",
+          "amount": 257563
+        },
+        {
+          "label": "Debt",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "id": "1360",
+      "name": "Logistics",
+      "amount": 493701,
+      "page": 15,
+      "key": "001-1360",
+      "fund": "General Fund",
+      "fundId": "001",
+      "positions": {
+        "count": 3.0,
+        "page": 131
+      },
+      "retirement": 33813,
+      "retirementLines": [
+        {
+          "code": "52201",
+          "label": "FRS Contributions",
+          "amount": 14666
+        },
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 17943
+        },
+        {
+          "code": "52205",
+          "label": "Sr. Manag Supp Retire",
+          "amount": 1204
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 340812
+        },
+        {
+          "label": "Operations",
+          "amount": 152889
+        },
+        {
+          "label": "Projects / equipment",
+          "amount": 0
+        },
+        {
+          "label": "Debt",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "id": "1400",
+      "name": "City Attorney",
+      "amount": 900000,
+      "page": 16,
+      "key": "001-1400",
+      "fund": "General Fund",
+      "fundId": "001",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Operations",
+          "amount": 900000
+        }
+      ]
+    },
+    {
+      "id": "1610",
+      "name": "Development Services",
+      "amount": 1394550,
+      "page": 17,
+      "key": "001-1610",
+      "fund": "General Fund",
+      "fundId": "001",
+      "positions": {
+        "count": 13.0,
+        "page": 132
+      },
+      "retirement": 82986,
+      "retirementLines": [
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 80757
+        },
+        {
+          "code": "52205",
+          "label": "Sr. Manag Supp Retire",
+          "amount": 2229
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 1161413
+        },
+        {
+          "label": "Operations",
+          "amount": 208137
+        },
+        {
+          "label": "Projects / equipment",
+          "amount": 25000
+        },
+        {
+          "label": "Debt",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "id": "1615",
+      "name": "Building Services",
+      "amount": 0,
+      "page": 18,
+      "key": "001-1615",
+      "fund": "General Fund",
+      "fundId": "001",
+      "positions": {
+        "count": 0.0,
+        "page": 133
+      },
+      "retirement": 0,
+      "retirementLines": [
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 0
+        },
+        {
+          "code": "52205",
+          "label": "Sr. Manag Supp Retire",
+          "amount": 0
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 0
+        },
+        {
+          "label": "Operations",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "id": "1620",
+      "name": "Engineering",
+      "amount": 1496105,
+      "page": 19,
+      "key": "001-1620",
+      "fund": "General Fund",
+      "fundId": "001",
+      "positions": {
+        "count": 14.0,
+        "page": 134
+      },
+      "retirement": 97618,
+      "retirementLines": [
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 95601
+        },
+        {
+          "code": "52205",
+          "label": "Sr. Manag Supp Retire",
+          "amount": 2017
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 1339252
+        },
+        {
+          "label": "Operations",
+          "amount": 156853
+        },
+        {
+          "label": "Projects / equipment",
+          "amount": 0
+        },
+        {
+          "label": "Debt",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "id": "1710",
+      "name": "Public Works Admin",
+      "amount": 271074,
+      "page": 20,
+      "key": "001-1710",
+      "fund": "General Fund",
+      "fundId": "001",
+      "positions": {
+        "count": 2.78,
+        "page": 135
+      },
+      "retirement": 17220,
+      "retirementLines": [
+        {
+          "code": "52201",
+          "label": "FRS Contributions",
+          "amount": 5267
+        },
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 11563
+        },
+        {
+          "code": "52205",
+          "label": "Sr. Manag Supp Retire",
+          "amount": 390
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 217247
+        },
+        {
+          "label": "Operations",
+          "amount": 53827
+        },
+        {
+          "label": "Debt",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "id": "1720",
+      "name": "Facilities Maintenance",
+      "amount": 1167318,
+      "page": 21,
+      "key": "001-1720",
+      "fund": "General Fund",
+      "fundId": "001",
+      "positions": {
+        "count": 11.5,
+        "page": 136
+      },
+      "retirement": 68710,
+      "retirementLines": [
+        {
+          "code": "52201",
+          "label": "FRS Contributions",
+          "amount": 10852
+        },
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 57858
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 925144
+        },
+        {
+          "label": "Operations",
+          "amount": 242174
+        },
+        {
+          "label": "Projects / equipment",
+          "amount": 0
+        },
+        {
+          "label": "Debt",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "id": "2100",
+      "name": "Police",
+      "amount": 17735146,
+      "page": 22,
+      "key": "001-2100",
+      "fund": "General Fund",
+      "fundId": "001",
+      "positions": {
+        "count": 149.0,
+        "page": 137
+      },
+      "retirement": 2259551,
+      "retirementLines": [
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 222535
+        },
+        {
+          "code": "52203",
+          "label": "Police Pension Contribut",
+          "amount": 2037016
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 14989836
+        },
+        {
+          "label": "Operations",
+          "amount": 2166460
+        },
+        {
+          "label": "Projects / equipment",
+          "amount": 54000
+        },
+        {
+          "label": "Debt",
+          "amount": 524850
+        }
+      ],
+      "pensionObligation": {
+        "unfunded": 14752086,
+        "fundedPercent": 76.1,
+        "valuationDate": "October 1, 2025",
+        "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1586#page=8"
+      }
+    },
+    {
+      "id": "2200",
+      "name": "Fire",
+      "amount": 13604687,
+      "page": 23,
+      "key": "001-2200",
+      "fund": "General Fund",
+      "fundId": "001",
+      "positions": {
+        "count": 83.0,
+        "page": 138
+      },
+      "retirement": 3191320,
+      "retirementLines": [
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 15076
+        },
+        {
+          "code": "52204",
+          "label": "Fire Pension Contribution",
+          "amount": 3176244
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 11975670
+        },
+        {
+          "label": "Operations",
+          "amount": 1263350
+        },
+        {
+          "label": "Projects / equipment",
+          "amount": 11632
+        },
+        {
+          "label": "Debt",
+          "amount": 354035
+        }
+      ],
+      "pensionObligation": {
+        "unfunded": 19118211,
+        "fundedPercent": 73.1,
+        "valuationDate": "October 1, 2025",
+        "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1585#page=8"
+      }
+    },
+    {
+      "id": "4110",
+      "name": "Street Maintenance",
+      "amount": 5206031,
+      "page": 24,
+      "key": "001-4110",
+      "fund": "General Fund",
+      "fundId": "001",
+      "positions": {
+        "count": 37.43,
+        "page": 139
+      },
+      "retirement": 181954,
+      "retirementLines": [
+        {
+          "code": "52201",
+          "label": "FRS Contributions",
+          "amount": 15107
+        },
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 166342
+        },
+        {
+          "code": "52205",
+          "label": "Sr. Manag Supp Retire",
+          "amount": 505
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 2663432
+        },
+        {
+          "label": "Operations",
+          "amount": 2462599
+        },
+        {
+          "label": "Projects / equipment",
+          "amount": 0
+        },
+        {
+          "label": "Debt",
+          "amount": 80000
+        }
+      ]
+    },
+    {
+      "id": "4120",
+      "name": "Street Drainage",
+      "amount": 0,
+      "page": 25,
+      "key": "001-4120",
+      "fund": "General Fund",
+      "fundId": "001",
+      "positions": {
+        "count": 0.0,
+        "page": 140
+      },
+      "retirement": 0,
+      "retirementLines": [
+        {
+          "code": "52201",
+          "label": "FRS Contributions",
+          "amount": 0
+        },
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 0
+        },
+        {
+          "code": "52205",
+          "label": "Sr. Manag Supp Retire",
+          "amount": 0
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 0
+        },
+        {
+          "label": "Operations",
+          "amount": 0
+        },
+        {
+          "label": "Projects / equipment",
+          "amount": 0
+        },
+        {
+          "label": "Debt",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "id": "4130",
+      "name": "Street Signs and Markings",
+      "amount": 446494,
+      "page": 26,
+      "key": "001-4130",
+      "fund": "General Fund",
+      "fundId": "001",
+      "positions": {
+        "count": 4.0,
+        "page": 141
+      },
+      "retirement": 16813,
+      "retirementLines": [
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 16813
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 250728
+        },
+        {
+          "label": "Operations",
+          "amount": 195766
+        },
+        {
+          "label": "Projects / equipment",
+          "amount": 0
+        },
+        {
+          "label": "Debt",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "id": "4140",
+      "name": "Street Sweeping",
+      "amount": 0,
+      "page": 27,
+      "key": "001-4140",
+      "fund": "General Fund",
+      "fundId": "001",
+      "positions": {
+        "count": 0.0,
+        "page": 142
+      },
+      "retirement": 0,
+      "retirementLines": [
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 0
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 0
+        },
+        {
+          "label": "Operations",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "id": "4150",
+      "name": "Paving Crew",
+      "amount": 950000,
+      "page": 28,
+      "key": "001-4150",
+      "fund": "General Fund",
+      "fundId": "001",
+      "positions": {
+        "count": 4.0,
+        "page": 143
+      },
+      "retirement": 18160,
+      "retirementLines": [
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 18160
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 268625
+        },
+        {
+          "label": "Operations",
+          "amount": 681375
+        }
+      ]
+    },
+    {
+      "id": "7200",
+      "name": "Parks, Culture and Recreation",
+      "amount": 3713278,
+      "page": 29,
+      "key": "001-7200",
+      "fund": "General Fund",
+      "fundId": "001",
+      "positions": {
+        "count": 34.0,
+        "page": 144
+      },
+      "retirement": 148533,
+      "retirementLines": [
+        {
+          "code": "52201",
+          "label": "FRS Contributions",
+          "amount": 10126
+        },
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 137191
+        },
+        {
+          "code": "52205",
+          "label": "Sr. Manag Supp Retire",
+          "amount": 1216
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 2284327
+        },
+        {
+          "label": "Operations",
+          "amount": 1428951
+        },
+        {
+          "label": "Projects / equipment",
+          "amount": 0
+        },
+        {
+          "label": "Debt",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "id": "7300",
+      "name": "MLK Rec Center",
+      "amount": 1254581,
+      "page": 30,
+      "key": "001-7300",
+      "fund": "General Fund",
+      "fundId": "001",
+      "positions": {
+        "count": 17.0,
+        "page": 145
+      },
+      "retirement": 40810,
+      "retirementLines": [
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 40810
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 829407
+        },
+        {
+          "label": "Operations",
+          "amount": 425174
+        }
+      ]
+    },
+    {
+      "id": "8002",
+      "name": "Econominc Environment",
+      "amount": 2308509,
+      "page": 31,
+      "key": "001-8002",
+      "fund": "General Fund",
+      "fundId": "001",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Operations",
+          "amount": 58500
+        },
+        {
+          "label": "Grants / aid",
+          "amount": 2250009
+        }
+      ]
+    },
+    {
+      "id": "8003",
+      "name": "Animal Control",
+      "amount": 300000,
+      "page": 32,
+      "key": "001-8003",
+      "fund": "General Fund",
+      "fundId": "001",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Operations",
+          "amount": 300000
+        }
+      ]
+    },
+    {
+      "id": "8004",
+      "name": "Human Services",
+      "amount": 0,
+      "page": 33,
+      "key": "001-8004",
+      "fund": "General Fund",
+      "fundId": "001",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Grants / aid",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "id": "8006",
+      "name": "Special Cult/Rec Facility",
+      "amount": 16200,
+      "page": 34,
+      "key": "001-8006",
+      "fund": "General Fund",
+      "fundId": "001",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Operations",
+          "amount": 16200
+        }
+      ]
+    },
+    {
+      "id": "8007",
+      "name": "Special Events",
+      "amount": 52500,
+      "page": 35,
+      "key": "001-8007",
+      "fund": "General Fund",
+      "fundId": "001",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Operations",
+          "amount": 52500
+        }
+      ]
+    },
+    {
+      "id": "8008",
+      "name": "PC Center for the Arts",
+      "amount": 256460,
+      "page": 36,
+      "key": "001-8008",
+      "fund": "General Fund",
+      "fundId": "001",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Operations",
+          "amount": 256460
+        }
+      ]
+    },
+    {
+      "id": "8110",
+      "name": "City Hall",
+      "amount": 552660,
+      "page": 37,
+      "key": "001-8110",
+      "fund": "General Fund",
+      "fundId": "001",
+      "positions": {
+        "count": 2.0,
+        "page": 146
+      },
+      "retirement": 8392,
+      "retirementLines": [
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 8392
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 133946
+        },
+        {
+          "label": "Operations",
+          "amount": 418714
+        },
+        {
+          "label": "Projects / equipment",
+          "amount": 0
+        },
+        {
+          "label": "Debt",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "id": "8115",
+      "name": "Public Facilities",
+      "amount": 12500,
+      "page": 38,
+      "key": "001-8115",
+      "fund": "General Fund",
+      "fundId": "001",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Operations",
+          "amount": 12500
+        },
+        {
+          "label": "Projects / equipment",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "id": "8120",
+      "name": "Elections",
+      "amount": 0,
+      "page": 39,
+      "key": "001-8120",
+      "fund": "General Fund",
+      "fundId": "001",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Operations",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "id": "8131",
+      "name": "Public Service",
+      "amount": 0,
+      "page": 40,
+      "key": "001-8131",
+      "fund": "General Fund",
+      "fundId": "001",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Operations",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "id": "8181",
+      "name": "Housing General Administration",
+      "amount": 182720,
+      "page": 41,
+      "key": "001-8181",
+      "fund": "General Fund",
+      "fundId": "001",
+      "positions": {
+        "count": 1.0,
+        "page": 147
+      },
+      "retirement": 15970,
+      "retirementLines": [
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 14518
+        },
+        {
+          "code": "52205",
+          "label": "Sr. Manag Supp Retire",
+          "amount": 1452
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 180430
+        },
+        {
+          "label": "Operations",
+          "amount": 2290
+        }
+      ]
+    },
+    {
+      "id": "8520",
+      "name": "Business Services",
+      "amount": 268143,
+      "page": 42,
+      "key": "001-8520",
+      "fund": "General Fund",
+      "fundId": "001",
+      "positions": {
+        "count": 2.5,
+        "page": 148
+      },
+      "retirement": 12635,
+      "retirementLines": [
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 12635
+        },
+        {
+          "code": "52205",
+          "label": "Sr. Manag Supp Retire",
+          "amount": 0
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 185369
+        },
+        {
+          "label": "Operations",
+          "amount": 82774
+        },
+        {
+          "label": "Projects / equipment",
+          "amount": 0
+        },
+        {
+          "label": "Debt",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "id": "8751",
+      "name": "Performing Arts Center (CivicCtr)",
+      "amount": 460,
+      "page": 43,
+      "key": "001-8751",
+      "fund": "General Fund",
+      "fundId": "001",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Operations",
+          "amount": 460
+        }
+      ]
+    },
+    {
+      "id": "8752",
+      "name": "PCM Mall Area",
+      "amount": 1500,
+      "page": 44,
+      "key": "001-8752",
+      "fund": "General Fund",
+      "fundId": "001",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Operations",
+          "amount": 1500
+        }
+      ]
+    },
+    {
+      "id": "8800",
+      "name": "Non-departmental Expenses",
+      "amount": 3871727,
+      "page": 45,
+      "key": "001-8800",
+      "fund": "General Fund",
+      "fundId": "001",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Operations",
+          "amount": 0
+        },
+        {
+          "label": "Transfers / other uses",
+          "amount": 3871727
+        }
+      ]
+    },
+    {
+      "id": "1615",
+      "name": "Building Services",
+      "amount": 900000,
+      "page": 48,
+      "key": "102-1615",
+      "fund": "Building Services",
+      "fundId": "102",
+      "positions": {
+        "count": 6.0,
+        "page": 149
+      },
+      "retirement": 31791,
+      "retirementLines": [
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 30809
+        },
+        {
+          "code": "52205",
+          "label": "Sr. Manag Supp Retire",
+          "amount": 982
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 468122
+        },
+        {
+          "label": "Operations",
+          "amount": 415878
+        },
+        {
+          "label": "Projects / equipment",
+          "amount": 16000
+        }
+      ]
+    },
+    {
+      "id": "4111",
+      "name": "Transportation - Cap. Improv.",
+      "amount": 4823674,
+      "page": 51,
+      "key": "105-4111",
+      "fund": "Infrastructure Surtax",
+      "fundId": "105",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Operations",
+          "amount": 150000
+        },
+        {
+          "label": "Projects / equipment",
+          "amount": 4673674
+        }
+      ]
+    },
+    {
+      "id": "8800",
+      "name": "Non-departmental Expenses",
+      "amount": 5000,
+      "page": 52,
+      "key": "105-8800",
+      "fund": "Infrastructure Surtax",
+      "fundId": "105",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Operations",
+          "amount": 5000
+        },
+        {
+          "label": "Transfers / other uses",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "id": "5512",
+      "name": "St Andrews CRA",
+      "amount": 4550284,
+      "page": 55,
+      "key": "120-5512",
+      "fund": "St Andrews CRA",
+      "fundId": "120",
+      "positions": null,
+      "retirement": 3478,
+      "retirementLines": [
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 3478
+        },
+        {
+          "code": "52205",
+          "label": "Sr. Manag Supp Retire",
+          "amount": 0
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 52346
+        },
+        {
+          "label": "Operations",
+          "amount": 590438
+        },
+        {
+          "label": "Projects / equipment",
+          "amount": 3480000
+        },
+        {
+          "label": "Debt",
+          "amount": 0
+        },
+        {
+          "label": "Grants / aid",
+          "amount": 427500
+        }
+      ]
+    },
+    {
+      "id": "5580",
+      "name": "Debt Service",
+      "amount": 275000,
+      "page": 56,
+      "key": "120-5580",
+      "fund": "St Andrews CRA",
+      "fundId": "120",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Debt",
+          "amount": 275000
+        }
+      ]
+    },
+    {
+      "id": "8800",
+      "name": "Non-departmental Expenses",
+      "amount": 250000,
+      "page": 57,
+      "key": "120-8800",
+      "fund": "St Andrews CRA",
+      "fundId": "120",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Transfers / other uses",
+          "amount": 250000
+        }
+      ]
+    },
+    {
+      "id": "5513",
+      "name": "Downtown CRA",
+      "amount": 3090865,
+      "page": 60,
+      "key": "130-5513",
+      "fund": "Downtown CRA",
+      "fundId": "130",
+      "positions": null,
+      "retirement": 2278,
+      "retirementLines": [
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 2278
+        },
+        {
+          "code": "52205",
+          "label": "Sr. Manag Supp Retire",
+          "amount": 0
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 34282
+        },
+        {
+          "label": "Operations",
+          "amount": 207956
+        },
+        {
+          "label": "Projects / equipment",
+          "amount": 2622500
+        },
+        {
+          "label": "Debt",
+          "amount": 0
+        },
+        {
+          "label": "Grants / aid",
+          "amount": 226127
+        }
+      ]
+    },
+    {
+      "id": "8800",
+      "name": "Non-departmental Expenses",
+      "amount": 236000,
+      "page": 61,
+      "key": "130-8800",
+      "fund": "Downtown CRA",
+      "fundId": "130",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Debt",
+          "amount": 236000
+        }
+      ]
+    },
+    {
+      "id": "5514",
+      "name": "Downtown North CRA",
+      "amount": 1447555,
+      "page": 64,
+      "key": "140-5514",
+      "fund": "Downtown North CRA",
+      "fundId": "140",
+      "positions": null,
+      "retirement": 5517,
+      "retirementLines": [
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 5517
+        },
+        {
+          "code": "52205",
+          "label": "Sr. Manag Supp Retire",
+          "amount": 0
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 83026
+        },
+        {
+          "label": "Operations",
+          "amount": 581858
+        },
+        {
+          "label": "Projects / equipment",
+          "amount": 562500
+        },
+        {
+          "label": "Debt",
+          "amount": 0
+        },
+        {
+          "label": "Grants / aid",
+          "amount": 220171
+        }
+      ]
+    },
+    {
+      "id": "5901",
+      "name": "A.D. Harris Campus",
+      "amount": 115804,
+      "page": 65,
+      "key": "140-5901",
+      "fund": "Downtown North CRA",
+      "fundId": "140",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Operations",
+          "amount": 115804
+        },
+        {
+          "label": "Projects / equipment",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "id": "8800",
+      "name": "Non-departmental Expenses",
+      "amount": 300137,
+      "page": 66,
+      "key": "140-8800",
+      "fund": "Downtown North CRA",
+      "fundId": "140",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Transfers / other uses",
+          "amount": 300137
+        }
+      ]
+    },
+    {
+      "id": "5410",
+      "name": "City Ship Funds",
+      "amount": 655015,
+      "page": 69,
+      "key": "150-5410",
+      "fund": "City SHIP",
+      "fundId": "150",
+      "positions": {
+        "count": 0.54,
+        "page": 151
+      },
+      "retirement": 3297,
+      "retirementLines": [
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 3297
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 46225
+        },
+        {
+          "label": "Operations",
+          "amount": 608790
+        },
+        {
+          "label": "Grants / aid",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "id": "5412",
+      "name": "Code Compliance",
+      "amount": 0,
+      "page": 70,
+      "key": "150-5412",
+      "fund": "City SHIP",
+      "fundId": "150",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Operations",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "id": "5415",
+      "name": "NEIGHB STABIL PRGM CITY",
+      "amount": 82382,
+      "page": 71,
+      "key": "150-5415",
+      "fund": "City SHIP",
+      "fundId": "150",
+      "positions": {
+        "count": 0.13,
+        "page": 151
+      },
+      "retirement": 794,
+      "retirementLines": [
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 794
+        },
+        {
+          "code": "52205",
+          "label": "Sr. Manag Supp Retire",
+          "amount": 0
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 11132
+        },
+        {
+          "label": "Operations",
+          "amount": 71250
+        }
+      ]
+    },
+    {
+      "id": "5421",
+      "name": "City Ship - HHRP",
+      "amount": 0,
+      "page": 72,
+      "key": "150-5421",
+      "fund": "City SHIP",
+      "fundId": "150",
+      "positions": {
+        "count": 0.0,
+        "page": 151
+      },
+      "retirement": 0,
+      "retirementLines": [
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 0
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 0
+        },
+        {
+          "label": "Operations",
+          "amount": 0
+        },
+        {
+          "label": "Debt",
+          "amount": 0
+        },
+        {
+          "label": "Grants / aid",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "id": "5426",
+      "name": "County NSP Properties",
+      "amount": 36502,
+      "page": 73,
+      "key": "150-5426",
+      "fund": "City SHIP",
+      "fundId": "150",
+      "positions": {
+        "count": 0.12,
+        "page": 151
+      },
+      "retirement": 733,
+      "retirementLines": [
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 733
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 10277
+        },
+        {
+          "label": "Operations",
+          "amount": 26225
+        }
+      ]
+    },
+    {
+      "id": "8800",
+      "name": "Non-departmental Expenses",
+      "amount": 0,
+      "page": 74,
+      "key": "150-8800",
+      "fund": "City SHIP",
+      "fundId": "150",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Transfers / other uses",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "id": "5518",
+      "name": "Millville CRA",
+      "amount": 838133,
+      "page": 77,
+      "key": "180-5518",
+      "fund": "Millville CRA",
+      "fundId": "180",
+      "positions": null,
+      "retirement": 4143,
+      "retirementLines": [
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 4143
+        },
+        {
+          "code": "52205",
+          "label": "Sr. Manag Supp Retire",
+          "amount": 0
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 62491
+        },
+        {
+          "label": "Operations",
+          "amount": 397842
+        },
+        {
+          "label": "Projects / equipment",
+          "amount": 173000
+        },
+        {
+          "label": "Debt",
+          "amount": 0
+        },
+        {
+          "label": "Grants / aid",
+          "amount": 204800
+        }
+      ]
+    },
+    {
+      "id": "8800",
+      "name": "Non-departmental Expenses",
+      "amount": 450000,
+      "page": 78,
+      "key": "180-8800",
+      "fund": "Millville CRA",
+      "fundId": "180",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Transfers / other uses",
+          "amount": 450000
+        }
+      ]
+    },
+    {
+      "id": "5418",
+      "name": "Paving in Low/Mod Income Areas",
+      "amount": 400000,
+      "page": 81,
+      "key": "190-5418",
+      "fund": "Housing and Community Services",
+      "fundId": "190",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Projects / equipment",
+          "amount": 400000
+        }
+      ]
+    },
+    {
+      "id": "8115",
+      "name": "Public Facilities",
+      "amount": 400000,
+      "page": 82,
+      "key": "190-8115",
+      "fund": "Housing and Community Services",
+      "fundId": "190",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Operations",
+          "amount": 0
+        },
+        {
+          "label": "Projects / equipment",
+          "amount": 400000
+        }
+      ]
+    },
+    {
+      "id": "8131",
+      "name": "Public Service",
+      "amount": 347591,
+      "page": 83,
+      "key": "190-8131",
+      "fund": "Housing and Community Services",
+      "fundId": "190",
+      "positions": null,
+      "retirement": 12046,
+      "retirementLines": [
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 12046
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 260281
+        },
+        {
+          "label": "Operations",
+          "amount": 87310
+        }
+      ]
+    },
+    {
+      "id": "8146",
+      "name": "CDBG Housing Assistance",
+      "amount": 0,
+      "page": 84,
+      "key": "190-8146",
+      "fund": "Housing and Community Services",
+      "fundId": "190",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Operations",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "id": "8181",
+      "name": "Housing General Administration",
+      "amount": 108221,
+      "page": 85,
+      "key": "190-8181",
+      "fund": "Housing and Community Services",
+      "fundId": "190",
+      "positions": {
+        "count": 2.21,
+        "page": 151
+      },
+      "retirement": 7962,
+      "retirementLines": [
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 7962
+        },
+        {
+          "code": "52205",
+          "label": "Sr. Manag Supp Retire",
+          "amount": 0
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 106721
+        },
+        {
+          "label": "Operations",
+          "amount": 1500
+        }
+      ]
+    },
+    {
+      "id": "8800",
+      "name": "Non-departmental Expenses",
+      "amount": 10027,
+      "page": 86,
+      "key": "190-8800",
+      "fund": "Housing and Community Services",
+      "fundId": "190",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Transfers / other uses",
+          "amount": 10027
+        }
+      ]
+    },
+    {
+      "id": "fund",
+      "name": "Debt payments (fund-wide)",
+      "amount": 1052571,
+      "page": 87,
+      "key": "212-fund",
+      "fund": "Capital improvements \u2014 2013B debt",
+      "fundId": "212",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Debt",
+          "amount": 1052571
+        }
+      ]
+    },
+    {
+      "id": "fund",
+      "name": "Debt payments (fund-wide)",
+      "amount": 250757,
+      "page": 88,
+      "key": "215-fund",
+      "fund": "Capital improvements \u2014 2016 debt",
+      "fundId": "215",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Debt",
+          "amount": 250757
+        }
+      ]
+    },
+    {
+      "id": "fund",
+      "name": "Debt payments (fund-wide)",
+      "amount": 1419570,
+      "page": 89,
+      "key": "216-fund",
+      "fund": "Capital improvements \u2014 2018 debt",
+      "fundId": "216",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Debt",
+          "amount": 1419570
+        }
+      ]
+    },
+    {
+      "id": "fund",
+      "name": "Debt payments (fund-wide)",
+      "amount": 2125619,
+      "page": 90,
+      "key": "217-fund",
+      "fund": "Infrastructure surtax \u2014 2018 debt",
+      "fundId": "217",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Debt",
+          "amount": 2125619
+        }
+      ]
+    },
+    {
+      "id": "fund",
+      "name": "Debt payments (fund-wide)",
+      "amount": 3343500,
+      "page": 91,
+      "key": "225-fund",
+      "fund": "Capital improvements \u2014 2023\u20132025 refunding debt",
+      "fundId": "225",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Operations",
+          "amount": 0
+        },
+        {
+          "label": "Debt",
+          "amount": 3343500
+        }
+      ]
+    },
+    {
+      "id": "3610",
+      "name": "Utilities Administration",
+      "amount": 826041,
+      "page": 94,
+      "key": "410-3610",
+      "fund": "Utilities",
+      "fundId": "410",
+      "positions": {
+        "count": 6.98,
+        "page": 152
+      },
+      "retirement": 51584,
+      "retirementLines": [
+        {
+          "code": "52201",
+          "label": "FRS Contributions",
+          "amount": 5266
+        },
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 45650
+        },
+        {
+          "code": "52205",
+          "label": "Sr. Manag Supp Retire",
+          "amount": 668
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 690783
+        },
+        {
+          "label": "Operations",
+          "amount": 135258
+        },
+        {
+          "label": "Projects / equipment",
+          "amount": 0
+        },
+        {
+          "label": "Debt",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "id": "3620",
+      "name": "Billing and Customer Service",
+      "amount": 7071379,
+      "page": 95,
+      "key": "410-3620",
+      "fund": "Utilities",
+      "fundId": "410",
+      "positions": {
+        "count": 10.0,
+        "page": 153
+      },
+      "retirement": 40850,
+      "retirementLines": [
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 40850
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 600501
+        },
+        {
+          "label": "Operations",
+          "amount": 6470878
+        },
+        {
+          "label": "Debt",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "id": "3630",
+      "name": "Underground Utilities",
+      "amount": 7102399,
+      "page": 96,
+      "key": "410-3630",
+      "fund": "Utilities",
+      "fundId": "410",
+      "positions": {
+        "count": 44.0,
+        "page": 154
+      },
+      "retirement": 210852,
+      "retirementLines": [
+        {
+          "code": "52201",
+          "label": "FRS Contributions",
+          "amount": 34562
+        },
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 176290
+        },
+        {
+          "code": "52205",
+          "label": "Sr. Manag Supp Retire",
+          "amount": 0
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 3446283
+        },
+        {
+          "label": "Operations",
+          "amount": 2952116
+        },
+        {
+          "label": "Projects / equipment",
+          "amount": 704000
+        },
+        {
+          "label": "Debt",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "id": "3640",
+      "name": "Lift Stations",
+      "amount": 4826355,
+      "page": 97,
+      "key": "410-3640",
+      "fund": "Utilities",
+      "fundId": "410",
+      "positions": {
+        "count": 19.0,
+        "page": 155
+      },
+      "retirement": 86935,
+      "retirementLines": [
+        {
+          "code": "52201",
+          "label": "FRS Contributions                                                                           -",
+          "amount": 0
+        },
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 86935
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 1897700
+        },
+        {
+          "label": "Operations",
+          "amount": 2128655
+        },
+        {
+          "label": "Projects / equipment",
+          "amount": 800000
+        },
+        {
+          "label": "Debt",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "id": "3650",
+      "name": "Wastewater Treatment Oper",
+      "amount": 1661549,
+      "page": 98,
+      "key": "410-3650",
+      "fund": "Utilities",
+      "fundId": "410",
+      "positions": {
+        "count": 21.0,
+        "page": 156
+      },
+      "retirement": 106431,
+      "retirementLines": [
+        {
+          "code": "52201",
+          "label": "FRS Contributions",
+          "amount": 16338
+        },
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 90093
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 1634911
+        },
+        {
+          "label": "Operations",
+          "amount": 26638
+        }
+      ]
+    },
+    {
+      "id": "3651",
+      "name": "St Andrews WWTP",
+      "amount": 1901014,
+      "page": 99,
+      "key": "410-3651",
+      "fund": "Utilities",
+      "fundId": "410",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Operations",
+          "amount": 1491014
+        },
+        {
+          "label": "Projects / equipment",
+          "amount": 410000
+        },
+        {
+          "label": "Debt",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "id": "3652",
+      "name": "Millville WWTP",
+      "amount": 1142436,
+      "page": 100,
+      "key": "410-3652",
+      "fund": "Utilities",
+      "fundId": "410",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Operations",
+          "amount": 1142436
+        },
+        {
+          "label": "Projects / equipment",
+          "amount": 0
+        },
+        {
+          "label": "Debt",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "id": "3653",
+      "name": "Laboratory",
+      "amount": 704020,
+      "page": 101,
+      "key": "410-3653",
+      "fund": "Utilities",
+      "fundId": "410",
+      "positions": {
+        "count": 6.0,
+        "page": 157
+      },
+      "retirement": 36875,
+      "retirementLines": [
+        {
+          "code": "52201",
+          "label": "FRS Contributions                                                   -",
+          "amount": 0
+        },
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 36875
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 579861
+        },
+        {
+          "label": "Operations",
+          "amount": 99259
+        },
+        {
+          "label": "Projects / equipment",
+          "amount": 24900
+        },
+        {
+          "label": "Debt",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "id": "3680",
+      "name": "Debt Servie",
+      "amount": 5583632,
+      "page": 102,
+      "key": "410-3680",
+      "fund": "Utilities",
+      "fundId": "410",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Debt",
+          "amount": 5583632
+        }
+      ]
+    },
+    {
+      "id": "3720",
+      "name": "F.O.G.",
+      "amount": 297946,
+      "page": 103,
+      "key": "410-3720",
+      "fund": "Utilities",
+      "fundId": "410",
+      "positions": {
+        "count": 3.0,
+        "page": 158
+      },
+      "retirement": 14667,
+      "retirementLines": [
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 14667
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 228821
+        },
+        {
+          "label": "Operations",
+          "amount": 69125
+        },
+        {
+          "label": "Projects / equipment",
+          "amount": 0
+        },
+        {
+          "label": "Debt",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "id": "8800",
+      "name": "Non-departmental Expenses",
+      "amount": 3214521,
+      "page": 104,
+      "key": "410-8800",
+      "fund": "Utilities",
+      "fundId": "410",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Transfers / other uses",
+          "amount": 3214521
+        }
+      ]
+    },
+    {
+      "id": "3410",
+      "name": "Environmental Services Admin",
+      "amount": 618545,
+      "page": 107,
+      "key": "440-3410",
+      "fund": "Environmental Services",
+      "fundId": "440",
+      "positions": {
+        "count": 3.81,
+        "page": 159
+      },
+      "retirement": 28731,
+      "retirementLines": [
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 27726
+        },
+        {
+          "code": "52205",
+          "label": "Sr. Manag Supp Retire",
+          "amount": 1005
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 398204
+        },
+        {
+          "label": "Operations",
+          "amount": 220341
+        }
+      ]
+    },
+    {
+      "id": "3420",
+      "name": "Residential Garbage",
+      "amount": 3282171,
+      "page": 108,
+      "key": "440-3420",
+      "fund": "Environmental Services",
+      "fundId": "440",
+      "positions": {
+        "count": 15.0,
+        "page": 160
+      },
+      "retirement": 74043,
+      "retirementLines": [
+        {
+          "code": "52201",
+          "label": "FRS Contributions",
+          "amount": 17228
+        },
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 56815
+        },
+        {
+          "code": "52205",
+          "label": "Sr. Manag Supp Retire",
+          "amount": 0
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 1123531
+        },
+        {
+          "label": "Operations",
+          "amount": 1365113
+        },
+        {
+          "label": "Projects / equipment",
+          "amount": 787000
+        },
+        {
+          "label": "Debt",
+          "amount": 6527
+        }
+      ]
+    },
+    {
+      "id": "3430",
+      "name": "Commercial Garbage",
+      "amount": 2616121,
+      "page": 109,
+      "key": "440-3430",
+      "fund": "Environmental Services",
+      "fundId": "440",
+      "positions": {
+        "count": 12.0,
+        "page": 161
+      },
+      "retirement": 55287,
+      "retirementLines": [
+        {
+          "code": "52201",
+          "label": "FRS Contributions                                                     -",
+          "amount": 0
+        },
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 55287
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 936695
+        },
+        {
+          "label": "Operations",
+          "amount": 1569304
+        },
+        {
+          "label": "Projects / equipment",
+          "amount": 105000
+        },
+        {
+          "label": "Debt",
+          "amount": 5122
+        }
+      ]
+    },
+    {
+      "id": "3440",
+      "name": "Residential Trash",
+      "amount": 4038275,
+      "page": 110,
+      "key": "440-3440",
+      "fund": "Environmental Services",
+      "fundId": "440",
+      "positions": {
+        "count": 23.0,
+        "page": 162
+      },
+      "retirement": 97170,
+      "retirementLines": [
+        {
+          "code": "52201",
+          "label": "FRS Contributions                                                   -",
+          "amount": 0
+        },
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 97170
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 1533133
+        },
+        {
+          "label": "Operations",
+          "amount": 1311020
+        },
+        {
+          "label": "Projects / equipment",
+          "amount": 1189000
+        },
+        {
+          "label": "Debt",
+          "amount": 5122
+        }
+      ]
+    },
+    {
+      "id": "3450",
+      "name": "CNG Station",
+      "amount": 280126,
+      "page": 111,
+      "key": "440-3450",
+      "fund": "Environmental Services",
+      "fundId": "440",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Operations",
+          "amount": 280126
+        }
+      ]
+    },
+    {
+      "id": "3460",
+      "name": "Street Sweeping",
+      "amount": 197611,
+      "page": 112,
+      "key": "440-3460",
+      "fund": "Environmental Services",
+      "fundId": "440",
+      "positions": {
+        "count": 1.0,
+        "page": 163
+      },
+      "retirement": 4621,
+      "retirementLines": [
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 4621
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 72154
+        },
+        {
+          "label": "Operations",
+          "amount": 125457
+        }
+      ]
+    },
+    {
+      "id": "8800",
+      "name": "Non-departmental Expenses",
+      "amount": 1363013,
+      "page": 113,
+      "key": "440-8800",
+      "fund": "Environmental Services",
+      "fundId": "440",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Transfers / other uses",
+          "amount": 1363013
+        }
+      ]
+    },
+    {
+      "id": "7500",
+      "name": "PC Marina",
+      "amount": 1140,
+      "page": 116,
+      "key": "450-7500",
+      "fund": "Marina",
+      "fundId": "450",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 0
+        },
+        {
+          "label": "Operations",
+          "amount": 1140
+        }
+      ]
+    },
+    {
+      "id": "7600",
+      "name": "St Andrews Marina",
+      "amount": 0,
+      "page": 117,
+      "key": "450-7600",
+      "fund": "Marina",
+      "fundId": "450",
+      "positions": {
+        "count": 0.0,
+        "page": 164
+      },
+      "retirement": 0,
+      "retirementLines": [
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 0
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 0
+        },
+        {
+          "label": "Operations",
+          "amount": 0
+        },
+        {
+          "label": "Projects / equipment",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "id": "8800",
+      "name": "Non-departmental Expenses",
+      "amount": 165500,
+      "page": 118,
+      "key": "450-8800",
+      "fund": "Marina",
+      "fundId": "450",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Transfers / other uses",
+          "amount": 165500
+        }
+      ]
+    },
+    {
+      "id": "fund",
+      "name": "Insurance costs (fund-wide)",
+      "amount": 10624438,
+      "page": 119,
+      "key": "501-fund",
+      "fund": "Medical Self Insurance",
+      "fundId": "501",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Operations",
+          "amount": 10624438
+        }
+      ]
+    },
+    {
+      "id": "fund",
+      "name": "Insurance costs (fund-wide)",
+      "amount": 444535,
+      "page": 120,
+      "key": "502-fund",
+      "fund": "Dental Insurance",
+      "fundId": "502",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Operations",
+          "amount": 444535
+        }
+      ]
+    },
+    {
+      "id": "8800",
+      "name": "Non-departmental Expenses",
+      "amount": 30507,
+      "page": 123,
+      "key": "503-8800",
+      "fund": "Equipment Maintenance",
+      "fundId": "503",
+      "positions": null,
+      "retirement": 0,
+      "retirementLines": [],
+      "categories": [
+        {
+          "label": "Transfers / other uses",
+          "amount": 30507
+        }
+      ]
+    },
+    {
+      "id": "8930",
+      "name": "Equipment Maintenance",
+      "amount": 2162451,
+      "page": 124,
+      "key": "503-8930",
+      "fund": "Equipment Maintenance",
+      "fundId": "503",
+      "positions": {
+        "count": 15.0,
+        "page": 165
+      },
+      "retirement": 73497,
+      "retirementLines": [
+        {
+          "code": "52202",
+          "label": "FMPTF Contributions",
+          "amount": 73497
+        }
+      ],
+      "categories": [
+        {
+          "label": "Staff",
+          "amount": 1076277
+        },
+        {
+          "label": "Operations",
+          "amount": 1084769
+        },
+        {
+          "label": "Debt",
+          "amount": 1405
+        }
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 2005,
+      "publicSafety": 14332667,
+      "propertyTax": 7393055,
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165"
+    },
+    {
+      "year": 2006,
+      "publicSafety": 14860558,
+      "propertyTax": 8604094,
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165"
+    },
+    {
+      "year": 2007,
+      "publicSafety": 16442075,
+      "propertyTax": 8491538,
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165"
+    },
+    {
+      "year": 2008,
+      "publicSafety": 15930432,
+      "propertyTax": 8972099,
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165"
+    },
+    {
+      "year": 2009,
+      "publicSafety": 15991185,
+      "propertyTax": 8823554,
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165"
+    },
+    {
+      "year": 2010,
+      "publicSafety": 16776513,
+      "propertyTax": 8388901,
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165"
+    },
+    {
+      "year": 2011,
+      "publicSafety": 17346057,
+      "propertyTax": 8221868,
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165"
+    },
+    {
+      "year": 2012,
+      "publicSafety": 17954974,
+      "propertyTax": 8008760,
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165"
+    },
+    {
+      "year": 2013,
+      "publicSafety": 18443729,
+      "propertyTax": 7931119,
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165"
+    },
+    {
+      "year": 2014,
+      "publicSafety": 19060516,
+      "propertyTax": 8338872,
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165"
+    },
+    {
+      "year": 2015,
+      "publicSafety": 18241148,
+      "propertyTax": 8511463,
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550"
+    },
+    {
+      "year": 2016,
+      "publicSafety": 21345141,
+      "propertyTax": 8861504,
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550"
+    },
+    {
+      "year": 2017,
+      "publicSafety": 21091964,
+      "propertyTax": 8897687,
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550"
+    },
+    {
+      "year": 2018,
+      "publicSafety": 21197707,
+      "propertyTax": 8929919,
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550"
+    },
+    {
+      "year": 2019,
+      "publicSafety": 22418938,
+      "propertyTax": 10099539,
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550"
+    },
+    {
+      "year": 2020,
+      "publicSafety": 23707967,
+      "propertyTax": 11049811,
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550"
+    },
+    {
+      "year": 2021,
+      "publicSafety": 22686653,
+      "propertyTax": 10576138,
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550"
+    },
+    {
+      "year": 2022,
+      "publicSafety": 24092554,
+      "propertyTax": 11657602,
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550"
+    },
+    {
+      "year": 2023,
+      "publicSafety": 29731147,
+      "propertyTax": 12873362,
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550"
+    },
+    {
+      "year": 2024,
+      "publicSafety": 32985229,
+      "propertyTax": 15328456,
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550"
+    }
+  ],
+  "source": "https://panamacity.gov/Archive/ViewFile/Item/1581"
+}
