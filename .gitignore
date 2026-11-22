@@ -37,6 +37,9 @@
 !/docs/
 /docs/*
 !/docs/index.html
+!/docs/budget/
+/docs/budget/*
+!/docs/budget/index.html
 !/docs/style.css
 !/docs/app.js
 !/docs/spending-blaze-logo.png
