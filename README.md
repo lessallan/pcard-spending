@@ -10,9 +10,28 @@ Only the 24 approved leadership profiles and 21 matched cardholder names are pub
 
 ## Build and publish
 
-The private source `app/data.json` remains local and ignored. Never copy it directly into `docs/`. Run `python3 tools/build_pages.py`, then `python3 tools/test_public_data.py`. The builder uses an explicit field and identity allowlist. Update the displayed purchase-date range if new source records are approved.
+The budget guide is authored directly in `docs/index.html` and `docs/budget/index.html`.
+The transaction explorer lives at `/review/`; its editable code is in `app/`.
+For budget or code-only releases, preserve the reviewed public datasets:
 
-Serve `docs/` locally and run `node tools/check_public.cjs` to verify the rendered public artifact. Set `BASE_URL` for a different local or live URL. GitHub Pages serves `docs/` from `main`; retain `docs/CNAME`. Retired review URLs redirect to the dashboard. No hosting setting change is required.
+```sh
+python3 tools/build_pages.py --code-only
+python3 tools/check_budget_release.py
+```
+
+Serve `docs/` locally and exercise the homepage, funding breakdown, calculator,
+`/review/` and Destination organization navigation on desktop and mobile.
+Run explorer browser checks with `BASE_URL=http://127.0.0.1:4397/review/`.
+GitHub Pages serves `docs/` from `main`; retain `docs/CNAME`. No hosting change is required.
+
+A purchase-data refresh is a separate reviewed operation. It requires the verified
+private `app/data.json`, source portraits, the project data-review workflow and
+current publication-boundary tests. The legacy `test_public_data.py` still encodes
+an older cardholder allowlist and must be reconciled with the authorized data scope
+before a data refresh. Do not weaken it merely to make a new import pass.
+The full builder refuses a missing private dataset before writing any files.
+Never copy private source records directly into `docs/`. Code-only release checks
+validate the retained public artifact; they do not certify a new data import.
 
 FY25 detail totals differ from the workbook summary by $136,616.98; FY26 reconciles. Historical published versions may remain in Git history or external caches; the current publication restrictions do not erase those copies.
 

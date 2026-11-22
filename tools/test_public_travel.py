@@ -4,7 +4,7 @@ from pathlib import Path
 from datetime import date
 root=Path(__file__).resolve().parents[1]
 private=json.loads((root/'app/data.json').read_text())
-public=json.loads((root/'docs/travel.json').read_text())
+public=json.loads((root/'docs/review/travel.json').read_text())
 original={t['id']:t for t in private['transactions']}
 assert set(public)=={'version','records'} and public['version']==1
 assert len(public['records'])>=1446
