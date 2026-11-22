@@ -1,6 +1,6 @@
 {
   "410-3610": {
-    "text": "Management and support for the city’s water and sewer services.",
+    "text": "Management and support for the city\u2019s water and sewer services.",
     "sources": [
       {
         "title": "City adopted budget: Utilities Administration",
@@ -54,13 +54,13 @@
         "url": "https://www.panamacity.gov/AgendaCenter/ViewFile/Item/10466?fileID=24248"
       },
       {
-        "title": "Official explanation of lift stations — Hillsborough County",
+        "title": "Official explanation of lift stations \u2014 Hillsborough County",
         "url": "https://hcfl.gov/residents/property-owners-and-renters/water-and-sewer/lift-stations"
       }
     ]
   },
   "410-3650": {
-    "text": "Staff and operating support for the city’s wastewater treatment plants.",
+    "text": "Staff and operating support for the city\u2019s wastewater treatment plants.",
     "sources": [
       {
         "title": "City adopted budget: Wastewater Treatment Oper",
@@ -99,7 +99,7 @@
     ]
   },
   "410-3653": {
-    "text": "The environmental laboratory supporting the city’s water and wastewater services.",
+    "text": "The environmental laboratory supporting the city\u2019s water and wastewater services.",
     "sources": [
       {
         "title": "City adopted budget: Laboratory",
@@ -134,7 +134,7 @@
     ]
   },
   "440-3410": {
-    "text": "Management and support for the city’s waste collection services.",
+    "text": "Management and support for the city\u2019s waste collection services.",
     "sources": [
       {
         "title": "City adopted budget: Environmental Services Admin",
@@ -161,7 +161,7 @@
     ]
   },
   "440-3440": {
-    "text": "The city’s separate residential trash collection operation, with its own crews and equipment.",
+    "text": "The city\u2019s separate residential trash collection operation, with its own crews and equipment.",
     "sources": [
       {
         "title": "City adopted budget: Residential Trash",
@@ -371,7 +371,7 @@
     ]
   },
   "501-fund": {
-    "text": "Costs of the city’s medical insurance plan.",
+    "text": "Costs of the city\u2019s medical insurance plan.",
     "sources": [
       {
         "title": "City adopted budget: Insurance costs (fund-wide)",
@@ -380,7 +380,7 @@
     ]
   },
   "502-fund": {
-    "text": "Costs of the city’s dental insurance plan.",
+    "text": "Costs of the city\u2019s dental insurance plan.",
     "sources": [
       {
         "title": "City adopted budget: Insurance costs (fund-wide)",
@@ -450,7 +450,7 @@
     ]
   },
   "150-5410": {
-    "text": "State Housing Initiatives Partnership (SHIP) assistance for eligible residents’ housing needs.",
+    "text": "State Housing Initiatives Partnership (SHIP) assistance for eligible residents\u2019 housing needs.",
     "sources": [
       {
         "title": "City adopted budget: City Ship Funds",
@@ -489,7 +489,7 @@
     ]
   },
   "001-4150": {
-    "text": "A dedicated road-paving crew supported by the city’s redevelopment areas.",
+    "text": "A dedicated road-paving crew supported by the city\u2019s redevelopment areas.",
     "sources": [
       {
         "title": "City adopted budget: Paving Crew",
@@ -498,6 +498,15 @@
       {
         "title": "City explanation of the Paving Crew",
         "url": "https://panamacity.gov/Archive/ViewFile/Item/1582#page=7"
+      }
+    ]
+  },
+  "001-8004": {
+    "text": "Aid for children\u2019s services. The city budget calls this account Human Services.",
+    "sources": [
+      {
+        "title": "FY2027 adopted budget: Human Services / Children Services",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=33"
       }
     ]
   }
