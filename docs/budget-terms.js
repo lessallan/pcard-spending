@@ -358,7 +358,8 @@
     "title": "Ledger, account and allocation",
     "terms": [
       "ledger",
-      "allocations"
+      "allocations",
+      "allocation"
     ],
     "definition": "A ledger lists accounting entries. An account groups entries by purpose or type. An allocation assigns some or all of a charge to an account. One purchase can produce several entries.",
     "url": "/#budget-words",
@@ -381,6 +382,7 @@
     "terms": [
       "net after credits",
       "net amount",
+      "net spending",
       "credits",
       "gross"
     ],
@@ -404,6 +406,7 @@
     "title": "Opening balance and reconciliation",
     "terms": [
       "opening balance",
+      "opening balances",
       "reconciliation"
     ],
     "definition": "An opening balance is the amount already in an account when a period starts. Reconciliation compares records and explains differences. An unexplained difference is a question to resolve, not proof of wrongdoing.",
@@ -772,41 +775,42 @@
   entries.forEach((entry, index) => entry.terms.forEach(term => aliases.set(term.toLowerCase(), index)));
   const escape = value => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   const pattern = new RegExp('(?<![\\p{L}\\p{N}])(' + [...aliases.keys()].sort((a, b) => b.length - a.length).map(escape).join('|') + ')(?![\\p{L}\\p{N}])', 'giu');
-  const excluded = 'a,button,input,select,textarea,label,form,nav,summary,script,style,#budget-words,.expense-terms,.expense-definition,.funding-definition,[data-budget-term],[aria-hidden="true"]';
-  const walker = document.createTreeWalker(main, NodeFilter.SHOW_TEXT, {
-    acceptNode(node) {
-      return node.parentElement && !node.parentElement.closest(excluded) && node.textContent.trim()
-        ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+  const excluded = 'a,button,input,select,textarea,label,form,nav,summary,script,style,#budget-words,.expense-terms,.expense-definition,.funding-definition,[data-budget-term],[aria-hidden="true"],option,[contenteditable],dialog,[role="button"],[data-detail],[data-vendor],[data-receipt]';
+  function annotate(root) {
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+      acceptNode(node) {
+        return node.parentElement && !node.parentElement.closest(excluded) && node.textContent.trim()
+          ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+      }
+    });
+    const nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    for (const node of nodes) {
+      const text = node.textContent;
+      pattern.lastIndex = 0;
+      const matches = [...text.matchAll(pattern)];
+      if (!matches.length) continue;
+      const fragment = document.createDocumentFragment();
+      let offset = 0;
+      for (const match of matches) {
+        fragment.append(document.createTextNode(text.slice(offset, match.index)));
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'budget-term';
+        button.dataset.budgetTerm = aliases.get(match[0].toLowerCase());
+        button.textContent = match[0];
+        button.setAttribute('aria-label', match[0]);
+        button.setAttribute('aria-description', 'Show a simple definition');
+        button.setAttribute('aria-haspopup', 'dialog');
+        button.setAttribute('aria-expanded', 'false');
+        button.setAttribute('aria-controls', 'budget-term-definition');
+        fragment.append(button);
+        offset = match.index + match[0].length;
+      }
+      fragment.append(document.createTextNode(text.slice(offset)));
+      node.replaceWith(fragment);
     }
-  });
-  const nodes = [];
-  while (walker.nextNode()) nodes.push(walker.currentNode);
-  for (const node of nodes) {
-    const text = node.textContent;
-    pattern.lastIndex = 0;
-    const matches = [...text.matchAll(pattern)];
-    if (!matches.length) continue;
-    const fragment = document.createDocumentFragment();
-    let offset = 0;
-    for (const match of matches) {
-      fragment.append(document.createTextNode(text.slice(offset, match.index)));
-      const button = document.createElement('button');
-      button.type = 'button';
-      button.className = 'budget-term';
-      button.dataset.budgetTerm = aliases.get(match[0].toLowerCase());
-      button.textContent = match[0];
-      button.setAttribute('aria-label', match[0]);
-      button.setAttribute('aria-description', 'Show a simple definition');
-      button.setAttribute('aria-haspopup', 'dialog');
-      button.setAttribute('aria-expanded', 'false');
-      button.setAttribute('aria-controls', 'budget-term-definition');
-      fragment.append(button);
-      offset = match.index + match[0].length;
-    }
-    fragment.append(document.createTextNode(text.slice(offset)));
-    node.replaceWith(fragment);
   }
-  if (!main.querySelector('.budget-term')) return;
   const hint = document.createElement('p');
   hint.className = 'budget-term-hint';
   hint.textContent = 'Tap or click a dotted-underlined term for a quick definition.';
@@ -850,6 +854,7 @@
   }
   function position() {
     if (!active) return;
+    if (!active.isConnected) { close(false); return; }
     const viewport = window.visualViewport;
     const left = viewport?.offsetLeft || 0;
     const top = viewport?.offsetTop || 0;
@@ -885,6 +890,24 @@
     position();
     closeButton.focus({preventScroll: true});
   });
+  annotate(main);
+  const observer = new MutationObserver(records => {
+    if (active && !active.isConnected) close(false);
+    const roots = new Set();
+    for (const record of records) {
+      if (record.type === 'characterData') roots.add(record.target.parentElement);
+      for (const node of record.addedNodes) roots.add(node.nodeType === Node.ELEMENT_NODE ? node : node.parentElement);
+    }
+    observer.disconnect();
+    try {
+      for (const root of roots) {
+        if (root && main.contains(root) && !root.closest(excluded) &&
+            ![...roots].some(other => other && other !== root && other.contains(root))) annotate(root);
+      }
+    } finally { observe(); }
+  });
+  function observe() { observer.observe(main, {childList: true, subtree: true, characterData: true}); }
+  observe();
   closeButton.addEventListener('click', () => close(true));
   document.addEventListener('keydown', event => {
     if (active && event.key === 'Escape') { event.preventDefault(); close(true); }

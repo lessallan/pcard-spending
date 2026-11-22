@@ -6,7 +6,7 @@ ROOT=Path(__file__).resolve().parents[1]
 class Handler(SimpleHTTPRequestHandler):
     def do_GET(self):
         path=unquote(urlparse(self.path).path)
-        allowed={'/assets.js':'app/assets.js','/merchant-context.js':'app/merchant-context.js','/travel.json':'docs/travel.json','/assets.json':'docs/assets.json','/leadership-associations.json':'docs/leadership-associations.json','/radar.js':'app/radar.js','/penny-ping-logo.png':'app/penny-ping-logo.png','/porchping-logo.svg':'app/porchping-logo.svg','/spending-blaze-logo.png':'app/spending-blaze-logo.png','/':'app/index.html','/index.html':'app/index.html','/style.css':'app/style.css','/app.js':'app/app.js','/data.json':'docs/data.json'}
+        allowed={'/budget-terms.js':'docs/budget-terms.js','/budget-terms.css':'docs/budget-terms.css','/assets.js':'app/assets.js','/merchant-context.js':'app/merchant-context.js','/travel.json':'docs/travel.json','/assets.json':'docs/assets.json','/leadership-associations.json':'docs/leadership-associations.json','/radar.js':'app/radar.js','/penny-ping-logo.png':'app/penny-ping-logo.png','/porchping-logo.svg':'app/porchping-logo.svg','/spending-blaze-logo.png':'app/spending-blaze-logo.png','/':'app/index.html','/index.html':'app/index.html','/style.css':'app/style.css','/app.js':'app/app.js','/data.json':'docs/data.json'}
         rel=allowed.get(path)
         if path.startswith('/photos/'):rel='docs/'+path.lstrip('/')
         if path.startswith('/policies/'):rel=path.lstrip('/')
