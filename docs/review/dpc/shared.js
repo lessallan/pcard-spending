@@ -1,0 +1,1 @@
+document.getElementById('dpc-organization')?.addEventListener('change',e=>{if(e.target.value==='panama-city')location.assign(new URL('../?organization=panama-city#overview',new URL('./',document.querySelector('script[src*="shared.js"]').src)).href)});
