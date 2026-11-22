@@ -1,0 +1,728 @@
+{
+  "fiscalYear": 2027,
+  "basis": "Adopted budget \u2014 planned spending",
+  "sourceUrl": "https://panamacity.gov/Archive/ViewFile/Item/1581",
+  "sourceSha256": "626c920fdc2263390f92fcea256b397876d1fc3fa9f2d9d9c47483b5c1ffb9f0",
+  "allFundsTotal": 150263913,
+  "funds": [
+    {
+      "id": "001",
+      "name": "General Fund",
+      "total": 62593981,
+      "page": 6,
+      "accounts": [
+        {
+          "id": "1100",
+          "name": "City Commission",
+          "amount": 348684,
+          "page": 9
+        },
+        {
+          "id": "1200",
+          "name": "City Manager",
+          "amount": 1316235,
+          "page": 10
+        },
+        {
+          "id": "1310",
+          "name": "City Clerk-Treasurer",
+          "amount": 1433304,
+          "page": 11
+        },
+        {
+          "id": "1330",
+          "name": "Purchasing",
+          "amount": 511851,
+          "page": 12
+        },
+        {
+          "id": "1340",
+          "name": "Human Resources",
+          "amount": 917126,
+          "page": 13
+        },
+        {
+          "id": "1350",
+          "name": "Information Technology",
+          "amount": 1610437,
+          "page": 14
+        },
+        {
+          "id": "1360",
+          "name": "Logistics",
+          "amount": 493701,
+          "page": 15
+        },
+        {
+          "id": "1400",
+          "name": "City Attorney",
+          "amount": 900000,
+          "page": 16
+        },
+        {
+          "id": "1610",
+          "name": "Development Services",
+          "amount": 1394550,
+          "page": 17
+        },
+        {
+          "id": "1615",
+          "name": "Building Services",
+          "amount": 0,
+          "page": 18
+        },
+        {
+          "id": "1620",
+          "name": "Engineering",
+          "amount": 1496105,
+          "page": 19
+        },
+        {
+          "id": "1710",
+          "name": "Public Works Admin",
+          "amount": 271074,
+          "page": 20
+        },
+        {
+          "id": "1720",
+          "name": "Facilities Maintenance",
+          "amount": 1167318,
+          "page": 21
+        },
+        {
+          "id": "2100",
+          "name": "Police",
+          "amount": 17735146,
+          "page": 22
+        },
+        {
+          "id": "2200",
+          "name": "Fire",
+          "amount": 13604687,
+          "page": 23
+        },
+        {
+          "id": "4110",
+          "name": "Street Maintenance",
+          "amount": 5206031,
+          "page": 24
+        },
+        {
+          "id": "4120",
+          "name": "Street Drainage",
+          "amount": 0,
+          "page": 25
+        },
+        {
+          "id": "4130",
+          "name": "Street Signs and Markings",
+          "amount": 446494,
+          "page": 26
+        },
+        {
+          "id": "4140",
+          "name": "Street Sweeping",
+          "amount": 0,
+          "page": 27
+        },
+        {
+          "id": "4150",
+          "name": "Paving Crew",
+          "amount": 950000,
+          "page": 28
+        },
+        {
+          "id": "7200",
+          "name": "Parks, Culture and Recreation",
+          "amount": 3713278,
+          "page": 29
+        },
+        {
+          "id": "7300",
+          "name": "MLK Rec Center",
+          "amount": 1254581,
+          "page": 30
+        },
+        {
+          "id": "8002",
+          "name": "Econominc Environment",
+          "amount": 2308509,
+          "page": 31
+        },
+        {
+          "id": "8003",
+          "name": "Animal Control",
+          "amount": 300000,
+          "page": 32
+        },
+        {
+          "id": "8004",
+          "name": "Human Services",
+          "amount": 0,
+          "page": 33
+        },
+        {
+          "id": "8006",
+          "name": "Special Cult/Rec Facility",
+          "amount": 16200,
+          "page": 34
+        },
+        {
+          "id": "8007",
+          "name": "Special Events",
+          "amount": 52500,
+          "page": 35
+        },
+        {
+          "id": "8008",
+          "name": "PC Center for the Arts",
+          "amount": 256460,
+          "page": 36
+        },
+        {
+          "id": "8110",
+          "name": "City Hall",
+          "amount": 552660,
+          "page": 37
+        },
+        {
+          "id": "8115",
+          "name": "Public Facilities",
+          "amount": 12500,
+          "page": 38
+        },
+        {
+          "id": "8120",
+          "name": "Elections",
+          "amount": 0,
+          "page": 39
+        },
+        {
+          "id": "8131",
+          "name": "Public Service",
+          "amount": 0,
+          "page": 40
+        },
+        {
+          "id": "8181",
+          "name": "Housing General Administration",
+          "amount": 182720,
+          "page": 41
+        },
+        {
+          "id": "8520",
+          "name": "Business Services",
+          "amount": 268143,
+          "page": 42
+        },
+        {
+          "id": "8751",
+          "name": "Performing Arts Center (CivicCtr)",
+          "amount": 460,
+          "page": 43
+        },
+        {
+          "id": "8752",
+          "name": "PCM Mall Area",
+          "amount": 1500,
+          "page": 44
+        },
+        {
+          "id": "8800",
+          "name": "Non-departmental Expenses",
+          "amount": 3871727,
+          "page": 45
+        }
+      ]
+    },
+    {
+      "id": "102",
+      "name": "Building Services",
+      "total": 900000,
+      "page": 46,
+      "accounts": [
+        {
+          "id": "1615",
+          "name": "Building Services",
+          "amount": 900000,
+          "page": 48
+        }
+      ]
+    },
+    {
+      "id": "105",
+      "name": "Infrastructure Surtax",
+      "total": 4828674,
+      "page": 49,
+      "accounts": [
+        {
+          "id": "4111",
+          "name": "Transportation - Cap. Improv.",
+          "amount": 4823674,
+          "page": 51
+        },
+        {
+          "id": "8800",
+          "name": "Non-departmental Expenses",
+          "amount": 5000,
+          "page": 52
+        }
+      ]
+    },
+    {
+      "id": "120",
+      "name": "St Andrews CRA",
+      "total": 5075284,
+      "page": 53,
+      "accounts": [
+        {
+          "id": "5512",
+          "name": "St Andrews CRA",
+          "amount": 4550284,
+          "page": 55
+        },
+        {
+          "id": "5580",
+          "name": "Debt Service",
+          "amount": 275000,
+          "page": 56
+        },
+        {
+          "id": "8800",
+          "name": "Non-departmental Expenses",
+          "amount": 250000,
+          "page": 57
+        }
+      ]
+    },
+    {
+      "id": "130",
+      "name": "Downtown CRA",
+      "total": 3326865,
+      "page": 58,
+      "accounts": [
+        {
+          "id": "5513",
+          "name": "Downtown CRA",
+          "amount": 3090865,
+          "page": 60
+        },
+        {
+          "id": "8800",
+          "name": "Non-departmental Expenses",
+          "amount": 236000,
+          "page": 61
+        }
+      ]
+    },
+    {
+      "id": "140",
+      "name": "Downtown North CRA",
+      "total": 1863496,
+      "page": 62,
+      "accounts": [
+        {
+          "id": "5514",
+          "name": "Downtown North CRA",
+          "amount": 1447555,
+          "page": 64
+        },
+        {
+          "id": "5901",
+          "name": "A.D. Harris Campus",
+          "amount": 115804,
+          "page": 65
+        },
+        {
+          "id": "8800",
+          "name": "Non-departmental Expenses",
+          "amount": 300137,
+          "page": 66
+        }
+      ]
+    },
+    {
+      "id": "150",
+      "name": "City SHIP",
+      "total": 773899,
+      "page": 67,
+      "accounts": [
+        {
+          "id": "5410",
+          "name": "City Ship Funds",
+          "amount": 655015,
+          "page": 69
+        },
+        {
+          "id": "5412",
+          "name": "Code Compliance",
+          "amount": 0,
+          "page": 70
+        },
+        {
+          "id": "5415",
+          "name": "NEIGHB STABIL PRGM CITY",
+          "amount": 82382,
+          "page": 71
+        },
+        {
+          "id": "5421",
+          "name": "City Ship - HHRP",
+          "amount": 0,
+          "page": 72
+        },
+        {
+          "id": "5426",
+          "name": "County NSP Properties",
+          "amount": 36502,
+          "page": 73
+        },
+        {
+          "id": "8800",
+          "name": "Non-departmental Expenses",
+          "amount": 0,
+          "page": 74
+        }
+      ]
+    },
+    {
+      "id": "180",
+      "name": "Millville CRA",
+      "total": 1288133,
+      "page": 75,
+      "accounts": [
+        {
+          "id": "5518",
+          "name": "Millville CRA",
+          "amount": 838133,
+          "page": 77
+        },
+        {
+          "id": "8800",
+          "name": "Non-departmental Expenses",
+          "amount": 450000,
+          "page": 78
+        }
+      ]
+    },
+    {
+      "id": "190",
+      "name": "Housing and Community Services",
+      "total": 1265839,
+      "page": 79,
+      "accounts": [
+        {
+          "id": "5418",
+          "name": "Paving in Low/Mod Income Areas",
+          "amount": 400000,
+          "page": 81
+        },
+        {
+          "id": "8115",
+          "name": "Public Facilities",
+          "amount": 400000,
+          "page": 82
+        },
+        {
+          "id": "8131",
+          "name": "Public Service",
+          "amount": 347591,
+          "page": 83
+        },
+        {
+          "id": "8146",
+          "name": "CDBG Housing Assistance",
+          "amount": 0,
+          "page": 84
+        },
+        {
+          "id": "8181",
+          "name": "Housing General Administration",
+          "amount": 108221,
+          "page": 85
+        },
+        {
+          "id": "8800",
+          "name": "Non-departmental Expenses",
+          "amount": 10027,
+          "page": 86
+        }
+      ]
+    },
+    {
+      "id": "212",
+      "name": "Capital improvements \u2014 2013B debt",
+      "total": 1052571,
+      "page": 87,
+      "accounts": [
+        {
+          "id": "fund",
+          "name": "Debt payments (fund-wide)",
+          "amount": 1052571,
+          "page": 87
+        }
+      ],
+      "fundOnly": true
+    },
+    {
+      "id": "215",
+      "name": "Capital improvements \u2014 2016 debt",
+      "total": 250757,
+      "page": 88,
+      "accounts": [
+        {
+          "id": "fund",
+          "name": "Debt payments (fund-wide)",
+          "amount": 250757,
+          "page": 88
+        }
+      ],
+      "fundOnly": true
+    },
+    {
+      "id": "216",
+      "name": "Capital improvements \u2014 2018 debt",
+      "total": 1419570,
+      "page": 89,
+      "accounts": [
+        {
+          "id": "fund",
+          "name": "Debt payments (fund-wide)",
+          "amount": 1419570,
+          "page": 89
+        }
+      ],
+      "fundOnly": true
+    },
+    {
+      "id": "217",
+      "name": "Infrastructure surtax \u2014 2018 debt",
+      "total": 2125619,
+      "page": 90,
+      "accounts": [
+        {
+          "id": "fund",
+          "name": "Debt payments (fund-wide)",
+          "amount": 2125619,
+          "page": 90
+        }
+      ],
+      "fundOnly": true
+    },
+    {
+      "id": "225",
+      "name": "Capital improvements \u2014 2023\u20132025 refunding debt",
+      "total": 3343500,
+      "page": 91,
+      "accounts": [
+        {
+          "id": "fund",
+          "name": "Debt payments (fund-wide)",
+          "amount": 3343500,
+          "page": 91
+        }
+      ],
+      "fundOnly": true
+    },
+    {
+      "id": "410",
+      "name": "Utilities",
+      "total": 34331292,
+      "page": 92,
+      "accounts": [
+        {
+          "id": "3610",
+          "name": "Utilities Administration",
+          "amount": 826041,
+          "page": 94
+        },
+        {
+          "id": "3620",
+          "name": "Billing and Customer Service",
+          "amount": 7071379,
+          "page": 95
+        },
+        {
+          "id": "3630",
+          "name": "Underground Utilities",
+          "amount": 7102399,
+          "page": 96
+        },
+        {
+          "id": "3640",
+          "name": "Lift Stations",
+          "amount": 4826355,
+          "page": 97
+        },
+        {
+          "id": "3650",
+          "name": "Wastewater Treatment Oper",
+          "amount": 1661549,
+          "page": 98
+        },
+        {
+          "id": "3651",
+          "name": "St Andrews WWTP",
+          "amount": 1901014,
+          "page": 99
+        },
+        {
+          "id": "3652",
+          "name": "Millville WWTP",
+          "amount": 1142436,
+          "page": 100
+        },
+        {
+          "id": "3653",
+          "name": "Laboratory",
+          "amount": 704020,
+          "page": 101
+        },
+        {
+          "id": "3680",
+          "name": "Debt Servie",
+          "amount": 5583632,
+          "page": 102
+        },
+        {
+          "id": "3720",
+          "name": "F.O.G.",
+          "amount": 297946,
+          "page": 103
+        },
+        {
+          "id": "8800",
+          "name": "Non-departmental Expenses",
+          "amount": 3214521,
+          "page": 104
+        }
+      ]
+    },
+    {
+      "id": "440",
+      "name": "Environmental Services",
+      "total": 12395862,
+      "page": 105,
+      "accounts": [
+        {
+          "id": "3410",
+          "name": "Environmental Services Admin",
+          "amount": 618545,
+          "page": 107
+        },
+        {
+          "id": "3420",
+          "name": "Residential Garbage",
+          "amount": 3282171,
+          "page": 108
+        },
+        {
+          "id": "3430",
+          "name": "Commercial Garbage",
+          "amount": 2616121,
+          "page": 109
+        },
+        {
+          "id": "3440",
+          "name": "Residential Trash",
+          "amount": 4038275,
+          "page": 110
+        },
+        {
+          "id": "3450",
+          "name": "CNG Station",
+          "amount": 280126,
+          "page": 111
+        },
+        {
+          "id": "3460",
+          "name": "Street Sweeping",
+          "amount": 197611,
+          "page": 112
+        },
+        {
+          "id": "8800",
+          "name": "Non-departmental Expenses",
+          "amount": 1363013,
+          "page": 113
+        }
+      ]
+    },
+    {
+      "id": "450",
+      "name": "Marina",
+      "total": 166640,
+      "page": 114,
+      "accounts": [
+        {
+          "id": "7500",
+          "name": "PC Marina",
+          "amount": 1140,
+          "page": 116
+        },
+        {
+          "id": "7600",
+          "name": "St Andrews Marina",
+          "amount": 0,
+          "page": 117
+        },
+        {
+          "id": "8800",
+          "name": "Non-departmental Expenses",
+          "amount": 165500,
+          "page": 118
+        }
+      ]
+    },
+    {
+      "id": "501",
+      "name": "Medical Self Insurance",
+      "total": 10624438,
+      "page": 119,
+      "accounts": [
+        {
+          "id": "fund",
+          "name": "Insurance costs (fund-wide)",
+          "amount": 10624438,
+          "page": 119
+        }
+      ],
+      "fundOnly": true
+    },
+    {
+      "id": "502",
+      "name": "Dental Insurance",
+      "total": 444535,
+      "page": 120,
+      "accounts": [
+        {
+          "id": "fund",
+          "name": "Insurance costs (fund-wide)",
+          "amount": 444535,
+          "page": 120
+        }
+      ],
+      "fundOnly": true
+    },
+    {
+      "id": "503",
+      "name": "Equipment Maintenance",
+      "total": 2192958,
+      "page": 121,
+      "accounts": [
+        {
+          "id": "8800",
+          "name": "Non-departmental Expenses",
+          "amount": 30507,
+          "page": 123
+        },
+        {
+          "id": "8930",
+          "name": "Equipment Maintenance",
+          "amount": 2162451,
+          "page": 124
+        }
+      ]
+    }
+  ]
+}

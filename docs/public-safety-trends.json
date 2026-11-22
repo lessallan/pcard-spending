@@ -1,0 +1,38 @@
+[
+  {
+    "year": 2021,
+    "population": 34698,
+    "pension": 4162922,
+    "cityPension": 3673936,
+    "pensionSource": "https://www.panamacity.gov/Archive/ViewFile/Item/1493#page=224",
+    "police": 12555821,
+    "fire": 9019934
+  },
+  {
+    "year": 2022,
+    "population": 36139,
+    "pension": 4796428,
+    "cityPension": 4153025,
+    "pensionSource": "https://www.panamacity.gov/Archive/ViewFile/Item/1521#page=224",
+    "police": 14946223,
+    "fire": 11151565
+  },
+  {
+    "year": 2023,
+    "population": 37526,
+    "pension": 5543657,
+    "cityPension": 4732145,
+    "pensionSource": "https://www.panamacity.gov/Archive/ViewFile/Item/1536#page=222",
+    "police": 19667909,
+    "fire": 14003997
+  },
+  {
+    "year": 2024,
+    "population": 37909,
+    "pension": 5607813,
+    "cityPension": 4643164,
+    "pensionSource": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=137",
+    "police": 19442916,
+    "fire": 16324128
+  }
+]

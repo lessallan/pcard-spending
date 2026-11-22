@@ -216,3 +216,20 @@
 # Simplified money guide.
 !/docs/money-guide.css
 !/docs/money-guide.js
+
+# Published department, revenue and inflation dashboard.
+!/docs/department-budget.json
+!/docs/department-explorer.css
+!/docs/department-explorer.js
+!/docs/finance-dashboard.json
+!/docs/cpi-benchmark.json
+!/docs/expense-dashboard.css
+!/docs/expense-dashboard.js
+!/docs/public-safety-preview.html
+!/docs/public-safety-preview.css
+!/docs/public-safety-preview.js
+!/docs/public-safety-preview.json
+!/docs/public-safety-trends.json
+!/docs/pension-contribution-history.csv
+!/tools/check-comparison-cards-20261122.cjs
+!/tools/check-history-2012-20261122.cjs

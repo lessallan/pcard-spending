@@ -1,0 +1,24 @@
+{
+  "series": "CUUR0000SA0",
+  "name": "U.S. city average CPI-U, all items, not seasonally adjusted",
+  "source": "https://www.bls.gov/regions/northeast/data/consumerpriceindex_us_table.htm",
+  "checked": "2026-11-22",
+  "period": "Calendar-year annual averages",
+  "values": {
+    "2012": 229.594,
+    "2013": 232.957,
+    "2014": 236.736,
+    "2015": 237.017,
+    "2016": 240.007,
+    "2017": 245.12,
+    "2018": 251.107,
+    "2019": 255.657,
+    "2020": 258.811,
+    "2021": 270.97,
+    "2022": 292.655,
+    "2023": 304.702,
+    "2024": 313.689,
+    "2025": 321.943
+  },
+  "note": "Calendar-year CPI is an approximate comparison with city fiscal-year spending. The 2025 published average excludes October, when CPI collection was unavailable. No full-year 2026 or 2027 CPI is used. CPI measures consumer prices, not the specific costs of city services; this benchmark does not adjust for population, staffing, service changes or one-time projects."
+}
