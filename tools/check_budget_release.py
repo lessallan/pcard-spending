@@ -30,7 +30,12 @@ def check_page(path, anchors=True):
         assert target.is_relative_to(DOCS.resolve()), f'Escaping public root: {value}'
         assert target.is_file(), f'Missing local target: {path}: {value}'
         if anchors and url.fragment:
-            assert unquote(url.fragment) in Page(target).ids, f'Missing anchor: {value}'
+            # The explorer renders these routes in JavaScript, not as HTML IDs.
+            if target == (DOCS / 'review/index.html').resolve():
+                route = url.fragment.split('?', 1)[0]
+                assert route in {'travel', 'radar', 'transactions'}, f'Unknown explorer route: {value}'
+            else:
+                assert unquote(url.fragment) in Page(target).ids, f'Missing anchor: {value}'
     return page
 
 def amount(text):
