@@ -233,3 +233,5 @@
 !/docs/pension-contribution-history.csv
 !/tools/check-comparison-cards-20261122.cjs
 !/tools/check-history-2012-20261122.cjs
+
+!/tools/check-chart-clipping.cjs
