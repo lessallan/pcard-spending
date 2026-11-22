@@ -3,11 +3,22 @@ from pathlib import Path
 import json
 import shutil
 import subprocess
+import argparse
+import sys
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / 'docs'
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--code-only', action='store_true', help='Rebuild explorer code while preserving all reviewed public data')
+args = parser.parse_args()
+OUT = ROOT / 'docs/review'
+if not args.code_only and not (ROOT / 'app/data.json').is_file():
+    sys.exit('Missing app/data.json; no files changed. For a code-only release, use --code-only.')
 OUT.mkdir(exist_ok=True)
 for name in ('index.html', 'style.css', 'app.js', 'assets.js', 'merchant-context.js', 'radar.js', 'penny-ping-logo.png', 'porchping-logo.svg'):
     shutil.copyfile(ROOT / 'app' / name, OUT / name)
+if args.code_only:
+    subprocess.run([sys.executable, 'tools/check_budget_release.py'], cwd=ROOT, check=True)
+    print('Built explorer code at /review/; budget pages and reviewed datasets preserved.')
+    sys.exit(0)
 private = json.loads((ROOT / 'app/data.json').read_text())
 leadership = json.loads((ROOT / 'app/leadership.json').read_text())
 fields = ('id', 'fy', 'date', 'post', 'merchant', 'raw', 'category', 'amount', 'allocations', 'source', 'sheet', 'rows', 'travel', 'mixed', 'historical')
@@ -40,8 +51,9 @@ policy = Path('policies/panama-city/purchasing-card-policy-2025-06-24.pdf')
 (OUT / policy).parent.mkdir(parents=True, exist_ok=True)
 shutil.copyfile(ROOT / policy, OUT / policy)
 (OUT / '.nojekyll').touch()
-# Preserve the existing retirement of review reports and the configured CNAME.
-for relative, target in [('review/index.html', '../'), ('review/reports/merchant-review.html', '../../')]:
+# Keep the explorer at /review/ and redirect only its retired report.
+# The hand-authored budget pages in docs/ and docs/budget/ are never overwritten.
+for relative, target in [('reports/merchant-review.html', '../')]:
     legacy = OUT / relative
     legacy.parent.mkdir(parents=True, exist_ok=True)
     legacy.write_text('<!doctype html><html lang="en"><meta charset="utf-8"><title>Penny Ping</title><meta http-equiv="refresh" content="0;url=' + target + '"><p><a href="' + target + '">Explore City spending</a></p></html>')

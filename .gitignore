@@ -207,3 +207,5 @@
 !/tools/dpc/check-shared.cjs
 
 !/tools/dpc/check-readonly.cjs
+
+!/tools/check_budget_release.py

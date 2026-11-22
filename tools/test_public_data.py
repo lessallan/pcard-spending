@@ -2,7 +2,7 @@
 import json
 from pathlib import Path
 root = Path(__file__).resolve().parents[1]
-public = json.loads((root / 'docs/data.json').read_text())
+public = json.loads((root / 'docs/review/data.json').read_text())
 private = json.loads((root / 'app/data.json').read_text())
 approved = json.loads((root / 'app/leadership.json').read_text())
 assert len(approved['profiles']) == len(public['staff']) == 24
@@ -40,8 +40,8 @@ for profile in public['staff']:
     photo = approved.get('photos', {}).get(profile['name'])
     if photo:
         assert profile['photo_file'] == 'photos/' + photo
-        assert (root/'docs/photos'/photo).read_bytes() == (root/'assets/leadership'/photo).read_bytes()
-assert {p.name for p in (root/'docs/photos').iterdir()} == set(approved['photos'].values())
+        assert (root/'docs/review/photos'/photo).read_bytes() == (root/'assets/leadership'/photo).read_bytes()
+assert {p.name for p in (root/'docs/review/photos').iterdir()} == set(approved['photos'].values())
 print('Passed: all selected portraits published and no extra photos included.')
 
 assert approved["cardholders"]["Jared Jones"] == "JONES, BEAU J"

@@ -11,5 +11,5 @@ for(const t of data.transactions){
 }
 const {applyNameReview}=require('./leadership-name-review.cjs');
 const reviewTransactions=data.transactions.map(t=>({...t,purchaseNotes:t.purchaseNotes||purchaseNotes(t.comments)}));
-fs.writeFileSync('docs/leadership-associations.json',JSON.stringify(applyNameReview({version:1,records},reviewTransactions)));
+fs.writeFileSync('docs/review/leadership-associations.json',JSON.stringify(applyNameReview({version:1,records},reviewTransactions)));
 console.log('Built leadership associations for '+Object.keys(records).length+' purchases.');
