@@ -1,0 +1,504 @@
+{
+  "410-3610": {
+    "text": "Management and support for the city’s water and sewer services.",
+    "sources": [
+      {
+        "title": "City adopted budget: Utilities Administration",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=94"
+      },
+      {
+        "title": "City Utilities Division",
+        "url": "https://panamacity.gov/141/Utilities-Division"
+      }
+    ]
+  },
+  "410-3620": {
+    "text": "Utility bills, payments, account questions, and starting or stopping service.",
+    "sources": [
+      {
+        "title": "City adopted budget: Billing and Customer Service",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=95"
+      },
+      {
+        "title": "City Utilities Division",
+        "url": "https://panamacity.gov/141/Utilities-Division"
+      }
+    ]
+  },
+  "410-3630": {
+    "text": "Maintains and repairs the underground pipes that carry drinking water and sewage.",
+    "sources": [
+      {
+        "title": "City adopted budget: Underground Utilities",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=96"
+      },
+      {
+        "title": "City Utilities Division",
+        "url": "https://panamacity.gov/141/Utilities-Division"
+      },
+      {
+        "title": "City Utility Operations",
+        "url": "https://www.panamacity.gov/847/Utility-Operations"
+      }
+    ]
+  },
+  "410-3640": {
+    "text": "Pumping stations that move sewage through the sewer system toward treatment.",
+    "sources": [
+      {
+        "title": "City adopted budget: Lift Stations",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=97"
+      },
+      {
+        "title": "City sewer lift-station improvements",
+        "url": "https://www.panamacity.gov/AgendaCenter/ViewFile/Item/10466?fileID=24248"
+      },
+      {
+        "title": "Official explanation of lift stations — Hillsborough County",
+        "url": "https://hcfl.gov/residents/property-owners-and-renters/water-and-sewer/lift-stations"
+      }
+    ]
+  },
+  "410-3650": {
+    "text": "Staff and operating support for the city’s wastewater treatment plants.",
+    "sources": [
+      {
+        "title": "City adopted budget: Wastewater Treatment Oper",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=98"
+      },
+      {
+        "title": "City Utilities Division",
+        "url": "https://panamacity.gov/141/Utilities-Division"
+      }
+    ]
+  },
+  "410-3651": {
+    "text": "Operating costs for the St. Andrews wastewater treatment plant; WWTP means wastewater treatment plant.",
+    "sources": [
+      {
+        "title": "City adopted budget: St Andrews WWTP",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=99"
+      },
+      {
+        "title": "City Utilities Division",
+        "url": "https://panamacity.gov/141/Utilities-Division"
+      }
+    ]
+  },
+  "410-3652": {
+    "text": "Operating costs for the Millville wastewater treatment plant; WWTP means wastewater treatment plant.",
+    "sources": [
+      {
+        "title": "City adopted budget: Millville WWTP",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=100"
+      },
+      {
+        "title": "City Utilities Division",
+        "url": "https://panamacity.gov/141/Utilities-Division"
+      }
+    ]
+  },
+  "410-3653": {
+    "text": "The environmental laboratory supporting the city’s water and wastewater services.",
+    "sources": [
+      {
+        "title": "City adopted budget: Laboratory",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=101"
+      },
+      {
+        "title": "City Utilities Division",
+        "url": "https://panamacity.gov/141/Utilities-Division"
+      }
+    ]
+  },
+  "410-3680": {
+    "text": "Loan interest, principal payments, and other financing costs for water and sewer infrastructure.",
+    "sources": [
+      {
+        "title": "City adopted budget: Debt Servie",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=102"
+      }
+    ]
+  },
+  "410-3720": {
+    "text": "The Fats, Oils and Grease program helps prevent clogged sewer pipes, pump failures, and sewage overflows.",
+    "sources": [
+      {
+        "title": "City adopted budget: F.O.G.",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=103"
+      },
+      {
+        "title": "City Environmental Compliance",
+        "url": "https://www.panamacity.gov/823/Environmental-Compliance-Division"
+      }
+    ]
+  },
+  "440-3410": {
+    "text": "Management and support for the city’s waste collection services.",
+    "sources": [
+      {
+        "title": "City adopted budget: Environmental Services Admin",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=107"
+      }
+    ]
+  },
+  "440-3420": {
+    "text": "Collection of household garbage, including the staff, vehicles, and equipment used for pickups.",
+    "sources": [
+      {
+        "title": "City adopted budget: Residential Garbage",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=108"
+      }
+    ]
+  },
+  "440-3430": {
+    "text": "Collection of business garbage, including the staff, vehicles, and equipment used for pickups.",
+    "sources": [
+      {
+        "title": "City adopted budget: Commercial Garbage",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=109"
+      }
+    ]
+  },
+  "440-3440": {
+    "text": "The city’s separate residential trash collection operation, with its own crews and equipment.",
+    "sources": [
+      {
+        "title": "City adopted budget: Residential Trash",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=110"
+      }
+    ]
+  },
+  "440-3450": {
+    "text": "Operation and upkeep of the compressed natural gas (CNG) fueling station.",
+    "sources": [
+      {
+        "title": "City adopted budget: CNG Station",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=111"
+      },
+      {
+        "title": "City CNG station project",
+        "url": "https://www.panamacity.gov/bids.aspx?bidID=79"
+      }
+    ]
+  },
+  "440-3460": {
+    "text": "Street-cleaning crews and equipment; this service moved to Environmental Services in 2027.",
+    "sources": [
+      {
+        "title": "City adopted budget: Street Sweeping",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=112"
+      },
+      {
+        "title": "City explanation of the fund move",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1582#page=89"
+      }
+    ]
+  },
+  "001-4140": {
+    "text": "Street-cleaning crews and equipment; this service moved to Environmental Services in 2027.",
+    "sources": [
+      {
+        "title": "City adopted budget: Street Sweeping",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=27"
+      },
+      {
+        "title": "City explanation of the fund move",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1582#page=89"
+      }
+    ]
+  },
+  "001-8800": {
+    "text": "Money moved from this fund to other city funds.",
+    "sources": [
+      {
+        "title": "City adopted budget: Non-departmental Expenses",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=45"
+      }
+    ]
+  },
+  "105-8800": {
+    "text": "Money moved from this fund to other city funds.",
+    "sources": [
+      {
+        "title": "City adopted budget: Non-departmental Expenses",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=52"
+      }
+    ]
+  },
+  "120-8800": {
+    "text": "Money moved from this fund to other city funds.",
+    "sources": [
+      {
+        "title": "City adopted budget: Non-departmental Expenses",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=57"
+      }
+    ]
+  },
+  "130-8800": {
+    "text": "Money moved from this fund to other city funds.",
+    "sources": [
+      {
+        "title": "City adopted budget: Non-departmental Expenses",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=61"
+      }
+    ]
+  },
+  "140-8800": {
+    "text": "Money moved from this fund to other city funds.",
+    "sources": [
+      {
+        "title": "City adopted budget: Non-departmental Expenses",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=66"
+      }
+    ]
+  },
+  "150-8800": {
+    "text": "Money moved from this fund to other city funds.",
+    "sources": [
+      {
+        "title": "City adopted budget: Non-departmental Expenses",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=74"
+      }
+    ]
+  },
+  "180-8800": {
+    "text": "Money moved from this fund to other city funds.",
+    "sources": [
+      {
+        "title": "City adopted budget: Non-departmental Expenses",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=78"
+      }
+    ]
+  },
+  "190-8800": {
+    "text": "Money moved from this fund to other city funds.",
+    "sources": [
+      {
+        "title": "City adopted budget: Non-departmental Expenses",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=86"
+      }
+    ]
+  },
+  "410-8800": {
+    "text": "Money moved from this fund to other city funds.",
+    "sources": [
+      {
+        "title": "City adopted budget: Non-departmental Expenses",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=104"
+      }
+    ]
+  },
+  "440-8800": {
+    "text": "Money moved from this fund to other city funds.",
+    "sources": [
+      {
+        "title": "City adopted budget: Non-departmental Expenses",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=113"
+      }
+    ]
+  },
+  "450-8800": {
+    "text": "Money moved from this fund to other city funds.",
+    "sources": [
+      {
+        "title": "City adopted budget: Non-departmental Expenses",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=118"
+      }
+    ]
+  },
+  "503-8800": {
+    "text": "Money moved from this fund to other city funds.",
+    "sources": [
+      {
+        "title": "City adopted budget: Non-departmental Expenses",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=123"
+      }
+    ]
+  },
+  "212-fund": {
+    "text": "Payments and financing costs for the city borrowing assigned to this fund.",
+    "sources": [
+      {
+        "title": "City adopted budget: Debt payments (fund-wide)",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=87"
+      }
+    ]
+  },
+  "215-fund": {
+    "text": "Payments and financing costs for the city borrowing assigned to this fund.",
+    "sources": [
+      {
+        "title": "City adopted budget: Debt payments (fund-wide)",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=88"
+      }
+    ]
+  },
+  "216-fund": {
+    "text": "Payments and financing costs for the city borrowing assigned to this fund.",
+    "sources": [
+      {
+        "title": "City adopted budget: Debt payments (fund-wide)",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=89"
+      }
+    ]
+  },
+  "217-fund": {
+    "text": "Payments and financing costs for the city borrowing assigned to this fund.",
+    "sources": [
+      {
+        "title": "City adopted budget: Debt payments (fund-wide)",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=90"
+      }
+    ]
+  },
+  "225-fund": {
+    "text": "Payments and financing costs for the city borrowing assigned to this fund.",
+    "sources": [
+      {
+        "title": "City adopted budget: Debt payments (fund-wide)",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=91"
+      }
+    ]
+  },
+  "120-5580": {
+    "text": "Payments and financing costs for the city borrowing assigned to this fund.",
+    "sources": [
+      {
+        "title": "City adopted budget: Debt Service",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=56"
+      }
+    ]
+  },
+  "501-fund": {
+    "text": "Costs of the city’s medical insurance plan.",
+    "sources": [
+      {
+        "title": "City adopted budget: Insurance costs (fund-wide)",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=119"
+      }
+    ]
+  },
+  "502-fund": {
+    "text": "Costs of the city’s dental insurance plan.",
+    "sources": [
+      {
+        "title": "City adopted budget: Insurance costs (fund-wide)",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=120"
+      }
+    ]
+  },
+  "503-8930": {
+    "text": "Repair and maintenance of city vehicles and equipment.",
+    "sources": [
+      {
+        "title": "City adopted budget: Equipment Maintenance",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=124"
+      }
+    ]
+  },
+  "120-5512": {
+    "text": "Community Redevelopment Agency (CRA) work to improve infrastructure and neighborhoods in St. Andrews.",
+    "sources": [
+      {
+        "title": "City adopted budget: St Andrews CRA",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=55"
+      },
+      {
+        "title": "City explanation of CRA districts",
+        "url": "https://www.panamacity.gov/854/About-CRA"
+      }
+    ]
+  },
+  "130-5513": {
+    "text": "Community Redevelopment Agency (CRA) work to improve infrastructure and neighborhoods in Downtown.",
+    "sources": [
+      {
+        "title": "City adopted budget: Downtown CRA",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=60"
+      },
+      {
+        "title": "City explanation of CRA districts",
+        "url": "https://www.panamacity.gov/854/About-CRA"
+      }
+    ]
+  },
+  "140-5514": {
+    "text": "Community Redevelopment Agency (CRA) work to improve infrastructure and neighborhoods in Downtown North.",
+    "sources": [
+      {
+        "title": "City adopted budget: Downtown North CRA",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=64"
+      },
+      {
+        "title": "City explanation of CRA districts",
+        "url": "https://www.panamacity.gov/854/About-CRA"
+      }
+    ]
+  },
+  "180-5518": {
+    "text": "Community Redevelopment Agency (CRA) work to improve infrastructure and neighborhoods in Millville.",
+    "sources": [
+      {
+        "title": "City adopted budget: Millville CRA",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=77"
+      },
+      {
+        "title": "City explanation of CRA districts",
+        "url": "https://www.panamacity.gov/854/About-CRA"
+      }
+    ]
+  },
+  "150-5410": {
+    "text": "State Housing Initiatives Partnership (SHIP) assistance for eligible residents’ housing needs.",
+    "sources": [
+      {
+        "title": "City adopted budget: City Ship Funds",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=69"
+      },
+      {
+        "title": "City housing assistance programs",
+        "url": "https://www.panamacity.gov/857/Housing-Assistance-Programs"
+      }
+    ]
+  },
+  "150-5415": {
+    "text": "Housing assistance and property costs assigned to the city Neighborhood Stabilization Program (NSP).",
+    "sources": [
+      {
+        "title": "City adopted budget: NEIGHB STABIL PRGM CITY",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=71"
+      },
+      {
+        "title": "City housing fund description",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1540#page=81"
+      }
+    ]
+  },
+  "150-5426": {
+    "text": "Housing assistance and property costs assigned to the county Neighborhood Stabilization Program (NSP).",
+    "sources": [
+      {
+        "title": "City adopted budget: County NSP Properties",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=73"
+      },
+      {
+        "title": "City housing fund description",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1540#page=81"
+      }
+    ]
+  },
+  "001-4150": {
+    "text": "A dedicated road-paving crew supported by the city’s redevelopment areas.",
+    "sources": [
+      {
+        "title": "City adopted budget: Paving Crew",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=28"
+      },
+      {
+        "title": "City explanation of the Paving Crew",
+        "url": "https://panamacity.gov/Archive/ViewFile/Item/1582#page=7"
+      }
+    ]
+  }
+}

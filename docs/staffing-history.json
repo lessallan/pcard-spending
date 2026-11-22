@@ -1,0 +1,1163 @@
+{
+  "history": [
+    {
+      "year": 2005,
+      "value": 544,
+      "basis": "Reported FTE",
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+    },
+    {
+      "year": 2006,
+      "value": 552,
+      "basis": "Reported FTE",
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+    },
+    {
+      "year": 2007,
+      "value": 539,
+      "basis": "Reported FTE",
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+    },
+    {
+      "year": 2008,
+      "value": 532,
+      "basis": "Reported FTE",
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+    },
+    {
+      "year": 2009,
+      "value": 525,
+      "basis": "Reported FTE",
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+    },
+    {
+      "year": 2010,
+      "value": 505,
+      "basis": "Reported FTE",
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+    },
+    {
+      "year": 2011,
+      "value": 506,
+      "basis": "Reported FTE",
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+    },
+    {
+      "year": 2012,
+      "value": 512,
+      "basis": "Reported FTE",
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+    },
+    {
+      "year": 2013,
+      "value": 508,
+      "basis": "Reported FTE",
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+    },
+    {
+      "year": 2014,
+      "value": 488,
+      "basis": "Reported FTE",
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+    },
+    {
+      "year": 2015,
+      "value": 495,
+      "basis": "Reported FTE",
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+    },
+    {
+      "year": 2016,
+      "value": 514,
+      "basis": "Reported FTE",
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+    },
+    {
+      "year": 2017,
+      "value": 529,
+      "basis": "Reported FTE",
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+    },
+    {
+      "year": 2018,
+      "value": 509,
+      "basis": "Reported FTE",
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+    },
+    {
+      "year": 2019,
+      "value": 566,
+      "basis": "Reported FTE",
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+    },
+    {
+      "year": 2020,
+      "value": 530,
+      "basis": "Reported FTE",
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+    },
+    {
+      "year": 2021,
+      "value": 546,
+      "basis": "Reported FTE",
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+    },
+    {
+      "year": 2022,
+      "value": 591,
+      "basis": "Reported FTE",
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+    },
+    {
+      "year": 2023,
+      "value": 606,
+      "basis": "Reported FTE",
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+    },
+    {
+      "year": 2024,
+      "value": 645,
+      "basis": "Reported FTE",
+      "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+    }
+  ],
+  "functions": [
+    {
+      "id": "0",
+      "name": "General government",
+      "points": [
+        {
+          "year": 2005,
+          "value": 71,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2006,
+          "value": 71,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2007,
+          "value": 70,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2008,
+          "value": 68,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2009,
+          "value": 69,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2010,
+          "value": 66,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2011,
+          "value": 66,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2012,
+          "value": 65,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2013,
+          "value": 67,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2014,
+          "value": 67,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2015,
+          "value": 71,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2016,
+          "value": 82,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2017,
+          "value": 74,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2018,
+          "value": 69,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2019,
+          "value": 69,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2020,
+          "value": 87,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2021,
+          "value": 92,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2022,
+          "value": 111,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2023,
+          "value": 116,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2024,
+          "value": 123,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "name": "Public safety",
+      "points": [
+        {
+          "year": 2005,
+          "value": 227,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2006,
+          "value": 227,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2007,
+          "value": 223,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2008,
+          "value": 223,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2009,
+          "value": 221,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2010,
+          "value": 219,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2011,
+          "value": 220,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2012,
+          "value": 220,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2013,
+          "value": 220,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2014,
+          "value": 213,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2015,
+          "value": 216,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2016,
+          "value": 224,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2017,
+          "value": 243,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2018,
+          "value": 233,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2019,
+          "value": 257,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2020,
+          "value": 226,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2021,
+          "value": 229,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2022,
+          "value": 239,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2023,
+          "value": 235,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2024,
+          "value": 247,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Transportation",
+      "points": [
+        {
+          "year": 2005,
+          "value": 63,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2006,
+          "value": 63,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2007,
+          "value": 61,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2008,
+          "value": 61,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2009,
+          "value": 61,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2010,
+          "value": 50,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2011,
+          "value": 50,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2012,
+          "value": 50,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2013,
+          "value": 50,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2014,
+          "value": 39,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2015,
+          "value": 36,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2016,
+          "value": 40,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2017,
+          "value": 43,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2018,
+          "value": 35,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2019,
+          "value": 46,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2020,
+          "value": 37,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2021,
+          "value": 36,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2022,
+          "value": 36,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2023,
+          "value": 38,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2024,
+          "value": 44,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Culture & recreation",
+      "points": [
+        {
+          "year": 2005,
+          "value": 35,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2006,
+          "value": 35,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2007,
+          "value": 30,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2008,
+          "value": 28,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2009,
+          "value": 27,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2010,
+          "value": 25,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2011,
+          "value": 25,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2012,
+          "value": 28,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2013,
+          "value": 25,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2014,
+          "value": 24,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2015,
+          "value": 24,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2016,
+          "value": 22,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2017,
+          "value": 24,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2018,
+          "value": 25,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2019,
+          "value": 30,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2020,
+          "value": 24,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2021,
+          "value": 25,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2022,
+          "value": 25,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2023,
+          "value": 32,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2024,
+          "value": 40,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Economic environment",
+      "points": [
+        {
+          "year": 2005,
+          "value": 8,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2006,
+          "value": 10,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2007,
+          "value": 10,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2008,
+          "value": 8,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2009,
+          "value": 7,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2010,
+          "value": 5,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2011,
+          "value": 5,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2012,
+          "value": 8,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2013,
+          "value": 7,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2014,
+          "value": 14,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2015,
+          "value": 13,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2016,
+          "value": 14,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2017,
+          "value": 14,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2018,
+          "value": 12,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2019,
+          "value": 15,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2020,
+          "value": 16,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2021,
+          "value": 22,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2022,
+          "value": 22,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2023,
+          "value": 20,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2024,
+          "value": 21,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Utilities",
+      "points": [
+        {
+          "year": 2005,
+          "value": 88,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2006,
+          "value": 93,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2007,
+          "value": 93,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2008,
+          "value": 93,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2009,
+          "value": 92,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2010,
+          "value": 92,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2011,
+          "value": 92,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2012,
+          "value": 93,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2013,
+          "value": 91,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2014,
+          "value": 79,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2015,
+          "value": 83,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2016,
+          "value": 79,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2017,
+          "value": 77,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2018,
+          "value": 82,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2019,
+          "value": 90,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2020,
+          "value": 92,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2021,
+          "value": 93,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2022,
+          "value": 105,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2023,
+          "value": 110,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2024,
+          "value": 112,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Environmental services",
+      "points": [
+        {
+          "year": 2005,
+          "value": 42,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2006,
+          "value": 42,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2007,
+          "value": 42,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2008,
+          "value": 42,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2009,
+          "value": 39,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2010,
+          "value": 39,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2011,
+          "value": 39,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2012,
+          "value": 39,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2013,
+          "value": 39,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2014,
+          "value": 39,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2015,
+          "value": 39,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2016,
+          "value": 39,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2017,
+          "value": 40,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2018,
+          "value": 39,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2019,
+          "value": 44,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2020,
+          "value": 41,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2021,
+          "value": 42,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2022,
+          "value": 46,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2023,
+          "value": 48,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2024,
+          "value": 49,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Marinas",
+      "points": [
+        {
+          "year": 2005,
+          "value": 10,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2006,
+          "value": 11,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2007,
+          "value": 10,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2008,
+          "value": 9,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2009,
+          "value": 9,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2010,
+          "value": 9,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2011,
+          "value": 9,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2012,
+          "value": 9,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2013,
+          "value": 9,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2014,
+          "value": 13,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/165#page=191"
+        },
+        {
+          "year": 2015,
+          "value": 13,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2016,
+          "value": 14,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2017,
+          "value": 14,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2018,
+          "value": 14,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2019,
+          "value": 15,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2020,
+          "value": 7,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2021,
+          "value": 7,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2022,
+          "value": 7,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2023,
+          "value": 7,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        },
+        {
+          "year": 2024,
+          "value": 9,
+          "basis": "Reported FTE",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1550#page=242"
+        }
+      ]
+    }
+  ],
+  "budget": [
+    {
+      "year": 2024,
+      "value": 625.0,
+      "basis": "Budget schedule positions",
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=125"
+    },
+    {
+      "year": 2025,
+      "value": 640.0,
+      "basis": "Budget schedule positions",
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=125"
+    },
+    {
+      "year": 2026,
+      "value": 640.0,
+      "basis": "Budget schedule positions",
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=125"
+    },
+    {
+      "year": 2027,
+      "value": 615.0,
+      "basis": "Budget schedule positions",
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=125"
+    }
+  ],
+  "note": "Annual-report figures are budget-based full-time equivalents (FTE), not verified employees on payroll. The statistical tables are unaudited. Functions can change as jobs move between departments. Environmental services was called Solid waste in the older report.",
+  "budgetNote": "Calculated by adding all 41 personnel-schedule totals (pages 125\u2013165) in the FY2027 adopted budget. Includes fractional position allocations and elected positions. These are positions listed in the budget, not a count of filled jobs.",
+  "difference": "2024 counts differ: 645 in the annual report, 625 in the budget schedules. The 20-position difference is unresolved; the two series are kept separate."
+}
