@@ -12,3 +12,7 @@ h1,h2,h3,h4,p,figure,dl{margin:0}h1,h2,h3,h4{line-height:1.25;text-wrap:balance;
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
 .money{display:inline-block;white-space:nowrap;overflow-wrap:normal;word-break:normal}
+
+.money-options{margin:40px 0 28px}
+
+.budget-numbers dd>.money{font-size:inherit;font-weight:inherit}
