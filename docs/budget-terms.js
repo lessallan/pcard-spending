@@ -775,7 +775,7 @@
   entries.forEach((entry, index) => entry.terms.forEach(term => aliases.set(term.toLowerCase(), index)));
   const escape = value => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   const pattern = new RegExp('(?<![\\p{L}\\p{N}])(' + [...aliases.keys()].sort((a, b) => b.length - a.length).map(escape).join('|') + ')(?![\\p{L}\\p{N}])', 'giu');
-  const excluded = '.finance-card-title,.finance-add-card,a,button,input,select,textarea,label,form,nav,summary,script,style,#budget-words,.expense-terms,.expense-definition,.funding-definition,[data-budget-term],[aria-hidden="true"],option,[contenteditable],dialog,[role="button"],[data-detail],[data-vendor],[data-receipt]';
+  const excluded = '.finance-group-heading,.expense-dashboard-card,.finance-chart-tooltip,.finance-card-title,.finance-add-card,a,button,input,select,textarea,label,form,nav,summary,script,style,#budget-words,.expense-terms,.expense-definition,.funding-definition,[data-budget-term],[aria-hidden="true"],option,[contenteditable],dialog,[role="button"],[data-detail],[data-vendor],[data-receipt]';
   function annotate(root) {
     const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
       acceptNode(node) {
