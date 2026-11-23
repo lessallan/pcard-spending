@@ -12,13 +12,13 @@ const assert=require('node:assert/strict'),data=require('../docs/department-comp
    const panel=p.locator(`[data-comparison-id="${id}"] .finance-compensation`),expected=data.departments[key];
    assert.equal(await panel.getAttribute('data-compensation-department'),key);
    await panel.evaluate(e=>e.open=true);
-   assert((await panel.innerText()).includes(`${expected.people} people listed`));
+   assert((await panel.innerText()).includes(`${expected.people} people listed`));assert.equal(await panel.locator('details').count(),0);assert.equal(await panel.locator('.finance-compensation-allowance').count(),expected.allowances?1:0);const ordered=await panel.locator('li[data-annual-max-cents]').evaluateAll(es=>es.map(e=>+e.dataset.annualMaxCents));assert.deepEqual(ordered,[...ordered].sort((a,b)=>b-a));
    assert.equal(await panel.locator('.finance-compensation-role-list>li').count(),expected.roles.length);
-   const total=await panel.locator('.finance-compensation-metrics').first().innerText();
-   if(expected.annualPayCents===null)assert(total.includes('Needs confirmation'));
+   const total=await panel.locator('.finance-pay-total').innerText();
+   if(expected.annualPayCents===null)assert(total.includes('Annual total under review'));
    else assert(total.includes(new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(expected.annualPayCents/100)));
-   if(expected.allowances){const amount=new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',minimumFractionDigits:2}).format(expected.allowances.grossCents/100);assert((await panel.locator('.finance-compensation-allowance').innerText()).includes(amount));}
-   if(expected.sharedScope)assert((await panel.innerText()).includes('not separate amounts to add together'));
+   if(expected.allowances){const amount=new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(expected.allowances.grossCents/100);assert((await panel.locator('.finance-compensation-allowance').innerText()).includes(amount));}
+   if(expected.sharedScope)assert((await panel.innerText()).includes('fund split is unavailable'));
   }
   await p.locator('.finance-compensation details').evaluateAll(es=>es.forEach(e=>e.open=true));
   for(const width of [320,390,768,1280]){await p.setViewportSize({width,height:1000});assert(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));assert.equal(await p.locator('.finance-compensation').evaluateAll(es=>es.filter(e=>e.clientWidth&&e.scrollWidth>e.clientWidth+1).length),0);}
