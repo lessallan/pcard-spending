@@ -1,0 +1,4479 @@
+{
+  "asOf": "2026-11-23",
+  "allowancePeriod": {
+    "start": "2025-10-01",
+    "end": "2026-10-26",
+    "dateBasis": "Work Date"
+  },
+  "sources": {
+    "salary": {
+      "filename": "Employee Pay Rate Report as of 11-23-2026.xlsx",
+      "sheet": "Worksheet1",
+      "providedBy": "City Clerk-Treasurer, forwarded from Payroll",
+      "received": "2026-11-23",
+      "sha256": "b15833f13d1f437b04bac87a253c440377106e291f21cdea288e1a913d813098"
+    },
+    "allowances": {
+      "filename": "Car Allowance Report 10.01.25 to 10.26.26.pdf",
+      "providedBy": "City Clerk-Treasurer",
+      "received": "2026-11-22",
+      "pages": 3,
+      "runDate": "2026-10-26",
+      "method": "All three scanned pages visually transcribed; every department subtotal and grand total reconciled."
+    }
+  },
+  "notes": {
+    "salary": "Source Annual column, as reported; current pay rates, not payroll paid or total compensation. No extra hours or benefits have been assumed.",
+    "scope": "Payroll department totals, not a fund allocation. These figures are not added to the spending totals.",
+    "allowances": "Gross amounts in the supplied car-allowance report, grouped by primary department and work date. This period is longer than a fiscal year. It is not a payment-by-payment register.",
+    "periodResolution": "The PDF header on all three pages says Work Date 10/01/25\u201310/26/26, superseding the shorter period described in the email.",
+    "coverage": "A department absent from the allowance report has no listed entries; this does not establish that no vehicle-related costs were incurred."
+  },
+  "departments": {
+    "1100": {
+      "sourceDepartments": [
+        "1100 - City Commission",
+        "1101 - CC - Sr. Staff Asst."
+      ],
+      "accountIds": [
+        "001-1100"
+      ],
+      "people": 6,
+      "annualPayCents": 25469700,
+      "salarySourceRows": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "roles": [
+        {
+          "title": "Commissioner",
+          "people": 4,
+          "hourlyMin": 16.552096153846154,
+          "hourlyMax": 18.08267307692308,
+          "annualMinCents": 3442836,
+          "annualMaxCents": 3761196,
+          "sourceRows": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Executive Assistant",
+          "people": 1,
+          "hourlyMin": 35.28,
+          "hourlyMax": 35.28,
+          "annualMinCents": 7338240,
+          "annualMaxCents": 7338240,
+          "sourceRows": [
+            7
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Mayor",
+          "people": 1,
+          "hourlyMin": 17.41748076923077,
+          "hourlyMax": 17.41748076923077,
+          "annualMinCents": 3622836,
+          "annualMaxCents": 3622836,
+          "sourceRows": [
+            2
+          ],
+          "needsReview": false
+        }
+      ],
+      "annualPayStatus": "source-reported",
+      "allowances": {
+        "grossCents": 3000000,
+        "recipients": 5,
+        "pages": [
+          1
+        ]
+      }
+    },
+    "1200": {
+      "sourceDepartments": [
+        "1200 - City Manager"
+      ],
+      "accountIds": [
+        "001-1200"
+      ],
+      "people": 7,
+      "annualPayCents": 73769280,
+      "salarySourceRows": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "roles": [
+        {
+          "title": "Assistant City Manager",
+          "people": 2,
+          "hourlyMin": 72.01,
+          "hourlyMax": 79.1,
+          "annualMinCents": 14978080,
+          "annualMaxCents": 16452800,
+          "sourceRows": [
+            9,
+            14
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Budget Manager",
+          "people": 1,
+          "hourlyMin": 33.83,
+          "hourlyMax": 33.83,
+          "annualMinCents": 7036640,
+          "annualMaxCents": 7036640,
+          "sourceRows": [
+            11
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "City Manager",
+          "people": 1,
+          "hourlyMin": 91.04,
+          "hourlyMax": 91.04,
+          "annualMinCents": 18936320,
+          "annualMaxCents": 18936320,
+          "sourceRows": [
+            8
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Media Specialist",
+          "people": 1,
+          "hourlyMin": 22.21,
+          "hourlyMax": 22.21,
+          "annualMinCents": 4619680,
+          "annualMaxCents": 4619680,
+          "sourceRows": [
+            12
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Public Affairs Manager",
+          "people": 1,
+          "hourlyMin": 33.83,
+          "hourlyMax": 33.83,
+          "annualMinCents": 7036640,
+          "annualMaxCents": 7036640,
+          "sourceRows": [
+            10
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Public Affairs Specialist",
+          "people": 1,
+          "hourlyMin": 22.64,
+          "hourlyMax": 22.64,
+          "annualMinCents": 4709120,
+          "annualMaxCents": 4709120,
+          "sourceRows": [
+            13
+          ],
+          "needsReview": false
+        }
+      ],
+      "annualPayStatus": "source-reported",
+      "allowances": {
+        "grossCents": 2670000,
+        "recipients": 6,
+        "pages": [
+          1
+        ]
+      }
+    },
+    "1310": {
+      "sourceDepartments": [
+        "1310 - City Clerk-Treasurer",
+        "1311 - Acct/Payroll"
+      ],
+      "accountIds": [
+        "001-1310"
+      ],
+      "people": 11,
+      "annualPayCents": 75068011,
+      "salarySourceRows": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "roles": [
+        {
+          "title": "Accountant I",
+          "people": 2,
+          "hourlyMin": 26.67,
+          "hourlyMax": 29.56,
+          "annualMinCents": 5547360,
+          "annualMaxCents": 6148480,
+          "sourceRows": [
+            20,
+            23
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Accounting Analyst",
+          "people": 1,
+          "hourlyMin": 19.94,
+          "hourlyMax": 19.94,
+          "annualMinCents": 4147520,
+          "annualMaxCents": 4147520,
+          "sourceRows": [
+            22
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Accounting Clerk",
+          "people": 2,
+          "hourlyMin": 18.61,
+          "hourlyMax": 23.58,
+          "annualMinCents": 3870880,
+          "annualMaxCents": 4904640,
+          "sourceRows": [
+            18,
+            25
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Chief Accountant",
+          "people": 1,
+          "hourlyMin": 36.93,
+          "hourlyMax": 36.93,
+          "annualMinCents": 7681440,
+          "annualMaxCents": 7681440,
+          "sourceRows": [
+            21
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "City Clerk - Treasurer",
+          "people": 1,
+          "hourlyMin": 64.9039,
+          "hourlyMax": 64.9039,
+          "annualMinCents": 13500011,
+          "annualMaxCents": 13500011,
+          "sourceRows": [
+            16
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Deputy City Clerk",
+          "people": 1,
+          "hourlyMin": 32.29,
+          "hourlyMax": 32.29,
+          "annualMinCents": 6716320,
+          "annualMaxCents": 6716320,
+          "sourceRows": [
+            15
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Deputy City Treasr/Mgr Acct Srv",
+          "people": 1,
+          "hourlyMin": 49.14,
+          "hourlyMax": 49.14,
+          "annualMinCents": 10221120,
+          "annualMaxCents": 10221120,
+          "sourceRows": [
+            17
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Payroll Coordinator",
+          "people": 1,
+          "hourlyMin": 26.38,
+          "hourlyMax": 26.38,
+          "annualMinCents": 5487040,
+          "annualMaxCents": 5487040,
+          "sourceRows": [
+            19
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Senior Accountant",
+          "people": 1,
+          "hourlyMin": 32.9,
+          "hourlyMax": 32.9,
+          "annualMinCents": 6843200,
+          "annualMaxCents": 6843200,
+          "sourceRows": [
+            24
+          ],
+          "needsReview": false
+        }
+      ],
+      "annualPayStatus": "source-reported",
+      "allowances": {
+        "grossCents": 50000,
+        "recipients": 1,
+        "pages": [
+          1
+        ]
+      }
+    },
+    "1330": {
+      "sourceDepartments": [
+        "1330 - Purchasing"
+      ],
+      "accountIds": [
+        "001-1330"
+      ],
+      "people": 9,
+      "annualPayCents": 41639520,
+      "salarySourceRows": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "roles": [
+        {
+          "title": "Bid/Acquisition Specialist",
+          "people": 1,
+          "hourlyMin": 27.84,
+          "hourlyMax": 27.84,
+          "annualMinCents": 5790720,
+          "annualMaxCents": 5790720,
+          "sourceRows": [
+            32
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Contracts Administrator",
+          "people": 1,
+          "hourlyMin": 22.21,
+          "hourlyMax": 22.21,
+          "annualMinCents": 4619680,
+          "annualMaxCents": 4619680,
+          "sourceRows": [
+            30
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Logistics/Purchasing Manager",
+          "people": 1,
+          "hourlyMin": 31.01,
+          "hourlyMax": 31.01,
+          "annualMinCents": 6450080,
+          "annualMaxCents": 6450080,
+          "sourceRows": [
+            29
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Purchasing/Asset Control Spec",
+          "people": 1,
+          "hourlyMin": 20.34,
+          "hourlyMax": 20.34,
+          "annualMinCents": 4230720,
+          "annualMaxCents": 4230720,
+          "sourceRows": [
+            28
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Warehouse Foreman",
+          "people": 1,
+          "hourlyMin": 23.79,
+          "hourlyMax": 23.79,
+          "annualMinCents": 4948320,
+          "annualMaxCents": 4948320,
+          "sourceRows": [
+            26
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Warehouse Operations Specialist",
+          "people": 4,
+          "hourlyMin": 16.55,
+          "hourlyMax": 20.65,
+          "annualMinCents": 3442400,
+          "annualMaxCents": 4295200,
+          "sourceRows": [
+            27,
+            31,
+            33,
+            34
+          ],
+          "needsReview": false
+        }
+      ],
+      "annualPayStatus": "source-reported",
+      "allowances": null
+    },
+    "1340": {
+      "sourceDepartments": [
+        "1340 - HR"
+      ],
+      "accountIds": [
+        "001-1340"
+      ],
+      "people": 6,
+      "annualPayCents": 41204800,
+      "salarySourceRows": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "roles": [
+        {
+          "title": "Asst. HR Director",
+          "people": 1,
+          "hourlyMin": 47.7,
+          "hourlyMax": 47.7,
+          "annualMinCents": 9921600,
+          "annualMaxCents": 9921600,
+          "sourceRows": [
+            40
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Benefits Administrator",
+          "people": 1,
+          "hourlyMin": 24.02,
+          "hourlyMax": 24.02,
+          "annualMinCents": 4996160,
+          "annualMaxCents": 4996160,
+          "sourceRows": [
+            35
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Director HR & Risk Management",
+          "people": 1,
+          "hourlyMin": 56.77,
+          "hourlyMax": 56.77,
+          "annualMinCents": 11808160,
+          "annualMaxCents": 11808160,
+          "sourceRows": [
+            37
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "HR Recruiter/Training Specialist",
+          "people": 1,
+          "hourlyMin": 20.54,
+          "hourlyMax": 20.54,
+          "annualMinCents": 4272320,
+          "annualMaxCents": 4272320,
+          "sourceRows": [
+            36
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Human Resources Admin Tech",
+          "people": 1,
+          "hourlyMin": 22.02,
+          "hourlyMax": 22.02,
+          "annualMinCents": 4580160,
+          "annualMaxCents": 4580160,
+          "sourceRows": [
+            38
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Risk Manager",
+          "people": 1,
+          "hourlyMin": 27.05,
+          "hourlyMax": 27.05,
+          "annualMinCents": 5626400,
+          "annualMaxCents": 5626400,
+          "sourceRows": [
+            39
+          ],
+          "needsReview": false
+        }
+      ],
+      "annualPayStatus": "source-reported",
+      "allowances": {
+        "grossCents": 780000,
+        "recipients": 2,
+        "pages": [
+          1
+        ]
+      }
+    },
+    "1350": {
+      "sourceDepartments": [
+        "1350 - Information Technology"
+      ],
+      "accountIds": [
+        "001-1350"
+      ],
+      "people": 6,
+      "annualPayCents": 45142240,
+      "salarySourceRows": [
+        41,
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "roles": [
+        {
+          "title": "Digital Compliance Specialist",
+          "people": 1,
+          "hourlyMin": 28.11,
+          "hourlyMax": 28.11,
+          "annualMinCents": 5846880,
+          "annualMaxCents": 5846880,
+          "sourceRows": [
+            45
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Info Technology Technician",
+          "people": 2,
+          "hourlyMin": 29.83,
+          "hourlyMax": 29.83,
+          "annualMinCents": 6204640,
+          "annualMaxCents": 6204640,
+          "sourceRows": [
+            41,
+            46
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Programmer",
+          "people": 1,
+          "hourlyMin": 41.78,
+          "hourlyMax": 41.78,
+          "annualMinCents": 8690240,
+          "annualMaxCents": 8690240,
+          "sourceRows": [
+            42
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Senior Network Administrator",
+          "people": 1,
+          "hourlyMin": 44.1,
+          "hourlyMax": 44.1,
+          "annualMinCents": 9172800,
+          "annualMaxCents": 9172800,
+          "sourceRows": [
+            44
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Sr Mgr of Information Technology",
+          "people": 1,
+          "hourlyMin": 43.38,
+          "hourlyMax": 43.38,
+          "annualMinCents": 9023040,
+          "annualMaxCents": 9023040,
+          "sourceRows": [
+            43
+          ],
+          "needsReview": false
+        }
+      ],
+      "annualPayStatus": "source-reported",
+      "allowances": {
+        "grossCents": 390000,
+        "recipients": 1,
+        "pages": [
+          1
+        ]
+      }
+    },
+    "1360": {
+      "sourceDepartments": [
+        "1360 - Logistics"
+      ],
+      "accountIds": [
+        "001-1360"
+      ],
+      "people": 2,
+      "annualPayCents": 17603040,
+      "salarySourceRows": [
+        47,
+        48
+      ],
+      "roles": [
+        {
+          "title": "Logistics Director",
+          "people": 1,
+          "hourlyMin": 56.77,
+          "hourlyMax": 56.77,
+          "annualMinCents": 11808160,
+          "annualMaxCents": 11808160,
+          "sourceRows": [
+            48
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Risk Mgr-Property/Vehicle Liab",
+          "people": 1,
+          "hourlyMin": 27.86,
+          "hourlyMax": 27.86,
+          "annualMinCents": 5794880,
+          "annualMaxCents": 5794880,
+          "sourceRows": [
+            47
+          ],
+          "needsReview": false
+        }
+      ],
+      "annualPayStatus": "source-reported",
+      "allowances": {
+        "grossCents": 360000,
+        "recipients": 1,
+        "pages": [
+          1
+        ]
+      }
+    },
+    "1610": {
+      "sourceDepartments": [
+        "1610 - Development Services"
+      ],
+      "accountIds": [
+        "001-1610"
+      ],
+      "people": 12,
+      "annualPayCents": 73320000,
+      "salarySourceRows": [
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60
+      ],
+      "roles": [
+        {
+          "title": "Administrative Assistant",
+          "people": 2,
+          "hourlyMin": 19.18,
+          "hourlyMax": 19.76,
+          "annualMinCents": 3989440,
+          "annualMaxCents": 4110080,
+          "sourceRows": [
+            56,
+            60
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Code Compliance Inspector",
+          "people": 3,
+          "hourlyMin": 20.13,
+          "hourlyMax": 27.05,
+          "annualMinCents": 4187040,
+          "annualMaxCents": 5626400,
+          "sourceRows": [
+            55,
+            57,
+            59
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Director Development Services",
+          "people": 1,
+          "hourlyMin": 59.07,
+          "hourlyMax": 59.07,
+          "annualMinCents": 12286560,
+          "annualMaxCents": 12286560,
+          "sourceRows": [
+            52
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Disaster Recovery Project Mgr",
+          "people": 1,
+          "hourlyMin": 42.81,
+          "hourlyMax": 42.81,
+          "annualMinCents": 8904480,
+          "annualMaxCents": 8904480,
+          "sourceRows": [
+            49
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Planning Manager",
+          "people": 1,
+          "hourlyMin": 46.02,
+          "hourlyMax": 46.02,
+          "annualMinCents": 9572160,
+          "annualMaxCents": 9572160,
+          "sourceRows": [
+            53
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Planning Technician I",
+          "people": 1,
+          "hourlyMin": 18.44,
+          "hourlyMax": 18.44,
+          "annualMinCents": 3835520,
+          "annualMaxCents": 3835520,
+          "sourceRows": [
+            54
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Planning Technician II",
+          "people": 1,
+          "hourlyMin": 20.34,
+          "hourlyMax": 20.34,
+          "annualMinCents": 4230720,
+          "annualMaxCents": 4230720,
+          "sourceRows": [
+            51
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Senior Code Compliance Inspector",
+          "people": 1,
+          "hourlyMin": 25.48,
+          "hourlyMax": 25.48,
+          "annualMinCents": 5299840,
+          "annualMaxCents": 5299840,
+          "sourceRows": [
+            50
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Senior Planner",
+          "people": 1,
+          "hourlyMin": 32.87,
+          "hourlyMax": 32.87,
+          "annualMinCents": 6836960,
+          "annualMaxCents": 6836960,
+          "sourceRows": [
+            58
+          ],
+          "needsReview": false
+        }
+      ],
+      "annualPayStatus": "source-reported",
+      "allowances": {
+        "grossCents": 360000,
+        "recipients": 1,
+        "pages": [
+          2
+        ]
+      }
+    },
+    "1615": {
+      "sourceDepartments": [
+        "1615 - Building Services"
+      ],
+      "accountIds": [
+        "001-1615",
+        "102-1615"
+      ],
+      "people": 6,
+      "annualPayCents": 30985760,
+      "salarySourceRows": [
+        61,
+        62,
+        63,
+        64,
+        65,
+        66
+      ],
+      "roles": [
+        {
+          "title": "Administrative Assistant",
+          "people": 1,
+          "hourlyMin": 18.62,
+          "hourlyMax": 18.62,
+          "annualMinCents": 3872960,
+          "annualMaxCents": 3872960,
+          "sourceRows": [
+            62
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Building Services Permit Tech II",
+          "people": 2,
+          "hourlyMin": 18.61,
+          "hourlyMax": 18.62,
+          "annualMinCents": 3870880,
+          "annualMaxCents": 3872960,
+          "sourceRows": [
+            63,
+            65
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Chief Building Official",
+          "people": 1,
+          "hourlyMin": 50.61,
+          "hourlyMax": 50.61,
+          "annualMinCents": 10526880,
+          "annualMaxCents": 10526880,
+          "sourceRows": [
+            66
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Property Inspector",
+          "people": 2,
+          "hourlyMin": 20.94,
+          "hourlyMax": 21.57,
+          "annualMinCents": 4355520,
+          "annualMaxCents": 4486560,
+          "sourceRows": [
+            61,
+            64
+          ],
+          "needsReview": false
+        }
+      ],
+      "annualPayStatus": "source-reported",
+      "allowances": {
+        "grossCents": 120000,
+        "recipients": 1,
+        "pages": [
+          2
+        ]
+      },
+      "sharedScope": "The same payroll department appears in multiple fund cards. These are the same department-wide figures, not separate amounts to add together; the reports do not provide a fund split."
+    },
+    "1620": {
+      "sourceDepartments": [
+        "1620 - Engineering"
+      ],
+      "accountIds": [
+        "001-1620"
+      ],
+      "people": 13,
+      "annualPayCents": 85146880,
+      "salarySourceRows": [
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79
+      ],
+      "roles": [
+        {
+          "title": "Asst PW Director/City Engineer",
+          "people": 1,
+          "hourlyMin": 49.13,
+          "hourlyMax": 49.13,
+          "annualMinCents": 10219040,
+          "annualMaxCents": 10219040,
+          "sourceRows": [
+            72
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "CADD Technician",
+          "people": 1,
+          "hourlyMin": 24.74,
+          "hourlyMax": 24.74,
+          "annualMinCents": 5145920,
+          "annualMaxCents": 5145920,
+          "sourceRows": [
+            70
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "City Surveyor",
+          "people": 1,
+          "hourlyMin": 32.9,
+          "hourlyMax": 32.9,
+          "annualMinCents": 6843200,
+          "annualMaxCents": 6843200,
+          "sourceRows": [
+            77
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Construction Eng Inspector Mgr",
+          "people": 1,
+          "hourlyMin": 39.87,
+          "hourlyMax": 39.87,
+          "annualMinCents": 8292960,
+          "annualMaxCents": 8292960,
+          "sourceRows": [
+            71
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Deputy City Engineer",
+          "people": 1,
+          "hourlyMin": 46.02,
+          "hourlyMax": 46.02,
+          "annualMinCents": 9572160,
+          "annualMaxCents": 9572160,
+          "sourceRows": [
+            69
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Engineer I",
+          "people": 1,
+          "hourlyMin": 36.96,
+          "hourlyMax": 36.96,
+          "annualMinCents": 7687680,
+          "annualMaxCents": 7687680,
+          "sourceRows": [
+            68
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Engineering Inspector",
+          "people": 3,
+          "hourlyMin": 25.49,
+          "hourlyMax": 32.29,
+          "annualMinCents": 5301920,
+          "annualMaxCents": 6716320,
+          "sourceRows": [
+            73,
+            74,
+            79
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "GIS Analyst & Data",
+          "people": 1,
+          "hourlyMin": 24.02,
+          "hourlyMax": 24.02,
+          "annualMinCents": 4996160,
+          "annualMaxCents": 4996160,
+          "sourceRows": [
+            67
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "GIS Specialist",
+          "people": 1,
+          "hourlyMin": 32.72,
+          "hourlyMax": 32.72,
+          "annualMinCents": 6805760,
+          "annualMaxCents": 6805760,
+          "sourceRows": [
+            76
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Survey Technician",
+          "people": 2,
+          "hourlyMin": 18.62,
+          "hourlyMax": 20.34,
+          "annualMinCents": 3872960,
+          "annualMaxCents": 4230720,
+          "sourceRows": [
+            75,
+            78
+          ],
+          "needsReview": false
+        }
+      ],
+      "annualPayStatus": "source-reported",
+      "allowances": {
+        "grossCents": 720000,
+        "recipients": 2,
+        "pages": [
+          2
+        ]
+      }
+    },
+    "1710": {
+      "sourceDepartments": [
+        "1710 - Public Works - Admin"
+      ],
+      "accountIds": [
+        "001-1710"
+      ],
+      "people": 4,
+      "annualPayCents": 28190240,
+      "salarySourceRows": [
+        80,
+        81,
+        82,
+        83
+      ],
+      "roles": [
+        {
+          "title": "Administrative Assistant",
+          "people": 2,
+          "hourlyMin": 17.55,
+          "hourlyMax": 18.08,
+          "annualMinCents": 3650400,
+          "annualMaxCents": 3760640,
+          "sourceRows": [
+            80,
+            83
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Administrative Manager",
+          "people": 1,
+          "hourlyMin": 34.26,
+          "hourlyMax": 34.26,
+          "annualMinCents": 7126080,
+          "annualMaxCents": 7126080,
+          "sourceRows": [
+            81
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Director Public Works",
+          "people": 1,
+          "hourlyMin": 65.64,
+          "hourlyMax": 65.64,
+          "annualMinCents": 13653120,
+          "annualMaxCents": 13653120,
+          "sourceRows": [
+            82
+          ],
+          "needsReview": false
+        }
+      ],
+      "annualPayStatus": "source-reported",
+      "allowances": {
+        "grossCents": 480000,
+        "recipients": 1,
+        "pages": [
+          2
+        ]
+      }
+    },
+    "1720": {
+      "sourceDepartments": [
+        "1720 - Logistics - Facility Maint"
+      ],
+      "accountIds": [
+        "001-1720"
+      ],
+      "people": 13,
+      "annualPayCents": 75506080,
+      "salarySourceRows": [
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96
+      ],
+      "roles": [
+        {
+          "title": "Assistant Superintendent",
+          "people": 1,
+          "hourlyMin": 29.55,
+          "hourlyMax": 29.55,
+          "annualMinCents": 6146400,
+          "annualMaxCents": 6146400,
+          "sourceRows": [
+            86
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Electrician I",
+          "people": 2,
+          "hourlyMin": 22.88,
+          "hourlyMax": 23.8,
+          "annualMinCents": 4759040,
+          "annualMaxCents": 4950400,
+          "sourceRows": [
+            92,
+            96
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Electrician II",
+          "people": 2,
+          "hourlyMin": 23.33,
+          "hourlyMax": 33.27,
+          "annualMinCents": 4852640,
+          "annualMaxCents": 6920160,
+          "sourceRows": [
+            87,
+            90
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Facilities Maintenance Superintendent",
+          "people": 1,
+          "hourlyMin": 31.91,
+          "hourlyMax": 31.91,
+          "annualMinCents": 6637280,
+          "annualMaxCents": 6637280,
+          "sourceRows": [
+            85
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Facility Maintenance Manager",
+          "people": 1,
+          "hourlyMin": 45.5,
+          "hourlyMax": 45.5,
+          "annualMinCents": 9464000,
+          "annualMaxCents": 9464000,
+          "sourceRows": [
+            95
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Trade Worker III HVAC",
+          "people": 1,
+          "hourlyMin": 25.75,
+          "hourlyMax": 25.75,
+          "annualMinCents": 5356000,
+          "annualMaxCents": 5356000,
+          "sourceRows": [
+            84
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Trades Worker III",
+          "people": 5,
+          "hourlyMin": 22.88,
+          "hourlyMax": 29.85,
+          "annualMinCents": 4759040,
+          "annualMaxCents": 6208800,
+          "sourceRows": [
+            88,
+            89,
+            91,
+            93,
+            94
+          ],
+          "needsReview": false
+        }
+      ],
+      "annualPayStatus": "source-reported",
+      "allowances": null
+    },
+    "2100": {
+      "sourceDepartments": [
+        "2100 - Police",
+        "2101 - Police Dept. Head/Exempt",
+        "2102 - Police Support Personnel"
+      ],
+      "accountIds": [
+        "001-2100"
+      ],
+      "people": 143,
+      "annualPayCents": 861895840,
+      "salarySourceRows": [
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234,
+        235,
+        236,
+        237,
+        238,
+        239
+      ],
+      "roles": [
+        {
+          "title": "Accreditation & Compliance Mgr",
+          "people": 1,
+          "hourlyMin": 25.75,
+          "hourlyMax": 25.75,
+          "annualMinCents": 5356000,
+          "annualMaxCents": 5356000,
+          "sourceRows": [
+            219
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Administrative Specialist",
+          "people": 1,
+          "hourlyMin": 20.94,
+          "hourlyMax": 20.94,
+          "annualMinCents": 4355520,
+          "annualMaxCents": 4355520,
+          "sourceRows": [
+            198
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Assistant Communication Manager",
+          "people": 1,
+          "hourlyMin": 28.68,
+          "hourlyMax": 28.68,
+          "annualMinCents": 5965440,
+          "annualMaxCents": 5965440,
+          "sourceRows": [
+            235
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Assistant Shift Supervisor",
+          "people": 2,
+          "hourlyMin": 22.64,
+          "hourlyMax": 23.32,
+          "annualMinCents": 4709120,
+          "annualMaxCents": 4850560,
+          "sourceRows": [
+            215,
+            229
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Captain",
+          "people": 4,
+          "hourlyMin": 50.29,
+          "hourlyMax": 53.35,
+          "annualMinCents": 10460320,
+          "annualMaxCents": 11096800,
+          "sourceRows": [
+            191,
+            192,
+            193,
+            194
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Communications Center Manager",
+          "people": 1,
+          "hourlyMin": 31.94,
+          "hourlyMax": 31.94,
+          "annualMinCents": 6643520,
+          "annualMaxCents": 6643520,
+          "sourceRows": [
+            203
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Communications Supervisor",
+          "people": 4,
+          "hourlyMin": 25.48,
+          "hourlyMax": 29.56,
+          "annualMinCents": 5299840,
+          "annualMaxCents": 6148480,
+          "sourceRows": [
+            201,
+            206,
+            207,
+            238
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Corporal - Police",
+          "people": 9,
+          "hourlyMin": 31.91,
+          "hourlyMax": 38.1,
+          "annualMinCents": 6637280,
+          "annualMaxCents": 7924800,
+          "sourceRows": [
+            100,
+            101,
+            102,
+            130,
+            132,
+            135,
+            161,
+            163,
+            174
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Crime Scene Manager",
+          "people": 1,
+          "hourlyMin": 27.3,
+          "hourlyMax": 27.3,
+          "annualMinCents": 5678400,
+          "annualMaxCents": 5678400,
+          "sourceRows": [
+            202
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Crime Scene Technician",
+          "people": 3,
+          "hourlyMin": 22.64,
+          "hourlyMax": 26.25,
+          "annualMinCents": 4709120,
+          "annualMaxCents": 5460000,
+          "sourceRows": [
+            208,
+            232,
+            236
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Deputy Police Chief",
+          "people": 1,
+          "hourlyMin": 52.13,
+          "hourlyMax": 52.13,
+          "annualMinCents": 10843040,
+          "annualMaxCents": 10843040,
+          "sourceRows": [
+            195
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Digital Evid Forensic Anl",
+          "people": 1,
+          "hourlyMin": 22.64,
+          "hourlyMax": 22.64,
+          "annualMinCents": 4709120,
+          "annualMaxCents": 4709120,
+          "sourceRows": [
+            221
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Information Support Specialist",
+          "people": 2,
+          "hourlyMin": 23.32,
+          "hourlyMax": 23.32,
+          "annualMinCents": 4850560,
+          "annualMaxCents": 4850560,
+          "sourceRows": [
+            199,
+            223
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Lead Police Records Specialist",
+          "people": 1,
+          "hourlyMin": 21.38,
+          "hourlyMax": 21.38,
+          "annualMinCents": 4447040,
+          "annualMaxCents": 4447040,
+          "sourceRows": [
+            210
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Lieutenant",
+          "people": 6,
+          "hourlyMin": 38.04,
+          "hourlyMax": 42.81,
+          "annualMinCents": 7912320,
+          "annualMaxCents": 8904480,
+          "sourceRows": [
+            115,
+            134,
+            144,
+            148,
+            167,
+            181
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Maintenance Worker II",
+          "people": 1,
+          "hourlyMin": 17.04,
+          "hourlyMax": 17.04,
+          "annualMinCents": 3544320,
+          "annualMaxCents": 3544320,
+          "sourceRows": [
+            220
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Manager Fleet Coordinator",
+          "people": 1,
+          "hourlyMin": 27.3,
+          "hourlyMax": 27.3,
+          "annualMinCents": 5678400,
+          "annualMaxCents": 5678400,
+          "sourceRows": [
+            233
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Police - Civilian Manager",
+          "people": 1,
+          "hourlyMin": 27.3,
+          "hourlyMax": 27.3,
+          "annualMinCents": 5678400,
+          "annualMaxCents": 5678400,
+          "sourceRows": [
+            226
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Police Chief",
+          "people": 1,
+          "hourlyMin": 64.55,
+          "hourlyMax": 64.55,
+          "annualMinCents": 13426400,
+          "annualMaxCents": 13426400,
+          "sourceRows": [
+            196
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Police Crime Analyst",
+          "people": 2,
+          "hourlyMin": 23.32,
+          "hourlyMax": 23.32,
+          "annualMinCents": 4850560,
+          "annualMaxCents": 4850560,
+          "sourceRows": [
+            200,
+            227
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Police Officer I",
+          "people": 38,
+          "hourlyMin": 24.98,
+          "hourlyMax": 30.72,
+          "annualMinCents": 5195840,
+          "annualMaxCents": 6389760,
+          "sourceRows": [
+            97,
+            99,
+            103,
+            104,
+            106,
+            108,
+            109,
+            110,
+            111,
+            116,
+            117,
+            118,
+            119,
+            121,
+            122,
+            125,
+            128,
+            136,
+            138,
+            143,
+            145,
+            151,
+            152,
+            157,
+            159,
+            162,
+            165,
+            168,
+            172,
+            173,
+            177,
+            178,
+            179,
+            180,
+            182,
+            183,
+            186,
+            188
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Police Officer II",
+          "people": 21,
+          "hourlyMin": 28.4,
+          "hourlyMax": 32.92,
+          "annualMinCents": 5907200,
+          "annualMaxCents": 6847360,
+          "sourceRows": [
+            105,
+            107,
+            113,
+            123,
+            124,
+            133,
+            141,
+            142,
+            149,
+            150,
+            153,
+            154,
+            155,
+            156,
+            160,
+            175,
+            176,
+            184,
+            185,
+            189,
+            190
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Police Officer III",
+          "people": 1,
+          "hourlyMin": 35.94,
+          "hourlyMax": 35.94,
+          "annualMinCents": 7475520,
+          "annualMaxCents": 7475520,
+          "sourceRows": [
+            187
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Police Officer Trainee",
+          "people": 1,
+          "hourlyMin": 21.13,
+          "hourlyMax": 21.13,
+          "annualMinCents": 4395040,
+          "annualMaxCents": 4395040,
+          "sourceRows": [
+            147
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Police Officer Trainee ",
+          "people": 2,
+          "hourlyMin": 21.13,
+          "hourlyMax": 21.13,
+          "annualMinCents": 4395040,
+          "annualMaxCents": 4395040,
+          "sourceRows": [
+            120,
+            126
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Police Programmer",
+          "people": 1,
+          "hourlyMin": 34.57,
+          "hourlyMax": 34.57,
+          "annualMinCents": 7190560,
+          "annualMaxCents": 7190560,
+          "sourceRows": [
+            218
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Police Records Specialist I",
+          "people": 2,
+          "hourlyMin": 17.55,
+          "hourlyMax": 20.35,
+          "annualMinCents": 3650400,
+          "annualMaxCents": 4232800,
+          "sourceRows": [
+            214,
+            222
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Police Records Specialist I-BWC",
+          "people": 1,
+          "hourlyMin": 22.9,
+          "hourlyMax": 22.9,
+          "annualMinCents": 4763200,
+          "annualMaxCents": 4763200,
+          "sourceRows": [
+            224
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Police Systems Administrator",
+          "people": 1,
+          "hourlyMin": 34.81,
+          "hourlyMax": 34.81,
+          "annualMinCents": 7240480,
+          "annualMaxCents": 7240480,
+          "sourceRows": [
+            209
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Property & Evidence Coordinator",
+          "people": 1,
+          "hourlyMin": 22.66,
+          "hourlyMax": 22.66,
+          "annualMinCents": 4713280,
+          "annualMaxCents": 4713280,
+          "sourceRows": [
+            217
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Records & Facilities Supervisor",
+          "people": 1,
+          "hourlyMin": 29.54,
+          "hourlyMax": 29.54,
+          "annualMinCents": 6144320,
+          "annualMaxCents": 6144320,
+          "sourceRows": [
+            211
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Reserve Officer PT",
+          "people": 5,
+          "hourlyMin": 16.07,
+          "hourlyMax": 17.04,
+          "annualMinCents": 3342560,
+          "annualMaxCents": 3544320,
+          "sourceRows": [
+            127,
+            131,
+            137,
+            140,
+            158
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Sergeant",
+          "people": 11,
+          "hourlyMin": 35.89,
+          "hourlyMax": 41.6,
+          "annualMinCents": 7465120,
+          "annualMaxCents": 8652800,
+          "sourceRows": [
+            98,
+            112,
+            114,
+            129,
+            139,
+            146,
+            164,
+            166,
+            169,
+            170,
+            171
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Staff Assistant",
+          "people": 1,
+          "hourlyMin": 18.62,
+          "hourlyMax": 18.62,
+          "annualMinCents": 3872960,
+          "annualMaxCents": 3872960,
+          "sourceRows": [
+            225
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Telecommunicator",
+          "people": 9,
+          "hourlyMin": 21.13,
+          "hourlyMax": 25.99,
+          "annualMinCents": 4395040,
+          "annualMaxCents": 5405920,
+          "sourceRows": [
+            204,
+            205,
+            212,
+            213,
+            216,
+            230,
+            231,
+            234,
+            237
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Telecommunicator ",
+          "people": 1,
+          "hourlyMin": 22.42,
+          "hourlyMax": 22.42,
+          "annualMinCents": 4663360,
+          "annualMaxCents": 4663360,
+          "sourceRows": [
+            197
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Telecommunicator Trainee",
+          "people": 2,
+          "hourlyMin": 18.07,
+          "hourlyMax": 19.18,
+          "annualMinCents": 3758560,
+          "annualMaxCents": 3989440,
+          "sourceRows": [
+            228,
+            239
+          ],
+          "needsReview": false
+        }
+      ],
+      "annualPayStatus": "source-reported",
+      "allowances": null
+    },
+    "2200": {
+      "sourceDepartments": [
+        "2200 - Fire",
+        "2201 - Fire Chief/Exempt/Staff",
+        "2202 - Fire Support Personnel"
+      ],
+      "accountIds": [
+        "001-2200"
+      ],
+      "people": 81,
+      "annualPayCents": null,
+      "salarySourceRows": [
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        262,
+        263,
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        272,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        295,
+        296,
+        297,
+        298,
+        299,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312,
+        313,
+        314,
+        315,
+        316,
+        317,
+        318,
+        319,
+        320
+      ],
+      "roles": [
+        {
+          "title": "Accreditation Compliance Manager",
+          "people": 1,
+          "hourlyMin": 22.21,
+          "hourlyMax": 22.21,
+          "annualMinCents": 4619680,
+          "annualMaxCents": 4619680,
+          "sourceRows": [
+            318
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Administrative Assistant",
+          "people": 1,
+          "hourlyMin": 21.04,
+          "hourlyMax": 21.04,
+          "annualMinCents": 4376320,
+          "annualMaxCents": 4376320,
+          "sourceRows": [
+            319
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Assistant Fire Chief",
+          "people": 1,
+          "hourlyMin": 60.43,
+          "hourlyMax": 60.43,
+          "annualMinCents": 12569440,
+          "annualMaxCents": 12569440,
+          "sourceRows": [
+            315
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Battalion Chief",
+          "people": 3,
+          "hourlyMin": 34.65,
+          "hourlyMax": 35.6929,
+          "annualMinCents": 10090080,
+          "annualMaxCents": 10393772,
+          "sourceRows": [
+            247,
+            260,
+            289
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Captain Fire Prevention",
+          "people": 1,
+          "hourlyMin": 42.81,
+          "hourlyMax": 42.81,
+          "annualMinCents": 8904480,
+          "annualMaxCents": 8904480,
+          "sourceRows": [
+            316
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Fire Chief",
+          "people": 1,
+          "hourlyMin": 62.67,
+          "hourlyMax": 62.67,
+          "annualMinCents": 13035360,
+          "annualMaxCents": 13035360,
+          "sourceRows": [
+            310
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Fire Engineer",
+          "people": 18,
+          "hourlyMin": 21.5,
+          "hourlyMax": 35.95,
+          "annualMinCents": 6260800,
+          "annualMaxCents": 7477600,
+          "sourceRows": [
+            242,
+            248,
+            250,
+            251,
+            252,
+            257,
+            263,
+            265,
+            267,
+            275,
+            285,
+            286,
+            288,
+            290,
+            291,
+            295,
+            303,
+            304
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Fire Inspector",
+          "people": 1,
+          "hourlyMin": 27.85,
+          "hourlyMax": 27.85,
+          "annualMinCents": 5792800,
+          "annualMaxCents": 5792800,
+          "sourceRows": [
+            320
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Fire Prevention Chief",
+          "people": 1,
+          "hourlyMin": 51.8,
+          "hourlyMax": 51.8,
+          "annualMinCents": 10774400,
+          "annualMaxCents": 10774400,
+          "sourceRows": [
+            311
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Fire Prevention Lieutenant",
+          "people": 1,
+          "hourlyMin": 41.6,
+          "hourlyMax": 41.6,
+          "annualMinCents": 8652800,
+          "annualMaxCents": 8652800,
+          "sourceRows": [
+            313
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Firefighter",
+          "people": 31,
+          "hourlyMin": 17.8429,
+          "hourlyMax": 34.58,
+          "annualMinCents": 5195840,
+          "annualMaxCents": 11133970,
+          "sourceRows": [
+            241,
+            243,
+            244,
+            245,
+            249,
+            253,
+            256,
+            258,
+            261,
+            262,
+            264,
+            266,
+            269,
+            270,
+            273,
+            274,
+            278,
+            279,
+            280,
+            282,
+            283,
+            287,
+            293,
+            294,
+            296,
+            298,
+            302,
+            305,
+            306,
+            307,
+            308
+          ],
+          "needsReview": true
+        },
+        {
+          "title": "Shift Lieutenant",
+          "people": 13,
+          "hourlyMin": 26.4,
+          "hourlyMax": 32.4714,
+          "annualMinCents": 7687680,
+          "annualMaxCents": 9455672,
+          "sourceRows": [
+            246,
+            254,
+            255,
+            259,
+            268,
+            271,
+            272,
+            276,
+            277,
+            281,
+            292,
+            297,
+            309
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Station Captain",
+          "people": 5,
+          "hourlyMin": 29.6929,
+          "hourlyMax": 33.4143,
+          "annualMinCents": 8646572,
+          "annualMaxCents": 9730244,
+          "sourceRows": [
+            240,
+            284,
+            299,
+            300,
+            301
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Supply & Maintenance Tech",
+          "people": 1,
+          "hourlyMin": 38.14,
+          "hourlyMax": 38.14,
+          "annualMinCents": 7933120,
+          "annualMaxCents": 7933120,
+          "sourceRows": [
+            317
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Supply Maintenance Captain",
+          "people": 1,
+          "hourlyMin": 41.41,
+          "hourlyMax": 41.41,
+          "annualMinCents": 8613280,
+          "annualMaxCents": 8613280,
+          "sourceRows": [
+            314
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Training Chief",
+          "people": 1,
+          "hourlyMin": 53.35,
+          "hourlyMax": 53.35,
+          "annualMinCents": 11096800,
+          "annualMaxCents": 11096800,
+          "sourceRows": [
+            312
+          ],
+          "needsReview": false
+        }
+      ],
+      "annualPayStatus": "needs-review",
+      "allowances": null,
+      "reviewNote": "One Fire row reports $111,339.70 annually at $17.8429/hour, implying about 6,240 hours. The source gives no explanation. The department annual-pay total is withheld pending confirmation; no replacement amount has been estimated."
+    },
+    "3410": {
+      "sourceDepartments": [
+        "3410 - Environmental Services Admin"
+      ],
+      "accountIds": [
+        "440-3410"
+      ],
+      "people": 3,
+      "annualPayCents": 17359680,
+      "salarySourceRows": [
+        321,
+        322,
+        323
+      ],
+      "roles": [
+        {
+          "title": "Administrative Assistant",
+          "people": 1,
+          "hourlyMin": 18.62,
+          "hourlyMax": 18.62,
+          "annualMinCents": 3872960,
+          "annualMaxCents": 3872960,
+          "sourceRows": [
+            323
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Assistant Superintendent",
+          "people": 1,
+          "hourlyMin": 27.85,
+          "hourlyMax": 27.85,
+          "annualMinCents": 5792800,
+          "annualMaxCents": 5792800,
+          "sourceRows": [
+            321
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Environmental Service Superint",
+          "people": 1,
+          "hourlyMin": 36.99,
+          "hourlyMax": 36.99,
+          "annualMinCents": 7693920,
+          "annualMaxCents": 7693920,
+          "sourceRows": [
+            322
+          ],
+          "needsReview": false
+        }
+      ],
+      "annualPayStatus": "source-reported",
+      "allowances": null
+    },
+    "3420": {
+      "sourceDepartments": [
+        "3420 - Environmental Ser - Res. Garbage"
+      ],
+      "accountIds": [
+        "440-3420"
+      ],
+      "people": 13,
+      "annualPayCents": 65698880,
+      "salarySourceRows": [
+        324,
+        325,
+        326,
+        327,
+        328,
+        329,
+        330,
+        331,
+        332,
+        333,
+        334,
+        335,
+        336
+      ],
+      "roles": [
+        {
+          "title": "Environmental Svc Maint Asst",
+          "people": 1,
+          "hourlyMin": 21.58,
+          "hourlyMax": 21.58,
+          "annualMinCents": 4488640,
+          "annualMaxCents": 4488640,
+          "sourceRows": [
+            331
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Equipment Operator II",
+          "people": 8,
+          "hourlyMin": 19.36,
+          "hourlyMax": 29.29,
+          "annualMinCents": 4026880,
+          "annualMaxCents": 6092320,
+          "sourceRows": [
+            324,
+            325,
+            327,
+            328,
+            332,
+            334,
+            335,
+            336
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Foreman",
+          "people": 1,
+          "hourlyMin": 23.09,
+          "hourlyMax": 23.09,
+          "annualMinCents": 4802720,
+          "annualMaxCents": 4802720,
+          "sourceRows": [
+            329
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Maintenance Worker II",
+          "people": 2,
+          "hourlyMin": 17.05,
+          "hourlyMax": 17.55,
+          "annualMinCents": 3546400,
+          "annualMaxCents": 3650400,
+          "sourceRows": [
+            326,
+            333
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Senior Manager Enviro Svc/Street",
+          "people": 1,
+          "hourlyMin": 55.37,
+          "hourlyMax": 55.37,
+          "annualMinCents": 11516960,
+          "annualMaxCents": 11516960,
+          "sourceRows": [
+            330
+          ],
+          "needsReview": false
+        }
+      ],
+      "annualPayStatus": "source-reported",
+      "allowances": {
+        "grossCents": 390000,
+        "recipients": 1,
+        "pages": [
+          2
+        ]
+      }
+    },
+    "3430": {
+      "sourceDepartments": [
+        "3430 - Environmental Serv - Commercial"
+      ],
+      "accountIds": [
+        "440-3430"
+      ],
+      "people": 10,
+      "annualPayCents": 45445920,
+      "salarySourceRows": [
+        337,
+        338,
+        339,
+        340,
+        341,
+        342,
+        343,
+        344,
+        345,
+        346
+      ],
+      "roles": [
+        {
+          "title": "Equipment Operator III",
+          "people": 7,
+          "hourlyMin": 20.33,
+          "hourlyMax": 26.52,
+          "annualMinCents": 4228640,
+          "annualMaxCents": 5516160,
+          "sourceRows": [
+            337,
+            338,
+            339,
+            340,
+            341,
+            342,
+            344
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Maintenance Worker II",
+          "people": 3,
+          "hourlyMin": 17.05,
+          "hourlyMax": 19.76,
+          "annualMinCents": 3546400,
+          "annualMaxCents": 4110080,
+          "sourceRows": [
+            343,
+            345,
+            346
+          ],
+          "needsReview": false
+        }
+      ],
+      "annualPayStatus": "source-reported",
+      "allowances": null
+    },
+    "3440": {
+      "sourceDepartments": [
+        "3440 - Environmental Serv - Res. Trash"
+      ],
+      "accountIds": [
+        "440-3440"
+      ],
+      "people": 18,
+      "annualPayCents": 74611680,
+      "salarySourceRows": [
+        347,
+        348,
+        349,
+        350,
+        351,
+        352,
+        353,
+        354,
+        355,
+        356,
+        357,
+        358,
+        359,
+        360,
+        361,
+        362,
+        363,
+        364
+      ],
+      "roles": [
+        {
+          "title": "Equipment Operator I",
+          "people": 17,
+          "hourlyMin": 18.07,
+          "hourlyMax": 22.9,
+          "annualMinCents": 3758560,
+          "annualMaxCents": 4763200,
+          "sourceRows": [
+            347,
+            348,
+            349,
+            350,
+            351,
+            352,
+            353,
+            354,
+            355,
+            356,
+            357,
+            359,
+            360,
+            361,
+            362,
+            363,
+            364
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Foreman",
+          "people": 1,
+          "hourlyMin": 23.79,
+          "hourlyMax": 23.79,
+          "annualMinCents": 4948320,
+          "annualMaxCents": 4948320,
+          "sourceRows": [
+            358
+          ],
+          "needsReview": false
+        }
+      ],
+      "annualPayStatus": "source-reported",
+      "allowances": null
+    },
+    "3460": {
+      "sourceDepartments": [
+        "3460 - Street Sweeping"
+      ],
+      "accountIds": [
+        "440-3460"
+      ],
+      "people": 1,
+      "annualPayCents": 4532320,
+      "salarySourceRows": [
+        365
+      ],
+      "roles": [
+        {
+          "title": "Equipment Operator II",
+          "people": 1,
+          "hourlyMin": 21.79,
+          "hourlyMax": 21.79,
+          "annualMinCents": 4532320,
+          "annualMaxCents": 4532320,
+          "sourceRows": [
+            365
+          ],
+          "needsReview": false
+        }
+      ],
+      "annualPayStatus": "source-reported",
+      "allowances": null
+    },
+    "3610": {
+      "sourceDepartments": [
+        "3610 - Utilities - Administration"
+      ],
+      "accountIds": [
+        "410-3610"
+      ],
+      "people": 5,
+      "annualPayCents": 33874880,
+      "salarySourceRows": [
+        366,
+        367,
+        368,
+        369,
+        370
+      ],
+      "roles": [
+        {
+          "title": "Engineer II",
+          "people": 1,
+          "hourlyMin": 49.07,
+          "hourlyMax": 49.07,
+          "annualMinCents": 10206560,
+          "annualMaxCents": 10206560,
+          "sourceRows": [
+            369
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Project Coordinator",
+          "people": 1,
+          "hourlyMin": 23.57,
+          "hourlyMax": 23.57,
+          "annualMinCents": 4902560,
+          "annualMaxCents": 4902560,
+          "sourceRows": [
+            366
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Project Manager-Public Works",
+          "people": 1,
+          "hourlyMin": 34.37,
+          "hourlyMax": 34.37,
+          "annualMinCents": 7148960,
+          "annualMaxCents": 7148960,
+          "sourceRows": [
+            367
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Utilities Operations Manager",
+          "people": 1,
+          "hourlyMin": 36.1,
+          "hourlyMax": 36.1,
+          "annualMinCents": 7508800,
+          "annualMaxCents": 7508800,
+          "sourceRows": [
+            368
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Utilities Plans Coordinator",
+          "people": 1,
+          "hourlyMin": 19.75,
+          "hourlyMax": 19.75,
+          "annualMinCents": 4108000,
+          "annualMaxCents": 4108000,
+          "sourceRows": [
+            370
+          ],
+          "needsReview": false
+        }
+      ],
+      "annualPayStatus": "source-reported",
+      "allowances": {
+        "grossCents": 930000,
+        "recipients": 3,
+        "pages": [
+          2
+        ]
+      }
+    },
+    "3620": {
+      "sourceDepartments": [
+        "3620 - Util/B & C",
+        "3621 - Util/B & C - Meter"
+      ],
+      "accountIds": [
+        "410-3620"
+      ],
+      "people": 14,
+      "annualPayCents": 60280480,
+      "salarySourceRows": [
+        371,
+        372,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384
+      ],
+      "roles": [
+        {
+          "title": "Customer Service Representative",
+          "people": 8,
+          "hourlyMin": 16.55,
+          "hourlyMax": 19.18,
+          "annualMinCents": 3442400,
+          "annualMaxCents": 3989440,
+          "sourceRows": [
+            372,
+            373,
+            374,
+            375,
+            376,
+            377,
+            378,
+            380
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Foreman",
+          "people": 1,
+          "hourlyMin": 32.93,
+          "hourlyMax": 32.93,
+          "annualMinCents": 6849440,
+          "annualMaxCents": 6849440,
+          "sourceRows": [
+            382
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Manager Customer Service",
+          "people": 1,
+          "hourlyMin": 29.83,
+          "hourlyMax": 29.83,
+          "annualMinCents": 6204640,
+          "annualMaxCents": 6204640,
+          "sourceRows": [
+            371
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Utilities Service Worker",
+          "people": 3,
+          "hourlyMin": 18.26,
+          "hourlyMax": 26.03,
+          "annualMinCents": 3798080,
+          "annualMaxCents": 5414240,
+          "sourceRows": [
+            381,
+            383,
+            384
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Utility Billing Technician",
+          "people": 1,
+          "hourlyMin": 21.16,
+          "hourlyMax": 21.16,
+          "annualMinCents": 4401280,
+          "annualMaxCents": 4401280,
+          "sourceRows": [
+            379
+          ],
+          "needsReview": false
+        }
+      ],
+      "annualPayStatus": "source-reported",
+      "allowances": null
+    },
+    "3630": {
+      "sourceDepartments": [
+        "3630 - Utilities/Underground Util"
+      ],
+      "accountIds": [
+        "410-3630"
+      ],
+      "people": 38,
+      "annualPayCents": 161148000,
+      "salarySourceRows": [
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391,
+        392,
+        393,
+        394,
+        395,
+        396,
+        397,
+        398,
+        399,
+        400,
+        401,
+        402,
+        403,
+        404,
+        405,
+        406,
+        407,
+        408,
+        409,
+        410,
+        411,
+        412,
+        413,
+        414,
+        415,
+        416,
+        417,
+        418,
+        419,
+        420,
+        421,
+        422
+      ],
+      "roles": [
+        {
+          "title": "Equipment Operator II",
+          "people": 1,
+          "hourlyMin": 18.99,
+          "hourlyMax": 18.99,
+          "annualMinCents": 3949920,
+          "annualMaxCents": 3949920,
+          "sourceRows": [
+            411
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Equipment Operator III",
+          "people": 4,
+          "hourlyMin": 20.94,
+          "hourlyMax": 28.98,
+          "annualMinCents": 4355520,
+          "annualMaxCents": 6027840,
+          "sourceRows": [
+            394,
+            408,
+            410,
+            417
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Foreman",
+          "people": 4,
+          "hourlyMin": 23.79,
+          "hourlyMax": 27.58,
+          "annualMinCents": 4948320,
+          "annualMaxCents": 5736640,
+          "sourceRows": [
+            400,
+            405,
+            418,
+            422
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Senior Utilities Locator",
+          "people": 1,
+          "hourlyMin": 21.16,
+          "hourlyMax": 21.16,
+          "annualMinCents": 4401280,
+          "annualMaxCents": 4401280,
+          "sourceRows": [
+            407
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Senior Utilities Service Worker",
+          "people": 3,
+          "hourlyMin": 19.94,
+          "hourlyMax": 23.09,
+          "annualMinCents": 4147520,
+          "annualMaxCents": 4802720,
+          "sourceRows": [
+            385,
+            402,
+            406
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Underground Util Asst Super",
+          "people": 1,
+          "hourlyMin": 29.55,
+          "hourlyMax": 29.55,
+          "annualMinCents": 6146400,
+          "annualMaxCents": 6146400,
+          "sourceRows": [
+            415
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Underground Util Superintendent",
+          "people": 1,
+          "hourlyMin": 38.1,
+          "hourlyMax": 38.1,
+          "annualMinCents": 7924800,
+          "annualMaxCents": 7924800,
+          "sourceRows": [
+            404
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Utilities Service Worker",
+          "people": 22,
+          "hourlyMin": 16.71,
+          "hourlyMax": 18.8,
+          "annualMinCents": 3475680,
+          "annualMaxCents": 3910400,
+          "sourceRows": [
+            386,
+            387,
+            388,
+            389,
+            390,
+            391,
+            392,
+            393,
+            396,
+            397,
+            398,
+            399,
+            401,
+            403,
+            409,
+            412,
+            413,
+            414,
+            416,
+            419,
+            420,
+            421
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Utility Admin Coordinator",
+          "people": 1,
+          "hourlyMin": 21.58,
+          "hourlyMax": 21.58,
+          "annualMinCents": 4488640,
+          "annualMaxCents": 4488640,
+          "sourceRows": [
+            395
+          ],
+          "needsReview": false
+        }
+      ],
+      "annualPayStatus": "source-reported",
+      "allowances": null
+    },
+    "3640": {
+      "sourceDepartments": [
+        "3640 - Utilities/Lift Stations"
+      ],
+      "accountIds": [
+        "410-3640"
+      ],
+      "people": 15,
+      "annualPayCents": 66127360,
+      "salarySourceRows": [
+        423,
+        424,
+        425,
+        426,
+        427,
+        428,
+        429,
+        430,
+        431,
+        432,
+        433,
+        434,
+        435,
+        436,
+        437
+      ],
+      "roles": [
+        {
+          "title": "Assistant Superintendent",
+          "people": 1,
+          "hourlyMin": 26.26,
+          "hourlyMax": 26.26,
+          "annualMinCents": 5462080,
+          "annualMaxCents": 5462080,
+          "sourceRows": [
+            425
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Equipment Operator III",
+          "people": 2,
+          "hourlyMin": 21.57,
+          "hourlyMax": 24.27,
+          "annualMinCents": 4486560,
+          "annualMaxCents": 5048160,
+          "sourceRows": [
+            430,
+            437
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Foreman",
+          "people": 2,
+          "hourlyMin": 23.09,
+          "hourlyMax": 24.5,
+          "annualMinCents": 4802720,
+          "annualMaxCents": 5096000,
+          "sourceRows": [
+            434,
+            436
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Lift Station Superintendent",
+          "people": 1,
+          "hourlyMin": 32.87,
+          "hourlyMax": 32.87,
+          "annualMinCents": 6836960,
+          "annualMaxCents": 6836960,
+          "sourceRows": [
+            435
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Lift Station Technician I",
+          "people": 5,
+          "hourlyMin": 16.55,
+          "hourlyMax": 17.55,
+          "annualMinCents": 3442400,
+          "annualMaxCents": 3650400,
+          "sourceRows": [
+            424,
+            426,
+            428,
+            431,
+            433
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Lift Station Technician II",
+          "people": 4,
+          "hourlyMin": 18.99,
+          "hourlyMax": 21.38,
+          "annualMinCents": 3949920,
+          "annualMaxCents": 4447040,
+          "sourceRows": [
+            423,
+            427,
+            429,
+            432
+          ],
+          "needsReview": false
+        }
+      ],
+      "annualPayStatus": "source-reported",
+      "allowances": null
+    },
+    "3650": {
+      "sourceDepartments": [
+        "3650 - Utilities/Waste Water"
+      ],
+      "accountIds": [
+        "410-3650"
+      ],
+      "people": 18,
+      "annualPayCents": 81569280,
+      "salarySourceRows": [
+        438,
+        439,
+        440,
+        441,
+        442,
+        443,
+        444,
+        445,
+        446,
+        447,
+        448,
+        449,
+        450,
+        451,
+        452,
+        453,
+        454,
+        455
+      ],
+      "roles": [
+        {
+          "title": "Assistant Superintendent",
+          "people": 1,
+          "hourlyMin": 27.85,
+          "hourlyMax": 27.85,
+          "annualMinCents": 5792800,
+          "annualMaxCents": 5792800,
+          "sourceRows": [
+            441
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Lead Treatment Plant Operator",
+          "people": 2,
+          "hourlyMin": 27.84,
+          "hourlyMax": 34.25,
+          "annualMinCents": 5790720,
+          "annualMaxCents": 7124000,
+          "sourceRows": [
+            445,
+            447
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Maintenance Worker II",
+          "people": 1,
+          "hourlyMin": 16.55,
+          "hourlyMax": 16.55,
+          "annualMinCents": 3442400,
+          "annualMaxCents": 3442400,
+          "sourceRows": [
+            453
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Treatment Plant Superintendent",
+          "people": 1,
+          "hourlyMin": 34.87,
+          "hourlyMax": 34.87,
+          "annualMinCents": 7252960,
+          "annualMaxCents": 7252960,
+          "sourceRows": [
+            444
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "WWTP Operator I",
+          "people": 6,
+          "hourlyMin": 17.21,
+          "hourlyMax": 21.2,
+          "annualMinCents": 3579680,
+          "annualMaxCents": 4409600,
+          "sourceRows": [
+            439,
+            442,
+            443,
+            449,
+            450,
+            455
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "WWTP Operator II",
+          "people": 6,
+          "hourlyMin": 19.94,
+          "hourlyMax": 21.79,
+          "annualMinCents": 4147520,
+          "annualMaxCents": 4532320,
+          "sourceRows": [
+            438,
+            440,
+            446,
+            448,
+            451,
+            452
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "WWTP Operator Trainee",
+          "people": 1,
+          "hourlyMin": 16.07,
+          "hourlyMax": 16.07,
+          "annualMinCents": 3342560,
+          "annualMaxCents": 3342560,
+          "sourceRows": [
+            454
+          ],
+          "needsReview": false
+        }
+      ],
+      "annualPayStatus": "source-reported",
+      "allowances": null
+    },
+    "3653": {
+      "sourceDepartments": [
+        "3653 - Utilities/Laboratory"
+      ],
+      "accountIds": [
+        "410-3653"
+      ],
+      "people": 6,
+      "annualPayCents": 36614240,
+      "salarySourceRows": [
+        456,
+        457,
+        458,
+        459,
+        460,
+        461
+      ],
+      "roles": [
+        {
+          "title": "Environmental Specialist",
+          "people": 1,
+          "hourlyMin": 22.9,
+          "hourlyMax": 22.9,
+          "annualMinCents": 4763200,
+          "annualMaxCents": 4763200,
+          "sourceRows": [
+            461
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Laboratory Analyst",
+          "people": 3,
+          "hourlyMin": 22.44,
+          "hourlyMax": 26.8,
+          "annualMinCents": 4667520,
+          "annualMaxCents": 5574400,
+          "sourceRows": [
+            458,
+            459,
+            460
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Laboratory Superintendent",
+          "people": 1,
+          "hourlyMin": 36.99,
+          "hourlyMax": 36.99,
+          "annualMinCents": 7693920,
+          "annualMaxCents": 7693920,
+          "sourceRows": [
+            457
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Quality Assurance Officer",
+          "people": 1,
+          "hourlyMin": 41.64,
+          "hourlyMax": 41.64,
+          "annualMinCents": 8661120,
+          "annualMaxCents": 8661120,
+          "sourceRows": [
+            456
+          ],
+          "needsReview": false
+        }
+      ],
+      "annualPayStatus": "source-reported",
+      "allowances": null
+    },
+    "3720": {
+      "sourceDepartments": [
+        "3720 - Environmental Compliance"
+      ],
+      "accountIds": [
+        "410-3720"
+      ],
+      "people": 3,
+      "annualPayCents": 14389440,
+      "salarySourceRows": [
+        462,
+        463,
+        464
+      ],
+      "roles": [
+        {
+          "title": "Environmental Compliance Inspect",
+          "people": 2,
+          "hourlyMin": 20.94,
+          "hourlyMax": 20.94,
+          "annualMinCents": 4355520,
+          "annualMaxCents": 4355520,
+          "sourceRows": [
+            463,
+            464
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Environmental Compliance Manager",
+          "people": 1,
+          "hourlyMin": 27.3,
+          "hourlyMax": 27.3,
+          "annualMinCents": 5678400,
+          "annualMaxCents": 5678400,
+          "sourceRows": [
+            462
+          ],
+          "needsReview": false
+        }
+      ],
+      "annualPayStatus": "source-reported",
+      "allowances": null
+    },
+    "4110": {
+      "sourceDepartments": [
+        "4110 - Maint Street Maint&Improvment"
+      ],
+      "accountIds": [
+        "001-4110"
+      ],
+      "people": 34,
+      "annualPayCents": 149000800,
+      "salarySourceRows": [
+        465,
+        466,
+        467,
+        468,
+        469,
+        470,
+        471,
+        472,
+        473,
+        474,
+        475,
+        476,
+        477,
+        478,
+        479,
+        480,
+        481,
+        482,
+        483,
+        484,
+        485,
+        486,
+        487,
+        488,
+        489,
+        490,
+        491,
+        492,
+        493,
+        494,
+        495,
+        496,
+        497,
+        498
+      ],
+      "roles": [
+        {
+          "title": "Administrative Assistant",
+          "people": 1,
+          "hourlyMin": 18.08,
+          "hourlyMax": 18.08,
+          "annualMinCents": 3760640,
+          "annualMaxCents": 3760640,
+          "sourceRows": [
+            472
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Assistant Superintendent",
+          "people": 1,
+          "hourlyMin": 28.69,
+          "hourlyMax": 28.69,
+          "annualMinCents": 5967520,
+          "annualMaxCents": 5967520,
+          "sourceRows": [
+            494
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Crew Leader",
+          "people": 2,
+          "hourlyMin": 20.54,
+          "hourlyMax": 23.12,
+          "annualMinCents": 4272320,
+          "annualMaxCents": 4808960,
+          "sourceRows": [
+            485,
+            496
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Equipment Operator II",
+          "people": 3,
+          "hourlyMin": 19.56,
+          "hourlyMax": 24.06,
+          "annualMinCents": 4068480,
+          "annualMaxCents": 5004480,
+          "sourceRows": [
+            471,
+            484,
+            498
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Equipment Operator III",
+          "people": 5,
+          "hourlyMin": 22.21,
+          "hourlyMax": 31.67,
+          "annualMinCents": 4619680,
+          "annualMaxCents": 6587360,
+          "sourceRows": [
+            465,
+            469,
+            478,
+            491,
+            495
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Foreman",
+          "people": 4,
+          "hourlyMin": 24.5,
+          "hourlyMax": 25.99,
+          "annualMinCents": 5096000,
+          "annualMaxCents": 5405920,
+          "sourceRows": [
+            467,
+            474,
+            476,
+            497
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Maintenance Superintendent",
+          "people": 1,
+          "hourlyMin": 34.87,
+          "hourlyMax": 34.87,
+          "annualMinCents": 7252960,
+          "annualMaxCents": 7252960,
+          "sourceRows": [
+            475
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Maintenance Worker II",
+          "people": 7,
+          "hourlyMin": 16.07,
+          "hourlyMax": 17.04,
+          "annualMinCents": 3342560,
+          "annualMaxCents": 3544320,
+          "sourceRows": [
+            468,
+            482,
+            483,
+            488,
+            489,
+            492,
+            493
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Maintenance Worker III",
+          "people": 6,
+          "hourlyMin": 17.38,
+          "hourlyMax": 19.56,
+          "annualMinCents": 3615040,
+          "annualMaxCents": 4068480,
+          "sourceRows": [
+            466,
+            470,
+            473,
+            481,
+            486,
+            490
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Trades Worker I",
+          "people": 1,
+          "hourlyMin": 16.07,
+          "hourlyMax": 16.07,
+          "annualMinCents": 3342560,
+          "annualMaxCents": 3342560,
+          "sourceRows": [
+            479
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Trades Worker II",
+          "people": 2,
+          "hourlyMin": 18.44,
+          "hourlyMax": 18.44,
+          "annualMinCents": 3835520,
+          "annualMaxCents": 3835520,
+          "sourceRows": [
+            477,
+            487
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Trades Worker III",
+          "people": 1,
+          "hourlyMin": 18.8,
+          "hourlyMax": 18.8,
+          "annualMinCents": 3910400,
+          "annualMaxCents": 3910400,
+          "sourceRows": [
+            480
+          ],
+          "needsReview": false
+        }
+      ],
+      "annualPayStatus": "source-reported",
+      "allowances": null
+    },
+    "4130": {
+      "sourceDepartments": [
+        "4130 - Maint Street Signs&Markings"
+      ],
+      "accountIds": [
+        "001-4130"
+      ],
+      "people": 3,
+      "annualPayCents": 11546080,
+      "salarySourceRows": [
+        499,
+        500,
+        501
+      ],
+      "roles": [
+        {
+          "title": "Sign & Markings Specialist II",
+          "people": 3,
+          "hourlyMin": 17.38,
+          "hourlyMax": 20.75,
+          "annualMinCents": 3615040,
+          "annualMaxCents": 4316000,
+          "sourceRows": [
+            499,
+            500,
+            501
+          ],
+          "needsReview": false
+        }
+      ],
+      "annualPayStatus": "source-reported",
+      "allowances": null
+    },
+    "4150": {
+      "sourceDepartments": [
+        "4150 - Street Paving"
+      ],
+      "accountIds": [
+        "001-4150"
+      ],
+      "people": 4,
+      "annualPayCents": 17813120,
+      "salarySourceRows": [
+        502,
+        503,
+        504,
+        505
+      ],
+      "roles": [
+        {
+          "title": "Equipment Operator III",
+          "people": 2,
+          "hourlyMin": 22.21,
+          "hourlyMax": 24.27,
+          "annualMinCents": 4619680,
+          "annualMaxCents": 5048160,
+          "sourceRows": [
+            502,
+            504
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Foreman",
+          "people": 1,
+          "hourlyMin": 23.09,
+          "hourlyMax": 23.09,
+          "annualMinCents": 4802720,
+          "annualMaxCents": 4802720,
+          "sourceRows": [
+            503
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Maintenance Worker II",
+          "people": 1,
+          "hourlyMin": 16.07,
+          "hourlyMax": 16.07,
+          "annualMinCents": 3342560,
+          "annualMaxCents": 3342560,
+          "sourceRows": [
+            505
+          ],
+          "needsReview": false
+        }
+      ],
+      "annualPayStatus": "source-reported",
+      "allowances": null
+    },
+    "5512": {
+      "sourceDepartments": [
+        "5512 - CRA-St. Andrews"
+      ],
+      "accountIds": [
+        "120-5512"
+      ],
+      "people": 2,
+      "annualPayCents": 10766080,
+      "salarySourceRows": [
+        506,
+        507
+      ],
+      "roles": [
+        {
+          "title": "Admin Tech",
+          "people": 1,
+          "hourlyMin": 20.75,
+          "hourlyMax": 20.75,
+          "annualMinCents": 4316000,
+          "annualMaxCents": 4316000,
+          "sourceRows": [
+            506
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "CRA Program Manager",
+          "people": 1,
+          "hourlyMin": 31.01,
+          "hourlyMax": 31.01,
+          "annualMinCents": 6450080,
+          "annualMaxCents": 6450080,
+          "sourceRows": [
+            507
+          ],
+          "needsReview": false
+        }
+      ],
+      "annualPayStatus": "source-reported",
+      "allowances": {
+        "grossCents": 360000,
+        "recipients": 1,
+        "pages": [
+          2
+        ]
+      }
+    },
+    "5513": {
+      "sourceDepartments": [
+        "5513 - CRA-Downtown"
+      ],
+      "accountIds": [
+        "130-5513"
+      ],
+      "people": 1,
+      "annualPayCents": 6450080,
+      "salarySourceRows": [
+        508
+      ],
+      "roles": [
+        {
+          "title": "CRA Program Manager",
+          "people": 1,
+          "hourlyMin": 31.01,
+          "hourlyMax": 31.01,
+          "annualMinCents": 6450080,
+          "annualMaxCents": 6450080,
+          "sourceRows": [
+            508
+          ],
+          "needsReview": false
+        }
+      ],
+      "annualPayStatus": "source-reported",
+      "allowances": {
+        "grossCents": 360000,
+        "recipients": 1,
+        "pages": [
+          2
+        ]
+      }
+    },
+    "7200": {
+      "sourceDepartments": [
+        "7200 - PCR"
+      ],
+      "accountIds": [
+        "001-7200"
+      ],
+      "people": 29,
+      "annualPayCents": 134083040,
+      "salarySourceRows": [
+        509,
+        510,
+        511,
+        512,
+        513,
+        514,
+        515,
+        516,
+        517,
+        518,
+        519,
+        520,
+        521,
+        522,
+        523,
+        524,
+        525,
+        526,
+        527,
+        528,
+        529,
+        530,
+        531,
+        532,
+        533,
+        534,
+        535,
+        536,
+        537
+      ],
+      "roles": [
+        {
+          "title": "Admin Tech",
+          "people": 2,
+          "hourlyMin": 19.56,
+          "hourlyMax": 20.15,
+          "annualMinCents": 4068480,
+          "annualMaxCents": 4191200,
+          "sourceRows": [
+            509,
+            533
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Athletic Program Supervisor",
+          "people": 2,
+          "hourlyMin": 23.33,
+          "hourlyMax": 25.5,
+          "annualMinCents": 4852640,
+          "annualMaxCents": 5304000,
+          "sourceRows": [
+            524,
+            537
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Crew Leader",
+          "people": 3,
+          "hourlyMin": 19.94,
+          "hourlyMax": 21.79,
+          "annualMinCents": 4147520,
+          "annualMaxCents": 4532320,
+          "sourceRows": [
+            512,
+            528,
+            529
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Director Parks Culture Recreatio",
+          "people": 1,
+          "hourlyMin": 57.35,
+          "hourlyMax": 57.35,
+          "annualMinCents": 11928800,
+          "annualMaxCents": 11928800,
+          "sourceRows": [
+            532
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Foreman",
+          "people": 1,
+          "hourlyMin": 32.94,
+          "hourlyMax": 32.94,
+          "annualMinCents": 6851520,
+          "annualMaxCents": 6851520,
+          "sourceRows": [
+            527
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Maintenance Worker II",
+          "people": 6,
+          "hourlyMin": 16.07,
+          "hourlyMax": 22.9,
+          "annualMinCents": 3342560,
+          "annualMaxCents": 4763200,
+          "sourceRows": [
+            515,
+            516,
+            523,
+            525,
+            530,
+            534
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Maintenance Worker III",
+          "people": 5,
+          "hourlyMin": 18.44,
+          "hourlyMax": 20.75,
+          "annualMinCents": 3835520,
+          "annualMaxCents": 4316000,
+          "sourceRows": [
+            514,
+            520,
+            521,
+            526,
+            531
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Maintenance Worker III-PT",
+          "people": 1,
+          "hourlyMin": 18.44,
+          "hourlyMax": 18.44,
+          "annualMinCents": 3835520,
+          "annualMaxCents": 3835520,
+          "sourceRows": [
+            510
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "School Crossing Guard - PT",
+          "people": 1,
+          "hourlyMin": 18.62,
+          "hourlyMax": 18.62,
+          "annualMinCents": 3872960,
+          "annualMaxCents": 3872960,
+          "sourceRows": [
+            522
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Special Events & Budgeting Admin",
+          "people": 1,
+          "hourlyMin": 23.09,
+          "hourlyMax": 23.09,
+          "annualMinCents": 4802720,
+          "annualMaxCents": 4802720,
+          "sourceRows": [
+            511
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Superintendent - PCR",
+          "people": 1,
+          "hourlyMin": 33.85,
+          "hourlyMax": 33.85,
+          "annualMinCents": 7040800,
+          "annualMaxCents": 7040800,
+          "sourceRows": [
+            517
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Trades Worker III",
+          "people": 5,
+          "hourlyMin": 19.36,
+          "hourlyMax": 21.16,
+          "annualMinCents": 4026880,
+          "annualMaxCents": 4401280,
+          "sourceRows": [
+            513,
+            518,
+            519,
+            535,
+            536
+          ],
+          "needsReview": false
+        }
+      ],
+      "annualPayStatus": "source-reported",
+      "allowances": {
+        "grossCents": 300000,
+        "recipients": 1,
+        "pages": [
+          3
+        ]
+      }
+    },
+    "7300": {
+      "sourceDepartments": [
+        "7300 - MLK Rec Center"
+      ],
+      "accountIds": [
+        "001-7300"
+      ],
+      "people": 16,
+      "annualPayCents": 69049760,
+      "salarySourceRows": [
+        538,
+        539,
+        540,
+        541,
+        542,
+        543,
+        544,
+        545,
+        546,
+        547,
+        548,
+        549,
+        550,
+        551,
+        552,
+        553
+      ],
+      "roles": [
+        {
+          "title": "Administrative Assistant-PT",
+          "people": 3,
+          "hourlyMin": 16.07,
+          "hourlyMax": 19.76,
+          "annualMinCents": 3342560,
+          "annualMaxCents": 4110080,
+          "sourceRows": [
+            542,
+            546,
+            552
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Administrative Technician",
+          "people": 1,
+          "hourlyMin": 18.99,
+          "hourlyMax": 18.99,
+          "annualMinCents": 3949920,
+          "annualMaxCents": 3949920,
+          "sourceRows": [
+            541
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Maintenance Worker II",
+          "people": 1,
+          "hourlyMin": 16.07,
+          "hourlyMax": 16.07,
+          "annualMinCents": 3342560,
+          "annualMaxCents": 3342560,
+          "sourceRows": [
+            553
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Maintenance Worker III",
+          "people": 1,
+          "hourlyMin": 20.75,
+          "hourlyMax": 20.75,
+          "annualMinCents": 4316000,
+          "annualMaxCents": 4316000,
+          "sourceRows": [
+            551
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Manager MLK Recreation Ctr",
+          "people": 1,
+          "hourlyMin": 36.93,
+          "hourlyMax": 36.93,
+          "annualMinCents": 7681440,
+          "annualMaxCents": 7681440,
+          "sourceRows": [
+            544
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Program Coordinator",
+          "people": 2,
+          "hourlyMin": 29.2,
+          "hourlyMax": 32.87,
+          "annualMinCents": 6073600,
+          "annualMaxCents": 6836960,
+          "sourceRows": [
+            538,
+            547
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Recreation Worker",
+          "people": 1,
+          "hourlyMin": 16.55,
+          "hourlyMax": 16.55,
+          "annualMinCents": 3442400,
+          "annualMaxCents": 3442400,
+          "sourceRows": [
+            540
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Recreation Worker-PT",
+          "people": 6,
+          "hourlyMin": 16.07,
+          "hourlyMax": 21.59,
+          "annualMinCents": 3342560,
+          "annualMaxCents": 4490720,
+          "sourceRows": [
+            539,
+            543,
+            545,
+            548,
+            549,
+            550
+          ],
+          "needsReview": false
+        }
+      ],
+      "annualPayStatus": "source-reported",
+      "allowances": null
+    },
+    "8110": {
+      "sourceDepartments": [
+        "8110 - City Hall"
+      ],
+      "accountIds": [
+        "001-8110"
+      ],
+      "people": 2,
+      "annualPayCents": 8120320,
+      "salarySourceRows": [
+        554,
+        555
+      ],
+      "roles": [
+        {
+          "title": "Ambassador",
+          "people": 1,
+          "hourlyMin": 18.08,
+          "hourlyMax": 18.08,
+          "annualMinCents": 3760640,
+          "annualMaxCents": 3760640,
+          "sourceRows": [
+            554
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Maintenance Worker II ",
+          "people": 1,
+          "hourlyMin": 20.96,
+          "hourlyMax": 20.96,
+          "annualMinCents": 4359680,
+          "annualMaxCents": 4359680,
+          "sourceRows": [
+            555
+          ],
+          "needsReview": false
+        }
+      ],
+      "annualPayStatus": "source-reported",
+      "allowances": null
+    },
+    "8131": {
+      "sourceDepartments": [
+        "8131 - Housing&Comm Public Service"
+      ],
+      "accountIds": [
+        "001-8131",
+        "190-8131"
+      ],
+      "people": 4,
+      "annualPayCents": 17213040,
+      "salarySourceRows": [
+        556,
+        557,
+        558,
+        559
+      ],
+      "roles": [
+        {
+          "title": "ASAP Assistant Director",
+          "people": 1,
+          "hourlyMin": 22.24,
+          "hourlyMax": 22.24,
+          "annualMinCents": 4625920,
+          "annualMaxCents": 4625920,
+          "sourceRows": [
+            559
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "ASAP Director",
+          "people": 1,
+          "hourlyMin": 34.58,
+          "hourlyMax": 34.58,
+          "annualMinCents": 7192640,
+          "annualMaxCents": 7192640,
+          "sourceRows": [
+            556
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Intern",
+          "people": 1,
+          "hourlyMin": 15.76,
+          "hourlyMax": 15.76,
+          "annualMinCents": 3278080,
+          "annualMaxCents": 3278080,
+          "sourceRows": [
+            558
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "PT ASAP Assistant Counselor",
+          "people": 1,
+          "hourlyMin": 20.35,
+          "hourlyMax": 20.35,
+          "annualMinCents": 2116400,
+          "annualMaxCents": 2116400,
+          "sourceRows": [
+            557
+          ],
+          "needsReview": false
+        }
+      ],
+      "annualPayStatus": "source-reported",
+      "allowances": {
+        "grossCents": 390000,
+        "recipients": 1,
+        "pages": [
+          3
+        ]
+      },
+      "sharedScope": "The same payroll department appears in multiple fund cards. These are the same department-wide figures, not separate amounts to add together; the reports do not provide a fund split."
+    },
+    "8181": {
+      "sourceDepartments": [
+        "8181 - Housing General Administration"
+      ],
+      "accountIds": [
+        "001-8181",
+        "190-8181"
+      ],
+      "people": 2,
+      "annualPayCents": 18004480,
+      "salarySourceRows": [
+        560,
+        561
+      ],
+      "roles": [
+        {
+          "title": "Administrative Assistant",
+          "people": 1,
+          "hourlyMin": 18.08,
+          "hourlyMax": 18.08,
+          "annualMinCents": 3760640,
+          "annualMaxCents": 3760640,
+          "sourceRows": [
+            560
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Director CDBG/SHIP",
+          "people": 1,
+          "hourlyMin": 68.48,
+          "hourlyMax": 68.48,
+          "annualMinCents": 14243840,
+          "annualMaxCents": 14243840,
+          "sourceRows": [
+            561
+          ],
+          "needsReview": false
+        }
+      ],
+      "annualPayStatus": "source-reported",
+      "allowances": {
+        "grossCents": 480000,
+        "recipients": 1,
+        "pages": [
+          3
+        ]
+      },
+      "sharedScope": "The same payroll department appears in multiple fund cards. These are the same department-wide figures, not separate amounts to add together; the reports do not provide a fund split."
+    },
+    "8520": {
+      "sourceDepartments": [
+        "8520 - Business Retention, Rec & Exp"
+      ],
+      "accountIds": [
+        "001-8520"
+      ],
+      "people": 2,
+      "annualPayCents": 10171200,
+      "salarySourceRows": [
+        562,
+        563
+      ],
+      "roles": [
+        {
+          "title": "Business Services Navigator",
+          "people": 1,
+          "hourlyMin": 30.1,
+          "hourlyMax": 30.1,
+          "annualMinCents": 6260800,
+          "annualMaxCents": 6260800,
+          "sourceRows": [
+            562
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Business Services Technician ",
+          "people": 1,
+          "hourlyMin": 18.8,
+          "hourlyMax": 18.8,
+          "annualMinCents": 3910400,
+          "annualMaxCents": 3910400,
+          "sourceRows": [
+            563
+          ],
+          "needsReview": false
+        }
+      ],
+      "annualPayStatus": "source-reported",
+      "allowances": {
+        "grossCents": 360000,
+        "recipients": 1,
+        "pages": [
+          3
+        ]
+      }
+    },
+    "8930": {
+      "sourceDepartments": [
+        "8930 - Equip/Main"
+      ],
+      "accountIds": [
+        "503-8930"
+      ],
+      "people": 9,
+      "annualPayCents": 44085600,
+      "salarySourceRows": [
+        564,
+        565,
+        566,
+        567,
+        568,
+        569,
+        570,
+        571,
+        572
+      ],
+      "roles": [
+        {
+          "title": "Administrative Assistant",
+          "people": 1,
+          "hourlyMin": 18.62,
+          "hourlyMax": 18.62,
+          "annualMinCents": 3872960,
+          "annualMaxCents": 3872960,
+          "sourceRows": [
+            571
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Manager Equipment Maintenance",
+          "people": 1,
+          "hourlyMin": 32.33,
+          "hourlyMax": 32.33,
+          "annualMinCents": 6724640,
+          "annualMaxCents": 6724640,
+          "sourceRows": [
+            568
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Mechanic I",
+          "people": 2,
+          "hourlyMin": 18.8,
+          "hourlyMax": 19.94,
+          "annualMinCents": 3910400,
+          "annualMaxCents": 4147520,
+          "sourceRows": [
+            565,
+            572
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Mechanic II",
+          "people": 1,
+          "hourlyMin": 23.57,
+          "hourlyMax": 23.57,
+          "annualMinCents": 4902560,
+          "annualMaxCents": 4902560,
+          "sourceRows": [
+            566
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Mechanic II ",
+          "people": 1,
+          "hourlyMin": 20.94,
+          "hourlyMax": 20.94,
+          "annualMinCents": 4355520,
+          "annualMaxCents": 4355520,
+          "sourceRows": [
+            567
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Mechanic III",
+          "people": 2,
+          "hourlyMin": 25.49,
+          "hourlyMax": 28.69,
+          "annualMinCents": 5301920,
+          "annualMaxCents": 5967520,
+          "sourceRows": [
+            564,
+            570
+          ],
+          "needsReview": false
+        },
+        {
+          "title": "Parts Specialist",
+          "people": 1,
+          "hourlyMin": 23.57,
+          "hourlyMax": 23.57,
+          "annualMinCents": 4902560,
+          "annualMaxCents": 4902560,
+          "sourceRows": [
+            569
+          ],
+          "needsReview": false
+        }
+      ],
+      "annualPayStatus": "source-reported",
+      "allowances": null
+    }
+  },
+  "accountMap": {
+    "001-1100": "1100",
+    "001-1200": "1200",
+    "001-1310": "1310",
+    "001-1330": "1330",
+    "001-1340": "1340",
+    "001-1350": "1350",
+    "001-1360": "1360",
+    "001-1610": "1610",
+    "001-1615": "1615",
+    "102-1615": "1615",
+    "001-1620": "1620",
+    "001-1710": "1710",
+    "001-1720": "1720",
+    "001-2100": "2100",
+    "001-2200": "2200",
+    "440-3410": "3410",
+    "440-3420": "3420",
+    "440-3430": "3430",
+    "440-3440": "3440",
+    "440-3460": "3460",
+    "410-3610": "3610",
+    "410-3620": "3620",
+    "410-3630": "3630",
+    "410-3640": "3640",
+    "410-3650": "3650",
+    "410-3653": "3653",
+    "410-3720": "3720",
+    "001-4110": "4110",
+    "001-4130": "4130",
+    "001-4150": "4150",
+    "120-5512": "5512",
+    "130-5513": "5513",
+    "001-7200": "7200",
+    "001-7300": "7300",
+    "001-8110": "8110",
+    "001-8131": "8131",
+    "190-8131": "8131",
+    "001-8181": "8181",
+    "190-8181": "8181",
+    "001-8520": "8520",
+    "503-8930": "8930"
+  }
+}
