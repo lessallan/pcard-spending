@@ -30539,6 +30539,78 @@
           "name": "Workers' Compensation",
           "amount": 217
         }
+      ],
+      "otherRows": [
+        {
+          "code": "53100",
+          "name": "Professional Services",
+          "amount": 0
+        },
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 3100
+        },
+        {
+          "code": "54000",
+          "name": "Travel and Per Diem",
+          "amount": 19950
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 2940
+        },
+        {
+          "code": "54400",
+          "name": "Rentals & Leases",
+          "amount": 0
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 2042
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 0
+        },
+        {
+          "code": "54700",
+          "name": "Printing & Binding",
+          "amount": 250
+        },
+        {
+          "code": "54800",
+          "name": "Promotional Activities",
+          "amount": 500
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 0
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 1500
+        },
+        {
+          "code": "55220",
+          "name": "Fuel Charges",
+          "amount": 0
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 765
+        },
+        {
+          "code": "55500",
+          "name": "Training",
+          "amount": 4000
+        }
       ]
     },
     "001-1200": {
@@ -30605,6 +30677,98 @@
           "name": "Workers' Compensation",
           "amount": 804
         }
+      ],
+      "otherRows": [
+        {
+          "code": "53100",
+          "name": "Professional Services",
+          "amount": 150450
+        },
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 2800
+        },
+        {
+          "code": "54000",
+          "name": "Travel and Per Diem",
+          "amount": 20000
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 4380
+        },
+        {
+          "code": "54200",
+          "name": "Freight & Postage Service",
+          "amount": 100
+        },
+        {
+          "code": "54400",
+          "name": "Rentals & Leases",
+          "amount": 1980
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 7821
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 1320
+        },
+        {
+          "code": "54700",
+          "name": "Printing & Binding",
+          "amount": 0
+        },
+        {
+          "code": "54800",
+          "name": "Promotional Activities",
+          "amount": 4000
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 0
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 7400
+        },
+        {
+          "code": "55220",
+          "name": "Fuel Charges",
+          "amount": 200
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 31700
+        },
+        {
+          "code": "55500",
+          "name": "Training",
+          "amount": 13000
+        },
+        {
+          "code": "56900",
+          "name": "GASB 87 Leases - Capital Outlay",
+          "amount": 0
+        },
+        {
+          "code": "57110",
+          "name": "Debt Service Principle - Right-to-Use Leases",
+          "amount": 0
+        },
+        {
+          "code": "57210",
+          "name": "Debt Service Interest - Right-to-Use Leases",
+          "amount": 0
+        }
       ]
     },
     "001-1310": {
@@ -30666,6 +30830,83 @@
           "name": "Workers' Compensation",
           "amount": 859
         }
+      ],
+      "otherRows": [
+        {
+          "code": "53200",
+          "name": "Accounting & Auditing",
+          "amount": 154000
+        },
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 57750
+        },
+        {
+          "code": "54000",
+          "name": "Travel and Per Diem",
+          "amount": 9000
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 4380
+        },
+        {
+          "code": "54200",
+          "name": "Freight & Postage Service",
+          "amount": 0
+        },
+        {
+          "code": "54400",
+          "name": "Rentals & Leases",
+          "amount": 3480
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 8387
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 5520
+        },
+        {
+          "code": "54700",
+          "name": "Printing & Binding",
+          "amount": 950
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 1500
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 12100
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 1110
+        },
+        {
+          "code": "55500",
+          "name": "Training",
+          "amount": 5500
+        },
+        {
+          "code": "57110",
+          "name": "Debt Service Principle - Right-to-Use Leases",
+          "amount": 0
+        },
+        {
+          "code": "57210",
+          "name": "Debt Service Interest - Right-to-Use Leases",
+          "amount": 0
+        }
       ]
     },
     "001-1330": {
@@ -30726,6 +30967,113 @@
           "code": "52400",
           "name": "Workers' Compensation",
           "amount": 2086
+        }
+      ],
+      "otherRows": [
+        {
+          "code": "53100",
+          "name": "Professional Services",
+          "amount": 0
+        },
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 20076
+        },
+        {
+          "code": "54000",
+          "name": "Travel and Per Diem",
+          "amount": 0
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 9396
+        },
+        {
+          "code": "54200",
+          "name": "Freight & Postage Service",
+          "amount": 50
+        },
+        {
+          "code": "54300",
+          "name": "Utility Services",
+          "amount": 12300
+        },
+        {
+          "code": "54400",
+          "name": "Rentals & Leases",
+          "amount": 2040
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 3200
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 2700
+        },
+        {
+          "code": "54700",
+          "name": "Printing & Binding",
+          "amount": 300
+        },
+        {
+          "code": "54800",
+          "name": "Promotional Activities",
+          "amount": 0
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 250
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 18450
+        },
+        {
+          "code": "55220",
+          "name": "Fuel Charges",
+          "amount": 2000
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 0
+        },
+        {
+          "code": "55500",
+          "name": "Training",
+          "amount": 0
+        },
+        {
+          "code": "56200",
+          "name": "Buildings",
+          "amount": 0
+        },
+        {
+          "code": "56400",
+          "name": "Machinery & Equipment",
+          "amount": 0
+        },
+        {
+          "code": "56910",
+          "name": "SBITAs Capital Outlay",
+          "amount": 0
+        },
+        {
+          "code": "57115",
+          "name": "Debt Service Principle - SBITAs",
+          "amount": 0
+        },
+        {
+          "code": "57215",
+          "name": "Debt Service Interest - SBITAs",
+          "amount": 0
         }
       ]
     },
@@ -30798,6 +31146,83 @@
           "name": "Unemployment Compensation",
           "amount": 15000
         }
+      ],
+      "otherRows": [
+        {
+          "code": "53100",
+          "name": "Professional Services",
+          "amount": 127230
+        },
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 74403
+        },
+        {
+          "code": "54000",
+          "name": "Travel and Per Diem",
+          "amount": 0
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 3120
+        },
+        {
+          "code": "54400",
+          "name": "Rentals & Leases",
+          "amount": 2880
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 54147
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 4200
+        },
+        {
+          "code": "54700",
+          "name": "Printing & Binding",
+          "amount": 150
+        },
+        {
+          "code": "54800",
+          "name": "Promotional Activities",
+          "amount": 8300
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 0
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 10000
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 24453
+        },
+        {
+          "code": "55500",
+          "name": "Training",
+          "amount": 5040
+        },
+        {
+          "code": "57110",
+          "name": "Debt Service Principle - Right-to-Use Leases",
+          "amount": 0
+        },
+        {
+          "code": "57210",
+          "name": "Debt Service Interest - Right-to-Use Leases",
+          "amount": 0
+        }
       ]
     },
     "001-1350": {
@@ -30858,6 +31283,113 @@
           "code": "52400",
           "name": "Workers' Compensation",
           "amount": 548
+        }
+      ],
+      "otherRows": [
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 0
+        },
+        {
+          "code": "54000",
+          "name": "Travel and Per Diem",
+          "amount": 0
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 13288
+        },
+        {
+          "code": "54200",
+          "name": "Freight & Postage Service",
+          "amount": 0
+        },
+        {
+          "code": "54400",
+          "name": "Rentals & Leases",
+          "amount": 1020
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 10639
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 2360
+        },
+        {
+          "code": "54700",
+          "name": "Printing & Binding",
+          "amount": 0
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 0
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 15000
+        },
+        {
+          "code": "55220",
+          "name": "Fuel Charges",
+          "amount": 300
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 570418
+        },
+        {
+          "code": "55500",
+          "name": "Training",
+          "amount": 0
+        },
+        {
+          "code": "56400",
+          "name": "Machinery & Equipment",
+          "amount": 0
+        },
+        {
+          "code": "56800",
+          "name": "Intangible Assets",
+          "amount": 257563
+        },
+        {
+          "code": "56900",
+          "name": "GASB 87 Leases - Capital Outlay",
+          "amount": 0
+        },
+        {
+          "code": "56910",
+          "name": "SBITAs Capital Outlay",
+          "amount": 0
+        },
+        {
+          "code": "57110",
+          "name": "Debt Service Principle - Right-to-Use Leases",
+          "amount": 0
+        },
+        {
+          "code": "57115",
+          "name": "Debt Service Principle - SBITAs",
+          "amount": 0
+        },
+        {
+          "code": "57210",
+          "name": "Debt Service Interest - Right-to-Use Leases",
+          "amount": 0
+        },
+        {
+          "code": "57215",
+          "name": "Debt Service Interest - SBITAs",
+          "amount": 0
         }
       ]
     },
@@ -30925,6 +31457,118 @@
           "name": "Workers' Compensation",
           "amount": 4187
         }
+      ],
+      "otherRows": [
+        {
+          "code": "53100",
+          "name": "Professional Services",
+          "amount": 0
+        },
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 1485
+        },
+        {
+          "code": "54000",
+          "name": "Travel and Per Diem",
+          "amount": 0
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 5780
+        },
+        {
+          "code": "54200",
+          "name": "Freight & Postage Service",
+          "amount": 100
+        },
+        {
+          "code": "54300",
+          "name": "Utility Services",
+          "amount": 0
+        },
+        {
+          "code": "54400",
+          "name": "Rentals & Leases",
+          "amount": 1560
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 74169
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 2100
+        },
+        {
+          "code": "54700",
+          "name": "Printing & Binding",
+          "amount": 150
+        },
+        {
+          "code": "54800",
+          "name": "Promotional Activities",
+          "amount": 600
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 200
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 3145
+        },
+        {
+          "code": "55220",
+          "name": "Fuel Charges",
+          "amount": 600
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 63000
+        },
+        {
+          "code": "55500",
+          "name": "Training",
+          "amount": 0
+        },
+        {
+          "code": "56200",
+          "name": "Buildings",
+          "amount": 0
+        },
+        {
+          "code": "56300",
+          "name": "Improv Other Than Buildgs",
+          "amount": 0
+        },
+        {
+          "code": "56400",
+          "name": "Machinery & Equipment",
+          "amount": 0
+        },
+        {
+          "code": "56800",
+          "name": "Intangible Assets",
+          "amount": 0
+        },
+        {
+          "code": "57110",
+          "name": "Debt Service Principle - Right-to-Use Leases",
+          "amount": 0
+        },
+        {
+          "code": "57210",
+          "name": "Debt Service Interest - Right-to-Use Leases",
+          "amount": 0
+        }
       ]
     },
     "001-1610": {
@@ -30986,6 +31630,118 @@
           "name": "Workers' Compensation",
           "amount": 9444
         }
+      ],
+      "otherRows": [
+        {
+          "code": "53100",
+          "name": "Professional Services",
+          "amount": 34000
+        },
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 80000
+        },
+        {
+          "code": "54000",
+          "name": "Travel and Per Diem",
+          "amount": 0
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 15600
+        },
+        {
+          "code": "54200",
+          "name": "Freight & Postage Service",
+          "amount": 2000
+        },
+        {
+          "code": "54400",
+          "name": "Rentals & Leases",
+          "amount": 1980
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 7657
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 8700
+        },
+        {
+          "code": "54700",
+          "name": "Printing & Binding",
+          "amount": 500
+        },
+        {
+          "code": "54800",
+          "name": "Promotional Activities",
+          "amount": 0
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 1000
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 8000
+        },
+        {
+          "code": "55220",
+          "name": "Fuel Charges",
+          "amount": 5000
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 38700
+        },
+        {
+          "code": "55500",
+          "name": "Training",
+          "amount": 5000
+        },
+        {
+          "code": "56400",
+          "name": "Machinery & Equipment",
+          "amount": 0
+        },
+        {
+          "code": "56800",
+          "name": "Intangible Assets",
+          "amount": 25000
+        },
+        {
+          "code": "56910",
+          "name": "SBITAs Capital Outlay",
+          "amount": 0
+        },
+        {
+          "code": "57110",
+          "name": "Debt Service Principle - Right-to-Use Leases",
+          "amount": 0
+        },
+        {
+          "code": "57115",
+          "name": "Debt Service Principle - SBITAs",
+          "amount": 0
+        },
+        {
+          "code": "57210",
+          "name": "Debt Service Interest - Right-to-Use Leases",
+          "amount": 0
+        },
+        {
+          "code": "57215",
+          "name": "Debt Service Interest - SBITAs",
+          "amount": 0
+        }
       ]
     },
     "001-1615": {
@@ -31040,6 +31796,58 @@
         {
           "code": "52400",
           "name": "Workers' Compensation",
+          "amount": 0
+        }
+      ],
+      "otherRows": [
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 0
+        },
+        {
+          "code": "54000",
+          "name": "Travel and Per Diem",
+          "amount": 0
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 0
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 0
+        },
+        {
+          "code": "54700",
+          "name": "Printing & Binding",
+          "amount": 0
+        },
+        {
+          "code": "54800",
+          "name": "Promotional Activities",
+          "amount": 0
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 0
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 0
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 0
+        },
+        {
+          "code": "55500",
+          "name": "Training",
           "amount": 0
         }
       ]
@@ -31102,6 +31910,108 @@
           "code": "52400",
           "name": "Workers' Compensation",
           "amount": 13876
+        }
+      ],
+      "otherRows": [
+        {
+          "code": "53100",
+          "name": "Professional Services",
+          "amount": 20000
+        },
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 10800
+        },
+        {
+          "code": "54000",
+          "name": "Travel and Per Diem",
+          "amount": 5992
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 11760
+        },
+        {
+          "code": "54200",
+          "name": "Freight & Postage Service",
+          "amount": 100
+        },
+        {
+          "code": "54400",
+          "name": "Rentals & Leases",
+          "amount": 1980
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 10406
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 8300
+        },
+        {
+          "code": "54700",
+          "name": "Printing & Binding",
+          "amount": 150
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 150
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 14610
+        },
+        {
+          "code": "55220",
+          "name": "Fuel Charges",
+          "amount": 4800
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 60805
+        },
+        {
+          "code": "55500",
+          "name": "Training",
+          "amount": 7000
+        },
+        {
+          "code": "56400",
+          "name": "Machinery & Equipment",
+          "amount": 0
+        },
+        {
+          "code": "56910",
+          "name": "SBITAs Capital Outlay",
+          "amount": 0
+        },
+        {
+          "code": "57110",
+          "name": "Debt Service Principle - Right-to-Use Leases",
+          "amount": 0
+        },
+        {
+          "code": "57115",
+          "name": "Debt Service Principle - SBITAs",
+          "amount": 0
+        },
+        {
+          "code": "57210",
+          "name": "Debt Service Interest - Right-to-Use Leases",
+          "amount": 0
+        },
+        {
+          "code": "57215",
+          "name": "Debt Service Interest - SBITAs",
+          "amount": 0
         }
       ]
     },
@@ -31174,6 +32084,88 @@
           "name": "Workers' Compensation",
           "amount": 915
         }
+      ],
+      "otherRows": [
+        {
+          "code": "53100",
+          "name": "Professional Services",
+          "amount": 0
+        },
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 2600
+        },
+        {
+          "code": "54000",
+          "name": "Travel and Per Diem",
+          "amount": 4500
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 2340
+        },
+        {
+          "code": "54200",
+          "name": "Freight & Postage Service",
+          "amount": 0
+        },
+        {
+          "code": "54400",
+          "name": "Rentals & Leases",
+          "amount": 500
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 31817
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 1920
+        },
+        {
+          "code": "54700",
+          "name": "Printing & Binding",
+          "amount": 150
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 0
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 6000
+        },
+        {
+          "code": "55220",
+          "name": "Fuel Charges",
+          "amount": 0
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 1500
+        },
+        {
+          "code": "55500",
+          "name": "Training",
+          "amount": 2500
+        },
+        {
+          "code": "57100",
+          "name": "Debt Service Principle",
+          "amount": 0
+        },
+        {
+          "code": "57200",
+          "name": "Debt Service Interest",
+          "amount": 0
+        }
       ]
     },
     "001-1720": {
@@ -31239,6 +32231,93 @@
           "code": "52400",
           "name": "Workers' Compensation",
           "amount": 17180
+        }
+      ],
+      "otherRows": [
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 66263
+        },
+        {
+          "code": "54000",
+          "name": "Travel and Per Diem",
+          "amount": 0
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 12480
+        },
+        {
+          "code": "54300",
+          "name": "Utility Services",
+          "amount": 20000
+        },
+        {
+          "code": "54400",
+          "name": "Rentals & Leases",
+          "amount": 1560
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 39612
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 45000
+        },
+        {
+          "code": "54700",
+          "name": "Printing & Binding",
+          "amount": 0
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 500
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 25000
+        },
+        {
+          "code": "55220",
+          "name": "Fuel Charges",
+          "amount": 22000
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 9759
+        },
+        {
+          "code": "55500",
+          "name": "Training",
+          "amount": 0
+        },
+        {
+          "code": "56400",
+          "name": "Machinery & Equipment",
+          "amount": 0
+        },
+        {
+          "code": "56800",
+          "name": "Intangible Assets",
+          "amount": 0
+        },
+        {
+          "code": "57100",
+          "name": "Debt Service Principle",
+          "amount": 0
+        },
+        {
+          "code": "57200",
+          "name": "Debt Service Interest",
+          "amount": 0
         }
       ]
     },
@@ -31311,6 +32390,148 @@
           "name": "Unemployment Compensation",
           "amount": 0
         }
+      ],
+      "otherRows": [
+        {
+          "code": "53100",
+          "name": "Professional Services",
+          "amount": 19200
+        },
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 325000
+        },
+        {
+          "code": "53500",
+          "name": "Investigations",
+          "amount": 12000
+        },
+        {
+          "code": "54000",
+          "name": "Travel and Per Diem",
+          "amount": 30000
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 212500
+        },
+        {
+          "code": "54200",
+          "name": "Freight & Postage Service",
+          "amount": 1500
+        },
+        {
+          "code": "54300",
+          "name": "Utility Services",
+          "amount": 79000
+        },
+        {
+          "code": "54400",
+          "name": "Rentals & Leases",
+          "amount": 9700
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 417183
+        },
+        {
+          "code": "54503",
+          "name": "Liability Claims",
+          "amount": 0
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 303000
+        },
+        {
+          "code": "54700",
+          "name": "Printing & Binding",
+          "amount": 800
+        },
+        {
+          "code": "54800",
+          "name": "Promotional Activities",
+          "amount": 7500
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 6500
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 280277
+        },
+        {
+          "code": "55220",
+          "name": "Fuel Charges",
+          "amount": 320000
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 117300
+        },
+        {
+          "code": "55500",
+          "name": "Training",
+          "amount": 25000
+        },
+        {
+          "code": "56200",
+          "name": "Buildings",
+          "amount": 0
+        },
+        {
+          "code": "56300",
+          "name": "Improv Other Than Buildgs",
+          "amount": 0
+        },
+        {
+          "code": "56400",
+          "name": "Machinery & Equipment",
+          "amount": 0
+        },
+        {
+          "code": "56800",
+          "name": "Intangible Assets",
+          "amount": 54000
+        },
+        {
+          "code": "57100",
+          "name": "Debt Service Principle",
+          "amount": 520300
+        },
+        {
+          "code": "57110",
+          "name": "Debt Service Principle - Right-to-Use Leases",
+          "amount": 0
+        },
+        {
+          "code": "57115",
+          "name": "Debt Service Principle - SBITAs",
+          "amount": 0
+        },
+        {
+          "code": "57200",
+          "name": "Debt Service Interest",
+          "amount": 4550
+        },
+        {
+          "code": "57210",
+          "name": "Debt Service Interest - Right-to-Use Leases",
+          "amount": 0
+        },
+        {
+          "code": "57215",
+          "name": "Debt Service Interest - SBITAs",
+          "amount": 0
+        }
       ]
     },
     "001-2200": {
@@ -31376,6 +32597,133 @@
           "code": "52400",
           "name": "Workers' Compensation",
           "amount": 241859
+        }
+      ],
+      "otherRows": [
+        {
+          "code": "53100",
+          "name": "Professional Services",
+          "amount": 53440
+        },
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 223000
+        },
+        {
+          "code": "54000",
+          "name": "Travel and Per Diem",
+          "amount": 8500
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 32620
+        },
+        {
+          "code": "54200",
+          "name": "Freight & Postage Service",
+          "amount": 500
+        },
+        {
+          "code": "54300",
+          "name": "Utility Services",
+          "amount": 106000
+        },
+        {
+          "code": "54400",
+          "name": "Rentals & Leases",
+          "amount": 4200
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 176148
+        },
+        {
+          "code": "54503",
+          "name": "Liability Claims",
+          "amount": 0
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 230300
+        },
+        {
+          "code": "54700",
+          "name": "Printing & Binding",
+          "amount": 600
+        },
+        {
+          "code": "54800",
+          "name": "Promotional Activities",
+          "amount": 8300
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 800
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 264500
+        },
+        {
+          "code": "55220",
+          "name": "Fuel Charges",
+          "amount": 60000
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 67442
+        },
+        {
+          "code": "55500",
+          "name": "Training",
+          "amount": 27000
+        },
+        {
+          "code": "56200",
+          "name": "Buildings",
+          "amount": 0
+        },
+        {
+          "code": "56300",
+          "name": "Improv Other Than Buildgs",
+          "amount": 0
+        },
+        {
+          "code": "56400",
+          "name": "Machinery & Equipment",
+          "amount": 0
+        },
+        {
+          "code": "56800",
+          "name": "Intangible Assets",
+          "amount": 11632
+        },
+        {
+          "code": "57100",
+          "name": "Debt Service Principle",
+          "amount": 333323
+        },
+        {
+          "code": "57110",
+          "name": "Debt Service Principle - Right-to-Use Leases",
+          "amount": 0
+        },
+        {
+          "code": "57200",
+          "name": "Debt Service Interest",
+          "amount": 20712
+        },
+        {
+          "code": "57210",
+          "name": "Debt Service Interest - Right-to-Use Leases",
+          "amount": 0
         }
       ]
     },
@@ -31448,6 +32796,133 @@
           "name": "Workers' Compensation",
           "amount": 4305
         }
+      ],
+      "otherRows": [
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 322136
+        },
+        {
+          "code": "54000",
+          "name": "Travel and Per Diem",
+          "amount": 0
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 9872
+        },
+        {
+          "code": "54200",
+          "name": "Freight & Postage Service",
+          "amount": 100
+        },
+        {
+          "code": "54300",
+          "name": "Utility Services",
+          "amount": 773000
+        },
+        {
+          "code": "54400",
+          "name": "Rentals & Leases",
+          "amount": 52828
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 139338
+        },
+        {
+          "code": "54503",
+          "name": "Liability Claims",
+          "amount": 0
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 486000
+        },
+        {
+          "code": "54700",
+          "name": "Printing & Binding",
+          "amount": 100
+        },
+        {
+          "code": "54800",
+          "name": "Promotional Activities",
+          "amount": 1000
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 1000
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 144075
+        },
+        {
+          "code": "55220",
+          "name": "Fuel Charges",
+          "amount": 125000
+        },
+        {
+          "code": "55300",
+          "name": "Road Materials & Supplies",
+          "amount": 377500
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 20650
+        },
+        {
+          "code": "55500",
+          "name": "Training",
+          "amount": 10000
+        },
+        {
+          "code": "56300",
+          "name": "Improv Other Than Buildgs",
+          "amount": 0
+        },
+        {
+          "code": "56400",
+          "name": "Machinery & Equipment",
+          "amount": 0
+        },
+        {
+          "code": "56500",
+          "name": "Construction In Progress",
+          "amount": 0
+        },
+        {
+          "code": "56800",
+          "name": "Intangible Assets",
+          "amount": 0
+        },
+        {
+          "code": "57100",
+          "name": "Debt Service Principle",
+          "amount": 80000
+        },
+        {
+          "code": "57110",
+          "name": "Debt Service Principle - Right-to-Use Leases",
+          "amount": 0
+        },
+        {
+          "code": "57200",
+          "name": "Debt Service Interest",
+          "amount": 0
+        },
+        {
+          "code": "57210",
+          "name": "Debt Service Interest - Right-to-Use Leases",
+          "amount": 0
+        }
       ]
     },
     "001-4120": {
@@ -31514,6 +32989,133 @@
           "name": "Workers' Compensation",
           "amount": 0
         }
+      ],
+      "otherRows": [
+        {
+          "code": "53100",
+          "name": "Professional Services",
+          "amount": 0
+        },
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 0
+        },
+        {
+          "code": "54000",
+          "name": "Travel and Per Diem",
+          "amount": 0
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 0
+        },
+        {
+          "code": "54200",
+          "name": "Freight & Postage Service",
+          "amount": 0
+        },
+        {
+          "code": "54300",
+          "name": "Utility Services",
+          "amount": 0
+        },
+        {
+          "code": "54400",
+          "name": "Rentals & Leases",
+          "amount": 0
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 0
+        },
+        {
+          "code": "54503",
+          "name": "Liability Claims",
+          "amount": 0
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 0
+        },
+        {
+          "code": "54700",
+          "name": "Printing & Binding",
+          "amount": 0
+        },
+        {
+          "code": "54800",
+          "name": "Promotional Activities",
+          "amount": 0
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 0
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 0
+        },
+        {
+          "code": "55220",
+          "name": "Fuel Charges",
+          "amount": 0
+        },
+        {
+          "code": "55300",
+          "name": "Road Materials & Supplies",
+          "amount": 0
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 0
+        },
+        {
+          "code": "55500",
+          "name": "Training",
+          "amount": 0
+        },
+        {
+          "code": "56300",
+          "name": "Improv Other Than Buildgs",
+          "amount": 0
+        },
+        {
+          "code": "56400",
+          "name": "Machinery & Equipment",
+          "amount": 0
+        },
+        {
+          "code": "56800",
+          "name": "Intangible Assets",
+          "amount": 0
+        },
+        {
+          "code": "57100",
+          "name": "Debt Service Principle",
+          "amount": 0
+        },
+        {
+          "code": "57110",
+          "name": "Debt Service Principle - Right-to-Use Leases",
+          "amount": 0
+        },
+        {
+          "code": "57200",
+          "name": "Debt Service Interest",
+          "amount": 0
+        },
+        {
+          "code": "57210",
+          "name": "Debt Service Interest - Right-to-Use Leases",
+          "amount": 0
+        }
       ]
     },
     "001-4130": {
@@ -31575,6 +33177,93 @@
           "name": "Workers' Compensation",
           "amount": 3277
         }
+      ],
+      "otherRows": [
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 7347
+        },
+        {
+          "code": "54000",
+          "name": "Travel and Per Diem",
+          "amount": 0
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 4779
+        },
+        {
+          "code": "54200",
+          "name": "Freight & Postage Service",
+          "amount": 0
+        },
+        {
+          "code": "54300",
+          "name": "Utility Services",
+          "amount": 25080
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 1814
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 6900
+        },
+        {
+          "code": "54700",
+          "name": "Printing & Binding",
+          "amount": 0
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 0
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 46125
+        },
+        {
+          "code": "55220",
+          "name": "Fuel Charges",
+          "amount": 7500
+        },
+        {
+          "code": "55300",
+          "name": "Road Materials & Supplies",
+          "amount": 79000
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 14221
+        },
+        {
+          "code": "55500",
+          "name": "Training",
+          "amount": 3000
+        },
+        {
+          "code": "56400",
+          "name": "Machinery & Equipment",
+          "amount": 0
+        },
+        {
+          "code": "57100",
+          "name": "Debt Service Principle",
+          "amount": 0
+        },
+        {
+          "code": "57200",
+          "name": "Debt Service Interest",
+          "amount": 0
+        }
       ]
     },
     "001-4140": {
@@ -31624,6 +33313,43 @@
         {
           "code": "52400",
           "name": "Workers' Compensation",
+          "amount": 0
+        }
+      ],
+      "otherRows": [
+        {
+          "code": "53100",
+          "name": "Professional Services",
+          "amount": 0
+        },
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 0
+        },
+        {
+          "code": "54400",
+          "name": "Rentals & Leases",
+          "amount": 0
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 0
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 0
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 0
+        },
+        {
+          "code": "55220",
+          "name": "Fuel Charges",
           "amount": 0
         }
       ]
@@ -31681,6 +33407,43 @@
           "code": "52400",
           "name": "Workers' Compensation",
           "amount": 183
+        }
+      ],
+      "otherRows": [
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 138255
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 720
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 15000
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 10000
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 7400
+        },
+        {
+          "code": "55220",
+          "name": "Fuel Charges",
+          "amount": 10000
+        },
+        {
+          "code": "55300",
+          "name": "Road Materials & Supplies",
+          "amount": 500000
         }
       ]
     },
@@ -31758,6 +33521,118 @@
           "name": "Unemployment Compensation",
           "amount": 0
         }
+      ],
+      "otherRows": [
+        {
+          "code": "53100",
+          "name": "Professional Services",
+          "amount": 6000
+        },
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 162000
+        },
+        {
+          "code": "54000",
+          "name": "Travel and Per Diem",
+          "amount": 1000
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 27324
+        },
+        {
+          "code": "54200",
+          "name": "Freight & Postage Service",
+          "amount": 200
+        },
+        {
+          "code": "54300",
+          "name": "Utility Services",
+          "amount": 453000
+        },
+        {
+          "code": "54400",
+          "name": "Rentals & Leases",
+          "amount": 47369
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 162820
+        },
+        {
+          "code": "54503",
+          "name": "Liability Claims",
+          "amount": 0
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 198000
+        },
+        {
+          "code": "54700",
+          "name": "Printing & Binding",
+          "amount": 1250
+        },
+        {
+          "code": "54800",
+          "name": "Promotional Activities",
+          "amount": 102500
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 3000
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 186700
+        },
+        {
+          "code": "55220",
+          "name": "Fuel Charges",
+          "amount": 45000
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 30338
+        },
+        {
+          "code": "55500",
+          "name": "Training",
+          "amount": 2450
+        },
+        {
+          "code": "56300",
+          "name": "Improv Other Than Buildgs",
+          "amount": 0
+        },
+        {
+          "code": "56400",
+          "name": "Machinery & Equipment",
+          "amount": 0
+        },
+        {
+          "code": "56500",
+          "name": "Construction In Progress",
+          "amount": 0
+        },
+        {
+          "code": "57110",
+          "name": "Debt Service Principle - Right-to-Use Leases",
+          "amount": 0
+        },
+        {
+          "code": "57210",
+          "name": "Debt Service Interest - Right-to-Use Leases",
+          "amount": 0
+        }
       ]
     },
     "001-7300": {
@@ -31808,6 +33683,78 @@
           "code": "52400",
           "name": "Workers' Compensation",
           "amount": 7339
+        }
+      ],
+      "otherRows": [
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 105550
+        },
+        {
+          "code": "54000",
+          "name": "Travel and Per Diem",
+          "amount": 1000
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 15108
+        },
+        {
+          "code": "54300",
+          "name": "Utility Services",
+          "amount": 82596
+        },
+        {
+          "code": "54400",
+          "name": "Rentals & Leases",
+          "amount": 6140
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 92697
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 29000
+        },
+        {
+          "code": "54700",
+          "name": "Printing & Binding",
+          "amount": 1200
+        },
+        {
+          "code": "54800",
+          "name": "Promotional Activities",
+          "amount": 18000
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 1500
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 59250
+        },
+        {
+          "code": "55220",
+          "name": "Fuel Charges",
+          "amount": 2500
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 8633
+        },
+        {
+          "code": "55500",
+          "name": "Training",
+          "amount": 2000
         }
       ]
     },
@@ -31865,6 +33812,93 @@
           "name": "Workers' Compensation",
           "amount": 85
         }
+      ],
+      "otherRows": [
+        {
+          "code": "53100",
+          "name": "Professional Services",
+          "amount": 0
+        },
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 44868
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 109980
+        },
+        {
+          "code": "54200",
+          "name": "Freight & Postage Service",
+          "amount": 1000
+        },
+        {
+          "code": "54300",
+          "name": "Utility Services",
+          "amount": 130000
+        },
+        {
+          "code": "54400",
+          "name": "Rentals & Leases",
+          "amount": 8100
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 76166
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 30000
+        },
+        {
+          "code": "54800",
+          "name": "Promotional Activities",
+          "amount": 0
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 0
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 16300
+        },
+        {
+          "code": "55220",
+          "name": "Fuel Charges",
+          "amount": 200
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 2100
+        },
+        {
+          "code": "55500",
+          "name": "Training",
+          "amount": 0
+        },
+        {
+          "code": "56400",
+          "name": "Machinery & Equipment",
+          "amount": 0
+        },
+        {
+          "code": "57110",
+          "name": "Debt Service Principle - Right-to-Use Leases",
+          "amount": 0
+        },
+        {
+          "code": "57210",
+          "name": "Debt Service Interest - Right-to-Use Leases",
+          "amount": 0
+        }
       ]
     },
     "001-8181": {
@@ -31920,6 +33954,23 @@
           "code": "52400",
           "name": "Workers' Compensation",
           "amount": 2977
+        }
+      ],
+      "otherRows": [
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 2290
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 0
+        },
+        {
+          "code": "54700",
+          "name": "Printing & Binding",
+          "amount": 0
         }
       ]
     },
@@ -31982,6 +34033,98 @@
           "name": "Workers' Compensation",
           "amount": 130
         }
+      ],
+      "otherRows": [
+        {
+          "code": "53100",
+          "name": "Professional Services",
+          "amount": 0
+        },
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 2200
+        },
+        {
+          "code": "54000",
+          "name": "Travel and Per Diem",
+          "amount": 0
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 480
+        },
+        {
+          "code": "54200",
+          "name": "Freight & Postage Service",
+          "amount": 0
+        },
+        {
+          "code": "54300",
+          "name": "Utility Services",
+          "amount": 0
+        },
+        {
+          "code": "54400",
+          "name": "Rentals & Leases",
+          "amount": 1500
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 1649
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 1800
+        },
+        {
+          "code": "54700",
+          "name": "Printing & Binding",
+          "amount": 125
+        },
+        {
+          "code": "54800",
+          "name": "Promotional Activities",
+          "amount": 0
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 0
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 1500
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 73520
+        },
+        {
+          "code": "55500",
+          "name": "Training",
+          "amount": 0
+        },
+        {
+          "code": "56900",
+          "name": "GASB 87 Leases - Capital Outlay",
+          "amount": 0
+        },
+        {
+          "code": "57110",
+          "name": "Debt Service Principle - Right-to-Use Leases",
+          "amount": 0
+        },
+        {
+          "code": "57210",
+          "name": "Debt Service Interest - Right-to-Use Leases",
+          "amount": 0
+        }
       ]
     },
     "102-1615": {
@@ -32037,6 +34180,63 @@
           "code": "52400",
           "name": "Workers' Compensation",
           "amount": 5460
+        }
+      ],
+      "otherRows": [
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 383598
+        },
+        {
+          "code": "54000",
+          "name": "Travel and Per Diem",
+          "amount": 3500
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 1200
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 1080
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 1000
+        },
+        {
+          "code": "54700",
+          "name": "Printing & Binding",
+          "amount": 1000
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 5000
+        },
+        {
+          "code": "55220",
+          "name": "Fuel Charges",
+          "amount": 2000
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 5000
+        },
+        {
+          "code": "55500",
+          "name": "Training",
+          "amount": 12500
+        },
+        {
+          "code": "56800",
+          "name": "Intangible Assets",
+          "amount": 16000
         }
       ]
     },
@@ -32099,6 +34299,123 @@
           "name": "Workers' Compensation",
           "amount": 626
         }
+      ],
+      "otherRows": [
+        {
+          "code": "53100",
+          "name": "Professional Services",
+          "amount": 134500
+        },
+        {
+          "code": "53200",
+          "name": "Accounting & Auditing",
+          "amount": 5500
+        },
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 219490
+        },
+        {
+          "code": "54000",
+          "name": "Travel and Per Diem",
+          "amount": 2300
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 1872
+        },
+        {
+          "code": "54200",
+          "name": "Freight & Postage Service",
+          "amount": 125
+        },
+        {
+          "code": "54300",
+          "name": "Utility Services",
+          "amount": 38940
+        },
+        {
+          "code": "54400",
+          "name": "Rentals & Leases",
+          "amount": 0
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 10831
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 67000
+        },
+        {
+          "code": "54700",
+          "name": "Printing & Binding",
+          "amount": 200
+        },
+        {
+          "code": "54800",
+          "name": "Promotional Activities",
+          "amount": 0
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 100
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 107860
+        },
+        {
+          "code": "55220",
+          "name": "Fuel Charges",
+          "amount": 0
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 500
+        },
+        {
+          "code": "55500",
+          "name": "Training",
+          "amount": 1220
+        },
+        {
+          "code": "56200",
+          "name": "Buildings",
+          "amount": 315000
+        },
+        {
+          "code": "56300",
+          "name": "Improv Other Than Buildgs",
+          "amount": 0
+        },
+        {
+          "code": "56500",
+          "name": "Construction In Progress",
+          "amount": 3165000
+        },
+        {
+          "code": "57110",
+          "name": "Debt Service Principle - Right-to-Use Leases",
+          "amount": 0
+        },
+        {
+          "code": "57210",
+          "name": "Debt Service Interest - Right-to-Use Leases",
+          "amount": 0
+        },
+        {
+          "code": "58305",
+          "name": "Other Grants and Aids",
+          "amount": 427500
+        }
       ]
     },
     "130-5513": {
@@ -32159,6 +34476,113 @@
           "code": "52400",
           "name": "Workers' Compensation",
           "amount": 412
+        }
+      ],
+      "otherRows": [
+        {
+          "code": "53100",
+          "name": "Professional Services",
+          "amount": 10000
+        },
+        {
+          "code": "53200",
+          "name": "Accounting & Auditing",
+          "amount": 2500
+        },
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 62613
+        },
+        {
+          "code": "54000",
+          "name": "Travel and Per Diem",
+          "amount": 3600
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 312
+        },
+        {
+          "code": "54200",
+          "name": "Freight & Postage Service",
+          "amount": 125
+        },
+        {
+          "code": "54300",
+          "name": "Utility Services",
+          "amount": 5000
+        },
+        {
+          "code": "54400",
+          "name": "Rentals & Leases",
+          "amount": 0
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 826
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 110000
+        },
+        {
+          "code": "54700",
+          "name": "Printing & Binding",
+          "amount": 200
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 100
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 11000
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 500
+        },
+        {
+          "code": "55500",
+          "name": "Training",
+          "amount": 1180
+        },
+        {
+          "code": "56300",
+          "name": "Improv Other Than Buildgs",
+          "amount": 0
+        },
+        {
+          "code": "56400",
+          "name": "Machinery & Equipment",
+          "amount": 0
+        },
+        {
+          "code": "56500",
+          "name": "Construction In Progress",
+          "amount": 2622500
+        },
+        {
+          "code": "57110",
+          "name": "Debt Service Principle - Right-to-Use Leases",
+          "amount": 0
+        },
+        {
+          "code": "57210",
+          "name": "Debt Service Interest - Right-to-Use Leases",
+          "amount": 0
+        },
+        {
+          "code": "58305",
+          "name": "Other Grants and Aids",
+          "amount": 226127
         }
       ]
     },
@@ -32221,6 +34645,118 @@
           "name": "Workers' Compensation",
           "amount": 992
         }
+      ],
+      "otherRows": [
+        {
+          "code": "53100",
+          "name": "Professional Services",
+          "amount": 18000
+        },
+        {
+          "code": "53200",
+          "name": "Accounting & Auditing",
+          "amount": 8000
+        },
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 536355
+        },
+        {
+          "code": "54000",
+          "name": "Travel and Per Diem",
+          "amount": 2092
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 780
+        },
+        {
+          "code": "54200",
+          "name": "Freight & Postage Service",
+          "amount": 100
+        },
+        {
+          "code": "54300",
+          "name": "Utility Services",
+          "amount": 0
+        },
+        {
+          "code": "54400",
+          "name": "Rentals & Leases",
+          "amount": 0
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 3861
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 5000
+        },
+        {
+          "code": "54700",
+          "name": "Printing & Binding",
+          "amount": 200
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 500
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 5000
+        },
+        {
+          "code": "55220",
+          "name": "Fuel Charges",
+          "amount": 0
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 810
+        },
+        {
+          "code": "55500",
+          "name": "Training",
+          "amount": 1160
+        },
+        {
+          "code": "56100",
+          "name": "Land",
+          "amount": 0
+        },
+        {
+          "code": "56300",
+          "name": "Improv Other Than Buildgs",
+          "amount": 562500
+        },
+        {
+          "code": "56500",
+          "name": "Construction In Progress",
+          "amount": 0
+        },
+        {
+          "code": "57110",
+          "name": "Debt Service Principle - Right-to-Use Leases",
+          "amount": 0
+        },
+        {
+          "code": "57210",
+          "name": "Debt Service Interest - Right-to-Use Leases",
+          "amount": 0
+        },
+        {
+          "code": "58305",
+          "name": "Other Grants and Aids",
+          "amount": 220171
+        }
       ]
     },
     "150-5410": {
@@ -32281,6 +34817,138 @@
           "code": "52400",
           "name": "Workers' Compensation",
           "amount": 33
+        }
+      ],
+      "otherRows": [
+        {
+          "code": "53100",
+          "name": "Professional Services",
+          "amount": 1000
+        },
+        {
+          "code": "53200",
+          "name": "Accounting & Auditing",
+          "amount": 7500
+        },
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 11500
+        },
+        {
+          "code": "54200",
+          "name": "Freight & Postage Service",
+          "amount": 100
+        },
+        {
+          "code": "54300",
+          "name": "Utility Services",
+          "amount": 0
+        },
+        {
+          "code": "54400",
+          "name": "Rentals & Leases",
+          "amount": 1740
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 8000
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 2400
+        },
+        {
+          "code": "54800",
+          "name": "Promotional Activities",
+          "amount": 1000
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 500
+        },
+        {
+          "code": "54901",
+          "name": "Purchase Assistance",
+          "amount": 300000
+        },
+        {
+          "code": "54902",
+          "name": "Owner-Occupied Rehabilitation",
+          "amount": 100000
+        },
+        {
+          "code": "54903",
+          "name": "Foreclosure Prevention/Mortgage Assistance",
+          "amount": 0
+        },
+        {
+          "code": "54904",
+          "name": "Rental, Security, and Utility Deposit Assistance",
+          "amount": 60000
+        },
+        {
+          "code": "54905",
+          "name": "Emergency Repair",
+          "amount": 40000
+        },
+        {
+          "code": "54907",
+          "name": "Housing Dept Land Acquisition",
+          "amount": 0
+        },
+        {
+          "code": "54908",
+          "name": "Demolition/Reconstruction",
+          "amount": 50000
+        },
+        {
+          "code": "54909",
+          "name": "Impact Fee Assistance",
+          "amount": 5000
+        },
+        {
+          "code": "54912",
+          "name": "New Construction/Infill",
+          "amount": 10000
+        },
+        {
+          "code": "54913",
+          "name": "Acquisition/Rehabilitation",
+          "amount": 0
+        },
+        {
+          "code": "54916",
+          "name": "Program Administration, Planning, Management",
+          "amount": 4000
+        },
+        {
+          "code": "54918",
+          "name": "SHIP Rental Properties",
+          "amount": 0
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 2500
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 550
+        },
+        {
+          "code": "55500",
+          "name": "Training",
+          "amount": 3000
+        },
+        {
+          "code": "58305",
+          "name": "Other Grants and Aids",
+          "amount": 0
         }
       ]
     },
@@ -32348,6 +35016,63 @@
           "name": "Workers' Compensation",
           "amount": 8
         }
+      ],
+      "otherRows": [
+        {
+          "code": "53100",
+          "name": "Professional Services",
+          "amount": 1000
+        },
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 6000
+        },
+        {
+          "code": "54000",
+          "name": "Travel and Per Diem",
+          "amount": 0
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 0
+        },
+        {
+          "code": "54200",
+          "name": "Freight & Postage Service",
+          "amount": 200
+        },
+        {
+          "code": "54300",
+          "name": "Utility Services",
+          "amount": 2000
+        },
+        {
+          "code": "54400",
+          "name": "Rentals & Leases",
+          "amount": 2000
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 20000
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 39425
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 125
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 500
+        }
       ]
     },
     "150-5421": {
@@ -32402,6 +35127,148 @@
         {
           "code": "52300",
           "name": "Life and Disability Insurance",
+          "amount": 0
+        }
+      ],
+      "otherRows": [
+        {
+          "code": "53100",
+          "name": "Professional Services",
+          "amount": 0
+        },
+        {
+          "code": "53200",
+          "name": "Accounting & Auditing",
+          "amount": 0
+        },
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 0
+        },
+        {
+          "code": "54200",
+          "name": "Freight & Postage Service",
+          "amount": 0
+        },
+        {
+          "code": "54400",
+          "name": "Rentals & Leases",
+          "amount": 0
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 0
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 0
+        },
+        {
+          "code": "54800",
+          "name": "Promotional Activities",
+          "amount": 0
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 0
+        },
+        {
+          "code": "54901",
+          "name": "Purchase Assistance",
+          "amount": 0
+        },
+        {
+          "code": "54902",
+          "name": "Owner-Occupied Rehabilitation",
+          "amount": 0
+        },
+        {
+          "code": "54903",
+          "name": "Foreclosure Prevention/Mortgage Assistance",
+          "amount": 0
+        },
+        {
+          "code": "54904",
+          "name": "Rental, Security, and Utility Deposit Assistance",
+          "amount": 0
+        },
+        {
+          "code": "54905",
+          "name": "Emergency Repair",
+          "amount": 0
+        },
+        {
+          "code": "54907",
+          "name": "Housing Dept Land Acquisition",
+          "amount": 0
+        },
+        {
+          "code": "54908",
+          "name": "Demolition/Reconstruction",
+          "amount": 0
+        },
+        {
+          "code": "54909",
+          "name": "Impact Fee Assistance",
+          "amount": 0
+        },
+        {
+          "code": "54911",
+          "name": "Disaster/Mitigation Recovery",
+          "amount": 0
+        },
+        {
+          "code": "54912",
+          "name": "New Construction/Infill",
+          "amount": 0
+        },
+        {
+          "code": "54913",
+          "name": "Acquisition/Rehabilitation",
+          "amount": 0
+        },
+        {
+          "code": "54916",
+          "name": "Program Administration, Planning, Management",
+          "amount": 0
+        },
+        {
+          "code": "55100",
+          "name": "Office Supplies",
+          "amount": 0
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 0
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 0
+        },
+        {
+          "code": "55500",
+          "name": "Training",
+          "amount": 0
+        },
+        {
+          "code": "57110",
+          "name": "Debt Service Principle - Right-to-Use Leases",
+          "amount": 0
+        },
+        {
+          "code": "57210",
+          "name": "Debt Service Interest - Right-to-Use Leases",
+          "amount": 0
+        },
+        {
+          "code": "58305",
+          "name": "Other Grants and Aids",
           "amount": 0
         }
       ]
@@ -32465,6 +35332,88 @@
           "name": "Workers' Compensation",
           "amount": 8
         }
+      ],
+      "otherRows": [
+        {
+          "code": "53100",
+          "name": "Professional Services",
+          "amount": 0
+        },
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 12000
+        },
+        {
+          "code": "54000",
+          "name": "Travel and Per Diem",
+          "amount": 0
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 0
+        },
+        {
+          "code": "54200",
+          "name": "Freight & Postage Service",
+          "amount": 100
+        },
+        {
+          "code": "54300",
+          "name": "Utility Services",
+          "amount": 2000
+        },
+        {
+          "code": "54400",
+          "name": "Rentals & Leases",
+          "amount": 1000
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 10000
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 0
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 125
+        },
+        {
+          "code": "54912",
+          "name": "New Construction/Infill",
+          "amount": 0
+        },
+        {
+          "code": "54914",
+          "name": "Rental Acquisition/Rehabilitation",
+          "amount": 0
+        },
+        {
+          "code": "54916",
+          "name": "Program Administration, Planning, Management",
+          "amount": 0
+        },
+        {
+          "code": "54919",
+          "name": "NSP1 Rental property expenses",
+          "amount": 0
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 1000
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 0
+        }
       ]
     },
     "180-5518": {
@@ -32526,6 +35475,123 @@
           "name": "Workers' Compensation",
           "amount": 746
         }
+      ],
+      "otherRows": [
+        {
+          "code": "53100",
+          "name": "Professional Services",
+          "amount": 58500
+        },
+        {
+          "code": "53200",
+          "name": "Accounting & Auditing",
+          "amount": 6000
+        },
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 303663
+        },
+        {
+          "code": "54000",
+          "name": "Travel and Per Diem",
+          "amount": 4500
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 480
+        },
+        {
+          "code": "54200",
+          "name": "Freight & Postage Service",
+          "amount": 125
+        },
+        {
+          "code": "54300",
+          "name": "Utility Services",
+          "amount": 360
+        },
+        {
+          "code": "54400",
+          "name": "Rentals & Leases",
+          "amount": 0
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 3596
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 3150
+        },
+        {
+          "code": "54700",
+          "name": "Printing & Binding",
+          "amount": 200
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 0
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 15468
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 500
+        },
+        {
+          "code": "55500",
+          "name": "Training",
+          "amount": 1300
+        },
+        {
+          "code": "56100",
+          "name": "Land",
+          "amount": 0
+        },
+        {
+          "code": "56200",
+          "name": "Buildings",
+          "amount": 0
+        },
+        {
+          "code": "56300",
+          "name": "Improv Other Than Buildgs",
+          "amount": 173000
+        },
+        {
+          "code": "56400",
+          "name": "Machinery & Equipment",
+          "amount": 0
+        },
+        {
+          "code": "56500",
+          "name": "Construction In Progress",
+          "amount": 0
+        },
+        {
+          "code": "57110",
+          "name": "Debt Service Principle - Right-to-Use Leases",
+          "amount": 0
+        },
+        {
+          "code": "57210",
+          "name": "Debt Service Interest - Right-to-Use Leases",
+          "amount": 0
+        },
+        {
+          "code": "58305",
+          "name": "Other Grants and Aids",
+          "amount": 204800
+        }
       ]
     },
     "190-8131": {
@@ -32581,6 +35647,83 @@
           "code": "52400",
           "name": "Workers' Compensation",
           "amount": 1504
+        }
+      ],
+      "otherRows": [
+        {
+          "code": "53100",
+          "name": "Professional Services",
+          "amount": 0
+        },
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 32950
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 1620
+        },
+        {
+          "code": "54200",
+          "name": "Freight & Postage Service",
+          "amount": 150
+        },
+        {
+          "code": "54300",
+          "name": "Utility Services",
+          "amount": 12000
+        },
+        {
+          "code": "54400",
+          "name": "Rentals & Leases",
+          "amount": 540
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 12500
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 11850
+        },
+        {
+          "code": "54700",
+          "name": "Printing & Binding",
+          "amount": 0
+        },
+        {
+          "code": "54800",
+          "name": "Promotional Activities",
+          "amount": 0
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 200
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 11000
+        },
+        {
+          "code": "55220",
+          "name": "Fuel Charges",
+          "amount": 2700
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 800
+        },
+        {
+          "code": "55500",
+          "name": "Training",
+          "amount": 1000
         }
       ]
     },
@@ -32642,6 +35785,48 @@
           "code": "52400",
           "name": "Workers' Compensation",
           "amount": 81
+        }
+      ],
+      "otherRows": [
+        {
+          "code": "53100",
+          "name": "Professional Services",
+          "amount": 0
+        },
+        {
+          "code": "53200",
+          "name": "Accounting & Auditing",
+          "amount": 0
+        },
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 0
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 0
+        },
+        {
+          "code": "54200",
+          "name": "Freight & Postage Service",
+          "amount": 0
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 1500
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 0
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 0
         }
       ]
     },
@@ -32714,6 +35899,103 @@
           "name": "Workers' Compensation",
           "amount": 3573
         }
+      ],
+      "otherRows": [
+        {
+          "code": "53100",
+          "name": "Professional Services",
+          "amount": 50000
+        },
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 3700
+        },
+        {
+          "code": "54000",
+          "name": "Travel and Per Diem",
+          "amount": 10000
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 4116
+        },
+        {
+          "code": "54200",
+          "name": "Freight & Postage Service",
+          "amount": 100
+        },
+        {
+          "code": "54300",
+          "name": "Utility Services",
+          "amount": 0
+        },
+        {
+          "code": "54400",
+          "name": "Rentals & Leases",
+          "amount": 0
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 7997
+        },
+        {
+          "code": "54503",
+          "name": "Liability Claims",
+          "amount": 0
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 4000
+        },
+        {
+          "code": "54700",
+          "name": "Printing & Binding",
+          "amount": 100
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 5000
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 8000
+        },
+        {
+          "code": "55220",
+          "name": "Fuel Charges",
+          "amount": 0
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 37645
+        },
+        {
+          "code": "55500",
+          "name": "Training",
+          "amount": 4600
+        },
+        {
+          "code": "56300",
+          "name": "Improv Other Than Buildgs",
+          "amount": 0
+        },
+        {
+          "code": "57100",
+          "name": "Debt Service Principle",
+          "amount": 0
+        },
+        {
+          "code": "57200",
+          "name": "Debt Service Interest",
+          "amount": 0
+        }
       ]
     },
     "410-3620": {
@@ -32774,6 +36056,73 @@
           "code": "52400",
           "name": "Workers' Compensation",
           "amount": 415
+        }
+      ],
+      "otherRows": [
+        {
+          "code": "53200",
+          "name": "Accounting & Auditing",
+          "amount": 15000
+        },
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 6413350
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 0
+        },
+        {
+          "code": "54200",
+          "name": "Freight & Postage Service",
+          "amount": 17000
+        },
+        {
+          "code": "54400",
+          "name": "Rentals & Leases",
+          "amount": 1860
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 4398
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 8300
+        },
+        {
+          "code": "54700",
+          "name": "Printing & Binding",
+          "amount": 470
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 0
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 10500
+        },
+        {
+          "code": "55500",
+          "name": "Training",
+          "amount": 0
+        },
+        {
+          "code": "57110",
+          "name": "Debt Service Principle - Right-to-Use Leases",
+          "amount": 0
+        },
+        {
+          "code": "57210",
+          "name": "Debt Service Interest - Right-to-Use Leases",
+          "amount": 0
         }
       ]
     },
@@ -32846,6 +36195,128 @@
           "name": "Workers' Compensation",
           "amount": 34515
         }
+      ],
+      "otherRows": [
+        {
+          "code": "53100",
+          "name": "Professional Services",
+          "amount": 0
+        },
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 398660
+        },
+        {
+          "code": "54000",
+          "name": "Travel and Per Diem",
+          "amount": 12000
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 20100
+        },
+        {
+          "code": "54200",
+          "name": "Freight & Postage Service",
+          "amount": 900
+        },
+        {
+          "code": "54300",
+          "name": "Utility Services",
+          "amount": 27500
+        },
+        {
+          "code": "54400",
+          "name": "Rentals & Leases",
+          "amount": 72820
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 216828
+        },
+        {
+          "code": "54503",
+          "name": "Liability Claims",
+          "amount": 0
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 884428
+        },
+        {
+          "code": "54700",
+          "name": "Printing & Binding",
+          "amount": 2050
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 1150
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 975200
+        },
+        {
+          "code": "55220",
+          "name": "Fuel Charges",
+          "amount": 100000
+        },
+        {
+          "code": "55300",
+          "name": "Road Materials & Supplies",
+          "amount": 183000
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 36480
+        },
+        {
+          "code": "55500",
+          "name": "Training",
+          "amount": 21000
+        },
+        {
+          "code": "56300",
+          "name": "Improv Other Than Buildgs",
+          "amount": 0
+        },
+        {
+          "code": "56400",
+          "name": "Machinery & Equipment",
+          "amount": 644000
+        },
+        {
+          "code": "56800",
+          "name": "Intangible Assets",
+          "amount": 60000
+        },
+        {
+          "code": "57100",
+          "name": "Debt Service Principle",
+          "amount": 0
+        },
+        {
+          "code": "57110",
+          "name": "Debt Service Principle - Right-to-Use Leases",
+          "amount": 0
+        },
+        {
+          "code": "57200",
+          "name": "Debt Service Interest",
+          "amount": 0
+        },
+        {
+          "code": "57210",
+          "name": "Debt Service Interest - Right-to-Use Leases",
+          "amount": 0
+        }
       ]
     },
     "410-3640": {
@@ -32912,6 +36383,118 @@
           "name": "Workers' Compensation",
           "amount": 16916
         }
+      ],
+      "otherRows": [
+        {
+          "code": "53100",
+          "name": "Professional Services",
+          "amount": 0
+        },
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 31620
+        },
+        {
+          "code": "54000",
+          "name": "Travel and Per Diem",
+          "amount": 3500
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 6696
+        },
+        {
+          "code": "54200",
+          "name": "Freight & Postage Service",
+          "amount": 500
+        },
+        {
+          "code": "54300",
+          "name": "Utility Services",
+          "amount": 315204
+        },
+        {
+          "code": "54400",
+          "name": "Rentals & Leases",
+          "amount": 326850
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 52460
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 1003000
+        },
+        {
+          "code": "54700",
+          "name": "Printing & Binding",
+          "amount": 1500
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 25
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 183700
+        },
+        {
+          "code": "55220",
+          "name": "Fuel Charges",
+          "amount": 180000
+        },
+        {
+          "code": "55300",
+          "name": "Road Materials & Supplies",
+          "amount": 0
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 13600
+        },
+        {
+          "code": "55500",
+          "name": "Training",
+          "amount": 10000
+        },
+        {
+          "code": "56300",
+          "name": "Improv Other Than Buildgs",
+          "amount": 325000
+        },
+        {
+          "code": "56400",
+          "name": "Machinery & Equipment",
+          "amount": 475000
+        },
+        {
+          "code": "57100",
+          "name": "Debt Service Principle",
+          "amount": 0
+        },
+        {
+          "code": "57110",
+          "name": "Debt Service Principle - Right-to-Use Leases",
+          "amount": 0
+        },
+        {
+          "code": "57200",
+          "name": "Debt Service Interest",
+          "amount": 0
+        },
+        {
+          "code": "57210",
+          "name": "Debt Service Interest - Right-to-Use Leases",
+          "amount": 0
+        }
       ]
     },
     "410-3650": {
@@ -32972,6 +36555,33 @@
           "code": "52400",
           "name": "Workers' Compensation",
           "amount": 18488
+        }
+      ],
+      "otherRows": [
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 12300
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 960
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 10053
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 0
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 3325
         }
       ]
     },
@@ -33034,6 +36644,93 @@
           "name": "Workers' Compensation",
           "amount": 6824
         }
+      ],
+      "otherRows": [
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 23250
+        },
+        {
+          "code": "54000",
+          "name": "Travel and Per Diem",
+          "amount": 0
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 2160
+        },
+        {
+          "code": "54200",
+          "name": "Freight & Postage Service",
+          "amount": 100
+        },
+        {
+          "code": "54300",
+          "name": "Utility Services",
+          "amount": 6444
+        },
+        {
+          "code": "54400",
+          "name": "Rentals & Leases",
+          "amount": 2892
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 3793
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 6650
+        },
+        {
+          "code": "54700",
+          "name": "Printing & Binding",
+          "amount": 800
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 0
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 51670
+        },
+        {
+          "code": "55220",
+          "name": "Fuel Charges",
+          "amount": 1500
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 0
+        },
+        {
+          "code": "55500",
+          "name": "Training",
+          "amount": 0
+        },
+        {
+          "code": "56400",
+          "name": "Machinery & Equipment",
+          "amount": 24900
+        },
+        {
+          "code": "57100",
+          "name": "Debt Service Principle",
+          "amount": 0
+        },
+        {
+          "code": "57200",
+          "name": "Debt Service Interest",
+          "amount": 0
+        }
       ]
     },
     "410-3720": {
@@ -33095,6 +36792,88 @@
           "name": "Workers' Compensation",
           "amount": 2920
         }
+      ],
+      "otherRows": [
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 3100
+        },
+        {
+          "code": "54000",
+          "name": "Travel and Per Diem",
+          "amount": 8000
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 2460
+        },
+        {
+          "code": "54200",
+          "name": "Freight & Postage Service",
+          "amount": 10000
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 2530
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 9000
+        },
+        {
+          "code": "54700",
+          "name": "Printing & Binding",
+          "amount": 5100
+        },
+        {
+          "code": "54800",
+          "name": "Promotional Activities",
+          "amount": 1000
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 0
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 6955
+        },
+        {
+          "code": "55220",
+          "name": "Fuel Charges",
+          "amount": 1500
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 15080
+        },
+        {
+          "code": "55500",
+          "name": "Training",
+          "amount": 4400
+        },
+        {
+          "code": "56400",
+          "name": "Machinery & Equipment",
+          "amount": 0
+        },
+        {
+          "code": "57100",
+          "name": "Debt Service Principle",
+          "amount": 0
+        },
+        {
+          "code": "57200",
+          "name": "Debt Service Interest",
+          "amount": 0
+        }
       ]
     },
     "440-3410": {
@@ -33155,6 +36934,73 @@
           "code": "52400",
           "name": "Workers' Compensation",
           "amount": 9179
+        }
+      ],
+      "otherRows": [
+        {
+          "code": "53100",
+          "name": "Professional Services",
+          "amount": 50000
+        },
+        {
+          "code": "53200",
+          "name": "Accounting & Auditing",
+          "amount": 7000
+        },
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 36600
+        },
+        {
+          "code": "54000",
+          "name": "Travel and Per Diem",
+          "amount": 0
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 4260
+        },
+        {
+          "code": "54200",
+          "name": "Freight & Postage Service",
+          "amount": 200
+        },
+        {
+          "code": "54300",
+          "name": "Utility Services",
+          "amount": 18840
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 1529
+        },
+        {
+          "code": "54700",
+          "name": "Printing & Binding",
+          "amount": 10100
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 38000
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 16725
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 32087
+        },
+        {
+          "code": "55500",
+          "name": "Training",
+          "amount": 5000
         }
       ]
     },
@@ -33227,6 +37073,98 @@
           "name": "Workers' Compensation",
           "amount": 33160
         }
+      ],
+      "otherRows": [
+        {
+          "code": "53200",
+          "name": "Accounting & Auditing",
+          "amount": 0
+        },
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 654200
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 480
+        },
+        {
+          "code": "54300",
+          "name": "Utility Services",
+          "amount": 0
+        },
+        {
+          "code": "54400",
+          "name": "Rentals & Leases",
+          "amount": 0
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 39516
+        },
+        {
+          "code": "54503",
+          "name": "Liability Claims",
+          "amount": 0
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 405500
+        },
+        {
+          "code": "54700",
+          "name": "Printing & Binding",
+          "amount": 0
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 1000
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 148417
+        },
+        {
+          "code": "55220",
+          "name": "Fuel Charges",
+          "amount": 6000
+        },
+        {
+          "code": "55225",
+          "name": "CNG Fuel Charges",
+          "amount": 110000
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 0
+        },
+        {
+          "code": "55500",
+          "name": "Training",
+          "amount": 0
+        },
+        {
+          "code": "56400",
+          "name": "Machinery & Equipment",
+          "amount": 787000
+        },
+        {
+          "code": "57100",
+          "name": "Debt Service Principle",
+          "amount": 5619
+        },
+        {
+          "code": "57200",
+          "name": "Debt Service Interest",
+          "amount": 908
+        }
       ]
     },
     "440-3430": {
@@ -33287,6 +37225,83 @@
           "code": "52400",
           "name": "Workers' Compensation",
           "amount": 25230
+        }
+      ],
+      "otherRows": [
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 758985
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 0
+        },
+        {
+          "code": "54300",
+          "name": "Utility Services",
+          "amount": 0
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 161869
+        },
+        {
+          "code": "54503",
+          "name": "Liability Claims",
+          "amount": 0
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 310000
+        },
+        {
+          "code": "54700",
+          "name": "Printing & Binding",
+          "amount": 0
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 250
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 252200
+        },
+        {
+          "code": "55220",
+          "name": "Fuel Charges",
+          "amount": 1000
+        },
+        {
+          "code": "55225",
+          "name": "CNG Fuel Charges",
+          "amount": 85000
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 0
+        },
+        {
+          "code": "56400",
+          "name": "Machinery & Equipment",
+          "amount": 105000
+        },
+        {
+          "code": "57100",
+          "name": "Debt Service Principle",
+          "amount": 4214
+        },
+        {
+          "code": "57200",
+          "name": "Debt Service Interest",
+          "amount": 908
         }
       ]
     },
@@ -33354,6 +37369,88 @@
           "name": "Workers' Compensation",
           "amount": 48686
         }
+      ],
+      "otherRows": [
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 534937
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 480
+        },
+        {
+          "code": "54300",
+          "name": "Utility Services",
+          "amount": 0
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 62428
+        },
+        {
+          "code": "54503",
+          "name": "Liability Claims",
+          "amount": 0
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 603500
+        },
+        {
+          "code": "54700",
+          "name": "Printing & Binding",
+          "amount": 0
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 1500
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 18175
+        },
+        {
+          "code": "55220",
+          "name": "Fuel Charges",
+          "amount": 2000
+        },
+        {
+          "code": "55225",
+          "name": "CNG Fuel Charges",
+          "amount": 85000
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 0
+        },
+        {
+          "code": "55500",
+          "name": "Training",
+          "amount": 3000
+        },
+        {
+          "code": "56400",
+          "name": "Machinery & Equipment",
+          "amount": 1189000
+        },
+        {
+          "code": "57100",
+          "name": "Debt Service Principle",
+          "amount": 4214
+        },
+        {
+          "code": "57200",
+          "name": "Debt Service Interest",
+          "amount": 908
+        }
       ]
     },
     "440-3460": {
@@ -33410,6 +37507,43 @@
           "name": "Workers' Compensation",
           "amount": 47
         }
+      ],
+      "otherRows": [
+        {
+          "code": "53100",
+          "name": "Professional Services",
+          "amount": 23000
+        },
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 42150
+        },
+        {
+          "code": "54400",
+          "name": "Rentals & Leases",
+          "amount": 1140
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 1442
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 35000
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 2725
+        },
+        {
+          "code": "55220",
+          "name": "Fuel Charges",
+          "amount": 20000
+        }
       ]
     },
     "450-7500": {
@@ -33434,6 +37568,83 @@
         {
           "code": "52100",
           "name": "FICA Taxes",
+          "amount": 0
+        }
+      ],
+      "otherRows": [
+        {
+          "code": "53100",
+          "name": "Professional Services",
+          "amount": 0
+        },
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 0
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 0
+        },
+        {
+          "code": "54200",
+          "name": "Freight & Postage Service",
+          "amount": 0
+        },
+        {
+          "code": "54300",
+          "name": "Utility Services",
+          "amount": 1140
+        },
+        {
+          "code": "54400",
+          "name": "Rentals & Leases",
+          "amount": 0
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 0
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 0
+        },
+        {
+          "code": "54800",
+          "name": "Promotional Activities",
+          "amount": 0
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 0
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 0
+        },
+        {
+          "code": "55204",
+          "name": "Gasoline",
+          "amount": 0
+        },
+        {
+          "code": "55205",
+          "name": "Diesel",
+          "amount": 0
+        },
+        {
+          "code": "55220",
+          "name": "Fuel Charges",
+          "amount": 0
+        },
+        {
+          "code": "55500",
+          "name": "Training",
           "amount": 0
         }
       ]
@@ -33490,6 +37701,103 @@
         {
           "code": "52400",
           "name": "Workers' Compensation",
+          "amount": 0
+        }
+      ],
+      "otherRows": [
+        {
+          "code": "53100",
+          "name": "Professional Services",
+          "amount": 0
+        },
+        {
+          "code": "53200",
+          "name": "Accounting & Auditing",
+          "amount": 0
+        },
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 0
+        },
+        {
+          "code": "54000",
+          "name": "Travel and Per Diem",
+          "amount": 0
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 0
+        },
+        {
+          "code": "54300",
+          "name": "Utility Services",
+          "amount": 0
+        },
+        {
+          "code": "54400",
+          "name": "Rentals & Leases",
+          "amount": 0
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 0
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 0
+        },
+        {
+          "code": "54800",
+          "name": "Promotional Activities",
+          "amount": 0
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 0
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 0
+        },
+        {
+          "code": "55201",
+          "name": "Merchandise Purchased",
+          "amount": 0
+        },
+        {
+          "code": "55204",
+          "name": "Gasoline",
+          "amount": 0
+        },
+        {
+          "code": "55205",
+          "name": "Diesel",
+          "amount": 0
+        },
+        {
+          "code": "55220",
+          "name": "Fuel Charges",
+          "amount": 0
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 0
+        },
+        {
+          "code": "55500",
+          "name": "Training",
+          "amount": 0
+        },
+        {
+          "code": "56500",
+          "name": "Construction In Progress",
           "amount": 0
         }
       ]
@@ -33552,6 +37860,98 @@
           "code": "52400",
           "name": "Workers' Compensation",
           "amount": 12287
+        }
+      ],
+      "otherRows": [
+        {
+          "code": "53200",
+          "name": "Accounting & Auditing",
+          "amount": 0
+        },
+        {
+          "code": "53400",
+          "name": "Other Contractual Svcs",
+          "amount": 42544
+        },
+        {
+          "code": "54000",
+          "name": "Travel and Per Diem",
+          "amount": 0
+        },
+        {
+          "code": "54100",
+          "name": "Communication Services",
+          "amount": 2419
+        },
+        {
+          "code": "54200",
+          "name": "Freight & Postage Service",
+          "amount": 1000
+        },
+        {
+          "code": "54300",
+          "name": "Utility Services",
+          "amount": 26600
+        },
+        {
+          "code": "54400",
+          "name": "Rentals & Leases",
+          "amount": 2800
+        },
+        {
+          "code": "54500",
+          "name": "Insurance",
+          "amount": 9841
+        },
+        {
+          "code": "54600",
+          "name": "Repairs & Maintenance Svc",
+          "amount": 35000
+        },
+        {
+          "code": "54601",
+          "name": "Outside Vehicle Repairs & Maintenance",
+          "amount": 850000
+        },
+        {
+          "code": "54700",
+          "name": "Printing & Binding",
+          "amount": 100
+        },
+        {
+          "code": "54900",
+          "name": "Other Current Charges",
+          "amount": 0
+        },
+        {
+          "code": "55200",
+          "name": "Operating Supplies",
+          "amount": 44325
+        },
+        {
+          "code": "55220",
+          "name": "Fuel Charges",
+          "amount": 5500
+        },
+        {
+          "code": "55400",
+          "name": "Books Publicatns Membrshp",
+          "amount": 64640
+        },
+        {
+          "code": "55500",
+          "name": "Training",
+          "amount": 0
+        },
+        {
+          "code": "57100",
+          "name": "Debt Service Principle",
+          "amount": 1405
+        },
+        {
+          "code": "57200",
+          "name": "Debt Service Interest",
+          "amount": 0
         }
       ]
     }
