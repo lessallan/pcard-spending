@@ -30473,5 +30473,3087 @@
       "001-8520": "8520",
       "503-8930": "8930"
     }
+  },
+  "personnelBudget": {
+    "001-1100": {
+      "year": 2027,
+      "total": 348684,
+      "pay": 215864,
+      "retirement": 20386,
+      "benefits": 77387,
+      "other": 35047,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=9",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 187653
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 0
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 28211
+        },
+        {
+          "code": "51501",
+          "name": "SpcialPay-Wellness Incntv",
+          "amount": 0
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 16466
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 18769
+        },
+        {
+          "code": "52205",
+          "name": "Sr. Manag Supp Retire",
+          "amount": 1617
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 58702
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 1390
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 612
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 217
+        }
+      ]
+    },
+    "001-1200": {
+      "year": 2027,
+      "total": 1316235,
+      "pay": 807149,
+      "retirement": 83094,
+      "benefits": 180841,
+      "other": 245151,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=10",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 779553
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 0
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 27596
+        },
+        {
+          "code": "51501",
+          "name": "SpcialPay-Wellness Incntv",
+          "amount": 0
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 60395
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 77959
+        },
+        {
+          "code": "52205",
+          "name": "Sr. Manag Supp Retire",
+          "amount": 5135
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 116170
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 2550
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 922
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 804
+        }
+      ]
+    },
+    "001-1310": {
+      "year": 2027,
+      "total": 1433304,
+      "pay": 870194,
+      "retirement": 87212,
+      "benefits": 212221,
+      "other": 263677,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=11",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 847638
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 0
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 22556
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 65280
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 84769
+        },
+        {
+          "code": "52205",
+          "name": "Sr. Manag Supp Retire",
+          "amount": 2443
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 140425
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 4061
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 1596
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 859
+        }
+      ]
+    },
+    "001-1330": {
+      "year": 2027,
+      "total": 511851,
+      "pay": 326353,
+      "retirement": 31716,
+      "benefits": 83020,
+      "other": 70762,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=12",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 317114
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 0
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 9239
+        },
+        {
+          "code": "51501",
+          "name": "SpcialPay-Wellness Incntv",
+          "amount": 0
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 24265
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 31716
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 54004
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 1865
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 800
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 2086
+        }
+      ]
+    },
+    "001-1340": {
+      "year": 2027,
+      "total": 917126,
+      "pay": 440315,
+      "retirement": 43808,
+      "benefits": 119080,
+      "other": 313923,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=13",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 426008
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 0
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 14307
+        },
+        {
+          "code": "51501",
+          "name": "SpcialPay-Wellness Incntv",
+          "amount": 0
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 33146
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 42604
+        },
+        {
+          "code": "52205",
+          "name": "Sr. Manag Supp Retire",
+          "amount": 1204
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 67712
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 2048
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 738
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 436
+        },
+        {
+          "code": "52500",
+          "name": "Unemployment Compensation",
+          "amount": 15000
+        }
+      ]
+    },
+    "001-1350": {
+      "year": 2027,
+      "total": 1610437,
+      "pay": 554293,
+      "retirement": 54997,
+      "benefits": 130559,
+      "other": 870588,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=14",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 540744
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 0
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 13549
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 41648
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 54077
+        },
+        {
+          "code": "52205",
+          "name": "Sr. Manag Supp Retire",
+          "amount": 920
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 85122
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 2380
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 861
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 548
+        }
+      ]
+    },
+    "001-1360": {
+      "year": 2027,
+      "total": 493701,
+      "pay": 250748,
+      "retirement": 33813,
+      "benefits": 56251,
+      "other": 152889,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=15",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 244605
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 0
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 6143
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 18968
+        },
+        {
+          "code": "52201",
+          "name": "FRS Contributions",
+          "amount": 14666
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 17943
+        },
+        {
+          "code": "52205",
+          "name": "Sr. Manag Supp Retire",
+          "amount": 1204
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 31710
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 1017
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 369
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 4187
+        }
+      ]
+    },
+    "001-1610": {
+      "year": 2027,
+      "total": 1394550,
+      "pay": 826451,
+      "retirement": 82986,
+      "benefits": 251976,
+      "other": 233137,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=17",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 807517
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 0
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 18934
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 62038
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 80757
+        },
+        {
+          "code": "52205",
+          "name": "Sr. Manag Supp Retire",
+          "amount": 2229
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 174488
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 4407
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 1599
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 9444
+        }
+      ]
+    },
+    "001-1615": {
+      "year": 2027,
+      "total": 0,
+      "pay": 0,
+      "retirement": 0,
+      "benefits": 0,
+      "other": 0,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=18",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 0
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 0
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 0
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 0
+        },
+        {
+          "code": "52205",
+          "name": "Sr. Manag Supp Retire",
+          "amount": 0
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 0
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 0
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 0
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 0
+        }
+      ]
+    },
+    "001-1620": {
+      "year": 2027,
+      "total": 1496105,
+      "pay": 982444,
+      "retirement": 97618,
+      "benefits": 259190,
+      "other": 156853,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=19",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 955946
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 0
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 26498
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 73648
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 95601
+        },
+        {
+          "code": "52205",
+          "name": "Sr. Manag Supp Retire",
+          "amount": 2017
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 165537
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 4407
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 1722
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 13876
+        }
+      ]
+    },
+    "001-1710": {
+      "year": 2027,
+      "total": 271074,
+      "pay": 156720,
+      "retirement": 17220,
+      "benefits": 43307,
+      "other": 53827,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=20",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 151934
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 0
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 4786
+        },
+        {
+          "code": "51501",
+          "name": "SpcialPay-Wellness Incntv",
+          "amount": 0
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 11720
+        },
+        {
+          "code": "52201",
+          "name": "FRS Contributions",
+          "amount": 5267
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 11563
+        },
+        {
+          "code": "52205",
+          "name": "Sr. Manag Supp Retire",
+          "amount": 390
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 29385
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 944
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 343
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 915
+        }
+      ]
+    },
+    "001-1720": {
+      "year": 2027,
+      "total": 1167318,
+      "pay": 643102,
+      "retirement": 68710,
+      "benefits": 213332,
+      "other": 242174,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=21",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 626757
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 0
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 16345
+        },
+        {
+          "code": "51501",
+          "name": "SpcialPay-Wellness Incntv",
+          "amount": 0
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 47960
+        },
+        {
+          "code": "52201",
+          "name": "FRS Contributions",
+          "amount": 10852
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 57858
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 142878
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 3899
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 1415
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 17180
+        }
+      ]
+    },
+    "001-2100": {
+      "year": 2027,
+      "total": 17735146,
+      "pay": 10038906,
+      "retirement": 2259551,
+      "benefits": 2691379,
+      "other": 2745310,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=22",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 9176350
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 660000
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 202556
+        },
+        {
+          "code": "51501",
+          "name": "SpcialPay-Wellness Incntv",
+          "amount": 0
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 702510
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 222535
+        },
+        {
+          "code": "52203",
+          "name": "Police Pension Contribut",
+          "amount": 2037016
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 1736490
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 46366
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 21983
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 184030
+        },
+        {
+          "code": "52500",
+          "name": "Unemployment Compensation",
+          "amount": 0
+        }
+      ]
+    },
+    "001-2200": {
+      "year": 2027,
+      "total": 13604687,
+      "pay": 6791515,
+      "retirement": 3191320,
+      "benefits": 1992835,
+      "other": 1629017,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=23",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 6225221
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 430000
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 136294
+        },
+        {
+          "code": "51501",
+          "name": "SpcialPay-Wellness Incntv",
+          "amount": 0
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 476310
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 15076
+        },
+        {
+          "code": "52204",
+          "name": "Fire Pension Contribution",
+          "amount": 3176244
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 1233379
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 27798
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 13489
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 241859
+        }
+      ]
+    },
+    "001-4110": {
+      "year": 2027,
+      "total": 5206031,
+      "pay": 1890689,
+      "retirement": 181954,
+      "benefits": 590789,
+      "other": 2542599,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=24",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 1730430
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 105200
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 55059
+        },
+        {
+          "code": "51501",
+          "name": "SpcialPay-Wellness Incntv",
+          "amount": 0
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 132526
+        },
+        {
+          "code": "52201",
+          "name": "FRS Contributions",
+          "amount": 15107
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 166342
+        },
+        {
+          "code": "52205",
+          "name": "Sr. Manag Supp Retire",
+          "amount": 505
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 437342
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 12011
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 4605
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 4305
+        }
+      ]
+    },
+    "001-4120": {
+      "year": 2027,
+      "total": 0,
+      "pay": 0,
+      "retirement": 0,
+      "benefits": 0,
+      "other": 0,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=25",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 0
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 0
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 0
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 0
+        },
+        {
+          "code": "52201",
+          "name": "FRS Contributions",
+          "amount": 0
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 0
+        },
+        {
+          "code": "52205",
+          "name": "Sr. Manag Supp Retire",
+          "amount": 0
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 0
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 0
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 0
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 0
+        }
+      ]
+    },
+    "001-4130": {
+      "year": 2027,
+      "total": 446494,
+      "pay": 172381,
+      "retirement": 16813,
+      "benefits": 61534,
+      "other": 195766,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=26",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 168117
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 0
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 4264
+        },
+        {
+          "code": "51501",
+          "name": "SpcialPay-Wellness Incntv",
+          "amount": 0
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 12865
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 16813
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 43554
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 1349
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 489
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 3277
+        }
+      ]
+    },
+    "001-4140": {
+      "year": 2027,
+      "total": 0,
+      "pay": 0,
+      "retirement": 0,
+      "benefits": 0,
+      "other": 0,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=27",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 0
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 0
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 0
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 0
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 0
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 0
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 0
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 0
+        }
+      ]
+    },
+    "001-4150": {
+      "year": 2027,
+      "total": 950000,
+      "pay": 192260,
+      "retirement": 18160,
+      "benefits": 58205,
+      "other": 681375,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=28",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 181574
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 5000
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 5686
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 13894
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 18160
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 42280
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 1356
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 492
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 183
+        }
+      ]
+    },
+    "001-7200": {
+      "year": 2027,
+      "total": 3713278,
+      "pay": 1638085,
+      "retirement": 148533,
+      "benefits": 497709,
+      "other": 1428951,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=29",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 1491821
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 105000
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 41264
+        },
+        {
+          "code": "51501",
+          "name": "SpcialPay-Wellness Incntv",
+          "amount": 0
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 114431
+        },
+        {
+          "code": "52201",
+          "name": "FRS Contributions",
+          "amount": 10126
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 137191
+        },
+        {
+          "code": "52205",
+          "name": "Sr. Manag Supp Retire",
+          "amount": 1216
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 332011
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 10149
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 3801
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 37317
+        },
+        {
+          "code": "52500",
+          "name": "Unemployment Compensation",
+          "amount": 0
+        }
+      ]
+    },
+    "001-7300": {
+      "year": 2027,
+      "total": 1254581,
+      "pay": 646719,
+      "retirement": 40810,
+      "benefits": 141878,
+      "other": 425174,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=30",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 628952
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 17767
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 48132
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 40810
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 82721
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 2705
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 981
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 7339
+        }
+      ]
+    },
+    "001-8110": {
+      "year": 2027,
+      "total": 552660,
+      "pay": 86759,
+      "retirement": 8392,
+      "benefits": 38795,
+      "other": 418714,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=37",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 83916
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 0
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 2843
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 6421
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 8392
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 31365
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 678
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 246
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 85
+        }
+      ]
+    },
+    "001-8181": {
+      "year": 2027,
+      "total": 182720,
+      "pay": 149578,
+      "retirement": 15970,
+      "benefits": 14882,
+      "other": 2290,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=41",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 145178
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 4400
+        },
+        {
+          "code": "51501",
+          "name": "SpcialPay-Wellness Incntv",
+          "amount": 0
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 11443
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 14518
+        },
+        {
+          "code": "52205",
+          "name": "Sr. Manag Supp Retire",
+          "amount": 1452
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 339
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 123
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 2977
+        }
+      ]
+    },
+    "001-8520": {
+      "year": 2027,
+      "total": 268143,
+      "pay": 133192,
+      "retirement": 12635,
+      "benefits": 39542,
+      "other": 82774,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=42",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 126338
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 0
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 6854
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 9920
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 12635
+        },
+        {
+          "code": "52205",
+          "name": "Sr. Manag Supp Retire",
+          "amount": 0
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 28336
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 848
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 308
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 130
+        }
+      ]
+    },
+    "102-1615": {
+      "year": 2027,
+      "total": 900000,
+      "pay": 320191,
+      "retirement": 31791,
+      "benefits": 116140,
+      "other": 431878,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=48",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 308063
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 12128
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 23849
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 30809
+        },
+        {
+          "code": "52205",
+          "name": "Sr. Manag Supp Retire",
+          "amount": 982
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 84057
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 2034
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 740
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 5460
+        }
+      ]
+    },
+    "120-5512": {
+      "year": 2027,
+      "total": 4550284,
+      "pay": 37074,
+      "retirement": 3478,
+      "benefits": 11794,
+      "other": 4497938,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=55",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 34782
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 0
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 2292
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 2776
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 3478
+        },
+        {
+          "code": "52205",
+          "name": "Sr. Manag Supp Retire",
+          "amount": 0
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 8129
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 193
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 70
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 626
+        }
+      ]
+    },
+    "130-5513": {
+      "year": 2027,
+      "total": 3090865,
+      "pay": 24277,
+      "retirement": 2278,
+      "benefits": 7727,
+      "other": 3056583,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=60",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 22775
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 0
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 1502
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 1821
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 2278
+        },
+        {
+          "code": "52205",
+          "name": "Sr. Manag Supp Retire",
+          "amount": 0
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 5321
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 125
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 48
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 412
+        }
+      ]
+    },
+    "140-5514": {
+      "year": 2027,
+      "total": 1447555,
+      "pay": 58805,
+      "retirement": 5517,
+      "benefits": 18704,
+      "other": 1364529,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=64",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 55169
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 0
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 3636
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 4405
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 5517
+        },
+        {
+          "code": "52205",
+          "name": "Sr. Manag Supp Retire",
+          "amount": 0
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 12891
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 305
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 111
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 992
+        }
+      ]
+    },
+    "150-5410": {
+      "year": 2027,
+      "total": 655015,
+      "pay": 33727,
+      "retirement": 3297,
+      "benefits": 9201,
+      "other": 608790,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=69",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 32959
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 0
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 768
+        },
+        {
+          "code": "51501",
+          "name": "SpcialPay-Wellness Incntv",
+          "amount": 0
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 2522
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 3297
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 6396
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 183
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 67
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 33
+        }
+      ]
+    },
+    "150-5415": {
+      "year": 2027,
+      "total": 82382,
+      "pay": 8120,
+      "retirement": 794,
+      "benefits": 2218,
+      "other": 71250,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=71",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 7935
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 0
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 185
+        },
+        {
+          "code": "51501",
+          "name": "SpcialPay-Wellness Incntv",
+          "amount": 0
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 608
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 794
+        },
+        {
+          "code": "52205",
+          "name": "Sr. Manag Supp Retire",
+          "amount": 0
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 1541
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 45
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 16
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 8
+        }
+      ]
+    },
+    "150-5421": {
+      "year": 2027,
+      "total": 0,
+      "pay": 0,
+      "retirement": 0,
+      "benefits": 0,
+      "other": 0,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=72",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 0
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 0
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 0
+        },
+        {
+          "code": "51501",
+          "name": "SpcialPay-Wellness Incntv",
+          "amount": 0
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 0
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 0
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 0
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 0
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 0
+        }
+      ]
+    },
+    "150-5426": {
+      "year": 2027,
+      "total": 36502,
+      "pay": 7496,
+      "retirement": 733,
+      "benefits": 2048,
+      "other": 26225,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=73",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 7325
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 0
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 171
+        },
+        {
+          "code": "51501",
+          "name": "SpcialPay-Wellness Incntv",
+          "amount": 0
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 562
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 733
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 1422
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 41
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 15
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 8
+        }
+      ]
+    },
+    "180-5518": {
+      "year": 2027,
+      "total": 838133,
+      "pay": 44307,
+      "retirement": 4143,
+      "benefits": 14041,
+      "other": 775642,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=77",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 41416
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 0
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 2891
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 3305
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 4143
+        },
+        {
+          "code": "52205",
+          "name": "Sr. Manag Supp Retire",
+          "amount": 0
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 9678
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 230
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 82
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 746
+        }
+      ]
+    },
+    "190-8131": {
+      "year": 2027,
+      "total": 347591,
+      "pay": 207841,
+      "retirement": 12046,
+      "benefits": 40394,
+      "other": 87310,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=83",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 199266
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 0
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 8575
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 15524
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 12046
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 22440
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 678
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 248
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 1504
+        }
+      ]
+    },
+    "190-8181": {
+      "year": 2027,
+      "total": 108221,
+      "pay": 82751,
+      "retirement": 7962,
+      "benefits": 16008,
+      "other": 1500,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=85",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 79610
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 0
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 3141
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 6092
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 7962
+        },
+        {
+          "code": "52205",
+          "name": "Sr. Manag Supp Retire",
+          "amount": 0
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 9315
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 291
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 229
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 81
+        }
+      ]
+    },
+    "410-3610": {
+      "year": 2027,
+      "total": 826041,
+      "pay": 518642,
+      "retirement": 51584,
+      "benefits": 120557,
+      "other": 135258,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=94",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 492791
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 4000
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 21851
+        },
+        {
+          "code": "51501",
+          "name": "SpcialPay-Wellness Incntv",
+          "amount": 0
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 38671
+        },
+        {
+          "code": "52201",
+          "name": "FRS Contributions",
+          "amount": 5266
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 45650
+        },
+        {
+          "code": "52205",
+          "name": "Sr. Manag Supp Retire",
+          "amount": 668
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 75079
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 2374
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 860
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 3573
+        }
+      ]
+    },
+    "410-3620": {
+      "year": 2027,
+      "total": 7071379,
+      "pay": 422666,
+      "retirement": 40850,
+      "benefits": 136985,
+      "other": 6470878,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=95",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 408453
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 0
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 14213
+        },
+        {
+          "code": "51501",
+          "name": "SpcialPay-Wellness Incntv",
+          "amount": 0
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 31254
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 40850
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 100696
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 3390
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 1230
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 415
+        }
+      ]
+    },
+    "410-3630": {
+      "year": 2027,
+      "total": 7102399,
+      "pay": 2533864,
+      "retirement": 210852,
+      "benefits": 701567,
+      "other": 3656116,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=96",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 1971328
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 500000
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 62536
+        },
+        {
+          "code": "51501",
+          "name": "SpcialPay-Wellness Incntv",
+          "amount": 0
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 150859
+        },
+        {
+          "code": "52201",
+          "name": "FRS Contributions",
+          "amount": 34562
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 176290
+        },
+        {
+          "code": "52205",
+          "name": "Sr. Manag Supp Retire",
+          "amount": 0
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 496347
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 14564
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 5282
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 34515
+        }
+      ]
+    },
+    "410-3640": {
+      "year": 2027,
+      "total": 4826355,
+      "pay": 1496221,
+      "retirement": 86935,
+      "benefits": 314544,
+      "other": 2928655,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=97",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 869217
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 600000
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 27004
+        },
+        {
+          "code": "51501",
+          "name": "SpcialPay-Wellness Incntv",
+          "amount": 0
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 66510
+        },
+        {
+          "code": "52201",
+          "name": "FRS Contributions",
+          "amount": 0
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 86935
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 222679
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 6102
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 2337
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 16916
+        }
+      ]
+    },
+    "410-3650": {
+      "year": 2027,
+      "total": 1661549,
+      "pay": 1203272,
+      "retirement": 106431,
+      "benefits": 325208,
+      "other": 26638,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=98",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 973425
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 200000
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 29847
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 74484
+        },
+        {
+          "code": "52201",
+          "name": "FRS Contributions",
+          "amount": 16338
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 90093
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 222584
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 7084
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 2568
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 18488
+        }
+      ]
+    },
+    "410-3653": {
+      "year": 2027,
+      "total": 704020,
+      "pay": 427241,
+      "retirement": 36875,
+      "benefits": 115745,
+      "other": 124159,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=101",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 368713
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 50000
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 8528
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 28212
+        },
+        {
+          "code": "52201",
+          "name": "FRS Contributions",
+          "amount": 0
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 36875
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 77937
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 2034
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 738
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 6824
+        }
+      ]
+    },
+    "410-3720": {
+      "year": 2027,
+      "total": 297946,
+      "pay": 166916,
+      "retirement": 14667,
+      "benefits": 47238,
+      "other": 69125,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=103",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 146652
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 16000
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 4264
+        },
+        {
+          "code": "51501",
+          "name": "SpcialPay-Wellness Incntv",
+          "amount": 0
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 11222
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 14667
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 31710
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 1017
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 369
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 2920
+        }
+      ]
+    },
+    "440-3410": {
+      "year": 2027,
+      "total": 618545,
+      "pay": 295926,
+      "retirement": 28731,
+      "benefits": 73547,
+      "other": 220341,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=107",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 277244
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 10500
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 8182
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 21454
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 27726
+        },
+        {
+          "code": "52205",
+          "name": "Sr. Manag Supp Retire",
+          "amount": 1005
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 41151
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 1292
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 471
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 9179
+        }
+      ]
+    },
+    "440-3420": {
+      "year": 2027,
+      "total": 3282171,
+      "pay": 778206,
+      "retirement": 74043,
+      "benefits": 271282,
+      "other": 2158640,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=108",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 686887
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 70000
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 21319
+        },
+        {
+          "code": "51501",
+          "name": "SpcialPay-Wellness Incntv",
+          "amount": 0
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 52559
+        },
+        {
+          "code": "52201",
+          "name": "FRS Contributions",
+          "amount": 17228
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 56815
+        },
+        {
+          "code": "52205",
+          "name": "Sr. Manag Supp Retire",
+          "amount": 0
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 178633
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 5085
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 1845
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 33160
+        }
+      ]
+    },
+    "440-3430": {
+      "year": 2027,
+      "total": 2616121,
+      "pay": 669868,
+      "retirement": 55287,
+      "benefits": 211540,
+      "other": 1679426,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=109",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 552812
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 100000
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 17056
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 42302
+        },
+        {
+          "code": "52201",
+          "name": "FRS Contributions",
+          "amount": 0
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 55287
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 138464
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 4068
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 1476
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 25230
+        }
+      ]
+    },
+    "440-3440": {
+      "year": 2027,
+      "total": 4038275,
+      "pay": 1049312,
+      "retirement": 97170,
+      "benefits": 386651,
+      "other": 2505142,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=110",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 971623
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 45000
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 32689
+        },
+        {
+          "code": "51501",
+          "name": "SpcialPay-Wellness Incntv",
+          "amount": 0
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 74356
+        },
+        {
+          "code": "52201",
+          "name": "FRS Contributions",
+          "amount": 0
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 97170
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 253362
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 7430
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 2817
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 48686
+        }
+      ]
+    },
+    "440-3460": {
+      "year": 2027,
+      "total": 197611,
+      "pay": 48627,
+      "retirement": 4621,
+      "benefits": 18906,
+      "other": 125457,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=112",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 46205
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 1000
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 1422
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 3535
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 4621
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 14862
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 339
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 123
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 47
+        }
+      ]
+    },
+    "450-7500": {
+      "year": 2027,
+      "total": 1140,
+      "pay": 0,
+      "retirement": 0,
+      "benefits": 0,
+      "other": 1140,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=116",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 0
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 0
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 0
+        }
+      ]
+    },
+    "450-7600": {
+      "year": 2027,
+      "total": 0,
+      "pay": 0,
+      "retirement": 0,
+      "benefits": 0,
+      "other": 0,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=117",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 0
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 0
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 0
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 0
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 0
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 0
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 0
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 0
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 0
+        }
+      ]
+    },
+    "503-8930": {
+      "year": 2027,
+      "total": 2162451,
+      "pay": 756224,
+      "retirement": 73497,
+      "benefits": 246556,
+      "other": 1086174,
+      "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=124",
+      "rows": [
+        {
+          "code": "51200",
+          "name": "Regular Salaries & Wages",
+          "amount": 734905
+        },
+        {
+          "code": "51400",
+          "name": "Overtime",
+          "amount": 0
+        },
+        {
+          "code": "51500",
+          "name": "Special Pay",
+          "amount": 21319
+        },
+        {
+          "code": "51501",
+          "name": "SpcialPay-Wellness Incntv",
+          "amount": 0
+        },
+        {
+          "code": "52100",
+          "name": "FICA Taxes",
+          "amount": 56236
+        },
+        {
+          "code": "52202",
+          "name": "FMPTF Contributions",
+          "amount": 73497
+        },
+        {
+          "code": "52207",
+          "name": "Health Insurance Expense",
+          "amount": 171133
+        },
+        {
+          "code": "52208",
+          "name": "Dental Insurance Expense",
+          "amount": 5064
+        },
+        {
+          "code": "52300",
+          "name": "Life and Disability Insurance",
+          "amount": 1836
+        },
+        {
+          "code": "52400",
+          "name": "Workers' Compensation",
+          "amount": 12287
+        }
+      ]
+    }
   }
 }

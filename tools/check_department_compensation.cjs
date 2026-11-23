@@ -12,7 +12,7 @@ const assert=require('node:assert/strict'),data=require('../docs/department-comp
    const panel=p.locator(`[data-comparison-id="${id}"] .finance-compensation`),expected=data.departments[key];
    assert.equal(await panel.getAttribute('data-compensation-department'),key);
    await panel.evaluate(e=>e.open=true);
-   assert((await panel.innerText()).includes(`${expected.people} people listed`));assert.equal(await panel.locator('details').count(),0);assert.equal(await panel.locator('.finance-compensation-allowance').count(),expected.allowances?1:0);const ordered=await panel.locator('li[data-annual-max-cents]').evaluateAll(es=>es.map(e=>+e.dataset.annualMaxCents));assert.deepEqual(ordered,[...ordered].sort((a,b)=>b-a));
+   assert((await panel.innerText()).includes(`${expected.people} people`));assert.equal(await panel.locator('details').count(),0);assert((await panel.locator(':scope > summary').innerText()).includes('Employee pay'));assert.equal(await panel.locator('.finance-compensation-allowance').count(),expected.allowances?1:0);const ordered=await panel.locator('li[data-annual-max-cents]').evaluateAll(es=>es.map(e=>+e.dataset.annualMaxCents));assert.deepEqual(ordered,[...ordered].sort((a,b)=>b-a));
    assert.equal(await panel.locator('.finance-compensation-role-list>li').count(),expected.roles.length);
    const total=await panel.locator('.finance-pay-total').innerText();
    if(expected.annualPayCents===null)assert(total.includes('Annual total under review'));
