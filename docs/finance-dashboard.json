@@ -37955,5 +37955,4291 @@
         }
       ]
     }
+  },
+  "personnelHistory": {
+    "001-1100": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 182584,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=16"
+        },
+        {
+          "year": 2022,
+          "value": 215602,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=16"
+        },
+        {
+          "year": 2023,
+          "value": 236158,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=16"
+        },
+        {
+          "year": 2024,
+          "value": 229442,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=9"
+        },
+        {
+          "year": 2025,
+          "value": 238173,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=9"
+        },
+        {
+          "year": 2026,
+          "value": 234311,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=9"
+        },
+        {
+          "year": 2027,
+          "value": 215864,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=9"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 22289,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=16"
+        },
+        {
+          "year": 2022,
+          "value": 27193,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=16"
+        },
+        {
+          "year": 2023,
+          "value": 20830,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=16"
+        },
+        {
+          "year": 2024,
+          "value": 37579,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=9"
+        },
+        {
+          "year": 2025,
+          "value": 31658,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=9"
+        },
+        {
+          "year": 2026,
+          "value": 21586,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=9"
+        },
+        {
+          "year": 2027,
+          "value": 20386,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=9"
+        }
+      ]
+    },
+    "001-1200": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 867762,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=17"
+        },
+        {
+          "year": 2022,
+          "value": 759990,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=17"
+        },
+        {
+          "year": 2023,
+          "value": 729857,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=17"
+        },
+        {
+          "year": 2024,
+          "value": 764857,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=10"
+        },
+        {
+          "year": 2025,
+          "value": 714000,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=10"
+        },
+        {
+          "year": 2026,
+          "value": 770528,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=10"
+        },
+        {
+          "year": 2027,
+          "value": 807149,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=10"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 100160,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=17"
+        },
+        {
+          "year": 2022,
+          "value": 99502,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=17"
+        },
+        {
+          "year": 2023,
+          "value": 80235,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=17"
+        },
+        {
+          "year": 2024,
+          "value": 116782,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=10"
+        },
+        {
+          "year": 2025,
+          "value": 102773,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=10"
+        },
+        {
+          "year": 2026,
+          "value": 78372,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=10"
+        },
+        {
+          "year": 2027,
+          "value": 83094,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=10"
+        }
+      ]
+    },
+    "001-1310": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 576678,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=19"
+        },
+        {
+          "year": 2022,
+          "value": 639107,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=19"
+        },
+        {
+          "year": 2023,
+          "value": 727038,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=19"
+        },
+        {
+          "year": 2024,
+          "value": 815797,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=11"
+        },
+        {
+          "year": 2025,
+          "value": 846939,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=11"
+        },
+        {
+          "year": 2026,
+          "value": 853413,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=11"
+        },
+        {
+          "year": 2027,
+          "value": 870194,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=11"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 58115,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=19"
+        },
+        {
+          "year": 2022,
+          "value": 71719,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=19"
+        },
+        {
+          "year": 2023,
+          "value": 74328,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=19"
+        },
+        {
+          "year": 2024,
+          "value": 101206,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=11"
+        },
+        {
+          "year": 2025,
+          "value": 94815,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=11"
+        },
+        {
+          "year": 2026,
+          "value": 85243,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=11"
+        },
+        {
+          "year": 2027,
+          "value": 87212,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=11"
+        }
+      ]
+    },
+    "001-1330": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=21"
+        },
+        {
+          "year": 2022,
+          "value": 90451,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=21"
+        },
+        {
+          "year": 2023,
+          "value": 210644,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=21"
+        },
+        {
+          "year": 2024,
+          "value": 271013,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=12"
+        },
+        {
+          "year": 2025,
+          "value": 340361,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=12"
+        },
+        {
+          "year": 2026,
+          "value": 303533,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=12"
+        },
+        {
+          "year": 2027,
+          "value": 326353,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=12"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=21"
+        },
+        {
+          "year": 2022,
+          "value": 7415,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=21"
+        },
+        {
+          "year": 2023,
+          "value": 18309,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=21"
+        },
+        {
+          "year": 2024,
+          "value": 24585,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=12"
+        },
+        {
+          "year": 2025,
+          "value": 32319,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=12"
+        },
+        {
+          "year": 2026,
+          "value": 29854,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=12"
+        },
+        {
+          "year": 2027,
+          "value": 31716,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=12"
+        }
+      ]
+    },
+    "001-1340": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 316547,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=23"
+        },
+        {
+          "year": 2022,
+          "value": 340414,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=23"
+        },
+        {
+          "year": 2023,
+          "value": 368086,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=23"
+        },
+        {
+          "year": 2024,
+          "value": 360866,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=13"
+        },
+        {
+          "year": 2025,
+          "value": 383148,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=13"
+        },
+        {
+          "year": 2026,
+          "value": 397945,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=13"
+        },
+        {
+          "year": 2027,
+          "value": 440315,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=13"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 33956,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=23"
+        },
+        {
+          "year": 2022,
+          "value": 36711,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=23"
+        },
+        {
+          "year": 2023,
+          "value": 36417,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=23"
+        },
+        {
+          "year": 2024,
+          "value": 42855,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=13"
+        },
+        {
+          "year": 2025,
+          "value": 40225,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=13"
+        },
+        {
+          "year": 2026,
+          "value": 39675,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=13"
+        },
+        {
+          "year": 2027,
+          "value": 43808,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=13"
+        }
+      ]
+    },
+    "001-1350": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 247118,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=25"
+        },
+        {
+          "year": 2022,
+          "value": 330993,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=25"
+        },
+        {
+          "year": 2023,
+          "value": 402478,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=25"
+        },
+        {
+          "year": 2024,
+          "value": 472188,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=14"
+        },
+        {
+          "year": 2025,
+          "value": 560693,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=14"
+        },
+        {
+          "year": 2026,
+          "value": 574672,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=14"
+        },
+        {
+          "year": 2027,
+          "value": 554293,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=14"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 28546,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=25"
+        },
+        {
+          "year": 2022,
+          "value": 34327,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=25"
+        },
+        {
+          "year": 2023,
+          "value": 38670,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=25"
+        },
+        {
+          "year": 2024,
+          "value": 50634,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=14"
+        },
+        {
+          "year": 2025,
+          "value": 56726,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=14"
+        },
+        {
+          "year": 2026,
+          "value": 56376,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=14"
+        },
+        {
+          "year": 2027,
+          "value": 54997,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=14"
+        }
+      ]
+    },
+    "001-1360": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 164183,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=27"
+        },
+        {
+          "year": 2022,
+          "value": 189829,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=27"
+        },
+        {
+          "year": 2023,
+          "value": 229859,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=27"
+        },
+        {
+          "year": 2024,
+          "value": 272958,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=15"
+        },
+        {
+          "year": 2025,
+          "value": 288391,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=15"
+        },
+        {
+          "year": 2026,
+          "value": 274792,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=15"
+        },
+        {
+          "year": 2027,
+          "value": 250748,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=15"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 12839,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=27"
+        },
+        {
+          "year": 2022,
+          "value": 18574,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=27"
+        },
+        {
+          "year": 2023,
+          "value": 24128,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=27"
+        },
+        {
+          "year": 2024,
+          "value": 44062,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=15"
+        },
+        {
+          "year": 2025,
+          "value": 43257,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=15"
+        },
+        {
+          "year": 2026,
+          "value": 34295,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=15"
+        },
+        {
+          "year": 2027,
+          "value": 33813,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=15"
+        }
+      ]
+    },
+    "001-1610": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 581614,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=29"
+        },
+        {
+          "year": 2022,
+          "value": 710833,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=29"
+        },
+        {
+          "year": 2023,
+          "value": 686811,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=29"
+        },
+        {
+          "year": 2024,
+          "value": 791733,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=17"
+        },
+        {
+          "year": 2025,
+          "value": 1015861,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=17"
+        },
+        {
+          "year": 2026,
+          "value": 868554,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=17"
+        },
+        {
+          "year": 2027,
+          "value": 826451,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=17"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 58137,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=29"
+        },
+        {
+          "year": 2022,
+          "value": 64401,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=29"
+        },
+        {
+          "year": 2023,
+          "value": 64070,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=29"
+        },
+        {
+          "year": 2024,
+          "value": 97698,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=17"
+        },
+        {
+          "year": 2025,
+          "value": 108577,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=17"
+        },
+        {
+          "year": 2026,
+          "value": 86916,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=17"
+        },
+        {
+          "year": 2027,
+          "value": 82986,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=17"
+        }
+      ]
+    },
+    "001-1615": {
+      "pay": [
+        {
+          "year": 2024,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=18"
+        },
+        {
+          "year": 2025,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=18"
+        },
+        {
+          "year": 2026,
+          "value": 301623,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=18"
+        },
+        {
+          "year": 2027,
+          "value": 0,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=18"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2024,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=18"
+        },
+        {
+          "year": 2025,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=18"
+        },
+        {
+          "year": 2026,
+          "value": 30421,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=18"
+        },
+        {
+          "year": 2027,
+          "value": 0,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=18"
+        }
+      ]
+    },
+    "001-1620": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 475985,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=31"
+        },
+        {
+          "year": 2022,
+          "value": 520982,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=31"
+        },
+        {
+          "year": 2023,
+          "value": 770116,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=31"
+        },
+        {
+          "year": 2024,
+          "value": 1028279,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=19"
+        },
+        {
+          "year": 2025,
+          "value": 1099261,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=19"
+        },
+        {
+          "year": 2026,
+          "value": 1108910,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=19"
+        },
+        {
+          "year": 2027,
+          "value": 982444,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=19"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 49505,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=31"
+        },
+        {
+          "year": 2022,
+          "value": 52792,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=31"
+        },
+        {
+          "year": 2023,
+          "value": 67187,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=31"
+        },
+        {
+          "year": 2024,
+          "value": 109134,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=19"
+        },
+        {
+          "year": 2025,
+          "value": 115733,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=19"
+        },
+        {
+          "year": 2026,
+          "value": 110292,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=19"
+        },
+        {
+          "year": 2027,
+          "value": 97618,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=19"
+        }
+      ]
+    },
+    "001-1710": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 199023,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=33"
+        },
+        {
+          "year": 2022,
+          "value": 196196,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=33"
+        },
+        {
+          "year": 2023,
+          "value": 223990,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=33"
+        },
+        {
+          "year": 2024,
+          "value": 210855,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=20"
+        },
+        {
+          "year": 2025,
+          "value": 211236,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=20"
+        },
+        {
+          "year": 2026,
+          "value": 151925,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=20"
+        },
+        {
+          "year": 2027,
+          "value": 156720,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=20"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 26084,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=33"
+        },
+        {
+          "year": 2022,
+          "value": 24583,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=33"
+        },
+        {
+          "year": 2023,
+          "value": 25253,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=33"
+        },
+        {
+          "year": 2024,
+          "value": 30922,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=20"
+        },
+        {
+          "year": 2025,
+          "value": 27758,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=20"
+        },
+        {
+          "year": 2026,
+          "value": 16600,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=20"
+        },
+        {
+          "year": 2027,
+          "value": 17220,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=20"
+        }
+      ]
+    },
+    "001-1720": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 415069,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=35"
+        },
+        {
+          "year": 2022,
+          "value": 512354,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=35"
+        },
+        {
+          "year": 2023,
+          "value": 517057,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=35"
+        },
+        {
+          "year": 2024,
+          "value": 576357,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=21"
+        },
+        {
+          "year": 2025,
+          "value": 516120,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=21"
+        },
+        {
+          "year": 2026,
+          "value": 594962,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=21"
+        },
+        {
+          "year": 2027,
+          "value": 643102,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=21"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 43042,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=35"
+        },
+        {
+          "year": 2022,
+          "value": 54064,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=35"
+        },
+        {
+          "year": 2023,
+          "value": 50078,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=35"
+        },
+        {
+          "year": 2024,
+          "value": 56164,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=21"
+        },
+        {
+          "year": 2025,
+          "value": 51410,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=21"
+        },
+        {
+          "year": 2026,
+          "value": 64036,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=21"
+        },
+        {
+          "year": 2027,
+          "value": 68710,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=21"
+        }
+      ]
+    },
+    "001-2100": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 6539567,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=37"
+        },
+        {
+          "year": 2022,
+          "value": 7348453,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=37"
+        },
+        {
+          "year": 2023,
+          "value": 9045669,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=37"
+        },
+        {
+          "year": 2024,
+          "value": 9152733,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=22"
+        },
+        {
+          "year": 2025,
+          "value": 9429170,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=22"
+        },
+        {
+          "year": 2026,
+          "value": 9876061,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=22"
+        },
+        {
+          "year": 2027,
+          "value": 10038906,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=22"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 1732803,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=37"
+        },
+        {
+          "year": 2022,
+          "value": 2067835,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=37"
+        },
+        {
+          "year": 2023,
+          "value": 2265629,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=37"
+        },
+        {
+          "year": 2024,
+          "value": 2402136,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=22"
+        },
+        {
+          "year": 2025,
+          "value": 2613240,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=22"
+        },
+        {
+          "year": 2026,
+          "value": 2701944,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=22"
+        },
+        {
+          "year": 2027,
+          "value": 2259551,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=22"
+        }
+      ]
+    },
+    "001-2200": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 4167403,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=39"
+        },
+        {
+          "year": 2022,
+          "value": 4961169,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=39"
+        },
+        {
+          "year": 2023,
+          "value": 5944466,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=39"
+        },
+        {
+          "year": 2024,
+          "value": 6299168,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=23"
+        },
+        {
+          "year": 2025,
+          "value": 6535038,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=23"
+        },
+        {
+          "year": 2026,
+          "value": 6569149,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=23"
+        },
+        {
+          "year": 2027,
+          "value": 6791515,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=23"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 2568984,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=39"
+        },
+        {
+          "year": 2022,
+          "value": 2891950,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=39"
+        },
+        {
+          "year": 2023,
+          "value": 3462086,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=39"
+        },
+        {
+          "year": 2024,
+          "value": 3394885,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=23"
+        },
+        {
+          "year": 2025,
+          "value": 3781989,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=23"
+        },
+        {
+          "year": 2026,
+          "value": 1775415,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=23"
+        },
+        {
+          "year": 2027,
+          "value": 3191320,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=23"
+        }
+      ]
+    },
+    "001-4110": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 531196,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=41"
+        },
+        {
+          "year": 2022,
+          "value": 483411,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=41"
+        },
+        {
+          "year": 2023,
+          "value": 762099,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=41"
+        },
+        {
+          "year": 2024,
+          "value": 1114014,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=24"
+        },
+        {
+          "year": 2025,
+          "value": 1070667,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=24"
+        },
+        {
+          "year": 2026,
+          "value": 1170092,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=24"
+        },
+        {
+          "year": 2027,
+          "value": 1890689,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=24"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 42373,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=41"
+        },
+        {
+          "year": 2022,
+          "value": 39032,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=41"
+        },
+        {
+          "year": 2023,
+          "value": 62916,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=41"
+        },
+        {
+          "year": 2024,
+          "value": 98706,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=24"
+        },
+        {
+          "year": 2025,
+          "value": 100584,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=24"
+        },
+        {
+          "year": 2026,
+          "value": 112557,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=24"
+        },
+        {
+          "year": 2027,
+          "value": 181954,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=24"
+        }
+      ]
+    },
+    "001-4120": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 390766,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=43"
+        },
+        {
+          "year": 2022,
+          "value": 374023,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=43"
+        },
+        {
+          "year": 2023,
+          "value": 541066,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=43"
+        },
+        {
+          "year": 2024,
+          "value": 537519,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=25"
+        },
+        {
+          "year": 2025,
+          "value": 612426,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=25"
+        },
+        {
+          "year": 2026,
+          "value": 641230,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=25"
+        },
+        {
+          "year": 2027,
+          "value": 0,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=25"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 44497,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=43"
+        },
+        {
+          "year": 2022,
+          "value": 42098,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=43"
+        },
+        {
+          "year": 2023,
+          "value": 54502,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=43"
+        },
+        {
+          "year": 2024,
+          "value": 56418,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=25"
+        },
+        {
+          "year": 2025,
+          "value": 68210,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=25"
+        },
+        {
+          "year": 2026,
+          "value": 65954,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=25"
+        },
+        {
+          "year": 2027,
+          "value": 0,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=25"
+        }
+      ]
+    },
+    "001-4130": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 158986,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=45"
+        },
+        {
+          "year": 2022,
+          "value": 170965,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=45"
+        },
+        {
+          "year": 2023,
+          "value": 196467,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=45"
+        },
+        {
+          "year": 2024,
+          "value": 199756,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=26"
+        },
+        {
+          "year": 2025,
+          "value": 202191,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=26"
+        },
+        {
+          "year": 2026,
+          "value": 222038,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=26"
+        },
+        {
+          "year": 2027,
+          "value": 172381,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=26"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 15123,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=45"
+        },
+        {
+          "year": 2022,
+          "value": 15225,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=45"
+        },
+        {
+          "year": 2023,
+          "value": 19133,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=45"
+        },
+        {
+          "year": 2024,
+          "value": 16556,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=26"
+        },
+        {
+          "year": 2025,
+          "value": 18563,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=26"
+        },
+        {
+          "year": 2026,
+          "value": 21721,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=26"
+        },
+        {
+          "year": 2027,
+          "value": 16813,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=26"
+        }
+      ]
+    },
+    "001-4140": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=47"
+        },
+        {
+          "year": 2022,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=47"
+        },
+        {
+          "year": 2023,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=47"
+        },
+        {
+          "year": 2024,
+          "value": 39643,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=27"
+        },
+        {
+          "year": 2025,
+          "value": 36368,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=27"
+        },
+        {
+          "year": 2026,
+          "value": 44287,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=27"
+        },
+        {
+          "year": 2027,
+          "value": 0,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=27"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=47"
+        },
+        {
+          "year": 2022,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=47"
+        },
+        {
+          "year": 2023,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=47"
+        },
+        {
+          "year": 2024,
+          "value": 3964,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=27"
+        },
+        {
+          "year": 2025,
+          "value": 3637,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=27"
+        },
+        {
+          "year": 2026,
+          "value": 4402,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=27"
+        },
+        {
+          "year": 2027,
+          "value": 0,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=27"
+        }
+      ]
+    },
+    "001-4150": {
+      "pay": [
+        {
+          "year": 2024,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=28"
+        },
+        {
+          "year": 2025,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=28"
+        },
+        {
+          "year": 2026,
+          "value": 0,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=28"
+        },
+        {
+          "year": 2027,
+          "value": 192260,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=28"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2024,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=28"
+        },
+        {
+          "year": 2025,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=28"
+        },
+        {
+          "year": 2026,
+          "value": 0,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=28"
+        },
+        {
+          "year": 2027,
+          "value": 18160,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=28"
+        }
+      ]
+    },
+    "001-7200": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 949650,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=49"
+        },
+        {
+          "year": 2022,
+          "value": 1287663,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=49"
+        },
+        {
+          "year": 2023,
+          "value": 1480977,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=49"
+        },
+        {
+          "year": 2024,
+          "value": 1596884,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=29"
+        },
+        {
+          "year": 2025,
+          "value": 1786045,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=29"
+        },
+        {
+          "year": 2026,
+          "value": 1897082,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=29"
+        },
+        {
+          "year": 2027,
+          "value": 1638085,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=29"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 83086,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=49"
+        },
+        {
+          "year": 2022,
+          "value": 107460,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=49"
+        },
+        {
+          "year": 2023,
+          "value": 127964,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=49"
+        },
+        {
+          "year": 2024,
+          "value": 150650,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=29"
+        },
+        {
+          "year": 2025,
+          "value": 165601,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=29"
+        },
+        {
+          "year": 2026,
+          "value": 164510,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=29"
+        },
+        {
+          "year": 2027,
+          "value": 148533,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=29"
+        }
+      ]
+    },
+    "001-7300": {
+      "pay": [
+        {
+          "year": 2024,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=30"
+        },
+        {
+          "year": 2025,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=30"
+        },
+        {
+          "year": 2026,
+          "value": 565856,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=30"
+        },
+        {
+          "year": 2027,
+          "value": 646719,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=30"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2024,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=30"
+        },
+        {
+          "year": 2025,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=30"
+        },
+        {
+          "year": 2026,
+          "value": 38204,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=30"
+        },
+        {
+          "year": 2027,
+          "value": 40810,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=30"
+        }
+      ]
+    },
+    "001-8110": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 13618,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=53"
+        },
+        {
+          "year": 2022,
+          "value": 14343,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=53"
+        },
+        {
+          "year": 2023,
+          "value": 33043,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=53"
+        },
+        {
+          "year": 2024,
+          "value": 51370,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=37"
+        },
+        {
+          "year": 2025,
+          "value": 79966,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=37"
+        },
+        {
+          "year": 2026,
+          "value": 84994,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=37"
+        },
+        {
+          "year": 2027,
+          "value": 86759,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=37"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=53"
+        },
+        {
+          "year": 2022,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=53"
+        },
+        {
+          "year": 2023,
+          "value": 2012,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=53"
+        },
+        {
+          "year": 2024,
+          "value": 4187,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=37"
+        },
+        {
+          "year": 2025,
+          "value": 6618,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=37"
+        },
+        {
+          "year": 2026,
+          "value": 8500,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=37"
+        },
+        {
+          "year": 2027,
+          "value": 8392,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=37"
+        }
+      ]
+    },
+    "001-8181": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=54"
+        },
+        {
+          "year": 2022,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=54"
+        },
+        {
+          "year": 2023,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=54"
+        },
+        {
+          "year": 2024,
+          "value": 154416,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=41"
+        },
+        {
+          "year": 2025,
+          "value": 157725,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=41"
+        },
+        {
+          "year": 2026,
+          "value": 147238,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=41"
+        },
+        {
+          "year": 2027,
+          "value": 149578,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=41"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=54"
+        },
+        {
+          "year": 2022,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=54"
+        },
+        {
+          "year": 2023,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=54"
+        },
+        {
+          "year": 2024,
+          "value": 27504,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=41"
+        },
+        {
+          "year": 2025,
+          "value": 24497,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=41"
+        },
+        {
+          "year": 2026,
+          "value": 15184,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=41"
+        },
+        {
+          "year": 2027,
+          "value": 15970,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=41"
+        }
+      ]
+    },
+    "001-8520": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 80065,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=55"
+        },
+        {
+          "year": 2022,
+          "value": 66787,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=55"
+        },
+        {
+          "year": 2023,
+          "value": 199375,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=55"
+        },
+        {
+          "year": 2024,
+          "value": 184235,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=42"
+        },
+        {
+          "year": 2025,
+          "value": 134685,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=42"
+        },
+        {
+          "year": 2026,
+          "value": 121128,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=42"
+        },
+        {
+          "year": 2027,
+          "value": 133192,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=42"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 8196,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=55"
+        },
+        {
+          "year": 2022,
+          "value": 4028,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=55"
+        },
+        {
+          "year": 2023,
+          "value": 16706,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=55"
+        },
+        {
+          "year": 2024,
+          "value": 21148,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=42"
+        },
+        {
+          "year": 2025,
+          "value": 10918,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=42"
+        },
+        {
+          "year": 2026,
+          "value": 11706,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=42"
+        },
+        {
+          "year": 2027,
+          "value": 12635,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=42"
+        }
+      ]
+    },
+    "102-1615": {
+      "pay": [
+        {
+          "year": 2024,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=48"
+        },
+        {
+          "year": 2025,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=48"
+        },
+        {
+          "year": 2026,
+          "value": 0,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=48"
+        },
+        {
+          "year": 2027,
+          "value": 320191,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=48"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2024,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=48"
+        },
+        {
+          "year": 2025,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=48"
+        },
+        {
+          "year": 2026,
+          "value": 0,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=48"
+        },
+        {
+          "year": 2027,
+          "value": 31791,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=48"
+        }
+      ]
+    },
+    "120-5512": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 64,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=65"
+        },
+        {
+          "year": 2022,
+          "value": 86508,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=65"
+        },
+        {
+          "year": 2023,
+          "value": 70748,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=65"
+        },
+        {
+          "year": 2024,
+          "value": 54812,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=55"
+        },
+        {
+          "year": 2025,
+          "value": 40003,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=55"
+        },
+        {
+          "year": 2026,
+          "value": 35421,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=55"
+        },
+        {
+          "year": 2027,
+          "value": 37074,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=55"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 16,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=65"
+        },
+        {
+          "year": 2022,
+          "value": 8335,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=65"
+        },
+        {
+          "year": 2023,
+          "value": 7050,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=65"
+        },
+        {
+          "year": 2024,
+          "value": 6482,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=55"
+        },
+        {
+          "year": 2025,
+          "value": 3955,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=55"
+        },
+        {
+          "year": 2026,
+          "value": 3370,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=55"
+        },
+        {
+          "year": 2027,
+          "value": 3478,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=55"
+        }
+      ]
+    },
+    "130-5513": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 1557,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=69"
+        },
+        {
+          "year": 2022,
+          "value": 48108,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=69"
+        },
+        {
+          "year": 2023,
+          "value": 33510,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=69"
+        },
+        {
+          "year": 2024,
+          "value": 23775,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=60"
+        },
+        {
+          "year": 2025,
+          "value": 24481,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=60"
+        },
+        {
+          "year": 2026,
+          "value": 23226,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=60"
+        },
+        {
+          "year": 2027,
+          "value": 24277,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=60"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 158,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=69"
+        },
+        {
+          "year": 2022,
+          "value": 4586,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=69"
+        },
+        {
+          "year": 2023,
+          "value": 3282,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=69"
+        },
+        {
+          "year": 2024,
+          "value": 2965,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=60"
+        },
+        {
+          "year": 2025,
+          "value": 2441,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=60"
+        },
+        {
+          "year": 2026,
+          "value": 2207,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=60"
+        },
+        {
+          "year": 2027,
+          "value": 2278,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=60"
+        }
+      ]
+    },
+    "140-5514": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 12785,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=73"
+        },
+        {
+          "year": 2022,
+          "value": 72624,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=73"
+        },
+        {
+          "year": 2023,
+          "value": 53613,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=73"
+        },
+        {
+          "year": 2024,
+          "value": 59795,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=64"
+        },
+        {
+          "year": 2025,
+          "value": 56051,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=64"
+        },
+        {
+          "year": 2026,
+          "value": 56122,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=64"
+        },
+        {
+          "year": 2027,
+          "value": 58805,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=64"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 1286,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=73"
+        },
+        {
+          "year": 2022,
+          "value": 4112,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=73"
+        },
+        {
+          "year": 2023,
+          "value": 6504,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=73"
+        },
+        {
+          "year": 2024,
+          "value": 6939,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=64"
+        },
+        {
+          "year": 2025,
+          "value": 5598,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=64"
+        },
+        {
+          "year": 2026,
+          "value": 5345,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=64"
+        },
+        {
+          "year": 2027,
+          "value": 5517,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=64"
+        }
+      ]
+    },
+    "150-5410": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 9623,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=84"
+        },
+        {
+          "year": 2022,
+          "value": 10405,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=84"
+        },
+        {
+          "year": 2023,
+          "value": 33274,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=84"
+        },
+        {
+          "year": 2024,
+          "value": 41566,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=69"
+        },
+        {
+          "year": 2025,
+          "value": 60044,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=69"
+        },
+        {
+          "year": 2026,
+          "value": 109472,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=69"
+        },
+        {
+          "year": 2027,
+          "value": 33727,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=69"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 2404,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=84"
+        },
+        {
+          "year": 2022,
+          "value": 3442,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=84"
+        },
+        {
+          "year": 2023,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=84"
+        },
+        {
+          "year": 2024,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=69"
+        },
+        {
+          "year": 2025,
+          "value": 6011,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=69"
+        },
+        {
+          "year": 2026,
+          "value": 10909,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=69"
+        },
+        {
+          "year": 2027,
+          "value": 3297,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=69"
+        }
+      ]
+    },
+    "150-5415": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": -1106,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=86"
+        },
+        {
+          "year": 2022,
+          "value": 2657,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=86"
+        },
+        {
+          "year": 2023,
+          "value": 33547,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=86"
+        },
+        {
+          "year": 2024,
+          "value": 16719,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=71"
+        },
+        {
+          "year": 2025,
+          "value": 13612,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=71"
+        },
+        {
+          "year": 2026,
+          "value": 12805,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=71"
+        },
+        {
+          "year": 2027,
+          "value": 8120,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=71"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": -144,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=86"
+        },
+        {
+          "year": 2022,
+          "value": 255,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=86"
+        },
+        {
+          "year": 2023,
+          "value": 953,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=86"
+        },
+        {
+          "year": 2024,
+          "value": 1883,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=71"
+        },
+        {
+          "year": 2025,
+          "value": 1368,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=71"
+        },
+        {
+          "year": 2026,
+          "value": 1272,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=71"
+        },
+        {
+          "year": 2027,
+          "value": 794,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=71"
+        }
+      ]
+    },
+    "150-5421": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 178750,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=88"
+        },
+        {
+          "year": 2022,
+          "value": 187768,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=88"
+        },
+        {
+          "year": 2023,
+          "value": 240814,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=88"
+        },
+        {
+          "year": 2024,
+          "value": 137477,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=72"
+        },
+        {
+          "year": 2025,
+          "value": 37243,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=72"
+        },
+        {
+          "year": 2026,
+          "value": 0,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=72"
+        },
+        {
+          "year": 2027,
+          "value": 0,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=72"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 18140,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=88"
+        },
+        {
+          "year": 2022,
+          "value": 8712,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=88"
+        },
+        {
+          "year": 2023,
+          "value": 5947,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=88"
+        },
+        {
+          "year": 2024,
+          "value": 7936,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=72"
+        },
+        {
+          "year": 2025,
+          "value": 6493,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=72"
+        },
+        {
+          "year": 2026,
+          "value": 0,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=72"
+        },
+        {
+          "year": 2027,
+          "value": 0,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=72"
+        }
+      ]
+    },
+    "150-5426": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=90"
+        },
+        {
+          "year": 2022,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=90"
+        },
+        {
+          "year": 2023,
+          "value": 2395,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=90"
+        },
+        {
+          "year": 2024,
+          "value": 12357,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=73"
+        },
+        {
+          "year": 2025,
+          "value": 13611,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=73"
+        },
+        {
+          "year": 2026,
+          "value": 12806,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=73"
+        },
+        {
+          "year": 2027,
+          "value": 7496,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=73"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=90"
+        },
+        {
+          "year": 2022,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=90"
+        },
+        {
+          "year": 2023,
+          "value": 234,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=90"
+        },
+        {
+          "year": 2024,
+          "value": 1462,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=73"
+        },
+        {
+          "year": 2025,
+          "value": 1367,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=73"
+        },
+        {
+          "year": 2026,
+          "value": 1271,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=73"
+        },
+        {
+          "year": 2027,
+          "value": 733,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=73"
+        }
+      ]
+    },
+    "180-5518": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 2479,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=79"
+        },
+        {
+          "year": 2022,
+          "value": 35974,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=79"
+        },
+        {
+          "year": 2023,
+          "value": 52502,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=79"
+        },
+        {
+          "year": 2024,
+          "value": 50220,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=77"
+        },
+        {
+          "year": 2025,
+          "value": 40036,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=77"
+        },
+        {
+          "year": 2026,
+          "value": 42157,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=77"
+        },
+        {
+          "year": 2027,
+          "value": 44307,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=77"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 248,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=79"
+        },
+        {
+          "year": 2022,
+          "value": 3571,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=79"
+        },
+        {
+          "year": 2023,
+          "value": 5214,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=79"
+        },
+        {
+          "year": 2024,
+          "value": 5791,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=77"
+        },
+        {
+          "year": 2025,
+          "value": 3997,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=77"
+        },
+        {
+          "year": 2026,
+          "value": 4012,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=77"
+        },
+        {
+          "year": 2027,
+          "value": 4143,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=77"
+        }
+      ]
+    },
+    "190-8131": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 113367,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=94"
+        },
+        {
+          "year": 2022,
+          "value": 122462,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=94"
+        },
+        {
+          "year": 2023,
+          "value": 136727,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=94"
+        },
+        {
+          "year": 2024,
+          "value": 156978,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=83"
+        },
+        {
+          "year": 2025,
+          "value": 173476,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=83"
+        },
+        {
+          "year": 2026,
+          "value": 189565,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=83"
+        },
+        {
+          "year": 2027,
+          "value": 207841,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=83"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 6645,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=94"
+        },
+        {
+          "year": 2022,
+          "value": 7649,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=94"
+        },
+        {
+          "year": 2023,
+          "value": 9813,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=94"
+        },
+        {
+          "year": 2024,
+          "value": 11238,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=83"
+        },
+        {
+          "year": 2025,
+          "value": 11672,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=83"
+        },
+        {
+          "year": 2026,
+          "value": 11684,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=83"
+        },
+        {
+          "year": 2027,
+          "value": 12046,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=83"
+        }
+      ]
+    },
+    "190-8181": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": -10994,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=96"
+        },
+        {
+          "year": 2022,
+          "value": 107827,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=96"
+        },
+        {
+          "year": 2023,
+          "value": 22771,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=96"
+        },
+        {
+          "year": 2024,
+          "value": 37424,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=85"
+        },
+        {
+          "year": 2025,
+          "value": 42383,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=85"
+        },
+        {
+          "year": 2026,
+          "value": 10963,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=85"
+        },
+        {
+          "year": 2027,
+          "value": 82751,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=85"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": -996,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=96"
+        },
+        {
+          "year": 2022,
+          "value": 7723,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=96"
+        },
+        {
+          "year": 2023,
+          "value": 4570,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=96"
+        },
+        {
+          "year": 2024,
+          "value": 2414,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=85"
+        },
+        {
+          "year": 2025,
+          "value": 1409,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=85"
+        },
+        {
+          "year": 2026,
+          "value": 1090,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=85"
+        },
+        {
+          "year": 2027,
+          "value": 7962,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=85"
+        }
+      ]
+    },
+    "410-3610": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 146983,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=112"
+        },
+        {
+          "year": 2022,
+          "value": 275944,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=112"
+        },
+        {
+          "year": 2023,
+          "value": 376845,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=112"
+        },
+        {
+          "year": 2024,
+          "value": 494334,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=94"
+        },
+        {
+          "year": 2025,
+          "value": 534092,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=94"
+        },
+        {
+          "year": 2026,
+          "value": 519430,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=94"
+        },
+        {
+          "year": 2027,
+          "value": 518642,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=94"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 11974,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=112"
+        },
+        {
+          "year": 2022,
+          "value": 25067,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=112"
+        },
+        {
+          "year": 2023,
+          "value": 35197,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=112"
+        },
+        {
+          "year": 2024,
+          "value": 46975,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=94"
+        },
+        {
+          "year": 2025,
+          "value": 58967,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=94"
+        },
+        {
+          "year": 2026,
+          "value": 53222,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=94"
+        },
+        {
+          "year": 2027,
+          "value": 51584,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=94"
+        }
+      ]
+    },
+    "410-3620": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 591856,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=114"
+        },
+        {
+          "year": 2022,
+          "value": 610661,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=114"
+        },
+        {
+          "year": 2023,
+          "value": 419938,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=114"
+        },
+        {
+          "year": 2024,
+          "value": 374946,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=95"
+        },
+        {
+          "year": 2025,
+          "value": 403063,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=95"
+        },
+        {
+          "year": 2026,
+          "value": 406035,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=95"
+        },
+        {
+          "year": 2027,
+          "value": 422666,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=95"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 59682,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=114"
+        },
+        {
+          "year": 2022,
+          "value": 66633,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=114"
+        },
+        {
+          "year": 2023,
+          "value": 44928,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=114"
+        },
+        {
+          "year": 2024,
+          "value": 31681,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=95"
+        },
+        {
+          "year": 2025,
+          "value": 34556,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=95"
+        },
+        {
+          "year": 2026,
+          "value": 39404,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=95"
+        },
+        {
+          "year": 2027,
+          "value": 40850,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=95"
+        }
+      ]
+    },
+    "410-3630": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 1537410,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=116"
+        },
+        {
+          "year": 2022,
+          "value": 1726697,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=116"
+        },
+        {
+          "year": 2023,
+          "value": 2107531,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=116"
+        },
+        {
+          "year": 2024,
+          "value": 2584472,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=96"
+        },
+        {
+          "year": 2025,
+          "value": 2641369,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=96"
+        },
+        {
+          "year": 2026,
+          "value": 2586716,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=96"
+        },
+        {
+          "year": 2027,
+          "value": 2533864,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=96"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 82659,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=116"
+        },
+        {
+          "year": 2022,
+          "value": 127283,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=116"
+        },
+        {
+          "year": 2023,
+          "value": 193216,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=116"
+        },
+        {
+          "year": 2024,
+          "value": 219439,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=96"
+        },
+        {
+          "year": 2025,
+          "value": 219502,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=96"
+        },
+        {
+          "year": 2026,
+          "value": 207522,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=96"
+        },
+        {
+          "year": 2027,
+          "value": 210852,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=96"
+        }
+      ]
+    },
+    "410-3640": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 504691,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=118"
+        },
+        {
+          "year": 2022,
+          "value": 716246,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=118"
+        },
+        {
+          "year": 2023,
+          "value": 973665,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=118"
+        },
+        {
+          "year": 2024,
+          "value": 1168470,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=97"
+        },
+        {
+          "year": 2025,
+          "value": 1459375,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=97"
+        },
+        {
+          "year": 2026,
+          "value": 1308495,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=97"
+        },
+        {
+          "year": 2027,
+          "value": 1496221,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=97"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": -245,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=118"
+        },
+        {
+          "year": 2022,
+          "value": 32447,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=118"
+        },
+        {
+          "year": 2023,
+          "value": 86054,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=118"
+        },
+        {
+          "year": 2024,
+          "value": 30445,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=97"
+        },
+        {
+          "year": 2025,
+          "value": 86262,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=97"
+        },
+        {
+          "year": 2026,
+          "value": 78745,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=97"
+        },
+        {
+          "year": 2027,
+          "value": 86935,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=97"
+        }
+      ]
+    },
+    "410-3650": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 707085,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=120"
+        },
+        {
+          "year": 2022,
+          "value": 787604,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=120"
+        },
+        {
+          "year": 2023,
+          "value": 896068,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=120"
+        },
+        {
+          "year": 2024,
+          "value": 949632,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=98"
+        },
+        {
+          "year": 2025,
+          "value": 1198734,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=98"
+        },
+        {
+          "year": 2026,
+          "value": 1128060,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=98"
+        },
+        {
+          "year": 2027,
+          "value": 1203272,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=98"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 65838,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=120"
+        },
+        {
+          "year": 2022,
+          "value": 73218,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=120"
+        },
+        {
+          "year": 2023,
+          "value": 89565,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=120"
+        },
+        {
+          "year": 2024,
+          "value": 93827,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=98"
+        },
+        {
+          "year": 2025,
+          "value": 102599,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=98"
+        },
+        {
+          "year": 2026,
+          "value": 101285,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=98"
+        },
+        {
+          "year": 2027,
+          "value": 106431,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=98"
+        }
+      ]
+    },
+    "410-3653": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 298964,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=124"
+        },
+        {
+          "year": 2022,
+          "value": 305076,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=124"
+        },
+        {
+          "year": 2023,
+          "value": 324500,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=124"
+        },
+        {
+          "year": 2024,
+          "value": 364882,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=101"
+        },
+        {
+          "year": 2025,
+          "value": 367292,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=101"
+        },
+        {
+          "year": 2026,
+          "value": 359175,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=101"
+        },
+        {
+          "year": 2027,
+          "value": 427241,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=101"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 7609,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=124"
+        },
+        {
+          "year": 2022,
+          "value": 17598,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=124"
+        },
+        {
+          "year": 2023,
+          "value": 41324,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=124"
+        },
+        {
+          "year": 2024,
+          "value": 10987,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=101"
+        },
+        {
+          "year": 2025,
+          "value": 34873,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=101"
+        },
+        {
+          "year": 2026,
+          "value": 32779,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=101"
+        },
+        {
+          "year": 2027,
+          "value": 36875,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=101"
+        }
+      ]
+    },
+    "410-3720": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=127"
+        },
+        {
+          "year": 2022,
+          "value": 110077,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=127"
+        },
+        {
+          "year": 2023,
+          "value": 141899,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=127"
+        },
+        {
+          "year": 2024,
+          "value": 134139,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=103"
+        },
+        {
+          "year": 2025,
+          "value": 152389,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=103"
+        },
+        {
+          "year": 2026,
+          "value": 146013,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=103"
+        },
+        {
+          "year": 2027,
+          "value": 166916,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=103"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=127"
+        },
+        {
+          "year": 2022,
+          "value": 8674,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=127"
+        },
+        {
+          "year": 2023,
+          "value": 12041,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=127"
+        },
+        {
+          "year": 2024,
+          "value": 9343,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=103"
+        },
+        {
+          "year": 2025,
+          "value": 11159,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=103"
+        },
+        {
+          "year": 2026,
+          "value": 13340,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=103"
+        },
+        {
+          "year": 2027,
+          "value": 14667,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=103"
+        }
+      ]
+    },
+    "440-3410": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=132"
+        },
+        {
+          "year": 2022,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=132"
+        },
+        {
+          "year": 2023,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=132"
+        },
+        {
+          "year": 2024,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=107"
+        },
+        {
+          "year": 2025,
+          "value": 253759,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=107"
+        },
+        {
+          "year": 2026,
+          "value": 273766,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=107"
+        },
+        {
+          "year": 2027,
+          "value": 295926,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=107"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=132"
+        },
+        {
+          "year": 2022,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=132"
+        },
+        {
+          "year": 2023,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=132"
+        },
+        {
+          "year": 2024,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=107"
+        },
+        {
+          "year": 2025,
+          "value": 24287,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=107"
+        },
+        {
+          "year": 2026,
+          "value": 27686,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=107"
+        },
+        {
+          "year": 2027,
+          "value": 28731,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=107"
+        }
+      ]
+    },
+    "440-3420": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 552325,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=134"
+        },
+        {
+          "year": 2022,
+          "value": 658977,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=134"
+        },
+        {
+          "year": 2023,
+          "value": 700763,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=134"
+        },
+        {
+          "year": 2024,
+          "value": 740977,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=108"
+        },
+        {
+          "year": 2025,
+          "value": 694420,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=108"
+        },
+        {
+          "year": 2026,
+          "value": 716453,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=108"
+        },
+        {
+          "year": 2027,
+          "value": 778206,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=108"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 51556,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=134"
+        },
+        {
+          "year": 2022,
+          "value": 60450,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=134"
+        },
+        {
+          "year": 2023,
+          "value": 69121,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=134"
+        },
+        {
+          "year": 2024,
+          "value": 73821,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=108"
+        },
+        {
+          "year": 2025,
+          "value": 66843,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=108"
+        },
+        {
+          "year": 2026,
+          "value": 71944,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=108"
+        },
+        {
+          "year": 2027,
+          "value": 74043,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=108"
+        }
+      ]
+    },
+    "440-3430": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 325470,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=136"
+        },
+        {
+          "year": 2022,
+          "value": 386653,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=136"
+        },
+        {
+          "year": 2023,
+          "value": 437884,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=136"
+        },
+        {
+          "year": 2024,
+          "value": 564103,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=109"
+        },
+        {
+          "year": 2025,
+          "value": 570602,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=109"
+        },
+        {
+          "year": 2026,
+          "value": 584284,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=109"
+        },
+        {
+          "year": 2027,
+          "value": 669868,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=109"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 12914,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=136"
+        },
+        {
+          "year": 2022,
+          "value": 30540,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=136"
+        },
+        {
+          "year": 2023,
+          "value": 55940,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=136"
+        },
+        {
+          "year": 2024,
+          "value": 40077,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=109"
+        },
+        {
+          "year": 2025,
+          "value": 54198,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=109"
+        },
+        {
+          "year": 2026,
+          "value": 52738,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=109"
+        },
+        {
+          "year": 2027,
+          "value": 55287,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=109"
+        }
+      ]
+    },
+    "440-3440": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 730563,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=138"
+        },
+        {
+          "year": 2022,
+          "value": 779777,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=138"
+        },
+        {
+          "year": 2023,
+          "value": 798365,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=138"
+        },
+        {
+          "year": 2024,
+          "value": 934220,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=110"
+        },
+        {
+          "year": 2025,
+          "value": 904411,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=110"
+        },
+        {
+          "year": 2026,
+          "value": 979783,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=110"
+        },
+        {
+          "year": 2027,
+          "value": 1049312,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=110"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 48326,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=138"
+        },
+        {
+          "year": 2022,
+          "value": 63696,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=138"
+        },
+        {
+          "year": 2023,
+          "value": 84779,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=138"
+        },
+        {
+          "year": 2024,
+          "value": 67264,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=110"
+        },
+        {
+          "year": 2025,
+          "value": 81259,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=110"
+        },
+        {
+          "year": 2026,
+          "value": 95395,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=110"
+        },
+        {
+          "year": 2027,
+          "value": 97170,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=110"
+        }
+      ]
+    },
+    "440-3460": {
+      "pay": [
+        {
+          "year": 2024,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=112"
+        },
+        {
+          "year": 2025,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=112"
+        },
+        {
+          "year": 2026,
+          "value": 0,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=112"
+        },
+        {
+          "year": 2027,
+          "value": 48627,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=112"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2024,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=112"
+        },
+        {
+          "year": 2025,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=112"
+        },
+        {
+          "year": 2026,
+          "value": 0,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=112"
+        },
+        {
+          "year": 2027,
+          "value": 4621,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=112"
+        }
+      ]
+    },
+    "450-7500": {
+      "pay": [
+        {
+          "year": 2024,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=116"
+        },
+        {
+          "year": 2025,
+          "value": 1468,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=116"
+        },
+        {
+          "year": 2026,
+          "value": 0,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=116"
+        },
+        {
+          "year": 2027,
+          "value": 0,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=116"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2024,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=116"
+        },
+        {
+          "year": 2025,
+          "value": 0,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=116"
+        },
+        {
+          "year": 2026,
+          "value": 0,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=116"
+        },
+        {
+          "year": 2027,
+          "value": 0,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=116"
+        }
+      ]
+    },
+    "450-7600": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 172246,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=144"
+        },
+        {
+          "year": 2022,
+          "value": 168881,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=144"
+        },
+        {
+          "year": 2023,
+          "value": 223141,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=144"
+        },
+        {
+          "year": 2024,
+          "value": 300714,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=117"
+        },
+        {
+          "year": 2025,
+          "value": 326206,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=117"
+        },
+        {
+          "year": 2026,
+          "value": 166161,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=117"
+        },
+        {
+          "year": 2027,
+          "value": 0,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=117"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 9353,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=144"
+        },
+        {
+          "year": 2022,
+          "value": 8202,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=144"
+        },
+        {
+          "year": 2023,
+          "value": 14424,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=144"
+        },
+        {
+          "year": 2024,
+          "value": 21956,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=117"
+        },
+        {
+          "year": 2025,
+          "value": 25042,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=117"
+        },
+        {
+          "year": 2026,
+          "value": 12267,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=117"
+        },
+        {
+          "year": 2027,
+          "value": 0,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=117"
+        }
+      ]
+    },
+    "503-8930": {
+      "pay": [
+        {
+          "year": 2021,
+          "value": 454805,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=156"
+        },
+        {
+          "year": 2022,
+          "value": 526092,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=156"
+        },
+        {
+          "year": 2023,
+          "value": 568581,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=156"
+        },
+        {
+          "year": 2024,
+          "value": 669492,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=124"
+        },
+        {
+          "year": 2025,
+          "value": 741402,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=124"
+        },
+        {
+          "year": 2026,
+          "value": 763993,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=124"
+        },
+        {
+          "year": 2027,
+          "value": 756224,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=124"
+        }
+      ],
+      "retirement": [
+        {
+          "year": 2021,
+          "value": 39354,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=156"
+        },
+        {
+          "year": 2022,
+          "value": 44419,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=156"
+        },
+        {
+          "year": 2023,
+          "value": 52295,
+          "basis": "Actual",
+          "source": "https://www.panamacity.gov/Archive/ViewFile/Item/1540#page=156"
+        },
+        {
+          "year": 2024,
+          "value": 60783,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=124"
+        },
+        {
+          "year": 2025,
+          "value": 64240,
+          "basis": "Actual",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=124"
+        },
+        {
+          "year": 2026,
+          "value": 71206,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=124"
+        },
+        {
+          "year": 2027,
+          "value": 73497,
+          "basis": "Adopted budget",
+          "source": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=124"
+        }
+      ]
+    }
   }
 }
