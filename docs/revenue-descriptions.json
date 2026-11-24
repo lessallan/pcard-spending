@@ -1,0 +1,2018 @@
+{
+  "asOf": "2026-11-24",
+  "scope": "Plain-language descriptions; rate authority is qualified where local instruments remain unverified. Budget labels identify accounts, not every underlying transaction.",
+  "streams": {
+    "311.100": {
+      "text": "Property owners pay this tax on taxable property value; the city receives its share through the tax collector. The Commission sets the city millage through the annual budget process, subject to state limits and voting requirements.",
+      "control": "City decision, within state limits",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        },
+        {
+          "title": "Florida millage adoption rules",
+          "url": "https://www.flsenate.gov/Laws/Statutes/2026/200.065"
+        }
+      ]
+    },
+    "311.200": {
+      "text": "These are overdue property-tax payments from earlier tax years. The city cannot increase past bills by changing today\u2019s millage; collections depend on outstanding taxes and the statutory collection process.",
+      "control": "Past bills, not a new rate",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        },
+        {
+          "title": "Florida millage adoption rules",
+          "url": "https://www.flsenate.gov/Laws/Statutes/2026/200.065"
+        }
+      ]
+    },
+    "millage": {
+      "text": "Millage is the city\u2019s property-tax rate, not a revenue amount: one mill is $1 per $1,000 of taxable value. The Commission adopts the rate through public budget hearings, subject to state limits and voting requirements.",
+      "control": "City decision, within state limits",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        },
+        {
+          "title": "Florida millage adoption rules",
+          "url": "https://www.flsenate.gov/Laws/Statutes/2026/200.065"
+        }
+      ]
+    },
+    "312.410": {
+      "text": "Fuel buyers fund this county-imposed local-option fuel tax, and Panama City receives an allocated share. The city cannot change the county\u2019s rate by itself; county action and the distribution agreement or state formula govern it.",
+      "control": "County decision and sharing rules",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        },
+        {
+          "title": "Local-option fuel tax",
+          "url": "https://www.flsenate.gov/Laws/Statutes/2026/336.025"
+        }
+      ]
+    },
+    "314.100": {
+      "text": "Customers pay this city public-service tax on taxable electricity purchases, and the seller remits it. The city may change its levy by ordinance within state limits; the general statutory ceiling is 10%, but this card does not establish unused capacity under the current local rate.",
+      "control": "City decision, within state limits",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        },
+        {
+          "title": "Public-service tax authority",
+          "url": "https://www.flsenate.gov/Laws/Statutes/2026/166.231"
+        }
+      ]
+    },
+    "314.400": {
+      "text": "Customers pay this city public-service tax on taxable natural gas purchases, and the seller remits it. The city may change its levy by ordinance within state limits; the general statutory ceiling is 10%, but this card does not establish unused capacity under the current local rate.",
+      "control": "City decision, within state limits",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        },
+        {
+          "title": "Public-service tax authority",
+          "url": "https://www.flsenate.gov/Laws/Statutes/2026/166.231"
+        }
+      ]
+    },
+    "314.800": {
+      "text": "Customers pay this city public-service tax on taxable propane purchases, and the seller remits it. The city may change its levy by ordinance within state limits; the general statutory ceiling is 10%, but this card does not establish unused capacity under the current local rate.",
+      "control": "City decision, within state limits",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        },
+        {
+          "title": "Public-service tax authority",
+          "url": "https://www.flsenate.gov/Laws/Statutes/2026/166.231"
+        }
+      ]
+    },
+    "315.100": {
+      "text": "Customers pay communications-services tax on taxable services such as phone and television service; providers remit it for distribution. The city can lower its local rate through the required process, but state law prohibits increases above the January 2023 rate before January 1, 2031.",
+      "control": "Rate increases frozen through 2030",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        },
+        {
+          "title": "Florida DOR rate-increase freeze",
+          "url": "https://floridarevenue.com/taxes/tips/Documents/TIP_25A19-01.pdf"
+        },
+        {
+          "title": "Local communications tax authority",
+          "url": "https://www.flsenate.gov/Laws/Statutes/2026/202.19"
+        }
+      ]
+    },
+    "323.100": {
+      "text": "The electricity or gas provider pays the city under its franchise arrangement; the ultimate customer impact depends on the provider\u2019s billing terms. Changing the payment requires review of that franchise agreement, so this is not shown as a rate the city can freely raise or lower.",
+      "control": "Franchise terms need verification",
+      "status": "Local agreement not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        }
+      ]
+    },
+    "323.400": {
+      "text": "The electricity or gas provider pays the city under its franchise arrangement; the ultimate customer impact depends on the provider\u2019s billing terms. Changing the payment requires review of that franchise agreement, so this is not shown as a rate the city can freely raise or lower.",
+      "control": "Franchise terms need verification",
+      "status": "Local agreement not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        }
+      ]
+    },
+    "316.100": {
+      "text": "Retail merchants remit the city\u2019s 1% fee on gross retail sales and may pass it on to shoppers. Do not assume the city can change that percentage: state law prohibits revising grandfathered gross-sales tax rates, and its application to this locally described fee needs legal confirmation.",
+      "control": "Rate-change authority needs confirmation",
+      "status": "Local authority needs confirmation",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        },
+        {
+          "title": "City merchant-fee explanation",
+          "url": "https://www.panamacity.gov/779/Merchant-Local-Business-Tax-Return-1-Fee"
+        },
+        {
+          "title": "Gross-receipts rate restriction",
+          "url": "https://www.flsenate.gov/Laws/Statutes/2026/205.044"
+        }
+      ]
+    },
+    "316.199": {
+      "text": "This account reduces recorded merchant-fee receipts for abatements rather than collecting a separate payment from shoppers. The city\u2019s power to change those abatements has not been verified; this is not a separate revenue rate.",
+      "control": "Adjustment; authority not verified",
+      "status": "Abatement terms not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        }
+      ]
+    },
+    "316.200": {
+      "text": "Businesses providing services pay an annual local business tax receipt fee based on their classification. The city can revise eligible schedules only under state business-tax procedures and limits; the exact increase available for each classification needs checking.",
+      "control": "City decision, subject to business-tax rules",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        },
+        {
+          "title": "City business services",
+          "url": "https://panamacity.gov/184/Business-Services"
+        },
+        {
+          "title": "Rate revisions",
+          "url": "https://www.flsenate.gov/Laws/Statutes/2026/205.0535"
+        }
+      ]
+    },
+    "322.100": {
+      "text": "Building-permit applicants pay fees for permitting, inspections and building-code enforcement. The city can set its schedule within state cost-recovery rules; it cannot treat permit fees as an unrestricted way to fund unrelated services.",
+      "control": "City fee schedule, restricted purpose",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=47"
+        },
+        {
+          "title": "Building-code fee authority",
+          "url": "https://www.flsenate.gov/Laws/Statutes/2026/166.222"
+        },
+        {
+          "title": "Restricted building-code funds",
+          "url": "https://www.flsenate.gov/Laws/Statutes/2026/553.80"
+        }
+      ]
+    },
+    "335.120": {
+      "text": "The state distributes a share of designated state revenues to eligible local governments, including Panama City. The city cannot set the state tax rates or unilaterally change its statutory allocation.",
+      "control": "State distribution rules",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        },
+        {
+          "title": "Revenue-sharing eligibility",
+          "url": "https://www.flsenate.gov/Laws/Statutes/2026/218.23"
+        },
+        {
+          "title": "Revenue-sharing allocation",
+          "url": "https://www.flsenate.gov/Laws/Statutes/2026/218.245"
+        }
+      ]
+    },
+    "335.180": {
+      "text": "This is the city\u2019s state-distributed share of sales-tax receipts paid by shoppers, not a separate half-cent tax set by Panama City. The city cannot change this rate or allocation on its own.",
+      "control": "State distribution rules",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        },
+        {
+          "title": "Half-cent sales-tax distribution",
+          "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0200-0299/0218/Sections/0218.61.html"
+        }
+      ]
+    },
+    "335.190": {
+      "text": "Shoppers pay the county infrastructure sales surtax, and the city receives a share for eligible projects. The rate requires the countywide process and voter approval; Panama City cannot independently raise or lower it.",
+      "control": "Countywide vote and sharing rules",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=50"
+        },
+        {
+          "title": "Infrastructure surtax",
+          "url": "https://www.flsenate.gov/Laws/Statutes/2026/212.055"
+        }
+      ]
+    },
+    "335.140": {
+      "text": "These receipts are the city\u2019s allocated share of mobile-home or alcoholic-beverage licensing revenue, as identified in the budget. They are not a local fee schedule the city can simply change; the specific distribution calculation still needs confirmation.",
+      "control": "Distribution formula needs verification",
+      "status": "Distribution formula not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        }
+      ]
+    },
+    "335.150": {
+      "text": "These receipts are the city\u2019s allocated share of mobile-home or alcoholic-beverage licensing revenue, as identified in the budget. They are not a local fee schedule the city can simply change; the specific distribution calculation still needs confirmation.",
+      "control": "Distribution formula needs verification",
+      "status": "Distribution formula not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        }
+      ]
+    },
+    "335.490": {
+      "text": "This is a refund or rebate of qualifying motor-fuel taxes, rather than a charge to residents. The city cannot set the refund rate; eligibility and tax rules control the amount.",
+      "control": "Tax refund, not a local rate",
+      "status": "Specific refund provision not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=122"
+        }
+      ]
+    },
+    "333.100": {
+      "text": "The Panama City Housing Authority pays this amount in place of ordinary property taxes, as identified in the budget. Any change depends on the governing housing-authority payment rules or agreement, which have not yet been verified here.",
+      "control": "Agreement and program rules",
+      "status": "Payment agreement not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        }
+      ]
+    },
+    "335.225": {
+      "text": "These accounts record grant or on-behalf support for employee compensation, including the firefighter supplemental-compensation line. The city can seek eligible support but cannot set an award amount like a local tax rate.",
+      "control": "Grant or benefit-program rules",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        }
+      ]
+    },
+    "335.230": {
+      "text": "These accounts record grant or on-behalf support for employee compensation, including the firefighter supplemental-compensation line. The city can seek eligible support but cannot set an award amount like a local tax rate.",
+      "control": "Grant or benefit-program rules",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        }
+      ]
+    },
+    "337.313": {
+      "text": "City and county property-tax contributions fund this redevelopment-area account; it is not a separate tax bill imposed by the CRA. Contributions depend on tax-increment law and applicable agreements, so the city cannot freely change the entire combined receipt.",
+      "control": "Tax-increment law and agreements",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=54"
+        },
+        {
+          "title": "CRA funding rules",
+          "url": "https://www.flsenate.gov/Laws/Statutes/2026/163.387"
+        }
+      ]
+    },
+    "337.311": {
+      "text": "City and county property-tax contributions fund this redevelopment-area account; it is not a separate tax bill imposed by the CRA. Contributions depend on tax-increment law and applicable agreements, so the city cannot freely change the entire combined receipt.",
+      "control": "Tax-increment law and agreements",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=59"
+        },
+        {
+          "title": "CRA funding rules",
+          "url": "https://www.flsenate.gov/Laws/Statutes/2026/163.387"
+        }
+      ]
+    },
+    "337.316": {
+      "text": "City and county property-tax contributions fund this redevelopment-area account; it is not a separate tax bill imposed by the CRA. Contributions depend on tax-increment law and applicable agreements, so the city cannot freely change the entire combined receipt.",
+      "control": "Tax-increment law and agreements",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=63"
+        },
+        {
+          "title": "CRA funding rules",
+          "url": "https://www.flsenate.gov/Laws/Statutes/2026/163.387"
+        }
+      ]
+    },
+    "337.315": {
+      "text": "City and county property-tax contributions fund this redevelopment-area account; it is not a separate tax bill imposed by the CRA. Contributions depend on tax-increment law and applicable agreements, so the city cannot freely change the entire combined receipt.",
+      "control": "Tax-increment law and agreements",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=76"
+        },
+        {
+          "title": "CRA funding rules",
+          "url": "https://www.flsenate.gov/Laws/Statutes/2026/163.387"
+        }
+      ]
+    },
+    "331.501": {
+      "text": "This account receives federal disaster assistance, rather than a bill paid directly to the city by residents. The city can pursue eligible awards, but the funding agency and program terms control the amount and permitted uses.",
+      "control": "Funding agency and award terms",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        }
+      ]
+    },
+    "334.500": {
+      "text": "This account receives state disaster assistance, rather than a bill paid directly to the city by residents. The city can pursue eligible awards, but the funding agency and program terms control the amount and permitted uses.",
+      "control": "Funding agency and award terms",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        }
+      ]
+    },
+    "334.120": {
+      "text": "This account receives FDOT beautification grants, rather than a bill paid directly to the city by residents. The city can pursue eligible awards, but the funding agency and program terms control the amount and permitted uses.",
+      "control": "Funding agency and award terms",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=63"
+        }
+      ]
+    },
+    "331.570": {
+      "text": "This account receives housing assistance recorded in the SHIP account, rather than a bill paid directly to the city by residents. The city can pursue eligible awards, but the funding agency and program terms control the amount and permitted uses.",
+      "control": "Funding agency and award terms",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=68"
+        }
+      ]
+    },
+    "334.116": {
+      "text": "This account receives county neighborhood-stabilization funding, rather than a bill paid directly to the city by residents. The city can pursue eligible awards, but the funding agency and program terms control the amount and permitted uses.",
+      "control": "Funding agency and award terms",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=68"
+        }
+      ]
+    },
+    "334.117": {
+      "text": "This account receives city neighborhood-stabilization funding, rather than a bill paid directly to the city by residents. The city can pursue eligible awards, but the funding agency and program terms control the amount and permitted uses.",
+      "control": "Funding agency and award terms",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=68"
+        }
+      ]
+    },
+    "331.548": {
+      "text": "This account receives Community Development Block Grant funding, rather than a bill paid directly to the city by residents. The city can pursue eligible awards, but the funding agency and program terms control the amount and permitted uses.",
+      "control": "Funding agency and award terms",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=80"
+        }
+      ]
+    },
+    "331.315": {
+      "text": "This account receives hazard-mitigation funding for water supply, rather than a bill paid directly to the city by residents. The city can pursue eligible awards, but the funding agency and program terms control the amount and permitted uses.",
+      "control": "Funding agency and award terms",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=93"
+        }
+      ]
+    },
+    "334.351": {
+      "text": "This account receives state sewer and wastewater appropriations, rather than a bill paid directly to the city by residents. The city can pursue eligible awards, but the funding agency and program terms control the amount and permitted uses.",
+      "control": "Funding agency and award terms",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=93"
+        }
+      ]
+    },
+    "334.930": {
+      "text": "This account receives Florida environmental grant funding, rather than a bill paid directly to the city by residents. The city can pursue eligible awards, but the funding agency and program terms control the amount and permitted uses.",
+      "control": "Funding agency and award terms",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=93"
+        }
+      ]
+    },
+    "342.904": {
+      "text": "Assessed property owners pay toward fire protection through the city\u2019s fire-service assessment. The Commission adopts assessments through its assessment process; changes must follow the ordinance and benefit-allocation requirements rather than simply choosing a new revenue target.",
+      "control": "City assessment process",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        },
+        {
+          "title": "City fire-assessment framework",
+          "url": "https://www.panamacity.gov/AgendaCenter/ViewFile/Item/13033?fileID=27860"
+        }
+      ]
+    },
+    "342.600": {
+      "text": "Palm Bay Elem is the named school or program in this security-service revenue account. The payment is tied to a service agreement; its payer, cost-sharing and renewal terms need confirmation before describing how much the city can raise or lower it.",
+      "control": "Security-service agreement",
+      "status": "Specific agreement not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        }
+      ]
+    },
+    "342.700": {
+      "text": "Central High is the named school or program in this security-service revenue account. The payment is tied to a service agreement; its payer, cost-sharing and renewal terms need confirmation before describing how much the city can raise or lower it.",
+      "control": "Security-service agreement",
+      "status": "Specific agreement not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        }
+      ]
+    },
+    "342.710": {
+      "text": "Holy Nativity is the named school or program in this security-service revenue account. The payment is tied to a service agreement; its payer, cost-sharing and renewal terms need confirmation before describing how much the city can raise or lower it.",
+      "control": "Security-service agreement",
+      "status": "Specific agreement not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        }
+      ]
+    },
+    "342.720": {
+      "text": "FSU High School is the named school or program in this security-service revenue account. The payment is tied to a service agreement; its payer, cost-sharing and renewal terms need confirmation before describing how much the city can raise or lower it.",
+      "control": "Security-service agreement",
+      "status": "Specific agreement not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        }
+      ]
+    },
+    "342.730": {
+      "text": "AMIkids Maritime Academy is the named school or program in this security-service revenue account. The payment is tied to a service agreement; its payer, cost-sharing and renewal terms need confirmation before describing how much the city can raise or lower it.",
+      "control": "Security-service agreement",
+      "status": "Specific agreement not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        }
+      ]
+    },
+    "342.750": {
+      "text": "Rising Leaders Academy is the named school or program in this security-service revenue account. The payment is tied to a service agreement; its payer, cost-sharing and renewal terms need confirmation before describing how much the city can raise or lower it.",
+      "control": "Security-service agreement",
+      "status": "Specific agreement not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        }
+      ]
+    },
+    "342.905": {
+      "text": "University Academy is the named school or program in this security-service revenue account. The payment is tied to a service agreement; its payer, cost-sharing and renewal terms need confirmation before describing how much the city can raise or lower it.",
+      "control": "Security-service agreement",
+      "status": "Specific agreement not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        }
+      ]
+    },
+    "343.611": {
+      "text": "Households and businesses using city water service pay these charges through their utility bills. The city can revise its adopted rates, subject to applicable law and financing obligations; a higher budget total can also reflect usage or customer growth.",
+      "control": "City utility-rate decision",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=93"
+        },
+        {
+          "title": "City utility services and rate notice",
+          "url": "https://panamacity.gov/142/Utility-Billing-Customer-Service"
+        },
+        {
+          "title": "Municipal utility rate authority",
+          "url": "https://www.flsenate.gov/Laws/Statutes/2026/180.13"
+        }
+      ]
+    },
+    "343.616": {
+      "text": "Households and businesses using city sewer service pay these charges through their utility bills. The city can revise its adopted rates, subject to applicable law and financing obligations; a higher budget total can also reflect usage or customer growth.",
+      "control": "City utility-rate decision",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=93"
+        },
+        {
+          "title": "City utility services and rate notice",
+          "url": "https://panamacity.gov/142/Utility-Billing-Customer-Service"
+        },
+        {
+          "title": "Municipal utility rate authority",
+          "url": "https://www.flsenate.gov/Laws/Statutes/2026/180.13"
+        }
+      ]
+    },
+    "343.411": {
+      "text": "Households and businesses using city garbage collection pay these charges through their utility bills. The city can revise its adopted rates, subject to applicable law and financing obligations; a higher budget total can also reflect usage or customer growth.",
+      "control": "City utility-rate decision",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=106"
+        },
+        {
+          "title": "City utility services and rate notice",
+          "url": "https://panamacity.gov/142/Utility-Billing-Customer-Service"
+        },
+        {
+          "title": "Municipal utility rate authority",
+          "url": "https://www.flsenate.gov/Laws/Statutes/2026/180.13"
+        }
+      ]
+    },
+    "324.231": {
+      "text": "Development that creates additional water or sewer demand pays these impact fees for qualifying infrastructure capacity. The city can revise them only through the required study and adoption process, subject to statutory limits and any applicable disaster-area restrictions.",
+      "control": "City decision under impact-fee rules",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=93"
+        },
+        {
+          "title": "Florida Impact Fee Act",
+          "url": "https://www.flsenate.gov/Laws/Statutes/2026/163.31801"
+        }
+      ]
+    },
+    "324.232": {
+      "text": "Development that creates additional water or sewer demand pays these impact fees for qualifying infrastructure capacity. The city can revise them only through the required study and adoption process, subject to statutory limits and any applicable disaster-area restrictions.",
+      "control": "City decision under impact-fee rules",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=93"
+        },
+        {
+          "title": "Florida Impact Fee Act",
+          "url": "https://www.flsenate.gov/Laws/Statutes/2026/163.31801"
+        }
+      ]
+    },
+    "329.300": {
+      "text": "Applicants fund this account for use of city rights-of-way, based on the budget label. The exact fee schedule or agreement has not yet been verified, so the city\u2019s ability to change this particular charge remains unconfirmed.",
+      "control": "Specific fee schedule needs checking",
+      "status": "Payer inferred from budget label; schedule not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        }
+      ]
+    },
+    "329.100": {
+      "text": "Participating establishments fund this account for the fats, oils and grease program, based on the budget label. The exact fee schedule or agreement has not yet been verified, so the city\u2019s ability to change this particular charge remains unconfirmed.",
+      "control": "Specific fee schedule needs checking",
+      "status": "Payer inferred from budget label; schedule not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=93"
+        }
+      ]
+    },
+    "341.920": {
+      "text": "Applicants fund this account for planning or zoning review, based on the budget label. The exact fee schedule or agreement has not yet been verified, so the city\u2019s ability to change this particular charge remains unconfirmed.",
+      "control": "Specific fee schedule needs checking",
+      "status": "Payer inferred from budget label; schedule not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        }
+      ]
+    },
+    "342.100": {
+      "text": "Service recipients fund this account for police services, based on the budget label. The exact fee schedule or agreement has not yet been verified, so the city\u2019s ability to change this particular charge remains unconfirmed.",
+      "control": "Specific fee schedule needs checking",
+      "status": "Payer inferred from budget label; schedule not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        }
+      ]
+    },
+    "342.200": {
+      "text": "Service recipients or contracting parties fund this account for fire-protection services, based on the budget label. The exact fee schedule or agreement has not yet been verified, so the city\u2019s ability to change this particular charge remains unconfirmed.",
+      "control": "Specific fee schedule needs checking",
+      "status": "Payer inferred from budget label; schedule not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        }
+      ]
+    },
+    "342.740": {
+      "text": "Organizations requesting officers fund this account for off-duty officer arrangements, based on the budget label. The exact fee schedule or agreement has not yet been verified, so the city\u2019s ability to change this particular charge remains unconfirmed.",
+      "control": "Specific fee schedule needs checking",
+      "status": "Payer inferred from budget label; schedule not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        }
+      ]
+    },
+    "342.900": {
+      "text": "Service users fund this account for other public-safety services, based on the budget label. The exact fee schedule or agreement has not yet been verified, so the city\u2019s ability to change this particular charge remains unconfirmed.",
+      "control": "Specific fee schedule needs checking",
+      "status": "Payer inferred from budget label; schedule not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        }
+      ]
+    },
+    "342.901": {
+      "text": "Training participants or their employers fund this account for Fire Department training, based on the budget label. The exact fee schedule or agreement has not yet been verified, so the city\u2019s ability to change this particular charge remains unconfirmed.",
+      "control": "Specific fee schedule needs checking",
+      "status": "Payer inferred from budget label; schedule not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        }
+      ]
+    },
+    "342.903": {
+      "text": "Service users fund this account for other Fire Department services, based on the budget label. The exact fee schedule or agreement has not yet been verified, so the city\u2019s ability to change this particular charge remains unconfirmed.",
+      "control": "Specific fee schedule needs checking",
+      "status": "Payer inferred from budget label; schedule not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        }
+      ]
+    },
+    "343.660": {
+      "text": "Permit-related accounts or applicants fund this account for building-permit administration, based on the budget label. The exact fee schedule or agreement has not yet been verified, so the city\u2019s ability to change this particular charge remains unconfirmed.",
+      "control": "Specific fee schedule needs checking",
+      "status": "Payer inferred from budget label; schedule not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        }
+      ]
+    },
+    "344.900": {
+      "text": "Payers not itemized in this account fund this account for transportation-related services, based on the budget label. The exact fee schedule or agreement has not yet been verified, so the city\u2019s ability to change this particular charge remains unconfirmed.",
+      "control": "Specific fee schedule needs checking",
+      "status": "Payer inferred from budget label; schedule not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        }
+      ]
+    },
+    "347.210": {
+      "text": "Participants fund this account for parks and recreation programs, based on the budget label. The exact fee schedule or agreement has not yet been verified, so the city\u2019s ability to change this particular charge remains unconfirmed.",
+      "control": "Specific fee schedule needs checking",
+      "status": "Payer inferred from budget label; schedule not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        }
+      ]
+    },
+    "347.220": {
+      "text": "Permit applicants fund this account for park permits, based on the budget label. The exact fee schedule or agreement has not yet been verified, so the city\u2019s ability to change this particular charge remains unconfirmed.",
+      "control": "Specific fee schedule needs checking",
+      "status": "Payer inferred from budget label; schedule not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        }
+      ]
+    },
+    "347.230": {
+      "text": "Service customers fund this account for landscaping or maintenance services, based on the budget label. The exact fee schedule or agreement has not yet been verified, so the city\u2019s ability to change this particular charge remains unconfirmed.",
+      "control": "Specific fee schedule needs checking",
+      "status": "Payer inferred from budget label; schedule not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        }
+      ]
+    },
+    "347.290": {
+      "text": "Renters fund this account for parks and recreation rentals, based on the budget label. The exact fee schedule or agreement has not yet been verified, so the city\u2019s ability to change this particular charge remains unconfirmed.",
+      "control": "Specific fee schedule needs checking",
+      "status": "Payer inferred from budget label; schedule not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        }
+      ]
+    },
+    "347.295": {
+      "text": "Renters fund this account for parks and recreation rentals, based on the budget label. The exact fee schedule or agreement has not yet been verified, so the city\u2019s ability to change this particular charge remains unconfirmed.",
+      "control": "Specific fee schedule needs checking",
+      "status": "Payer inferred from budget label; schedule not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        }
+      ]
+    },
+    "347.400": {
+      "text": "Event organizers fund this account for special-event services, based on the budget label. The exact fee schedule or agreement has not yet been verified, so the city\u2019s ability to change this particular charge remains unconfirmed.",
+      "control": "Specific fee schedule needs checking",
+      "status": "Payer inferred from budget label; schedule not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        }
+      ]
+    },
+    "347.401": {
+      "text": "Event organizers fund this account for police support for special events, based on the budget label. The exact fee schedule or agreement has not yet been verified, so the city\u2019s ability to change this particular charge remains unconfirmed.",
+      "control": "Specific fee schedule needs checking",
+      "status": "Payer inferred from budget label; schedule not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        }
+      ]
+    },
+    "347.402": {
+      "text": "Event organizers fund this account for Public Works electrical support for events, based on the budget label. The exact fee schedule or agreement has not yet been verified, so the city\u2019s ability to change this particular charge remains unconfirmed.",
+      "control": "Specific fee schedule needs checking",
+      "status": "Payer inferred from budget label; schedule not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        }
+      ]
+    },
+    "343.614": {
+      "text": "Customers requesting connections fund this account for water connections, based on the budget label. The exact fee schedule or agreement has not yet been verified, so the city\u2019s ability to change this particular charge remains unconfirmed.",
+      "control": "Specific fee schedule needs checking",
+      "status": "Payer inferred from budget label; schedule not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=93"
+        }
+      ]
+    },
+    "343.619": {
+      "text": "Customers requesting connections fund this account for sewer connections, based on the budget label. The exact fee schedule or agreement has not yet been verified, so the city\u2019s ability to change this particular charge remains unconfirmed.",
+      "control": "Specific fee schedule needs checking",
+      "status": "Payer inferred from budget label; schedule not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=93"
+        }
+      ]
+    },
+    "343.625": {
+      "text": "Customers restoring service fund this account for water reconnections, based on the budget label. The exact fee schedule or agreement has not yet been verified, so the city\u2019s ability to change this particular charge remains unconfirmed.",
+      "control": "Specific fee schedule needs checking",
+      "status": "Payer inferred from budget label; schedule not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=93"
+        }
+      ]
+    },
+    "343.615": {
+      "text": "Hydrant-service customers fund this account for fire-hydrant rentals, based on the budget label. The exact fee schedule or agreement has not yet been verified, so the city\u2019s ability to change this particular charge remains unconfirmed.",
+      "control": "Specific fee schedule needs checking",
+      "status": "Payer inferred from budget label; schedule not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=93"
+        }
+      ]
+    },
+    "343.651": {
+      "text": "Customers requesting connections fund this account for utility connections, based on the budget label. The exact fee schedule or agreement has not yet been verified, so the city\u2019s ability to change this particular charge remains unconfirmed.",
+      "control": "Specific fee schedule needs checking",
+      "status": "Payer inferred from budget label; schedule not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=93"
+        }
+      ]
+    },
+    "343.630": {
+      "text": "Applicants or service customers fund this account for utility modeling work, based on the budget label. The exact fee schedule or agreement has not yet been verified, so the city\u2019s ability to change this particular charge remains unconfirmed.",
+      "control": "Specific fee schedule needs checking",
+      "status": "Payer inferred from budget label; schedule not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=93"
+        }
+      ]
+    },
+    "343.901": {
+      "text": "Customers submitting samples fund this account for laboratory analysis, based on the budget label. The exact fee schedule or agreement has not yet been verified, so the city\u2019s ability to change this particular charge remains unconfirmed.",
+      "control": "Specific fee schedule needs checking",
+      "status": "Payer inferred from budget label; schedule not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=93"
+        }
+      ]
+    },
+    "343.421": {
+      "text": "Event organizers fund this account for garbage service at special events, based on the budget label. The exact fee schedule or agreement has not yet been verified, so the city\u2019s ability to change this particular charge remains unconfirmed.",
+      "control": "Specific fee schedule needs checking",
+      "status": "Payer inferred from budget label; schedule not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=106"
+        }
+      ]
+    },
+    "363.234": {
+      "text": "Construction applicants or customers fund this account for construction-related services, based on the budget label. The exact fee schedule or agreement has not yet been verified, so the city\u2019s ability to change this particular charge remains unconfirmed.",
+      "control": "Specific fee schedule needs checking",
+      "status": "Payer inferred from budget label; schedule not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=93"
+        }
+      ]
+    },
+    "341.940": {
+      "text": "People requesting copies or certification of city records pay these charges. State public-records rules limit applicable copying and service fees; the precise local schedule still needs confirmation.",
+      "control": "State limits and local schedule",
+      "status": "Local schedule not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        },
+        {
+          "title": "Public-record copying charges",
+          "url": "https://www.flsenate.gov/Laws/Statutes/2026/119.07"
+        }
+      ]
+    },
+    "341.900": {
+      "text": "Candidates pay qualifying fees when required to run for city office. The city\u2019s share and authority to change it depend on election law and local qualifying rules, which have not been verified for this account.",
+      "control": "Election rules",
+      "status": "Qualifying rules not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        }
+      ]
+    },
+    "341.950": {
+      "text": "The budget labels this receipt \u201cTrees\u201d but does not identify the payer or charging mechanism. We have not verified whether it is a permit charge, mitigation payment or another receipt, or who can change it.",
+      "control": "Not yet verified",
+      "status": "Payer and authority not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        }
+      ]
+    },
+    "342.800": {
+      "text": "This account records code-enforcement special assessments associated with affected properties. The cost basis, liable owner and assessment procedure need checking before treating it as a fee the city can freely change.",
+      "control": "Assessment process needs checking",
+      "status": "Specific assessment authority not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        }
+      ]
+    },
+    "351.100": {
+      "text": "These receipts come from fines or penalty-related collections, not ordinary service customers. Courts, state law and local enforcement rules may control different portions; the exact authority for changing this account\u2019s penalties needs verification.",
+      "control": "Penalty rules, not an ordinary price",
+      "status": "Specific penalty authority not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        }
+      ]
+    },
+    "351.300": {
+      "text": "These receipts come from fines or penalty-related collections, not ordinary service customers. Courts, state law and local enforcement rules may control different portions; the exact authority for changing this account\u2019s penalties needs verification.",
+      "control": "Penalty rules, not an ordinary price",
+      "status": "Specific penalty authority not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        }
+      ]
+    },
+    "359.100": {
+      "text": "These receipts come from fines or penalty-related collections, not ordinary service customers. Courts, state law and local enforcement rules may control different portions; the exact authority for changing this account\u2019s penalties needs verification.",
+      "control": "Penalty rules, not an ordinary price",
+      "status": "Specific penalty authority not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        }
+      ]
+    },
+    "359.300": {
+      "text": "These receipts come from fines or penalty-related collections, not ordinary service customers. Courts, state law and local enforcement rules may control different portions; the exact authority for changing this account\u2019s penalties needs verification.",
+      "control": "Penalty rules, not an ordinary price",
+      "status": "Specific penalty authority not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        }
+      ]
+    },
+    "342.902": {
+      "text": "These receipts come from fines or penalty-related collections, not ordinary service customers. Courts, state law and local enforcement rules may control different portions; the exact authority for changing this account\u2019s penalties needs verification.",
+      "control": "Penalty rules, not an ordinary price",
+      "status": "Specific penalty authority not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        }
+      ]
+    },
+    "351.200": {
+      "text": "This account records federal forfeiture proceeds allocated to the city through the applicable forfeiture process. It is not a rate charged to residents, and the city cannot set an annual award like a service fee.",
+      "control": "Forfeiture process, not a local rate",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        }
+      ]
+    },
+    "354.000": {
+      "text": "This account records money recovered in fraud-related matters. Recoveries depend on the underlying case or repayment obligation; there is no general public rate for the city to raise.",
+      "control": "Case-specific recovery",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        }
+      ]
+    },
+    "341.300": {
+      "text": "Other funds or agencies reimburse the city for administration or support services under this account. Changing the allocation depends on the cost basis and applicable agreement; moving money between city funds does not create new citywide revenue.",
+      "control": "Internal allocation or service agreement",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        }
+      ]
+    },
+    "341.310": {
+      "text": "Other funds or agencies reimburse the city for administration or support services under this account. Changing the allocation depends on the cost basis and applicable agreement; moving money between city funds does not create new citywide revenue.",
+      "control": "Internal allocation or service agreement",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        }
+      ]
+    },
+    "341.330": {
+      "text": "Other funds or agencies reimburse the city for administration or support services under this account. Changing the allocation depends on the cost basis and applicable agreement; moving money between city funds does not create new citywide revenue.",
+      "control": "Internal allocation or service agreement",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=7"
+        }
+      ]
+    },
+    "349.300": {
+      "text": "Other funds or agencies reimburse the city for administration or support services under this account. Changing the allocation depends on the cost basis and applicable agreement; moving money between city funds does not create new citywide revenue.",
+      "control": "Internal allocation or service agreement",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        }
+      ]
+    },
+    "341.210": {
+      "text": "City funds contribute toward employee insurance through this account. Contribution levels can change through budget and benefit decisions, but the same city dollars should not be counted again as new citywide revenue.",
+      "control": "Budget and benefit-plan decisions",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=119"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=120"
+        }
+      ]
+    },
+    "341.211": {
+      "text": "Current or retired employees contribute toward their insurance coverage. Contribution changes depend on the adopted benefit plan and any applicable employment agreements; the specific terms need checking.",
+      "control": "Benefit-plan terms",
+      "status": "Specific benefit terms not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=119"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=120"
+        }
+      ]
+    },
+    "385.004": {
+      "text": "Current or retired employees contribute toward their insurance coverage. Contribution changes depend on the adopted benefit plan and any applicable employment agreements; the specific terms need checking.",
+      "control": "Benefit-plan terms",
+      "status": "Specific benefit terms not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=119"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=120"
+        }
+      ]
+    },
+    "385.003": {
+      "text": "Participating outside agencies contribute toward the insurance program. Payments depend on participation agreements and plan costs rather than a city tax rate.",
+      "control": "Participation agreement",
+      "status": "Specific participation terms not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=119"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=120"
+        }
+      ]
+    },
+    "341.200": {
+      "text": "City departments reimburse the equipment-maintenance operation for repair work, supplies or outside labor. These are internal cost allocations; changing them shifts costs among funds rather than creating new citywide revenue.",
+      "control": "Internal cost allocation",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=122"
+        },
+        {
+          "title": "City internal-service-fund explanation",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1582#page=93"
+        }
+      ]
+    },
+    "341.202": {
+      "text": "City departments reimburse the equipment-maintenance operation for repair work, supplies or outside labor. These are internal cost allocations; changing them shifts costs among funds rather than creating new citywide revenue.",
+      "control": "Internal cost allocation",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=122"
+        },
+        {
+          "title": "City internal-service-fund explanation",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1582#page=93"
+        }
+      ]
+    },
+    "369.904": {
+      "text": "City departments reimburse the equipment-maintenance operation for repair work, supplies or outside labor. These are internal cost allocations; changing them shifts costs among funds rather than creating new citywide revenue.",
+      "control": "Internal cost allocation",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=122"
+        },
+        {
+          "title": "City internal-service-fund explanation",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1582#page=93"
+        }
+      ]
+    },
+    "361.100": {
+      "text": "Banks and investments generate interest on city cash balances. The city can manage permitted investments, but market yields and cash balances determine receipts; this is not a rate it can charge taxpayers.",
+      "control": "Investment returns, not a tax rate",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=50"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=54"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=59"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=63"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=68"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=76"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=80"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=91"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=93"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=106"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=115"
+        }
+      ]
+    },
+    "362.100": {
+      "text": "Tenants or facility users pay rent for city property or housing-program property. New rental terms may be negotiable, but existing leases and housing-program restrictions must be checked before changing charges.",
+      "control": "Lease and program terms",
+      "status": "Specific lease terms not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=68"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=76"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=115"
+        }
+      ]
+    },
+    "362.200": {
+      "text": "Tenants or facility users pay rent for city property or housing-program property. New rental terms may be negotiable, but existing leases and housing-program restrictions must be checked before changing charges.",
+      "control": "Lease and program terms",
+      "status": "Specific lease terms not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        }
+      ]
+    },
+    "362.210": {
+      "text": "Tenants or facility users pay rent for city property or housing-program property. New rental terms may be negotiable, but existing leases and housing-program restrictions must be checked before changing charges.",
+      "control": "Lease and program terms",
+      "status": "Specific lease terms not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=63"
+        }
+      ]
+    },
+    "362.140": {
+      "text": "Tenants or facility users pay rent for city property or housing-program property. New rental terms may be negotiable, but existing leases and housing-program restrictions must be checked before changing charges.",
+      "control": "Lease and program terms",
+      "status": "Specific lease terms not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=65"
+        }
+      ]
+    },
+    "362.145": {
+      "text": "Tenants or facility users pay rent for city property or housing-program property. New rental terms may be negotiable, but existing leases and housing-program restrictions must be checked before changing charges.",
+      "control": "Lease and program terms",
+      "status": "Specific lease terms not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=65"
+        }
+      ]
+    },
+    "362.101": {
+      "text": "Tenants or facility users pay rent for city property or housing-program property. New rental terms may be negotiable, but existing leases and housing-program restrictions must be checked before changing charges.",
+      "control": "Lease and program terms",
+      "status": "Specific lease terms not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=68"
+        }
+      ]
+    },
+    "362.102": {
+      "text": "Tenants or facility users pay rent for city property or housing-program property. New rental terms may be negotiable, but existing leases and housing-program restrictions must be checked before changing charges.",
+      "control": "Lease and program terms",
+      "status": "Specific lease terms not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=68"
+        }
+      ]
+    },
+    "362.300": {
+      "text": "This line records lease revenue under governmental lease-accounting rules, not necessarily cash collected in that year. The underlying lease governs payments; changing an accounting entry does not create new money.",
+      "control": "Lease terms; accounting recognition",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=63"
+        }
+      ]
+    },
+    "364.100": {
+      "text": "Purchasers of cemetery lots or burial rights fund this account. The current cemetery schedule and authority to amend it have not yet been verified.",
+      "control": "Cemetery schedule needs checking",
+      "status": "Specific schedule not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        }
+      ]
+    },
+    "364.200": {
+      "text": "Buyers pay the city for property, surplus assets, scrap or inventory sold through this account. The city may decide whether to sell eligible assets, but market prices and sale restrictions affect proceeds; sales are not recurring tax revenue.",
+      "control": "Asset-sale decision and market price",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        }
+      ]
+    },
+    "365.100": {
+      "text": "Buyers pay the city for property, surplus assets, scrap or inventory sold through this account. The city may decide whether to sell eligible assets, but market prices and sale restrictions affect proceeds; sales are not recurring tax revenue.",
+      "control": "Asset-sale decision and market price",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=93"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=106"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=122"
+        }
+      ]
+    },
+    "369.902": {
+      "text": "Buyers pay the city for property, surplus assets, scrap or inventory sold through this account. The city may decide whether to sell eligible assets, but market prices and sale restrictions affect proceeds; sales are not recurring tax revenue.",
+      "control": "Asset-sale decision and market price",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=54"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=59"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=63"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=76"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=93"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=106"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=122"
+        }
+      ]
+    },
+    "369.922": {
+      "text": "Buyers pay the city for property, surplus assets, scrap or inventory sold through this account. The city may decide whether to sell eligible assets, but market prices and sale restrictions affect proceeds; sales are not recurring tax revenue.",
+      "control": "Asset-sale decision and market price",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=68"
+        }
+      ]
+    },
+    "369.926": {
+      "text": "Buyers pay the city for property, surplus assets, scrap or inventory sold through this account. The city may decide whether to sell eligible assets, but market prices and sale restrictions affect proceeds; sales are not recurring tax revenue.",
+      "control": "Asset-sale decision and market price",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=68"
+        }
+      ]
+    },
+    "364.420": {
+      "text": "Insurers or settling parties pay these proceeds after a covered loss or resolved claim. The amount depends on coverage, settlement or court terms, not a rate the city can impose on residents.",
+      "control": "Insurance or settlement terms",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=63"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=93"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=106"
+        }
+      ]
+    },
+    "369.301": {
+      "text": "Insurers or settling parties pay these proceeds after a covered loss or resolved claim. The amount depends on coverage, settlement or court terms, not a rate the city can impose on residents.",
+      "control": "Insurance or settlement terms",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        }
+      ]
+    },
+    "366.023": {
+      "text": "Private donors, sponsors or partner organizations provide contributions recorded in this account. The city can seek support, but donors and agreements determine the amount and any restrictions; it cannot require a higher donation by changing a tax rate.",
+      "control": "Donor or sponsorship terms",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        }
+      ]
+    },
+    "366.024": {
+      "text": "Private donors, sponsors or partner organizations provide contributions recorded in this account. The city can seek support, but donors and agreements determine the amount and any restrictions; it cannot require a higher donation by changing a tax rate.",
+      "control": "Donor or sponsorship terms",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        }
+      ]
+    },
+    "366.028": {
+      "text": "Private donors, sponsors or partner organizations provide contributions recorded in this account. The city can seek support, but donors and agreements determine the amount and any restrictions; it cannot require a higher donation by changing a tax rate.",
+      "control": "Donor or sponsorship terms",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        }
+      ]
+    },
+    "366.038": {
+      "text": "Private donors, sponsors or partner organizations provide contributions recorded in this account. The city can seek support, but donors and agreements determine the amount and any restrictions; it cannot require a higher donation by changing a tax rate.",
+      "control": "Donor or sponsorship terms",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        }
+      ]
+    },
+    "366.039": {
+      "text": "Private donors, sponsors or partner organizations provide contributions recorded in this account. The city can seek support, but donors and agreements determine the amount and any restrictions; it cannot require a higher donation by changing a tax rate.",
+      "control": "Donor or sponsorship terms",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        }
+      ]
+    },
+    "366.140": {
+      "text": "Private donors, sponsors or partner organizations provide contributions recorded in this account. The city can seek support, but donors and agreements determine the amount and any restrictions; it cannot require a higher donation by changing a tax rate.",
+      "control": "Donor or sponsorship terms",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=80"
+        }
+      ]
+    },
+    "366.901": {
+      "text": "Private donors, sponsors or partner organizations provide contributions recorded in this account. The city can seek support, but donors and agreements determine the amount and any restrictions; it cannot require a higher donation by changing a tax rate.",
+      "control": "Donor or sponsorship terms",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        }
+      ]
+    },
+    "366.009": {
+      "text": "Private donors, sponsors or partner organizations provide contributions recorded in this account. The city can seek support, but donors and agreements determine the amount and any restrictions; it cannot require a higher donation by changing a tax rate.",
+      "control": "Donor or sponsorship terms",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=59"
+        }
+      ]
+    },
+    "366.036": {
+      "text": "This account assigns receipts to Parks, Culture and Recreation, but the title does not identify the underlying payer or transaction. The source and any restrictions must be verified before treating the amount as a fee the city can change.",
+      "control": "Not yet verified",
+      "status": "Underlying receipts not itemized",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        }
+      ]
+    },
+    "369.300": {
+      "text": "This is money returned against an expense from an earlier year. The amount depends on the original transaction and refund entitlement, not a new public charge.",
+      "control": "Refund, not a local rate",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=63"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=68"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=76"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=80"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=93"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=106"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=122"
+        }
+      ]
+    },
+    "369.900": {
+      "text": "The budget uses a miscellaneous or returns account without identifying each underlying payer. We have not verified its components or authority to change them, so it should not be treated as one adjustable revenue stream.",
+      "control": "Not yet verified",
+      "status": "Underlying receipts not itemized",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=63"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=80"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=93"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=106"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=115"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=122"
+        }
+      ]
+    },
+    "369.901": {
+      "text": "The budget uses a miscellaneous or returns account without identifying each underlying payer. We have not verified its components or authority to change them, so it should not be treated as one adjustable revenue stream.",
+      "control": "Not yet verified",
+      "status": "Underlying receipts not itemized",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=93"
+        }
+      ]
+    },
+    "369.908": {
+      "text": "The purchasing-card provider pays rebates under the city\u2019s card agreement. Revenue depends on contract terms and eligible purchases; it is not a charge the city can raise on residents.",
+      "control": "Card-provider agreement",
+      "status": "Rebate agreement not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=54"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=59"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=63"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=68"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=76"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=80"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=93"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=106"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=115"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=122"
+        }
+      ]
+    },
+    "369.915": {
+      "text": "Vendors pay for booth space at city events. The event fee schedule and existing booking terms need checking before stating how the city can change this charge.",
+      "control": "Event fee schedule",
+      "status": "Specific fee schedule not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        }
+      ]
+    },
+    "329.200": {
+      "text": "Customers pay for backflow devices or compressed natural gas sold by the city, as identified by this account. The adopted price schedule or supply agreement has not been verified, so authority to change the price remains unconfirmed.",
+      "control": "Price schedule or sales agreement",
+      "status": "Specific price schedule not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=93"
+        }
+      ]
+    },
+    "369.906": {
+      "text": "Customers pay for backflow devices or compressed natural gas sold by the city, as identified by this account. The adopted price schedule or supply agreement has not been verified, so authority to change the price remains unconfirmed.",
+      "control": "Price schedule or sales agreement",
+      "status": "Specific price schedule not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=106"
+        }
+      ]
+    },
+    "363.235": {
+      "text": "This line records Bay County impact-fee receipts rather than a city rate established here. The county\u2019s fee rules and the city\u2019s collection role need checking before describing who can change the amount.",
+      "control": "County fee rules",
+      "status": "Collection agreement not verified",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=93"
+        }
+      ]
+    },
+    "370.000": {
+      "text": "This is a budget adjustment using saved fund balances or adding money back to reserves; no outside payer supplies new revenue. The city can budget reserve use subject to restrictions and obligations, but spending savings is not a recurring revenue source.",
+      "control": "Budget allocation, not new revenue",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=54"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=59"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=63"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=68"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=76"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=80"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=87"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=88"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=89"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=90"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=93"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=106"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=115"
+        }
+      ]
+    },
+    "381.100": {
+      "text": "Another city fund supplies this money through an interfund transfer. The city can budget eligible transfers within restrictions and obligations, but the transfer does not increase total citywide income.",
+      "control": "Budget transfer, not new revenue",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=87"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=88"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=89"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=90"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=91"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=93"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=115"
+        }
+      ]
+    },
+    "384.000": {
+      "text": "Lenders or bond investors supply borrowed money that the city must repay. The city can consider authorized financing, subject to approvals and debt terms; borrowing is not tax or fee revenue.",
+      "control": "Financing decision, with repayment",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=54"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=59"
+        },
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=91"
+        }
+      ]
+    },
+    "385.010": {
+      "text": "This financing entry relates to the accounting for right-to-use leases. The lease contract governs payments and obligations; the entry is not an adjustable public fee or necessarily new cash.",
+      "control": "Lease-accounting entry",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        }
+      ]
+    },
+    "385.005": {
+      "text": "This category records other financing sources not specified by the account title. The transaction details and approval requirements need verification before identifying the payer or treating it as adjustable recurring revenue.",
+      "control": "Not yet verified",
+      "status": "Financing transaction not itemized",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=8"
+        }
+      ]
+    },
+    "unmapped": {
+      "text": "This is the reconciliation gap between extracted account lines and the published funding total, not an identified payer or revenue stream. There is no rate to adjust; any nonzero amount needs source reconciliation.",
+      "control": "Reconciliation placeholder",
+      "status": "Explained",
+      "sources": [
+        {
+          "title": "City budget account",
+          "url": "https://panamacity.gov/Archive/ViewFile/Item/1581#page=5"
+        }
+      ]
+    }
+  }
+}

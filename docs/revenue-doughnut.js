@@ -5,10 +5,10 @@ try{const response=await fetch('revenue-doughnut.json');if(!response.ok)throw Er
 const header=el('div','revenue-heading'),title=el('div');title.append(el('h2','','Where money comes from'),el('p','','2027 budget · select a source to see what’s included'));
 const toggle=el('div','revenue-scope');toggle.setAttribute('role','group');toggle.setAttribute('aria-label','Revenue scope');header.append(title,toggle);host.replaceChildren(header);
 const content=el('div','revenue-content');host.append(content);const buttons={};
-for(const [key,label] of [['citywide','Citywide'],['general','General Fund']]){const b=el('button','',label);b.type='button';b.onclick=()=>render(key);buttons[key]=b;toggle.append(b)}
+for(const [key,label] of [['general','General Fund'],['citywide','Citywide']]){const b=el('button','',label);b.type='button';b.onclick=()=>render(key);buttons[key]=b;toggle.append(b)}
 function render(key){const view=data.views[key];Object.entries(buttons).forEach(([k,b])=>b.setAttribute('aria-pressed',String(k===key)));content.replaceChildren();host.dataset.scope=key;
 const layout=el('div','revenue-layout'),figure=el('figure','revenue-figure'),ring=el('div','revenue-ring'),chart=svg('svg',{viewBox:'0 0 320 320',role:'group','aria-label':`${view.label}: ${money(view.total)} in budgeted revenue. Select a slice for its accounts.`});
-const center=el('div','revenue-center');center.append(el('strong','',money(view.total)),el('span','',view.label+' revenue'));ring.append(chart,center);figure.append(ring,el('figcaption','','Transfers, borrowing and reserves are outside this chart.'));
+const center=el('div','revenue-center');center.append(el('strong','',money(view.total)),el('span','',view.label+' revenue'));ring.append(chart,center);figure.append(ring,el('figcaption','',key==='general'?'General Fund only. Water, sewer and garbage funds are excluded.':'Citywide includes water, sewer and garbage funds. Transfers, borrowing and reserves are excluded.'));
 const list=el('div','revenue-sources');let start=-Math.PI/2;
 view.categories.forEach((cat,i)=>{const fraction=cat.amount/view.total,end=start+fraction*Math.PI*2,point=(a,r)=>[160+Math.cos(a)*r,160+Math.sin(a)*r],a=point(start,150),b=point(end,150),c=point(end,110),d=point(start,110),large=fraction>.5?1:0;
 const path=svg('path',{d:`M ${a} A 150 150 0 ${large} 1 ${b} L ${c} A 110 110 0 ${large} 0 ${d} Z`,fill:cat.color,stroke:'#f6f8f4','stroke-width':2,tabindex:0,role:'button','aria-label':`${cat.label}: ${money(cat.amount)}, ${cat.percent.toFixed(1)} percent`,'aria-controls':`revenue-${key}-${i}`,'aria-expanded':'false'});start=end;
@@ -21,6 +21,6 @@ notes.append(el('p','',key==='citywide'?'Citywide combines the funds in the adop
 const reconciliation=el('ul','revenue-reconcile');for(const [label,amount] of [['Revenue in chart',view.total],...Object.entries(view.adjustments),['Budget funding total',view.gross]]){if(!amount)continue;const li=el('li');li.append(el('span','',label),el('strong','',money(amount)));reconciliation.append(li)}notes.append(reconciliation,el('p','','Reserve use and additions are shown separately by fund, rather than netted into a revenue slice. Account groupings are simplified for readability. Click an account above to open its budget page.'));
 const source=el('a','','2027 adopted budget');source.href=data.source;notes.append(source,document.createTextNode(' · '));const explanation=el('a','','Internal service fund explanation');explanation.href='https://panamacity.gov/Archive/ViewFile/Item/1582#page=93';notes.append(explanation);content.append(notes);
 }
-render('citywide');
+render('general');
 }catch(e){host.replaceChildren(el('p','','Revenue overview could not load. Refresh to try again.'));console.error('Revenue preview failed',e)}
 })();
