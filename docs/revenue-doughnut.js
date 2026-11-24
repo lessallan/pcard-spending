@@ -6,7 +6,7 @@ const header=el('div','revenue-heading'),title=el('div');title.append(el('h2',''
 const toggle=el('div','revenue-scope');toggle.setAttribute('role','group');toggle.setAttribute('aria-label','Revenue scope');header.append(title,toggle);host.replaceChildren(header);
 const content=el('div','revenue-content');host.append(content);const buttons={};
 for(const [key,label] of [['general','General Fund'],['citywide','Citywide']]){const b=el('button','',label);b.type='button';b.onclick=()=>render(key);buttons[key]=b;toggle.append(b)}
-function render(key){const view=data.views[key];Object.entries(buttons).forEach(([k,b])=>b.setAttribute('aria-pressed',String(k===key)));content.replaceChildren();host.dataset.scope=key;
+function render(key){window.pennyRevenueScope=key;window.dispatchEvent(new CustomEvent('penny-revenue-scope',{detail:{scope:key}}));const view=data.views[key];Object.entries(buttons).forEach(([k,b])=>b.setAttribute('aria-pressed',String(k===key)));content.replaceChildren();host.dataset.scope=key;
 const layout=el('div','revenue-layout'),figure=el('figure','revenue-figure'),ring=el('div','revenue-ring'),chart=svg('svg',{viewBox:'0 0 320 320',role:'group','aria-label':`${view.label}: ${money(view.total)} in budgeted revenue. Select a slice for its accounts.`});
 const center=el('div','revenue-center');center.append(el('strong','',money(view.total)),el('span','',view.label+' revenue'));ring.append(chart,center);figure.append(ring,el('figcaption','',key==='general'?'General Fund only. Water, sewer and garbage funds are excluded.':'Citywide includes water, sewer and garbage funds. Transfers, borrowing and reserves are excluded.'));
 const list=el('div','revenue-sources');let start=-Math.PI/2;
