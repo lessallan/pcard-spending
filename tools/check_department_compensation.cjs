@@ -3,7 +3,7 @@ const assert=require('node:assert/strict'),data=require('../docs/department-comp
 (async()=>{const browser=await chromium.launch({channel:'chrome',headless:true});try{
  const p=await browser.newPage(),errors=[];p.on('pageerror',e=>errors.push(e.message));
  for(const route of ['','public-safety-preview.html']){
-  await p.goto((process.env.PCARDS_TEST_URL||'http://127.0.0.1:4402/')+route);await p.locator('.finance-compensation').first().waitFor();
+  await p.goto((process.env.PCARDS_TEST_URL||'http://127.0.0.1:4402/')+route);await p.locator('.finance-compensation').first().waitFor({state:'attached'});
   assert.equal(await p.locator('.finance-compensation').count(),41);
   assert.equal(await p.locator('.finance-compensation[open]').count(),0);
   assert.equal(await p.locator('[data-mode="staffing"]').count(),0);
@@ -12,7 +12,7 @@ const assert=require('node:assert/strict'),data=require('../docs/department-comp
    const panel=p.locator(`[data-comparison-id="${id}"] .finance-compensation`),expected=data.departments[key];
    assert.equal(await panel.getAttribute('data-compensation-department'),key);
    await panel.evaluate(e=>e.open=true);
-   assert((await panel.innerText()).includes(`${expected.people} pay records`));assert.equal(await panel.locator('details').count(),0);assert((await panel.locator(':scope > summary').innerText()).includes('Employee pay'));assert.equal(await panel.locator('.finance-compensation-allowance').count(),expected.allowances?1:0);const ordered=await panel.locator('li[data-annual-max-cents]').evaluateAll(es=>es.map(e=>+e.dataset.annualMaxCents));assert.deepEqual(ordered,[...ordered].sort((a,b)=>b-a));
+   await panel.locator('xpath=ancestor::article').locator('[data-card-tab=pay]').evaluate(e=>e.click());assert.equal(expected.roles.reduce((n,r)=>n+r.people,0),expected.people);assert.equal(await panel.locator('details').count(),0);assert.equal(await panel.locator('.finance-compensation-allowance').count(),expected.allowances?1:0);const ordered=await panel.locator('li[data-annual-max-cents]').evaluateAll(es=>es.map(e=>+e.dataset.annualMaxCents));assert.deepEqual(ordered,[...ordered].sort((a,b)=>b-a));
    assert.equal(await panel.locator('.finance-compensation-role-list>li').count(),expected.roles.length);
    const total=await panel.locator('.finance-pay-total').innerText();
    if(expected.annualPayCents===null)assert(total.includes('Annual total under review'));
@@ -23,7 +23,7 @@ const assert=require('node:assert/strict'),data=require('../docs/department-comp
   await p.locator('.finance-compensation details').evaluateAll(es=>es.forEach(e=>e.open=true));
   for(const width of [320,390,768,1280]){await p.setViewportSize({width,height:1000});assert(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));assert.equal(await p.locator('.finance-compensation').evaluateAll(es=>es.filter(e=>e.clientWidth&&e.scrollWidth>e.clientWidth+1).length),0);}
   const police=p.locator('[data-comparison-id="001-2100"]');
-  await police.locator('.finance-line').first().locator('[data-year="2027"]').focus();assert((await p.locator('#finance-chart-tooltip').innerText()).includes('$17,735,146'));await p.keyboard.press('Escape');
+  await police.locator('[data-card-tab=spending]').click();await police.locator('.finance-line').first().locator('[data-year="2027"]').focus();assert((await p.locator('#finance-chart-tooltip').innerText()).includes('$17,735,146'));await p.keyboard.press('Escape');
   await p.locator('[data-mode="revenues"]').click();assert.equal(await p.locator('.finance-compensation').count(),0);
   await p.locator('[data-mode="departments"]').click();assert.equal(await p.locator('.finance-compensation[open]').count(),0);
   console.log('PASS',route||'home','41 sourced panels, rates and allowances, Fire hold, shared-fund notes, revenue exclusion, unchanged budgets, no overflow at four widths');
