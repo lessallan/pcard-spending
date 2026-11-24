@@ -1,0 +1,824 @@
+{
+  "year": 2027,
+  "source": "https://panamacity.gov/Archive/ViewFile/Item/1581",
+  "views": {
+    "citywide": {
+      "label": "Citywide",
+      "total": 124689075,
+      "gross": 150263913,
+      "categories": [
+        {
+          "label": "Water, sewer & trash",
+          "color": "#286044",
+          "amount": 48554245,
+          "rows": [
+            {
+              "code": "343.611",
+              "name": "Water Charges",
+              "amount": 14421410,
+              "page": 93
+            },
+            {
+              "code": "343.614",
+              "name": "Water Connection Fees",
+              "amount": 200000,
+              "page": 93
+            },
+            {
+              "code": "343.615",
+              "name": "Fire Hydrant Rentals",
+              "amount": 103500,
+              "page": 93
+            },
+            {
+              "code": "343.616",
+              "name": "Sewer Charges",
+              "amount": 20477803,
+              "page": 93
+            },
+            {
+              "code": "343.619",
+              "name": "Sewer Connection Fees",
+              "amount": 23000,
+              "page": 93
+            },
+            {
+              "code": "343.625",
+              "name": "Water Re-connection Fees",
+              "amount": 200000,
+              "page": 93
+            },
+            {
+              "code": "343.651",
+              "name": "Connection Fees",
+              "amount": 88000,
+              "page": 93
+            },
+            {
+              "code": "343.411",
+              "name": "Refuse Collection Charges",
+              "amount": 13040532,
+              "page": 106
+            }
+          ],
+          "percent": 38.9
+        },
+        {
+          "label": "Other taxes & shared taxes",
+          "color": "#81723d",
+          "amount": 25000099,
+          "rows": [
+            {
+              "code": "312.410",
+              "name": "Local Option Gas",
+              "amount": 1423794,
+              "page": 7
+            },
+            {
+              "code": "314.100",
+              "name": "Util. Serv. Tax-Electric",
+              "amount": 5000000,
+              "page": 7
+            },
+            {
+              "code": "314.400",
+              "name": "Utility Service Tax-Gas",
+              "amount": 400000,
+              "page": 7
+            },
+            {
+              "code": "314.800",
+              "name": "Utility Serv Tax-Propane",
+              "amount": 75000,
+              "page": 7
+            },
+            {
+              "code": "315.100",
+              "name": "Communication Svcs. Tax",
+              "amount": 1837077,
+              "page": 7
+            },
+            {
+              "code": "323.100",
+              "name": "Franchise Fees-Electric.",
+              "amount": 4250000,
+              "page": 7
+            },
+            {
+              "code": "323.400",
+              "name": "Franchise Fees-Gas",
+              "amount": 200000,
+              "page": 7
+            },
+            {
+              "code": "335.120",
+              "name": "State Revenue Sharing",
+              "amount": 2297824,
+              "page": 7
+            },
+            {
+              "code": "335.140",
+              "name": "Mobile Home Licenses",
+              "amount": 12000,
+              "page": 7
+            },
+            {
+              "code": "335.150",
+              "name": "Alcoholic Beverage Licens",
+              "amount": 45000,
+              "page": 7
+            },
+            {
+              "code": "335.180",
+              "name": "Half Cent Sales Tax",
+              "amount": 4630730,
+              "page": 7
+            },
+            {
+              "code": "335.190",
+              "name": "Infrastructure Surtax",
+              "amount": 4828674,
+              "page": 50
+            }
+          ],
+          "percent": 20.1
+        },
+        {
+          "label": "Property taxes",
+          "color": "#477ba5",
+          "amount": 19775649,
+          "rows": [
+            {
+              "code": "311.100",
+              "name": "Ad Valorem Taxes",
+              "amount": 19750649,
+              "page": 7
+            },
+            {
+              "code": "311.200",
+              "name": "Delinquent Ad Valorem Tax",
+              "amount": 25000,
+              "page": 7
+            }
+          ],
+          "percent": 15.9
+        },
+        {
+          "label": "Merchant fees",
+          "color": "#aa4d1c",
+          "amount": 13750000,
+          "rows": [
+            {
+              "code": "316.100",
+              "name": "Merchant Fee",
+              "amount": 13750000,
+              "page": 7
+            }
+          ],
+          "percent": 11.0
+        },
+        {
+          "label": "Fees & assessments",
+          "color": "#784e77",
+          "amount": 10893338,
+          "rows": [
+            {
+              "code": "316.200",
+              "name": "Occupational Local Business Tax Receipt",
+              "amount": 250000,
+              "page": 7
+            },
+            {
+              "code": "329.300",
+              "name": "Right of Use Permit Fees",
+              "amount": 70000,
+              "page": 7
+            },
+            {
+              "code": "341.330",
+              "name": "Administrative Fee DIB",
+              "amount": 2000,
+              "page": 7
+            },
+            {
+              "code": "341.920",
+              "name": "Planning and/or Zoning Review",
+              "amount": 175000,
+              "page": 7
+            },
+            {
+              "code": "341.940",
+              "name": "Certify, Copy, Record",
+              "amount": 2500,
+              "page": 7
+            },
+            {
+              "code": "342.200",
+              "name": "Fire Protection Services",
+              "amount": 200000,
+              "page": 7
+            },
+            {
+              "code": "342.600",
+              "name": "Palm Bay Elem Security Detail Revenue",
+              "amount": 92894,
+              "page": 7
+            },
+            {
+              "code": "342.700",
+              "name": "Central High Security Detail Revenue",
+              "amount": 92894,
+              "page": 7
+            },
+            {
+              "code": "342.710",
+              "name": "Holy Nativity Security Detail Revenue",
+              "amount": 92894,
+              "page": 7
+            },
+            {
+              "code": "342.730",
+              "name": "AMIkids Maritime Academy Security Detail Revenue",
+              "amount": 92894,
+              "page": 7
+            },
+            {
+              "code": "342.750",
+              "name": "Rising Leaders Academy Security Detail",
+              "amount": 92894,
+              "page": 7
+            },
+            {
+              "code": "342.800",
+              "name": "Code Enforcement Special Assessment",
+              "amount": 105000,
+              "page": 7
+            },
+            {
+              "code": "342.904",
+              "name": "Fire Assessment Revenue",
+              "amount": 6059224,
+              "page": 7
+            },
+            {
+              "code": "342.905",
+              "name": "University Academy Security Detail Revenue",
+              "amount": 92894,
+              "page": 7
+            },
+            {
+              "code": "343.660",
+              "name": "Building Permit Fees Admin",
+              "amount": 75000,
+              "page": 7
+            },
+            {
+              "code": "344.900",
+              "name": "Other Transportation Recp",
+              "amount": 250000,
+              "page": 8
+            },
+            {
+              "code": "347.210",
+              "name": "Prk & Rec Progrm Actv Fee",
+              "amount": 50000,
+              "page": 8
+            },
+            {
+              "code": "351.100",
+              "name": "Court Fines",
+              "amount": 50000,
+              "page": 8
+            },
+            {
+              "code": "359.300",
+              "name": "Code Enforcement Fines",
+              "amount": 150000,
+              "page": 8
+            },
+            {
+              "code": "322.100",
+              "name": "Building Permit Fees",
+              "amount": 900000,
+              "page": 47
+            },
+            {
+              "code": "329.100",
+              "name": "F.O.G, Program Revenue",
+              "amount": 38000,
+              "page": 93
+            },
+            {
+              "code": "324.231",
+              "name": "Water Impact Fees",
+              "amount": 116250,
+              "page": 93
+            },
+            {
+              "code": "324.232",
+              "name": "Sewer Impact Fees",
+              "amount": 312500,
+              "page": 93
+            },
+            {
+              "code": "343.901",
+              "name": "Lab Analysis Charges",
+              "amount": 500,
+              "page": 93
+            },
+            {
+              "code": "363.234",
+              "name": "Construction Fees",
+              "amount": 20000,
+              "page": 93
+            },
+            {
+              "code": "341.211",
+              "name": "Charges for Services - Employees",
+              "amount": 1380000,
+              "page": 119
+            },
+            {
+              "code": "341.211",
+              "name": "Charges for Services - Employees",
+              "amount": 130000,
+              "page": 120
+            }
+          ],
+          "percent": 8.7
+        },
+        {
+          "label": "Other income",
+          "color": "#697561",
+          "amount": 3612000,
+          "rows": [
+            {
+              "code": "361.100",
+              "name": "Interest Earnings",
+              "amount": 600000,
+              "page": 8
+            },
+            {
+              "code": "362.100",
+              "name": "Rents & Royalties",
+              "amount": 75000,
+              "page": 8
+            },
+            {
+              "code": "362.200",
+              "name": "Clubhouse Rentals",
+              "amount": 40000,
+              "page": 8
+            },
+            {
+              "code": "362.100",
+              "name": "Rents & Royalties",
+              "amount": 60000,
+              "page": 68
+            },
+            {
+              "code": "362.101",
+              "name": "Rent Revenue NSP",
+              "amount": 75000,
+              "page": 68
+            },
+            {
+              "code": "362.102",
+              "name": "County Rent Revenue NSP1",
+              "amount": 70000,
+              "page": 68
+            },
+            {
+              "code": "366.140",
+              "name": "Pvt Contribs & Donations",
+              "amount": 230000,
+              "page": 80
+            },
+            {
+              "code": "361.100",
+              "name": "Interest Earnings",
+              "amount": 180000,
+              "page": 93
+            },
+            {
+              "code": "369.300",
+              "name": "Refund Prior Years Expens",
+              "amount": 4500,
+              "page": 93
+            },
+            {
+              "code": "369.900",
+              "name": "Miscellaneous N.O.C.",
+              "amount": 4500,
+              "page": 93
+            },
+            {
+              "code": "361.100",
+              "name": "Interest Earnings",
+              "amount": 100000,
+              "page": 106
+            },
+            {
+              "code": "369.906",
+              "name": "CNG Sales",
+              "amount": 5000,
+              "page": 106
+            },
+            {
+              "code": "385.003",
+              "name": "Other Agency Contribution",
+              "amount": 1700000,
+              "page": 119
+            },
+            {
+              "code": "385.004",
+              "name": "Retired Employees Contrib",
+              "amount": 325000,
+              "page": 119
+            },
+            {
+              "code": "385.003",
+              "name": "Other Agency Contribution",
+              "amount": 74000,
+              "page": 120
+            },
+            {
+              "code": "385.004",
+              "name": "Retired Employees Contrib",
+              "amount": 44000,
+              "page": 120
+            },
+            {
+              "code": "335.490",
+              "name": "Motor Fuel Tax Rebate",
+              "amount": 25000,
+              "page": 122
+            }
+          ],
+          "percent": 2.9
+        },
+        {
+          "label": "Grants & CRA receipts",
+          "color": "#548381",
+          "amount": 3103744,
+          "rows": [
+            {
+              "code": "333.100",
+              "name": "PCHA Pymt In Lieu of Tax",
+              "amount": 41000,
+              "page": 7
+            },
+            {
+              "code": "335.230",
+              "name": "Firefighters Supplem Comp",
+              "amount": 30000,
+              "page": 7
+            },
+            {
+              "code": "337.313",
+              "name": "St. Andrews CRA",
+              "amount": 1022897,
+              "page": 54
+            },
+            {
+              "code": "337.311",
+              "name": "Downtown CRA",
+              "amount": 626126,
+              "page": 59
+            },
+            {
+              "code": "337.316",
+              "name": "Downtown North CRA",
+              "amount": 1563545,
+              "page": 63
+            },
+            {
+              "code": "331.570",
+              "name": "Local Housing Assist-SHIP",
+              "amount": 266951,
+              "page": 68
+            },
+            {
+              "code": "337.315",
+              "name": "Millville CRA",
+              "amount": 1186625,
+              "page": 76
+            },
+            {
+              "code": "331.548",
+              "name": "CDBG Program",
+              "amount": 437152,
+              "page": 80
+            },
+            {
+              "code": "001-8002-58120",
+              "name": "Less city contribution already counted elsewhere",
+              "amount": -2070552,
+              "page": 31
+            }
+          ],
+          "percent": 2.5
+        }
+      ],
+      "adjustments": {
+        "Transfers between funds": 9655432,
+        "Internal service charges": 10115051,
+        "City contribution to CRAs": 2070552,
+        "Borrowing": 5150000,
+        "Reserves used": 5197549,
+        "Added to reserves": -6613746
+      }
+    },
+    "general": {
+      "label": "General Fund",
+      "total": 62479162,
+      "gross": 62593981,
+      "categories": [
+        {
+          "label": "Other taxes & shared taxes",
+          "color": "#81723d",
+          "amount": 20171425,
+          "rows": [
+            {
+              "code": "312.410",
+              "name": "Local Option Gas",
+              "amount": 1423794,
+              "page": 7
+            },
+            {
+              "code": "314.100",
+              "name": "Util. Serv. Tax-Electric",
+              "amount": 5000000,
+              "page": 7
+            },
+            {
+              "code": "314.400",
+              "name": "Utility Service Tax-Gas",
+              "amount": 400000,
+              "page": 7
+            },
+            {
+              "code": "314.800",
+              "name": "Utility Serv Tax-Propane",
+              "amount": 75000,
+              "page": 7
+            },
+            {
+              "code": "315.100",
+              "name": "Communication Svcs. Tax",
+              "amount": 1837077,
+              "page": 7
+            },
+            {
+              "code": "323.100",
+              "name": "Franchise Fees-Electric.",
+              "amount": 4250000,
+              "page": 7
+            },
+            {
+              "code": "323.400",
+              "name": "Franchise Fees-Gas",
+              "amount": 200000,
+              "page": 7
+            },
+            {
+              "code": "335.120",
+              "name": "State Revenue Sharing",
+              "amount": 2297824,
+              "page": 7
+            },
+            {
+              "code": "335.140",
+              "name": "Mobile Home Licenses",
+              "amount": 12000,
+              "page": 7
+            },
+            {
+              "code": "335.150",
+              "name": "Alcoholic Beverage Licens",
+              "amount": 45000,
+              "page": 7
+            },
+            {
+              "code": "335.180",
+              "name": "Half Cent Sales Tax",
+              "amount": 4630730,
+              "page": 7
+            }
+          ],
+          "percent": 32.3
+        },
+        {
+          "label": "Property taxes",
+          "color": "#477ba5",
+          "amount": 19775649,
+          "rows": [
+            {
+              "code": "311.100",
+              "name": "Ad Valorem Taxes",
+              "amount": 19750649,
+              "page": 7
+            },
+            {
+              "code": "311.200",
+              "name": "Delinquent Ad Valorem Tax",
+              "amount": 25000,
+              "page": 7
+            }
+          ],
+          "percent": 31.7
+        },
+        {
+          "label": "Merchant fees",
+          "color": "#aa4d1c",
+          "amount": 13750000,
+          "rows": [
+            {
+              "code": "316.100",
+              "name": "Merchant Fee",
+              "amount": 13750000,
+              "page": 7
+            }
+          ],
+          "percent": 22.0
+        },
+        {
+          "label": "Fees & assessments",
+          "color": "#784e77",
+          "amount": 7996088,
+          "rows": [
+            {
+              "code": "316.200",
+              "name": "Occupational Local Business Tax Receipt",
+              "amount": 250000,
+              "page": 7
+            },
+            {
+              "code": "329.300",
+              "name": "Right of Use Permit Fees",
+              "amount": 70000,
+              "page": 7
+            },
+            {
+              "code": "341.330",
+              "name": "Administrative Fee DIB",
+              "amount": 2000,
+              "page": 7
+            },
+            {
+              "code": "341.920",
+              "name": "Planning and/or Zoning Review",
+              "amount": 175000,
+              "page": 7
+            },
+            {
+              "code": "341.940",
+              "name": "Certify, Copy, Record",
+              "amount": 2500,
+              "page": 7
+            },
+            {
+              "code": "342.200",
+              "name": "Fire Protection Services",
+              "amount": 200000,
+              "page": 7
+            },
+            {
+              "code": "342.600",
+              "name": "Palm Bay Elem Security Detail Revenue",
+              "amount": 92894,
+              "page": 7
+            },
+            {
+              "code": "342.700",
+              "name": "Central High Security Detail Revenue",
+              "amount": 92894,
+              "page": 7
+            },
+            {
+              "code": "342.710",
+              "name": "Holy Nativity Security Detail Revenue",
+              "amount": 92894,
+              "page": 7
+            },
+            {
+              "code": "342.730",
+              "name": "AMIkids Maritime Academy Security Detail Revenue",
+              "amount": 92894,
+              "page": 7
+            },
+            {
+              "code": "342.750",
+              "name": "Rising Leaders Academy Security Detail",
+              "amount": 92894,
+              "page": 7
+            },
+            {
+              "code": "342.800",
+              "name": "Code Enforcement Special Assessment",
+              "amount": 105000,
+              "page": 7
+            },
+            {
+              "code": "342.904",
+              "name": "Fire Assessment Revenue",
+              "amount": 6059224,
+              "page": 7
+            },
+            {
+              "code": "342.905",
+              "name": "University Academy Security Detail Revenue",
+              "amount": 92894,
+              "page": 7
+            },
+            {
+              "code": "343.660",
+              "name": "Building Permit Fees Admin",
+              "amount": 75000,
+              "page": 7
+            },
+            {
+              "code": "344.900",
+              "name": "Other Transportation Recp",
+              "amount": 250000,
+              "page": 8
+            },
+            {
+              "code": "347.210",
+              "name": "Prk & Rec Progrm Actv Fee",
+              "amount": 50000,
+              "page": 8
+            },
+            {
+              "code": "351.100",
+              "name": "Court Fines",
+              "amount": 50000,
+              "page": 8
+            },
+            {
+              "code": "359.300",
+              "name": "Code Enforcement Fines",
+              "amount": 150000,
+              "page": 8
+            }
+          ],
+          "percent": 12.8
+        },
+        {
+          "label": "Other income",
+          "color": "#697561",
+          "amount": 715000,
+          "rows": [
+            {
+              "code": "361.100",
+              "name": "Interest Earnings",
+              "amount": 600000,
+              "page": 8
+            },
+            {
+              "code": "362.100",
+              "name": "Rents & Royalties",
+              "amount": 75000,
+              "page": 8
+            },
+            {
+              "code": "362.200",
+              "name": "Clubhouse Rentals",
+              "amount": 40000,
+              "page": 8
+            }
+          ],
+          "percent": 1.1
+        },
+        {
+          "label": "Grants & government payments",
+          "color": "#548381",
+          "amount": 71000,
+          "rows": [
+            {
+              "code": "333.100",
+              "name": "PCHA Pymt In Lieu of Tax",
+              "amount": 41000,
+              "page": 7
+            },
+            {
+              "code": "335.230",
+              "name": "Firefighters Supplem Comp",
+              "amount": 30000,
+              "page": 7
+            }
+          ],
+          "percent": 0.1
+        }
+      ],
+      "adjustments": {
+        "Transfers between funds": 3316774,
+        "Internal service charges": 531120,
+        "City contribution to CRAs": 0,
+        "Borrowing": 0,
+        "Reserves used": 0,
+        "Added to reserves": -3733075
+      }
+    }
+  }
+}
