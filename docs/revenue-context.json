@@ -1,0 +1,3876 @@
+{
+  "population": 39163,
+  "populationYear": 2026,
+  "populationSource": "https://www.edr.state.fl.us/Content/population-demographics/data/2026_Pop_Estimates.pdf#page=1",
+  "budgetYear": 2027,
+  "budgetSource": "https://panamacity.gov/Archive/ViewFile/Item/1581",
+  "generalFund": 62593981,
+  "allFunds": 150263913,
+  "allFundGroups": [
+    {
+      "name": "Taxes",
+      "amount": 32961520,
+      "note": "City property, fuel, utility-service and communications taxes and franchise fees."
+    },
+    {
+      "name": "Licenses & permits",
+      "amount": 15008000,
+      "note": "Includes the merchant fee, business receipts and permits."
+    },
+    {
+      "name": "Government revenue",
+      "amount": 17013524,
+      "note": "Shared taxes, grants and contributions from other governments."
+    },
+    {
+      "name": "Charges for services",
+      "amount": 67234634,
+      "note": "Water, sewer, garbage, fire assessments and other charges, including internal-service activity."
+    },
+    {
+      "name": "Fines",
+      "amount": 200000,
+      "note": "Budgeted fines and forfeitures."
+    },
+    {
+      "name": "Miscellaneous, net",
+      "amount": 897803,
+      "note": "Other receipts net of budget reserve adjustments."
+    },
+    {
+      "name": "Other funding sources",
+      "amount": 16948432,
+      "note": "Includes transfers, borrowing and other financing sources. Not all new revenue."
+    }
+  ],
+  "generalFundGroups": [
+    {
+      "name": "Property taxes",
+      "amount": 19775649,
+      "note": "Taxes on taxable property value, including delinquent collections.",
+      "codes": [
+        "311.100",
+        "311.200"
+      ]
+    },
+    {
+      "name": "Merchant fee",
+      "amount": 13750000,
+      "note": "The city\u2019s merchant gross-sales charge. Businesses and visitors also contribute.",
+      "codes": [
+        "316.100",
+        "316.199"
+      ]
+    },
+    {
+      "name": "Other taxes & franchise fees",
+      "amount": 13185871,
+      "note": "Fuel, utility-service and communications taxes, plus utility franchise fees.",
+      "codes": [
+        "312.410",
+        "314.100",
+        "314.400",
+        "314.800",
+        "315.100",
+        "323.100",
+        "323.400"
+      ]
+    },
+    {
+      "name": "State and other government revenue",
+      "amount": 7056554,
+      "note": "Shared taxes, grants and other government funding; some uses are restricted.",
+      "codes": [
+        "331.501",
+        "333.100",
+        "334.500",
+        "335.120",
+        "335.140",
+        "335.150",
+        "335.180",
+        "335.225",
+        "335.230"
+      ]
+    },
+    {
+      "name": "Fire assessment",
+      "amount": 6059224,
+      "note": "A dedicated charge for fire services; separate from property-tax millage.",
+      "codes": [
+        "342.904"
+      ]
+    },
+    {
+      "name": "Other service charges",
+      "amount": 1947984,
+      "note": "Service and administration charges. Some are payments from other city operations.",
+      "codes": [
+        "341.300",
+        "341.310",
+        "341.330",
+        "341.900",
+        "341.920",
+        "341.940",
+        "341.950",
+        "342.100",
+        "342.200",
+        "342.600",
+        "342.700",
+        "342.710",
+        "342.720",
+        "342.730",
+        "342.740",
+        "342.750",
+        "342.800",
+        "342.900",
+        "342.901",
+        "342.902",
+        "342.903",
+        "342.905",
+        "343.660",
+        "344.900",
+        "347.210",
+        "347.220",
+        "347.230",
+        "347.290",
+        "347.295",
+        "347.400",
+        "347.401",
+        "347.402",
+        "349.300"
+      ]
+    },
+    {
+      "name": "Other licenses & permits",
+      "amount": 320000,
+      "note": "Business receipts, permits and right-of-use fees.",
+      "codes": [
+        "316.200",
+        "322.100",
+        "329.300"
+      ]
+    },
+    {
+      "name": "Fines",
+      "amount": 200000,
+      "note": "Budgeted court and code-enforcement fines.",
+      "codes": [
+        "351.100",
+        "351.200",
+        "351.300",
+        "359.100",
+        "359.300"
+      ]
+    },
+    {
+      "name": "Other income",
+      "amount": 715000,
+      "note": "Interest, rents and other receipts; not necessarily recurring.",
+      "codes": [
+        "354.000",
+        "361.100",
+        "362.100",
+        "362.200",
+        "362.210",
+        "362.300",
+        "364.100",
+        "364.200",
+        "364.420",
+        "365.100",
+        "366.023",
+        "366.024",
+        "366.028",
+        "366.036",
+        "366.038",
+        "366.039",
+        "366.140",
+        "366.901",
+        "369.300",
+        "369.301",
+        "369.900",
+        "369.901",
+        "369.902",
+        "369.908",
+        "369.915"
+      ]
+    },
+    {
+      "name": "Transfers from other funds",
+      "amount": 3316774,
+      "note": "Internal funding, not new money for the city as a whole.",
+      "codes": [
+        "381.100",
+        "384.000",
+        "385.005",
+        "385.010"
+      ]
+    },
+    {
+      "name": "Reserve adjustment",
+      "amount": -3733075,
+      "note": "A negative budget adjustment, not a tax or revenue collected from residents.",
+      "codes": [
+        "370.000"
+      ]
+    }
+  ],
+  "generalFundRows": [
+    {
+      "code": "311.100",
+      "name": "Ad Valorem Taxes",
+      "amount": 19750649,
+      "page": 7
+    },
+    {
+      "code": "311.200",
+      "name": "Delinquent Ad Valorem Tax",
+      "amount": 25000,
+      "page": 7
+    },
+    {
+      "code": "312.410",
+      "name": "Local Option Gas",
+      "amount": 1423794,
+      "page": 7
+    },
+    {
+      "code": "314.100",
+      "name": "Util. Serv. Tax-Electric",
+      "amount": 5000000,
+      "page": 7
+    },
+    {
+      "code": "314.400",
+      "name": "Utility Service Tax-Gas",
+      "amount": 400000,
+      "page": 7
+    },
+    {
+      "code": "314.800",
+      "name": "Utility Serv Tax-Propane",
+      "amount": 75000,
+      "page": 7
+    },
+    {
+      "code": "315.100",
+      "name": "Communication Svcs. Tax",
+      "amount": 1837077,
+      "page": 7
+    },
+    {
+      "code": "323.100",
+      "name": "Franchise Fees-Electric.",
+      "amount": 4250000,
+      "page": 7
+    },
+    {
+      "code": "323.400",
+      "name": "Franchise Fees-Gas",
+      "amount": 200000,
+      "page": 7
+    },
+    {
+      "code": "316.100",
+      "name": "Merchant Fee",
+      "amount": 13750000,
+      "page": 7
+    },
+    {
+      "code": "316.199",
+      "name": "Merchant Fee Abated",
+      "amount": 0,
+      "page": 7
+    },
+    {
+      "code": "316.200",
+      "name": "Occupational Local Business Tax Receipt",
+      "amount": 250000,
+      "page": 7
+    },
+    {
+      "code": "322.100",
+      "name": "Building Permit Fees",
+      "amount": 0,
+      "page": 7
+    },
+    {
+      "code": "329.300",
+      "name": "Right of Use Permit Fees",
+      "amount": 70000,
+      "page": 7
+    },
+    {
+      "code": "331.501",
+      "name": "Federal Disaster Relief",
+      "amount": 0,
+      "page": 7
+    },
+    {
+      "code": "333.100",
+      "name": "PCHA Pymt In Lieu of Tax",
+      "amount": 41000,
+      "page": 7
+    },
+    {
+      "code": "334.500",
+      "name": "State Disaster Relief",
+      "amount": 0,
+      "page": 7
+    },
+    {
+      "code": "335.120",
+      "name": "State Revenue Sharing",
+      "amount": 2297824,
+      "page": 7
+    },
+    {
+      "code": "335.140",
+      "name": "Mobile Home Licenses",
+      "amount": 12000,
+      "page": 7
+    },
+    {
+      "code": "335.150",
+      "name": "Alcoholic Beverage Licens",
+      "amount": 45000,
+      "page": 7
+    },
+    {
+      "code": "335.180",
+      "name": "Half Cent Sales Tax",
+      "amount": 4630730,
+      "page": 7
+    },
+    {
+      "code": "335.225",
+      "name": "HRS Grant (on-behalf GASB24)",
+      "amount": 0,
+      "page": 7
+    },
+    {
+      "code": "335.230",
+      "name": "Firefighters Supplem Comp",
+      "amount": 30000,
+      "page": 7
+    },
+    {
+      "code": "341.300",
+      "name": "CRA Administration Services Charges",
+      "amount": 439920,
+      "page": 7
+    },
+    {
+      "code": "341.310",
+      "name": "Administrative Fee Impact Fees (fka CDC)",
+      "amount": 0,
+      "page": 7
+    },
+    {
+      "code": "341.330",
+      "name": "Administrative Fee DIB",
+      "amount": 2000,
+      "page": 7
+    },
+    {
+      "code": "341.900",
+      "name": "Election Qualifying Fees",
+      "amount": 0,
+      "page": 7
+    },
+    {
+      "code": "341.920",
+      "name": "Planning and/or Zoning Review",
+      "amount": 175000,
+      "page": 7
+    },
+    {
+      "code": "341.940",
+      "name": "Certify, Copy, Record",
+      "amount": 2500,
+      "page": 7
+    },
+    {
+      "code": "341.950",
+      "name": "Trees",
+      "amount": 0,
+      "page": 7
+    },
+    {
+      "code": "342.100",
+      "name": "Police Services",
+      "amount": 0,
+      "page": 7
+    },
+    {
+      "code": "342.200",
+      "name": "Fire Protection Services",
+      "amount": 200000,
+      "page": 7
+    },
+    {
+      "code": "342.600",
+      "name": "Palm Bay Elem Security Detail Revenue",
+      "amount": 92894,
+      "page": 7
+    },
+    {
+      "code": "342.700",
+      "name": "Central High Security Detail Revenue",
+      "amount": 92894,
+      "page": 7
+    },
+    {
+      "code": "342.710",
+      "name": "Holy Nativity Security Detail Revenue",
+      "amount": 92894,
+      "page": 7
+    },
+    {
+      "code": "342.720",
+      "name": "FSU High School Security Detail Revenue",
+      "amount": 0,
+      "page": 7
+    },
+    {
+      "code": "342.730",
+      "name": "AMIkids Maritime Academy Security Detail Revenue",
+      "amount": 92894,
+      "page": 7
+    },
+    {
+      "code": "342.740",
+      "name": "Off Duty Managment",
+      "amount": 0,
+      "page": 7
+    },
+    {
+      "code": "342.750",
+      "name": "Rising Leaders Academy Security Detail",
+      "amount": 92894,
+      "page": 7
+    },
+    {
+      "code": "342.800",
+      "name": "Code Enforcement Special Assessment",
+      "amount": 105000,
+      "page": 7
+    },
+    {
+      "code": "342.900",
+      "name": "Other Public Safety Chgs",
+      "amount": 0,
+      "page": 7
+    },
+    {
+      "code": "342.901",
+      "name": "Fire Department Training Charges",
+      "amount": 0,
+      "page": 7
+    },
+    {
+      "code": "342.902",
+      "name": "PCFD Re-Inspection Fines",
+      "amount": 0,
+      "page": 7
+    },
+    {
+      "code": "342.903",
+      "name": "PCFD Other Service Fees",
+      "amount": 0,
+      "page": 7
+    },
+    {
+      "code": "342.904",
+      "name": "Fire Assessment Revenue",
+      "amount": 6059224,
+      "page": 7
+    },
+    {
+      "code": "342.905",
+      "name": "University Academy Security Detail Revenue",
+      "amount": 92894,
+      "page": 7
+    },
+    {
+      "code": "343.660",
+      "name": "Building Permit Fees Admin",
+      "amount": 75000,
+      "page": 7
+    },
+    {
+      "code": "344.900",
+      "name": "Other Transportation Recp",
+      "amount": 250000,
+      "page": 8
+    },
+    {
+      "code": "347.210",
+      "name": "Prk & Rec Progrm Actv Fee",
+      "amount": 50000,
+      "page": 8
+    },
+    {
+      "code": "347.220",
+      "name": "Park Permit Fees",
+      "amount": 0,
+      "page": 8
+    },
+    {
+      "code": "347.230",
+      "name": "Charges for Services- Landscaping / Maintenance",
+      "amount": 0,
+      "page": 8
+    },
+    {
+      "code": "347.290",
+      "name": "Park & Rec Rental Fees",
+      "amount": 0,
+      "page": 8
+    },
+    {
+      "code": "347.295",
+      "name": "Park & Rec Rental Fee-Tax Exempt",
+      "amount": 0,
+      "page": 8
+    },
+    {
+      "code": "347.400",
+      "name": "Special Events Fees",
+      "amount": 0,
+      "page": 8
+    },
+    {
+      "code": "347.401",
+      "name": "SpecialEvnts-Police Costs",
+      "amount": 0,
+      "page": 8
+    },
+    {
+      "code": "347.402",
+      "name": "SpEvnts-PW Electrl Costs",
+      "amount": 0,
+      "page": 8
+    },
+    {
+      "code": "349.300",
+      "name": "Data Processing Charges",
+      "amount": 91200,
+      "page": 8
+    },
+    {
+      "code": "351.100",
+      "name": "Court Fines",
+      "amount": 50000,
+      "page": 8
+    },
+    {
+      "code": "351.200",
+      "name": "Federal Forfeitures",
+      "amount": 0,
+      "page": 8
+    },
+    {
+      "code": "351.300",
+      "name": "Police Education",
+      "amount": 0,
+      "page": 8
+    },
+    {
+      "code": "359.100",
+      "name": "Other Fines & Forfeitures",
+      "amount": 0,
+      "page": 8
+    },
+    {
+      "code": "359.300",
+      "name": "Code Enforcement Fines",
+      "amount": 150000,
+      "page": 8
+    },
+    {
+      "code": "354.000",
+      "name": "Fraud Recovery",
+      "amount": 0,
+      "page": 8
+    },
+    {
+      "code": "361.100",
+      "name": "Interest Earnings",
+      "amount": 600000,
+      "page": 8
+    },
+    {
+      "code": "362.100",
+      "name": "Rents & Royalties",
+      "amount": 75000,
+      "page": 8
+    },
+    {
+      "code": "362.200",
+      "name": "Clubhouse Rentals",
+      "amount": 40000,
+      "page": 8
+    },
+    {
+      "code": "362.210",
+      "name": "Nontaxable Clubhouse Rent",
+      "amount": 0,
+      "page": 8
+    },
+    {
+      "code": "362.300",
+      "name": "GASB 87 Lease Revenue",
+      "amount": 0,
+      "page": 8
+    },
+    {
+      "code": "364.100",
+      "name": "Cemetery Lots",
+      "amount": 0,
+      "page": 8
+    },
+    {
+      "code": "364.200",
+      "name": "Sale of Fixed Assets",
+      "amount": 0,
+      "page": 8
+    },
+    {
+      "code": "364.420",
+      "name": "Insurance Proceeds",
+      "amount": 0,
+      "page": 8
+    },
+    {
+      "code": "365.100",
+      "name": "Scrap Sales",
+      "amount": 0,
+      "page": 8
+    },
+    {
+      "code": "366.023",
+      "name": "Wellness Program donation",
+      "amount": 0,
+      "page": 8
+    },
+    {
+      "code": "366.024",
+      "name": "Private Donation PCPD",
+      "amount": 0,
+      "page": 8
+    },
+    {
+      "code": "366.028",
+      "name": "PCR Sponsorship Revenue",
+      "amount": 0,
+      "page": 8
+    },
+    {
+      "code": "366.036",
+      "name": "PCR Assigned Revenues",
+      "amount": 0,
+      "page": 8
+    },
+    {
+      "code": "366.038",
+      "name": "Private Grants for Police Department Adopt a K9",
+      "amount": 0,
+      "page": 8
+    },
+    {
+      "code": "366.039",
+      "name": "Private Donation for PCR",
+      "amount": 0,
+      "page": 8
+    },
+    {
+      "code": "366.140",
+      "name": "Pvt Contribs & Donations",
+      "amount": 0,
+      "page": 8
+    },
+    {
+      "code": "366.901",
+      "name": "Park Contributions",
+      "amount": 0,
+      "page": 8
+    },
+    {
+      "code": "369.300",
+      "name": "Refund Prior Years Expens",
+      "amount": 0,
+      "page": 8
+    },
+    {
+      "code": "369.301",
+      "name": "Claim Settlement Revenue",
+      "amount": 0,
+      "page": 8
+    },
+    {
+      "code": "369.900",
+      "name": "Miscellaneous N.O.C.",
+      "amount": 0,
+      "page": 8
+    },
+    {
+      "code": "369.901",
+      "name": "Returns",
+      "amount": 0,
+      "page": 8
+    },
+    {
+      "code": "369.902",
+      "name": "Auction Proceeds",
+      "amount": 0,
+      "page": 8
+    },
+    {
+      "code": "369.908",
+      "name": "Bank of America Pcard Rebate",
+      "amount": 0,
+      "page": 8
+    },
+    {
+      "code": "369.915",
+      "name": "Event Booth Rentals",
+      "amount": 0,
+      "page": 8
+    },
+    {
+      "code": "370.000",
+      "name": "Budgetary changes in reserves",
+      "amount": -3733075,
+      "page": 8
+    },
+    {
+      "code": "381.100",
+      "name": "Interfund Transfers",
+      "amount": 3316774,
+      "page": 8
+    },
+    {
+      "code": "384.000",
+      "name": "Debt Proceeds",
+      "amount": 0,
+      "page": 8
+    },
+    {
+      "code": "385.005",
+      "name": "Other Financing Sources",
+      "amount": 0,
+      "page": 8
+    },
+    {
+      "code": "385.010",
+      "name": "Other Financing Sources - Right-to-Use Leases",
+      "amount": 0,
+      "page": 8
+    }
+  ],
+  "millage": {
+    "year": 2025,
+    "source": "https://floridarevenue.com/property/Documents/MillCapComp25.pdf",
+    "cities": [
+      {
+        "name": "Alachua",
+        "county": "Alachua",
+        "rate": 6.25,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Archer",
+        "county": "Alachua",
+        "rate": 6.4322,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Gainesville",
+        "county": "Alachua",
+        "rate": 6.7297,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Hawthorne",
+        "county": "Alachua",
+        "rate": 6.4322,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "High Springs",
+        "county": "Alachua",
+        "rate": 6.99,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Lacrosse",
+        "county": "Alachua",
+        "rate": 6.541,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Micanopy",
+        "county": "Alachua",
+        "rate": 5.2,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Newberry",
+        "county": "Alachua",
+        "rate": 5.88,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Waldo",
+        "county": "Alachua",
+        "rate": 6.4,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Macclenny",
+        "county": "Baker",
+        "rate": 3.6,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Callaway",
+        "county": "Bay",
+        "rate": 2.7,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Lynn Haven",
+        "county": "Bay",
+        "rate": 4.05,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Mexico Beach",
+        "county": "Bay",
+        "rate": 5.25,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Panama City",
+        "county": "Bay",
+        "rate": 4.7999,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Parker",
+        "county": "Bay",
+        "rate": 3.0,
+        "page": 3,
+        "newLevy": true
+      },
+      {
+        "name": "Springfield",
+        "county": "Bay",
+        "rate": 4.865,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Brooker",
+        "county": "Bradford",
+        "rate": 0.237,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Hampton",
+        "county": "Bradford",
+        "rate": 2.0623,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Lawtey",
+        "county": "Bradford",
+        "rate": 2.2512,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Starke",
+        "county": "Bradford",
+        "rate": 4.3879,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Cape Canaveral",
+        "county": "Brevard",
+        "rate": 3.1018,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Cocoa",
+        "county": "Brevard",
+        "rate": 6.9532,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Cocoa Beach",
+        "county": "Brevard",
+        "rate": 6.0,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Grant-Valkaria",
+        "county": "Brevard",
+        "rate": 1.3038,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Indialantic",
+        "county": "Brevard",
+        "rate": 6.2388,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Indian Harbour Beach",
+        "county": "Brevard",
+        "rate": 5.5099,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Malabar",
+        "county": "Brevard",
+        "rate": 4.5,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Melbourne",
+        "county": "Brevard",
+        "rate": 7.0112,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Melbourne Beach",
+        "county": "Brevard",
+        "rate": 4.6,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Melbourne Village",
+        "county": "Brevard",
+        "rate": 6.419,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Palm Bay",
+        "county": "Brevard",
+        "rate": 6.7,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Rockledge",
+        "county": "Brevard",
+        "rate": 5.35,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Satellite Beach",
+        "county": "Brevard",
+        "rate": 7.9,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Titusville",
+        "county": "Brevard",
+        "rate": 6.3,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "West Melbourne",
+        "county": "Brevard",
+        "rate": 1.8151,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Coconut Creek",
+        "county": "Broward",
+        "rate": 6.8988,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Cooper City",
+        "county": "Broward",
+        "rate": 5.845,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Coral Springs",
+        "county": "Broward",
+        "rate": 6.0232,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Dania Beach",
+        "county": "Broward",
+        "rate": 5.9998,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Davie",
+        "county": "Broward",
+        "rate": 5.625,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Deerfield Beach",
+        "county": "Broward",
+        "rate": 6.0018,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Fort Lauderdale",
+        "county": "Broward",
+        "rate": 4.1193,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Hallandale Beach",
+        "county": "Broward",
+        "rate": 7.3848,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Hillsboro Beach",
+        "county": "Broward",
+        "rate": 3.5,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Hollywood",
+        "county": "Broward",
+        "rate": 7.4293,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Lauderdale Lakes",
+        "county": "Broward",
+        "rate": 8.6,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Lauderdale-By-The-Sea",
+        "county": "Broward",
+        "rate": 3.9,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Lauderhill",
+        "county": "Broward",
+        "rate": 7.4998,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Lazy Lake",
+        "county": "Broward",
+        "rate": 6.5,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Lighthouse Point",
+        "county": "Broward",
+        "rate": 4.4207,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Margate",
+        "county": "Broward",
+        "rate": 7.1171,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "Miramar",
+        "county": "Broward",
+        "rate": 7.1172,
+        "page": 3,
+        "newLevy": false
+      },
+      {
+        "name": "North Lauderdale",
+        "county": "Broward",
+        "rate": 7.4,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Oakland Park",
+        "county": "Broward",
+        "rate": 5.6979,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Parkland",
+        "county": "Broward",
+        "rate": 4.2979,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Pembroke Park",
+        "county": "Broward",
+        "rate": 8.5,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Pembroke Pines",
+        "county": "Broward",
+        "rate": 5.669,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Plantation",
+        "county": "Broward",
+        "rate": 5.7,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Pompano Beach",
+        "county": "Broward",
+        "rate": 5.2181,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Sea Ranch Lakes",
+        "county": "Broward",
+        "rate": 6.0,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Southwest Ranches",
+        "county": "Broward",
+        "rate": 3.9,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Sunrise",
+        "county": "Broward",
+        "rate": 6.0543,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Tamarac",
+        "county": "Broward",
+        "rate": 7.0,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "West Park",
+        "county": "Broward",
+        "rate": 7.9,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Weston",
+        "county": "Broward",
+        "rate": 3.3464,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Wilton Manors",
+        "county": "Broward",
+        "rate": 6.227,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Blountstown",
+        "county": "Calhoun",
+        "rate": 1.5,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Punta Gorda",
+        "county": "Charlotte",
+        "rate": 3.8686,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Crystal River",
+        "county": "Citrus",
+        "rate": 6.59,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Inverness",
+        "county": "Citrus",
+        "rate": 7.56,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Green Cove Springs",
+        "county": "Clay",
+        "rate": 5.3,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Keystone Heights",
+        "county": "Clay",
+        "rate": 3.6073,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Orange Park",
+        "county": "Clay",
+        "rate": 5.95,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Penney Farms",
+        "county": "Clay",
+        "rate": 4.4535,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Everglades City",
+        "county": "Collier",
+        "rate": 6.6558,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Marco Island",
+        "county": "Collier",
+        "rate": 1.267,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Naples",
+        "county": "Collier",
+        "rate": 1.23,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Lake City",
+        "county": "Columbia",
+        "rate": 4.9,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Aventura",
+        "county": "Miami-Dade",
+        "rate": 1.7261,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Bal Harbour",
+        "county": "Miami-Dade",
+        "rate": 2.1439,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Bay Harbor Islands",
+        "county": "Miami-Dade",
+        "rate": 3.4583,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Biscayne Park",
+        "county": "Miami-Dade",
+        "rate": 9.3,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Coral Gables",
+        "county": "Miami-Dade",
+        "rate": 5.559,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Cutler Bay",
+        "county": "Miami-Dade",
+        "rate": 2.8332,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Doral",
+        "county": "Miami-Dade",
+        "rate": 1.7166,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "El Portal",
+        "county": "Miami-Dade",
+        "rate": 8.2,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Florida City",
+        "county": "Miami-Dade",
+        "rate": 6.4304,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Golden Beach",
+        "county": "Miami-Dade",
+        "rate": 7.8,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Hialeah",
+        "county": "Miami-Dade",
+        "rate": 6.3018,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Hialeah Gardens",
+        "county": "Miami-Dade",
+        "rate": 4.6782,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Homestead",
+        "county": "Miami-Dade",
+        "rate": 5.9604,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Indian Creek",
+        "county": "Miami-Dade",
+        "rate": 5.5,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Key Biscayne",
+        "county": "Miami-Dade",
+        "rate": 2.8846,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Medley",
+        "county": "Miami-Dade",
+        "rate": 3.85,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Miami",
+        "county": "Miami-Dade",
+        "rate": 7.108,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Miami Beach",
+        "county": "Miami-Dade",
+        "rate": 5.856,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Miami Gardens",
+        "county": "Miami-Dade",
+        "rate": 6.9363,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Miami Lakes",
+        "county": "Miami-Dade",
+        "rate": 2.1577,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Miami Shores Village",
+        "county": "Miami-Dade",
+        "rate": 7.8,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Miami Springs",
+        "county": "Miami-Dade",
+        "rate": 6.81,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "North Bay Village",
+        "county": "Miami-Dade",
+        "rate": 5.7062,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "North Miami",
+        "county": "Miami-Dade",
+        "rate": 7.4,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "North Miami Beach",
+        "county": "Miami-Dade",
+        "rate": 6.1,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Opa-Locka",
+        "county": "Miami-Dade",
+        "rate": 8.9797,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Palmetto Bay",
+        "county": "Miami-Dade",
+        "rate": 2.3018,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "Pinecrest",
+        "county": "Miami-Dade",
+        "rate": 2.503,
+        "page": 4,
+        "newLevy": false
+      },
+      {
+        "name": "South Miami",
+        "county": "Miami-Dade",
+        "rate": 3.95,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Sunny Isles Beach",
+        "county": "Miami-Dade",
+        "rate": 1.7,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Surfside",
+        "county": "Miami-Dade",
+        "rate": 3.883,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Sweetwater",
+        "county": "Miami-Dade",
+        "rate": 3.5634,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Virginia Gardens",
+        "county": "Miami-Dade",
+        "rate": 4.85,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "West Miami",
+        "county": "Miami-Dade",
+        "rate": 5.77,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Arcadia",
+        "county": "Desoto",
+        "rate": 7.9,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Cross City",
+        "county": "Dixie",
+        "rate": 5.1272,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Horseshoe Beach",
+        "county": "Dixie",
+        "rate": 2.5,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Atlantic Beach",
+        "county": "Duval",
+        "rate": 2.7499,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Baldwin",
+        "county": "Duval",
+        "rate": 3.0,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Jacksonville Beach",
+        "county": "Duval",
+        "rate": 3.9947,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Neptune Beach",
+        "county": "Duval",
+        "rate": 3.3656,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Century",
+        "county": "Escambia",
+        "rate": 0.9204,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Pensacola",
+        "county": "Escambia",
+        "rate": 4.2895,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Beverly Beach",
+        "county": "Flagler",
+        "rate": 1.04,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Bunnell",
+        "county": "Flagler",
+        "rate": 7.93,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Marineland",
+        "county": "Flagler",
+        "rate": 10.0,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Palm Coast",
+        "county": "Flagler",
+        "rate": 4.0893,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Apalachicola",
+        "county": "Franklin",
+        "rate": 8.3457,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Carrabelle",
+        "county": "Franklin",
+        "rate": 7.5,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Chattahoochee",
+        "county": "Gadsden",
+        "rate": 3.0,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Greensboro",
+        "county": "Gadsden",
+        "rate": 5.0,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Gretna",
+        "county": "Gadsden",
+        "rate": 5.2847,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Havana",
+        "county": "Gadsden",
+        "rate": 3.0,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Midway",
+        "county": "Gadsden",
+        "rate": 4.6839,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Quincy",
+        "county": "Gadsden",
+        "rate": 6.8718,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Bell",
+        "county": "Gilchrist",
+        "rate": 3.0,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Trenton",
+        "county": "Gilchrist",
+        "rate": 3.75,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Moore Haven",
+        "county": "Glades",
+        "rate": 4.6725,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Port Saint Joe",
+        "county": "Gulf",
+        "rate": 3.5914,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Wewahitchka",
+        "county": "Gulf",
+        "rate": 6.1133,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Jasper",
+        "county": "Hamilton",
+        "rate": 7.949,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Jennings",
+        "county": "Hamilton",
+        "rate": 6.5,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "White Springs",
+        "county": "Hamilton",
+        "rate": 6.0,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Bowling Green",
+        "county": "Hardee",
+        "rate": 6.9197,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Wauchula",
+        "county": "Hardee",
+        "rate": 5.771,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Zolfo Springs",
+        "county": "Hardee",
+        "rate": 8.554,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Clewiston",
+        "county": "Hendry",
+        "rate": 6.3962,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Labelle",
+        "county": "Hendry",
+        "rate": 5.0,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Brooksville",
+        "county": "Hernando",
+        "rate": 6.5,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Avon Park",
+        "county": "Highlands",
+        "rate": 6.0,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Lake Placid",
+        "county": "Highlands",
+        "rate": 3.65,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Sebring",
+        "county": "Highlands",
+        "rate": 6.35,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Plant City",
+        "county": "Hillsborough",
+        "rate": 5.7157,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Tampa",
+        "county": "Hillsborough",
+        "rate": 6.2076,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Temple Terrace",
+        "county": "Hillsborough",
+        "rate": 6.455,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Bonifay",
+        "county": "Holmes",
+        "rate": 3.5,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Esto",
+        "county": "Holmes",
+        "rate": 2.773,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Noma",
+        "county": "Holmes",
+        "rate": 0.879,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Ponce De Leon",
+        "county": "Holmes",
+        "rate": 2.0,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Fellsmere",
+        "county": "Indian River",
+        "rate": 5.35,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Indian River Shores",
+        "county": "Indian River",
+        "rate": 1.281,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Orchid",
+        "county": "Indian River",
+        "rate": 0.7,
+        "page": 5,
+        "newLevy": false
+      },
+      {
+        "name": "Sebastian",
+        "county": "Indian River",
+        "rate": 3.4455,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Vero Beach",
+        "county": "Indian River",
+        "rate": 2.9816,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Alford",
+        "county": "Jackson",
+        "rate": 1.5575,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Campbellton",
+        "county": "Jackson",
+        "rate": 2.9399,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Cottondale",
+        "county": "Jackson",
+        "rate": 4.53,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Graceville",
+        "county": "Jackson",
+        "rate": 4.0,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Greenwood",
+        "county": "Jackson",
+        "rate": 1.0,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Jacob",
+        "county": "Jackson",
+        "rate": 4.4795,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Malone",
+        "county": "Jackson",
+        "rate": 1.5,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Marianna",
+        "county": "Jackson",
+        "rate": 3.9985,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Sneads",
+        "county": "Jackson",
+        "rate": 4.36,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Monticello",
+        "county": "Jefferson",
+        "rate": 6.8501,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Mayo",
+        "county": "Lafayette",
+        "rate": 7.0,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Astatula",
+        "county": "Lake",
+        "rate": 6.9,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Clermont",
+        "county": "Lake",
+        "rate": 4.59,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Eustis",
+        "county": "Lake",
+        "rate": 7.3898,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Fruitland Park",
+        "county": "Lake",
+        "rate": 3.9134,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Groveland",
+        "county": "Lake",
+        "rate": 5.7,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Howey-In-The-Hills",
+        "county": "Lake",
+        "rate": 6.99,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Lady Lake",
+        "county": "Lake",
+        "rate": 3.651,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Leesburg",
+        "county": "Lake",
+        "rate": 3.4752,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Mascotte",
+        "county": "Lake",
+        "rate": 4.6381,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Minneola",
+        "county": "Lake",
+        "rate": 5.5,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Montverde",
+        "county": "Lake",
+        "rate": 2.83,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Mount Dora",
+        "county": "Lake",
+        "rate": 6.3,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Tavares",
+        "county": "Lake",
+        "rate": 6.685,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Umatilla",
+        "county": "Lake",
+        "rate": 7.2377,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Bonita Springs",
+        "county": "Lee",
+        "rate": 0.847,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Cape Coral",
+        "county": "Lee",
+        "rate": 5.1471,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Estero",
+        "county": "Lee",
+        "rate": 0.73,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Fort Myers",
+        "county": "Lee",
+        "rate": 6.5,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Fort Myers Beach",
+        "county": "Lee",
+        "rate": 1.0294,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Sanibel",
+        "county": "Lee",
+        "rate": 2.5,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Tallahassee",
+        "county": "Leon",
+        "rate": 4.4072,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Bronson",
+        "county": "Levy",
+        "rate": 5.5371,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Cedar Key",
+        "county": "Levy",
+        "rate": 4.7684,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Chiefland",
+        "county": "Levy",
+        "rate": 8.5493,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Inglis",
+        "county": "Levy",
+        "rate": 4.5312,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Otter Creek",
+        "county": "Levy",
+        "rate": 9.7662,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Williston",
+        "county": "Levy",
+        "rate": 6.75,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Yankeetown",
+        "county": "Levy",
+        "rate": 3.4451,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Bristol",
+        "county": "Liberty",
+        "rate": 6.5567,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Greenville",
+        "county": "Madison",
+        "rate": 9.0772,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Lee",
+        "county": "Madison",
+        "rate": 8.5,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Madison",
+        "county": "Madison",
+        "rate": 7.0,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Anna Maria",
+        "county": "Manatee",
+        "rate": 1.65,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Bradenton",
+        "county": "Manatee",
+        "rate": 5.7101,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Bradenton Beach",
+        "county": "Manatee",
+        "rate": 2.3329,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Holmes Beach",
+        "county": "Manatee",
+        "rate": 1.99,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Palmetto",
+        "county": "Manatee",
+        "rate": 5.9671,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Belleview",
+        "county": "Marion",
+        "rate": 5.0,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Dunnellon",
+        "county": "Marion",
+        "rate": 4.685,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Mcintosh",
+        "county": "Marion",
+        "rate": 1.8525,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Ocala",
+        "county": "Marion",
+        "rate": 6.6177,
+        "page": 6,
+        "newLevy": false
+      },
+      {
+        "name": "Indiantown",
+        "county": "Martin",
+        "rate": 1.825,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Jupiter Island",
+        "county": "Martin",
+        "rate": 2.8259,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Ocean Breeze",
+        "county": "Martin",
+        "rate": 0.7665,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Sewalls Point",
+        "county": "Martin",
+        "rate": 3.27,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Stuart",
+        "county": "Martin",
+        "rate": 4.9,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Islamorada Islands",
+        "county": "Monroe",
+        "rate": 2.65,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Key Colony Beach",
+        "county": "Monroe",
+        "rate": 2.82,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Key West",
+        "county": "Monroe",
+        "rate": 1.9551,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Layton",
+        "county": "Monroe",
+        "rate": 2.8337,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Marathon",
+        "county": "Monroe",
+        "rate": 2.0631,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Callahan",
+        "county": "Nassau",
+        "rate": 1.6689,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Fernandina Beach",
+        "county": "Nassau",
+        "rate": 4.6849,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Hilliard",
+        "county": "Nassau",
+        "rate": 3.5,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Cinco Bayou",
+        "county": "Okaloosa",
+        "rate": 3.0,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Crestview",
+        "county": "Okaloosa",
+        "rate": 6.6466,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Destin",
+        "county": "Okaloosa",
+        "rate": 1.615,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Fort Walton Beach",
+        "county": "Okaloosa",
+        "rate": 4.3282,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Laurel Hill",
+        "county": "Okaloosa",
+        "rate": 3.5,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Mary Esther",
+        "county": "Okaloosa",
+        "rate": 5.0261,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Niceville",
+        "county": "Okaloosa",
+        "rate": 4.5,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Shalimar",
+        "county": "Okaloosa",
+        "rate": 2.2,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Valparaiso",
+        "county": "Okaloosa",
+        "rate": 5.6504,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Okeechobee",
+        "county": "Okeechobee",
+        "rate": 5.9602,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Apopka",
+        "county": "Orange",
+        "rate": 4.4376,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Bay Lake",
+        "county": "Orange",
+        "rate": 2.225,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Belle Isle",
+        "county": "Orange",
+        "rate": 4.7845,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Eatonville",
+        "county": "Orange",
+        "rate": 7.2938,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Edgewood",
+        "county": "Orange",
+        "rate": 5.25,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Lake Buena Vista",
+        "county": "Orange",
+        "rate": 2.6193,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Maitland",
+        "county": "Orange",
+        "rate": 5.0465,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Oakland",
+        "county": "Orange",
+        "rate": 6.7,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Ocoee",
+        "county": "Orange",
+        "rate": 4.95,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Orlando",
+        "county": "Orange",
+        "rate": 6.65,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Windermere",
+        "county": "Orange",
+        "rate": 3.7425,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Winter Garden",
+        "county": "Orange",
+        "rate": 4.8565,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Winter Park",
+        "county": "Orange",
+        "rate": 4.0923,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Kissimmee",
+        "county": "Osceola",
+        "rate": 4.6253,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Saint Cloud",
+        "county": "Osceola",
+        "rate": 5.1128,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Atlantis",
+        "county": "Palm Beach",
+        "rate": 6.15,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Belle Glade",
+        "county": "Palm Beach",
+        "rate": 6.5419,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Boca Raton",
+        "county": "Palm Beach",
+        "rate": 3.6476,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Boynton Beach",
+        "county": "Palm Beach",
+        "rate": 7.75,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Briny Breezes",
+        "county": "Palm Beach",
+        "rate": 3.75,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Delray Beach",
+        "county": "Palm Beach",
+        "rate": 6.1611,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Golf",
+        "county": "Palm Beach",
+        "rate": 6.5452,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Greenacres",
+        "county": "Palm Beach",
+        "rate": 6.3,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Gulf Stream",
+        "county": "Palm Beach",
+        "rate": 3.6724,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Haverhill",
+        "county": "Palm Beach",
+        "rate": 3.9,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Highland Beach",
+        "county": "Palm Beach",
+        "rate": 3.4159,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Hypoluxo",
+        "county": "Palm Beach",
+        "rate": 3.2,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Juno Beach",
+        "county": "Palm Beach",
+        "rate": 1.8195,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Jupiter",
+        "county": "Palm Beach",
+        "rate": 2.3894,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Jupiter Inlet Colony",
+        "county": "Palm Beach",
+        "rate": 5.56,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Lake Clarke Shores",
+        "county": "Palm Beach",
+        "rate": 5.9,
+        "page": 7,
+        "newLevy": false
+      },
+      {
+        "name": "Lake Park",
+        "county": "Palm Beach",
+        "rate": 5.1,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Lake Worth Beach",
+        "county": "Palm Beach",
+        "rate": 5.4945,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Lantana",
+        "county": "Palm Beach",
+        "rate": 3.75,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Loxahatchee Groves",
+        "county": "Palm Beach",
+        "rate": 3.2564,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Manalapan",
+        "county": "Palm Beach",
+        "rate": 3.0,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Mangonia Park",
+        "county": "Palm Beach",
+        "rate": 9.9,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "North Palm Beach",
+        "county": "Palm Beach",
+        "rate": 7.4,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Ocean Ridge",
+        "county": "Palm Beach",
+        "rate": 5.4,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Pahokee",
+        "county": "Palm Beach",
+        "rate": 6.5419,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Palm Beach",
+        "county": "Palm Beach",
+        "rate": 2.611,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Palm Beach Gardens",
+        "county": "Palm Beach",
+        "rate": 5.0537,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Palm Beach Shores",
+        "county": "Palm Beach",
+        "rate": 6.35,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Palm Springs",
+        "county": "Palm Beach",
+        "rate": 3.5,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Riviera Beach",
+        "county": "Palm Beach",
+        "rate": 8.35,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Royal Palm Beach",
+        "county": "Palm Beach",
+        "rate": 1.92,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "South Bay",
+        "county": "Palm Beach",
+        "rate": 6.3089,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "South Palm Beach",
+        "county": "Palm Beach",
+        "rate": 3.4,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Tequesta",
+        "county": "Palm Beach",
+        "rate": 6.4595,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Wellington",
+        "county": "Palm Beach",
+        "rate": 2.47,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "West Palm Beach",
+        "county": "Palm Beach",
+        "rate": 8.1308,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Westlake",
+        "county": "Palm Beach",
+        "rate": 4.6,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Dade City",
+        "county": "Pasco",
+        "rate": 6.6208,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "New Port Richey",
+        "county": "Pasco",
+        "rate": 8.2,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Port Richey",
+        "county": "Pasco",
+        "rate": 6.29,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Saint Leo",
+        "county": "Pasco",
+        "rate": 0.8665,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "San Antonio",
+        "county": "Pasco",
+        "rate": 3.5777,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Zephyrhills",
+        "county": "Pasco",
+        "rate": 6.25,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Belleair",
+        "county": "Pinellas",
+        "rate": 6.9777,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Belleair Beach",
+        "county": "Pinellas",
+        "rate": 2.0394,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Belleair Bluffs",
+        "county": "Pinellas",
+        "rate": 5.35,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Belleair Shore",
+        "county": "Pinellas",
+        "rate": 0.5345,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Clearwater",
+        "county": "Pinellas",
+        "rate": 5.885,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Dunedin",
+        "county": "Pinellas",
+        "rate": 4.1345,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Gulfport",
+        "county": "Pinellas",
+        "rate": 4.0258,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Indian Rocks Beach",
+        "county": "Pinellas",
+        "rate": 1.73,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Indian Shores",
+        "county": "Pinellas",
+        "rate": 1.87,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Kenneth City",
+        "county": "Pinellas",
+        "rate": 5.4373,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Largo",
+        "county": "Pinellas",
+        "rate": 5.52,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Madeira Beach",
+        "county": "Pinellas",
+        "rate": 2.75,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "North Redington Beach",
+        "county": "Pinellas",
+        "rate": 1.5,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Oldsmar",
+        "county": "Pinellas",
+        "rate": 4.05,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Pinellas Park",
+        "county": "Pinellas",
+        "rate": 5.65,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Redington Beach",
+        "county": "Pinellas",
+        "rate": 1.8149,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Redington Shores",
+        "county": "Pinellas",
+        "rate": 1.6896,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Safety Harbor",
+        "county": "Pinellas",
+        "rate": 3.95,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Saint Pete Beach",
+        "county": "Pinellas",
+        "rate": 3.0913,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Saint Petersburg",
+        "county": "Pinellas",
+        "rate": 6.4525,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Seminole",
+        "county": "Pinellas",
+        "rate": 2.4793,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "South Pasadena",
+        "county": "Pinellas",
+        "rate": 5.175,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Tarpon Springs",
+        "county": "Pinellas",
+        "rate": 5.37,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Treasure Island",
+        "county": "Pinellas",
+        "rate": 3.8129,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Auburndale",
+        "county": "Polk",
+        "rate": 4.2515,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Bartow",
+        "county": "Polk",
+        "rate": 6.108,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Davenport",
+        "county": "Polk",
+        "rate": 7.25,
+        "page": 8,
+        "newLevy": false
+      },
+      {
+        "name": "Dundee",
+        "county": "Polk",
+        "rate": 7.9,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Eagle Lake",
+        "county": "Polk",
+        "rate": 7.6516,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Fort Meade",
+        "county": "Polk",
+        "rate": 8.4403,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Frostproof",
+        "county": "Polk",
+        "rate": 6.553,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Haines City",
+        "county": "Polk",
+        "rate": 7.3395,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Highland Park",
+        "county": "Polk",
+        "rate": 9.9759,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Hillcrest Heights",
+        "county": "Polk",
+        "rate": 0.6786,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Lake Alfred",
+        "county": "Polk",
+        "rate": 6.75,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Lake Hamilton",
+        "county": "Polk",
+        "rate": 7.99,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Lake Wales",
+        "county": "Polk",
+        "rate": 8.0462,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Lakeland",
+        "county": "Polk",
+        "rate": 5.4323,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Mulberry",
+        "county": "Polk",
+        "rate": 6.39,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Polk City",
+        "county": "Polk",
+        "rate": 5.25,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Winter Haven",
+        "county": "Polk",
+        "rate": 6.59,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Crescent City",
+        "county": "Putnam",
+        "rate": 8.7164,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Interlachen",
+        "county": "Putnam",
+        "rate": 6.9018,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Palatka",
+        "county": "Putnam",
+        "rate": 6.2397,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Pomona Park",
+        "county": "Putnam",
+        "rate": 6.5,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Welaka",
+        "county": "Putnam",
+        "rate": 5.5,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Saint Augustine",
+        "county": "Saint Johns",
+        "rate": 7.5,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Saint Augustine Beach",
+        "county": "Saint Johns",
+        "rate": 2.5,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Fort Pierce",
+        "county": "Saint Lucie",
+        "rate": 6.9,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Port Saint Lucie",
+        "county": "Saint Lucie",
+        "rate": 4.6607,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Saint Lucie Village",
+        "county": "Saint Lucie",
+        "rate": 2.0,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Gulf Breeze",
+        "county": "Santa Rosa",
+        "rate": 1.9723,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Jay",
+        "county": "Santa Rosa",
+        "rate": 5.17,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Milton",
+        "county": "Santa Rosa",
+        "rate": 4.118,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "North Port",
+        "county": "Sarasota",
+        "rate": 3.7667,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Sarasota",
+        "county": "Sarasota",
+        "rate": 3.273,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Venice",
+        "county": "Sarasota",
+        "rate": 3.845,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Altamonte Springs",
+        "county": "Seminole",
+        "rate": 4.0,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Casselberry",
+        "county": "Seminole",
+        "rate": 3.9999,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Lake Mary",
+        "county": "Seminole",
+        "rate": 3.5895,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Longwood",
+        "county": "Seminole",
+        "rate": 5.5,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Oviedo",
+        "county": "Seminole",
+        "rate": 5.861,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Sanford",
+        "county": "Seminole",
+        "rate": 7.325,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Winter Springs",
+        "county": "Seminole",
+        "rate": 2.62,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Bushnell",
+        "county": "Sumter",
+        "rate": 3.3061,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Center Hill",
+        "county": "Sumter",
+        "rate": 3.7201,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Coleman",
+        "county": "Sumter",
+        "rate": 3.25,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Webster",
+        "county": "Sumter",
+        "rate": 8.0,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Wildwood",
+        "county": "Sumter",
+        "rate": 2.8287,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Branford",
+        "county": "Suwannee",
+        "rate": 7.5,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Live Oak",
+        "county": "Suwannee",
+        "rate": 9.25,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Perry",
+        "county": "Taylor",
+        "rate": 5.8336,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Lake Butler",
+        "county": "Union",
+        "rate": 3.25,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Worthington Springs",
+        "county": "Union",
+        "rate": 1.8914,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Daytona Beach",
+        "county": "Volusia",
+        "rate": 5.93,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Daytona Beach Shores",
+        "county": "Volusia",
+        "rate": 4.588,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Debary",
+        "county": "Volusia",
+        "rate": 3.65,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Deland",
+        "county": "Volusia",
+        "rate": 6.1841,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Deltona",
+        "county": "Volusia",
+        "rate": 6.7,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Edgewater",
+        "county": "Volusia",
+        "rate": 6.33,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Holly Hill",
+        "county": "Volusia",
+        "rate": 5.8,
+        "page": 9,
+        "newLevy": false
+      },
+      {
+        "name": "Lake Helen",
+        "county": "Volusia",
+        "rate": 6.862,
+        "page": 10,
+        "newLevy": false
+      },
+      {
+        "name": "New Smyrna Beach",
+        "county": "Volusia",
+        "rate": 4.637,
+        "page": 10,
+        "newLevy": false
+      },
+      {
+        "name": "Oak Hill",
+        "county": "Volusia",
+        "rate": 5.682,
+        "page": 10,
+        "newLevy": false
+      },
+      {
+        "name": "Orange City",
+        "county": "Volusia",
+        "rate": 7.2387,
+        "page": 10,
+        "newLevy": false
+      },
+      {
+        "name": "Ormond Beach",
+        "county": "Volusia",
+        "rate": 4.3202,
+        "page": 10,
+        "newLevy": false
+      },
+      {
+        "name": "Pierson",
+        "county": "Volusia",
+        "rate": 5.2439,
+        "page": 10,
+        "newLevy": false
+      },
+      {
+        "name": "Ponce Inlet",
+        "county": "Volusia",
+        "rate": 6.25,
+        "page": 10,
+        "newLevy": false
+      },
+      {
+        "name": "Port Orange",
+        "county": "Volusia",
+        "rate": 4.975,
+        "page": 10,
+        "newLevy": false
+      },
+      {
+        "name": "South Daytona",
+        "county": "Volusia",
+        "rate": 7.75,
+        "page": 10,
+        "newLevy": false
+      },
+      {
+        "name": "Saint Marks",
+        "county": "Wakulla",
+        "rate": 5.24,
+        "page": 10,
+        "newLevy": false
+      },
+      {
+        "name": "Defuniak Springs",
+        "county": "Walton",
+        "rate": 5.5,
+        "page": 10,
+        "newLevy": false
+      },
+      {
+        "name": "Freeport",
+        "county": "Walton",
+        "rate": 4.7302,
+        "page": 10,
+        "newLevy": false
+      },
+      {
+        "name": "Chipley",
+        "county": "Washington",
+        "rate": 7.0,
+        "page": 10,
+        "newLevy": false
+      },
+      {
+        "name": "Vernon",
+        "county": "Washington",
+        "rate": 5.2914,
+        "page": 10,
+        "newLevy": false
+      },
+      {
+        "name": "Fanning Springs",
+        "county": "Multi-County",
+        "rate": 3.0,
+        "page": 10,
+        "newLevy": false
+      },
+      {
+        "name": "Flagler Beach",
+        "county": "Multi-County",
+        "rate": 5.45,
+        "page": 10,
+        "newLevy": false
+      },
+      {
+        "name": "Longboat Key",
+        "county": "Multi-County",
+        "rate": 1.96,
+        "page": 10,
+        "newLevy": false
+      }
+    ],
+    "counties": [
+      {
+        "name": "Alachua",
+        "rate": 7.6,
+        "page": 2
+      },
+      {
+        "name": "Baker",
+        "rate": 7.2916,
+        "page": 2
+      },
+      {
+        "name": "Bay",
+        "rate": 5.4362,
+        "page": 2
+      },
+      {
+        "name": "Bradford",
+        "rate": 10.0,
+        "page": 2
+      },
+      {
+        "name": "Brevard",
+        "rate": 2.8643,
+        "page": 2
+      },
+      {
+        "name": "Broward",
+        "rate": 5.6658,
+        "page": 2
+      },
+      {
+        "name": "Calhoun",
+        "rate": 9.9,
+        "page": 2
+      },
+      {
+        "name": "Charlotte",
+        "rate": 6.0394,
+        "page": 2
+      },
+      {
+        "name": "Citrus",
+        "rate": 6.9898,
+        "page": 2
+      },
+      {
+        "name": "Clay",
+        "rate": 5.5471,
+        "page": 2
+      },
+      {
+        "name": "Collier",
+        "rate": 3.0107,
+        "page": 2
+      },
+      {
+        "name": "Columbia",
+        "rate": 7.815,
+        "page": 2
+      },
+      {
+        "name": "Miami-Dade",
+        "rate": 4.574,
+        "page": 2
+      },
+      {
+        "name": "Desoto",
+        "rate": 6.8675,
+        "page": 2
+      },
+      {
+        "name": "Dixie",
+        "rate": 10.0,
+        "page": 2
+      },
+      {
+        "name": "Duval BCC/City Of Jacksonville",
+        "rate": 11.1919,
+        "page": 2
+      },
+      {
+        "name": "Escambia",
+        "rate": 6.6,
+        "page": 2
+      },
+      {
+        "name": "Flagler",
+        "rate": 7.9945,
+        "page": 2
+      },
+      {
+        "name": "Franklin",
+        "rate": 5.0459,
+        "page": 2
+      },
+      {
+        "name": "Gadsden",
+        "rate": 9.0,
+        "page": 2
+      },
+      {
+        "name": "Gilchrist",
+        "rate": 8.5,
+        "page": 2
+      },
+      {
+        "name": "Glades",
+        "rate": 8.9967,
+        "page": 2
+      },
+      {
+        "name": "Gulf",
+        "rate": 5.6,
+        "page": 2
+      },
+      {
+        "name": "Hamilton",
+        "rate": 8.5976,
+        "page": 2
+      },
+      {
+        "name": "Hardee",
+        "rate": 7.92,
+        "page": 2
+      },
+      {
+        "name": "Hendry",
+        "rate": 6.77,
+        "page": 2
+      },
+      {
+        "name": "Hernando",
+        "rate": 5.8891,
+        "page": 2
+      },
+      {
+        "name": "Highlands",
+        "rate": 7.6,
+        "page": 2
+      },
+      {
+        "name": "Hillsborough",
+        "rate": 5.4608,
+        "page": 2
+      },
+      {
+        "name": "Holmes",
+        "rate": 9.4916,
+        "page": 2
+      },
+      {
+        "name": "Indian River",
+        "rate": 3.5475,
+        "page": 2
+      },
+      {
+        "name": "Jackson",
+        "rate": 7.945,
+        "page": 2
+      },
+      {
+        "name": "Jefferson",
+        "rate": 7.5261,
+        "page": 2
+      },
+      {
+        "name": "Lafayette",
+        "rate": 10.0,
+        "page": 2
+      },
+      {
+        "name": "Lake",
+        "rate": 5.0254,
+        "page": 2
+      },
+      {
+        "name": "Lee",
+        "rate": 3.7623,
+        "page": 2
+      },
+      {
+        "name": "Leon",
+        "rate": 8.3144,
+        "page": 2
+      },
+      {
+        "name": "Levy",
+        "rate": 8.75,
+        "page": 2
+      },
+      {
+        "name": "Liberty",
+        "rate": 9.224,
+        "page": 2
+      },
+      {
+        "name": "Madison",
+        "rate": 8.6776,
+        "page": 2
+      },
+      {
+        "name": "Manatee",
+        "rate": 4.5942,
+        "page": 2
+      },
+      {
+        "name": "Marion",
+        "rate": 3.09,
+        "page": 2
+      },
+      {
+        "name": "Martin",
+        "rate": 6.5614,
+        "page": 2
+      },
+      {
+        "name": "Monroe",
+        "rate": 2.6929,
+        "page": 2
+      },
+      {
+        "name": "Nassau",
+        "rate": 6.7457,
+        "page": 2
+      },
+      {
+        "name": "Okaloosa",
+        "rate": 3.8308,
+        "page": 2
+      },
+      {
+        "name": "Okeechobee",
+        "rate": 7.8,
+        "page": 2
+      },
+      {
+        "name": "Orange",
+        "rate": 4.4347,
+        "page": 2
+      },
+      {
+        "name": "Osceola",
+        "rate": 6.7,
+        "page": 2
+      },
+      {
+        "name": "Palm Beach",
+        "rate": 4.5,
+        "page": 2
+      },
+      {
+        "name": "Pasco",
+        "rate": 7.4042,
+        "page": 2
+      },
+      {
+        "name": "Pinellas",
+        "rate": 4.5423,
+        "page": 2
+      },
+      {
+        "name": "Polk",
+        "rate": 6.6348,
+        "page": 2
+      },
+      {
+        "name": "Putnam",
+        "rate": 8.7418,
+        "page": 2
+      },
+      {
+        "name": "Saint Johns",
+        "rate": 4.4999,
+        "page": 2
+      },
+      {
+        "name": "Saint Lucie",
+        "rate": 4.1985,
+        "page": 2
+      },
+      {
+        "name": "Santa Rosa",
+        "rate": 3.885,
+        "page": 2
+      },
+      {
+        "name": "Sarasota",
+        "rate": 3.2273,
+        "page": 2
+      },
+      {
+        "name": "Seminole",
+        "rate": 5.3751,
+        "page": 2
+      },
+      {
+        "name": "Sumter",
+        "rate": 4.89,
+        "page": 2
+      },
+      {
+        "name": "Suwannee",
+        "rate": 8.8,
+        "page": 2
+      },
+      {
+        "name": "Taylor",
+        "rate": 7.2426,
+        "page": 2
+      },
+      {
+        "name": "Union",
+        "rate": 10.0,
+        "page": 2
+      },
+      {
+        "name": "Volusia",
+        "rate": 3.2007,
+        "page": 2
+      },
+      {
+        "name": "Wakulla",
+        "rate": 7.9,
+        "page": 2
+      },
+      {
+        "name": "Walton",
+        "rate": 3.519,
+        "page": 2
+      },
+      {
+        "name": "Washington",
+        "rate": 8.5,
+        "page": 2
+      }
+    ],
+    "panamaCity": 4.7999,
+    "median": 5.1272,
+    "lower": 180,
+    "higher": 212
+  },
+  "sources": {
+    "merchant": "https://edr.state.fl.us/content/local-government/reports/lgfih25.pdf#page=156",
+    "merchantCity": "https://www.panamacity.gov/779/Merchant-Local-Business-Tax-Return-1-Fee",
+    "fire": "https://engage.dunedin.gov/fire-protection-special-assessment",
+    "fireTotals": "https://floridarevenue.com/property/dataportal/Documents/PTO%20Data%20Portal/Non-Ad%20Valorem%20Reports/2025/2025%20NAV%20by%20Type%20of%20Government.pdf",
+    "currentMillage": "https://www.panamacity.gov/AgendaCenter/ViewFile/Item/17543?fileID=37529"
+  }
+}

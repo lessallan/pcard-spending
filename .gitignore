@@ -235,3 +235,35 @@
 !/tools/check-history-2012-20261122.cjs
 
 !/tools/check-chart-clipping.cjs
+
+# Public budget-account explanation inventory and reproducible checks.
+!/docs/account-inventory.json
+!/docs/account-inventory.js
+!/docs/account-inventory.css
+!/tools/build_account_inventory.py
+!/tools/check_account_inventory.cjs
+!/analysis/
+/analysis/*
+!/analysis/account-inventory/
+/analysis/account-inventory/*
+!/analysis/account-inventory/adopted-rows.json
+!/analysis/account-inventory/README.md
+
+!/docs/account-explanations.html
+
+# Public revenue context and source-backed statewide comparison.
+!/docs/revenue-context.js
+!/docs/revenue-context.css
+!/docs/revenue-context.json
+!/tools/build_revenue_context.py
+!/tools/check_revenue_context.cjs
+!/analysis/revenue-context/
+/analysis/revenue-context/*
+!/analysis/revenue-context/README.md
+!/analysis/revenue-context/millage2025-source.txt
+!/analysis/revenue-context/millage2025-layout.json
+!/analysis/revenue-context/extract-millage-layout.swift
+!/analysis/revenue-context/population2026-source.txt
+!/analysis/revenue-context/general-fund-source-pages.json
+
+!/analysis/revenue-context/source-manifest.json
