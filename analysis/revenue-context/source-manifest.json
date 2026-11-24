@@ -1,0 +1,20 @@
+[
+  {
+    "file": "munifin-millage2025.pdf",
+    "url": "https://floridarevenue.com/property/Documents/MillCapComp25.pdf",
+    "sha256": "319678f5739842ec366af652b8f7920abe87706e6478d91c6ff30fa1605c9149",
+    "retrieved": "2026-11-24"
+  },
+  {
+    "file": "munifin-pop2026.pdf",
+    "url": "https://www.edr.state.fl.us/Content/population-demographics/data/2026_Pop_Estimates.pdf",
+    "sha256": "dd34cdaa5a8a3c19e470f0914a167a608c8a03a72d56ff7b6164d5dada135986",
+    "retrieved": "2026-11-24"
+  },
+  {
+    "file": "munifin-rate2026.pdf",
+    "url": "https://www.panamacity.gov/AgendaCenter/ViewFile/Item/17543?fileID=37529",
+    "sha256": "32d4245afd797c4d973bd08ed2ac4d5c24f960813bb98aecc875de4d6e2c160a",
+    "retrieved": "2026-11-24"
+  }
+]
